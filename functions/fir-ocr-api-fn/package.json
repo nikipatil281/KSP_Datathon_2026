@@ -1,0 +1,12 @@
+{
+  "name": "fir-ocr-api",
+  "version": "1.0.0",
+  "description": "KSP Crime Analytics - FIR OCR Intake API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "zcatalyst-sdk-node": "^2.0.0"
+  }
+}

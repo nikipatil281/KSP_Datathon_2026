@@ -1,0 +1,86 @@
+[
+  {
+    "CourtID": 1,
+    "CourtName": "Bengaluru Urban District Court",
+    "DistrictID": 1,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 2,
+    "CourtName": "Bengaluru Rural District Court",
+    "DistrictID": 2,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 3,
+    "CourtName": "Mysuru District Court",
+    "DistrictID": 3,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 4,
+    "CourtName": "Tumakuru District Court",
+    "DistrictID": 4,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 5,
+    "CourtName": "Dakshina Kannada District Court",
+    "DistrictID": 5,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 6,
+    "CourtName": "Belagavi District Court",
+    "DistrictID": 6,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 7,
+    "CourtName": "Kalaburagi District Court",
+    "DistrictID": 7,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 8,
+    "CourtName": "Dharwad District Court",
+    "DistrictID": 8,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 9,
+    "CourtName": "Ballari District Court",
+    "DistrictID": 9,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 10,
+    "CourtName": "Hassan District Court",
+    "DistrictID": 10,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 11,
+    "CourtName": "Shivamogga District Court",
+    "DistrictID": 11,
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "CourtID": 12,
+    "CourtName": "Udupi District Court",
+    "DistrictID": 12,
+    "StateID": 1,
+    "Active": 1
+  }
+]

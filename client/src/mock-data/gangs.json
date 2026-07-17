@@ -1,0 +1,18 @@
+[
+  {
+    "gang_id": 1,
+    "gang_name": "Drug Cartel"
+  },
+  {
+    "gang_id": 2,
+    "gang_name": "Local Gang"
+  },
+  {
+    "gang_id": 3,
+    "gang_name": "None"
+  },
+  {
+    "gang_id": 4,
+    "gang_name": "Organized Crime"
+  }
+]

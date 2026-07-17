@@ -1,0 +1,77 @@
+[
+  {
+    "CrimeHeadID": 1,
+    "ActCode": "IPC",
+    "SectionCode": 302
+  },
+  {
+    "CrimeHeadID": 1,
+    "ActCode": "IPC",
+    "SectionCode": 323
+  },
+  {
+    "CrimeHeadID": 1,
+    "ActCode": "IPC",
+    "SectionCode": 363
+  },
+  {
+    "CrimeHeadID": 1,
+    "ActCode": "POCSO",
+    "SectionCode": 8
+  },
+  {
+    "CrimeHeadID": 2,
+    "ActCode": "IPC",
+    "SectionCode": 379
+  },
+  {
+    "CrimeHeadID": 2,
+    "ActCode": "IPC",
+    "SectionCode": 392
+  },
+  {
+    "CrimeHeadID": 2,
+    "ActCode": "IPC",
+    "SectionCode": 457
+  },
+  {
+    "CrimeHeadID": 2,
+    "ActCode": "IPC",
+    "SectionCode": 427
+  },
+  {
+    "CrimeHeadID": 3,
+    "ActCode": "IPC",
+    "SectionCode": 420
+  },
+  {
+    "CrimeHeadID": 3,
+    "ActCode": "IT",
+    "SectionCode": "66D"
+  },
+  {
+    "CrimeHeadID": 3,
+    "ActCode": "IPC",
+    "SectionCode": 420
+  },
+  {
+    "CrimeHeadID": 4,
+    "ActCode": "NDPS",
+    "SectionCode": 20
+  },
+  {
+    "CrimeHeadID": 4,
+    "ActCode": "NDPS",
+    "SectionCode": 21
+  },
+  {
+    "CrimeHeadID": 5,
+    "ActCode": "IPC",
+    "SectionCode": 143
+  },
+  {
+    "CrimeHeadID": 5,
+    "ActCode": "IPC",
+    "SectionCode": 147
+  }
+]

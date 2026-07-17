@@ -1,0 +1,542 @@
+[
+  {
+    "UnitID": 1,
+    "UnitName": "Karnataka State Police HQ",
+    "TypeID": 1,
+    "ParentUnit": "",
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": "",
+    "Active": 1
+  },
+  {
+    "UnitID": 2,
+    "UnitName": "Bengaluru Urban DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 1,
+    "Active": 1
+  },
+  {
+    "UnitID": 3,
+    "UnitName": "Cubbon Park PS",
+    "TypeID": 4,
+    "ParentUnit": 2,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 1,
+    "Active": 1
+  },
+  {
+    "UnitID": 4,
+    "UnitName": "Shivajinagar PS",
+    "TypeID": 4,
+    "ParentUnit": 2,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 1,
+    "Active": 1
+  },
+  {
+    "UnitID": 5,
+    "UnitName": "Whitefield PS",
+    "TypeID": 4,
+    "ParentUnit": 2,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 1,
+    "Active": 1
+  },
+  {
+    "UnitID": 6,
+    "UnitName": "HSR Layout PS",
+    "TypeID": 4,
+    "ParentUnit": 2,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 1,
+    "Active": 1
+  },
+  {
+    "UnitID": 7,
+    "UnitName": "Koramangala PS",
+    "TypeID": 4,
+    "ParentUnit": 2,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 1,
+    "Active": 1
+  },
+  {
+    "UnitID": 8,
+    "UnitName": "Yelahanka PS",
+    "TypeID": 4,
+    "ParentUnit": 2,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 1,
+    "Active": 1
+  },
+  {
+    "UnitID": 9,
+    "UnitName": "Bengaluru Rural DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 2,
+    "Active": 1
+  },
+  {
+    "UnitID": 10,
+    "UnitName": "Devanahalli PS",
+    "TypeID": 4,
+    "ParentUnit": 9,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 2,
+    "Active": 1
+  },
+  {
+    "UnitID": 11,
+    "UnitName": "Doddaballapur PS",
+    "TypeID": 4,
+    "ParentUnit": 9,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 2,
+    "Active": 1
+  },
+  {
+    "UnitID": 12,
+    "UnitName": "Nelamangala PS",
+    "TypeID": 4,
+    "ParentUnit": 9,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 2,
+    "Active": 1
+  },
+  {
+    "UnitID": 13,
+    "UnitName": "Mysuru DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 3,
+    "Active": 1
+  },
+  {
+    "UnitID": 14,
+    "UnitName": "Nazarbad PS",
+    "TypeID": 4,
+    "ParentUnit": 13,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 3,
+    "Active": 1
+  },
+  {
+    "UnitID": 15,
+    "UnitName": "Kuvempunagar PS",
+    "TypeID": 4,
+    "ParentUnit": 13,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 3,
+    "Active": 1
+  },
+  {
+    "UnitID": 16,
+    "UnitName": "Hebbal PS",
+    "TypeID": 4,
+    "ParentUnit": 13,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 3,
+    "Active": 1
+  },
+  {
+    "UnitID": 17,
+    "UnitName": "V.V. Mohalla PS",
+    "TypeID": 4,
+    "ParentUnit": 13,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 3,
+    "Active": 1
+  },
+  {
+    "UnitID": 18,
+    "UnitName": "Tumakuru DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 4,
+    "Active": 1
+  },
+  {
+    "UnitID": 19,
+    "UnitName": "Tumakuru City PS",
+    "TypeID": 4,
+    "ParentUnit": 18,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 4,
+    "Active": 1
+  },
+  {
+    "UnitID": 20,
+    "UnitName": "Tiptur PS",
+    "TypeID": 4,
+    "ParentUnit": 18,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 4,
+    "Active": 1
+  },
+  {
+    "UnitID": 21,
+    "UnitName": "Sira PS",
+    "TypeID": 4,
+    "ParentUnit": 18,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 4,
+    "Active": 1
+  },
+  {
+    "UnitID": 22,
+    "UnitName": "Dakshina Kannada DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 5,
+    "Active": 1
+  },
+  {
+    "UnitID": 23,
+    "UnitName": "Mangaluru City PS",
+    "TypeID": 4,
+    "ParentUnit": 22,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 5,
+    "Active": 1
+  },
+  {
+    "UnitID": 24,
+    "UnitName": "Bunder PS",
+    "TypeID": 4,
+    "ParentUnit": 22,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 5,
+    "Active": 1
+  },
+  {
+    "UnitID": 25,
+    "UnitName": "Ullal PS",
+    "TypeID": 4,
+    "ParentUnit": 22,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 5,
+    "Active": 1
+  },
+  {
+    "UnitID": 26,
+    "UnitName": "Belagavi DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 6,
+    "Active": 1
+  },
+  {
+    "UnitID": 27,
+    "UnitName": "Belagavi City PS",
+    "TypeID": 4,
+    "ParentUnit": 26,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 6,
+    "Active": 1
+  },
+  {
+    "UnitID": 28,
+    "UnitName": "Tilakwadi PS",
+    "TypeID": 4,
+    "ParentUnit": 26,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 6,
+    "Active": 1
+  },
+  {
+    "UnitID": 29,
+    "UnitName": "Khasbag PS",
+    "TypeID": 4,
+    "ParentUnit": 26,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 6,
+    "Active": 1
+  },
+  {
+    "UnitID": 30,
+    "UnitName": "Gokak PS",
+    "TypeID": 4,
+    "ParentUnit": 26,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 6,
+    "Active": 1
+  },
+  {
+    "UnitID": 31,
+    "UnitName": "Kalaburagi DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 7,
+    "Active": 1
+  },
+  {
+    "UnitID": 32,
+    "UnitName": "Kalaburagi City PS",
+    "TypeID": 4,
+    "ParentUnit": 31,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 7,
+    "Active": 1
+  },
+  {
+    "UnitID": 33,
+    "UnitName": "Aland PS",
+    "TypeID": 4,
+    "ParentUnit": 31,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 7,
+    "Active": 1
+  },
+  {
+    "UnitID": 34,
+    "UnitName": "Yadgir PS",
+    "TypeID": 4,
+    "ParentUnit": 31,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 7,
+    "Active": 1
+  },
+  {
+    "UnitID": 35,
+    "UnitName": "Dharwad DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 8,
+    "Active": 1
+  },
+  {
+    "UnitID": 36,
+    "UnitName": "Dharwad PS",
+    "TypeID": 4,
+    "ParentUnit": 35,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 8,
+    "Active": 1
+  },
+  {
+    "UnitID": 37,
+    "UnitName": "Hubballi PS",
+    "TypeID": 4,
+    "ParentUnit": 35,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 8,
+    "Active": 1
+  },
+  {
+    "UnitID": 38,
+    "UnitName": "Navanagar PS",
+    "TypeID": 4,
+    "ParentUnit": 35,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 8,
+    "Active": 1
+  },
+  {
+    "UnitID": 39,
+    "UnitName": "Ballari DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 9,
+    "Active": 1
+  },
+  {
+    "UnitID": 40,
+    "UnitName": "Ballari City PS",
+    "TypeID": 4,
+    "ParentUnit": 39,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 9,
+    "Active": 1
+  },
+  {
+    "UnitID": 41,
+    "UnitName": "Sandur PS",
+    "TypeID": 4,
+    "ParentUnit": 39,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 9,
+    "Active": 1
+  },
+  {
+    "UnitID": 42,
+    "UnitName": "Hosapete PS",
+    "TypeID": 4,
+    "ParentUnit": 39,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 9,
+    "Active": 1
+  },
+  {
+    "UnitID": 43,
+    "UnitName": "Hassan DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 10,
+    "Active": 1
+  },
+  {
+    "UnitID": 44,
+    "UnitName": "Hassan PS",
+    "TypeID": 4,
+    "ParentUnit": 43,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 10,
+    "Active": 1
+  },
+  {
+    "UnitID": 45,
+    "UnitName": "Belur PS",
+    "TypeID": 4,
+    "ParentUnit": 43,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 10,
+    "Active": 1
+  },
+  {
+    "UnitID": 46,
+    "UnitName": "Sakleshpur PS",
+    "TypeID": 4,
+    "ParentUnit": 43,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 10,
+    "Active": 1
+  },
+  {
+    "UnitID": 47,
+    "UnitName": "Shivamogga DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 11,
+    "Active": 1
+  },
+  {
+    "UnitID": 48,
+    "UnitName": "Shivamogga PS",
+    "TypeID": 4,
+    "ParentUnit": 47,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 11,
+    "Active": 1
+  },
+  {
+    "UnitID": 49,
+    "UnitName": "Sagar PS",
+    "TypeID": 4,
+    "ParentUnit": 47,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 11,
+    "Active": 1
+  },
+  {
+    "UnitID": 50,
+    "UnitName": "Bhadravathi PS",
+    "TypeID": 4,
+    "ParentUnit": 47,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 11,
+    "Active": 1
+  },
+  {
+    "UnitID": 51,
+    "UnitName": "Udupi DPO",
+    "TypeID": 2,
+    "ParentUnit": 1,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 12,
+    "Active": 1
+  },
+  {
+    "UnitID": 52,
+    "UnitName": "Udupi PS",
+    "TypeID": 4,
+    "ParentUnit": 51,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 12,
+    "Active": 1
+  },
+  {
+    "UnitID": 53,
+    "UnitName": "Manipal PS",
+    "TypeID": 4,
+    "ParentUnit": 51,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 12,
+    "Active": 1
+  },
+  {
+    "UnitID": 54,
+    "UnitName": "Kundapura PS",
+    "TypeID": 4,
+    "ParentUnit": 51,
+    "NationalityID": 1,
+    "StateID": 1,
+    "DistrictID": 12,
+    "Active": 1
+  }
+]

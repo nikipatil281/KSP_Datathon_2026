@@ -1,0 +1,54 @@
+[
+  {
+    "occupation_id": 1,
+    "occupation_name": "Business"
+  },
+  {
+    "occupation_id": 2,
+    "occupation_name": "Driver"
+  },
+  {
+    "occupation_id": 3,
+    "occupation_name": "Farmer"
+  },
+  {
+    "occupation_id": 4,
+    "occupation_name": "Government Employee"
+  },
+  {
+    "occupation_id": 5,
+    "occupation_name": "Housewife"
+  },
+  {
+    "occupation_id": 6,
+    "occupation_name": "Labour"
+  },
+  {
+    "occupation_id": 7,
+    "occupation_name": "Labourer"
+  },
+  {
+    "occupation_id": 8,
+    "occupation_name": "Private Employee"
+  },
+  {
+    "occupation_id": 9,
+    "occupation_name": "Retired"
+  },
+  {
+    "occupation_id": 10,
+    "occupation_name": "Student"
+  },
+  {
+    "occupation_id": 11,
+    "occupation_name": "Trader"
+  },
+  {
+    "occupation_id": 12,
+    "occupation_name": "Unemployed"
+  },
+  {
+    "occupation_id": 13,
+    "occupation_name": "Unknown"
+  }
+]

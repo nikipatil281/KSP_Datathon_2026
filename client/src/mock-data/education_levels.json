@@ -1,0 +1,22 @@
+[
+  {
+    "education_id": 1,
+    "education_level": "Graduate"
+  },
+  {
+    "education_id": 2,
+    "education_level": "Illiterate"
+  },
+  {
+    "education_id": 3,
+    "education_level": "Post-Graduate"
+  },
+  {
+    "education_id": 4,
+    "education_level": "Primary"
+  },
+  {
+    "education_id": 5,
+    "education_level": "Secondary"
+  }
+]

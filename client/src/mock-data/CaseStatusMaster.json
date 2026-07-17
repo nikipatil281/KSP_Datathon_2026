@@ -1,0 +1,26 @@
+[
+  {
+    "CaseStatusID": 1,
+    "CaseStatusName": "Registered"
+  },
+  {
+    "CaseStatusID": 2,
+    "CaseStatusName": "Under Investigation"
+  },
+  {
+    "CaseStatusID": 3,
+    "CaseStatusName": "Charge Sheeted"
+  },
+  {
+    "CaseStatusID": 4,
+    "CaseStatusName": "Closed"
+  },
+  {
+    "CaseStatusID": 5,
+    "CaseStatusName": "Undetected"
+  },
+  {
+    "CaseStatusID": 6,
+    "CaseStatusName": "False Case"
+  }
+]

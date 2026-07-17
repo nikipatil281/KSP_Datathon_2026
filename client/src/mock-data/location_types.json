@@ -1,0 +1,26 @@
+[
+  {
+    "location_type_id": 1,
+    "location_type": "Commercial"
+  },
+  {
+    "location_type_id": 2,
+    "location_type": "Market"
+  },
+  {
+    "location_type_id": 3,
+    "location_type": "Park"
+  },
+  {
+    "location_type_id": 4,
+    "location_type": "Public Transport"
+  },
+  {
+    "location_type_id": 5,
+    "location_type": "Residence"
+  },
+  {
+    "location_type_id": 6,
+    "location_type": "Road"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "relationship_type_id": 1,
+    "relationship_type": "Co-accused"
+  },
+  {
+    "relationship_type_id": 2,
+    "relationship_type": "Family"
+  },
+  {
+    "relationship_type_id": 3,
+    "relationship_type": "Gang member"
+  },
+  {
+    "relationship_type_id": 4,
+    "relationship_type": "Known associate"
+  }
+]

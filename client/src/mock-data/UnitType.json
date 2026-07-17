@@ -1,0 +1,30 @@
+[
+  {
+    "UnitTypeID": 1,
+    "UnitTypeName": "State HQ",
+    "CityDistState": "State",
+    "Hierarchy": 1,
+    "Active": 1
+  },
+  {
+    "UnitTypeID": 2,
+    "UnitTypeName": "District Police Office",
+    "CityDistState": "District",
+    "Hierarchy": 2,
+    "Active": 1
+  },
+  {
+    "UnitTypeID": 3,
+    "UnitTypeName": "Circle Office",
+    "CityDistState": "District",
+    "Hierarchy": 3,
+    "Active": 1
+  },
+  {
+    "UnitTypeID": 4,
+    "UnitTypeName": "Police Station",
+    "CityDistState": "City",
+    "Hierarchy": 4,
+    "Active": 1
+  }
+]

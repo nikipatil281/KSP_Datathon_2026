@@ -1,0 +1,15 @@
+ActCode,SectionCode,SectionDescription,Active
+IPC,302,Punishment for murder,1
+IPC,323,Voluntarily causing hurt,1
+IPC,363,Kidnapping,1
+POCSO,8,Punishment for sexual assault,1
+IPC,379,Theft,1
+IPC,392,Robbery,1
+IPC,457,Lurking house trespass or house-breaking by night,1
+IPC,427,Mischief causing damage,1
+IPC,420,Cheating and dishonestly inducing delivery of property,1
+IT,66D,Cheating by personation using computer resource,1
+NDPS,20,Cannabis possession,1
+NDPS,21,Manufactured drugs and preparations,1
+IPC,143,Member of unlawful assembly,1
+IPC,147,Rioting,1

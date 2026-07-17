@@ -1,0 +1,10 @@
+[
+  {
+    "GravityOffenceID": 1,
+    "LookupValue": "Non-Heinous"
+  },
+  {
+    "GravityOffenceID": 2,
+    "LookupValue": "Heinous"
+  }
+]

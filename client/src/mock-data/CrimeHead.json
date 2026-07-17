@@ -1,0 +1,27 @@
+[
+  {
+    "CrimeHeadID": 1,
+    "CrimeGroupName": "Crimes Against Body",
+    "Active": 1
+  },
+  {
+    "CrimeHeadID": 2,
+    "CrimeGroupName": "Crimes Against Property",
+    "Active": 1
+  },
+  {
+    "CrimeHeadID": 3,
+    "CrimeGroupName": "Economic Offences",
+    "Active": 1
+  },
+  {
+    "CrimeHeadID": 4,
+    "CrimeGroupName": "Narcotics Offences",
+    "Active": 1
+  },
+  {
+    "CrimeHeadID": 5,
+    "CrimeGroupName": "Public Order Offences",
+    "Active": 1
+  }
+]

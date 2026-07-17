@@ -1,0 +1,18 @@
+[
+  {
+    "weapon_id": 1,
+    "weapon_name": "Blunt Object"
+  },
+  {
+    "weapon_id": 2,
+    "weapon_name": "Firearm"
+  },
+  {
+    "weapon_id": 3,
+    "weapon_name": "Knife"
+  },
+  {
+    "weapon_id": 4,
+    "weapon_name": "None"
+  }
+]

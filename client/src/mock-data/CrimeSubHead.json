@@ -1,0 +1,92 @@
+[
+  {
+    "CrimeSubHeadID": 1,
+    "CrimeHeadID": 1,
+    "CrimeHeadName": "Murder",
+    "SeqID": 1
+  },
+  {
+    "CrimeSubHeadID": 2,
+    "CrimeHeadID": 1,
+    "CrimeHeadName": "Assault",
+    "SeqID": 2
+  },
+  {
+    "CrimeSubHeadID": 3,
+    "CrimeHeadID": 1,
+    "CrimeHeadName": "Kidnapping",
+    "SeqID": 3
+  },
+  {
+    "CrimeSubHeadID": 4,
+    "CrimeHeadID": 1,
+    "CrimeHeadName": "Sexual Assault",
+    "SeqID": 4
+  },
+  {
+    "CrimeSubHeadID": 5,
+    "CrimeHeadID": 2,
+    "CrimeHeadName": "Theft",
+    "SeqID": 1
+  },
+  {
+    "CrimeSubHeadID": 6,
+    "CrimeHeadID": 2,
+    "CrimeHeadName": "Robbery",
+    "SeqID": 2
+  },
+  {
+    "CrimeSubHeadID": 7,
+    "CrimeHeadID": 2,
+    "CrimeHeadName": "Burglary",
+    "SeqID": 3
+  },
+  {
+    "CrimeSubHeadID": 8,
+    "CrimeHeadID": 2,
+    "CrimeHeadName": "Vandalism",
+    "SeqID": 4
+  },
+  {
+    "CrimeSubHeadID": 9,
+    "CrimeHeadID": 3,
+    "CrimeHeadName": "Fraud",
+    "SeqID": 1
+  },
+  {
+    "CrimeSubHeadID": 10,
+    "CrimeHeadID": 3,
+    "CrimeHeadName": "Cyber Fraud",
+    "SeqID": 2
+  },
+  {
+    "CrimeSubHeadID": 11,
+    "CrimeHeadID": 3,
+    "CrimeHeadName": "Cheque Fraud",
+    "SeqID": 3
+  },
+  {
+    "CrimeSubHeadID": 12,
+    "CrimeHeadID": 4,
+    "CrimeHeadName": "Drug Possession",
+    "SeqID": 1
+  },
+  {
+    "CrimeSubHeadID": 13,
+    "CrimeHeadID": 4,
+    "CrimeHeadName": "Drug Trafficking",
+    "SeqID": 2
+  },
+  {
+    "CrimeSubHeadID": 14,
+    "CrimeHeadID": 5,
+    "CrimeHeadName": "Unlawful Assembly",
+    "SeqID": 1
+  },
+  {
+    "CrimeSubHeadID": 15,
+    "CrimeHeadID": 5,
+    "CrimeHeadName": "Rioting",
+    "SeqID": 2
+  }
+]

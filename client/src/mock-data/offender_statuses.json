@@ -1,0 +1,26 @@
+[
+  {
+    "offender_status_id": 1,
+    "status_name": "Absconding"
+  },
+  {
+    "offender_status_id": 2,
+    "status_name": "Acquitted"
+  },
+  {
+    "offender_status_id": 3,
+    "status_name": "Arrested"
+  },
+  {
+    "offender_status_id": 4,
+    "status_name": "Bail"
+  },
+  {
+    "offender_status_id": 5,
+    "status_name": "Convicted"
+  },
+  {
+    "offender_status_id": 6,
+    "status_name": "Juvenile"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "case_status_id": 1,
+    "status_name": "Closed - Acquitted"
+  },
+  {
+    "case_status_id": 2,
+    "status_name": "Closed - Convicted"
+  },
+  {
+    "case_status_id": 3,
+    "status_name": "Cold Case"
+  },
+  {
+    "case_status_id": 4,
+    "status_name": "Open"
+  },
+  {
+    "case_status_id": 5,
+    "status_name": "Pending Trial"
+  },
+  {
+    "case_status_id": 6,
+    "status_name": "Under Investigation"
+  }
+]

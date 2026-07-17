@@ -1,0 +1,26 @@
+[
+  {
+    "DesignationID": 1,
+    "DesignationName": "Station House Officer",
+    "Active": 1,
+    "SortOrder": 1
+  },
+  {
+    "DesignationID": 2,
+    "DesignationName": "Investigating Officer",
+    "Active": 1,
+    "SortOrder": 2
+  },
+  {
+    "DesignationID": 3,
+    "DesignationName": "Crime Writer",
+    "Active": 1,
+    "SortOrder": 3
+  },
+  {
+    "DesignationID": 4,
+    "DesignationName": "Beat Officer",
+    "Active": 1,
+    "SortOrder": 4
+  }
+]

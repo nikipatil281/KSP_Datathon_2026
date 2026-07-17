@@ -1,0 +1,74 @@
+[
+  {
+    "DistrictID": 1,
+    "DistrictName": "Bengaluru Urban",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 2,
+    "DistrictName": "Bengaluru Rural",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 3,
+    "DistrictName": "Mysuru",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 4,
+    "DistrictName": "Tumakuru",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 5,
+    "DistrictName": "Dakshina Kannada",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 6,
+    "DistrictName": "Belagavi",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 7,
+    "DistrictName": "Kalaburagi",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 8,
+    "DistrictName": "Dharwad",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 9,
+    "DistrictName": "Ballari",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 10,
+    "DistrictName": "Hassan",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 11,
+    "DistrictName": "Shivamogga",
+    "StateID": 1,
+    "Active": 1
+  },
+  {
+    "DistrictID": 12,
+    "DistrictName": "Udupi",
+    "StateID": 1,
+    "Active": 1
+  }
+]

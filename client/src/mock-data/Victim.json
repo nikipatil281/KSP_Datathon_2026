@@ -1,0 +1,9162 @@
+[
+  {
+    "VictimMasterID": 1,
+    "CaseMasterID": 1,
+    "VictimName": "VIC-A",
+    "AgeYear": 73,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 2,
+    "CaseMasterID": 2,
+    "VictimName": "VIC-B",
+    "AgeYear": 29,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 3,
+    "CaseMasterID": 3,
+    "VictimName": "VIC-C",
+    "AgeYear": 62,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 4,
+    "CaseMasterID": 3,
+    "VictimName": "VIC-D",
+    "AgeYear": 68,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 5,
+    "CaseMasterID": 4,
+    "VictimName": "VIC-E",
+    "AgeYear": 70,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 6,
+    "CaseMasterID": 5,
+    "VictimName": "VIC-F",
+    "AgeYear": 30,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 7,
+    "CaseMasterID": 6,
+    "VictimName": "VIC-G",
+    "AgeYear": 81,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 8,
+    "CaseMasterID": 7,
+    "VictimName": "VIC-H",
+    "AgeYear": 81,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 9,
+    "CaseMasterID": 8,
+    "VictimName": "VIC-I",
+    "AgeYear": 67,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 10,
+    "CaseMasterID": 9,
+    "VictimName": "VIC-J",
+    "AgeYear": 56,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 11,
+    "CaseMasterID": 9,
+    "VictimName": "VIC-K",
+    "AgeYear": 6,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 12,
+    "CaseMasterID": 10,
+    "VictimName": "VIC-L",
+    "AgeYear": 82,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 13,
+    "CaseMasterID": 10,
+    "VictimName": "VIC-M",
+    "AgeYear": 37,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 14,
+    "CaseMasterID": 11,
+    "VictimName": "VIC-N",
+    "AgeYear": 45,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 15,
+    "CaseMasterID": 11,
+    "VictimName": "VIC-O",
+    "AgeYear": 26,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 16,
+    "CaseMasterID": 12,
+    "VictimName": "VIC-P",
+    "AgeYear": 76,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 17,
+    "CaseMasterID": 13,
+    "VictimName": "VIC-Q",
+    "AgeYear": 32,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 18,
+    "CaseMasterID": 14,
+    "VictimName": "VIC-R",
+    "AgeYear": 64,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 19,
+    "CaseMasterID": 15,
+    "VictimName": "VIC-S",
+    "AgeYear": 81,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 20,
+    "CaseMasterID": 16,
+    "VictimName": "VIC-T",
+    "AgeYear": 7,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 21,
+    "CaseMasterID": 17,
+    "VictimName": "VIC-U",
+    "AgeYear": 54,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 22,
+    "CaseMasterID": 17,
+    "VictimName": "VIC-V",
+    "AgeYear": 82,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 23,
+    "CaseMasterID": 17,
+    "VictimName": "VIC-W",
+    "AgeYear": 18,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 24,
+    "CaseMasterID": 18,
+    "VictimName": "VIC-X",
+    "AgeYear": 73,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 25,
+    "CaseMasterID": 19,
+    "VictimName": "VIC-Y",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 26,
+    "CaseMasterID": 20,
+    "VictimName": "VIC-Z",
+    "AgeYear": 69,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 27,
+    "CaseMasterID": 21,
+    "VictimName": "VIC-AA",
+    "AgeYear": 66,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 28,
+    "CaseMasterID": 22,
+    "VictimName": "VIC-AB",
+    "AgeYear": 66,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 29,
+    "CaseMasterID": 23,
+    "VictimName": "VIC-AC",
+    "AgeYear": 79,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 30,
+    "CaseMasterID": 24,
+    "VictimName": "VIC-AD",
+    "AgeYear": 71,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 31,
+    "CaseMasterID": 25,
+    "VictimName": "VIC-AE",
+    "AgeYear": 74,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 32,
+    "CaseMasterID": 26,
+    "VictimName": "VIC-AF",
+    "AgeYear": 28,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 33,
+    "CaseMasterID": 27,
+    "VictimName": "VIC-AG",
+    "AgeYear": 81,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 34,
+    "CaseMasterID": 28,
+    "VictimName": "VIC-AH",
+    "AgeYear": 26,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 35,
+    "CaseMasterID": 28,
+    "VictimName": "VIC-AI",
+    "AgeYear": 43,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 36,
+    "CaseMasterID": 29,
+    "VictimName": "VIC-AJ",
+    "AgeYear": 37,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 37,
+    "CaseMasterID": 29,
+    "VictimName": "VIC-AK",
+    "AgeYear": 78,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 38,
+    "CaseMasterID": 30,
+    "VictimName": "VIC-AL",
+    "AgeYear": 37,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 39,
+    "CaseMasterID": 31,
+    "VictimName": "VIC-AM",
+    "AgeYear": 19,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 40,
+    "CaseMasterID": 31,
+    "VictimName": "VIC-AN",
+    "AgeYear": 34,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 41,
+    "CaseMasterID": 31,
+    "VictimName": "VIC-AO",
+    "AgeYear": 28,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 42,
+    "CaseMasterID": 32,
+    "VictimName": "VIC-AP",
+    "AgeYear": 51,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 43,
+    "CaseMasterID": 33,
+    "VictimName": "VIC-AQ",
+    "AgeYear": 20,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 44,
+    "CaseMasterID": 34,
+    "VictimName": "VIC-AR",
+    "AgeYear": 28,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 45,
+    "CaseMasterID": 35,
+    "VictimName": "VIC-AS",
+    "AgeYear": 26,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 46,
+    "CaseMasterID": 36,
+    "VictimName": "VIC-AT",
+    "AgeYear": 73,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 47,
+    "CaseMasterID": 36,
+    "VictimName": "VIC-AU",
+    "AgeYear": 78,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 48,
+    "CaseMasterID": 37,
+    "VictimName": "VIC-AV",
+    "AgeYear": 31,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 49,
+    "CaseMasterID": 37,
+    "VictimName": "VIC-AW",
+    "AgeYear": 53,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 50,
+    "CaseMasterID": 38,
+    "VictimName": "VIC-AX",
+    "AgeYear": 37,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 51,
+    "CaseMasterID": 39,
+    "VictimName": "VIC-AY",
+    "AgeYear": 68,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 52,
+    "CaseMasterID": 40,
+    "VictimName": "VIC-AZ",
+    "AgeYear": 38,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 53,
+    "CaseMasterID": 41,
+    "VictimName": "VIC-BA",
+    "AgeYear": 26,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 54,
+    "CaseMasterID": 42,
+    "VictimName": "VIC-BB",
+    "AgeYear": 76,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 55,
+    "CaseMasterID": 43,
+    "VictimName": "VIC-BC",
+    "AgeYear": 68,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 56,
+    "CaseMasterID": 44,
+    "VictimName": "VIC-BD",
+    "AgeYear": 77,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 57,
+    "CaseMasterID": 45,
+    "VictimName": "VIC-BE",
+    "AgeYear": 63,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 58,
+    "CaseMasterID": 46,
+    "VictimName": "VIC-BF",
+    "AgeYear": 73,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 59,
+    "CaseMasterID": 46,
+    "VictimName": "VIC-BG",
+    "AgeYear": 72,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 60,
+    "CaseMasterID": 47,
+    "VictimName": "VIC-BH",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 61,
+    "CaseMasterID": 47,
+    "VictimName": "VIC-BI",
+    "AgeYear": 52,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 62,
+    "CaseMasterID": 48,
+    "VictimName": "VIC-BJ",
+    "AgeYear": 33,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 63,
+    "CaseMasterID": 49,
+    "VictimName": "VIC-BK",
+    "AgeYear": 12,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 64,
+    "CaseMasterID": 50,
+    "VictimName": "VIC-BL",
+    "AgeYear": 46,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 65,
+    "CaseMasterID": 51,
+    "VictimName": "VIC-BM",
+    "AgeYear": 35,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 66,
+    "CaseMasterID": 52,
+    "VictimName": "VIC-BN",
+    "AgeYear": 57,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 67,
+    "CaseMasterID": 52,
+    "VictimName": "VIC-BO",
+    "AgeYear": 74,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 68,
+    "CaseMasterID": 53,
+    "VictimName": "VIC-BP",
+    "AgeYear": 8,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 69,
+    "CaseMasterID": 54,
+    "VictimName": "VIC-BQ",
+    "AgeYear": 42,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 70,
+    "CaseMasterID": 55,
+    "VictimName": "VIC-BR",
+    "AgeYear": 78,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 71,
+    "CaseMasterID": 56,
+    "VictimName": "VIC-BS",
+    "AgeYear": 25,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 72,
+    "CaseMasterID": 57,
+    "VictimName": "VIC-BT",
+    "AgeYear": 57,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 73,
+    "CaseMasterID": 58,
+    "VictimName": "VIC-BU",
+    "AgeYear": 77,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 74,
+    "CaseMasterID": 58,
+    "VictimName": "VIC-BV",
+    "AgeYear": 11,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 75,
+    "CaseMasterID": 59,
+    "VictimName": "VIC-BW",
+    "AgeYear": 68,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 76,
+    "CaseMasterID": 60,
+    "VictimName": "VIC-BX",
+    "AgeYear": 27,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 77,
+    "CaseMasterID": 61,
+    "VictimName": "VIC-BY",
+    "AgeYear": 51,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 78,
+    "CaseMasterID": 62,
+    "VictimName": "VIC-BZ",
+    "AgeYear": 76,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 79,
+    "CaseMasterID": 63,
+    "VictimName": "VIC-CA",
+    "AgeYear": 42,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 80,
+    "CaseMasterID": 63,
+    "VictimName": "VIC-CB",
+    "AgeYear": 50,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 81,
+    "CaseMasterID": 63,
+    "VictimName": "VIC-CC",
+    "AgeYear": 12,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 82,
+    "CaseMasterID": 64,
+    "VictimName": "VIC-CD",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 83,
+    "CaseMasterID": 65,
+    "VictimName": "VIC-CE",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 84,
+    "CaseMasterID": 65,
+    "VictimName": "VIC-CF",
+    "AgeYear": 68,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 85,
+    "CaseMasterID": 66,
+    "VictimName": "VIC-CG",
+    "AgeYear": 53,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 86,
+    "CaseMasterID": 67,
+    "VictimName": "VIC-CH",
+    "AgeYear": 75,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 87,
+    "CaseMasterID": 67,
+    "VictimName": "VIC-CI",
+    "AgeYear": 28,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 88,
+    "CaseMasterID": 67,
+    "VictimName": "VIC-CJ",
+    "AgeYear": 57,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 89,
+    "CaseMasterID": 68,
+    "VictimName": "VIC-CK",
+    "AgeYear": 27,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 90,
+    "CaseMasterID": 69,
+    "VictimName": "VIC-CL",
+    "AgeYear": 26,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 91,
+    "CaseMasterID": 70,
+    "VictimName": "VIC-CM",
+    "AgeYear": 73,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 92,
+    "CaseMasterID": 71,
+    "VictimName": "VIC-CN",
+    "AgeYear": 62,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 93,
+    "CaseMasterID": 72,
+    "VictimName": "VIC-CO",
+    "AgeYear": 28,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 94,
+    "CaseMasterID": 73,
+    "VictimName": "VIC-CP",
+    "AgeYear": 63,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 95,
+    "CaseMasterID": 74,
+    "VictimName": "VIC-CQ",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 96,
+    "CaseMasterID": 75,
+    "VictimName": "VIC-CR",
+    "AgeYear": 25,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 97,
+    "CaseMasterID": 76,
+    "VictimName": "VIC-CS",
+    "AgeYear": 41,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 98,
+    "CaseMasterID": 76,
+    "VictimName": "VIC-CT",
+    "AgeYear": 49,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 99,
+    "CaseMasterID": 77,
+    "VictimName": "VIC-CU",
+    "AgeYear": 23,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 100,
+    "CaseMasterID": 78,
+    "VictimName": "VIC-CV",
+    "AgeYear": 81,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 101,
+    "CaseMasterID": 79,
+    "VictimName": "VIC-CW",
+    "AgeYear": 24,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 102,
+    "CaseMasterID": 80,
+    "VictimName": "VIC-CX",
+    "AgeYear": 77,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 103,
+    "CaseMasterID": 81,
+    "VictimName": "VIC-CY",
+    "AgeYear": 33,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 104,
+    "CaseMasterID": 82,
+    "VictimName": "VIC-CZ",
+    "AgeYear": 21,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 105,
+    "CaseMasterID": 83,
+    "VictimName": "VIC-DA",
+    "AgeYear": 21,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 106,
+    "CaseMasterID": 84,
+    "VictimName": "VIC-DB",
+    "AgeYear": 16,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 107,
+    "CaseMasterID": 84,
+    "VictimName": "VIC-DC",
+    "AgeYear": 7,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 108,
+    "CaseMasterID": 85,
+    "VictimName": "VIC-DD",
+    "AgeYear": 50,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 109,
+    "CaseMasterID": 85,
+    "VictimName": "VIC-DE",
+    "AgeYear": 9,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 110,
+    "CaseMasterID": 86,
+    "VictimName": "VIC-DF",
+    "AgeYear": 18,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 111,
+    "CaseMasterID": 86,
+    "VictimName": "VIC-DG",
+    "AgeYear": 60,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 112,
+    "CaseMasterID": 87,
+    "VictimName": "VIC-DH",
+    "AgeYear": 25,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 113,
+    "CaseMasterID": 88,
+    "VictimName": "VIC-DI",
+    "AgeYear": 24,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 114,
+    "CaseMasterID": 88,
+    "VictimName": "VIC-DJ",
+    "AgeYear": 43,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 115,
+    "CaseMasterID": 89,
+    "VictimName": "VIC-DK",
+    "AgeYear": 55,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 116,
+    "CaseMasterID": 90,
+    "VictimName": "VIC-DL",
+    "AgeYear": 36,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 117,
+    "CaseMasterID": 91,
+    "VictimName": "VIC-DM",
+    "AgeYear": 6,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 118,
+    "CaseMasterID": 92,
+    "VictimName": "VIC-DN",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 119,
+    "CaseMasterID": 93,
+    "VictimName": "VIC-DO",
+    "AgeYear": 29,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 120,
+    "CaseMasterID": 94,
+    "VictimName": "VIC-DP",
+    "AgeYear": 36,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 121,
+    "CaseMasterID": 95,
+    "VictimName": "VIC-DQ",
+    "AgeYear": 39,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 122,
+    "CaseMasterID": 96,
+    "VictimName": "VIC-DR",
+    "AgeYear": 23,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 123,
+    "CaseMasterID": 97,
+    "VictimName": "VIC-DS",
+    "AgeYear": 81,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 124,
+    "CaseMasterID": 98,
+    "VictimName": "VIC-DT",
+    "AgeYear": 12,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 125,
+    "CaseMasterID": 99,
+    "VictimName": "VIC-DU",
+    "AgeYear": 62,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 126,
+    "CaseMasterID": 100,
+    "VictimName": "VIC-DV",
+    "AgeYear": 68,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 127,
+    "CaseMasterID": 101,
+    "VictimName": "VIC-DW",
+    "AgeYear": 47,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 128,
+    "CaseMasterID": 101,
+    "VictimName": "VIC-DX",
+    "AgeYear": 80,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 129,
+    "CaseMasterID": 102,
+    "VictimName": "VIC-DY",
+    "AgeYear": 47,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 130,
+    "CaseMasterID": 103,
+    "VictimName": "VIC-DZ",
+    "AgeYear": 66,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 131,
+    "CaseMasterID": 104,
+    "VictimName": "VIC-EA",
+    "AgeYear": 63,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 132,
+    "CaseMasterID": 105,
+    "VictimName": "VIC-EB",
+    "AgeYear": 54,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 133,
+    "CaseMasterID": 106,
+    "VictimName": "VIC-EC",
+    "AgeYear": 13,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 134,
+    "CaseMasterID": 107,
+    "VictimName": "VIC-ED",
+    "AgeYear": 55,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 135,
+    "CaseMasterID": 107,
+    "VictimName": "VIC-EE",
+    "AgeYear": 49,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 136,
+    "CaseMasterID": 107,
+    "VictimName": "VIC-EF",
+    "AgeYear": 73,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 137,
+    "CaseMasterID": 108,
+    "VictimName": "VIC-EG",
+    "AgeYear": 78,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 138,
+    "CaseMasterID": 108,
+    "VictimName": "VIC-EH",
+    "AgeYear": 22,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 139,
+    "CaseMasterID": 109,
+    "VictimName": "VIC-EI",
+    "AgeYear": 59,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 140,
+    "CaseMasterID": 109,
+    "VictimName": "VIC-EJ",
+    "AgeYear": 28,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 141,
+    "CaseMasterID": 110,
+    "VictimName": "VIC-EK",
+    "AgeYear": 12,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 142,
+    "CaseMasterID": 111,
+    "VictimName": "VIC-EL",
+    "AgeYear": 30,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 143,
+    "CaseMasterID": 112,
+    "VictimName": "VIC-EM",
+    "AgeYear": 37,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 144,
+    "CaseMasterID": 112,
+    "VictimName": "VIC-EN",
+    "AgeYear": 31,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 145,
+    "CaseMasterID": 113,
+    "VictimName": "VIC-EO",
+    "AgeYear": 30,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 146,
+    "CaseMasterID": 114,
+    "VictimName": "VIC-EP",
+    "AgeYear": 11,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 147,
+    "CaseMasterID": 115,
+    "VictimName": "VIC-EQ",
+    "AgeYear": 49,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 148,
+    "CaseMasterID": 116,
+    "VictimName": "VIC-ER",
+    "AgeYear": 71,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 149,
+    "CaseMasterID": 117,
+    "VictimName": "VIC-ES",
+    "AgeYear": 82,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 150,
+    "CaseMasterID": 118,
+    "VictimName": "VIC-ET",
+    "AgeYear": 13,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 151,
+    "CaseMasterID": 118,
+    "VictimName": "VIC-EU",
+    "AgeYear": 71,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 152,
+    "CaseMasterID": 119,
+    "VictimName": "VIC-EV",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 153,
+    "CaseMasterID": 119,
+    "VictimName": "VIC-EW",
+    "AgeYear": 66,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 154,
+    "CaseMasterID": 119,
+    "VictimName": "VIC-EX",
+    "AgeYear": 28,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 155,
+    "CaseMasterID": 120,
+    "VictimName": "VIC-EY",
+    "AgeYear": 80,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 156,
+    "CaseMasterID": 120,
+    "VictimName": "VIC-EZ",
+    "AgeYear": 79,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 157,
+    "CaseMasterID": 121,
+    "VictimName": "VIC-FA",
+    "AgeYear": 46,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 158,
+    "CaseMasterID": 122,
+    "VictimName": "VIC-FB",
+    "AgeYear": 73,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 159,
+    "CaseMasterID": 123,
+    "VictimName": "VIC-FC",
+    "AgeYear": 77,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 160,
+    "CaseMasterID": 124,
+    "VictimName": "VIC-FD",
+    "AgeYear": 10,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 161,
+    "CaseMasterID": 125,
+    "VictimName": "VIC-FE",
+    "AgeYear": 63,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 162,
+    "CaseMasterID": 126,
+    "VictimName": "VIC-FF",
+    "AgeYear": 61,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 163,
+    "CaseMasterID": 126,
+    "VictimName": "VIC-FG",
+    "AgeYear": 74,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 164,
+    "CaseMasterID": 126,
+    "VictimName": "VIC-FH",
+    "AgeYear": 15,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 165,
+    "CaseMasterID": 127,
+    "VictimName": "VIC-FI",
+    "AgeYear": 72,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 166,
+    "CaseMasterID": 127,
+    "VictimName": "VIC-FJ",
+    "AgeYear": 64,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 167,
+    "CaseMasterID": 128,
+    "VictimName": "VIC-FK",
+    "AgeYear": 72,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 168,
+    "CaseMasterID": 129,
+    "VictimName": "VIC-FL",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 169,
+    "CaseMasterID": 129,
+    "VictimName": "VIC-FM",
+    "AgeYear": 71,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 170,
+    "CaseMasterID": 130,
+    "VictimName": "VIC-FN",
+    "AgeYear": 28,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 171,
+    "CaseMasterID": 131,
+    "VictimName": "VIC-FO",
+    "AgeYear": 7,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 172,
+    "CaseMasterID": 132,
+    "VictimName": "VIC-FP",
+    "AgeYear": 46,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 173,
+    "CaseMasterID": 133,
+    "VictimName": "VIC-FQ",
+    "AgeYear": 29,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 174,
+    "CaseMasterID": 134,
+    "VictimName": "VIC-FR",
+    "AgeYear": 47,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 175,
+    "CaseMasterID": 135,
+    "VictimName": "VIC-FS",
+    "AgeYear": 66,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 176,
+    "CaseMasterID": 135,
+    "VictimName": "VIC-FT",
+    "AgeYear": 78,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 177,
+    "CaseMasterID": 136,
+    "VictimName": "VIC-FU",
+    "AgeYear": 8,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 178,
+    "CaseMasterID": 137,
+    "VictimName": "VIC-FV",
+    "AgeYear": 38,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 179,
+    "CaseMasterID": 137,
+    "VictimName": "VIC-FW",
+    "AgeYear": 73,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 180,
+    "CaseMasterID": 138,
+    "VictimName": "VIC-FX",
+    "AgeYear": 36,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 181,
+    "CaseMasterID": 139,
+    "VictimName": "VIC-FY",
+    "AgeYear": 69,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 182,
+    "CaseMasterID": 140,
+    "VictimName": "VIC-FZ",
+    "AgeYear": 66,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 183,
+    "CaseMasterID": 141,
+    "VictimName": "VIC-GA",
+    "AgeYear": 79,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 184,
+    "CaseMasterID": 142,
+    "VictimName": "VIC-GB",
+    "AgeYear": 21,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 185,
+    "CaseMasterID": 143,
+    "VictimName": "VIC-GC",
+    "AgeYear": 50,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 186,
+    "CaseMasterID": 144,
+    "VictimName": "VIC-GD",
+    "AgeYear": 63,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 187,
+    "CaseMasterID": 144,
+    "VictimName": "VIC-GE",
+    "AgeYear": 16,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 188,
+    "CaseMasterID": 145,
+    "VictimName": "VIC-GF",
+    "AgeYear": 79,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 189,
+    "CaseMasterID": 146,
+    "VictimName": "VIC-GG",
+    "AgeYear": 52,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 190,
+    "CaseMasterID": 147,
+    "VictimName": "VIC-GH",
+    "AgeYear": 10,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 191,
+    "CaseMasterID": 147,
+    "VictimName": "VIC-GI",
+    "AgeYear": 81,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 192,
+    "CaseMasterID": 148,
+    "VictimName": "VIC-GJ",
+    "AgeYear": 59,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 193,
+    "CaseMasterID": 148,
+    "VictimName": "VIC-GK",
+    "AgeYear": 12,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 194,
+    "CaseMasterID": 149,
+    "VictimName": "VIC-GL",
+    "AgeYear": 59,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 195,
+    "CaseMasterID": 150,
+    "VictimName": "VIC-GM",
+    "AgeYear": 14,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 196,
+    "CaseMasterID": 151,
+    "VictimName": "VIC-GN",
+    "AgeYear": 74,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 197,
+    "CaseMasterID": 152,
+    "VictimName": "VIC-GO",
+    "AgeYear": 39,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 198,
+    "CaseMasterID": 153,
+    "VictimName": "VIC-GP",
+    "AgeYear": 31,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 199,
+    "CaseMasterID": 154,
+    "VictimName": "VIC-GQ",
+    "AgeYear": 21,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 200,
+    "CaseMasterID": 155,
+    "VictimName": "VIC-GR",
+    "AgeYear": 57,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 201,
+    "CaseMasterID": 155,
+    "VictimName": "VIC-GS",
+    "AgeYear": 20,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 202,
+    "CaseMasterID": 156,
+    "VictimName": "VIC-GT",
+    "AgeYear": 14,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 203,
+    "CaseMasterID": 157,
+    "VictimName": "VIC-GU",
+    "AgeYear": 49,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 204,
+    "CaseMasterID": 158,
+    "VictimName": "VIC-GV",
+    "AgeYear": 45,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 205,
+    "CaseMasterID": 159,
+    "VictimName": "VIC-GW",
+    "AgeYear": 17,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 206,
+    "CaseMasterID": 160,
+    "VictimName": "VIC-GX",
+    "AgeYear": 8,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 207,
+    "CaseMasterID": 161,
+    "VictimName": "VIC-GY",
+    "AgeYear": 45,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 208,
+    "CaseMasterID": 162,
+    "VictimName": "VIC-GZ",
+    "AgeYear": 13,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 209,
+    "CaseMasterID": 163,
+    "VictimName": "VIC-HA",
+    "AgeYear": 15,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 210,
+    "CaseMasterID": 164,
+    "VictimName": "VIC-HB",
+    "AgeYear": 6,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 211,
+    "CaseMasterID": 165,
+    "VictimName": "VIC-HC",
+    "AgeYear": 32,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 212,
+    "CaseMasterID": 165,
+    "VictimName": "VIC-HD",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 213,
+    "CaseMasterID": 165,
+    "VictimName": "VIC-HE",
+    "AgeYear": 64,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 214,
+    "CaseMasterID": 166,
+    "VictimName": "VIC-HF",
+    "AgeYear": 65,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 215,
+    "CaseMasterID": 167,
+    "VictimName": "VIC-HG",
+    "AgeYear": 56,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 216,
+    "CaseMasterID": 167,
+    "VictimName": "VIC-HH",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 217,
+    "CaseMasterID": 168,
+    "VictimName": "VIC-HI",
+    "AgeYear": 49,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 218,
+    "CaseMasterID": 169,
+    "VictimName": "VIC-HJ",
+    "AgeYear": 14,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 219,
+    "CaseMasterID": 169,
+    "VictimName": "VIC-HK",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 220,
+    "CaseMasterID": 170,
+    "VictimName": "VIC-HL",
+    "AgeYear": 52,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 221,
+    "CaseMasterID": 170,
+    "VictimName": "VIC-HM",
+    "AgeYear": 26,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 222,
+    "CaseMasterID": 171,
+    "VictimName": "VIC-HN",
+    "AgeYear": 45,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 223,
+    "CaseMasterID": 171,
+    "VictimName": "VIC-HO",
+    "AgeYear": 18,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 224,
+    "CaseMasterID": 172,
+    "VictimName": "VIC-HP",
+    "AgeYear": 44,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 225,
+    "CaseMasterID": 173,
+    "VictimName": "VIC-HQ",
+    "AgeYear": 40,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 226,
+    "CaseMasterID": 174,
+    "VictimName": "VIC-HR",
+    "AgeYear": 69,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 227,
+    "CaseMasterID": 175,
+    "VictimName": "VIC-HS",
+    "AgeYear": 31,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 228,
+    "CaseMasterID": 175,
+    "VictimName": "VIC-HT",
+    "AgeYear": 51,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 229,
+    "CaseMasterID": 175,
+    "VictimName": "VIC-HU",
+    "AgeYear": 56,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 230,
+    "CaseMasterID": 176,
+    "VictimName": "VIC-HV",
+    "AgeYear": 22,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 231,
+    "CaseMasterID": 177,
+    "VictimName": "VIC-HW",
+    "AgeYear": 17,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 232,
+    "CaseMasterID": 178,
+    "VictimName": "VIC-HX",
+    "AgeYear": 59,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 233,
+    "CaseMasterID": 179,
+    "VictimName": "VIC-HY",
+    "AgeYear": 53,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 234,
+    "CaseMasterID": 180,
+    "VictimName": "VIC-HZ",
+    "AgeYear": 41,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 235,
+    "CaseMasterID": 181,
+    "VictimName": "VIC-IA",
+    "AgeYear": 47,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 236,
+    "CaseMasterID": 181,
+    "VictimName": "VIC-IB",
+    "AgeYear": 60,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 237,
+    "CaseMasterID": 182,
+    "VictimName": "VIC-IC",
+    "AgeYear": 48,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 238,
+    "CaseMasterID": 183,
+    "VictimName": "VIC-ID",
+    "AgeYear": 70,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 239,
+    "CaseMasterID": 184,
+    "VictimName": "VIC-IE",
+    "AgeYear": 61,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 240,
+    "CaseMasterID": 185,
+    "VictimName": "VIC-IF",
+    "AgeYear": 45,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 241,
+    "CaseMasterID": 186,
+    "VictimName": "VIC-IG",
+    "AgeYear": 70,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 242,
+    "CaseMasterID": 187,
+    "VictimName": "VIC-IH",
+    "AgeYear": 11,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 243,
+    "CaseMasterID": 188,
+    "VictimName": "VIC-II",
+    "AgeYear": 30,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 244,
+    "CaseMasterID": 189,
+    "VictimName": "VIC-IJ",
+    "AgeYear": 70,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 245,
+    "CaseMasterID": 190,
+    "VictimName": "VIC-IK",
+    "AgeYear": 69,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 246,
+    "CaseMasterID": 191,
+    "VictimName": "VIC-IL",
+    "AgeYear": 76,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 247,
+    "CaseMasterID": 192,
+    "VictimName": "VIC-IM",
+    "AgeYear": 73,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 248,
+    "CaseMasterID": 193,
+    "VictimName": "VIC-IN",
+    "AgeYear": 41,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 249,
+    "CaseMasterID": 194,
+    "VictimName": "VIC-IO",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 250,
+    "CaseMasterID": 195,
+    "VictimName": "VIC-IP",
+    "AgeYear": 57,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 251,
+    "CaseMasterID": 195,
+    "VictimName": "VIC-IQ",
+    "AgeYear": 71,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 252,
+    "CaseMasterID": 196,
+    "VictimName": "VIC-IR",
+    "AgeYear": 67,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 253,
+    "CaseMasterID": 197,
+    "VictimName": "VIC-IS",
+    "AgeYear": 49,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 254,
+    "CaseMasterID": 198,
+    "VictimName": "VIC-IT",
+    "AgeYear": 38,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 255,
+    "CaseMasterID": 199,
+    "VictimName": "VIC-IU",
+    "AgeYear": 49,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 256,
+    "CaseMasterID": 200,
+    "VictimName": "VIC-IV",
+    "AgeYear": 57,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 257,
+    "CaseMasterID": 201,
+    "VictimName": "VIC-IW",
+    "AgeYear": 52,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 258,
+    "CaseMasterID": 202,
+    "VictimName": "VIC-IX",
+    "AgeYear": 46,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 259,
+    "CaseMasterID": 203,
+    "VictimName": "VIC-IY",
+    "AgeYear": 26,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 260,
+    "CaseMasterID": 204,
+    "VictimName": "VIC-IZ",
+    "AgeYear": 43,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 261,
+    "CaseMasterID": 205,
+    "VictimName": "VIC-JA",
+    "AgeYear": 23,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 262,
+    "CaseMasterID": 206,
+    "VictimName": "VIC-JB",
+    "AgeYear": 31,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 263,
+    "CaseMasterID": 207,
+    "VictimName": "VIC-JC",
+    "AgeYear": 64,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 264,
+    "CaseMasterID": 208,
+    "VictimName": "VIC-JD",
+    "AgeYear": 52,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 265,
+    "CaseMasterID": 209,
+    "VictimName": "VIC-JE",
+    "AgeYear": 47,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 266,
+    "CaseMasterID": 210,
+    "VictimName": "VIC-JF",
+    "AgeYear": 52,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 267,
+    "CaseMasterID": 211,
+    "VictimName": "VIC-JG",
+    "AgeYear": 51,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 268,
+    "CaseMasterID": 212,
+    "VictimName": "VIC-JH",
+    "AgeYear": 11,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 269,
+    "CaseMasterID": 213,
+    "VictimName": "VIC-JI",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 270,
+    "CaseMasterID": 214,
+    "VictimName": "VIC-JJ",
+    "AgeYear": 23,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 271,
+    "CaseMasterID": 214,
+    "VictimName": "VIC-JK",
+    "AgeYear": 47,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 272,
+    "CaseMasterID": 215,
+    "VictimName": "VIC-JL",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 273,
+    "CaseMasterID": 216,
+    "VictimName": "VIC-JM",
+    "AgeYear": 81,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 274,
+    "CaseMasterID": 216,
+    "VictimName": "VIC-JN",
+    "AgeYear": 44,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 275,
+    "CaseMasterID": 217,
+    "VictimName": "VIC-JO",
+    "AgeYear": 77,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 276,
+    "CaseMasterID": 218,
+    "VictimName": "VIC-JP",
+    "AgeYear": 16,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 277,
+    "CaseMasterID": 218,
+    "VictimName": "VIC-JQ",
+    "AgeYear": 31,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 278,
+    "CaseMasterID": 219,
+    "VictimName": "VIC-JR",
+    "AgeYear": 63,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 279,
+    "CaseMasterID": 220,
+    "VictimName": "VIC-JS",
+    "AgeYear": 25,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 280,
+    "CaseMasterID": 220,
+    "VictimName": "VIC-JT",
+    "AgeYear": 35,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 281,
+    "CaseMasterID": 221,
+    "VictimName": "VIC-JU",
+    "AgeYear": 7,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 282,
+    "CaseMasterID": 221,
+    "VictimName": "VIC-JV",
+    "AgeYear": 26,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 283,
+    "CaseMasterID": 222,
+    "VictimName": "VIC-JW",
+    "AgeYear": 7,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 284,
+    "CaseMasterID": 223,
+    "VictimName": "VIC-JX",
+    "AgeYear": 14,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 285,
+    "CaseMasterID": 224,
+    "VictimName": "VIC-JY",
+    "AgeYear": 23,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 286,
+    "CaseMasterID": 225,
+    "VictimName": "VIC-JZ",
+    "AgeYear": 53,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 287,
+    "CaseMasterID": 225,
+    "VictimName": "VIC-KA",
+    "AgeYear": 36,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 288,
+    "CaseMasterID": 226,
+    "VictimName": "VIC-KB",
+    "AgeYear": 80,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 289,
+    "CaseMasterID": 227,
+    "VictimName": "VIC-KC",
+    "AgeYear": 6,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 290,
+    "CaseMasterID": 228,
+    "VictimName": "VIC-KD",
+    "AgeYear": 81,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 291,
+    "CaseMasterID": 228,
+    "VictimName": "VIC-KE",
+    "AgeYear": 67,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 292,
+    "CaseMasterID": 229,
+    "VictimName": "VIC-KF",
+    "AgeYear": 64,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 293,
+    "CaseMasterID": 229,
+    "VictimName": "VIC-KG",
+    "AgeYear": 61,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 294,
+    "CaseMasterID": 230,
+    "VictimName": "VIC-KH",
+    "AgeYear": 45,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 295,
+    "CaseMasterID": 230,
+    "VictimName": "VIC-KI",
+    "AgeYear": 18,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 296,
+    "CaseMasterID": 231,
+    "VictimName": "VIC-KJ",
+    "AgeYear": 69,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 297,
+    "CaseMasterID": 231,
+    "VictimName": "VIC-KK",
+    "AgeYear": 60,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 298,
+    "CaseMasterID": 232,
+    "VictimName": "VIC-KL",
+    "AgeYear": 67,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 299,
+    "CaseMasterID": 233,
+    "VictimName": "VIC-KM",
+    "AgeYear": 18,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 300,
+    "CaseMasterID": 233,
+    "VictimName": "VIC-KN",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 301,
+    "CaseMasterID": 234,
+    "VictimName": "VIC-KO",
+    "AgeYear": 67,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 302,
+    "CaseMasterID": 235,
+    "VictimName": "VIC-KP",
+    "AgeYear": 36,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 303,
+    "CaseMasterID": 236,
+    "VictimName": "VIC-KQ",
+    "AgeYear": 47,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 304,
+    "CaseMasterID": 236,
+    "VictimName": "VIC-KR",
+    "AgeYear": 36,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 305,
+    "CaseMasterID": 237,
+    "VictimName": "VIC-KS",
+    "AgeYear": 69,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 306,
+    "CaseMasterID": 237,
+    "VictimName": "VIC-KT",
+    "AgeYear": 9,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 307,
+    "CaseMasterID": 238,
+    "VictimName": "VIC-KU",
+    "AgeYear": 16,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 308,
+    "CaseMasterID": 238,
+    "VictimName": "VIC-KV",
+    "AgeYear": 68,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 309,
+    "CaseMasterID": 239,
+    "VictimName": "VIC-KW",
+    "AgeYear": 78,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 310,
+    "CaseMasterID": 239,
+    "VictimName": "VIC-KX",
+    "AgeYear": 55,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 311,
+    "CaseMasterID": 240,
+    "VictimName": "VIC-KY",
+    "AgeYear": 60,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 312,
+    "CaseMasterID": 240,
+    "VictimName": "VIC-KZ",
+    "AgeYear": 9,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 313,
+    "CaseMasterID": 241,
+    "VictimName": "VIC-LA",
+    "AgeYear": 7,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 314,
+    "CaseMasterID": 242,
+    "VictimName": "VIC-LB",
+    "AgeYear": 74,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 315,
+    "CaseMasterID": 243,
+    "VictimName": "VIC-LC",
+    "AgeYear": 73,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 316,
+    "CaseMasterID": 244,
+    "VictimName": "VIC-LD",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 317,
+    "CaseMasterID": 245,
+    "VictimName": "VIC-LE",
+    "AgeYear": 67,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 318,
+    "CaseMasterID": 246,
+    "VictimName": "VIC-LF",
+    "AgeYear": 35,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 319,
+    "CaseMasterID": 247,
+    "VictimName": "VIC-LG",
+    "AgeYear": 23,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 320,
+    "CaseMasterID": 247,
+    "VictimName": "VIC-LH",
+    "AgeYear": 63,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 321,
+    "CaseMasterID": 248,
+    "VictimName": "VIC-LI",
+    "AgeYear": 13,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 322,
+    "CaseMasterID": 249,
+    "VictimName": "VIC-LJ",
+    "AgeYear": 24,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 323,
+    "CaseMasterID": 250,
+    "VictimName": "VIC-LK",
+    "AgeYear": 14,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 324,
+    "CaseMasterID": 250,
+    "VictimName": "VIC-LL",
+    "AgeYear": 17,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 325,
+    "CaseMasterID": 251,
+    "VictimName": "VIC-LM",
+    "AgeYear": 15,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 326,
+    "CaseMasterID": 252,
+    "VictimName": "VIC-LN",
+    "AgeYear": 61,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 327,
+    "CaseMasterID": 253,
+    "VictimName": "VIC-LO",
+    "AgeYear": 53,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 328,
+    "CaseMasterID": 254,
+    "VictimName": "VIC-LP",
+    "AgeYear": 15,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 329,
+    "CaseMasterID": 255,
+    "VictimName": "VIC-LQ",
+    "AgeYear": 58,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 330,
+    "CaseMasterID": 255,
+    "VictimName": "VIC-LR",
+    "AgeYear": 27,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 331,
+    "CaseMasterID": 256,
+    "VictimName": "VIC-LS",
+    "AgeYear": 48,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 332,
+    "CaseMasterID": 257,
+    "VictimName": "VIC-LT",
+    "AgeYear": 35,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 333,
+    "CaseMasterID": 257,
+    "VictimName": "VIC-LU",
+    "AgeYear": 21,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 334,
+    "CaseMasterID": 258,
+    "VictimName": "VIC-LV",
+    "AgeYear": 66,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 335,
+    "CaseMasterID": 258,
+    "VictimName": "VIC-LW",
+    "AgeYear": 81,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 336,
+    "CaseMasterID": 258,
+    "VictimName": "VIC-LX",
+    "AgeYear": 74,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 337,
+    "CaseMasterID": 259,
+    "VictimName": "VIC-LY",
+    "AgeYear": 21,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 338,
+    "CaseMasterID": 260,
+    "VictimName": "VIC-LZ",
+    "AgeYear": 6,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 339,
+    "CaseMasterID": 260,
+    "VictimName": "VIC-MA",
+    "AgeYear": 7,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 340,
+    "CaseMasterID": 261,
+    "VictimName": "VIC-MB",
+    "AgeYear": 7,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 341,
+    "CaseMasterID": 262,
+    "VictimName": "VIC-MC",
+    "AgeYear": 27,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 342,
+    "CaseMasterID": 262,
+    "VictimName": "VIC-MD",
+    "AgeYear": 30,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 343,
+    "CaseMasterID": 263,
+    "VictimName": "VIC-ME",
+    "AgeYear": 74,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 344,
+    "CaseMasterID": 263,
+    "VictimName": "VIC-MF",
+    "AgeYear": 74,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 345,
+    "CaseMasterID": 264,
+    "VictimName": "VIC-MG",
+    "AgeYear": 60,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 346,
+    "CaseMasterID": 265,
+    "VictimName": "VIC-MH",
+    "AgeYear": 70,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 347,
+    "CaseMasterID": 266,
+    "VictimName": "VIC-MI",
+    "AgeYear": 11,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 348,
+    "CaseMasterID": 267,
+    "VictimName": "VIC-MJ",
+    "AgeYear": 68,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 349,
+    "CaseMasterID": 268,
+    "VictimName": "VIC-MK",
+    "AgeYear": 58,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 350,
+    "CaseMasterID": 269,
+    "VictimName": "VIC-ML",
+    "AgeYear": 33,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 351,
+    "CaseMasterID": 270,
+    "VictimName": "VIC-MM",
+    "AgeYear": 34,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 352,
+    "CaseMasterID": 271,
+    "VictimName": "VIC-MN",
+    "AgeYear": 45,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 353,
+    "CaseMasterID": 271,
+    "VictimName": "VIC-MO",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 354,
+    "CaseMasterID": 272,
+    "VictimName": "VIC-MP",
+    "AgeYear": 10,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 355,
+    "CaseMasterID": 273,
+    "VictimName": "VIC-MQ",
+    "AgeYear": 11,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 356,
+    "CaseMasterID": 274,
+    "VictimName": "VIC-MR",
+    "AgeYear": 41,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 357,
+    "CaseMasterID": 275,
+    "VictimName": "VIC-MS",
+    "AgeYear": 40,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 358,
+    "CaseMasterID": 275,
+    "VictimName": "VIC-MT",
+    "AgeYear": 32,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 359,
+    "CaseMasterID": 276,
+    "VictimName": "VIC-MU",
+    "AgeYear": 33,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 360,
+    "CaseMasterID": 276,
+    "VictimName": "VIC-MV",
+    "AgeYear": 22,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 361,
+    "CaseMasterID": 277,
+    "VictimName": "VIC-MW",
+    "AgeYear": 49,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 362,
+    "CaseMasterID": 277,
+    "VictimName": "VIC-MX",
+    "AgeYear": 52,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 363,
+    "CaseMasterID": 278,
+    "VictimName": "VIC-MY",
+    "AgeYear": 65,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 364,
+    "CaseMasterID": 279,
+    "VictimName": "VIC-MZ",
+    "AgeYear": 27,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 365,
+    "CaseMasterID": 280,
+    "VictimName": "VIC-NA",
+    "AgeYear": 22,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 366,
+    "CaseMasterID": 281,
+    "VictimName": "VIC-NB",
+    "AgeYear": 15,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 367,
+    "CaseMasterID": 282,
+    "VictimName": "VIC-NC",
+    "AgeYear": 12,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 368,
+    "CaseMasterID": 282,
+    "VictimName": "VIC-ND",
+    "AgeYear": 55,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 369,
+    "CaseMasterID": 283,
+    "VictimName": "VIC-NE",
+    "AgeYear": 55,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 370,
+    "CaseMasterID": 284,
+    "VictimName": "VIC-NF",
+    "AgeYear": 61,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 371,
+    "CaseMasterID": 285,
+    "VictimName": "VIC-NG",
+    "AgeYear": 8,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 372,
+    "CaseMasterID": 286,
+    "VictimName": "VIC-NH",
+    "AgeYear": 59,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 373,
+    "CaseMasterID": 287,
+    "VictimName": "VIC-NI",
+    "AgeYear": 39,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 374,
+    "CaseMasterID": 288,
+    "VictimName": "VIC-NJ",
+    "AgeYear": 72,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 375,
+    "CaseMasterID": 289,
+    "VictimName": "VIC-NK",
+    "AgeYear": 70,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 376,
+    "CaseMasterID": 290,
+    "VictimName": "VIC-NL",
+    "AgeYear": 38,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 377,
+    "CaseMasterID": 291,
+    "VictimName": "VIC-NM",
+    "AgeYear": 47,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 378,
+    "CaseMasterID": 292,
+    "VictimName": "VIC-NN",
+    "AgeYear": 11,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 379,
+    "CaseMasterID": 293,
+    "VictimName": "VIC-NO",
+    "AgeYear": 57,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 380,
+    "CaseMasterID": 294,
+    "VictimName": "VIC-NP",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 381,
+    "CaseMasterID": 295,
+    "VictimName": "VIC-NQ",
+    "AgeYear": 44,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 382,
+    "CaseMasterID": 296,
+    "VictimName": "VIC-NR",
+    "AgeYear": 80,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 383,
+    "CaseMasterID": 297,
+    "VictimName": "VIC-NS",
+    "AgeYear": 48,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 384,
+    "CaseMasterID": 297,
+    "VictimName": "VIC-NT",
+    "AgeYear": 67,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 385,
+    "CaseMasterID": 298,
+    "VictimName": "VIC-NU",
+    "AgeYear": 46,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 386,
+    "CaseMasterID": 299,
+    "VictimName": "VIC-NV",
+    "AgeYear": 64,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 387,
+    "CaseMasterID": 300,
+    "VictimName": "VIC-NW",
+    "AgeYear": 6,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 388,
+    "CaseMasterID": 301,
+    "VictimName": "VIC-NX",
+    "AgeYear": 16,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 389,
+    "CaseMasterID": 302,
+    "VictimName": "VIC-NY",
+    "AgeYear": 9,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 390,
+    "CaseMasterID": 303,
+    "VictimName": "VIC-NZ",
+    "AgeYear": 76,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 391,
+    "CaseMasterID": 303,
+    "VictimName": "VIC-OA",
+    "AgeYear": 64,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 392,
+    "CaseMasterID": 304,
+    "VictimName": "VIC-OB",
+    "AgeYear": 15,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 393,
+    "CaseMasterID": 305,
+    "VictimName": "VIC-OC",
+    "AgeYear": 79,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 394,
+    "CaseMasterID": 306,
+    "VictimName": "VIC-OD",
+    "AgeYear": 76,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 395,
+    "CaseMasterID": 307,
+    "VictimName": "VIC-OE",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 396,
+    "CaseMasterID": 308,
+    "VictimName": "VIC-OF",
+    "AgeYear": 39,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 397,
+    "CaseMasterID": 309,
+    "VictimName": "VIC-OG",
+    "AgeYear": 79,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 398,
+    "CaseMasterID": 310,
+    "VictimName": "VIC-OH",
+    "AgeYear": 51,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 399,
+    "CaseMasterID": 311,
+    "VictimName": "VIC-OI",
+    "AgeYear": 41,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 400,
+    "CaseMasterID": 312,
+    "VictimName": "VIC-OJ",
+    "AgeYear": 34,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 401,
+    "CaseMasterID": 313,
+    "VictimName": "VIC-OK",
+    "AgeYear": 44,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 402,
+    "CaseMasterID": 314,
+    "VictimName": "VIC-OL",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 403,
+    "CaseMasterID": 315,
+    "VictimName": "VIC-OM",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 404,
+    "CaseMasterID": 316,
+    "VictimName": "VIC-ON",
+    "AgeYear": 75,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 405,
+    "CaseMasterID": 317,
+    "VictimName": "VIC-OO",
+    "AgeYear": 70,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 406,
+    "CaseMasterID": 318,
+    "VictimName": "VIC-OP",
+    "AgeYear": 40,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 407,
+    "CaseMasterID": 319,
+    "VictimName": "VIC-OQ",
+    "AgeYear": 44,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 408,
+    "CaseMasterID": 319,
+    "VictimName": "VIC-OR",
+    "AgeYear": 34,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 409,
+    "CaseMasterID": 320,
+    "VictimName": "VIC-OS",
+    "AgeYear": 36,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 410,
+    "CaseMasterID": 321,
+    "VictimName": "VIC-OT",
+    "AgeYear": 43,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 411,
+    "CaseMasterID": 322,
+    "VictimName": "VIC-OU",
+    "AgeYear": 26,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 412,
+    "CaseMasterID": 323,
+    "VictimName": "VIC-OV",
+    "AgeYear": 51,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 413,
+    "CaseMasterID": 324,
+    "VictimName": "VIC-OW",
+    "AgeYear": 46,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 414,
+    "CaseMasterID": 325,
+    "VictimName": "VIC-OX",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 415,
+    "CaseMasterID": 325,
+    "VictimName": "VIC-OY",
+    "AgeYear": 78,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 416,
+    "CaseMasterID": 326,
+    "VictimName": "VIC-OZ",
+    "AgeYear": 43,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 417,
+    "CaseMasterID": 327,
+    "VictimName": "VIC-PA",
+    "AgeYear": 46,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 418,
+    "CaseMasterID": 328,
+    "VictimName": "VIC-PB",
+    "AgeYear": 32,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 419,
+    "CaseMasterID": 329,
+    "VictimName": "VIC-PC",
+    "AgeYear": 62,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 420,
+    "CaseMasterID": 330,
+    "VictimName": "VIC-PD",
+    "AgeYear": 70,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 421,
+    "CaseMasterID": 330,
+    "VictimName": "VIC-PE",
+    "AgeYear": 25,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 422,
+    "CaseMasterID": 330,
+    "VictimName": "VIC-PF",
+    "AgeYear": 11,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 423,
+    "CaseMasterID": 331,
+    "VictimName": "VIC-PG",
+    "AgeYear": 58,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 424,
+    "CaseMasterID": 332,
+    "VictimName": "VIC-PH",
+    "AgeYear": 70,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 425,
+    "CaseMasterID": 332,
+    "VictimName": "VIC-PI",
+    "AgeYear": 24,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 426,
+    "CaseMasterID": 333,
+    "VictimName": "VIC-PJ",
+    "AgeYear": 28,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 427,
+    "CaseMasterID": 333,
+    "VictimName": "VIC-PK",
+    "AgeYear": 33,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 428,
+    "CaseMasterID": 333,
+    "VictimName": "VIC-PL",
+    "AgeYear": 27,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 429,
+    "CaseMasterID": 334,
+    "VictimName": "VIC-PM",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 430,
+    "CaseMasterID": 335,
+    "VictimName": "VIC-PN",
+    "AgeYear": 69,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 431,
+    "CaseMasterID": 335,
+    "VictimName": "VIC-PO",
+    "AgeYear": 74,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 432,
+    "CaseMasterID": 335,
+    "VictimName": "VIC-PP",
+    "AgeYear": 9,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 433,
+    "CaseMasterID": 336,
+    "VictimName": "VIC-PQ",
+    "AgeYear": 37,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 434,
+    "CaseMasterID": 337,
+    "VictimName": "VIC-PR",
+    "AgeYear": 40,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 435,
+    "CaseMasterID": 338,
+    "VictimName": "VIC-PS",
+    "AgeYear": 80,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 436,
+    "CaseMasterID": 338,
+    "VictimName": "VIC-PT",
+    "AgeYear": 25,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 437,
+    "CaseMasterID": 339,
+    "VictimName": "VIC-PU",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 438,
+    "CaseMasterID": 340,
+    "VictimName": "VIC-PV",
+    "AgeYear": 34,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 439,
+    "CaseMasterID": 341,
+    "VictimName": "VIC-PW",
+    "AgeYear": 41,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 440,
+    "CaseMasterID": 341,
+    "VictimName": "VIC-PX",
+    "AgeYear": 76,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 441,
+    "CaseMasterID": 342,
+    "VictimName": "VIC-PY",
+    "AgeYear": 15,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 442,
+    "CaseMasterID": 343,
+    "VictimName": "VIC-PZ",
+    "AgeYear": 11,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 443,
+    "CaseMasterID": 344,
+    "VictimName": "VIC-QA",
+    "AgeYear": 50,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 444,
+    "CaseMasterID": 345,
+    "VictimName": "VIC-QB",
+    "AgeYear": 53,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 445,
+    "CaseMasterID": 346,
+    "VictimName": "VIC-QC",
+    "AgeYear": 60,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 446,
+    "CaseMasterID": 347,
+    "VictimName": "VIC-QD",
+    "AgeYear": 56,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 447,
+    "CaseMasterID": 347,
+    "VictimName": "VIC-QE",
+    "AgeYear": 33,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 448,
+    "CaseMasterID": 348,
+    "VictimName": "VIC-QF",
+    "AgeYear": 17,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 449,
+    "CaseMasterID": 349,
+    "VictimName": "VIC-QG",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 450,
+    "CaseMasterID": 350,
+    "VictimName": "VIC-QH",
+    "AgeYear": 62,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 451,
+    "CaseMasterID": 351,
+    "VictimName": "VIC-QI",
+    "AgeYear": 55,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 452,
+    "CaseMasterID": 352,
+    "VictimName": "VIC-QJ",
+    "AgeYear": 82,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 453,
+    "CaseMasterID": 353,
+    "VictimName": "VIC-QK",
+    "AgeYear": 43,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 454,
+    "CaseMasterID": 354,
+    "VictimName": "VIC-QL",
+    "AgeYear": 57,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 455,
+    "CaseMasterID": 355,
+    "VictimName": "VIC-QM",
+    "AgeYear": 37,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 456,
+    "CaseMasterID": 356,
+    "VictimName": "VIC-QN",
+    "AgeYear": 55,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 457,
+    "CaseMasterID": 357,
+    "VictimName": "VIC-QO",
+    "AgeYear": 45,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 458,
+    "CaseMasterID": 357,
+    "VictimName": "VIC-QP",
+    "AgeYear": 77,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 459,
+    "CaseMasterID": 358,
+    "VictimName": "VIC-QQ",
+    "AgeYear": 53,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 460,
+    "CaseMasterID": 359,
+    "VictimName": "VIC-QR",
+    "AgeYear": 45,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 461,
+    "CaseMasterID": 360,
+    "VictimName": "VIC-QS",
+    "AgeYear": 79,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 462,
+    "CaseMasterID": 360,
+    "VictimName": "VIC-QT",
+    "AgeYear": 18,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 463,
+    "CaseMasterID": 361,
+    "VictimName": "VIC-QU",
+    "AgeYear": 11,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 464,
+    "CaseMasterID": 362,
+    "VictimName": "VIC-QV",
+    "AgeYear": 80,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 465,
+    "CaseMasterID": 363,
+    "VictimName": "VIC-QW",
+    "AgeYear": 82,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 466,
+    "CaseMasterID": 364,
+    "VictimName": "VIC-QX",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 467,
+    "CaseMasterID": 364,
+    "VictimName": "VIC-QY",
+    "AgeYear": 57,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 468,
+    "CaseMasterID": 365,
+    "VictimName": "VIC-QZ",
+    "AgeYear": 8,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 469,
+    "CaseMasterID": 366,
+    "VictimName": "VIC-RA",
+    "AgeYear": 38,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 470,
+    "CaseMasterID": 367,
+    "VictimName": "VIC-RB",
+    "AgeYear": 49,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 471,
+    "CaseMasterID": 368,
+    "VictimName": "VIC-RC",
+    "AgeYear": 29,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 472,
+    "CaseMasterID": 369,
+    "VictimName": "VIC-RD",
+    "AgeYear": 73,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 473,
+    "CaseMasterID": 370,
+    "VictimName": "VIC-RE",
+    "AgeYear": 79,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 474,
+    "CaseMasterID": 371,
+    "VictimName": "VIC-RF",
+    "AgeYear": 60,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 475,
+    "CaseMasterID": 372,
+    "VictimName": "VIC-RG",
+    "AgeYear": 71,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 476,
+    "CaseMasterID": 373,
+    "VictimName": "VIC-RH",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 477,
+    "CaseMasterID": 374,
+    "VictimName": "VIC-RI",
+    "AgeYear": 69,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 478,
+    "CaseMasterID": 374,
+    "VictimName": "VIC-RJ",
+    "AgeYear": 19,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 479,
+    "CaseMasterID": 375,
+    "VictimName": "VIC-RK",
+    "AgeYear": 49,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 480,
+    "CaseMasterID": 376,
+    "VictimName": "VIC-RL",
+    "AgeYear": 38,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 481,
+    "CaseMasterID": 377,
+    "VictimName": "VIC-RM",
+    "AgeYear": 25,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 482,
+    "CaseMasterID": 378,
+    "VictimName": "VIC-RN",
+    "AgeYear": 29,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 483,
+    "CaseMasterID": 379,
+    "VictimName": "VIC-RO",
+    "AgeYear": 78,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 484,
+    "CaseMasterID": 380,
+    "VictimName": "VIC-RP",
+    "AgeYear": 23,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 485,
+    "CaseMasterID": 381,
+    "VictimName": "VIC-RQ",
+    "AgeYear": 18,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 486,
+    "CaseMasterID": 381,
+    "VictimName": "VIC-RR",
+    "AgeYear": 65,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 487,
+    "CaseMasterID": 382,
+    "VictimName": "VIC-RS",
+    "AgeYear": 75,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 488,
+    "CaseMasterID": 383,
+    "VictimName": "VIC-RT",
+    "AgeYear": 67,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 489,
+    "CaseMasterID": 383,
+    "VictimName": "VIC-RU",
+    "AgeYear": 69,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 490,
+    "CaseMasterID": 384,
+    "VictimName": "VIC-RV",
+    "AgeYear": 77,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 491,
+    "CaseMasterID": 385,
+    "VictimName": "VIC-RW",
+    "AgeYear": 13,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 492,
+    "CaseMasterID": 385,
+    "VictimName": "VIC-RX",
+    "AgeYear": 70,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 493,
+    "CaseMasterID": 386,
+    "VictimName": "VIC-RY",
+    "AgeYear": 44,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 494,
+    "CaseMasterID": 387,
+    "VictimName": "VIC-RZ",
+    "AgeYear": 24,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 495,
+    "CaseMasterID": 388,
+    "VictimName": "VIC-SA",
+    "AgeYear": 52,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 496,
+    "CaseMasterID": 389,
+    "VictimName": "VIC-SB",
+    "AgeYear": 77,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 497,
+    "CaseMasterID": 389,
+    "VictimName": "VIC-SC",
+    "AgeYear": 61,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 498,
+    "CaseMasterID": 390,
+    "VictimName": "VIC-SD",
+    "AgeYear": 81,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 499,
+    "CaseMasterID": 390,
+    "VictimName": "VIC-SE",
+    "AgeYear": 22,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 500,
+    "CaseMasterID": 391,
+    "VictimName": "VIC-SF",
+    "AgeYear": 81,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 501,
+    "CaseMasterID": 391,
+    "VictimName": "VIC-SG",
+    "AgeYear": 14,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 502,
+    "CaseMasterID": 392,
+    "VictimName": "VIC-SH",
+    "AgeYear": 29,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 503,
+    "CaseMasterID": 393,
+    "VictimName": "VIC-SI",
+    "AgeYear": 29,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 504,
+    "CaseMasterID": 394,
+    "VictimName": "VIC-SJ",
+    "AgeYear": 16,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 505,
+    "CaseMasterID": 395,
+    "VictimName": "VIC-SK",
+    "AgeYear": 22,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 506,
+    "CaseMasterID": 396,
+    "VictimName": "VIC-SL",
+    "AgeYear": 31,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 507,
+    "CaseMasterID": 397,
+    "VictimName": "VIC-SM",
+    "AgeYear": 45,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 508,
+    "CaseMasterID": 397,
+    "VictimName": "VIC-SN",
+    "AgeYear": 39,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 509,
+    "CaseMasterID": 397,
+    "VictimName": "VIC-SO",
+    "AgeYear": 59,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 510,
+    "CaseMasterID": 398,
+    "VictimName": "VIC-SP",
+    "AgeYear": 62,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 511,
+    "CaseMasterID": 399,
+    "VictimName": "VIC-SQ",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 512,
+    "CaseMasterID": 399,
+    "VictimName": "VIC-SR",
+    "AgeYear": 69,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 513,
+    "CaseMasterID": 400,
+    "VictimName": "VIC-SS",
+    "AgeYear": 27,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 514,
+    "CaseMasterID": 401,
+    "VictimName": "VIC-ST",
+    "AgeYear": 58,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 515,
+    "CaseMasterID": 402,
+    "VictimName": "VIC-SU",
+    "AgeYear": 51,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 516,
+    "CaseMasterID": 403,
+    "VictimName": "VIC-SV",
+    "AgeYear": 59,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 517,
+    "CaseMasterID": 403,
+    "VictimName": "VIC-SW",
+    "AgeYear": 22,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 518,
+    "CaseMasterID": 404,
+    "VictimName": "VIC-SX",
+    "AgeYear": 72,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 519,
+    "CaseMasterID": 404,
+    "VictimName": "VIC-SY",
+    "AgeYear": 38,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 520,
+    "CaseMasterID": 405,
+    "VictimName": "VIC-SZ",
+    "AgeYear": 82,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 521,
+    "CaseMasterID": 405,
+    "VictimName": "VIC-TA",
+    "AgeYear": 79,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 522,
+    "CaseMasterID": 406,
+    "VictimName": "VIC-TB",
+    "AgeYear": 44,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 523,
+    "CaseMasterID": 407,
+    "VictimName": "VIC-TC",
+    "AgeYear": 55,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 524,
+    "CaseMasterID": 408,
+    "VictimName": "VIC-TD",
+    "AgeYear": 44,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 525,
+    "CaseMasterID": 409,
+    "VictimName": "VIC-TE",
+    "AgeYear": 82,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 526,
+    "CaseMasterID": 409,
+    "VictimName": "VIC-TF",
+    "AgeYear": 53,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 527,
+    "CaseMasterID": 409,
+    "VictimName": "VIC-TG",
+    "AgeYear": 33,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 528,
+    "CaseMasterID": 410,
+    "VictimName": "VIC-TH",
+    "AgeYear": 27,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 529,
+    "CaseMasterID": 411,
+    "VictimName": "VIC-TI",
+    "AgeYear": 73,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 530,
+    "CaseMasterID": 412,
+    "VictimName": "VIC-TJ",
+    "AgeYear": 18,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 531,
+    "CaseMasterID": 413,
+    "VictimName": "VIC-TK",
+    "AgeYear": 16,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 532,
+    "CaseMasterID": 414,
+    "VictimName": "VIC-TL",
+    "AgeYear": 10,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 533,
+    "CaseMasterID": 415,
+    "VictimName": "VIC-TM",
+    "AgeYear": 46,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 534,
+    "CaseMasterID": 416,
+    "VictimName": "VIC-TN",
+    "AgeYear": 29,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 535,
+    "CaseMasterID": 416,
+    "VictimName": "VIC-TO",
+    "AgeYear": 29,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 536,
+    "CaseMasterID": 417,
+    "VictimName": "VIC-TP",
+    "AgeYear": 29,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 537,
+    "CaseMasterID": 417,
+    "VictimName": "VIC-TQ",
+    "AgeYear": 35,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 538,
+    "CaseMasterID": 417,
+    "VictimName": "VIC-TR",
+    "AgeYear": 28,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 539,
+    "CaseMasterID": 418,
+    "VictimName": "VIC-TS",
+    "AgeYear": 24,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 540,
+    "CaseMasterID": 419,
+    "VictimName": "VIC-TT",
+    "AgeYear": 53,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 541,
+    "CaseMasterID": 419,
+    "VictimName": "VIC-TU",
+    "AgeYear": 32,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 542,
+    "CaseMasterID": 420,
+    "VictimName": "VIC-TV",
+    "AgeYear": 48,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 543,
+    "CaseMasterID": 421,
+    "VictimName": "VIC-TW",
+    "AgeYear": 10,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 544,
+    "CaseMasterID": 421,
+    "VictimName": "VIC-TX",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 545,
+    "CaseMasterID": 422,
+    "VictimName": "VIC-TY",
+    "AgeYear": 16,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 546,
+    "CaseMasterID": 422,
+    "VictimName": "VIC-TZ",
+    "AgeYear": 17,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 547,
+    "CaseMasterID": 422,
+    "VictimName": "VIC-UA",
+    "AgeYear": 53,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 548,
+    "CaseMasterID": 423,
+    "VictimName": "VIC-UB",
+    "AgeYear": 15,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 549,
+    "CaseMasterID": 424,
+    "VictimName": "VIC-UC",
+    "AgeYear": 45,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 550,
+    "CaseMasterID": 424,
+    "VictimName": "VIC-UD",
+    "AgeYear": 39,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 551,
+    "CaseMasterID": 425,
+    "VictimName": "VIC-UE",
+    "AgeYear": 57,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 552,
+    "CaseMasterID": 426,
+    "VictimName": "VIC-UF",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 553,
+    "CaseMasterID": 427,
+    "VictimName": "VIC-UG",
+    "AgeYear": 6,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 554,
+    "CaseMasterID": 428,
+    "VictimName": "VIC-UH",
+    "AgeYear": 14,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 555,
+    "CaseMasterID": 429,
+    "VictimName": "VIC-UI",
+    "AgeYear": 32,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 556,
+    "CaseMasterID": 430,
+    "VictimName": "VIC-UJ",
+    "AgeYear": 73,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 557,
+    "CaseMasterID": 431,
+    "VictimName": "VIC-UK",
+    "AgeYear": 68,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 558,
+    "CaseMasterID": 432,
+    "VictimName": "VIC-UL",
+    "AgeYear": 19,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 559,
+    "CaseMasterID": 432,
+    "VictimName": "VIC-UM",
+    "AgeYear": 57,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 560,
+    "CaseMasterID": 432,
+    "VictimName": "VIC-UN",
+    "AgeYear": 46,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 561,
+    "CaseMasterID": 433,
+    "VictimName": "VIC-UO",
+    "AgeYear": 23,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 562,
+    "CaseMasterID": 434,
+    "VictimName": "VIC-UP",
+    "AgeYear": 25,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 563,
+    "CaseMasterID": 435,
+    "VictimName": "VIC-UQ",
+    "AgeYear": 75,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 564,
+    "CaseMasterID": 436,
+    "VictimName": "VIC-UR",
+    "AgeYear": 63,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 565,
+    "CaseMasterID": 436,
+    "VictimName": "VIC-US",
+    "AgeYear": 59,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 566,
+    "CaseMasterID": 437,
+    "VictimName": "VIC-UT",
+    "AgeYear": 10,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 567,
+    "CaseMasterID": 438,
+    "VictimName": "VIC-UU",
+    "AgeYear": 8,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 568,
+    "CaseMasterID": 439,
+    "VictimName": "VIC-UV",
+    "AgeYear": 64,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 569,
+    "CaseMasterID": 439,
+    "VictimName": "VIC-UW",
+    "AgeYear": 74,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 570,
+    "CaseMasterID": 439,
+    "VictimName": "VIC-UX",
+    "AgeYear": 53,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 571,
+    "CaseMasterID": 440,
+    "VictimName": "VIC-UY",
+    "AgeYear": 58,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 572,
+    "CaseMasterID": 440,
+    "VictimName": "VIC-UZ",
+    "AgeYear": 19,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 573,
+    "CaseMasterID": 441,
+    "VictimName": "VIC-VA",
+    "AgeYear": 35,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 574,
+    "CaseMasterID": 441,
+    "VictimName": "VIC-VB",
+    "AgeYear": 29,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 575,
+    "CaseMasterID": 442,
+    "VictimName": "VIC-VC",
+    "AgeYear": 81,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 576,
+    "CaseMasterID": 443,
+    "VictimName": "VIC-VD",
+    "AgeYear": 45,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 577,
+    "CaseMasterID": 444,
+    "VictimName": "VIC-VE",
+    "AgeYear": 75,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 578,
+    "CaseMasterID": 445,
+    "VictimName": "VIC-VF",
+    "AgeYear": 18,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 579,
+    "CaseMasterID": 446,
+    "VictimName": "VIC-VG",
+    "AgeYear": 64,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 580,
+    "CaseMasterID": 447,
+    "VictimName": "VIC-VH",
+    "AgeYear": 57,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 581,
+    "CaseMasterID": 448,
+    "VictimName": "VIC-VI",
+    "AgeYear": 48,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 582,
+    "CaseMasterID": 448,
+    "VictimName": "VIC-VJ",
+    "AgeYear": 64,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 583,
+    "CaseMasterID": 449,
+    "VictimName": "VIC-VK",
+    "AgeYear": 25,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 584,
+    "CaseMasterID": 449,
+    "VictimName": "VIC-VL",
+    "AgeYear": 34,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 585,
+    "CaseMasterID": 450,
+    "VictimName": "VIC-VM",
+    "AgeYear": 66,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 586,
+    "CaseMasterID": 450,
+    "VictimName": "VIC-VN",
+    "AgeYear": 63,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 587,
+    "CaseMasterID": 451,
+    "VictimName": "VIC-VO",
+    "AgeYear": 28,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 588,
+    "CaseMasterID": 452,
+    "VictimName": "VIC-VP",
+    "AgeYear": 19,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 589,
+    "CaseMasterID": 453,
+    "VictimName": "VIC-VQ",
+    "AgeYear": 59,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 590,
+    "CaseMasterID": 454,
+    "VictimName": "VIC-VR",
+    "AgeYear": 27,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 591,
+    "CaseMasterID": 455,
+    "VictimName": "VIC-VS",
+    "AgeYear": 33,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 592,
+    "CaseMasterID": 456,
+    "VictimName": "VIC-VT",
+    "AgeYear": 71,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 593,
+    "CaseMasterID": 457,
+    "VictimName": "VIC-VU",
+    "AgeYear": 37,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 594,
+    "CaseMasterID": 457,
+    "VictimName": "VIC-VV",
+    "AgeYear": 32,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 595,
+    "CaseMasterID": 458,
+    "VictimName": "VIC-VW",
+    "AgeYear": 44,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 596,
+    "CaseMasterID": 459,
+    "VictimName": "VIC-VX",
+    "AgeYear": 30,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 597,
+    "CaseMasterID": 460,
+    "VictimName": "VIC-VY",
+    "AgeYear": 16,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 598,
+    "CaseMasterID": 461,
+    "VictimName": "VIC-VZ",
+    "AgeYear": 73,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 599,
+    "CaseMasterID": 462,
+    "VictimName": "VIC-WA",
+    "AgeYear": 50,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 600,
+    "CaseMasterID": 463,
+    "VictimName": "VIC-WB",
+    "AgeYear": 46,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 601,
+    "CaseMasterID": 464,
+    "VictimName": "VIC-WC",
+    "AgeYear": 53,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 602,
+    "CaseMasterID": 465,
+    "VictimName": "VIC-WD",
+    "AgeYear": 75,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 603,
+    "CaseMasterID": 465,
+    "VictimName": "VIC-WE",
+    "AgeYear": 34,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 604,
+    "CaseMasterID": 466,
+    "VictimName": "VIC-WF",
+    "AgeYear": 68,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 605,
+    "CaseMasterID": 467,
+    "VictimName": "VIC-WG",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 606,
+    "CaseMasterID": 468,
+    "VictimName": "VIC-WH",
+    "AgeYear": 35,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 607,
+    "CaseMasterID": 469,
+    "VictimName": "VIC-WI",
+    "AgeYear": 70,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 608,
+    "CaseMasterID": 470,
+    "VictimName": "VIC-WJ",
+    "AgeYear": 6,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 609,
+    "CaseMasterID": 470,
+    "VictimName": "VIC-WK",
+    "AgeYear": 71,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 610,
+    "CaseMasterID": 471,
+    "VictimName": "VIC-WL",
+    "AgeYear": 78,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 611,
+    "CaseMasterID": 472,
+    "VictimName": "VIC-WM",
+    "AgeYear": 70,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 612,
+    "CaseMasterID": 473,
+    "VictimName": "VIC-WN",
+    "AgeYear": 80,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 613,
+    "CaseMasterID": 474,
+    "VictimName": "VIC-WO",
+    "AgeYear": 13,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 614,
+    "CaseMasterID": 475,
+    "VictimName": "VIC-WP",
+    "AgeYear": 24,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 615,
+    "CaseMasterID": 475,
+    "VictimName": "VIC-WQ",
+    "AgeYear": 15,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 616,
+    "CaseMasterID": 475,
+    "VictimName": "VIC-WR",
+    "AgeYear": 73,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 617,
+    "CaseMasterID": 476,
+    "VictimName": "VIC-WS",
+    "AgeYear": 25,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 618,
+    "CaseMasterID": 477,
+    "VictimName": "VIC-WT",
+    "AgeYear": 52,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 619,
+    "CaseMasterID": 477,
+    "VictimName": "VIC-WU",
+    "AgeYear": 16,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 620,
+    "CaseMasterID": 478,
+    "VictimName": "VIC-WV",
+    "AgeYear": 8,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 621,
+    "CaseMasterID": 479,
+    "VictimName": "VIC-WW",
+    "AgeYear": 73,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 622,
+    "CaseMasterID": 480,
+    "VictimName": "VIC-WX",
+    "AgeYear": 54,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 623,
+    "CaseMasterID": 480,
+    "VictimName": "VIC-WY",
+    "AgeYear": 29,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 624,
+    "CaseMasterID": 481,
+    "VictimName": "VIC-WZ",
+    "AgeYear": 10,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 625,
+    "CaseMasterID": 482,
+    "VictimName": "VIC-XA",
+    "AgeYear": 26,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 626,
+    "CaseMasterID": 482,
+    "VictimName": "VIC-XB",
+    "AgeYear": 62,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 627,
+    "CaseMasterID": 483,
+    "VictimName": "VIC-XC",
+    "AgeYear": 15,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 628,
+    "CaseMasterID": 484,
+    "VictimName": "VIC-XD",
+    "AgeYear": 37,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 629,
+    "CaseMasterID": 485,
+    "VictimName": "VIC-XE",
+    "AgeYear": 17,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 630,
+    "CaseMasterID": 486,
+    "VictimName": "VIC-XF",
+    "AgeYear": 29,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 631,
+    "CaseMasterID": 487,
+    "VictimName": "VIC-XG",
+    "AgeYear": 67,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 632,
+    "CaseMasterID": 488,
+    "VictimName": "VIC-XH",
+    "AgeYear": 59,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 633,
+    "CaseMasterID": 489,
+    "VictimName": "VIC-XI",
+    "AgeYear": 18,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 634,
+    "CaseMasterID": 490,
+    "VictimName": "VIC-XJ",
+    "AgeYear": 40,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 635,
+    "CaseMasterID": 491,
+    "VictimName": "VIC-XK",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 636,
+    "CaseMasterID": 492,
+    "VictimName": "VIC-XL",
+    "AgeYear": 53,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 637,
+    "CaseMasterID": 493,
+    "VictimName": "VIC-XM",
+    "AgeYear": 59,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 638,
+    "CaseMasterID": 494,
+    "VictimName": "VIC-XN",
+    "AgeYear": 12,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 639,
+    "CaseMasterID": 495,
+    "VictimName": "VIC-XO",
+    "AgeYear": 58,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 640,
+    "CaseMasterID": 495,
+    "VictimName": "VIC-XP",
+    "AgeYear": 43,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 641,
+    "CaseMasterID": 496,
+    "VictimName": "VIC-XQ",
+    "AgeYear": 26,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 642,
+    "CaseMasterID": 497,
+    "VictimName": "VIC-XR",
+    "AgeYear": 73,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 643,
+    "CaseMasterID": 497,
+    "VictimName": "VIC-XS",
+    "AgeYear": 23,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 644,
+    "CaseMasterID": 498,
+    "VictimName": "VIC-XT",
+    "AgeYear": 72,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 645,
+    "CaseMasterID": 499,
+    "VictimName": "VIC-XU",
+    "AgeYear": 62,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 646,
+    "CaseMasterID": 500,
+    "VictimName": "VIC-XV",
+    "AgeYear": 68,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 647,
+    "CaseMasterID": 501,
+    "VictimName": "VIC-XW",
+    "AgeYear": 45,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 648,
+    "CaseMasterID": 502,
+    "VictimName": "VIC-XX",
+    "AgeYear": 40,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 649,
+    "CaseMasterID": 502,
+    "VictimName": "VIC-XY",
+    "AgeYear": 81,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 650,
+    "CaseMasterID": 503,
+    "VictimName": "VIC-XZ",
+    "AgeYear": 20,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 651,
+    "CaseMasterID": 503,
+    "VictimName": "VIC-YA",
+    "AgeYear": 54,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 652,
+    "CaseMasterID": 503,
+    "VictimName": "VIC-YB",
+    "AgeYear": 10,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 653,
+    "CaseMasterID": 504,
+    "VictimName": "VIC-YC",
+    "AgeYear": 50,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 654,
+    "CaseMasterID": 505,
+    "VictimName": "VIC-YD",
+    "AgeYear": 59,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 655,
+    "CaseMasterID": 506,
+    "VictimName": "VIC-YE",
+    "AgeYear": 18,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 656,
+    "CaseMasterID": 507,
+    "VictimName": "VIC-YF",
+    "AgeYear": 80,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 657,
+    "CaseMasterID": 508,
+    "VictimName": "VIC-YG",
+    "AgeYear": 33,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 658,
+    "CaseMasterID": 509,
+    "VictimName": "VIC-YH",
+    "AgeYear": 36,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 659,
+    "CaseMasterID": 510,
+    "VictimName": "VIC-YI",
+    "AgeYear": 55,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 660,
+    "CaseMasterID": 511,
+    "VictimName": "VIC-YJ",
+    "AgeYear": 79,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 661,
+    "CaseMasterID": 512,
+    "VictimName": "VIC-YK",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 662,
+    "CaseMasterID": 512,
+    "VictimName": "VIC-YL",
+    "AgeYear": 8,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 663,
+    "CaseMasterID": 513,
+    "VictimName": "VIC-YM",
+    "AgeYear": 16,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 664,
+    "CaseMasterID": 514,
+    "VictimName": "VIC-YN",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 665,
+    "CaseMasterID": 515,
+    "VictimName": "VIC-YO",
+    "AgeYear": 55,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 666,
+    "CaseMasterID": 516,
+    "VictimName": "VIC-YP",
+    "AgeYear": 49,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 667,
+    "CaseMasterID": 516,
+    "VictimName": "VIC-YQ",
+    "AgeYear": 48,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 668,
+    "CaseMasterID": 517,
+    "VictimName": "VIC-YR",
+    "AgeYear": 16,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 669,
+    "CaseMasterID": 518,
+    "VictimName": "VIC-YS",
+    "AgeYear": 36,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 670,
+    "CaseMasterID": 518,
+    "VictimName": "VIC-YT",
+    "AgeYear": 65,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 671,
+    "CaseMasterID": 519,
+    "VictimName": "VIC-YU",
+    "AgeYear": 24,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 672,
+    "CaseMasterID": 520,
+    "VictimName": "VIC-YV",
+    "AgeYear": 22,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 673,
+    "CaseMasterID": 521,
+    "VictimName": "VIC-YW",
+    "AgeYear": 71,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 674,
+    "CaseMasterID": 522,
+    "VictimName": "VIC-YX",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 675,
+    "CaseMasterID": 523,
+    "VictimName": "VIC-YY",
+    "AgeYear": 6,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 676,
+    "CaseMasterID": 523,
+    "VictimName": "VIC-YZ",
+    "AgeYear": 40,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 677,
+    "CaseMasterID": 523,
+    "VictimName": "VIC-ZA",
+    "AgeYear": 13,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 678,
+    "CaseMasterID": 524,
+    "VictimName": "VIC-ZB",
+    "AgeYear": 81,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 679,
+    "CaseMasterID": 525,
+    "VictimName": "VIC-ZC",
+    "AgeYear": 26,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 680,
+    "CaseMasterID": 525,
+    "VictimName": "VIC-ZD",
+    "AgeYear": 14,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 681,
+    "CaseMasterID": 526,
+    "VictimName": "VIC-ZE",
+    "AgeYear": 51,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 682,
+    "CaseMasterID": 527,
+    "VictimName": "VIC-ZF",
+    "AgeYear": 53,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 683,
+    "CaseMasterID": 528,
+    "VictimName": "VIC-ZG",
+    "AgeYear": 22,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 684,
+    "CaseMasterID": 529,
+    "VictimName": "VIC-ZH",
+    "AgeYear": 72,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 685,
+    "CaseMasterID": 530,
+    "VictimName": "VIC-ZI",
+    "AgeYear": 17,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 686,
+    "CaseMasterID": 530,
+    "VictimName": "VIC-ZJ",
+    "AgeYear": 12,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 687,
+    "CaseMasterID": 531,
+    "VictimName": "VIC-ZK",
+    "AgeYear": 57,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 688,
+    "CaseMasterID": 532,
+    "VictimName": "VIC-ZL",
+    "AgeYear": 51,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 689,
+    "CaseMasterID": 533,
+    "VictimName": "VIC-ZM",
+    "AgeYear": 52,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 690,
+    "CaseMasterID": 534,
+    "VictimName": "VIC-ZN",
+    "AgeYear": 80,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 691,
+    "CaseMasterID": 535,
+    "VictimName": "VIC-ZO",
+    "AgeYear": 16,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 692,
+    "CaseMasterID": 536,
+    "VictimName": "VIC-ZP",
+    "AgeYear": 34,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 693,
+    "CaseMasterID": 537,
+    "VictimName": "VIC-ZQ",
+    "AgeYear": 44,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 694,
+    "CaseMasterID": 537,
+    "VictimName": "VIC-ZR",
+    "AgeYear": 13,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 695,
+    "CaseMasterID": 537,
+    "VictimName": "VIC-ZS",
+    "AgeYear": 81,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 696,
+    "CaseMasterID": 538,
+    "VictimName": "VIC-ZT",
+    "AgeYear": 77,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 697,
+    "CaseMasterID": 539,
+    "VictimName": "VIC-ZU",
+    "AgeYear": 69,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 698,
+    "CaseMasterID": 540,
+    "VictimName": "VIC-ZV",
+    "AgeYear": 35,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 699,
+    "CaseMasterID": 540,
+    "VictimName": "VIC-ZW",
+    "AgeYear": 10,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 700,
+    "CaseMasterID": 541,
+    "VictimName": "VIC-ZX",
+    "AgeYear": 28,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 701,
+    "CaseMasterID": 542,
+    "VictimName": "VIC-ZY",
+    "AgeYear": 16,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 702,
+    "CaseMasterID": 543,
+    "VictimName": "VIC-ZZ",
+    "AgeYear": 18,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 703,
+    "CaseMasterID": 544,
+    "VictimName": "VIC-AAA",
+    "AgeYear": 51,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 704,
+    "CaseMasterID": 545,
+    "VictimName": "VIC-AAB",
+    "AgeYear": 62,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 705,
+    "CaseMasterID": 546,
+    "VictimName": "VIC-AAC",
+    "AgeYear": 59,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 706,
+    "CaseMasterID": 546,
+    "VictimName": "VIC-AAD",
+    "AgeYear": 55,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 707,
+    "CaseMasterID": 547,
+    "VictimName": "VIC-AAE",
+    "AgeYear": 68,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 708,
+    "CaseMasterID": 547,
+    "VictimName": "VIC-AAF",
+    "AgeYear": 71,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 709,
+    "CaseMasterID": 548,
+    "VictimName": "VIC-AAG",
+    "AgeYear": 72,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 710,
+    "CaseMasterID": 549,
+    "VictimName": "VIC-AAH",
+    "AgeYear": 80,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 711,
+    "CaseMasterID": 550,
+    "VictimName": "VIC-AAI",
+    "AgeYear": 9,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 712,
+    "CaseMasterID": 550,
+    "VictimName": "VIC-AAJ",
+    "AgeYear": 36,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 713,
+    "CaseMasterID": 551,
+    "VictimName": "VIC-AAK",
+    "AgeYear": 42,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 714,
+    "CaseMasterID": 552,
+    "VictimName": "VIC-AAL",
+    "AgeYear": 65,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 715,
+    "CaseMasterID": 552,
+    "VictimName": "VIC-AAM",
+    "AgeYear": 38,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 716,
+    "CaseMasterID": 553,
+    "VictimName": "VIC-AAN",
+    "AgeYear": 26,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 717,
+    "CaseMasterID": 554,
+    "VictimName": "VIC-AAO",
+    "AgeYear": 34,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 718,
+    "CaseMasterID": 554,
+    "VictimName": "VIC-AAP",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 719,
+    "CaseMasterID": 555,
+    "VictimName": "VIC-AAQ",
+    "AgeYear": 50,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 720,
+    "CaseMasterID": 556,
+    "VictimName": "VIC-AAR",
+    "AgeYear": 54,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 721,
+    "CaseMasterID": 557,
+    "VictimName": "VIC-AAS",
+    "AgeYear": 51,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 722,
+    "CaseMasterID": 558,
+    "VictimName": "VIC-AAT",
+    "AgeYear": 77,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 723,
+    "CaseMasterID": 559,
+    "VictimName": "VIC-AAU",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 724,
+    "CaseMasterID": 560,
+    "VictimName": "VIC-AAV",
+    "AgeYear": 34,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 725,
+    "CaseMasterID": 561,
+    "VictimName": "VIC-AAW",
+    "AgeYear": 37,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 726,
+    "CaseMasterID": 562,
+    "VictimName": "VIC-AAX",
+    "AgeYear": 34,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 727,
+    "CaseMasterID": 563,
+    "VictimName": "VIC-AAY",
+    "AgeYear": 17,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 728,
+    "CaseMasterID": 564,
+    "VictimName": "VIC-AAZ",
+    "AgeYear": 38,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 729,
+    "CaseMasterID": 564,
+    "VictimName": "VIC-ABA",
+    "AgeYear": 7,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 730,
+    "CaseMasterID": 565,
+    "VictimName": "VIC-ABB",
+    "AgeYear": 22,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 731,
+    "CaseMasterID": 566,
+    "VictimName": "VIC-ABC",
+    "AgeYear": 46,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 732,
+    "CaseMasterID": 567,
+    "VictimName": "VIC-ABD",
+    "AgeYear": 28,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 733,
+    "CaseMasterID": 568,
+    "VictimName": "VIC-ABE",
+    "AgeYear": 9,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 734,
+    "CaseMasterID": 569,
+    "VictimName": "VIC-ABF",
+    "AgeYear": 48,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 735,
+    "CaseMasterID": 569,
+    "VictimName": "VIC-ABG",
+    "AgeYear": 9,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 736,
+    "CaseMasterID": 570,
+    "VictimName": "VIC-ABH",
+    "AgeYear": 34,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 737,
+    "CaseMasterID": 571,
+    "VictimName": "VIC-ABI",
+    "AgeYear": 41,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 738,
+    "CaseMasterID": 572,
+    "VictimName": "VIC-ABJ",
+    "AgeYear": 23,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 739,
+    "CaseMasterID": 573,
+    "VictimName": "VIC-ABK",
+    "AgeYear": 78,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 740,
+    "CaseMasterID": 574,
+    "VictimName": "VIC-ABL",
+    "AgeYear": 18,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 741,
+    "CaseMasterID": 575,
+    "VictimName": "VIC-ABM",
+    "AgeYear": 36,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 742,
+    "CaseMasterID": 576,
+    "VictimName": "VIC-ABN",
+    "AgeYear": 37,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 743,
+    "CaseMasterID": 577,
+    "VictimName": "VIC-ABO",
+    "AgeYear": 56,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 744,
+    "CaseMasterID": 577,
+    "VictimName": "VIC-ABP",
+    "AgeYear": 63,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 745,
+    "CaseMasterID": 578,
+    "VictimName": "VIC-ABQ",
+    "AgeYear": 30,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 746,
+    "CaseMasterID": 579,
+    "VictimName": "VIC-ABR",
+    "AgeYear": 81,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 747,
+    "CaseMasterID": 580,
+    "VictimName": "VIC-ABS",
+    "AgeYear": 14,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 748,
+    "CaseMasterID": 581,
+    "VictimName": "VIC-ABT",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 749,
+    "CaseMasterID": 582,
+    "VictimName": "VIC-ABU",
+    "AgeYear": 81,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 750,
+    "CaseMasterID": 583,
+    "VictimName": "VIC-ABV",
+    "AgeYear": 6,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 751,
+    "CaseMasterID": 584,
+    "VictimName": "VIC-ABW",
+    "AgeYear": 75,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 752,
+    "CaseMasterID": 584,
+    "VictimName": "VIC-ABX",
+    "AgeYear": 21,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 753,
+    "CaseMasterID": 585,
+    "VictimName": "VIC-ABY",
+    "AgeYear": 26,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 754,
+    "CaseMasterID": 586,
+    "VictimName": "VIC-ABZ",
+    "AgeYear": 35,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 755,
+    "CaseMasterID": 587,
+    "VictimName": "VIC-ACA",
+    "AgeYear": 37,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 756,
+    "CaseMasterID": 587,
+    "VictimName": "VIC-ACB",
+    "AgeYear": 21,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 757,
+    "CaseMasterID": 588,
+    "VictimName": "VIC-ACC",
+    "AgeYear": 33,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 758,
+    "CaseMasterID": 589,
+    "VictimName": "VIC-ACD",
+    "AgeYear": 7,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 759,
+    "CaseMasterID": 589,
+    "VictimName": "VIC-ACE",
+    "AgeYear": 58,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 760,
+    "CaseMasterID": 590,
+    "VictimName": "VIC-ACF",
+    "AgeYear": 46,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 761,
+    "CaseMasterID": 591,
+    "VictimName": "VIC-ACG",
+    "AgeYear": 13,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 762,
+    "CaseMasterID": 592,
+    "VictimName": "VIC-ACH",
+    "AgeYear": 62,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 763,
+    "CaseMasterID": 593,
+    "VictimName": "VIC-ACI",
+    "AgeYear": 15,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 764,
+    "CaseMasterID": 593,
+    "VictimName": "VIC-ACJ",
+    "AgeYear": 58,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 765,
+    "CaseMasterID": 594,
+    "VictimName": "VIC-ACK",
+    "AgeYear": 59,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 766,
+    "CaseMasterID": 595,
+    "VictimName": "VIC-ACL",
+    "AgeYear": 18,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 767,
+    "CaseMasterID": 596,
+    "VictimName": "VIC-ACM",
+    "AgeYear": 59,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 768,
+    "CaseMasterID": 597,
+    "VictimName": "VIC-ACN",
+    "AgeYear": 73,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 769,
+    "CaseMasterID": 598,
+    "VictimName": "VIC-ACO",
+    "AgeYear": 13,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 770,
+    "CaseMasterID": 599,
+    "VictimName": "VIC-ACP",
+    "AgeYear": 67,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 771,
+    "CaseMasterID": 600,
+    "VictimName": "VIC-ACQ",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 772,
+    "CaseMasterID": 601,
+    "VictimName": "VIC-ACR",
+    "AgeYear": 33,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 773,
+    "CaseMasterID": 602,
+    "VictimName": "VIC-ACS",
+    "AgeYear": 40,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 774,
+    "CaseMasterID": 603,
+    "VictimName": "VIC-ACT",
+    "AgeYear": 57,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 775,
+    "CaseMasterID": 604,
+    "VictimName": "VIC-ACU",
+    "AgeYear": 11,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 776,
+    "CaseMasterID": 605,
+    "VictimName": "VIC-ACV",
+    "AgeYear": 35,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 777,
+    "CaseMasterID": 606,
+    "VictimName": "VIC-ACW",
+    "AgeYear": 12,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 778,
+    "CaseMasterID": 607,
+    "VictimName": "VIC-ACX",
+    "AgeYear": 37,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 779,
+    "CaseMasterID": 607,
+    "VictimName": "VIC-ACY",
+    "AgeYear": 79,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 780,
+    "CaseMasterID": 607,
+    "VictimName": "VIC-ACZ",
+    "AgeYear": 63,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 781,
+    "CaseMasterID": 608,
+    "VictimName": "VIC-ADA",
+    "AgeYear": 73,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 782,
+    "CaseMasterID": 609,
+    "VictimName": "VIC-ADB",
+    "AgeYear": 53,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 783,
+    "CaseMasterID": 610,
+    "VictimName": "VIC-ADC",
+    "AgeYear": 51,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 784,
+    "CaseMasterID": 611,
+    "VictimName": "VIC-ADD",
+    "AgeYear": 35,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 785,
+    "CaseMasterID": 612,
+    "VictimName": "VIC-ADE",
+    "AgeYear": 15,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 786,
+    "CaseMasterID": 613,
+    "VictimName": "VIC-ADF",
+    "AgeYear": 16,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 787,
+    "CaseMasterID": 614,
+    "VictimName": "VIC-ADG",
+    "AgeYear": 48,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 788,
+    "CaseMasterID": 615,
+    "VictimName": "VIC-ADH",
+    "AgeYear": 46,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 789,
+    "CaseMasterID": 616,
+    "VictimName": "VIC-ADI",
+    "AgeYear": 62,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 790,
+    "CaseMasterID": 617,
+    "VictimName": "VIC-ADJ",
+    "AgeYear": 74,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 791,
+    "CaseMasterID": 618,
+    "VictimName": "VIC-ADK",
+    "AgeYear": 30,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 792,
+    "CaseMasterID": 618,
+    "VictimName": "VIC-ADL",
+    "AgeYear": 72,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 793,
+    "CaseMasterID": 619,
+    "VictimName": "VIC-ADM",
+    "AgeYear": 30,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 794,
+    "CaseMasterID": 620,
+    "VictimName": "VIC-ADN",
+    "AgeYear": 34,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 795,
+    "CaseMasterID": 621,
+    "VictimName": "VIC-ADO",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 796,
+    "CaseMasterID": 622,
+    "VictimName": "VIC-ADP",
+    "AgeYear": 59,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 797,
+    "CaseMasterID": 623,
+    "VictimName": "VIC-ADQ",
+    "AgeYear": 74,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 798,
+    "CaseMasterID": 623,
+    "VictimName": "VIC-ADR",
+    "AgeYear": 44,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 799,
+    "CaseMasterID": 624,
+    "VictimName": "VIC-ADS",
+    "AgeYear": 54,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 800,
+    "CaseMasterID": 624,
+    "VictimName": "VIC-ADT",
+    "AgeYear": 21,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 801,
+    "CaseMasterID": 625,
+    "VictimName": "VIC-ADU",
+    "AgeYear": 44,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 802,
+    "CaseMasterID": 626,
+    "VictimName": "VIC-ADV",
+    "AgeYear": 25,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 803,
+    "CaseMasterID": 627,
+    "VictimName": "VIC-ADW",
+    "AgeYear": 62,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 804,
+    "CaseMasterID": 627,
+    "VictimName": "VIC-ADX",
+    "AgeYear": 52,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 805,
+    "CaseMasterID": 627,
+    "VictimName": "VIC-ADY",
+    "AgeYear": 22,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 806,
+    "CaseMasterID": 628,
+    "VictimName": "VIC-ADZ",
+    "AgeYear": 18,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 807,
+    "CaseMasterID": 629,
+    "VictimName": "VIC-AEA",
+    "AgeYear": 47,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 808,
+    "CaseMasterID": 630,
+    "VictimName": "VIC-AEB",
+    "AgeYear": 69,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 809,
+    "CaseMasterID": 631,
+    "VictimName": "VIC-AEC",
+    "AgeYear": 27,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 810,
+    "CaseMasterID": 632,
+    "VictimName": "VIC-AED",
+    "AgeYear": 69,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 811,
+    "CaseMasterID": 633,
+    "VictimName": "VIC-AEE",
+    "AgeYear": 79,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 812,
+    "CaseMasterID": 634,
+    "VictimName": "VIC-AEF",
+    "AgeYear": 37,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 813,
+    "CaseMasterID": 635,
+    "VictimName": "VIC-AEG",
+    "AgeYear": 44,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 814,
+    "CaseMasterID": 636,
+    "VictimName": "VIC-AEH",
+    "AgeYear": 31,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 815,
+    "CaseMasterID": 637,
+    "VictimName": "VIC-AEI",
+    "AgeYear": 20,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 816,
+    "CaseMasterID": 638,
+    "VictimName": "VIC-AEJ",
+    "AgeYear": 9,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 817,
+    "CaseMasterID": 639,
+    "VictimName": "VIC-AEK",
+    "AgeYear": 8,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 818,
+    "CaseMasterID": 640,
+    "VictimName": "VIC-AEL",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 819,
+    "CaseMasterID": 640,
+    "VictimName": "VIC-AEM",
+    "AgeYear": 26,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 820,
+    "CaseMasterID": 641,
+    "VictimName": "VIC-AEN",
+    "AgeYear": 33,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 821,
+    "CaseMasterID": 641,
+    "VictimName": "VIC-AEO",
+    "AgeYear": 35,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 822,
+    "CaseMasterID": 642,
+    "VictimName": "VIC-AEP",
+    "AgeYear": 65,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 823,
+    "CaseMasterID": 643,
+    "VictimName": "VIC-AEQ",
+    "AgeYear": 29,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 824,
+    "CaseMasterID": 644,
+    "VictimName": "VIC-AER",
+    "AgeYear": 69,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 825,
+    "CaseMasterID": 645,
+    "VictimName": "VIC-AES",
+    "AgeYear": 60,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 826,
+    "CaseMasterID": 646,
+    "VictimName": "VIC-AET",
+    "AgeYear": 68,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 827,
+    "CaseMasterID": 647,
+    "VictimName": "VIC-AEU",
+    "AgeYear": 15,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 828,
+    "CaseMasterID": 648,
+    "VictimName": "VIC-AEV",
+    "AgeYear": 12,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 829,
+    "CaseMasterID": 649,
+    "VictimName": "VIC-AEW",
+    "AgeYear": 63,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 830,
+    "CaseMasterID": 650,
+    "VictimName": "VIC-AEX",
+    "AgeYear": 82,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 831,
+    "CaseMasterID": 651,
+    "VictimName": "VIC-AEY",
+    "AgeYear": 69,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 832,
+    "CaseMasterID": 652,
+    "VictimName": "VIC-AEZ",
+    "AgeYear": 57,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 833,
+    "CaseMasterID": 653,
+    "VictimName": "VIC-AFA",
+    "AgeYear": 78,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 834,
+    "CaseMasterID": 654,
+    "VictimName": "VIC-AFB",
+    "AgeYear": 68,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 835,
+    "CaseMasterID": 655,
+    "VictimName": "VIC-AFC",
+    "AgeYear": 74,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 836,
+    "CaseMasterID": 656,
+    "VictimName": "VIC-AFD",
+    "AgeYear": 66,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 837,
+    "CaseMasterID": 657,
+    "VictimName": "VIC-AFE",
+    "AgeYear": 6,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 838,
+    "CaseMasterID": 657,
+    "VictimName": "VIC-AFF",
+    "AgeYear": 57,
+    "GenderID": 1,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 839,
+    "CaseMasterID": 658,
+    "VictimName": "VIC-AFG",
+    "AgeYear": 17,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 840,
+    "CaseMasterID": 658,
+    "VictimName": "VIC-AFH",
+    "AgeYear": 48,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 841,
+    "CaseMasterID": 658,
+    "VictimName": "VIC-AFI",
+    "AgeYear": 13,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 842,
+    "CaseMasterID": 659,
+    "VictimName": "VIC-AFJ",
+    "AgeYear": 38,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 843,
+    "CaseMasterID": 660,
+    "VictimName": "VIC-AFK",
+    "AgeYear": 67,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 844,
+    "CaseMasterID": 661,
+    "VictimName": "VIC-AFL",
+    "AgeYear": 39,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 845,
+    "CaseMasterID": 661,
+    "VictimName": "VIC-AFM",
+    "AgeYear": 8,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 846,
+    "CaseMasterID": 661,
+    "VictimName": "VIC-AFN",
+    "AgeYear": 16,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 847,
+    "CaseMasterID": 662,
+    "VictimName": "VIC-AFO",
+    "AgeYear": 55,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 848,
+    "CaseMasterID": 662,
+    "VictimName": "VIC-AFP",
+    "AgeYear": 53,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 849,
+    "CaseMasterID": 663,
+    "VictimName": "VIC-AFQ",
+    "AgeYear": 82,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 850,
+    "CaseMasterID": 664,
+    "VictimName": "VIC-AFR",
+    "AgeYear": 41,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 851,
+    "CaseMasterID": 665,
+    "VictimName": "VIC-AFS",
+    "AgeYear": 10,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 852,
+    "CaseMasterID": 666,
+    "VictimName": "VIC-AFT",
+    "AgeYear": 35,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 853,
+    "CaseMasterID": 667,
+    "VictimName": "VIC-AFU",
+    "AgeYear": 34,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 854,
+    "CaseMasterID": 667,
+    "VictimName": "VIC-AFV",
+    "AgeYear": 34,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 855,
+    "CaseMasterID": 667,
+    "VictimName": "VIC-AFW",
+    "AgeYear": 33,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 856,
+    "CaseMasterID": 668,
+    "VictimName": "VIC-AFX",
+    "AgeYear": 64,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 857,
+    "CaseMasterID": 669,
+    "VictimName": "VIC-AFY",
+    "AgeYear": 67,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 858,
+    "CaseMasterID": 670,
+    "VictimName": "VIC-AFZ",
+    "AgeYear": 25,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 859,
+    "CaseMasterID": 671,
+    "VictimName": "VIC-AGA",
+    "AgeYear": 36,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 860,
+    "CaseMasterID": 672,
+    "VictimName": "VIC-AGB",
+    "AgeYear": 36,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 861,
+    "CaseMasterID": 673,
+    "VictimName": "VIC-AGC",
+    "AgeYear": 78,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 862,
+    "CaseMasterID": 674,
+    "VictimName": "VIC-AGD",
+    "AgeYear": 81,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 863,
+    "CaseMasterID": 675,
+    "VictimName": "VIC-AGE",
+    "AgeYear": 38,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 864,
+    "CaseMasterID": 676,
+    "VictimName": "VIC-AGF",
+    "AgeYear": 49,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 865,
+    "CaseMasterID": 677,
+    "VictimName": "VIC-AGG",
+    "AgeYear": 39,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 866,
+    "CaseMasterID": 678,
+    "VictimName": "VIC-AGH",
+    "AgeYear": 36,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 867,
+    "CaseMasterID": 679,
+    "VictimName": "VIC-AGI",
+    "AgeYear": 25,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 868,
+    "CaseMasterID": 680,
+    "VictimName": "VIC-AGJ",
+    "AgeYear": 55,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 869,
+    "CaseMasterID": 681,
+    "VictimName": "VIC-AGK",
+    "AgeYear": 34,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 870,
+    "CaseMasterID": 682,
+    "VictimName": "VIC-AGL",
+    "AgeYear": 48,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 871,
+    "CaseMasterID": 683,
+    "VictimName": "VIC-AGM",
+    "AgeYear": 30,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 872,
+    "CaseMasterID": 684,
+    "VictimName": "VIC-AGN",
+    "AgeYear": 35,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 873,
+    "CaseMasterID": 685,
+    "VictimName": "VIC-AGO",
+    "AgeYear": 34,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 874,
+    "CaseMasterID": 685,
+    "VictimName": "VIC-AGP",
+    "AgeYear": 6,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 875,
+    "CaseMasterID": 686,
+    "VictimName": "VIC-AGQ",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 876,
+    "CaseMasterID": 686,
+    "VictimName": "VIC-AGR",
+    "AgeYear": 27,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 877,
+    "CaseMasterID": 686,
+    "VictimName": "VIC-AGS",
+    "AgeYear": 12,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 878,
+    "CaseMasterID": 687,
+    "VictimName": "VIC-AGT",
+    "AgeYear": 20,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 879,
+    "CaseMasterID": 688,
+    "VictimName": "VIC-AGU",
+    "AgeYear": 71,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 880,
+    "CaseMasterID": 689,
+    "VictimName": "VIC-AGV",
+    "AgeYear": 20,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 881,
+    "CaseMasterID": 690,
+    "VictimName": "VIC-AGW",
+    "AgeYear": 22,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 882,
+    "CaseMasterID": 691,
+    "VictimName": "VIC-AGX",
+    "AgeYear": 73,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 883,
+    "CaseMasterID": 691,
+    "VictimName": "VIC-AGY",
+    "AgeYear": 25,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 884,
+    "CaseMasterID": 692,
+    "VictimName": "VIC-AGZ",
+    "AgeYear": 48,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 885,
+    "CaseMasterID": 693,
+    "VictimName": "VIC-AHA",
+    "AgeYear": 18,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 886,
+    "CaseMasterID": 694,
+    "VictimName": "VIC-AHB",
+    "AgeYear": 27,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 887,
+    "CaseMasterID": 695,
+    "VictimName": "VIC-AHC",
+    "AgeYear": 31,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 888,
+    "CaseMasterID": 695,
+    "VictimName": "VIC-AHD",
+    "AgeYear": 81,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 889,
+    "CaseMasterID": 696,
+    "VictimName": "VIC-AHE",
+    "AgeYear": 28,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 890,
+    "CaseMasterID": 696,
+    "VictimName": "VIC-AHF",
+    "AgeYear": 76,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 891,
+    "CaseMasterID": 697,
+    "VictimName": "VIC-AHG",
+    "AgeYear": 27,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 892,
+    "CaseMasterID": 698,
+    "VictimName": "VIC-AHH",
+    "AgeYear": 50,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 893,
+    "CaseMasterID": 699,
+    "VictimName": "VIC-AHI",
+    "AgeYear": 26,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 894,
+    "CaseMasterID": 699,
+    "VictimName": "VIC-AHJ",
+    "AgeYear": 46,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 895,
+    "CaseMasterID": 700,
+    "VictimName": "VIC-AHK",
+    "AgeYear": 12,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 896,
+    "CaseMasterID": 701,
+    "VictimName": "VIC-AHL",
+    "AgeYear": 16,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 897,
+    "CaseMasterID": 702,
+    "VictimName": "VIC-AHM",
+    "AgeYear": 25,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 898,
+    "CaseMasterID": 703,
+    "VictimName": "VIC-AHN",
+    "AgeYear": 19,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 899,
+    "CaseMasterID": 704,
+    "VictimName": "VIC-AHO",
+    "AgeYear": 72,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 900,
+    "CaseMasterID": 704,
+    "VictimName": "VIC-AHP",
+    "AgeYear": 70,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 901,
+    "CaseMasterID": 705,
+    "VictimName": "VIC-AHQ",
+    "AgeYear": 55,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 902,
+    "CaseMasterID": 706,
+    "VictimName": "VIC-AHR",
+    "AgeYear": 77,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 903,
+    "CaseMasterID": 707,
+    "VictimName": "VIC-AHS",
+    "AgeYear": 25,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 904,
+    "CaseMasterID": 708,
+    "VictimName": "VIC-AHT",
+    "AgeYear": 41,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 905,
+    "CaseMasterID": 709,
+    "VictimName": "VIC-AHU",
+    "AgeYear": 11,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 906,
+    "CaseMasterID": 709,
+    "VictimName": "VIC-AHV",
+    "AgeYear": 79,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 907,
+    "CaseMasterID": 709,
+    "VictimName": "VIC-AHW",
+    "AgeYear": 82,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 908,
+    "CaseMasterID": 710,
+    "VictimName": "VIC-AHX",
+    "AgeYear": 38,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 909,
+    "CaseMasterID": 711,
+    "VictimName": "VIC-AHY",
+    "AgeYear": 11,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 910,
+    "CaseMasterID": 712,
+    "VictimName": "VIC-AHZ",
+    "AgeYear": 71,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 911,
+    "CaseMasterID": 713,
+    "VictimName": "VIC-AIA",
+    "AgeYear": 32,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 912,
+    "CaseMasterID": 714,
+    "VictimName": "VIC-AIB",
+    "AgeYear": 80,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 913,
+    "CaseMasterID": 715,
+    "VictimName": "VIC-AIC",
+    "AgeYear": 51,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 914,
+    "CaseMasterID": 716,
+    "VictimName": "VIC-AID",
+    "AgeYear": 66,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 915,
+    "CaseMasterID": 717,
+    "VictimName": "VIC-AIE",
+    "AgeYear": 46,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 916,
+    "CaseMasterID": 717,
+    "VictimName": "VIC-AIF",
+    "AgeYear": 38,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 917,
+    "CaseMasterID": 718,
+    "VictimName": "VIC-AIG",
+    "AgeYear": 65,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 918,
+    "CaseMasterID": 719,
+    "VictimName": "VIC-AIH",
+    "AgeYear": 26,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 919,
+    "CaseMasterID": 720,
+    "VictimName": "VIC-AII",
+    "AgeYear": 17,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 920,
+    "CaseMasterID": 721,
+    "VictimName": "VIC-AIJ",
+    "AgeYear": 75,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 921,
+    "CaseMasterID": 722,
+    "VictimName": "VIC-AIK",
+    "AgeYear": 63,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 922,
+    "CaseMasterID": 723,
+    "VictimName": "VIC-AIL",
+    "AgeYear": 46,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 923,
+    "CaseMasterID": 724,
+    "VictimName": "VIC-AIM",
+    "AgeYear": 23,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 924,
+    "CaseMasterID": 725,
+    "VictimName": "VIC-AIN",
+    "AgeYear": 80,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 925,
+    "CaseMasterID": 726,
+    "VictimName": "VIC-AIO",
+    "AgeYear": 46,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 926,
+    "CaseMasterID": 727,
+    "VictimName": "VIC-AIP",
+    "AgeYear": 6,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 927,
+    "CaseMasterID": 728,
+    "VictimName": "VIC-AIQ",
+    "AgeYear": 61,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 928,
+    "CaseMasterID": 729,
+    "VictimName": "VIC-AIR",
+    "AgeYear": 12,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 929,
+    "CaseMasterID": 729,
+    "VictimName": "VIC-AIS",
+    "AgeYear": 67,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 930,
+    "CaseMasterID": 730,
+    "VictimName": "VIC-AIT",
+    "AgeYear": 77,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 931,
+    "CaseMasterID": 731,
+    "VictimName": "VIC-AIU",
+    "AgeYear": 24,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 932,
+    "CaseMasterID": 732,
+    "VictimName": "VIC-AIV",
+    "AgeYear": 42,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 933,
+    "CaseMasterID": 733,
+    "VictimName": "VIC-AIW",
+    "AgeYear": 7,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 934,
+    "CaseMasterID": 734,
+    "VictimName": "VIC-AIX",
+    "AgeYear": 72,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 935,
+    "CaseMasterID": 735,
+    "VictimName": "VIC-AIY",
+    "AgeYear": 69,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 936,
+    "CaseMasterID": 736,
+    "VictimName": "VIC-AIZ",
+    "AgeYear": 66,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 937,
+    "CaseMasterID": 737,
+    "VictimName": "VIC-AJA",
+    "AgeYear": 30,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 938,
+    "CaseMasterID": 737,
+    "VictimName": "VIC-AJB",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 939,
+    "CaseMasterID": 738,
+    "VictimName": "VIC-AJC",
+    "AgeYear": 39,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 940,
+    "CaseMasterID": 739,
+    "VictimName": "VIC-AJD",
+    "AgeYear": 35,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 941,
+    "CaseMasterID": 740,
+    "VictimName": "VIC-AJE",
+    "AgeYear": 71,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 942,
+    "CaseMasterID": 741,
+    "VictimName": "VIC-AJF",
+    "AgeYear": 38,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 943,
+    "CaseMasterID": 742,
+    "VictimName": "VIC-AJG",
+    "AgeYear": 36,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 944,
+    "CaseMasterID": 743,
+    "VictimName": "VIC-AJH",
+    "AgeYear": 59,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 945,
+    "CaseMasterID": 744,
+    "VictimName": "VIC-AJI",
+    "AgeYear": 16,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 946,
+    "CaseMasterID": 745,
+    "VictimName": "VIC-AJJ",
+    "AgeYear": 18,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 947,
+    "CaseMasterID": 745,
+    "VictimName": "VIC-AJK",
+    "AgeYear": 24,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 948,
+    "CaseMasterID": 746,
+    "VictimName": "VIC-AJL",
+    "AgeYear": 79,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 949,
+    "CaseMasterID": 747,
+    "VictimName": "VIC-AJM",
+    "AgeYear": 69,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 950,
+    "CaseMasterID": 748,
+    "VictimName": "VIC-AJN",
+    "AgeYear": 69,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 951,
+    "CaseMasterID": 749,
+    "VictimName": "VIC-AJO",
+    "AgeYear": 68,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 952,
+    "CaseMasterID": 750,
+    "VictimName": "VIC-AJP",
+    "AgeYear": 67,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 953,
+    "CaseMasterID": 751,
+    "VictimName": "VIC-AJQ",
+    "AgeYear": 62,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 954,
+    "CaseMasterID": 752,
+    "VictimName": "VIC-AJR",
+    "AgeYear": 36,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 955,
+    "CaseMasterID": 753,
+    "VictimName": "VIC-AJS",
+    "AgeYear": 63,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 956,
+    "CaseMasterID": 753,
+    "VictimName": "VIC-AJT",
+    "AgeYear": 73,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 957,
+    "CaseMasterID": 754,
+    "VictimName": "VIC-AJU",
+    "AgeYear": 34,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 958,
+    "CaseMasterID": 754,
+    "VictimName": "VIC-AJV",
+    "AgeYear": 69,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 959,
+    "CaseMasterID": 754,
+    "VictimName": "VIC-AJW",
+    "AgeYear": 21,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 960,
+    "CaseMasterID": 755,
+    "VictimName": "VIC-AJX",
+    "AgeYear": 56,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 961,
+    "CaseMasterID": 756,
+    "VictimName": "VIC-AJY",
+    "AgeYear": 58,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 962,
+    "CaseMasterID": 757,
+    "VictimName": "VIC-AJZ",
+    "AgeYear": 57,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 963,
+    "CaseMasterID": 757,
+    "VictimName": "VIC-AKA",
+    "AgeYear": 82,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 964,
+    "CaseMasterID": 758,
+    "VictimName": "VIC-AKB",
+    "AgeYear": 38,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 965,
+    "CaseMasterID": 759,
+    "VictimName": "VIC-AKC",
+    "AgeYear": 37,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 966,
+    "CaseMasterID": 760,
+    "VictimName": "VIC-AKD",
+    "AgeYear": 66,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 967,
+    "CaseMasterID": 761,
+    "VictimName": "VIC-AKE",
+    "AgeYear": 27,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 968,
+    "CaseMasterID": 762,
+    "VictimName": "VIC-AKF",
+    "AgeYear": 30,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 969,
+    "CaseMasterID": 763,
+    "VictimName": "VIC-AKG",
+    "AgeYear": 77,
+    "GenderID": 3,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 970,
+    "CaseMasterID": 764,
+    "VictimName": "VIC-AKH",
+    "AgeYear": 12,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 971,
+    "CaseMasterID": 765,
+    "VictimName": "VIC-AKI",
+    "AgeYear": 17,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 972,
+    "CaseMasterID": 766,
+    "VictimName": "VIC-AKJ",
+    "AgeYear": 19,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 973,
+    "CaseMasterID": 767,
+    "VictimName": "VIC-AKK",
+    "AgeYear": 21,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 974,
+    "CaseMasterID": 768,
+    "VictimName": "VIC-AKL",
+    "AgeYear": 15,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 975,
+    "CaseMasterID": 768,
+    "VictimName": "VIC-AKM",
+    "AgeYear": 38,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 976,
+    "CaseMasterID": 769,
+    "VictimName": "VIC-AKN",
+    "AgeYear": 26,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 977,
+    "CaseMasterID": 769,
+    "VictimName": "VIC-AKO",
+    "AgeYear": 13,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 978,
+    "CaseMasterID": 769,
+    "VictimName": "VIC-AKP",
+    "AgeYear": 9,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 979,
+    "CaseMasterID": 770,
+    "VictimName": "VIC-AKQ",
+    "AgeYear": 28,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 980,
+    "CaseMasterID": 771,
+    "VictimName": "VIC-AKR",
+    "AgeYear": 59,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 981,
+    "CaseMasterID": 772,
+    "VictimName": "VIC-AKS",
+    "AgeYear": 28,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 982,
+    "CaseMasterID": 773,
+    "VictimName": "VIC-AKT",
+    "AgeYear": 80,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 983,
+    "CaseMasterID": 774,
+    "VictimName": "VIC-AKU",
+    "AgeYear": 67,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 984,
+    "CaseMasterID": 775,
+    "VictimName": "VIC-AKV",
+    "AgeYear": 77,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 985,
+    "CaseMasterID": 775,
+    "VictimName": "VIC-AKW",
+    "AgeYear": 39,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 986,
+    "CaseMasterID": 776,
+    "VictimName": "VIC-AKX",
+    "AgeYear": 45,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 987,
+    "CaseMasterID": 776,
+    "VictimName": "VIC-AKY",
+    "AgeYear": 8,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 988,
+    "CaseMasterID": 777,
+    "VictimName": "VIC-AKZ",
+    "AgeYear": 22,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 989,
+    "CaseMasterID": 778,
+    "VictimName": "VIC-ALA",
+    "AgeYear": 79,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 990,
+    "CaseMasterID": 779,
+    "VictimName": "VIC-ALB",
+    "AgeYear": 16,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 991,
+    "CaseMasterID": 780,
+    "VictimName": "VIC-ALC",
+    "AgeYear": 67,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 992,
+    "CaseMasterID": 781,
+    "VictimName": "VIC-ALD",
+    "AgeYear": 17,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 993,
+    "CaseMasterID": 782,
+    "VictimName": "VIC-ALE",
+    "AgeYear": 80,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 994,
+    "CaseMasterID": 783,
+    "VictimName": "VIC-ALF",
+    "AgeYear": 51,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 995,
+    "CaseMasterID": 784,
+    "VictimName": "VIC-ALG",
+    "AgeYear": 31,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 996,
+    "CaseMasterID": 785,
+    "VictimName": "VIC-ALH",
+    "AgeYear": 72,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 997,
+    "CaseMasterID": 786,
+    "VictimName": "VIC-ALI",
+    "AgeYear": 27,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 998,
+    "CaseMasterID": 786,
+    "VictimName": "VIC-ALJ",
+    "AgeYear": 18,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 999,
+    "CaseMasterID": 787,
+    "VictimName": "VIC-ALK",
+    "AgeYear": 79,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1000,
+    "CaseMasterID": 788,
+    "VictimName": "VIC-ALL",
+    "AgeYear": 52,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1001,
+    "CaseMasterID": 789,
+    "VictimName": "VIC-ALM",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1002,
+    "CaseMasterID": 790,
+    "VictimName": "VIC-ALN",
+    "AgeYear": 10,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1003,
+    "CaseMasterID": 791,
+    "VictimName": "VIC-ALO",
+    "AgeYear": 55,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1004,
+    "CaseMasterID": 792,
+    "VictimName": "VIC-ALP",
+    "AgeYear": 16,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1005,
+    "CaseMasterID": 793,
+    "VictimName": "VIC-ALQ",
+    "AgeYear": 68,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1006,
+    "CaseMasterID": 794,
+    "VictimName": "VIC-ALR",
+    "AgeYear": 23,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1007,
+    "CaseMasterID": 795,
+    "VictimName": "VIC-ALS",
+    "AgeYear": 23,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1008,
+    "CaseMasterID": 796,
+    "VictimName": "VIC-ALT",
+    "AgeYear": 54,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1009,
+    "CaseMasterID": 797,
+    "VictimName": "VIC-ALU",
+    "AgeYear": 79,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1010,
+    "CaseMasterID": 798,
+    "VictimName": "VIC-ALV",
+    "AgeYear": 15,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1011,
+    "CaseMasterID": 799,
+    "VictimName": "VIC-ALW",
+    "AgeYear": 49,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1012,
+    "CaseMasterID": 800,
+    "VictimName": "VIC-ALX",
+    "AgeYear": 13,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1013,
+    "CaseMasterID": 800,
+    "VictimName": "VIC-ALY",
+    "AgeYear": 70,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1014,
+    "CaseMasterID": 801,
+    "VictimName": "VIC-ALZ",
+    "AgeYear": 11,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1015,
+    "CaseMasterID": 801,
+    "VictimName": "VIC-AMA",
+    "AgeYear": 26,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1016,
+    "CaseMasterID": 802,
+    "VictimName": "VIC-AMB",
+    "AgeYear": 14,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1017,
+    "CaseMasterID": 803,
+    "VictimName": "VIC-AMC",
+    "AgeYear": 16,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1018,
+    "CaseMasterID": 804,
+    "VictimName": "VIC-AMD",
+    "AgeYear": 30,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1019,
+    "CaseMasterID": 805,
+    "VictimName": "VIC-AME",
+    "AgeYear": 11,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1020,
+    "CaseMasterID": 806,
+    "VictimName": "VIC-AMF",
+    "AgeYear": 60,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1021,
+    "CaseMasterID": 807,
+    "VictimName": "VIC-AMG",
+    "AgeYear": 46,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1022,
+    "CaseMasterID": 808,
+    "VictimName": "VIC-AMH",
+    "AgeYear": 69,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1023,
+    "CaseMasterID": 809,
+    "VictimName": "VIC-AMI",
+    "AgeYear": 78,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1024,
+    "CaseMasterID": 810,
+    "VictimName": "VIC-AMJ",
+    "AgeYear": 40,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1025,
+    "CaseMasterID": 811,
+    "VictimName": "VIC-AMK",
+    "AgeYear": 70,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1026,
+    "CaseMasterID": 812,
+    "VictimName": "VIC-AML",
+    "AgeYear": 70,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1027,
+    "CaseMasterID": 813,
+    "VictimName": "VIC-AMM",
+    "AgeYear": 7,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1028,
+    "CaseMasterID": 814,
+    "VictimName": "VIC-AMN",
+    "AgeYear": 6,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1029,
+    "CaseMasterID": 815,
+    "VictimName": "VIC-AMO",
+    "AgeYear": 28,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1030,
+    "CaseMasterID": 815,
+    "VictimName": "VIC-AMP",
+    "AgeYear": 52,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1031,
+    "CaseMasterID": 816,
+    "VictimName": "VIC-AMQ",
+    "AgeYear": 73,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1032,
+    "CaseMasterID": 817,
+    "VictimName": "VIC-AMR",
+    "AgeYear": 10,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1033,
+    "CaseMasterID": 818,
+    "VictimName": "VIC-AMS",
+    "AgeYear": 42,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1034,
+    "CaseMasterID": 819,
+    "VictimName": "VIC-AMT",
+    "AgeYear": 11,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1035,
+    "CaseMasterID": 820,
+    "VictimName": "VIC-AMU",
+    "AgeYear": 29,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1036,
+    "CaseMasterID": 820,
+    "VictimName": "VIC-AMV",
+    "AgeYear": 56,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1037,
+    "CaseMasterID": 820,
+    "VictimName": "VIC-AMW",
+    "AgeYear": 31,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1038,
+    "CaseMasterID": 821,
+    "VictimName": "VIC-AMX",
+    "AgeYear": 65,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 1039,
+    "CaseMasterID": 822,
+    "VictimName": "VIC-AMY",
+    "AgeYear": 49,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1040,
+    "CaseMasterID": 823,
+    "VictimName": "VIC-AMZ",
+    "AgeYear": 37,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1041,
+    "CaseMasterID": 824,
+    "VictimName": "VIC-ANA",
+    "AgeYear": 66,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1042,
+    "CaseMasterID": 824,
+    "VictimName": "VIC-ANB",
+    "AgeYear": 52,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1043,
+    "CaseMasterID": 825,
+    "VictimName": "VIC-ANC",
+    "AgeYear": 63,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1044,
+    "CaseMasterID": 826,
+    "VictimName": "VIC-AND",
+    "AgeYear": 50,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1045,
+    "CaseMasterID": 826,
+    "VictimName": "VIC-ANE",
+    "AgeYear": 38,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1046,
+    "CaseMasterID": 827,
+    "VictimName": "VIC-ANF",
+    "AgeYear": 24,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1047,
+    "CaseMasterID": 827,
+    "VictimName": "VIC-ANG",
+    "AgeYear": 82,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1048,
+    "CaseMasterID": 828,
+    "VictimName": "VIC-ANH",
+    "AgeYear": 50,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1049,
+    "CaseMasterID": 828,
+    "VictimName": "VIC-ANI",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1050,
+    "CaseMasterID": 829,
+    "VictimName": "VIC-ANJ",
+    "AgeYear": 36,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1051,
+    "CaseMasterID": 830,
+    "VictimName": "VIC-ANK",
+    "AgeYear": 65,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1052,
+    "CaseMasterID": 831,
+    "VictimName": "VIC-ANL",
+    "AgeYear": 70,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1053,
+    "CaseMasterID": 831,
+    "VictimName": "VIC-ANM",
+    "AgeYear": 37,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1054,
+    "CaseMasterID": 831,
+    "VictimName": "VIC-ANN",
+    "AgeYear": 46,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1055,
+    "CaseMasterID": 832,
+    "VictimName": "VIC-ANO",
+    "AgeYear": 52,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1056,
+    "CaseMasterID": 833,
+    "VictimName": "VIC-ANP",
+    "AgeYear": 46,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1057,
+    "CaseMasterID": 834,
+    "VictimName": "VIC-ANQ",
+    "AgeYear": 41,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1058,
+    "CaseMasterID": 834,
+    "VictimName": "VIC-ANR",
+    "AgeYear": 48,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1059,
+    "CaseMasterID": 835,
+    "VictimName": "VIC-ANS",
+    "AgeYear": 33,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1060,
+    "CaseMasterID": 836,
+    "VictimName": "VIC-ANT",
+    "AgeYear": 28,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1061,
+    "CaseMasterID": 837,
+    "VictimName": "VIC-ANU",
+    "AgeYear": 55,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1062,
+    "CaseMasterID": 837,
+    "VictimName": "VIC-ANV",
+    "AgeYear": 8,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1063,
+    "CaseMasterID": 838,
+    "VictimName": "VIC-ANW",
+    "AgeYear": 51,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1064,
+    "CaseMasterID": 839,
+    "VictimName": "VIC-ANX",
+    "AgeYear": 20,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1065,
+    "CaseMasterID": 840,
+    "VictimName": "VIC-ANY",
+    "AgeYear": 17,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1066,
+    "CaseMasterID": 840,
+    "VictimName": "VIC-ANZ",
+    "AgeYear": 34,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1067,
+    "CaseMasterID": 841,
+    "VictimName": "VIC-AOA",
+    "AgeYear": 33,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1068,
+    "CaseMasterID": 841,
+    "VictimName": "VIC-AOB",
+    "AgeYear": 31,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1069,
+    "CaseMasterID": 841,
+    "VictimName": "VIC-AOC",
+    "AgeYear": 41,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1070,
+    "CaseMasterID": 842,
+    "VictimName": "VIC-AOD",
+    "AgeYear": 44,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1071,
+    "CaseMasterID": 843,
+    "VictimName": "VIC-AOE",
+    "AgeYear": 65,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1072,
+    "CaseMasterID": 844,
+    "VictimName": "VIC-AOF",
+    "AgeYear": 25,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1073,
+    "CaseMasterID": 845,
+    "VictimName": "VIC-AOG",
+    "AgeYear": 54,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1074,
+    "CaseMasterID": 846,
+    "VictimName": "VIC-AOH",
+    "AgeYear": 51,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1075,
+    "CaseMasterID": 847,
+    "VictimName": "VIC-AOI",
+    "AgeYear": 10,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1076,
+    "CaseMasterID": 847,
+    "VictimName": "VIC-AOJ",
+    "AgeYear": 63,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1077,
+    "CaseMasterID": 848,
+    "VictimName": "VIC-AOK",
+    "AgeYear": 6,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1078,
+    "CaseMasterID": 848,
+    "VictimName": "VIC-AOL",
+    "AgeYear": 60,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1079,
+    "CaseMasterID": 849,
+    "VictimName": "VIC-AOM",
+    "AgeYear": 18,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1080,
+    "CaseMasterID": 850,
+    "VictimName": "VIC-AON",
+    "AgeYear": 28,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1081,
+    "CaseMasterID": 851,
+    "VictimName": "VIC-AOO",
+    "AgeYear": 32,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1082,
+    "CaseMasterID": 851,
+    "VictimName": "VIC-AOP",
+    "AgeYear": 50,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1083,
+    "CaseMasterID": 852,
+    "VictimName": "VIC-AOQ",
+    "AgeYear": 57,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1084,
+    "CaseMasterID": 853,
+    "VictimName": "VIC-AOR",
+    "AgeYear": 57,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1085,
+    "CaseMasterID": 854,
+    "VictimName": "VIC-AOS",
+    "AgeYear": 24,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1086,
+    "CaseMasterID": 854,
+    "VictimName": "VIC-AOT",
+    "AgeYear": 25,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1087,
+    "CaseMasterID": 855,
+    "VictimName": "VIC-AOU",
+    "AgeYear": 50,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1088,
+    "CaseMasterID": 855,
+    "VictimName": "VIC-AOV",
+    "AgeYear": 15,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1089,
+    "CaseMasterID": 856,
+    "VictimName": "VIC-AOW",
+    "AgeYear": 33,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1090,
+    "CaseMasterID": 856,
+    "VictimName": "VIC-AOX",
+    "AgeYear": 82,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1091,
+    "CaseMasterID": 856,
+    "VictimName": "VIC-AOY",
+    "AgeYear": 80,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1092,
+    "CaseMasterID": 857,
+    "VictimName": "VIC-AOZ",
+    "AgeYear": 8,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1093,
+    "CaseMasterID": 858,
+    "VictimName": "VIC-APA",
+    "AgeYear": 40,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1094,
+    "CaseMasterID": 858,
+    "VictimName": "VIC-APB",
+    "AgeYear": 19,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1095,
+    "CaseMasterID": 859,
+    "VictimName": "VIC-APC",
+    "AgeYear": 10,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1096,
+    "CaseMasterID": 860,
+    "VictimName": "VIC-APD",
+    "AgeYear": 14,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1097,
+    "CaseMasterID": 861,
+    "VictimName": "VIC-APE",
+    "AgeYear": 28,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1098,
+    "CaseMasterID": 861,
+    "VictimName": "VIC-APF",
+    "AgeYear": 41,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1099,
+    "CaseMasterID": 862,
+    "VictimName": "VIC-APG",
+    "AgeYear": 52,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1100,
+    "CaseMasterID": 862,
+    "VictimName": "VIC-APH",
+    "AgeYear": 73,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1101,
+    "CaseMasterID": 863,
+    "VictimName": "VIC-API",
+    "AgeYear": 18,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1102,
+    "CaseMasterID": 864,
+    "VictimName": "VIC-APJ",
+    "AgeYear": 54,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1103,
+    "CaseMasterID": 864,
+    "VictimName": "VIC-APK",
+    "AgeYear": 24,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1104,
+    "CaseMasterID": 864,
+    "VictimName": "VIC-APL",
+    "AgeYear": 20,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1105,
+    "CaseMasterID": 865,
+    "VictimName": "VIC-APM",
+    "AgeYear": 18,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1106,
+    "CaseMasterID": 866,
+    "VictimName": "VIC-APN",
+    "AgeYear": 78,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1107,
+    "CaseMasterID": 866,
+    "VictimName": "VIC-APO",
+    "AgeYear": 45,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1108,
+    "CaseMasterID": 867,
+    "VictimName": "VIC-APP",
+    "AgeYear": 34,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1109,
+    "CaseMasterID": 868,
+    "VictimName": "VIC-APQ",
+    "AgeYear": 29,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1110,
+    "CaseMasterID": 869,
+    "VictimName": "VIC-APR",
+    "AgeYear": 80,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1111,
+    "CaseMasterID": 870,
+    "VictimName": "VIC-APS",
+    "AgeYear": 39,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1112,
+    "CaseMasterID": 870,
+    "VictimName": "VIC-APT",
+    "AgeYear": 82,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1113,
+    "CaseMasterID": 871,
+    "VictimName": "VIC-APU",
+    "AgeYear": 11,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1114,
+    "CaseMasterID": 872,
+    "VictimName": "VIC-APV",
+    "AgeYear": 42,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1115,
+    "CaseMasterID": 873,
+    "VictimName": "VIC-APW",
+    "AgeYear": 36,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1116,
+    "CaseMasterID": 874,
+    "VictimName": "VIC-APX",
+    "AgeYear": 42,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1117,
+    "CaseMasterID": 875,
+    "VictimName": "VIC-APY",
+    "AgeYear": 51,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1118,
+    "CaseMasterID": 876,
+    "VictimName": "VIC-APZ",
+    "AgeYear": 32,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1119,
+    "CaseMasterID": 877,
+    "VictimName": "VIC-AQA",
+    "AgeYear": 15,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 1120,
+    "CaseMasterID": 878,
+    "VictimName": "VIC-AQB",
+    "AgeYear": 76,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1121,
+    "CaseMasterID": 879,
+    "VictimName": "VIC-AQC",
+    "AgeYear": 12,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1122,
+    "CaseMasterID": 880,
+    "VictimName": "VIC-AQD",
+    "AgeYear": 78,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1123,
+    "CaseMasterID": 881,
+    "VictimName": "VIC-AQE",
+    "AgeYear": 72,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1124,
+    "CaseMasterID": 882,
+    "VictimName": "VIC-AQF",
+    "AgeYear": 77,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1125,
+    "CaseMasterID": 882,
+    "VictimName": "VIC-AQG",
+    "AgeYear": 79,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1126,
+    "CaseMasterID": 883,
+    "VictimName": "VIC-AQH",
+    "AgeYear": 27,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1127,
+    "CaseMasterID": 884,
+    "VictimName": "VIC-AQI",
+    "AgeYear": 61,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1128,
+    "CaseMasterID": 885,
+    "VictimName": "VIC-AQJ",
+    "AgeYear": 45,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1129,
+    "CaseMasterID": 886,
+    "VictimName": "VIC-AQK",
+    "AgeYear": 60,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1130,
+    "CaseMasterID": 887,
+    "VictimName": "VIC-AQL",
+    "AgeYear": 55,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1131,
+    "CaseMasterID": 888,
+    "VictimName": "VIC-AQM",
+    "AgeYear": 46,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1132,
+    "CaseMasterID": 889,
+    "VictimName": "VIC-AQN",
+    "AgeYear": 47,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1133,
+    "CaseMasterID": 890,
+    "VictimName": "VIC-AQO",
+    "AgeYear": 27,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1134,
+    "CaseMasterID": 891,
+    "VictimName": "VIC-AQP",
+    "AgeYear": 73,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1135,
+    "CaseMasterID": 892,
+    "VictimName": "VIC-AQQ",
+    "AgeYear": 10,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1136,
+    "CaseMasterID": 893,
+    "VictimName": "VIC-AQR",
+    "AgeYear": 62,
+    "GenderID": 2,
+    "VictimPolice": 1
+  },
+  {
+    "VictimMasterID": 1137,
+    "CaseMasterID": 894,
+    "VictimName": "VIC-AQS",
+    "AgeYear": 78,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1138,
+    "CaseMasterID": 895,
+    "VictimName": "VIC-AQT",
+    "AgeYear": 61,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1139,
+    "CaseMasterID": 895,
+    "VictimName": "VIC-AQU",
+    "AgeYear": 72,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1140,
+    "CaseMasterID": 896,
+    "VictimName": "VIC-AQV",
+    "AgeYear": 27,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1141,
+    "CaseMasterID": 897,
+    "VictimName": "VIC-AQW",
+    "AgeYear": 76,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1142,
+    "CaseMasterID": 898,
+    "VictimName": "VIC-AQX",
+    "AgeYear": 19,
+    "GenderID": 3,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1143,
+    "CaseMasterID": 899,
+    "VictimName": "VIC-AQY",
+    "AgeYear": 47,
+    "GenderID": 1,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1144,
+    "CaseMasterID": 900,
+    "VictimName": "VIC-AQZ",
+    "AgeYear": 60,
+    "GenderID": 2,
+    "VictimPolice": 0
+  },
+  {
+    "VictimMasterID": 1145,
+    "CaseMasterID": 900,
+    "VictimName": "VIC-ARA",
+    "AgeYear": 75,
+    "GenderID": 3,
+    "VictimPolice": 0
+  }
+]

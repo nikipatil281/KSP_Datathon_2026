@@ -1,0 +1,371 @@
+[
+  {
+    "station_id": 1,
+    "district_id": 1,
+    "name": "Cubbon Park PS",
+    "latitude": 13.020741,
+    "longitude": 77.631357,
+    "officer_count": 30,
+    "area_covered_sqkm": 116
+  },
+  {
+    "station_id": 2,
+    "district_id": 1,
+    "name": "Shivajinagar PS",
+    "latitude": 12.904208,
+    "longitude": 77.561509,
+    "officer_count": 61,
+    "area_covered_sqkm": 167
+  },
+  {
+    "station_id": 3,
+    "district_id": 1,
+    "name": "Whitefield PS",
+    "latitude": 12.922366,
+    "longitude": 77.525729,
+    "officer_count": 44,
+    "area_covered_sqkm": 94
+  },
+  {
+    "station_id": 4,
+    "district_id": 1,
+    "name": "HSR Layout PS",
+    "latitude": 13.049235,
+    "longitude": 77.651451,
+    "officer_count": 27,
+    "area_covered_sqkm": 117
+  },
+  {
+    "station_id": 5,
+    "district_id": 1,
+    "name": "Koramangala PS",
+    "latitude": 12.936076,
+    "longitude": 77.61631,
+    "officer_count": 61,
+    "area_covered_sqkm": 61
+  },
+  {
+    "station_id": 6,
+    "district_id": 1,
+    "name": "Yelahanka PS",
+    "latitude": 12.950829,
+    "longitude": 77.548121,
+    "officer_count": 49,
+    "area_covered_sqkm": 199
+  },
+  {
+    "station_id": 7,
+    "district_id": 2,
+    "name": "Devanahalli PS",
+    "latitude": 13.268465,
+    "longitude": 77.591386,
+    "officer_count": 36,
+    "area_covered_sqkm": 156
+  },
+  {
+    "station_id": 8,
+    "district_id": 2,
+    "name": "Doddaballapur PS",
+    "latitude": 13.23526,
+    "longitude": 77.513844,
+    "officer_count": 63,
+    "area_covered_sqkm": 89
+  },
+  {
+    "station_id": 9,
+    "district_id": 2,
+    "name": "Nelamangala PS",
+    "latitude": 13.276924,
+    "longitude": 77.5901,
+    "officer_count": 43,
+    "area_covered_sqkm": 195
+  },
+  {
+    "station_id": 10,
+    "district_id": 3,
+    "name": "Nazarbad PS",
+    "latitude": 12.267685,
+    "longitude": 76.68233,
+    "officer_count": 22,
+    "area_covered_sqkm": 78
+  },
+  {
+    "station_id": 11,
+    "district_id": 3,
+    "name": "Kuvempunagar PS",
+    "latitude": 12.347288,
+    "longitude": 76.688207,
+    "officer_count": 66,
+    "area_covered_sqkm": 88
+  },
+  {
+    "station_id": 12,
+    "district_id": 3,
+    "name": "Hebbal PS",
+    "latitude": 12.22639,
+    "longitude": 76.705502,
+    "officer_count": 55,
+    "area_covered_sqkm": 74
+  },
+  {
+    "station_id": 13,
+    "district_id": 3,
+    "name": "V.V. Mohalla PS",
+    "latitude": 12.32067,
+    "longitude": 76.622701,
+    "officer_count": 73,
+    "area_covered_sqkm": 56
+  },
+  {
+    "station_id": 14,
+    "district_id": 4,
+    "name": "Tumakuru City PS",
+    "latitude": 13.300281,
+    "longitude": 77.07676,
+    "officer_count": 48,
+    "area_covered_sqkm": 169
+  },
+  {
+    "station_id": 15,
+    "district_id": 4,
+    "name": "Tiptur PS",
+    "latitude": 13.326449,
+    "longitude": 77.130665,
+    "officer_count": 61,
+    "area_covered_sqkm": 76
+  },
+  {
+    "station_id": 16,
+    "district_id": 4,
+    "name": "Sira PS",
+    "latitude": 13.417472,
+    "longitude": 77.059433,
+    "officer_count": 78,
+    "area_covered_sqkm": 43
+  },
+  {
+    "station_id": 17,
+    "district_id": 5,
+    "name": "Mangaluru City PS",
+    "latitude": 12.884725,
+    "longitude": 75.047776,
+    "officer_count": 34,
+    "area_covered_sqkm": 180
+  },
+  {
+    "station_id": 18,
+    "district_id": 5,
+    "name": "Bunder PS",
+    "latitude": 12.789397,
+    "longitude": 75.018877,
+    "officer_count": 23,
+    "area_covered_sqkm": 118
+  },
+  {
+    "station_id": 19,
+    "district_id": 5,
+    "name": "Ullal PS",
+    "latitude": 12.824859,
+    "longitude": 75.069379,
+    "officer_count": 47,
+    "area_covered_sqkm": 161
+  },
+  {
+    "station_id": 20,
+    "district_id": 6,
+    "name": "Belagavi City PS",
+    "latitude": 15.907425,
+    "longitude": 74.419537,
+    "officer_count": 29,
+    "area_covered_sqkm": 194
+  },
+  {
+    "station_id": 21,
+    "district_id": 6,
+    "name": "Tilakwadi PS",
+    "latitude": 15.911266,
+    "longitude": 74.53784,
+    "officer_count": 58,
+    "area_covered_sqkm": 48
+  },
+  {
+    "station_id": 22,
+    "district_id": 6,
+    "name": "Khasbag PS",
+    "latitude": 15.81666,
+    "longitude": 74.443005,
+    "officer_count": 15,
+    "area_covered_sqkm": 87
+  },
+  {
+    "station_id": 23,
+    "district_id": 6,
+    "name": "Gokak PS",
+    "latitude": 15.925202,
+    "longitude": 74.539614,
+    "officer_count": 79,
+    "area_covered_sqkm": 47
+  },
+  {
+    "station_id": 24,
+    "district_id": 7,
+    "name": "Kalaburagi City PS",
+    "latitude": 17.388983,
+    "longitude": 76.802051,
+    "officer_count": 79,
+    "area_covered_sqkm": 175
+  },
+  {
+    "station_id": 25,
+    "district_id": 7,
+    "name": "Aland PS",
+    "latitude": 17.281526,
+    "longitude": 76.814126,
+    "officer_count": 35,
+    "area_covered_sqkm": 158
+  },
+  {
+    "station_id": 26,
+    "district_id": 7,
+    "name": "Yadgir PS",
+    "latitude": 17.40226,
+    "longitude": 76.901889,
+    "officer_count": 15,
+    "area_covered_sqkm": 173
+  },
+  {
+    "station_id": 27,
+    "district_id": 8,
+    "name": "Dharwad PS",
+    "latitude": 15.430765,
+    "longitude": 74.930916,
+    "officer_count": 61,
+    "area_covered_sqkm": 98
+  },
+  {
+    "station_id": 28,
+    "district_id": 8,
+    "name": "Hubli PS",
+    "latitude": 15.417212,
+    "longitude": 74.966339,
+    "officer_count": 25,
+    "area_covered_sqkm": 41
+  },
+  {
+    "station_id": 29,
+    "district_id": 8,
+    "name": "Navanagar PS",
+    "latitude": 15.496005,
+    "longitude": 75.058364,
+    "officer_count": 31,
+    "area_covered_sqkm": 52
+  },
+  {
+    "station_id": 30,
+    "district_id": 9,
+    "name": "Ballari City PS",
+    "latitude": 15.16496,
+    "longitude": 76.992896,
+    "officer_count": 36,
+    "area_covered_sqkm": 87
+  },
+  {
+    "station_id": 31,
+    "district_id": 9,
+    "name": "Sandur PS",
+    "latitude": 15.143828,
+    "longitude": 76.938455,
+    "officer_count": 42,
+    "area_covered_sqkm": 158
+  },
+  {
+    "station_id": 32,
+    "district_id": 9,
+    "name": "Hospet PS",
+    "latitude": 15.180242,
+    "longitude": 76.951779,
+    "officer_count": 54,
+    "area_covered_sqkm": 122
+  },
+  {
+    "station_id": 33,
+    "district_id": 10,
+    "name": "Hassan PS",
+    "latitude": 13.086024,
+    "longitude": 76.12428,
+    "officer_count": 71,
+    "area_covered_sqkm": 152
+  },
+  {
+    "station_id": 34,
+    "district_id": 10,
+    "name": "Belur PS",
+    "latitude": 12.999038,
+    "longitude": 76.059965,
+    "officer_count": 23,
+    "area_covered_sqkm": 106
+  },
+  {
+    "station_id": 35,
+    "district_id": 10,
+    "name": "Sakleshpur PS",
+    "latitude": 12.930165,
+    "longitude": 76.108927,
+    "officer_count": 43,
+    "area_covered_sqkm": 21
+  },
+  {
+    "station_id": 36,
+    "district_id": 11,
+    "name": "Shivamogga PS",
+    "latitude": 13.861259,
+    "longitude": 75.589076,
+    "officer_count": 44,
+    "area_covered_sqkm": 37
+  },
+  {
+    "station_id": 37,
+    "district_id": 11,
+    "name": "Sagar PS",
+    "latitude": 13.994767,
+    "longitude": 75.625642,
+    "officer_count": 24,
+    "area_covered_sqkm": 151
+  },
+  {
+    "station_id": 38,
+    "district_id": 11,
+    "name": "Bhadravathi PS",
+    "latitude": 13.887981,
+    "longitude": 75.595136,
+    "officer_count": 42,
+    "area_covered_sqkm": 158
+  },
+  {
+    "station_id": 39,
+    "district_id": 12,
+    "name": "Udupi PS",
+    "latitude": 13.28207,
+    "longitude": 74.811782,
+    "officer_count": 75,
+    "area_covered_sqkm": 82
+  },
+  {
+    "station_id": 40,
+    "district_id": 12,
+    "name": "Manipal PS",
+    "latitude": 13.386439,
+    "longitude": 74.7913,
+    "officer_count": 39,
+    "area_covered_sqkm": 44
+  },
+  {
+    "station_id": 41,
+    "district_id": 12,
+    "name": "Kundapura PS",
+    "latitude": 13.276409,
+    "longitude": 74.731068,
+    "officer_count": 69,
+    "area_covered_sqkm": 125
+  }
+]

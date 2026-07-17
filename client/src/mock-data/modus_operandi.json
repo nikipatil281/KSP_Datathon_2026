@@ -1,0 +1,177 @@
+[
+  {
+    "modus_operandi_id": 1,
+    "crime_type_id": 1,
+    "modus_operandi": "Brawl"
+  },
+  {
+    "modus_operandi_id": 2,
+    "crime_type_id": 1,
+    "modus_operandi": "Domestic violence"
+  },
+  {
+    "modus_operandi_id": 3,
+    "crime_type_id": 1,
+    "modus_operandi": "Gang fight"
+  },
+  {
+    "modus_operandi_id": 4,
+    "crime_type_id": 1,
+    "modus_operandi": "Road rage"
+  },
+  {
+    "modus_operandi_id": 5,
+    "crime_type_id": 2,
+    "modus_operandi": "Identity theft"
+  },
+  {
+    "modus_operandi_id": 6,
+    "crime_type_id": 2,
+    "modus_operandi": "Investment scam"
+  },
+  {
+    "modus_operandi_id": 7,
+    "crime_type_id": 2,
+    "modus_operandi": "Online fraud"
+  },
+  {
+    "modus_operandi_id": 8,
+    "crime_type_id": 2,
+    "modus_operandi": "Phishing"
+  },
+  {
+    "modus_operandi_id": 9,
+    "crime_type_id": 3,
+    "modus_operandi": "Distribution"
+  },
+  {
+    "modus_operandi_id": 10,
+    "crime_type_id": 3,
+    "modus_operandi": "Possession"
+  },
+  {
+    "modus_operandi_id": 11,
+    "crime_type_id": 3,
+    "modus_operandi": "Trafficking"
+  },
+  {
+    "modus_operandi_id": 12,
+    "crime_type_id": 4,
+    "modus_operandi": "Cheque fraud"
+  },
+  {
+    "modus_operandi_id": 13,
+    "crime_type_id": 4,
+    "modus_operandi": "Impersonation"
+  },
+  {
+    "modus_operandi_id": 14,
+    "crime_type_id": 4,
+    "modus_operandi": "Insurance fraud"
+  },
+  {
+    "modus_operandi_id": 15,
+    "crime_type_id": 4,
+    "modus_operandi": "Land grab"
+  },
+  {
+    "modus_operandi_id": 16,
+    "crime_type_id": 5,
+    "modus_operandi": "Child abduction"
+  },
+  {
+    "modus_operandi_id": 17,
+    "crime_type_id": 5,
+    "modus_operandi": "Human trafficking"
+  },
+  {
+    "modus_operandi_id": 18,
+    "crime_type_id": 5,
+    "modus_operandi": "Ransom"
+  },
+  {
+    "modus_operandi_id": 19,
+    "crime_type_id": 6,
+    "modus_operandi": "Domestic dispute"
+  },
+  {
+    "modus_operandi_id": 20,
+    "crime_type_id": 6,
+    "modus_operandi": "Gang rivalry"
+  },
+  {
+    "modus_operandi_id": 21,
+    "crime_type_id": 6,
+    "modus_operandi": "Hired killing"
+  },
+  {
+    "modus_operandi_id": 22,
+    "crime_type_id": 6,
+    "modus_operandi": "Property dispute"
+  },
+  {
+    "modus_operandi_id": 23,
+    "crime_type_id": 7,
+    "modus_operandi": "Armed robbery"
+  },
+  {
+    "modus_operandi_id": 24,
+    "crime_type_id": 7,
+    "modus_operandi": "Dacoity"
+  },
+  {
+    "modus_operandi_id": 25,
+    "crime_type_id": 7,
+    "modus_operandi": "Mugging"
+  },
+  {
+    "modus_operandi_id": 26,
+    "crime_type_id": 8,
+    "modus_operandi": "Eve-teasing"
+  },
+  {
+    "modus_operandi_id": 27,
+    "crime_type_id": 8,
+    "modus_operandi": "Molestation"
+  },
+  {
+    "modus_operandi_id": 28,
+    "crime_type_id": 8,
+    "modus_operandi": "Rape"
+  },
+  {
+    "modus_operandi_id": 29,
+    "crime_type_id": 9,
+    "modus_operandi": "Chain snatching"
+  },
+  {
+    "modus_operandi_id": 30,
+    "crime_type_id": 9,
+    "modus_operandi": "House break-in"
+  },
+  {
+    "modus_operandi_id": 31,
+    "crime_type_id": 9,
+    "modus_operandi": "Pickpocket"
+  },
+  {
+    "modus_operandi_id": 32,
+    "crime_type_id": 9,
+    "modus_operandi": "Vehicle theft"
+  },
+  {
+    "modus_operandi_id": 33,
+    "crime_type_id": 10,
+    "modus_operandi": "Arson"
+  },
+  {
+    "modus_operandi_id": 34,
+    "crime_type_id": 10,
+    "modus_operandi": "Graffiti"
+  },
+  {
+    "modus_operandi_id": 35,
+    "crime_type_id": 10,
+    "modus_operandi": "Property destruction"
+  }
+]

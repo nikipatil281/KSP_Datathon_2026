@@ -1,0 +1,16 @@
+CrimeSubHeadID,CrimeHeadID,CrimeHeadName,SeqID
+1,1,Murder,1
+2,1,Assault,2
+3,1,Kidnapping,3
+4,1,Sexual Assault,4
+5,2,Theft,1
+6,2,Robbery,2
+7,2,Burglary,3
+8,2,Vandalism,4
+9,3,Fraud,1
+10,3,Cyber Fraud,2
+11,3,Cheque Fraud,3
+12,4,Drug Possession,1
+13,4,Drug Trafficking,2
+14,5,Unlawful Assembly,1
+15,5,Rioting,2
