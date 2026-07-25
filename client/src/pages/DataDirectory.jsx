@@ -513,8 +513,8 @@ export default function DataDirectory() {
   };
 
   return (
-    <div className="flex h-full min-h-screen">
-      <aside className="w-72 flex-shrink-0 border-r border-slate-800 bg-slate-900 p-4">
+    <div className="flex h-full min-h-0 overflow-hidden">
+      <aside className="flex w-72 min-h-0 flex-shrink-0 flex-col border-r border-slate-800 bg-slate-900 p-4">
         <div className="mb-4 flex items-center gap-2">
           <Database size={18} className="text-blue-400" />
           <div>
@@ -523,7 +523,7 @@ export default function DataDirectory() {
           </div>
         </div>
 
-        <div className="overflow-y-auto pr-1">
+        <div className="min-h-0 flex-1 overflow-y-auto pr-1">
           <div className="mb-2 px-2 text-[11px] font-semibold uppercase tracking-wide text-slate-500">
             Data Tables
           </div>
@@ -557,8 +557,8 @@ export default function DataDirectory() {
         </div>
       </aside>
 
-      <main className="min-w-0 flex-1 overflow-y-auto p-6">
-        <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+      <main className="flex min-w-0 flex-1 flex-col overflow-hidden p-6">
+        <div className="mb-5 flex flex-shrink-0 flex-wrap items-center justify-between gap-3">
           <div>
             <h2 className="flex items-center gap-2 text-xl font-bold text-white">
               <Table2 size={20} className="text-blue-400" /> {table?.file_name || `${selected}.csv`}
@@ -591,7 +591,7 @@ export default function DataDirectory() {
           onCancel={() => setShowOfficerForm(false)}
         />
 
-        <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+        <div className="mb-3 flex flex-shrink-0 flex-wrap items-center justify-between gap-3">
           <div className="relative w-full max-w-md">
             <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
             <input
@@ -619,7 +619,7 @@ export default function DataDirectory() {
         </div>
 
         {filterableColumns.length > 0 && (
-          <div className="mb-3 rounded-xl border border-slate-800 bg-slate-900 p-3">
+          <div className="mb-3 flex-shrink-0 rounded-xl border border-slate-800 bg-slate-900 p-3">
             <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
               <div className="text-xs font-semibold uppercase tracking-wide text-slate-400">
                 Data Filters {activeFilterCount > 0 ? `(${activeFilterCount} active)` : ''}
@@ -668,13 +668,13 @@ export default function DataDirectory() {
           </div>
         )}
 
-        <div className="overflow-hidden rounded-xl border border-slate-700 bg-slate-900">
+        <div className="min-h-0 flex-1 overflow-hidden rounded-xl border border-slate-700 bg-slate-900">
           {loading ? (
             <div className="flex h-64 items-center justify-center text-slate-400">
               <Loader2 className="mr-2 animate-spin" size={18} /> Loading table...
             </div>
           ) : (
-            <div className="max-h-[calc(100vh-230px)] overflow-auto">
+            <div className="h-full overflow-auto">
               <table className="min-w-full border-collapse">
                 <thead className="sticky top-0 z-10 bg-slate-800">
                   <tr>
@@ -728,7 +728,7 @@ function DirectoryLoadedForm({ show, saving, onSubmit, onCancel }) {
   if (!show) return null;
 
   return (
-    <div className="mb-5">
+    <div className="mb-5 flex-shrink-0">
       <OfficerForm
         onSubmit={onSubmit}
         onCancel={onCancel}
