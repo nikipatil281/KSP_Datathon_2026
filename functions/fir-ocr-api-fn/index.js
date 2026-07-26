@@ -6,6 +6,8 @@
  *   POST /ocr - Accepts multipart form data with:
  *     image: PDF/image file for Zia OCR
  *     language: optional comma-separated OCR language codes, e.g. eng,kan
+ *   POST /assist - Reviews OCR output and returns FIR table mappings
+ *   POST /drafts - Saves a reviewed FIR draft into Catalyst Data Store
  *
  * Environment variables required for real Catalyst OCR forwarding:
  *   CATALYST_PROJECT_ID
@@ -15,6 +17,7 @@
  */
 
 const fs = require('fs');
+const catalyst = require('zcatalyst-sdk-node');
 
 function cors(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -30,6 +33,14 @@ function ok(res, data, status = 200) {
 function fail(res, msg, status = 500) {
   cors(res);
   res.status(status).json({ success: false, error: msg });
+}
+
+function body(req) {
+  return req.body || {};
+}
+
+function toJson(value) {
+  return JSON.stringify(value || null);
 }
 
 function getUploadedFile(req) {
@@ -134,23 +145,126 @@ function extractFirFields(ocrData, file) {
   };
 }
 
+function buildTablePayloads(extracted = {}) {
+  const sections = extracted.legal_sections || [];
+  return {
+    CaseMaster: {
+      CrimeNo: extracted.fir_number || '',
+      CrimeRegisteredDate: extracted.reported_date || extracted.incident_date || '',
+      PoliceStationID: extracted.station_id || '',
+      CrimeMajorHeadID: extracted.crime_type_id || '',
+      IncidentFromDate: `${extracted.incident_date || ''} ${extracted.incident_time || ''}`.trim(),
+      latitude: extracted.latitude || '',
+      longitude: extracted.longitude || '',
+      BriefFacts: extracted.narrative_summary_english || '',
+    },
+    ComplainantDetails: {
+      CaseMasterID: 'draft-after-case-save',
+      ComplainantName: extracted.complainant || '',
+    },
+    Victim: (extracted.victims || []).map(v => ({
+      CaseMasterID: 'draft-after-case-save',
+      VictimName: v.name || '',
+      AgeYear: v.age || '',
+      GenderID: v.gender || '',
+    })),
+    Accused: (extracted.accused || []).map(a => ({
+      CaseMasterID: 'draft-after-case-save',
+      AccusedName: a.name || '',
+      PersonID: a.vehicle || '',
+    })),
+    ActSectionAssociation: sections.map(section => ({
+      CaseMasterID: 'draft-after-case-save',
+      ActID: String(section).split(' ')[0] || '',
+      SectionID: String(section).replace(/^(BNS|IPC)\s*/i, ''),
+    })),
+  };
+}
+
+function buildAssistant(payload = {}) {
+  const extracted = payload.extracted || payload.result?.extracted || {};
+  const question = payload.message || 'Map this OCR output into FIR database tables.';
+  const tablePayloads = buildTablePayloads(extracted);
+  return {
+    provider: 'catalyst-convokraft-ready-assistant',
+    mode: 'ocr-to-fir-table-mapping',
+    question,
+    message: 'I reviewed the OCR output and prepared draft table mappings for officer approval.',
+    recommendations: [
+      `Use ${extracted.fir_number || 'the detected FIR number'} as the CaseMaster CrimeNo.`,
+      `Map ${extracted.police_station || 'the detected station'} to PoliceStationID before final table insertion.`,
+      `Route legal sections to ActSectionAssociation after validating the exact BNS/IPC clauses.`,
+      'Save the reviewed output into FIRIntakeDrafts first, then promote to normalized FIR tables after approval.',
+    ],
+    table_payloads: tablePayloads,
+    confidence_notes: [
+      'This assistant uses OCR text plus extracted fields to prepare a reviewable draft.',
+      'Fields with unknown suspects or ambiguous legal clauses should stay provisional.',
+      'The draft-first pattern protects official FIR tables from unverified OCR errors.',
+    ],
+  };
+}
+
+async function saveDraft(req, payload = {}) {
+  const app = catalyst.initialize(req);
+  const extracted = payload.extracted || {};
+  const assistant = payload.assistant || buildAssistant(payload);
+  const row = {
+    FIRNumber: extracted.fir_number || '',
+    SourceFile: payload.document?.file_name || '',
+    OCRProvider: payload.ocr?.provider || '',
+    OCRConfidence: String(payload.ocr?.confidence ?? ''),
+    District: extracted.district || '',
+    PoliceStation: extracted.police_station || '',
+    CrimeType: extracted.crime_type || '',
+    IncidentDate: extracted.incident_date || '',
+    LegalSections: (extracted.legal_sections || []).join(', '),
+    ReviewStatus: 'Reviewed',
+    ExtractedJson: toJson(extracted),
+    TablePayloadJson: toJson(assistant.table_payloads),
+    AssistantNotes: toJson({
+      provider: assistant.provider,
+      message: assistant.message,
+      recommendations: assistant.recommendations,
+      confidence_notes: assistant.confidence_notes,
+    }),
+  };
+  const saved = await app.datastore().table('FIRIntakeDrafts').insertRow(row);
+  return {
+    saved: true,
+    datastore: true,
+    row: saved,
+    message: 'Reviewed FIR draft saved to Catalyst Data Store.',
+  };
+}
+
 module.exports = async (context, req, res) => {
   if (req.method === 'OPTIONS') {
     cors(res);
     return res.status(200).end();
   }
 
-  if (req.method !== 'POST' || (req.path || '') !== '/ocr') {
-    return fail(res, `Not found: ${req.method} ${req.path || ''}`, 404);
-  }
-
   try {
-    const file = getUploadedFile(req);
-    const language = getField(req, 'language') || 'auto';
-    const ocrData = await runCatalystOcr(file, language);
-    return ok(res, extractFirFields(ocrData, file));
+    const path = req.path || '';
+
+    if (req.method === 'POST' && path === '/ocr') {
+      const file = getUploadedFile(req);
+      const language = getField(req, 'language') || 'auto';
+      const ocrData = await runCatalystOcr(file, language);
+      return ok(res, extractFirFields(ocrData, file));
+    }
+
+    if (req.method === 'POST' && path === '/assist') {
+      return ok(res, buildAssistant(body(req)));
+    }
+
+    if (req.method === 'POST' && path === '/drafts') {
+      return ok(res, await saveDraft(req, body(req)), 201);
+    }
+
+    return fail(res, `Not found: ${req.method} ${path}`, 404);
   } catch (e) {
     console.error('[fir-ocr-api]', e);
-    return fail(res, e.message || 'OCR processing failed');
+    return fail(res, e.message || 'FIR intake processing failed');
   }
 };

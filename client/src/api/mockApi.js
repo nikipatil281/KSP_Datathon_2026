@@ -891,6 +891,81 @@ function buildMockFirExtraction(file, options = {}) {
   };
 }
 
+function buildFirTablePayloads(extracted = {}) {
+  const sections = extracted.legal_sections || [];
+  return {
+    CaseMaster: {
+      CrimeNo: extracted.fir_number || '',
+      CrimeRegisteredDate: extracted.reported_date || extracted.incident_date || '',
+      PoliceStationID: extracted.station_id || '',
+      CrimeMajorHeadID: extracted.crime_type_id || '',
+      IncidentFromDate: `${extracted.incident_date || ''} ${extracted.incident_time || ''}`.trim(),
+      BriefFacts: extracted.narrative_summary_english || '',
+    },
+    ComplainantDetails: {
+      ComplainantName: extracted.complainant || '',
+      CaseMasterID: 'draft-after-case-save',
+    },
+    Victim: (extracted.victims || []).map(v => ({
+      VictimName: v.name || '',
+      AgeYear: v.age || '',
+      GenderID: v.gender || '',
+      CaseMasterID: 'draft-after-case-save',
+    })),
+    Accused: (extracted.accused || []).map(a => ({
+      AccusedName: a.name || '',
+      PersonID: a.vehicle || '',
+      CaseMasterID: 'draft-after-case-save',
+    })),
+    ActSectionAssociation: sections.map(section => ({
+      ActID: section.split(' ')[0] || '',
+      SectionID: section.replace(/^(BNS|IPC)\s*/i, ''),
+      CaseMasterID: 'draft-after-case-save',
+    })),
+  };
+}
+
+function buildMockFirAssistant(payload = {}) {
+  const extracted = payload.extracted || payload.result?.extracted || {};
+  const tablePayloads = buildFirTablePayloads(extracted);
+  return {
+    provider: 'mock-convokraft-assistant',
+    mode: 'demo-table-mapping',
+    message: 'I reviewed the OCR fields and prepared draft table mappings for officer approval.',
+    recommendations: [
+      `Use ${extracted.fir_number || 'the detected FIR number'} as the CaseMaster CrimeNo.`,
+      `Map ${extracted.police_station || 'the detected station'} to PoliceStationID before final Data Store insertion.`,
+      `Keep legal sections in ActSectionAssociation until a supervisor validates the exact BNS/IPC clauses.`,
+      'Save this as a reviewed FIRIntakeDrafts row first, then promote to normalized FIR tables after approval.',
+    ],
+    table_payloads: tablePayloads,
+    confidence_notes: [
+      'FIR number and station are high-confidence fields.',
+      'Accused identity remains provisional because OCR text contains unknown suspects.',
+      'The assistant is intentionally draft-first to avoid overwriting official records.',
+    ],
+  };
+}
+
+function mockSaveFirDraft(payload = {}) {
+  const now = new Date().toISOString();
+  const row = {
+    ROWID: `local-${Date.now()}`,
+    ReviewStatus: 'Reviewed',
+    CreatedAt: now,
+    FIRNumber: payload.extracted?.fir_number || '',
+    SourceFile: payload.document?.file_name || '',
+    saved_to_datastore: false,
+    mode: 'local-demo',
+  };
+  return {
+    saved: true,
+    datastore: false,
+    row,
+    message: 'Reviewed locally. Configure the Catalyst FIR function to persist this row in Data Store.',
+  };
+}
+
 export const mockApi = {
   summary: year => wait(buildSummary(year)),
   crimes: filters => wait(listCrimes(filters)),
@@ -922,6 +997,8 @@ export const mockApi = {
   }, {})).map(row => ({ ...row, avg_sev: row.count ? row.avg_sev / row.count : 0 }))),
   recidivism: () => wait(getRecidivism()),
   processFirDocument: (file, options) => wait(buildMockFirExtraction(file, options)),
+  assistFirDraft: payload => wait(buildMockFirAssistant(payload)),
+  saveFirDraft: payload => wait(mockSaveFirDraft(payload)),
   listDataTables: () => wait(Object.keys(baseTables).sort().map(name => ({
     name,
     file_name: `${name}.csv`,

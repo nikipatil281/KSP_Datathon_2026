@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
-  AlertTriangle, CheckCircle, Database, Eye, FileText,
-  Languages, Loader2, Save, ShieldCheck, Upload
+  AlertTriangle, Bot, CheckCircle, Database, Eye, FileText,
+  Languages, Loader2, MessageSquare, Save, ShieldCheck, Upload
 } from 'lucide-react';
 import { api } from '../api';
 
@@ -62,6 +62,10 @@ export default function FIRIntake() {
   const [error, setError] = useState(null);
   const [activeStep, setActiveStep] = useState(0);
   const [saved, setSaved] = useState(false);
+  const [saveStatus, setSaveStatus] = useState(null);
+  const [assistant, setAssistant] = useState(null);
+  const [assistantLoading, setAssistantLoading] = useState(false);
+  const [assistantQuestion, setAssistantQuestion] = useState('Which FIR database tables should this OCR output fill?');
 
   const previewUrl = useMemo(() => file ? URL.createObjectURL(file) : null, [file]);
 
@@ -74,6 +78,8 @@ export default function FIRIntake() {
     setProcessing(true);
     setError(null);
     setSaved(false);
+    setSaveStatus(null);
+    setAssistant(null);
     setResult(null);
     setActiveStep(1);
     try {
@@ -81,11 +87,50 @@ export default function FIRIntake() {
       const data = await api.processFirDocument(file, { language });
       setResult(data);
       setActiveStep(3);
+      await runAssistant(data, 'Review this OCR output and prepare draft FIR table mappings.');
     } catch (e) {
       setError(e.message);
       setActiveStep(0);
     } finally {
       setProcessing(false);
+    }
+  };
+
+  const runAssistant = async (currentResult = result, message = assistantQuestion) => {
+    if (!currentResult) return;
+    setAssistantLoading(true);
+    setError(null);
+    try {
+      const data = await api.assistFirDraft({
+        message,
+        document: currentResult.document,
+        ocr: currentResult.ocr,
+        extracted: currentResult.extracted,
+      });
+      setAssistant(data);
+    } catch (e) {
+      setError(e.message);
+    } finally {
+      setAssistantLoading(false);
+    }
+  };
+
+  const handleSave = async () => {
+    if (!result) return;
+    setSaveStatus(null);
+    setError(null);
+    try {
+      const data = await api.saveFirDraft({
+        document: result.document,
+        ocr: result.ocr,
+        extracted: result.extracted,
+        warnings: result.warnings || [],
+        assistant,
+      });
+      setSaveStatus(data);
+      setSaved(true);
+    } catch (e) {
+      setError(e.message);
     }
   };
 
@@ -129,6 +174,8 @@ export default function FIRIntake() {
                   setFile(e.target.files?.[0] || null);
                   setResult(null);
                   setSaved(false);
+                  setSaveStatus(null);
+                  setAssistant(null);
                   setActiveStep(e.target.files?.[0] ? 0 : 0);
                 }}
               />
@@ -261,7 +308,7 @@ export default function FIRIntake() {
 
                 <div className="mt-4 flex gap-2">
                   <button
-                    onClick={() => setSaved(true)}
+                    onClick={handleSave}
                     className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-green-600 px-3 py-2 text-sm font-semibold text-white hover:bg-green-500"
                   >
                     <Save size={15} /> Mark Reviewed
@@ -273,12 +320,78 @@ export default function FIRIntake() {
 
                 {saved && (
                   <div className="mt-3 rounded-lg border border-green-700 bg-green-950 p-3 text-xs text-green-300">
-                    Reviewed locally. Real Catalyst mode will save this as a draft crime record after officer approval.
+                    {saveStatus?.message || 'Reviewed and saved.'}
+                    {saveStatus?.row?.ROWID && (
+                      <div className="mt-1 text-green-200">Draft row: {saveStatus.row.ROWID}</div>
+                    )}
                   </div>
                 )}
               </>
             )}
           </div>
+
+          {result && (
+            <div className="rounded-xl border border-slate-700 bg-slate-800 p-5">
+              <div className="mb-3 flex items-center justify-between gap-3">
+                <h2 className="flex items-center gap-2 text-sm font-semibold text-slate-200">
+                  <Bot size={16} className="text-cyan-400" /> FIR Assistant
+                </h2>
+                <span className="rounded-md border border-cyan-800 bg-cyan-950 px-2 py-1 text-[11px] text-cyan-300">
+                  ConvoKraft-ready
+                </span>
+              </div>
+
+              <div className="rounded-lg border border-slate-700 bg-slate-900 p-3">
+                <div className="mb-2 flex items-center gap-2 text-xs font-semibold text-slate-300">
+                  <MessageSquare size={13} /> Ask the assistant
+                </div>
+                <textarea
+                  value={assistantQuestion}
+                  onChange={e => setAssistantQuestion(e.target.value)}
+                  rows={2}
+                  className="w-full resize-none rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-xs text-slate-100"
+                />
+                <button
+                  onClick={() => runAssistant()}
+                  disabled={assistantLoading}
+                  className="mt-2 flex w-full items-center justify-center gap-2 rounded-md border border-cyan-700 bg-cyan-950 px-3 py-2 text-xs font-semibold text-cyan-200 hover:bg-cyan-900 disabled:opacity-50"
+                >
+                  {assistantLoading ? <Loader2 size={13} className="animate-spin" /> : <Bot size={13} />}
+                  Analyze OCR and Map Tables
+                </button>
+              </div>
+
+              {!assistant && (
+                <div className="mt-3 text-xs text-slate-500">
+                  The assistant will review OCR output and prepare draft Data Store table payloads.
+                </div>
+              )}
+
+              {assistant && (
+                <div className="mt-4 space-y-3">
+                  <div className="rounded-lg border border-cyan-800 bg-cyan-950 p-3 text-xs text-cyan-100">
+                    {assistant.message}
+                  </div>
+
+                  <div>
+                    <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Recommendations</div>
+                    <div className="space-y-2">
+                      {(assistant.recommendations || []).map(item => (
+                        <div key={item} className="rounded-md bg-slate-900 px-3 py-2 text-xs text-slate-300">{item}</div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Draft Table Payloads</div>
+                    <pre className="max-h-56 overflow-auto whitespace-pre-wrap rounded-lg bg-slate-950 p-3 text-[11px] leading-relaxed text-slate-300">
+                      {JSON.stringify(assistant.table_payloads || {}, null, 2)}
+                    </pre>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
 
           {result && (
             <div className="rounded-xl border border-slate-700 bg-slate-800 p-5">

@@ -5,6 +5,7 @@ const ANALYTICS_API = import.meta.env.VITE_ANALYTICS_API_URL || '/analytics';
 const FIR_API = import.meta.env.VITE_FIR_API_URL || '/fir';
 const DATA_API = import.meta.env.VITE_DATA_API_URL || CRIME_API;
 const USE_MOCKS = import.meta.env.VITE_USE_MOCKS !== 'false';
+const USE_CATALYST_FIR = import.meta.env.VITE_USE_CATALYST_FIR === 'true' && Boolean(import.meta.env.VITE_FIR_API_URL);
 
 async function get(base, path, params = {}) {
     const url  = new URL(base + path, window.location.origin);
@@ -38,6 +39,18 @@ async function postJson(base, path, data) {
     return json.data;
 }
 
+const firApi = {
+    processFirDocument: (file, options = {}) => {
+        const formData = new FormData();
+        formData.append('image', file);
+        if (options.language) formData.append('language', options.language);
+        if (options.modelType) formData.append('modelType', options.modelType);
+        return postMultipart(FIR_API, '/ocr', formData);
+    },
+    assistFirDraft: (payload) => postJson(FIR_API, '/assist', payload),
+    saveFirDraft: (payload) => postJson(FIR_API, '/drafts', payload),
+};
+
 const catalystApi = {
     summary:        (year)            => get(CRIME_API, '/stats/summary',    { year }),
     crimes:         (filters)         => get(CRIME_API, '/crimes',            filters),
@@ -62,13 +75,7 @@ const catalystApi = {
     recidivism:     ()                => get(ANALYTICS_API, '/recidivism'),
 
     // FIR OCR / intake
-    processFirDocument: (file, options = {}) => {
-        const formData = new FormData();
-        formData.append('image', file);
-        if (options.language) formData.append('language', options.language);
-        if (options.modelType) formData.append('modelType', options.modelType);
-        return postMultipart(FIR_API, '/ocr', formData);
-    },
+    ...firApi,
 
     // Data directory
     listDataTables: () => get(DATA_API, '/data-directory/tables'),
@@ -76,4 +83,6 @@ const catalystApi = {
     addOfficer: (officer) => postJson(DATA_API, '/officers', officer),
 };
 
-export const api = USE_MOCKS ? mockApi : catalystApi;
+export const api = USE_MOCKS
+    ? { ...mockApi, ...(USE_CATALYST_FIR ? firApi : {}) }
+    : catalystApi;
