@@ -357,52 +357,57 @@ export default function FIRIntake() {
             )}
           </div>
 
-          {result && (
-            <div className="rounded-xl border border-slate-700 bg-slate-800 p-5">
-              <div className="mb-3 flex items-center justify-between gap-3">
-                <h2 className="flex items-center gap-2 text-sm font-semibold text-slate-200">
-                  <Bot size={16} className="text-cyan-400" /> FIR Assistant
-                </h2>
-                <span className="rounded-md border border-cyan-800 bg-cyan-950 px-2 py-1 text-[11px] text-cyan-300">
-                  ConvoKraft-ready
-                </span>
-              </div>
+        </section>
+      </div>
 
-              <div className="rounded-lg border border-slate-700 bg-slate-900 p-3">
-                <div className="mb-2 flex items-center gap-2 text-xs font-semibold text-slate-300">
-                  <MessageSquare size={13} /> Ask the assistant
-                </div>
-                <textarea
-                  value={assistantQuestion}
-                  onChange={e => setAssistantQuestion(e.target.value)}
-                  rows={2}
-                  className="w-full resize-none rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-xs text-slate-100"
-                />
-                <button
-                  onClick={() => runAssistant()}
-                  disabled={assistantLoading}
-                  className="mt-2 flex w-full items-center justify-center gap-2 rounded-md border border-cyan-700 bg-cyan-950 px-3 py-2 text-xs font-semibold text-cyan-200 hover:bg-cyan-900 disabled:opacity-50"
-                >
-                  {assistantLoading ? <Loader2 size={13} className="animate-spin" /> : <Bot size={13} />}
-                  Analyze OCR and Map Tables
-                </button>
-              </div>
+      {result && (
+        <section className="rounded-xl border border-slate-700 bg-slate-800 p-5">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+            <h2 className="flex items-center gap-2 text-lg font-semibold text-slate-100">
+              <Bot size={18} className="text-cyan-400" /> FIR Assistant
+            </h2>
+            <span className="rounded-md border border-cyan-800 bg-cyan-950 px-2 py-1 text-[11px] text-cyan-300">
+              ConvoKraft-ready
+            </span>
+          </div>
 
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(280px,420px)_1fr]">
+            <div className="rounded-lg border border-slate-700 bg-slate-900 p-3">
+              <div className="mb-2 flex items-center gap-2 text-xs font-semibold text-slate-300">
+                <MessageSquare size={13} /> Ask the assistant
+              </div>
+              <textarea
+                value={assistantQuestion}
+                onChange={e => setAssistantQuestion(e.target.value)}
+                rows={4}
+                className="w-full resize-none rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-xs text-slate-100"
+              />
+              <button
+                onClick={() => runAssistant()}
+                disabled={assistantLoading}
+                className="mt-2 flex w-full items-center justify-center gap-2 rounded-md border border-cyan-700 bg-cyan-950 px-3 py-2 text-xs font-semibold text-cyan-200 hover:bg-cyan-900 disabled:opacity-50"
+              >
+                {assistantLoading ? <Loader2 size={13} className="animate-spin" /> : <Bot size={13} />}
+                Ask FIR Assistant
+              </button>
+            </div>
+
+            <div className="min-w-0">
               {!assistant && (
-                <div className="mt-3 text-xs text-slate-500">
-                  The assistant will review OCR output and prepare draft FIR table mappings.
+                <div className="flex h-full min-h-[160px] items-center justify-center rounded-lg border border-slate-700 bg-slate-900 p-4 text-center text-xs text-slate-500">
+                  Ask a question about the OCR output, or ask for draft FIR table mappings.
                 </div>
               )}
 
               {assistant && (
-                <div className="mt-4 space-y-3">
-                  <div className="rounded-lg border border-cyan-800 bg-cyan-950 p-3 text-xs text-cyan-100">
+                <div className="space-y-4">
+                  <div className="rounded-lg border border-cyan-800 bg-cyan-950 p-4 text-sm leading-relaxed text-cyan-100">
                     {assistant.message}
                   </div>
 
                   <div>
-                    <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Recommendations</div>
-                    <div className="space-y-2">
+                    <div className="mb-2 text-xs font-semibold uppercase text-slate-400">Recommendations</div>
+                    <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
                       {(assistant.recommendations || []).map(item => (
                         <div key={item} className="rounded-md bg-slate-900 px-3 py-2 text-xs text-slate-300">{item}</div>
                       ))}
@@ -410,29 +415,29 @@ export default function FIRIntake() {
                   </div>
 
                   <div>
-                    <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Draft Table Mappings</div>
-                    <pre className="max-h-56 overflow-auto whitespace-pre-wrap rounded-lg bg-slate-950 p-3 text-[11px] leading-relaxed text-slate-300">
+                    <div className="mb-2 text-xs font-semibold uppercase text-slate-400">Draft Table Mappings</div>
+                    <pre className="max-h-72 overflow-auto whitespace-pre-wrap rounded-lg bg-slate-950 p-3 text-[11px] leading-relaxed text-slate-300">
                       {JSON.stringify(assistant.table_payloads || {}, null, 2)}
                     </pre>
                   </div>
                 </div>
               )}
             </div>
-          )}
-
-          {result && (
-            <div className="rounded-xl border border-slate-700 bg-slate-800 p-5">
-              <div className="mb-3 flex items-center justify-between">
-                <h2 className="text-sm font-semibold text-slate-200">Raw OCR Text</h2>
-                <span className="text-xs text-slate-400">Confidence {result.ocr.confidence}%</span>
-              </div>
-              <pre className="max-h-56 overflow-auto whitespace-pre-wrap rounded-lg bg-slate-950 p-3 text-xs leading-relaxed text-slate-300">
-                {result.ocr.text}
-              </pre>
-            </div>
-          )}
+          </div>
         </section>
-      </div>
+      )}
+
+      {result && (
+        <section className="rounded-xl border border-slate-700 bg-slate-800 p-5">
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-sm font-semibold text-slate-200">Raw OCR Text</h2>
+            <span className="text-xs text-slate-400">Confidence {result.ocr.confidence}%</span>
+          </div>
+          <pre className="max-h-72 overflow-auto whitespace-pre-wrap rounded-lg bg-slate-950 p-3 text-xs leading-relaxed text-slate-300">
+            {result.ocr.text}
+          </pre>
+        </section>
+      )}
     </div>
   );
 }

@@ -927,16 +927,35 @@ function buildFirTablePayloads(extracted = {}) {
 
 function buildMockFirAssistant(payload = {}) {
   const extracted = payload.extracted || payload.result?.extracted || {};
+  const question = payload.message || 'Map this OCR output into FIR database tables.';
+  const wantsSummary = /\b(what|say|summary|summarize|explain|really)\b/i.test(question);
+  const wantsTables = /\b(table|database|map|mapping|schema|case ?master|datastore)\b/i.test(question);
   const tablePayloads = buildFirTablePayloads(extracted);
+  const sections = (extracted.legal_sections || []).join(', ') || 'no legal sections detected';
+  const message = [
+    `This appears to be FIR ${extracted.fir_number || 'not detected'} registered at ${extracted.police_station || 'not detected'} in ${extracted.district || 'not detected'}.`,
+    `The detected offence is ${extracted.crime_type || 'not detected'}, with sections ${sections}.`,
+    `The date found in OCR is ${extracted.incident_date || 'not detected'}${extracted.incident_time ? ` at ${extracted.incident_time}` : ''}.`,
+    extracted.narrative_summary_english ? `Narrative: ${extracted.narrative_summary_english}` : '',
+    'Low-confidence or missing fields should be checked against the PDF before saving.',
+    wantsSummary && !wantsTables ? '' : 'I also prepared draft table mappings for officer approval.',
+  ].filter(Boolean).join(' ');
   return {
     provider: 'mock-convokraft-assistant',
-    mode: 'demo-table-mapping',
-    message: 'I reviewed the OCR fields and prepared draft table mappings for officer approval.',
+    mode: wantsSummary && !wantsTables ? 'fir-plain-language-review' : 'demo-table-mapping',
+    question,
+    message,
     recommendations: [
-      `Use ${extracted.fir_number || 'the detected FIR number'} as the CaseMaster CrimeNo.`,
-      `Map ${extracted.police_station || 'the detected station'} to PoliceStationID before any official case entry.`,
-      `Keep legal sections in ActSectionAssociation until a supervisor validates the exact BNS/IPC clauses.`,
-      'Treat these mappings as review guidance for the officer, not as an automatic database write.',
+      extracted.fir_number
+        ? `Use ${extracted.fir_number} as the draft CaseMaster CrimeNo after officer verification.`
+        : 'FIR number was not confidently detected; verify it manually from the first page.',
+      extracted.police_station
+        ? `Resolve ${extracted.police_station} to the correct PoliceStationID before any official insertion.`
+        : 'Police station was not confidently detected; do not save until it is selected.',
+      (extracted.legal_sections || []).length
+        ? `Route ${extracted.legal_sections.join(', ')} to ActSectionAssociation after validating the exact clauses.`
+        : 'No legal sections were confidently detected; review the Acts & Sections table in the PDF.',
+      'Use Add to Database only after the extracted record has been reviewed.',
     ],
     table_payloads: tablePayloads,
     confidence_notes: [

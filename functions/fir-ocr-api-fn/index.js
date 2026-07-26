@@ -253,20 +253,53 @@ function buildTablePayloads(extracted = {}) {
   };
 }
 
+function sentence(value) {
+  return value ? String(value).trim() : 'not detected';
+}
+
+function buildPlainEnglishBrief(extracted = {}) {
+  const sections = (extracted.legal_sections || []).join(', ') || 'no legal sections detected';
+  const place = extracted.location || [extracted.police_station, extracted.district].filter(Boolean).join(', ');
+  const parts = [
+    `This appears to be FIR ${sentence(extracted.fir_number)} registered at ${sentence(extracted.police_station)} in ${sentence(extracted.district)}.`,
+    `The detected offence is ${sentence(extracted.crime_type)}, with sections ${sections}.`,
+    `The date found in OCR is ${sentence(extracted.incident_date)}${extracted.incident_time ? ` at ${extracted.incident_time}` : ''}.`,
+    `The place or jurisdiction detail is ${sentence(place)}.`,
+  ];
+  if (extracted.complainant) parts.push(`The complainant/informant detected is ${extracted.complainant}.`);
+  if (extracted.narrative_summary_english) parts.push(`Narrative: ${extracted.narrative_summary_english}`);
+  parts.push('Low-confidence or missing fields should be checked against the PDF before saving.');
+  return parts.join(' ');
+}
+
 function buildAssistant(payload = {}) {
   const extracted = payload.extracted || payload.result?.extracted || {};
   const question = payload.message || 'Map this OCR output into FIR database tables.';
+  const normalizedQuestion = question.toLowerCase();
   const tablePayloads = buildTablePayloads(extracted);
+  const wantsSummary = /\b(what|say|summary|summarize|explain|really)\b/.test(normalizedQuestion);
+  const wantsTables = /\b(table|database|map|mapping|schema|case ?master|datastore)\b/.test(normalizedQuestion);
+  const brief = buildPlainEnglishBrief(extracted);
+  const message = wantsSummary && !wantsTables
+    ? brief
+    : `${brief} I also prepared draft table mappings for officer approval.`;
+
   return {
     provider: 'catalyst-convokraft-ready-assistant',
-    mode: 'ocr-to-fir-table-mapping',
+    mode: wantsSummary && !wantsTables ? 'fir-plain-language-review' : 'ocr-to-fir-table-mapping',
     question,
-    message: 'I reviewed the OCR output and prepared draft table mappings for officer approval.',
+    message,
     recommendations: [
-      `Use ${extracted.fir_number || 'the detected FIR number'} as the CaseMaster CrimeNo.`,
-      `Map ${extracted.police_station || 'the detected station'} to PoliceStationID before final table insertion.`,
-      `Route legal sections to ActSectionAssociation after validating the exact BNS/IPC clauses.`,
-      'Use these mappings as review guidance for the officer before any official case entry.',
+      extracted.fir_number
+        ? `Use ${extracted.fir_number} as the draft CaseMaster CrimeNo after officer verification.`
+        : 'FIR number was not confidently detected; verify it manually from the first page.',
+      extracted.police_station
+        ? `Resolve ${extracted.police_station} to the correct PoliceStationID before any official insertion.`
+        : 'Police station was not confidently detected; do not save until it is selected.',
+      (extracted.legal_sections || []).length
+        ? `Route ${extracted.legal_sections.join(', ')} to ActSectionAssociation after validating the exact clauses.`
+        : 'No legal sections were confidently detected; review the Acts & Sections table in the PDF.',
+      'Use Add to Database only after the extracted record has been reviewed.',
     ],
     table_payloads: tablePayloads,
     confidence_notes: [
