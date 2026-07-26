@@ -1,10 +1,10 @@
 # Catalyst FIR Assistant Deployment
 
-This keeps the working hosted dashboard stable and adds a Zoho-powered FIR Intake story without requiring Data Store tables.
+This keeps the working hosted dashboard stable and adds a Zoho-powered FIR Intake story.
 
-You do not need to create Data Store tables.
+OCR and assistant review do not require Data Store tables.
 
-You do not need to add rows manually.
+The app only writes to Data Store if an officer clicks **Add to Database**.
 
 ## What This Uses
 
@@ -12,6 +12,7 @@ You do not need to add rows manually.
 - **Zoho Catalyst Functions** for the FIR backend.
 - **Zoho Catalyst Zia OCR** for real document OCR through the Catalyst Node SDK.
 - **Zoho Catalyst ConvoKraft-ready assistant flow** through the `/assist` function route.
+- Optional **Zoho Catalyst Data Store** insertion through the explicit `/commit` route.
 
 ## What The FIR Function Does
 
@@ -20,13 +21,16 @@ The `fir-ocr-api` function supports:
 ```text
 POST /ocr
 POST /assist
+POST /commit
 ```
 
 `/ocr` accepts a PDF/image and forwards it to Catalyst Zia OCR.
 
 `/assist` reviews OCR fields and prepares officer-review guidance plus draft FIR table mappings.
 
-Nothing is written to Data Store.
+`/commit` writes the reviewed OCR fields into FIR tables only when the user clicks **Add to Database**.
+
+No database write happens immediately after OCR.
 
 ## Current Real OCR Mode
 
@@ -107,10 +111,35 @@ In Catalyst Console:
 5. Open the app.
 6. Hard refresh with `Cmd + Shift + R`.
 
+## Optional: Enable Add To Database
+
+The **Add to Database** button requires the FIR Data Store tables to exist first.
+
+If you do not create these tables, OCR and the assistant still work. Only **Add to Database** will fail.
+
+The commit route writes to these tables:
+
+```text
+CaseMaster
+ComplainantDetails
+Victim
+Accused
+ActSectionAssociation
+Inv_OccuranceTime
+```
+
+The table definitions are in:
+
+```text
+scripts/schema.sql
+```
+
+You do not need to enter row values manually. Once the tables exist, clicking **Add to Database** inserts the OCR-derived rows.
+
 ## Demo Story
 
 You can say:
 
 ```text
-The app is hosted on Zoho Catalyst Web Client Hosting. FIR Intake uses a Catalyst Function and Zia OCR to extract text from uploaded FIR PDFs/images. After OCR, a ConvoKraft-ready assistant reviews the OCR output and suggests how the extracted FIR should map into official FIR tables. We intentionally do not require Data Store setup for the demo.
+The app is hosted on Zoho Catalyst Web Client Hosting. FIR Intake uses a Catalyst Function and Zia OCR to extract text from uploaded FIR PDFs/images. After OCR, a ConvoKraft-ready assistant reviews the OCR output and suggests how the extracted FIR should map into official FIR tables. The officer can optionally click Add to Database to insert the reviewed record into Catalyst Data Store.
 ```

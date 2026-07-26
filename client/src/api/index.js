@@ -48,6 +48,7 @@ const firApi = {
         return postMultipart(FIR_API, '/ocr', formData);
     },
     assistFirDraft: (payload) => postJson(FIR_API, '/assist', payload),
+    commitFirRecord: (payload) => postJson(FIR_API, '/commit', payload),
 };
 
 const catalystApi = {

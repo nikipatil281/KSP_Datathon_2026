@@ -66,6 +66,8 @@ export default function FIRIntake() {
   const [assistant, setAssistant] = useState(null);
   const [assistantLoading, setAssistantLoading] = useState(false);
   const [assistantQuestion, setAssistantQuestion] = useState('Which FIR database tables should this OCR output fill?');
+  const [committing, setCommitting] = useState(false);
+  const [commitResult, setCommitResult] = useState(null);
 
   const previewUrl = useMemo(() => file ? URL.createObjectURL(file) : null, [file]);
 
@@ -79,6 +81,7 @@ export default function FIRIntake() {
     setError(null);
     setSaved(false);
     setAssistant(null);
+    setCommitResult(null);
     setResult(null);
     setActiveStep(1);
     try {
@@ -117,6 +120,26 @@ export default function FIRIntake() {
   const handleSave = async () => {
     if (!result) return;
     setSaved(true);
+  };
+
+  const handleCommit = async () => {
+    if (!result) return;
+    setCommitting(true);
+    setError(null);
+    setCommitResult(null);
+    try {
+      const data = await api.commitFirRecord({
+        document: result.document,
+        ocr: result.ocr,
+        extracted: result.extracted,
+        assistant,
+      });
+      setCommitResult(data);
+    } catch (e) {
+      setError(e.message);
+    } finally {
+      setCommitting(false);
+    }
   };
 
   const extracted = result?.extracted || {};
@@ -160,6 +183,7 @@ export default function FIRIntake() {
                   setResult(null);
                   setSaved(false);
                   setAssistant(null);
+                  setCommitResult(null);
                   setActiveStep(e.target.files?.[0] ? 0 : 0);
                 }}
               />
@@ -302,9 +326,31 @@ export default function FIRIntake() {
                   </button>
                 </div>
 
+                <button
+                  onClick={handleCommit}
+                  disabled={committing}
+                  className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg border border-emerald-700 bg-emerald-950 px-3 py-2 text-sm font-semibold text-emerald-200 hover:bg-emerald-900 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {committing ? <Loader2 size={15} className="animate-spin" /> : <Database size={15} />}
+                  Add to Database
+                </button>
+
                 {saved && (
                   <div className="mt-3 rounded-lg border border-green-700 bg-green-950 p-3 text-xs text-green-300">
                     Reviewed locally for demo. The assistant mapping is ready for officer validation.
+                  </div>
+                )}
+
+                {commitResult && (
+                  <div className={`mt-3 rounded-lg border p-3 text-xs ${
+                    commitResult.committed
+                      ? 'border-emerald-700 bg-emerald-950 text-emerald-200'
+                      : 'border-yellow-700 bg-yellow-950 text-yellow-200'
+                  }`}>
+                    <div>{commitResult.message}</div>
+                    {commitResult.case_master_id && (
+                      <div className="mt-1">CaseMasterID: {commitResult.case_master_id}</div>
+                    )}
                   </div>
                 )}
               </>

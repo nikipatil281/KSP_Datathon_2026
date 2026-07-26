@@ -947,6 +947,15 @@ function buildMockFirAssistant(payload = {}) {
   };
 }
 
+function mockCommitFirRecord(payload = {}) {
+  return {
+    committed: false,
+    mode: 'local-demo',
+    message: 'Demo mode only. Enable the Catalyst FIR function and create the FIR Data Store tables before committing records.',
+    preview: buildFirTablePayloads(payload.extracted || {}),
+  };
+}
+
 export const mockApi = {
   summary: year => wait(buildSummary(year)),
   crimes: filters => wait(listCrimes(filters)),
@@ -979,6 +988,7 @@ export const mockApi = {
   recidivism: () => wait(getRecidivism()),
   processFirDocument: (file, options) => wait(buildMockFirExtraction(file, options)),
   assistFirDraft: payload => wait(buildMockFirAssistant(payload)),
+  commitFirRecord: payload => wait(mockCommitFirRecord(payload)),
   listDataTables: () => wait(Object.keys(baseTables).sort().map(name => ({
     name,
     file_name: `${name}.csv`,
