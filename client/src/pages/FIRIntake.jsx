@@ -16,6 +16,7 @@ const LANGUAGE_OPTIONS = [
 ];
 
 const STEPS = ['Upload', 'OCR', 'Extract', 'Review'];
+const REAL_FIR_OCR = import.meta.env.VITE_USE_CATALYST_FIR === 'true' && Boolean(import.meta.env.VITE_FIR_API_URL);
 
 function Field({ label, value, confidence }) {
   const pct = confidence ? Math.round(confidence * 100) : null;
@@ -134,7 +135,7 @@ export default function FIRIntake() {
           </p>
         </div>
         <div className="flex items-center gap-2 rounded-lg border border-green-800 bg-green-950 px-3 py-2 text-xs text-green-300">
-          <ShieldCheck size={14} /> Local mock OCR active
+          <ShieldCheck size={14} /> {REAL_FIR_OCR ? 'Catalyst Zia OCR active' : 'Local mock OCR active'}
         </div>
       </div>
 

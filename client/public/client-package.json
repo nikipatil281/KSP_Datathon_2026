@@ -1,6 +1,6 @@
 {
   "name": "kspCrimeAnalytics",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "KSP Crime Analytics demo using bundled FIR mock data.",
   "homepage": "index.html"
 }

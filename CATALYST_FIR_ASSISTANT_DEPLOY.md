@@ -10,7 +10,7 @@ You do not need to add rows manually.
 
 - **Zoho Catalyst Web Client Hosting** for the React app.
 - **Zoho Catalyst Functions** for the FIR backend.
-- **Zoho Catalyst Zia OCR** for real document OCR, if you configure OCR credentials.
+- **Zoho Catalyst Zia OCR** for real document OCR through the Catalyst Node SDK.
 - **Zoho Catalyst ConvoKraft-ready assistant flow** through the `/assist` function route.
 
 ## What The FIR Function Does
@@ -28,41 +28,23 @@ POST /assist
 
 Nothing is written to Data Store.
 
-## Current Safe Demo Mode
+## Current Real OCR Mode
 
-The hosted app is still safe by default:
-
-```bash
-VITE_USE_MOCKS=true
-VITE_USE_CATALYST_FIR=false
-VITE_FIR_API_URL=
-```
-
-This means the whole demo works even if you do not deploy the FIR function.
-
-## Optional: Enable Real Catalyst FIR Function
-
-Only do this if you want the FIR Intake page to call the Catalyst function.
-
-Keep:
+The production web build is configured for real OCR in your current Catalyst project:
 
 ```bash
 VITE_USE_MOCKS=true
-```
-
-Change:
-
-```bash
-VITE_USE_CATALYST_FIR=false
-VITE_FIR_API_URL=
-```
-
-to:
-
-```bash
 VITE_USE_CATALYST_FIR=true
-VITE_FIR_API_URL=https://YOUR-FUNCTION-URL/server/fir-ocr-api
+VITE_FIR_API_URL=https://datathon-demo-60075190019.development.catalystserverless.in/server/fir-ocr-api
 ```
+
+This keeps the dashboard on stable mock data, but sends FIR uploads to the Catalyst function.
+
+If you create a different Catalyst project or use a different function URL, replace `VITE_FIR_API_URL` with the URL Catalyst shows for your `fir-ocr-api` function.
+
+## Required: Deploy The Real OCR Function
+
+The FIR Intake page will show real OCR only after this function exists.
 
 ## Step 1: Create The Function
 
@@ -85,22 +67,21 @@ fir-ocr-api
 /Users/NIKITA/Desktop/otherWork/Datathon_2026/Zoho_Catalyst/ksp-crime-analytics-revamp/functions/fir-ocr-api-fn.zip
 ```
 
-## Step 2: Configure OCR Only If Needed
+## Step 2: Confirm Zia OCR Access
 
-If you want real OCR, add these function environment variables:
+The function uses the Catalyst Node SDK:
 
-```text
-CATALYST_PROJECT_ID
-CATALYST_OAUTH_TOKEN
-CATALYST_API_DOMAIN=https://api.catalyst.zoho.in
-CATALYST_ENVIRONMENT=Development
+```js
+app.zia().extractOpticalCharacters(...)
 ```
 
-If you skip this, keep `VITE_USE_CATALYST_FIR=false` and the app will use the mock OCR/assistant flow.
+You should not need to paste an OAuth token into the function.
 
-## Step 3: Rebuild The Web Client If You Enabled The Function
+If OCR fails after deployment, check that Zia Services/OCR is available in your Catalyst project and that your project plan allows it.
 
-After editing `client/.env.production`, run:
+## Step 3: Rebuild The Web Client
+
+Run:
 
 ```bash
 cd /Users/NIKITA/Desktop/otherWork/Datathon_2026/Zoho_Catalyst/ksp-crime-analytics-revamp/client
@@ -131,5 +112,5 @@ In Catalyst Console:
 You can say:
 
 ```text
-The app is hosted on Zoho Catalyst Web Client Hosting. FIR Intake is designed around Catalyst Functions and Zia OCR, with a ConvoKraft-ready assistant that reviews OCR output and suggests how the extracted FIR should map into official FIR tables. For the demo, we keep data local and do not require Data Store setup.
+The app is hosted on Zoho Catalyst Web Client Hosting. FIR Intake uses a Catalyst Function and Zia OCR to extract text from uploaded FIR PDFs/images. After OCR, a ConvoKraft-ready assistant reviews the OCR output and suggests how the extracted FIR should map into official FIR tables. We intentionally do not require Data Store setup for the demo.
 ```

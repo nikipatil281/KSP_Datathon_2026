@@ -7,15 +7,10 @@
  *     image: PDF/image file for Zia OCR
  *     language: optional comma-separated OCR language codes, e.g. eng,kan
  *   POST /assist - Reviews OCR output and returns FIR table mappings
- *
- * Environment variables required for real Catalyst OCR forwarding:
- *   CATALYST_PROJECT_ID
- *   CATALYST_OAUTH_TOKEN
- *   CATALYST_API_DOMAIN=https://api.catalyst.zoho.in
- *   CATALYST_ENVIRONMENT=Development
  */
 
 const fs = require('fs');
+const catalyst = require('zcatalyst-sdk-node');
 
 function cors(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -56,41 +51,16 @@ function getField(req, name) {
   return Array.isArray(value) ? value[0] : value;
 }
 
-async function runCatalystOcr(file, language) {
-  const projectId = process.env.CATALYST_PROJECT_ID;
-  const token = process.env.CATALYST_OAUTH_TOKEN;
-  const apiDomain = process.env.CATALYST_API_DOMAIN || 'https://api.catalyst.zoho.in';
-  const environment = process.env.CATALYST_ENVIRONMENT || 'Development';
-
-  if (!projectId || !token) {
-    throw new Error('OCR is not configured. Set CATALYST_PROJECT_ID and CATALYST_OAUTH_TOKEN in Catalyst environment variables.');
-  }
-
+async function runCatalystOcr(req, file, language) {
   const filePath = getFilePath(file);
   if (!filePath || !fs.existsSync(filePath)) {
     throw new Error('No uploaded file was found in the request. Expected multipart field "image".');
   }
 
-  const bytes = fs.readFileSync(filePath);
-  const form = new FormData();
-  form.append('image', new Blob([bytes]), getFileName(file));
-  if (language && language !== 'auto') form.append('language', language);
-
-  const response = await fetch(`${apiDomain}/baas/v1/project/${projectId}/ml/ocr`, {
-    method: 'POST',
-    headers: {
-      Authorization: `Zoho-oauthtoken ${token}`,
-      Environment: environment,
-    },
-    body: form,
-  });
-
-  const json = await response.json();
-  if (!response.ok || json.status !== 'success') {
-    throw new Error(json.message || json.error || `Catalyst OCR failed with ${response.status}`);
-  }
-
-  return json.data;
+  const app = catalyst.initialize(req);
+  const options = { modelType: 'OCR' };
+  if (language && language !== 'auto') options.language = language;
+  return app.zia().extractOpticalCharacters(fs.createReadStream(filePath), options);
 }
 
 function extractFirFields(ocrData, file) {
@@ -211,7 +181,7 @@ module.exports = async (context, req, res) => {
     if (req.method === 'POST' && path === '/ocr') {
       const file = getUploadedFile(req);
       const language = getField(req, 'language') || 'auto';
-      const ocrData = await runCatalystOcr(file, language);
+      const ocrData = await runCatalystOcr(req, file, language);
       return ok(res, extractFirFields(ocrData, file));
     }
 
