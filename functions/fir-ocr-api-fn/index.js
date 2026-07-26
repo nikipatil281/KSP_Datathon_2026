@@ -7,7 +7,6 @@
  *     image: PDF/image file for Zia OCR
  *     language: optional comma-separated OCR language codes, e.g. eng,kan
  *   POST /assist - Reviews OCR output and returns FIR table mappings
- *   POST /drafts - Saves a reviewed FIR draft into Catalyst Data Store
  *
  * Environment variables required for real Catalyst OCR forwarding:
  *   CATALYST_PROJECT_ID
@@ -17,7 +16,6 @@
  */
 
 const fs = require('fs');
-const catalyst = require('zcatalyst-sdk-node');
 
 function cors(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -37,10 +35,6 @@ function fail(res, msg, status = 500) {
 
 function body(req) {
   return req.body || {};
-}
-
-function toJson(value) {
-  return JSON.stringify(value || null);
 }
 
 function getUploadedFile(req) {
@@ -194,7 +188,7 @@ function buildAssistant(payload = {}) {
       `Use ${extracted.fir_number || 'the detected FIR number'} as the CaseMaster CrimeNo.`,
       `Map ${extracted.police_station || 'the detected station'} to PoliceStationID before final table insertion.`,
       `Route legal sections to ActSectionAssociation after validating the exact BNS/IPC clauses.`,
-      'Save the reviewed output into FIRIntakeDrafts first, then promote to normalized FIR tables after approval.',
+      'Use these mappings as review guidance for the officer before any official case entry.',
     ],
     table_payloads: tablePayloads,
     confidence_notes: [
@@ -202,39 +196,6 @@ function buildAssistant(payload = {}) {
       'Fields with unknown suspects or ambiguous legal clauses should stay provisional.',
       'The draft-first pattern protects official FIR tables from unverified OCR errors.',
     ],
-  };
-}
-
-async function saveDraft(req, payload = {}) {
-  const app = catalyst.initialize(req);
-  const extracted = payload.extracted || {};
-  const assistant = payload.assistant || buildAssistant(payload);
-  const row = {
-    FIRNumber: extracted.fir_number || '',
-    SourceFile: payload.document?.file_name || '',
-    OCRProvider: payload.ocr?.provider || '',
-    OCRConfidence: String(payload.ocr?.confidence ?? ''),
-    District: extracted.district || '',
-    PoliceStation: extracted.police_station || '',
-    CrimeType: extracted.crime_type || '',
-    IncidentDate: extracted.incident_date || '',
-    LegalSections: (extracted.legal_sections || []).join(', '),
-    ReviewStatus: 'Reviewed',
-    ExtractedJson: toJson(extracted),
-    TablePayloadJson: toJson(assistant.table_payloads),
-    AssistantNotes: toJson({
-      provider: assistant.provider,
-      message: assistant.message,
-      recommendations: assistant.recommendations,
-      confidence_notes: assistant.confidence_notes,
-    }),
-  };
-  const saved = await app.datastore().table('FIRIntakeDrafts').insertRow(row);
-  return {
-    saved: true,
-    datastore: true,
-    row: saved,
-    message: 'Reviewed FIR draft saved to Catalyst Data Store.',
   };
 }
 
@@ -256,10 +217,6 @@ module.exports = async (context, req, res) => {
 
     if (req.method === 'POST' && path === '/assist') {
       return ok(res, buildAssistant(body(req)));
-    }
-
-    if (req.method === 'POST' && path === '/drafts') {
-      return ok(res, await saveDraft(req, body(req)), 201);
     }
 
     return fail(res, `Not found: ${req.method} ${path}`, 404);

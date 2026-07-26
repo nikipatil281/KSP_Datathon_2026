@@ -934,9 +934,9 @@ function buildMockFirAssistant(payload = {}) {
     message: 'I reviewed the OCR fields and prepared draft table mappings for officer approval.',
     recommendations: [
       `Use ${extracted.fir_number || 'the detected FIR number'} as the CaseMaster CrimeNo.`,
-      `Map ${extracted.police_station || 'the detected station'} to PoliceStationID before final Data Store insertion.`,
+      `Map ${extracted.police_station || 'the detected station'} to PoliceStationID before any official case entry.`,
       `Keep legal sections in ActSectionAssociation until a supervisor validates the exact BNS/IPC clauses.`,
-      'Save this as a reviewed FIRIntakeDrafts row first, then promote to normalized FIR tables after approval.',
+      'Treat these mappings as review guidance for the officer, not as an automatic database write.',
     ],
     table_payloads: tablePayloads,
     confidence_notes: [
@@ -944,25 +944,6 @@ function buildMockFirAssistant(payload = {}) {
       'Accused identity remains provisional because OCR text contains unknown suspects.',
       'The assistant is intentionally draft-first to avoid overwriting official records.',
     ],
-  };
-}
-
-function mockSaveFirDraft(payload = {}) {
-  const now = new Date().toISOString();
-  const row = {
-    ROWID: `local-${Date.now()}`,
-    ReviewStatus: 'Reviewed',
-    CreatedAt: now,
-    FIRNumber: payload.extracted?.fir_number || '',
-    SourceFile: payload.document?.file_name || '',
-    saved_to_datastore: false,
-    mode: 'local-demo',
-  };
-  return {
-    saved: true,
-    datastore: false,
-    row,
-    message: 'Reviewed locally. Configure the Catalyst FIR function to persist this row in Data Store.',
   };
 }
 
@@ -998,7 +979,6 @@ export const mockApi = {
   recidivism: () => wait(getRecidivism()),
   processFirDocument: (file, options) => wait(buildMockFirExtraction(file, options)),
   assistFirDraft: payload => wait(buildMockFirAssistant(payload)),
-  saveFirDraft: payload => wait(mockSaveFirDraft(payload)),
   listDataTables: () => wait(Object.keys(baseTables).sort().map(name => ({
     name,
     file_name: `${name}.csv`,

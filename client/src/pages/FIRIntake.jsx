@@ -62,7 +62,6 @@ export default function FIRIntake() {
   const [error, setError] = useState(null);
   const [activeStep, setActiveStep] = useState(0);
   const [saved, setSaved] = useState(false);
-  const [saveStatus, setSaveStatus] = useState(null);
   const [assistant, setAssistant] = useState(null);
   const [assistantLoading, setAssistantLoading] = useState(false);
   const [assistantQuestion, setAssistantQuestion] = useState('Which FIR database tables should this OCR output fill?');
@@ -78,7 +77,6 @@ export default function FIRIntake() {
     setProcessing(true);
     setError(null);
     setSaved(false);
-    setSaveStatus(null);
     setAssistant(null);
     setResult(null);
     setActiveStep(1);
@@ -117,21 +115,7 @@ export default function FIRIntake() {
 
   const handleSave = async () => {
     if (!result) return;
-    setSaveStatus(null);
-    setError(null);
-    try {
-      const data = await api.saveFirDraft({
-        document: result.document,
-        ocr: result.ocr,
-        extracted: result.extracted,
-        warnings: result.warnings || [],
-        assistant,
-      });
-      setSaveStatus(data);
-      setSaved(true);
-    } catch (e) {
-      setError(e.message);
-    }
+    setSaved(true);
   };
 
   const extracted = result?.extracted || {};
@@ -174,7 +158,6 @@ export default function FIRIntake() {
                   setFile(e.target.files?.[0] || null);
                   setResult(null);
                   setSaved(false);
-                  setSaveStatus(null);
                   setAssistant(null);
                   setActiveStep(e.target.files?.[0] ? 0 : 0);
                 }}
@@ -320,10 +303,7 @@ export default function FIRIntake() {
 
                 {saved && (
                   <div className="mt-3 rounded-lg border border-green-700 bg-green-950 p-3 text-xs text-green-300">
-                    {saveStatus?.message || 'Reviewed and saved.'}
-                    {saveStatus?.row?.ROWID && (
-                      <div className="mt-1 text-green-200">Draft row: {saveStatus.row.ROWID}</div>
-                    )}
+                    Reviewed locally for demo. The assistant mapping is ready for officer validation.
                   </div>
                 )}
               </>
@@ -363,7 +343,7 @@ export default function FIRIntake() {
 
               {!assistant && (
                 <div className="mt-3 text-xs text-slate-500">
-                  The assistant will review OCR output and prepare draft Data Store table payloads.
+                  The assistant will review OCR output and prepare draft FIR table mappings.
                 </div>
               )}
 
@@ -383,7 +363,7 @@ export default function FIRIntake() {
                   </div>
 
                   <div>
-                    <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Draft Table Payloads</div>
+                    <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Draft Table Mappings</div>
                     <pre className="max-h-56 overflow-auto whitespace-pre-wrap rounded-lg bg-slate-950 p-3 text-[11px] leading-relaxed text-slate-300">
                       {JSON.stringify(assistant.table_payloads || {}, null, 2)}
                     </pre>
