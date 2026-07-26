@@ -272,36 +272,89 @@ function buildPlainEnglishBrief(extracted = {}) {
   return parts.join(' ');
 }
 
+function detectLanguages(text = '') {
+  const hasDevanagari = /[\u0900-\u097F]/.test(text);
+  const hasKannada = /[\u0C80-\u0CFF]/.test(text);
+  const alpha = text.match(/[A-Za-z]/g)?.length || 0;
+  const latinWords = text.match(/\b[A-Za-z]{3,}\b/g)?.length || 0;
+  return {
+    hasDevanagari,
+    hasKannada,
+    hasEnglish: alpha >= 20 || latinWords >= 5,
+  };
+}
+
+function answerLanguageQuestion(question, ocrText = '') {
+  const normalizedQuestion = question.toLowerCase();
+  const lang = detectLanguages(ocrText);
+  const asksHindi = /\b(hindi|devanagari)\b/.test(normalizedQuestion);
+  const asksKannada = /\b(kannada|kan)\b/.test(normalizedQuestion);
+  const asksEnglish = /\b(english|eng)\b/.test(normalizedQuestion);
+  if (!asksHindi && !asksKannada && !asksEnglish && !/\blanguage\b/.test(normalizedQuestion)) return null;
+
+  const detected = [
+    lang.hasEnglish ? 'English/Latin text' : '',
+    lang.hasDevanagari ? 'Hindi/Devanagari text' : '',
+    lang.hasKannada ? 'Kannada text' : '',
+  ].filter(Boolean);
+
+  if (asksHindi) {
+    return lang.hasDevanagari
+      ? 'Yes. The OCR output contains Devanagari characters, so there appears to be Hindi text in the FIR.'
+      : 'I do not see Hindi/Devanagari characters in the OCR output. This scan appears to be mostly English/Latin text, though OCR can miss faint handwritten or low-resolution Hindi text.';
+  }
+  if (asksKannada) {
+    return lang.hasKannada
+      ? 'Yes. The OCR output contains Kannada characters.'
+      : 'I do not see Kannada characters in the OCR output. This scan appears to be mostly English/Latin text.';
+  }
+  if (asksEnglish) {
+    return lang.hasEnglish
+      ? 'Yes. The OCR output is mostly English/Latin text.'
+      : 'I do not see much English/Latin text in the OCR output.';
+  }
+  return detected.length
+    ? `The OCR output appears to contain ${detected.join(', ')}.`
+    : 'I could not confidently identify the document language from the OCR output.';
+}
+
 function buildAssistant(payload = {}) {
   const extracted = payload.extracted || payload.result?.extracted || {};
+  const ocrText = payload.ocr?.text || payload.result?.ocr?.text || '';
   const question = payload.message || 'Map this OCR output into FIR database tables.';
   const normalizedQuestion = question.toLowerCase();
   const tablePayloads = buildTablePayloads(extracted);
+  const languageAnswer = answerLanguageQuestion(question, ocrText);
   const wantsSummary = /\b(what|say|summary|summarize|explain|really)\b/.test(normalizedQuestion);
   const wantsTables = /\b(table|database|map|mapping|schema|case ?master|datastore)\b/.test(normalizedQuestion);
   const brief = buildPlainEnglishBrief(extracted);
-  const message = wantsSummary && !wantsTables
+  const message = languageAnswer || (wantsSummary && !wantsTables
     ? brief
-    : `${brief} I also prepared draft table mappings for officer approval.`;
+    : `${brief} I also prepared draft table mappings for officer approval.`);
+  const showTables = wantsTables || (!languageAnswer && !wantsSummary);
+  const recommendations = showTables ? [
+    extracted.fir_number
+      ? `Use ${extracted.fir_number} as the draft CaseMaster CrimeNo after officer verification.`
+      : 'FIR number was not confidently detected; verify it manually from the first page.',
+    extracted.police_station
+      ? `Resolve ${extracted.police_station} to the correct PoliceStationID before any official insertion.`
+      : 'Police station was not confidently detected; do not save until it is selected.',
+    (extracted.legal_sections || []).length
+      ? `Route ${extracted.legal_sections.join(', ')} to ActSectionAssociation after validating the exact clauses.`
+      : 'No legal sections were confidently detected; review the Acts & Sections table in the PDF.',
+    'Use Add to Database only after the extracted record has been reviewed.',
+  ] : [
+    'This answer is based only on the OCR text returned by Catalyst Zia.',
+    'If the PDF image visually contains text that OCR missed, rerun OCR with the closest language hint.',
+  ];
 
   return {
     provider: 'catalyst-convokraft-ready-assistant',
-    mode: wantsSummary && !wantsTables ? 'fir-plain-language-review' : 'ocr-to-fir-table-mapping',
+    mode: languageAnswer ? 'fir-language-check' : wantsSummary && !wantsTables ? 'fir-plain-language-review' : 'ocr-to-fir-table-mapping',
     question,
     message,
-    recommendations: [
-      extracted.fir_number
-        ? `Use ${extracted.fir_number} as the draft CaseMaster CrimeNo after officer verification.`
-        : 'FIR number was not confidently detected; verify it manually from the first page.',
-      extracted.police_station
-        ? `Resolve ${extracted.police_station} to the correct PoliceStationID before any official insertion.`
-        : 'Police station was not confidently detected; do not save until it is selected.',
-      (extracted.legal_sections || []).length
-        ? `Route ${extracted.legal_sections.join(', ')} to ActSectionAssociation after validating the exact clauses.`
-        : 'No legal sections were confidently detected; review the Acts & Sections table in the PDF.',
-      'Use Add to Database only after the extracted record has been reviewed.',
-    ],
-    table_payloads: tablePayloads,
+    recommendations,
+    table_payloads: showTables ? tablePayloads : null,
     confidence_notes: [
       'This assistant uses OCR text plus extracted fields to prepare a reviewable draft.',
       'Fields with unknown suspects or ambiguous legal clauses should stay provisional.',

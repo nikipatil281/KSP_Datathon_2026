@@ -145,6 +145,8 @@ export default function FIRIntake() {
   const extracted = result?.extracted || {};
   const confidence = extracted.confidence || {};
   const assignment = extracted.recommended_assignment;
+  const assistantRecommendations = assistant?.recommendations || [];
+  const assistantMappings = assistant?.table_payloads;
 
   return (
     <div className="p-6 space-y-6">
@@ -405,21 +407,25 @@ export default function FIRIntake() {
                     {assistant.message}
                   </div>
 
-                  <div>
-                    <div className="mb-2 text-xs font-semibold uppercase text-slate-400">Recommendations</div>
-                    <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-                      {(assistant.recommendations || []).map(item => (
-                        <div key={item} className="rounded-md bg-slate-900 px-3 py-2 text-xs text-slate-300">{item}</div>
-                      ))}
+                  {assistantRecommendations.length > 0 && (
+                    <div>
+                      <div className="mb-2 text-xs font-semibold uppercase text-slate-400">Recommendations</div>
+                      <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+                        {assistantRecommendations.map(item => (
+                          <div key={item} className="rounded-md bg-slate-900 px-3 py-2 text-xs text-slate-300">{item}</div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  )}
 
-                  <div>
-                    <div className="mb-2 text-xs font-semibold uppercase text-slate-400">Draft Table Mappings</div>
-                    <pre className="max-h-72 overflow-auto whitespace-pre-wrap rounded-lg bg-slate-950 p-3 text-[11px] leading-relaxed text-slate-300">
-                      {JSON.stringify(assistant.table_payloads || {}, null, 2)}
-                    </pre>
-                  </div>
+                  {assistantMappings && (
+                    <div>
+                      <div className="mb-2 text-xs font-semibold uppercase text-slate-400">Draft Table Mappings</div>
+                      <pre className="max-h-72 overflow-auto whitespace-pre-wrap rounded-lg bg-slate-950 p-3 text-[11px] leading-relaxed text-slate-300">
+                        {JSON.stringify(assistantMappings, null, 2)}
+                      </pre>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

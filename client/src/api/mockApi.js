@@ -927,12 +927,27 @@ function buildFirTablePayloads(extracted = {}) {
 
 function buildMockFirAssistant(payload = {}) {
   const extracted = payload.extracted || payload.result?.extracted || {};
+  const ocrText = payload.ocr?.text || payload.result?.ocr?.text || '';
   const question = payload.message || 'Map this OCR output into FIR database tables.';
+  const asksHindi = /\b(hindi|devanagari)\b/i.test(question);
+  const asksKannada = /\b(kannada|kan)\b/i.test(question);
+  const asksLanguage = asksHindi || asksKannada || /\blanguage\b/i.test(question);
+  const hasHindi = /[\u0900-\u097F]/.test(ocrText);
+  const hasKannada = /[\u0C80-\u0CFF]/.test(ocrText);
   const wantsSummary = /\b(what|say|summary|summarize|explain|really)\b/i.test(question);
   const wantsTables = /\b(table|database|map|mapping|schema|case ?master|datastore)\b/i.test(question);
   const tablePayloads = buildFirTablePayloads(extracted);
   const sections = (extracted.legal_sections || []).join(', ') || 'no legal sections detected';
-  const message = [
+  const languageMessage = asksHindi
+    ? hasHindi
+      ? 'Yes. The OCR output contains Devanagari characters, so there appears to be Hindi text in the FIR.'
+      : 'I do not see Hindi/Devanagari characters in the OCR output. This scan appears to be mostly English/Latin text, though OCR can miss faint handwritten or low-resolution Hindi text.'
+    : asksKannada
+      ? hasKannada
+        ? 'Yes. The OCR output contains Kannada characters.'
+        : 'I do not see Kannada characters in the OCR output. This scan appears to be mostly English/Latin text.'
+      : null;
+  const message = languageMessage || [
     `This appears to be FIR ${extracted.fir_number || 'not detected'} registered at ${extracted.police_station || 'not detected'} in ${extracted.district || 'not detected'}.`,
     `The detected offence is ${extracted.crime_type || 'not detected'}, with sections ${sections}.`,
     `The date found in OCR is ${extracted.incident_date || 'not detected'}${extracted.incident_time ? ` at ${extracted.incident_time}` : ''}.`,
@@ -940,12 +955,13 @@ function buildMockFirAssistant(payload = {}) {
     'Low-confidence or missing fields should be checked against the PDF before saving.',
     wantsSummary && !wantsTables ? '' : 'I also prepared draft table mappings for officer approval.',
   ].filter(Boolean).join(' ');
+  const showTables = wantsTables || (!asksLanguage && !wantsSummary);
   return {
     provider: 'mock-convokraft-assistant',
-    mode: wantsSummary && !wantsTables ? 'fir-plain-language-review' : 'demo-table-mapping',
+    mode: asksLanguage ? 'fir-language-check' : wantsSummary && !wantsTables ? 'fir-plain-language-review' : 'demo-table-mapping',
     question,
     message,
-    recommendations: [
+    recommendations: showTables ? [
       extracted.fir_number
         ? `Use ${extracted.fir_number} as the draft CaseMaster CrimeNo after officer verification.`
         : 'FIR number was not confidently detected; verify it manually from the first page.',
@@ -956,8 +972,11 @@ function buildMockFirAssistant(payload = {}) {
         ? `Route ${extracted.legal_sections.join(', ')} to ActSectionAssociation after validating the exact clauses.`
         : 'No legal sections were confidently detected; review the Acts & Sections table in the PDF.',
       'Use Add to Database only after the extracted record has been reviewed.',
+    ] : [
+      'This answer is based only on the OCR text returned by the OCR step.',
+      'If the PDF image visually contains text that OCR missed, rerun OCR with the closest language hint.',
     ],
-    table_payloads: tablePayloads,
+    table_payloads: showTables ? tablePayloads : null,
     confidence_notes: [
       'FIR number and station are high-confidence fields.',
       'Accused identity remains provisional because OCR text contains unknown suspects.',
