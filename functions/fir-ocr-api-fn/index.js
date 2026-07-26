@@ -284,6 +284,33 @@ function detectLanguages(text = '') {
   };
 }
 
+function normalizeText(value = '') {
+  return String(value).toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function questionTokens(question = '') {
+  const stop = new Set([
+    'a', 'an', 'and', 'any', 'are', 'about', 'can', 'could', 'did', 'do', 'does',
+    'fir', 'for', 'from', 'give', 'have', 'i', 'in', 'is', 'it', 'me', 'of',
+    'on', 'or', 'please', 'say', 'tell', 'that', 'the', 'there', 'this', 'to',
+    'uploaded', 'was', 'were', 'what', 'when', 'where', 'which', 'who', 'why',
+  ]);
+  return normalizeText(question).split(' ').filter(token => token.length > 2 && !stop.has(token));
+}
+
+function isGeneralQuestion(question = '') {
+  const normalized = normalizeText(question);
+  if (!normalized) return true;
+  if (/^\s*(what\s+is|whats|calculate|compute|solve)\s+\d+\s*[-+*/x]\s*\d+\s*\??\s*$/i.test(question)) return true;
+  return /\b(weather|capital of|president|prime minister|recipe|joke|movie|song|sports|stock|bitcoin|translate this unrelated|write code|homework)\b/.test(normalized);
+}
+
+function isFirQuestion(question = '') {
+  const normalized = normalizeText(question);
+  const firTerms = /\b(fir|case|crime|complainant|informant|accused|suspect|victim|section|ipc|bns|act|offence|offense|police|station|district|date|time|location|place|property|loss|weapon|ocr|document|scan|pdf|hindi|kannada|english|language|summary|happened|registered|jurisdiction|narrative)\b/;
+  return firTerms.test(normalized);
+}
+
 function answerLanguageQuestion(question, ocrText = '') {
   const normalizedQuestion = question.toLowerCase();
   const lang = detectLanguages(ocrText);
@@ -318,47 +345,202 @@ function answerLanguageQuestion(question, ocrText = '') {
     : 'I could not confidently identify the document language from the OCR output.';
 }
 
+function answerExtractedFieldQuestion(question, extracted = {}) {
+  const normalized = normalizeText(question);
+  const sections = (extracted.legal_sections || []).join(', ');
+  const answers = [
+    {
+      match: /\b(fir number|fir no|crime no|case number|case no)\b/,
+      value: extracted.fir_number,
+      answer: `The FIR number detected is ${sentence(extracted.fir_number)}.`,
+    },
+    {
+      match: /\b(complainant|informant|reported|reporter)\b/,
+      value: extracted.complainant,
+      answer: `The complainant/informant detected is ${sentence(extracted.complainant)}.`,
+    },
+    {
+      match: /\b(accused|suspect)\b/,
+      value: (extracted.accused || []).map(item => item.name).filter(Boolean).join(', '),
+      answer: `The accused/suspect detected is ${sentence((extracted.accused || []).map(item => item.name).filter(Boolean).join(', '))}.`,
+    },
+    {
+      match: /\b(victim)\b/,
+      value: (extracted.victims || []).map(item => item.name).filter(Boolean).join(', '),
+      answer: `The victim detected is ${sentence((extracted.victims || []).map(item => item.name).filter(Boolean).join(', '))}.`,
+    },
+    {
+      match: /\b(section|ipc|bns|act|law|legal)\b/,
+      value: sections,
+      answer: `The legal sections detected are ${sentence(sections)}.`,
+    },
+    {
+      match: /\b(offence|offense|crime type|crime)\b/,
+      value: extracted.crime_type,
+      answer: `The detected offence/crime type is ${sentence(extracted.crime_type)}.`,
+    },
+    {
+      match: /\b(police station|station|ps)\b/,
+      value: extracted.police_station,
+      answer: `The police station detected is ${sentence(extracted.police_station)}.`,
+    },
+    {
+      match: /\b(district)\b/,
+      value: extracted.district,
+      answer: `The district detected is ${sentence(extracted.district)}.`,
+    },
+    {
+      match: /\b(date|registered|registration)\b/,
+      value: extracted.incident_date,
+      answer: `The date detected is ${sentence(extracted.incident_date)}.`,
+    },
+    {
+      match: /\b(time)\b/,
+      value: extracted.incident_time,
+      answer: `The time detected is ${sentence(extracted.incident_time)}.`,
+    },
+    {
+      match: /\b(location|place|where|jurisdiction|address)\b/,
+      value: extracted.location || [extracted.police_station, extracted.district].filter(Boolean).join(', '),
+      answer: `The place or jurisdiction detail detected is ${sentence(extracted.location || [extracted.police_station, extracted.district].filter(Boolean).join(', '))}.`,
+    },
+    {
+      match: /\b(property|loss|stolen|value)\b/,
+      value: extracted.property_loss_inr,
+      answer: extracted.property_loss_inr ? `The detected property loss is INR ${Number(extracted.property_loss_inr).toLocaleString('en-IN')}.` : 'Property loss was not detected in the OCR output.',
+    },
+  ];
+  return answers.find(item => item.match.test(normalized)) || null;
+}
+
+function findRelevantOcrLines(question = '', text = '') {
+  const tokens = questionTokens(question);
+  if (!tokens.length) return [];
+  const lines = text
+    .split(/\r?\n/)
+    .map(line => line.replace(/\s+/g, ' ').trim())
+    .filter(line => line.length > 4 && !/https?:|FileID=|ViewMode|^\d+\s*(?:of|\/)\s*\d+$/i.test(line));
+  return lines
+    .map((line, index) => {
+      const normalized = normalizeText(line);
+      const score = tokens.reduce((total, token) => total + (normalized.includes(token) ? 1 : 0), 0);
+      return { line, index, score };
+    })
+    .filter(item => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.index - b.index)
+    .slice(0, 4)
+    .map(item => item.line);
+}
+
+function answerGroundedFirQuestion(question, extracted = {}, ocrText = '') {
+  if (isGeneralQuestion(question) && !isFirQuestion(question)) {
+    return {
+      mode: 'fir-scope-refusal',
+      message: 'I can only answer questions about the uploaded FIR and its OCR output. I cannot answer general questions that are unrelated to this FIR.',
+      recommendations: ['Ask about FIR fields, people, dates, legal sections, language, location, or the OCR text.'],
+      table_payloads: null,
+    };
+  }
+
+  const languageAnswer = answerLanguageQuestion(question, ocrText);
+  if (languageAnswer) {
+    return {
+      mode: 'fir-language-check',
+      message: languageAnswer,
+      recommendations: [
+        'This answer is based only on the OCR text returned by Catalyst Zia.',
+        'If the PDF image visually contains text that OCR missed, rerun OCR with the closest language hint.',
+      ],
+      table_payloads: null,
+    };
+  }
+
+  const fieldAnswer = answerExtractedFieldQuestion(question, extracted);
+  if (fieldAnswer) {
+    return {
+      mode: 'fir-field-answer',
+      message: fieldAnswer.value ? fieldAnswer.answer : `${fieldAnswer.answer} Please verify the PDF manually before saving.`,
+      recommendations: ['This answer is grounded in the extracted FIR record and may need officer verification.'],
+      table_payloads: null,
+    };
+  }
+
+  const wantsSummary = /\b(what|say|summary|summarize|explain|really|happened|brief)\b/i.test(question);
+  if (wantsSummary) {
+    return {
+      mode: 'fir-plain-language-review',
+      message: buildPlainEnglishBrief(extracted),
+      recommendations: ['This is a plain-language summary of the OCR-derived FIR fields. Verify low-confidence fields against the PDF.'],
+      table_payloads: null,
+    };
+  }
+
+  const wantsTables = /\b(table|database|map|mapping|schema|case ?master|datastore)\b/i.test(question);
+  if (wantsTables) {
+    const tablePayloads = buildTablePayloads(extracted);
+    return {
+      mode: 'ocr-to-fir-table-mapping',
+      message: `${buildPlainEnglishBrief(extracted)} I also prepared draft table mappings for officer approval.`,
+      recommendations: [
+        extracted.fir_number
+          ? `Use ${extracted.fir_number} as the draft CaseMaster CrimeNo after officer verification.`
+          : 'FIR number was not confidently detected; verify it manually from the first page.',
+        extracted.police_station
+          ? `Resolve ${extracted.police_station} to the correct PoliceStationID before any official insertion.`
+          : 'Police station was not confidently detected; do not save until it is selected.',
+        (extracted.legal_sections || []).length
+          ? `Route ${extracted.legal_sections.join(', ')} to ActSectionAssociation after validating the exact clauses.`
+          : 'No legal sections were confidently detected; review the Acts & Sections table in the PDF.',
+        'Use Add to Database only after the extracted record has been reviewed.',
+      ],
+      table_payloads: tablePayloads,
+    };
+  }
+
+  const relevantLines = findRelevantOcrLines(question, ocrText);
+  if (relevantLines.length) {
+    return {
+      mode: 'fir-ocr-grounded-answer',
+      message: `I found these relevant OCR lines from the uploaded FIR: ${relevantLines.map(line => `"${line}"`).join(' ')}`,
+      recommendations: ['This answer quotes OCR text directly; compare it with the PDF if the scan quality is low.'],
+      table_payloads: null,
+    };
+  }
+
+  if (!isFirQuestion(question)) {
+    return {
+      mode: 'fir-scope-refusal',
+      message: 'I can only answer questions about the uploaded FIR and its OCR output. I cannot answer unrelated general questions.',
+      recommendations: ['Ask about FIR fields, people, dates, legal sections, language, location, or the OCR text.'],
+      table_payloads: null,
+    };
+  }
+
+  return {
+    mode: 'fir-not-found',
+    message: 'I could not find that answer in the extracted FIR fields or OCR text. Please verify the PDF manually; OCR may have missed or distorted that part.',
+    recommendations: ['Try asking with a term that appears in the OCR text, or rerun OCR with a better language hint.'],
+    table_payloads: null,
+  };
+}
+
 function buildAssistant(payload = {}) {
   const extracted = payload.extracted || payload.result?.extracted || {};
   const ocrText = payload.ocr?.text || payload.result?.ocr?.text || '';
   const question = payload.message || 'Map this OCR output into FIR database tables.';
-  const normalizedQuestion = question.toLowerCase();
-  const tablePayloads = buildTablePayloads(extracted);
-  const languageAnswer = answerLanguageQuestion(question, ocrText);
-  const wantsSummary = /\b(what|say|summary|summarize|explain|really)\b/.test(normalizedQuestion);
-  const wantsTables = /\b(table|database|map|mapping|schema|case ?master|datastore)\b/.test(normalizedQuestion);
-  const brief = buildPlainEnglishBrief(extracted);
-  const message = languageAnswer || (wantsSummary && !wantsTables
-    ? brief
-    : `${brief} I also prepared draft table mappings for officer approval.`);
-  const showTables = wantsTables || (!languageAnswer && !wantsSummary);
-  const recommendations = showTables ? [
-    extracted.fir_number
-      ? `Use ${extracted.fir_number} as the draft CaseMaster CrimeNo after officer verification.`
-      : 'FIR number was not confidently detected; verify it manually from the first page.',
-    extracted.police_station
-      ? `Resolve ${extracted.police_station} to the correct PoliceStationID before any official insertion.`
-      : 'Police station was not confidently detected; do not save until it is selected.',
-    (extracted.legal_sections || []).length
-      ? `Route ${extracted.legal_sections.join(', ')} to ActSectionAssociation after validating the exact clauses.`
-      : 'No legal sections were confidently detected; review the Acts & Sections table in the PDF.',
-    'Use Add to Database only after the extracted record has been reviewed.',
-  ] : [
-    'This answer is based only on the OCR text returned by Catalyst Zia.',
-    'If the PDF image visually contains text that OCR missed, rerun OCR with the closest language hint.',
-  ];
+  const answer = answerGroundedFirQuestion(question, extracted, ocrText);
 
   return {
     provider: 'catalyst-convokraft-ready-assistant',
-    mode: languageAnswer ? 'fir-language-check' : wantsSummary && !wantsTables ? 'fir-plain-language-review' : 'ocr-to-fir-table-mapping',
+    mode: answer.mode,
     question,
-    message,
-    recommendations,
-    table_payloads: showTables ? tablePayloads : null,
+    message: answer.message,
+    recommendations: answer.recommendations,
+    table_payloads: answer.table_payloads,
     confidence_notes: [
-      'This assistant uses OCR text plus extracted fields to prepare a reviewable draft.',
-      'Fields with unknown suspects or ambiguous legal clauses should stay provisional.',
-      'The draft-first pattern protects official FIR tables from unverified OCR errors.',
+      'This assistant is constrained to the uploaded FIR OCR text and extracted FIR fields.',
+      'It should refuse unrelated general questions.',
+      'Fields with OCR distortion or low confidence require officer verification.',
     ],
   };
 }

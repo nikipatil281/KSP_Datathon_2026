@@ -929,15 +929,45 @@ function buildMockFirAssistant(payload = {}) {
   const extracted = payload.extracted || payload.result?.extracted || {};
   const ocrText = payload.ocr?.text || payload.result?.ocr?.text || '';
   const question = payload.message || 'Map this OCR output into FIR database tables.';
+  const normalized = question.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+  const generalQuestion = /^\s*(what\s+is|whats|calculate|compute|solve)\s+\d+\s*[-+*/x]\s*\d+\s*\??\s*$/i.test(question)
+    || /\b(weather|capital of|president|recipe|joke|movie|sports|stock|bitcoin|write code|homework)\b/.test(normalized);
+  const firQuestion = /\b(fir|case|crime|complainant|informant|accused|suspect|victim|section|ipc|bns|offence|offense|police|station|district|date|time|location|place|property|loss|weapon|ocr|document|scan|pdf|hindi|kannada|english|language|summary|happened|registered|jurisdiction)\b/.test(normalized);
+  if (generalQuestion && !firQuestion) {
+    return {
+      provider: 'mock-convokraft-assistant',
+      mode: 'fir-scope-refusal',
+      question,
+      message: 'I can only answer questions about the uploaded FIR and its OCR output. I cannot answer general questions that are unrelated to this FIR.',
+      recommendations: ['Ask about FIR fields, people, dates, legal sections, language, location, or the OCR text.'],
+      table_payloads: null,
+      confidence_notes: ['This assistant is constrained to the uploaded FIR OCR text and extracted FIR fields.'],
+    };
+  }
   const asksHindi = /\b(hindi|devanagari)\b/i.test(question);
   const asksKannada = /\b(kannada|kan)\b/i.test(question);
-  const asksLanguage = asksHindi || asksKannada || /\blanguage\b/i.test(question);
+  const asksEnglish = /\b(english|eng)\b/i.test(question);
+  const asksLanguage = asksHindi || asksKannada || asksEnglish || /\blanguage\b/i.test(question);
   const hasHindi = /[\u0900-\u097F]/.test(ocrText);
   const hasKannada = /[\u0C80-\u0CFF]/.test(ocrText);
+  const hasEnglish = (ocrText.match(/[A-Za-z]/g)?.length || 0) >= 20;
   const wantsSummary = /\b(what|say|summary|summarize|explain|really)\b/i.test(question);
   const wantsTables = /\b(table|database|map|mapping|schema|case ?master|datastore)\b/i.test(question);
   const tablePayloads = buildFirTablePayloads(extracted);
   const sections = (extracted.legal_sections || []).join(', ') || 'no legal sections detected';
+  const fieldAnswers = [
+    [/\b(fir number|fir no|crime no|case number|case no)\b/i, extracted.fir_number, `The FIR number detected is ${extracted.fir_number || 'not detected'}.`],
+    [/\b(complainant|informant|reported|reporter)\b/i, extracted.complainant, `The complainant/informant detected is ${extracted.complainant || 'not detected'}.`],
+    [/\b(accused|suspect)\b/i, (extracted.accused || []).map(item => item.name).filter(Boolean).join(', '), `The accused/suspect detected is ${(extracted.accused || []).map(item => item.name).filter(Boolean).join(', ') || 'not detected'}.`],
+    [/\b(section|ipc|bns|act|law|legal)\b/i, sections, `The legal sections detected are ${sections}.`],
+    [/\b(offence|offense|crime type|crime)\b/i, extracted.crime_type, `The detected offence/crime type is ${extracted.crime_type || 'not detected'}.`],
+    [/\b(police station|station|ps)\b/i, extracted.police_station, `The police station detected is ${extracted.police_station || 'not detected'}.`],
+    [/\b(district)\b/i, extracted.district, `The district detected is ${extracted.district || 'not detected'}.`],
+    [/\b(date|registered|registration)\b/i, extracted.incident_date, `The date detected is ${extracted.incident_date || 'not detected'}.`],
+    [/\b(time)\b/i, extracted.incident_time, `The time detected is ${extracted.incident_time || 'not detected'}.`],
+    [/\b(location|place|where|jurisdiction|address)\b/i, extracted.location || [extracted.police_station, extracted.district].filter(Boolean).join(', '), `The place or jurisdiction detail detected is ${extracted.location || [extracted.police_station, extracted.district].filter(Boolean).join(', ') || 'not detected'}.`],
+  ];
+  const fieldAnswer = fieldAnswers.find(([pattern]) => pattern.test(question));
   const languageMessage = asksHindi
     ? hasHindi
       ? 'Yes. The OCR output contains Devanagari characters, so there appears to be Hindi text in the FIR.'
@@ -946,19 +976,36 @@ function buildMockFirAssistant(payload = {}) {
       ? hasKannada
         ? 'Yes. The OCR output contains Kannada characters.'
         : 'I do not see Kannada characters in the OCR output. This scan appears to be mostly English/Latin text.'
-      : null;
-  const message = languageMessage || [
+      : asksEnglish
+        ? hasEnglish
+          ? 'Yes. The OCR output is mostly English/Latin text.'
+          : 'I do not see much English/Latin text in the OCR output.'
+        : null;
+  const tokens = normalized.split(' ').filter(token => token.length > 2 && !['what', 'where', 'when', 'who', 'which', 'does', 'there', 'about', 'this', 'uploaded', 'fir'].includes(token));
+  const relevantLines = ocrText.split(/\r?\n/)
+    .map(line => line.replace(/\s+/g, ' ').trim())
+    .filter(line => line.length > 4 && !/https?:|FileID=|ViewMode/i.test(line))
+    .map(line => ({ line, score: tokens.reduce((score, token) => score + (line.toLowerCase().includes(token) ? 1 : 0), 0) }))
+    .filter(item => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4)
+    .map(item => item.line);
+  const message = languageMessage
+    || (fieldAnswer ? fieldAnswer[2] : '')
+    || (wantsSummary ? [
     `This appears to be FIR ${extracted.fir_number || 'not detected'} registered at ${extracted.police_station || 'not detected'} in ${extracted.district || 'not detected'}.`,
     `The detected offence is ${extracted.crime_type || 'not detected'}, with sections ${sections}.`,
     `The date found in OCR is ${extracted.incident_date || 'not detected'}${extracted.incident_time ? ` at ${extracted.incident_time}` : ''}.`,
     extracted.narrative_summary_english ? `Narrative: ${extracted.narrative_summary_english}` : '',
     'Low-confidence or missing fields should be checked against the PDF before saving.',
-    wantsSummary && !wantsTables ? '' : 'I also prepared draft table mappings for officer approval.',
-  ].filter(Boolean).join(' ');
-  const showTables = wantsTables || (!asksLanguage && !wantsSummary);
+  ].filter(Boolean).join(' ') : '')
+    || (wantsTables ? 'I prepared draft table mappings for officer approval.' : '')
+    || (relevantLines.length ? `I found these relevant OCR lines from the uploaded FIR: ${relevantLines.map(line => `"${line}"`).join(' ')}` : '')
+    || 'I could not find that answer in the extracted FIR fields or OCR text. Please verify the PDF manually; OCR may have missed or distorted that part.';
+  const showTables = wantsTables;
   return {
     provider: 'mock-convokraft-assistant',
-    mode: asksLanguage ? 'fir-language-check' : wantsSummary && !wantsTables ? 'fir-plain-language-review' : 'demo-table-mapping',
+    mode: asksLanguage ? 'fir-language-check' : wantsTables ? 'demo-table-mapping' : fieldAnswer ? 'fir-field-answer' : wantsSummary ? 'fir-plain-language-review' : relevantLines.length ? 'fir-ocr-grounded-answer' : 'fir-not-found',
     question,
     message,
     recommendations: showTables ? [

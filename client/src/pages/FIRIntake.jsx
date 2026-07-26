@@ -369,7 +369,7 @@ export default function FIRIntake() {
               <Bot size={18} className="text-cyan-400" /> FIR Assistant
             </h2>
             <span className="rounded-md border border-cyan-800 bg-cyan-950 px-2 py-1 text-[11px] text-cyan-300">
-              ConvoKraft-ready
+              FIR-grounded Q&A
             </span>
           </div>
 
@@ -397,7 +397,7 @@ export default function FIRIntake() {
             <div className="min-w-0">
               {!assistant && (
                 <div className="flex h-full min-h-[160px] items-center justify-center rounded-lg border border-slate-700 bg-slate-900 p-4 text-center text-xs text-slate-500">
-                  Ask a question about the OCR output, or ask for draft FIR table mappings.
+                  Ask a question about the uploaded FIR. Unrelated questions are declined.
                 </div>
               )}
 
