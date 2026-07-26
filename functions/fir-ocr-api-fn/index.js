@@ -122,11 +122,57 @@ async function runCatalystOcr(req, file, language) {
 
 function extractFirFields(ocrData, file) {
   const text = ocrData.text || '';
-  const pick = (pattern) => text.match(pattern)?.[1]?.trim() || '';
+  const lines = text
+    .split(/\r?\n/)
+    .map(line => line.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+  const clean = (value = '') => String(value)
+    .replace(/https?:\/\/\S+/gi, '')
+    .replace(/\bFileID=\S+/gi, '')
+    .replace(/\b(?:ViewMode|Typ|Type)s?=\S+/gi, '')
+    .replace(/\b\d+\s*(?:of|\/)\s*\d+\b/gi, '')
+    .replace(/[|{}[\]]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const pick = (pattern) => clean(text.match(pattern)?.[1] || '');
+  const pickInline = (label) => {
+    const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const pattern = new RegExp(`${escaped}\\s*[:\\-]?\\s*([^\\n]+)`, 'i');
+    return pick(pattern);
+  };
+  const pickNear = (label) => {
+    const labelPattern = new RegExp(label, 'i');
+    const sameLine = lines.find(line => labelPattern.test(line));
+    if (sameLine) {
+      const after = clean(sameLine.replace(labelPattern, '').replace(/^[:\-\s]+/, ''));
+      if (after && !/^(date|ps|year|fir|no\.?)\b/i.test(after)) return after;
+    }
+    const index = lines.findIndex(line => labelPattern.test(line));
+    if (index >= 0) {
+      const next = clean(lines[index + 1] || '');
+      if (next && !/^(date|ps|year|fir|no\.?)\b/i.test(next)) return next;
+    }
+    return '';
+  };
+  const pickDate = () => {
+    const date = text.match(/\b(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})\b/)?.[1];
+    return date || '';
+  };
+  const pickSummary = () => {
+    const section = text.match(/(?:First information contents|Brief facts|Facts of the case)\s*[:\-]?\s*([\s\S]{40,900}?)(?:\n\s*\d+\s*\.|\n\s*(?:Action taken|Signature|Complainant|Investigating Officer)\b|$)/i)?.[1];
+    const candidate = clean(section || '');
+    if (!candidate) return '';
+    if (/https?:|FileID=|ViewMode|cbi\.gov|^\W*\d+\s*(?:of|\/)\s*\d+\W*$/i.test(candidate)) return '';
+    if (candidate.length < 40) return '';
+    return candidate.slice(0, 420);
+  };
   const sections = text.match(/\b(?:BNS|IPC)\s*\d+(?:\(\d+\))?/gi) || [];
   const loss = text.match(/(?:INR|Rs\.?|₹)\s*([0-9,]+)/i)?.[1]?.replace(/,/g, '');
-  const complainant = pick(/Complainant\s*[:\-]\s*([^,\n]+)/i);
+  const complainant = pick(/Complainant\s*(?:\/\s*Informant)?\s*[\s\S]{0,120}?Name\s*[:\-]?\s*([^\n]+)/i) || pickInline('Complainant');
   const accused = pick(/(?:Accused|Suspect|Accused\/Suspect)\s*[:\-]\s*([^\n]+)/i);
+  const firNumber = pick(/FIR\s*(?:No\.?|Number)?\s*[:\-]?\s*([A-Z0-9/.-]+)/i);
+  const policeStation = pick(/(?:PS|Police Station)\s*[:\-]?\s*([A-Z][A-Z0-9 .\-]{2,60}?)(?=\s+(?:FIR|Date|Year|District|$))/i) || pickNear('Police Station|PS');
+  const district = pick(/District\s*[:\-]?\s*([A-Z][A-Za-z .-]{2,45}?)(?=\s+(?:PS|Police Station|Year|FIR|Date|$))/i) || pickNear('District');
 
   return {
     document: {
@@ -140,19 +186,19 @@ function extractFirFields(ocrData, file) {
       text,
     },
     extracted: {
-      fir_number: pick(/FIR\s*(?:No\.?|Number)?\s*[:\-]\s*([^\n]+)/i),
-      police_station: pick(/Police Station\s*[:\-]\s*([^\n]+)/i),
-      district: pick(/District\s*[:\-]\s*([^\n]+)/i),
-      incident_date: pick(/(?:Date of occurrence|Incident Date)\s*[:\-]\s*([^\n]+)/i),
+      fir_number: firNumber,
+      police_station: policeStation,
+      district,
+      incident_date: pick(/(?:Date of occurrence|Incident Date|Date)\s*[:\-]?\s*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})/i) || pickDate(),
       incident_time: pick(/(?:Time of occurrence|Incident Time)\s*[:\-]\s*([^\n]+)/i),
-      crime_type: pick(/(?:Offence|Crime Type)\s*[:\-]\s*([^\n]+)/i),
+      crime_type: pick(/Suspected offences?\s*[:\-]?\s*([^\n]+)/i) || pick(/(?:Offence|Crime Type)\s*[:\-]\s*([^\n]+)/i),
       legal_sections: [...new Set(sections)],
       location: pick(/(?:Place of occurrence|Location)\s*[:\-]\s*([^\n]+)/i),
       complainant,
       victims: complainant ? [{ name: complainant, role: 'Complainant/Victim' }] : [],
       accused: accused ? [{ name: accused, role: 'Suspect' }] : [],
       property_loss_inr: loss ? Number(loss) : null,
-      narrative_summary_english: text.split('\n').filter(Boolean).slice(-3).join(' '),
+      narrative_summary_english: pickSummary(),
       confidence: {
         fir_number: 0.7,
         station: 0.7,
