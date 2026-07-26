@@ -20,7 +20,8 @@ async function get(base, path, params = {}) {
 async function postMultipart(base, path, formData) {
     const url = new URL(base + path, window.location.origin);
     const res = await fetch(url.toString(), { method: 'POST', body: formData });
-    const json = await res.json();
+    const text = await res.text();
+    const json = text ? safeJson(text) : {};
     if (!res.ok) throw new Error(json.error || `API error ${res.status}: ${url}`);
     if (!json.success) throw new Error(json.error || 'API error');
     return json.data;
@@ -33,10 +34,19 @@ async function postJson(base, path, data) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
     });
-    const json = await res.json();
+    const text = await res.text();
+    const json = text ? safeJson(text) : {};
     if (!res.ok) throw new Error(json.error || `API error ${res.status}: ${url}`);
     if (!json.success) throw new Error(json.error || 'API error');
     return json.data;
+}
+
+function safeJson(text) {
+    try {
+        return JSON.parse(text);
+    } catch {
+        return { success: false, error: text };
+    }
 }
 
 const firApi = {

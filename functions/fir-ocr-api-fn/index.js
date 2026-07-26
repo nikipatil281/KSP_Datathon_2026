@@ -13,13 +13,26 @@
 const fs = require('fs');
 const os = require('os');
 const pathModule = require('path');
+const express = require('express');
+const multer = require('multer');
 const catalyst = require('zcatalyst-sdk-node');
+
+const app = express();
+const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 * 1024 * 1024 } });
 
 function cors(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 }
+
+app.use((req, res, next) => {
+  cors(res);
+  if (req.method === 'OPTIONS') return res.status(200).end();
+  return next();
+});
+
+app.use(express.json({ limit: '10mb' }));
 
 function ok(res, data, status = 200) {
   cors(res);
@@ -314,33 +327,29 @@ async function commitFirRecord(req, payload = {}) {
   };
 }
 
-module.exports = async (context, req, res) => {
-  if (req.method === 'OPTIONS') {
-    cors(res);
-    return res.status(200).end();
-  }
-
+app.post('/ocr', upload.single('image'), async (req, res) => {
   try {
-    const path = req.path || '';
-
-    if (req.method === 'POST' && path === '/ocr') {
-      const file = getUploadedFile(req);
-      const language = getField(req, 'language') || 'auto';
-      const ocrData = await runCatalystOcr(req, file, language);
-      return ok(res, extractFirFields(ocrData, file));
-    }
-
-    if (req.method === 'POST' && path === '/assist') {
-      return ok(res, buildAssistant(body(req)));
-    }
-
-    if (req.method === 'POST' && path === '/commit') {
-      return ok(res, await commitFirRecord(req, body(req)), 201);
-    }
-
-    return fail(res, `Not found: ${req.method} ${path}`, 404);
+    const file = getUploadedFile(req);
+    const language = getField(req, 'language') || 'auto';
+    const ocrData = await runCatalystOcr(req, file, language);
+    return ok(res, extractFirFields(ocrData, file));
   } catch (e) {
     console.error('[fir-ocr-api]', e);
     return fail(res, e.stack || e.message || 'FIR intake processing failed');
   }
-};
+});
+
+app.post('/assist', (req, res) => ok(res, buildAssistant(body(req))));
+
+app.post('/commit', async (req, res) => {
+  try {
+    return ok(res, await commitFirRecord(req, body(req)), 201);
+  } catch (e) {
+    console.error('[fir-ocr-api]', e);
+    return fail(res, e.stack || e.message || 'FIR intake processing failed');
+  }
+});
+
+app.use((req, res) => fail(res, `Not found: ${req.method} ${req.path || ''}`, 404));
+
+module.exports = app;
