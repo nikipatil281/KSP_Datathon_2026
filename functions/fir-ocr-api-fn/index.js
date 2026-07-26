@@ -11,6 +11,8 @@
  */
 
 const fs = require('fs');
+const os = require('os');
+const pathModule = require('path');
 const catalyst = require('zcatalyst-sdk-node');
 
 function cors(res) {
@@ -62,11 +64,11 @@ function getUploadedFile(req) {
 }
 
 function getFilePath(file) {
-  return file?.path || file?.filepath || file?.tempFilePath;
+  return file?.path || file?.filepath || file?.tempFilePath || file?.temp_file_path || file?.filePath;
 }
 
 function getFileName(file) {
-  return file?.name || file?.originalFilename || file?.originalname || 'fir-document.pdf';
+  return file?.name || file?.originalFilename || file?.originalname || file?.filename || 'fir-document.pdf';
 }
 
 function getField(req, name) {
@@ -75,15 +77,34 @@ function getField(req, name) {
 }
 
 async function runCatalystOcr(req, file, language) {
-  const filePath = getFilePath(file);
+  let filePath = getFilePath(file);
+  if (!filePath && file?.buffer) {
+    filePath = pathModule.join(os.tmpdir(), `${Date.now()}-${getFileName(file)}`);
+    fs.writeFileSync(filePath, file.buffer);
+  }
+  if (!filePath && file?.data) {
+    filePath = pathModule.join(os.tmpdir(), `${Date.now()}-${getFileName(file)}`);
+    const bytes = Buffer.isBuffer(file.data) ? file.data : Buffer.from(String(file.data), 'base64');
+    fs.writeFileSync(filePath, bytes);
+  }
   if (!filePath || !fs.existsSync(filePath)) {
-    throw new Error('No uploaded file was found in the request. Expected multipart field "image".');
+    const debug = {
+      hasFiles: Boolean(req.files),
+      fileKeys: req.files ? Object.keys(req.files) : [],
+      hasBodyImage: Boolean(req.body?.image),
+      fileShape: file ? Object.keys(file) : [],
+    };
+    throw new Error(`No uploaded file was found in the request. Expected multipart field "image". Debug: ${JSON.stringify(debug)}`);
   }
 
   const app = catalyst.initialize(req);
   const options = { modelType: 'OCR' };
   if (language && language !== 'auto') options.language = language;
-  return app.zia().extractOpticalCharacters(fs.createReadStream(filePath), options);
+  const zia = app.zia();
+  if (!zia?.extractOpticalCharacters) {
+    throw new Error('Catalyst Zia OCR SDK method extractOpticalCharacters is unavailable in this function runtime.');
+  }
+  return zia.extractOpticalCharacters(fs.createReadStream(filePath), options);
 }
 
 function extractFirFields(ocrData, file) {
@@ -320,6 +341,6 @@ module.exports = async (context, req, res) => {
     return fail(res, `Not found: ${req.method} ${path}`, 404);
   } catch (e) {
     console.error('[fir-ocr-api]', e);
-    return fail(res, e.message || 'FIR intake processing failed');
+    return fail(res, e.stack || e.message || 'FIR intake processing failed');
   }
 };
