@@ -1,6 +1,6 @@
 {
   "deployment": {
-    "name": "fir-ocr-api",
+    "name": "fir-ocr-api-fn",
     "stack": "node18",
     "type": "advancedio",
     "env_variables": {}

@@ -1,6 +1,6 @@
 {
   "deployment": {
-    "name": "crime-api",
+    "name": "crime-api-fn",
     "stack": "node18",
     "type": "advancedio",
     "env_variables": {}
