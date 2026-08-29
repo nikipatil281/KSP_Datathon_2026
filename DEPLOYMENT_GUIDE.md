@@ -145,6 +145,7 @@ Note the **Analytics API URL** as well.
    - `GET /alerts*`          → crime-api function
    - `GET /offenders*`       → crime-api function
    - `GET /search*`          → crime-api function
+   - `POST /search/assistant` → crime-api function
    - `GET /stats*`           → crime-api function
    - `GET /police-stations*` → crime-api function
 4. Under **CORS**, allow Origin: `*` (for development; restrict in production)
@@ -173,9 +174,27 @@ proxy: {
 Or use `.env` variables:
 ```bash
 # client/.env.production
+VITE_USE_MOCKS=true
+VITE_USE_CATALYST_SEARCH=true
 VITE_CRIME_API_URL=https://crime-api-YOUR_PROJECT_ID.catalystserverless.com/server/crime-api
 VITE_ANALYTICS_API_URL=https://analytics-api-YOUR_PROJECT_ID.catalystserverless.com/server/analytics-api
 ```
+
+For the Search tab chatbot, keep `VITE_USE_CATALYST_SEARCH=true`. This allows the deployed web client to call the Catalyst `crime-api` function for natural-language search while the rest of the demo can continue using stable mock data. The browser does not call the LLM directly.
+
+The chatbot route is:
+
+```text
+POST /search/assistant
+```
+
+It accepts:
+
+```json
+{ "message": "criminals with a history of theft and associated with a gang" }
+```
+
+It returns the Zoho LLM-generated ZCQL query, the schema metadata used to generate it, filter chips, and result rows.
 
 ---
 
@@ -227,21 +246,99 @@ result = requests.post(endpoint, json={"features": {...}},
 
 ---
 
-## Step 13 — Set Up LLM (ConvoKraft / QuickML LLM Serving)
+## Step 13 — Search Chatbot / LLM Options
 
-### Option A: QuickML LLM Serving (Qwen model)
-1. Console → QuickML → **LLM Serving → Deploy Model**
-2. Select **Qwen2.5-7B** (fits free tier)
-3. Create a RAG knowledge base from your crime summary CSVs
-4. Use the endpoint in your front-end for natural-language queries:
-   "Which district had the most thefts in Q3 2024?"
+The Search tab now includes a deployable natural-language database assistant. The browser sends normal English to the `crime-api` function. The function sends the question plus database metadata to a Zoho QuickML Generative AI / LLM endpoint, validates the returned ZCQL, then executes it through Catalyst Data Store.
 
-### Option B: Zoho OpenAI Integration
-1. Console → **Integrations → OpenAI**
-2. Add your OpenAI API key
-3. Use `catalyst.connections()` in your function to call GPT-4o
+```text
+offenders
+crimes
+crime_offenders
+associations
+```
 
----
+The generated ZCQL is displayed in the UI before the result table so officers can see exactly how the data was filtered.
+
+### Option A: Current Implementation With The GLM Chat API
+
+Use the built-in `POST /search/assistant` route in `functions/crime-api-fn/index.js`.
+
+1. Catalyst Console -> QuickML -> Generative AI -> LLM Serving.
+2. Pick the available text model for your data center. GLM-4.7 Flash is the best fit when available because Catalyst documents tool calling support for it.
+3. Open GLM-4.7-Flash -> Sample Request and Response.
+4. Copy the Endpoint URL, Model ID, `CATALYST-ORG` header value, and OAuth scope.
+5. In the LLM playground, test prompts that ask for JSON only:
+
+```text
+Return only JSON:
+{"intent":"...","target":"offenders","sql":"SELECT ... LIMIT 100","filters":[]}
+```
+
+6. Add these environment variables to the `crime-api` function:
+
+```bash
+ZOHO_QUICKML_LLM_ENDPOINT=https://api.catalyst.zoho.in/quickml/v1/project/47006000000078001/glm/chat
+ZOHO_QUICKML_MODEL=crm-di-glm47b_30b_it
+ZOHO_CATALYST_ORG_ID=60075190019
+ZOHO_LLM_ENDPOINT_TYPE=glm_chat
+```
+
+7. Add one auth option. Preferred: create a Catalyst Connection/OAuth credential with `QuickML.deployment.READ`, then set:
+
+```bash
+ZOHO_QUICKML_CONNECTOR_NAME=your_connector_name
+```
+
+For a short-lived manual test only, set the access token directly:
+
+```bash
+ZOHO_QUICKML_ACCESS_TOKEN=access token with QuickML.deployment.READ
+```
+
+The docs panel may show either `Authorization: Zoho-oauthtoken <access-token>` or a sample with `Bearer YOUR_TOKEN`. The function defaults to `Zoho-oauthtoken`. If your test call only works with Bearer, add:
+
+```bash
+ZOHO_LLM_AUTH_SCHEME=Bearer
+```
+
+The code sends the GLM chat payload like this:
+
+```js
+{
+  model: process.env.ZOHO_QUICKML_MODEL,
+  messages: [
+    { role: 'system', content: 'Return only valid JSON.' },
+    { role: 'user', content: promptWithDatabaseSchema }
+  ],
+  max_tokens: 1200,
+  temperature: 0.1,
+  stream: false
+}
+```
+
+8. Deploy the updated `crime-api` Advanced I/O function.
+9. Add the API Gateway route `POST /search/assistant`.
+10. Set `VITE_USE_CATALYST_SEARCH=true`.
+11. Set `VITE_CRIME_API_URL` to the deployed `crime-api` function URL.
+12. Rebuild and deploy the web client.
+
+This is the safest demo path because the function keeps the LLM credentials server-side, gives the LLM database metadata, and refuses to execute anything except single-statement read-only ZCQL against supported tables.
+
+### Option B: ConvoKraft Frontend Bot
+
+Zoho Catalyst ConvoKraft can be embedded in Catalyst solutions and can call backend logic through Catalyst Integration Functions, Deluge, or webhooks. To convert this into a full ConvoKraft widget:
+
+1. Console → ConvoKraft → Create bot.
+2. Add an action such as `search_database`.
+3. Configure the action backend to call the same `POST /search/assistant` logic or wrap it in an Integration Function.
+4. Train utterances like:
+   - `criminals with a history of theft`
+   - `show high risk offenders in a gang`
+   - `theft cases in 2024`
+5. Deploy the bot.
+6. Embed the ConvoKraft JavaScript Client SDK widget in the React client if you want the native Zoho chat window.
+
+The current in-app assistant is still recommended for this project because it shows the generated ZCQL and the result table directly inside the Search page.
 
 ## Step 14 — Set Up Cron Job for Daily Stats Refresh
 

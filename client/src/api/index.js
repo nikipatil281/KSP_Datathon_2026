@@ -6,6 +6,7 @@ const FIR_API = import.meta.env.VITE_FIR_API_URL || '/fir';
 const DATA_API = import.meta.env.VITE_DATA_API_URL || CRIME_API;
 const USE_MOCKS = import.meta.env.VITE_USE_MOCKS !== 'false';
 const USE_CATALYST_FIR = import.meta.env.VITE_USE_CATALYST_FIR === 'true' && Boolean(import.meta.env.VITE_FIR_API_URL);
+const USE_CATALYST_SEARCH = import.meta.env.VITE_USE_CATALYST_SEARCH === 'true' && Boolean(import.meta.env.VITE_CRIME_API_URL);
 
 async function get(base, path, params = {}) {
     const url  = new URL(base + path, window.location.origin);
@@ -74,6 +75,7 @@ const catalystApi = {
     offender:       (id)              => get(CRIME_API, `/offenders/${id}`),
     officers:       (params)          => get(CRIME_API, '/officers',          params),
     search:         (q)               => get(CRIME_API, '/search',            { q }),
+    askSearchAssistant: (message)     => postJson(CRIME_API, '/search/assistant', { message }),
     stations:       (district_id)     => get(CRIME_API, '/police-stations',   { district_id }),
 
     // Analytics API
@@ -94,5 +96,5 @@ const catalystApi = {
 };
 
 export const api = USE_MOCKS
-    ? { ...mockApi, ...(USE_CATALYST_FIR ? firApi : {}) }
+    ? { ...mockApi, ...(USE_CATALYST_FIR ? firApi : {}), ...(USE_CATALYST_SEARCH ? { askSearchAssistant: catalystApi.askSearchAssistant } : {}) }
     : catalystApi;

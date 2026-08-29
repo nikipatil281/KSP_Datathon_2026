@@ -1054,6 +1054,7 @@ export const mockApi = {
   offender: id => wait(offenders.find(o => String(o.offender_id) === String(id))),
   officers: params => wait(getOfficers().filter(o => !params?.station_id || String(o.station_id) === String(params.station_id))),
   search: q => wait(search(q)),
+  askSearchAssistant: () => Promise.reject(new Error('Zoho LLM search is not active in local mock mode. Set VITE_USE_CATALYST_SEARCH=true and VITE_CRIME_API_URL to a deployed or locally served Catalyst crime-api function.')),
   stations: district_id => wait(district_id
     ? policeStations.filter(s => String(s.district_id) === String(district_id))
     : policeStations),

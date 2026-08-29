@@ -15,6 +15,7 @@
  *  GET /offenders/:id   - offender profile
  *  GET /officers        - officers by station/district
  *  GET /search          - full-text search
+ *  POST /search/assistant - natural-language search to safe ZCQL
  *  GET /stats/summary   - high-level KPIs
  */
 
@@ -37,6 +38,14 @@ async function zcql(app, sql) {
     return (await app.datastore().executeQuery(sql)) || [];
 }
 function safe(v) { return String(v || '').replace(/'/g, "''"); }
+function requestBody(req) {
+    if (!req.body || typeof req.body !== 'string') return req.body || {};
+    try {
+        return JSON.parse(req.body);
+    } catch {
+        return {};
+    }
+}
 function parseIdList(value) {
     try {
         const parsed = JSON.parse(value || '[]');
@@ -44,6 +53,316 @@ function parseIdList(value) {
     } catch {
         return [];
     }
+}
+
+function flattenZcqlRows(rows) {
+    return (rows || []).map(row => {
+        const keys = Object.keys(row || {});
+        if (keys.length === 1 && row[keys[0]] && typeof row[keys[0]] === 'object') return row[keys[0]];
+        return row;
+    });
+}
+
+const SEARCH_ASSISTANT_SCHEMA = {
+    tables: {
+        offenders: {
+            purpose: 'People accused or convicted across cases.',
+            columns: {
+                offender_id: 'INT primary key',
+                name: 'VARCHAR offender name',
+                alias: 'VARCHAR known alias',
+                age: 'INT',
+                gender: 'VARCHAR',
+                district_of_origin: 'VARCHAR',
+                education: 'VARCHAR',
+                occupation: 'VARCHAR',
+                prior_convictions: 'INT repeat-history count',
+                gang_affiliation: 'VARCHAR gang name or None',
+                status: 'VARCHAR Active, Arrested, Convicted, Juvenile, Released',
+                risk_score: 'DECIMAL 0-1'
+            }
+        },
+        crimes: {
+            purpose: 'Incident and FIR-level records.',
+            columns: {
+                crime_id: 'INT primary key',
+                district: 'VARCHAR',
+                crime_type: 'VARCHAR e.g. Theft, Robbery, Assault, Cybercrime, Drug Offence, Fraud, Murder, Kidnapping',
+                modus_operandi: 'VARCHAR',
+                incident_date: 'DATE',
+                incident_year: 'INT',
+                severity: 'INT 1-5',
+                status: 'VARCHAR case lifecycle status',
+                fir_number: 'VARCHAR',
+                offender_ids: 'JSON-style offender id list'
+            }
+        },
+        crime_offenders: {
+            purpose: 'Many-to-many link table between crimes and offenders.',
+            columns: {
+                crime_offender_id: 'INT primary key',
+                crime_id: 'INT links to crimes.crime_id',
+                offender_id: 'INT links to offenders.offender_id',
+                role: 'VARCHAR'
+            }
+        },
+        victims: {
+            purpose: 'People affected by crimes.',
+            columns: {
+                victim_id: 'INT primary key',
+                name: 'VARCHAR victim name',
+                age: 'INT',
+                gender: 'VARCHAR',
+                occupation: 'VARCHAR',
+                district: 'VARCHAR',
+                repeat_victim: 'BIT',
+                vulnerability_index: 'DECIMAL 0-1'
+            }
+        },
+        crime_victims: {
+            purpose: 'Many-to-many link table between crimes and victims.',
+            columns: {
+                crime_victim_id: 'INT primary key',
+                crime_id: 'INT links to crimes.crime_id',
+                victim_id: 'INT links to victims.victim_id',
+                role: 'VARCHAR'
+            }
+        },
+        associations: {
+            purpose: 'Offender-to-offender relationship graph.',
+            columns: {
+                offender_id_a: 'INT links to offenders.offender_id',
+                offender_id_b: 'INT links to offenders.offender_id',
+                relationship_type: 'VARCHAR',
+                strength: 'DECIMAL'
+            }
+        }
+    },
+    allowedFilters: [
+        'crime_type',
+        'gang_affiliation',
+        'district',
+        'incident_year',
+        'status',
+        'prior_convictions',
+        'risk_score',
+        'association strength'
+    ]
+};
+
+const SEARCH_ASSISTANT_TABLES = Object.keys(SEARCH_ASSISTANT_SCHEMA.tables);
+const SEARCH_ASSISTANT_COLUMNS = new Set(
+    SEARCH_ASSISTANT_TABLES.flatMap(table => Object.keys(SEARCH_ASSISTANT_SCHEMA.tables[table].columns))
+);
+
+function buildSearchAssistantPrompt(message = '') {
+    return [
+        'You are a Zoho Catalyst ZCQL query planner for a police crime analytics database.',
+        'Convert the user question into one safe read-only ZCQL SELECT query.',
+        'Return only valid JSON, with no markdown.',
+        'JSON shape: {"intent":"short label","target":"offenders|crimes|victims","sql":"SELECT ... LIMIT 100","filters":[{"field":"column","operator":"=","value":"value"}]}',
+        'Use only these tables and metadata:',
+        JSON.stringify(SEARCH_ASSISTANT_SCHEMA, null, 2),
+        'Important relationships:',
+        'offenders.offender_id = crime_offenders.offender_id',
+        'crimes.crime_id = crime_offenders.crime_id',
+        'victims.victim_id = crime_victims.victim_id',
+        'crimes.crime_id = crime_victims.crime_id',
+        'Use table aliases o, c, co, v, cv where helpful.',
+        'For victims of a gang, join victims -> crime_victims -> crimes -> crime_offenders -> offenders and filter o.gang_affiliation.',
+        'For offenders in a gang, filter o.gang_affiliation.',
+        'Always include LIMIT 100 or lower.',
+        'Do not generate INSERT, UPDATE, DELETE, ALTER, DROP, TRUNCATE, CREATE, EXEC, UNION, comments, or multiple statements.',
+        `User question: ${message}`
+    ].join('\n');
+}
+
+function parseLlmJson(value) {
+    if (value && typeof value === 'object') return value;
+    const text = String(value || '').trim();
+    try {
+        return JSON.parse(text);
+    } catch {
+        const match = text.match(/\{[\s\S]*\}/);
+        if (!match) throw new Error('Zoho LLM did not return a JSON query plan.');
+        return JSON.parse(match[0]);
+    }
+}
+
+function extractZohoLlmText(payload) {
+    if (!payload) return '';
+    if (typeof payload === 'string') return payload;
+    if (Array.isArray(payload)) {
+        const first = payload.find(item => typeof item === 'string' || item?.output || item?.response || item?.text || item?.content);
+        return extractZohoLlmText(first);
+    }
+    return payload.output
+        || payload.response
+        || payload.text
+        || payload.content
+        || payload.data?.output
+        || payload.data?.response
+        || payload.data?.result
+        || payload.data?.content
+        || extractZohoLlmText(payload.result)
+        || payload.predictions?.[0]?.output
+        || payload.choices?.[0]?.message?.content
+        || payload.choices?.[0]?.text
+        || JSON.stringify(payload);
+}
+
+function buildZohoLlmPayload(prompt) {
+    const template = process.env.ZOHO_LLM_REQUEST_TEMPLATE;
+    if (template) {
+        return parseLlmJson(template.replace(/\{\{\s*prompt\s*\}\}/g, prompt));
+    }
+    if ((process.env.ZOHO_LLM_ENDPOINT_TYPE || '').toLowerCase() === 'glm_chat') {
+        return buildZohoGlmChatPayload(prompt);
+    }
+    const payloadField = process.env.ZOHO_LLM_PAYLOAD_FIELD || 'query';
+    return { [payloadField]: prompt };
+}
+
+function buildZohoGlmChatPayload(prompt) {
+    return {
+        model: process.env.ZOHO_QUICKML_MODEL || process.env.ZOHO_LLM_MODEL || 'crm-di-glm47b_30b_it',
+        messages: [
+            {
+                role: 'system',
+                content: 'You generate safe Zoho Catalyst ZCQL query plans. Return only valid JSON. Do not include markdown.'
+            },
+            {
+                role: 'user',
+                content: prompt
+            }
+        ],
+        max_tokens: Number(process.env.ZOHO_LLM_MAX_TOKENS || 1200),
+        temperature: Number(process.env.ZOHO_LLM_TEMPERATURE || 0.1),
+        stream: false,
+        chat_template_kwargs: {
+            enable_thinking: false
+        }
+    };
+}
+
+async function getConnectorAccessToken(app) {
+    const connectorName = process.env.ZOHO_QUICKML_CONNECTOR_NAME || process.env.ZOHO_LLM_CONNECTOR_NAME;
+    if (!connectorName) return '';
+
+    const connectorConfig = process.env.ZOHO_CONNECTOR_CONFIG_JSON
+        ? parseLlmJson(process.env.ZOHO_CONNECTOR_CONFIG_JSON)
+        : null;
+
+    if (connectorConfig) {
+        const connector = app.connection(connectorConfig).getConnector(connectorName);
+        return connector.getAccessToken();
+    }
+
+    if (app.connector?.().getConnectorToken) {
+        const tokenDetails = await app.connector().getConnectorToken(connectorName);
+        return tokenDetails?.access_token || tokenDetails?.accessToken || '';
+    }
+
+    if (app.connection?.().getConnectorCredentials) {
+        const credentials = await app.connection().getConnectorCredentials(connectorName);
+        return credentials?.access_token || credentials?.accessToken || '';
+    }
+
+    throw new Error('A Zoho connector name was provided, but this Catalyst SDK runtime does not expose connector credentials.');
+}
+
+async function callZohoLlmForSearch(app, message) {
+    const endpointKey = process.env.ZOHO_QUICKML_ENDPOINT_KEY || process.env.ZOHO_LLM_ENDPOINT_KEY;
+    const prompt = buildSearchAssistantPrompt(message);
+    const inputData = buildZohoLlmPayload(prompt);
+
+    if (endpointKey) {
+        const result = await app.quickML().predict(endpointKey, inputData);
+        return parseLlmJson(extractZohoLlmText(result));
+    }
+
+    const endpoint = process.env.ZOHO_QUICKML_LLM_ENDPOINT || process.env.ZOHO_LLM_ENDPOINT;
+    const token = process.env.ZOHO_QUICKML_ACCESS_TOKEN || process.env.ZOHO_LLM_ACCESS_TOKEN || await getConnectorAccessToken(app);
+    const org = process.env.ZOHO_CATALYST_ORG_ID || process.env.ZOHO_CATALYST_ORG || process.env.CATALYST_ORG_ID || process.env.CATALYST_ORG;
+    if (!endpoint || !token || !org) {
+        throw new Error('Zoho LLM is not configured. Set either ZOHO_QUICKML_ENDPOINT_KEY, or set ZOHO_QUICKML_LLM_ENDPOINT plus Zoho OAuth credentials/ZOHO_CATALYST_ORG_ID in the Catalyst function environment.');
+    }
+    const authScheme = process.env.ZOHO_LLM_AUTH_SCHEME || 'Zoho-oauthtoken';
+
+    const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `${authScheme} ${token}`,
+            'CATALYST-ORG': org
+        },
+        body: JSON.stringify(inputData)
+    });
+    const text = await response.text();
+    const body = text ? parseLlmJson(text) : {};
+    if (!response.ok) {
+        throw new Error(`Zoho LLM request failed (${response.status}): ${text.slice(0, 500)}`);
+    }
+    return parseLlmJson(extractZohoLlmText(body));
+}
+
+function normalizeLlmQueryPlan(plan) {
+    const sql = String(plan.sql || plan.zcql || plan.query || '').replace(/;+\s*$/g, '').trim();
+    return {
+        mode: 'zoho_llm_zcql',
+        intent: String(plan.intent || 'Find database records'),
+        target: String(plan.target || 'records'),
+        sql,
+        filters: Array.isArray(plan.filters) ? plan.filters : [],
+        schema_used: SEARCH_ASSISTANT_SCHEMA
+    };
+}
+
+function validateSearchAssistantSql(sql) {
+    const normalizedSql = String(sql || '').trim();
+    const lower = normalizedSql.toLowerCase();
+    if (!lower.startsWith('select ')) throw new Error('Zoho LLM returned a non-SELECT query. Refusing to execute it.');
+    if (normalizedSql.includes(';')) throw new Error('Zoho LLM returned multiple statements. Refusing to execute it.');
+    if (/\b(insert|update|delete|drop|alter|truncate|create|replace|merge|exec|union)\b/i.test(normalizedSql)) {
+        throw new Error('Zoho LLM returned a query with a blocked keyword. Refusing to execute it.');
+    }
+    if (/--|\/\*/.test(normalizedSql)) throw new Error('Zoho LLM returned SQL comments. Refusing to execute it.');
+    if (!/\blimit\s+\d+\b/i.test(normalizedSql)) throw new Error('Zoho LLM query must include LIMIT 100 or lower.');
+    const limit = Number(normalizedSql.match(/\blimit\s+(\d+)\b/i)?.[1] || 0);
+    if (!limit || limit > 100) throw new Error('Zoho LLM query limit must be between 1 and 100.');
+
+    const tablePattern = /\b(?:from|join)\s+([a-z_]+)\b/gi;
+    let tableMatch;
+    while ((tableMatch = tablePattern.exec(normalizedSql))) {
+        if (!SEARCH_ASSISTANT_TABLES.includes(tableMatch[1])) {
+            throw new Error(`Zoho LLM query referenced unsupported table "${tableMatch[1]}".`);
+        }
+    }
+
+    const aliasTables = {
+        o: 'offenders',
+        c: 'crimes',
+        co: 'crime_offenders',
+        v: 'victims',
+        cv: 'crime_victims'
+    };
+    const qualifiedColumnPattern = /\b(o|c|co|v|cv)\.([a-z_]+)\b/gi;
+    let columnMatch;
+    while ((columnMatch = qualifiedColumnPattern.exec(normalizedSql))) {
+        const table = aliasTables[columnMatch[1]];
+        const column = columnMatch[2];
+        if (!SEARCH_ASSISTANT_SCHEMA.tables[table]?.columns[column]) {
+            throw new Error(`Zoho LLM query referenced unsupported column "${columnMatch[1]}.${column}".`);
+        }
+    }
+}
+
+async function buildSearchAssistantQuery(app, message = '') {
+    const raw = String(message || '').trim();
+    if (!raw) throw new Error('Ask a database question first.');
+    const queryPlan = normalizeLlmQueryPlan(await callZohoLlmForSearch(app, raw));
+    validateSearchAssistantSql(queryPlan.sql);
+    return queryPlan;
 }
 
 const DATA_DIRECTORY_TABLES = [
@@ -134,7 +453,7 @@ module.exports = async (context, req, res) => {
 
         /* ── POST /officers ──────────────────────────────────────────────── */
         if (req.method === 'POST' && path === '/officers') {
-            const body = req.body || {};
+            const body = requestBody(req);
             const initials = safe(body.initials || '').toUpperCase();
             if (!initials || !body.rank || !body.station_id || !body.specialization_crime_type_id) {
                 return fail(res, 'initials, rank, station_id, and specialization_crime_type_id are required', 400);
@@ -176,6 +495,21 @@ module.exports = async (context, req, res) => {
                 })));
             }
             return ok(res, row, 201);
+        }
+
+        /* ── POST /search/assistant ──────────────────────────────────────── */
+        if (req.method === 'POST' && path === '/search/assistant') {
+            const body = requestBody(req);
+            const queryPlan = await buildSearchAssistantQuery(app, body.message || body.query || '');
+            const rows = flattenZcqlRows(await zcql(app, queryPlan.sql));
+            return ok(res, {
+                ...queryPlan,
+                rows,
+                row_count: rows.length,
+                message: rows.length
+                    ? `Found ${rows.length} matching ${queryPlan.intent.toLowerCase()} row${rows.length === 1 ? '' : 's'}.`
+                    : 'The generated query ran successfully, but no matching rows were found. Check the generated filters against the Data Directory values, especially exact gang names.'
+            });
         }
 
         /* ── GET /updates ───────────────────────────────────────────────── */
