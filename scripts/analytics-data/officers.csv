@@ -1,0 +1,124 @@
+officer_id,officer_code,initials,rank,badge_number,station_id,district_id,specialization_crime_type_id,specialization,shift,status,current_case_load,years_of_service
+1,OFF-A,A,Sub-Inspector,KSP-00A,1,1,1,Assault,Evening,Active,16,10
+2,OFF-B,B,Assistant Sub-Inspector,KSP-00B,1,1,9,Theft,Night,Active,18,17
+3,OFF-C,C,Head Constable,KSP-00C,1,1,2,Cybercrime,Rotating,Active,15,24
+4,OFF-D,D,Assistant Sub-Inspector,KSP-00D,2,1,9,Theft,Night,Active,21,9
+5,OFF-E,E,Head Constable,KSP-00E,2,1,1,Assault,Rotating,Active,19,16
+6,OFF-F,F,Constable,KSP-00F,2,1,7,Robbery,Day,Active,18,23
+7,OFF-G,G,Head Constable,KSP-00G,3,1,1,Assault,Rotating,Active,18,8
+8,OFF-H,H,Constable,KSP-00H,3,1,9,Theft,Day,Active,16,15
+9,OFF-I,I,Inspector,KSP-00I,3,1,2,Cybercrime,Evening,Active,15,22
+10,OFF-J,J,Constable,KSP-00J,4,1,1,Assault,Day,Active,17,7
+11,OFF-K,K,Inspector,KSP-00K,4,1,3,Drug Offence,Evening,Active,17,14
+12,OFF-L,L,Sub-Inspector,KSP-00L,4,1,9,Theft,Night,Active,15,21
+13,OFF-M,M,Inspector,KSP-00M,5,1,9,Theft,Evening,Active,21,6
+14,OFF-N,N,Sub-Inspector,KSP-00N,5,1,1,Assault,Night,Active,20,13
+15,OFF-O,O,Assistant Sub-Inspector,KSP-00O,5,1,4,Fraud,Rotating,Active,17,20
+16,OFF-P,P,Sub-Inspector,KSP-00P,6,1,9,Theft,Night,Active,20,5
+17,OFF-Q,Q,Assistant Sub-Inspector,KSP-00Q,6,1,7,Robbery,Rotating,Active,19,12
+18,OFF-R,R,Head Constable,KSP-00R,6,1,2,Cybercrime,Day,Active,20,19
+19,OFF-S,S,Assistant Sub-Inspector,KSP-00S,7,2,9,Theft,Rotating,Active,18,4
+20,OFF-T,T,Head Constable,KSP-00T,7,2,1,Assault,Day,Active,15,11
+21,OFF-U,U,Constable,KSP-00U,7,2,7,Robbery,Evening,Active,14,18
+22,OFF-V,V,Head Constable,KSP-00V,8,2,9,Theft,Day,Active,16,3
+23,OFF-W,W,Constable,KSP-00W,8,2,1,Assault,Evening,Active,14,10
+24,OFF-X,X,Inspector,KSP-00X,8,2,2,Cybercrime,Night,Active,15,17
+25,OFF-Y,Y,Constable,KSP-00Y,9,2,9,Theft,Evening,Active,19,24
+26,OFF-Z,Z,Inspector,KSP-00Z,9,2,4,Fraud,Night,Active,16,9
+27,OFF-AA,AA,Sub-Inspector,KSP-0AA,9,2,7,Robbery,Rotating,Active,15,16
+28,OFF-AB,AB,Inspector,KSP-0AB,10,3,9,Theft,Night,Active,20,23
+29,OFF-AC,AC,Sub-Inspector,KSP-0AC,10,3,1,Assault,Rotating,Active,20,8
+30,OFF-AD,AD,Assistant Sub-Inspector,KSP-0AD,10,3,2,Cybercrime,Day,Active,17,15
+31,OFF-AE,AE,Sub-Inspector,KSP-0AE,11,3,9,Theft,Rotating,Active,16,22
+32,OFF-AF,AF,Assistant Sub-Inspector,KSP-0AF,11,3,7,Robbery,Day,Active,15,7
+33,OFF-AG,AG,Head Constable,KSP-0AG,11,3,1,Assault,Evening,Active,15,14
+34,OFF-AH,AH,Assistant Sub-Inspector,KSP-0AH,12,3,9,Theft,Day,Active,15,21
+35,OFF-AI,AI,Head Constable,KSP-0AI,12,3,1,Assault,Evening,Active,15,6
+36,OFF-AJ,AJ,Constable,KSP-0AJ,12,3,7,Robbery,Night,Active,14,13
+37,OFF-AK,AK,Head Constable,KSP-0AK,13,3,9,Theft,Evening,Active,13,20
+38,OFF-AL,AL,Constable,KSP-0AL,13,3,1,Assault,Night,Active,12,5
+39,OFF-AM,AM,Inspector,KSP-0AM,13,3,3,Drug Offence,Rotating,Active,12,12
+40,OFF-AN,AN,Constable,KSP-0AN,14,4,9,Theft,Night,Active,19,19
+41,OFF-AO,AO,Inspector,KSP-0AO,14,4,1,Assault,Rotating,Active,19,4
+42,OFF-AP,AP,Sub-Inspector,KSP-0AP,14,4,7,Robbery,Day,Active,19,11
+43,OFF-AQ,AQ,Inspector,KSP-0AQ,15,4,9,Theft,Rotating,Active,16,18
+44,OFF-AR,AR,Sub-Inspector,KSP-0AR,15,4,1,Assault,Day,Active,14,3
+45,OFF-AS,AS,Assistant Sub-Inspector,KSP-0AS,15,4,2,Cybercrime,Evening,Active,13,10
+46,OFF-AT,AT,Sub-Inspector,KSP-0AT,16,4,9,Theft,Day,Active,17,17
+47,OFF-AU,AU,Assistant Sub-Inspector,KSP-0AU,16,4,1,Assault,Evening,Active,13,24
+48,OFF-AV,AV,Head Constable,KSP-0AV,16,4,2,Cybercrime,Night,Active,14,9
+49,OFF-AW,AW,Assistant Sub-Inspector,KSP-0AW,17,5,7,Robbery,Evening,Active,17,16
+50,OFF-AX,AX,Head Constable,KSP-0AX,17,5,9,Theft,Night,Active,16,23
+51,OFF-AY,AY,Constable,KSP-0AY,17,5,2,Cybercrime,Rotating,Active,17,8
+52,OFF-AZ,AZ,Head Constable,KSP-0AZ,18,5,9,Theft,Night,Active,17,15
+53,OFF-BA,BA,Constable,KSP-0BA,18,5,1,Assault,Rotating,Active,16,22
+54,OFF-BB,BB,Inspector,KSP-0BB,18,5,7,Robbery,Day,Active,14,7
+55,OFF-BC,BC,Constable,KSP-0BC,19,5,7,Robbery,Rotating,Active,14,14
+56,OFF-BD,BD,Inspector,KSP-0BD,19,5,9,Theft,Day,Active,15,21
+57,OFF-BE,BE,Sub-Inspector,KSP-0BE,19,5,1,Assault,Evening,Active,14,6
+58,OFF-BF,BF,Inspector,KSP-0BF,20,6,9,Theft,Day,Active,15,13
+59,OFF-BG,BG,Sub-Inspector,KSP-0BG,20,6,1,Assault,Evening,Active,14,20
+60,OFF-BH,BH,Assistant Sub-Inspector,KSP-0BH,20,6,4,Fraud,Night,Active,14,5
+61,OFF-BI,BI,Sub-Inspector,KSP-0BI,21,6,9,Theft,Evening,Active,21,12
+62,OFF-BJ,BJ,Assistant Sub-Inspector,KSP-0BJ,21,6,1,Assault,Night,Active,17,19
+63,OFF-BK,BK,Head Constable,KSP-0BK,21,6,7,Robbery,Rotating,Active,16,4
+64,OFF-BL,BL,Assistant Sub-Inspector,KSP-0BL,22,6,9,Theft,Night,Active,23,11
+65,OFF-BM,BM,Head Constable,KSP-0BM,22,6,1,Assault,Rotating,Active,17,18
+66,OFF-BN,BN,Constable,KSP-0BN,22,6,4,Fraud,Day,Active,16,3
+67,OFF-BO,BO,Head Constable,KSP-0BO,23,6,9,Theft,Rotating,Active,17,10
+68,OFF-BP,BP,Constable,KSP-0BP,23,6,1,Assault,Day,Active,13,17
+69,OFF-BQ,BQ,Inspector,KSP-0BQ,23,6,7,Robbery,Evening,Active,12,24
+70,OFF-BR,BR,Constable,KSP-0BR,24,7,9,Theft,Day,Active,19,9
+71,OFF-BS,BS,Inspector,KSP-0BS,24,7,1,Assault,Evening,Active,13,16
+72,OFF-BT,BT,Sub-Inspector,KSP-0BT,24,7,7,Robbery,Night,Active,11,23
+73,OFF-BU,BU,Inspector,KSP-0BU,25,7,9,Theft,Evening,Active,21,8
+74,OFF-BV,BV,Sub-Inspector,KSP-0BV,25,7,1,Assault,Night,Active,21,15
+75,OFF-BW,BW,Assistant Sub-Inspector,KSP-0BW,25,7,2,Cybercrime,Rotating,Active,19,22
+76,OFF-BX,BX,Sub-Inspector,KSP-0BX,26,7,1,Assault,Night,Active,18,7
+77,OFF-BY,BY,Assistant Sub-Inspector,KSP-0BY,26,7,9,Theft,Rotating,Active,19,14
+78,OFF-BZ,BZ,Head Constable,KSP-0BZ,26,7,4,Fraud,Day,Active,17,21
+79,OFF-CA,CA,Assistant Sub-Inspector,KSP-0CA,27,8,9,Theft,Rotating,Active,20,6
+80,OFF-CB,CB,Head Constable,KSP-0CB,27,8,10,Vandalism,Day,Active,16,13
+81,OFF-CC,CC,Constable,KSP-0CC,27,8,1,Assault,Evening,Active,16,20
+82,OFF-CD,CD,Head Constable,KSP-0CD,28,8,9,Theft,Day,Active,19,5
+83,OFF-CE,CE,Constable,KSP-0CE,28,8,1,Assault,Evening,Active,19,12
+84,OFF-CF,CF,Inspector,KSP-0CF,28,8,7,Robbery,Night,Active,17,19
+85,OFF-CG,CG,Constable,KSP-0CG,29,8,9,Theft,Evening,Active,15,4
+86,OFF-CH,CH,Inspector,KSP-0CH,29,8,2,Cybercrime,Night,Active,15,11
+87,OFF-CI,CI,Sub-Inspector,KSP-0CI,29,8,1,Assault,Rotating,Active,15,18
+88,OFF-CJ,CJ,Inspector,KSP-0CJ,30,9,9,Theft,Night,Active,17,3
+89,OFF-CK,CK,Sub-Inspector,KSP-0CK,30,9,2,Cybercrime,Rotating,Active,16,10
+90,OFF-CL,CL,Assistant Sub-Inspector,KSP-0CL,30,9,1,Assault,Day,Active,16,17
+91,OFF-CM,CM,Sub-Inspector,KSP-0CM,31,9,9,Theft,Rotating,Active,15,24
+92,OFF-CN,CN,Assistant Sub-Inspector,KSP-0CN,31,9,1,Assault,Day,Active,13,9
+93,OFF-CO,CO,Head Constable,KSP-0CO,31,9,3,Drug Offence,Evening,Active,12,16
+94,OFF-CP,CP,Assistant Sub-Inspector,KSP-0CP,32,9,9,Theft,Day,Active,17,23
+95,OFF-CQ,CQ,Head Constable,KSP-0CQ,32,9,1,Assault,Evening,Active,18,8
+96,OFF-CR,CR,Constable,KSP-0CR,32,9,7,Robbery,Night,Active,17,15
+97,OFF-CS,CS,Head Constable,KSP-0CS,33,10,9,Theft,Evening,Active,18,22
+98,OFF-CT,CT,Constable,KSP-0CT,33,10,7,Robbery,Night,Active,15,7
+99,OFF-CU,CU,Inspector,KSP-0CU,33,10,4,Fraud,Rotating,Active,14,14
+100,OFF-CV,CV,Constable,KSP-0CV,34,10,9,Theft,Night,Active,23,21
+101,OFF-CW,CW,Inspector,KSP-0CW,34,10,1,Assault,Rotating,Active,19,6
+102,OFF-CX,CX,Sub-Inspector,KSP-0CX,34,10,4,Fraud,Day,Active,17,13
+103,OFF-CY,CY,Inspector,KSP-0CY,35,10,9,Theft,Rotating,Active,25,20
+104,OFF-CZ,CZ,Sub-Inspector,KSP-0CZ,35,10,1,Assault,Day,Active,15,5
+105,OFF-DA,DA,Assistant Sub-Inspector,KSP-0DA,35,10,2,Cybercrime,Evening,Active,15,12
+106,OFF-DB,DB,Sub-Inspector,KSP-0DB,36,11,9,Theft,Day,Active,15,19
+107,OFF-DC,DC,Assistant Sub-Inspector,KSP-0DC,36,11,7,Robbery,Evening,Active,17,4
+108,OFF-DD,DD,Head Constable,KSP-0DD,36,11,4,Fraud,Night,Active,15,11
+109,OFF-DE,DE,Assistant Sub-Inspector,KSP-0DE,37,11,7,Robbery,Evening,Active,16,18
+110,OFF-DF,DF,Head Constable,KSP-0DF,37,11,9,Theft,Night,Active,15,3
+111,OFF-DG,DG,Constable,KSP-0DG,37,11,1,Assault,Rotating,Active,14,10
+112,OFF-DH,DH,Head Constable,KSP-0DH,38,11,9,Theft,Night,Active,15,17
+113,OFF-DI,DI,Constable,KSP-0DI,38,11,2,Cybercrime,Rotating,Active,16,24
+114,OFF-DJ,DJ,Inspector,KSP-0DJ,38,11,7,Robbery,Day,Active,14,9
+115,OFF-DK,DK,Constable,KSP-0DK,39,12,9,Theft,Rotating,Active,19,16
+116,OFF-DL,DL,Inspector,KSP-0DL,39,12,7,Robbery,Day,Active,12,23
+117,OFF-DM,DM,Sub-Inspector,KSP-0DM,39,12,1,Assault,Evening,Active,10,8
+118,OFF-DN,DN,Inspector,KSP-0DN,40,12,3,Drug Offence,Day,Active,15,15
+119,OFF-DO,DO,Sub-Inspector,KSP-0DO,40,12,9,Theft,Evening,Active,14,22
+120,OFF-DP,DP,Assistant Sub-Inspector,KSP-0DP,40,12,2,Cybercrime,Night,Active,14,7
+121,OFF-DQ,DQ,Sub-Inspector,KSP-0DQ,41,12,1,Assault,Evening,Active,14,14
+122,OFF-DR,DR,Assistant Sub-Inspector,KSP-0DR,41,12,9,Theft,Night,Active,13,21
+123,OFF-DS,DS,Head Constable,KSP-0DS,41,12,7,Robbery,Rotating,Active,13,6

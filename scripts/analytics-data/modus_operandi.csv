@@ -1,0 +1,36 @@
+modus_operandi_id,crime_type_id,modus_operandi
+1,1,Brawl
+2,1,Domestic violence
+3,1,Gang fight
+4,1,Road rage
+5,2,Identity theft
+6,2,Investment scam
+7,2,Online fraud
+8,2,Phishing
+9,3,Distribution
+10,3,Possession
+11,3,Trafficking
+12,4,Cheque fraud
+13,4,Impersonation
+14,4,Insurance fraud
+15,4,Land grab
+16,5,Child abduction
+17,5,Human trafficking
+18,5,Ransom
+19,6,Domestic dispute
+20,6,Gang rivalry
+21,6,Hired killing
+22,6,Property dispute
+23,7,Armed robbery
+24,7,Dacoity
+25,7,Mugging
+26,8,Eve-teasing
+27,8,Molestation
+28,8,Rape
+29,9,Chain snatching
+30,9,House break-in
+31,9,Pickpocket
+32,9,Vehicle theft
+33,10,Arson
+34,10,Graffiti
+35,10,Property destruction

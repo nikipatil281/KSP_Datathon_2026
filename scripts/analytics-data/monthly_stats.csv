@@ -1,0 +1,1643 @@
+stat_id,district,incident_year,incident_month,crime_type,incident_count,solved_count,total_property_loss_inr,solve_rate,district_id,crime_type_id
+1,Bengaluru Rural,2020,1,Theft,1,0,436418,0,2,9
+2,Bengaluru Rural,2024,10,Fraud,1,0,283397,0,2,4
+3,Belagavi,2023,3,Theft,3,1,993942,0.333,6,9
+4,Dakshina Kannada,2021,7,Theft,1,1,368622,1,5,9
+5,Udupi,2025,5,Drug Offence,1,0,0,0,12,3
+6,Bengaluru Urban,2024,5,Assault,4,2,0,0.5,1,1
+7,Tumakuru,2020,7,Robbery,1,0,343518,0,4,7
+8,Bengaluru Rural,2022,10,Cybercrime,1,0,0,0,2,2
+9,Hassan,2024,8,Theft,1,1,64355,1,10,9
+10,Ballari,2025,8,Kidnapping,1,1,0,1,9,5
+11,Hassan,2020,5,Theft,1,0,380521,0,10,9
+12,Bengaluru Urban,2023,3,Fraud,2,1,598642,0.5,1,4
+13,Dakshina Kannada,2020,6,Robbery,1,0,438304,0,5,7
+14,Bengaluru Urban,2022,6,Vandalism,2,2,0,1,1,10
+15,Bengaluru Urban,2022,1,Theft,1,0,442987,0,1,9
+16,Belagavi,2021,4,Theft,1,1,12947,1,6,9
+17,Kalaburagi,2020,5,Assault,1,0,0,0,7,1
+18,Kalaburagi,2021,9,Fraud,1,0,63565,0,7,4
+19,Hassan,2022,3,Assault,1,1,0,1,10,1
+20,Bengaluru Urban,2025,6,Sexual Assault,1,0,0,0,1,8
+21,Bengaluru Urban,2021,8,Robbery,1,0,487653,0,1,7
+22,Bengaluru Urban,2021,6,Cybercrime,2,0,0,0,1,2
+23,Bengaluru Urban,2025,1,Theft,1,1,79826,1,1,9
+24,Kalaburagi,2025,9,Robbery,3,2,1087749,0.667,7,7
+25,Mysuru,2024,10,Theft,2,0,591681,0,3,9
+26,Tumakuru,2021,1,Cybercrime,1,0,0,0,4,2
+27,Ballari,2021,5,Theft,4,4,684577,1,9,9
+28,Hassan,2023,7,Cybercrime,1,1,0,1,10,2
+29,Mysuru,2025,6,Theft,1,0,35264,0,3,9
+30,Dakshina Kannada,2023,11,Cybercrime,1,1,0,1,5,2
+31,Dharwad,2022,10,Vandalism,1,0,0,0,8,10
+32,Bengaluru Urban,2024,8,Theft,1,0,140675,0,1,9
+33,Dharwad,2022,4,Theft,1,1,409171,1,8,9
+34,Kalaburagi,2024,6,Assault,2,1,0,0.5,7,1
+35,Bengaluru Urban,2020,4,Theft,2,2,554462,1,1,9
+36,Dharwad,2021,1,Theft,3,1,915405,0.333,8,9
+37,Kalaburagi,2022,6,Theft,2,0,346722,0,7,9
+38,Shivamogga,2022,8,Vandalism,1,1,0,1,11,10
+39,Ballari,2020,8,Assault,2,1,0,0.5,9,1
+40,Belagavi,2023,8,Kidnapping,1,1,0,1,6,5
+41,Bengaluru Urban,2021,11,Murder,1,0,0,0,1,6
+42,Kalaburagi,2021,8,Assault,2,2,0,1,7,1
+43,Ballari,2022,1,Theft,1,1,49657,1,9,9
+44,Tumakuru,2022,2,Robbery,1,1,336382,1,4,7
+45,Dakshina Kannada,2021,6,Theft,1,0,1400,0,5,9
+46,Mysuru,2023,8,Theft,3,0,798907,0,3,9
+47,Belagavi,2021,11,Assault,3,1,0,0.333,6,1
+48,Belagavi,2022,2,Drug Offence,1,0,0,0,6,3
+49,Bengaluru Urban,2024,6,Cybercrime,3,0,0,0,1,2
+50,Bengaluru Urban,2021,9,Robbery,1,0,449781,0,1,7
+51,Belagavi,2021,11,Fraud,1,1,77339,1,6,4
+52,Hassan,2020,1,Robbery,1,0,382494,0,10,7
+53,Bengaluru Urban,2025,2,Theft,3,2,395950,0.667,1,9
+54,Dharwad,2023,1,Theft,2,0,520861,0,8,9
+55,Kalaburagi,2024,11,Theft,2,2,616383,1,7,9
+56,Hassan,2025,4,Cybercrime,1,1,0,1,10,2
+57,Bengaluru Rural,2023,6,Theft,4,1,1528945,0.25,2,9
+58,Bengaluru Urban,2023,11,Robbery,2,0,163212,0,1,7
+59,Bengaluru Urban,2021,2,Assault,2,1,0,0.5,1,1
+60,Dharwad,2023,11,Assault,2,1,0,0.5,8,1
+61,Bengaluru Rural,2022,5,Assault,1,1,0,1,2,1
+62,Bengaluru Rural,2023,11,Assault,1,0,0,0,2,1
+63,Belagavi,2025,1,Assault,3,1,0,0.333,6,1
+64,Udupi,2024,11,Drug Offence,1,0,0,0,12,3
+65,Dharwad,2023,5,Theft,1,0,381045,0,8,9
+66,Udupi,2020,6,Theft,1,1,486245,1,12,9
+67,Bengaluru Urban,2021,4,Fraud,1,0,112831,0,1,4
+68,Dakshina Kannada,2024,6,Assault,1,1,0,1,5,1
+69,Udupi,2024,9,Theft,2,0,431621,0,12,9
+70,Dakshina Kannada,2020,11,Robbery,2,0,285153,0,5,7
+71,Dharwad,2023,3,Vandalism,1,1,0,1,8,10
+72,Kalaburagi,2022,6,Assault,2,1,0,0.5,7,1
+73,Dharwad,2024,6,Theft,2,1,650342,0.5,8,9
+74,Hassan,2024,8,Vandalism,1,0,0,0,10,10
+75,Tumakuru,2023,8,Theft,1,0,241909,0,4,9
+76,Mysuru,2020,1,Theft,2,0,938775,0,3,9
+77,Bengaluru Urban,2023,4,Assault,1,0,0,0,1,1
+78,Kalaburagi,2021,8,Robbery,1,0,154818,0,7,7
+79,Udupi,2021,8,Theft,2,1,414967,0.5,12,9
+80,Mysuru,2022,11,Cybercrime,1,0,0,0,3,2
+81,Shivamogga,2025,11,Fraud,1,1,496473,1,11,4
+82,Bengaluru Rural,2025,8,Cybercrime,1,0,0,0,2,2
+83,Hassan,2025,1,Murder,1,1,0,1,10,6
+84,Bengaluru Urban,2025,11,Sexual Assault,1,1,0,1,1,8
+85,Bengaluru Rural,2025,6,Assault,1,0,0,0,2,1
+86,Ballari,2022,12,Assault,1,1,0,1,9,1
+87,Bengaluru Rural,2023,11,Sexual Assault,1,1,0,1,2,8
+88,Belagavi,2021,12,Theft,3,3,781057,1,6,9
+89,Belagavi,2024,5,Assault,1,1,0,1,6,1
+90,Dharwad,2022,3,Fraud,1,1,204505,1,8,4
+91,Shivamogga,2020,8,Robbery,1,1,432176,1,11,7
+92,Dharwad,2025,12,Theft,3,1,844353,0.333,8,9
+93,Belagavi,2022,11,Theft,3,1,1087477,0.333,6,9
+94,Hassan,2025,7,Murder,1,0,0,0,10,6
+95,Mysuru,2024,10,Drug Offence,1,0,0,0,3,3
+96,Bengaluru Urban,2020,3,Cybercrime,1,0,0,0,1,2
+97,Shivamogga,2022,4,Theft,1,1,456422,1,11,9
+98,Dakshina Kannada,2023,12,Theft,1,0,234258,0,5,9
+99,Bengaluru Rural,2025,9,Theft,3,3,575052,1,2,9
+100,Ballari,2024,9,Theft,2,1,590748,0.5,9,9
+101,Mysuru,2022,1,Drug Offence,1,1,0,1,3,3
+102,Mysuru,2024,3,Sexual Assault,1,1,0,1,3,8
+103,Udupi,2025,4,Theft,1,1,65972,1,12,9
+104,Kalaburagi,2022,10,Theft,2,0,197706,0,7,9
+105,Bengaluru Urban,2020,7,Drug Offence,1,0,0,0,1,3
+106,Kalaburagi,2025,1,Assault,1,0,0,0,7,1
+107,Dharwad,2021,1,Cybercrime,1,1,0,1,8,2
+108,Hassan,2020,3,Theft,1,1,282830,1,10,9
+109,Udupi,2021,9,Cybercrime,2,1,0,0.5,12,2
+110,Belagavi,2020,8,Theft,1,1,310072,1,6,9
+111,Dakshina Kannada,2021,5,Theft,1,0,61494,0,5,9
+112,Tumakuru,2021,5,Cybercrime,1,1,0,1,4,2
+113,Ballari,2025,11,Drug Offence,1,0,0,0,9,3
+114,Dakshina Kannada,2024,9,Cybercrime,1,0,0,0,5,2
+115,Kalaburagi,2020,6,Cybercrime,1,0,0,0,7,2
+116,Bengaluru Urban,2025,3,Robbery,2,1,302488,0.5,1,7
+117,Ballari,2024,1,Fraud,1,1,292803,1,9,4
+118,Mysuru,2023,9,Fraud,1,0,164062,0,3,4
+119,Ballari,2024,1,Robbery,2,1,220964,0.5,9,7
+120,Kalaburagi,2023,10,Fraud,1,1,128924,1,7,4
+121,Tumakuru,2024,12,Theft,1,1,291673,1,4,9
+122,Shivamogga,2024,5,Robbery,1,1,187209,1,11,7
+123,Tumakuru,2021,1,Fraud,1,0,141103,0,4,4
+124,Dharwad,2020,3,Theft,2,0,320234,0,8,9
+125,Bengaluru Rural,2025,1,Vandalism,1,0,0,0,2,10
+126,Shivamogga,2020,9,Theft,1,0,62652,0,11,9
+127,Kalaburagi,2025,4,Fraud,1,1,118824,1,7,4
+128,Bengaluru Rural,2020,9,Assault,1,1,0,1,2,1
+129,Mysuru,2021,2,Assault,1,0,0,0,3,1
+130,Bengaluru Rural,2025,10,Robbery,1,1,350594,1,2,7
+131,Mysuru,2024,1,Fraud,1,0,343305,0,3,4
+132,Kalaburagi,2022,4,Drug Offence,1,0,0,0,7,3
+133,Bengaluru Urban,2022,2,Assault,3,2,0,0.667,1,1
+134,Dharwad,2021,12,Drug Offence,1,0,0,0,8,3
+135,Tumakuru,2023,4,Sexual Assault,1,1,0,1,4,8
+136,Shivamogga,2023,6,Drug Offence,1,1,0,1,11,3
+137,Bengaluru Rural,2020,10,Cybercrime,2,1,0,0.5,2,2
+138,Dakshina Kannada,2024,6,Theft,1,1,96719,1,5,9
+139,Dharwad,2020,6,Drug Offence,1,1,0,1,8,3
+140,Bengaluru Urban,2020,3,Robbery,3,1,885651,0.333,1,7
+141,Bengaluru Urban,2020,3,Assault,1,0,0,0,1,1
+142,Mysuru,2022,7,Assault,1,0,0,0,3,1
+143,Bengaluru Rural,2022,5,Fraud,2,1,406394,0.5,2,4
+144,Udupi,2024,7,Robbery,1,0,113863,0,12,7
+145,Dharwad,2020,4,Theft,1,1,409919,1,8,9
+146,Ballari,2025,12,Robbery,1,0,488407,0,9,7
+147,Kalaburagi,2025,1,Cybercrime,1,0,0,0,7,2
+148,Dakshina Kannada,2021,4,Cybercrime,1,0,0,0,5,2
+149,Ballari,2023,11,Kidnapping,1,1,0,1,9,5
+150,Ballari,2021,11,Theft,1,1,160765,1,9,9
+151,Ballari,2020,5,Cybercrime,1,0,0,0,9,2
+152,Dharwad,2021,6,Robbery,1,1,12062,1,8,7
+153,Mysuru,2020,12,Assault,1,1,0,1,3,1
+154,Mysuru,2022,1,Sexual Assault,1,0,0,0,3,8
+155,Mysuru,2024,12,Assault,1,1,0,1,3,1
+156,Mysuru,2023,4,Robbery,2,0,123966,0,3,7
+157,Bengaluru Urban,2020,2,Cybercrime,2,1,0,0.5,1,2
+158,Kalaburagi,2023,7,Assault,1,1,0,1,7,1
+159,Belagavi,2021,9,Robbery,2,2,447975,1,6,7
+160,Shivamogga,2025,6,Theft,3,2,1156184,0.667,11,9
+161,Tumakuru,2023,6,Robbery,1,0,423165,0,4,7
+162,Bengaluru Urban,2022,10,Assault,4,1,0,0.25,1,1
+163,Tumakuru,2022,8,Drug Offence,1,1,0,1,4,3
+164,Dakshina Kannada,2020,8,Drug Offence,1,0,0,0,5,3
+165,Udupi,2020,9,Cybercrime,1,0,0,0,12,2
+166,Bengaluru Urban,2025,1,Robbery,1,1,237677,1,1,7
+167,Belagavi,2021,8,Assault,1,1,0,1,6,1
+168,Bengaluru Rural,2021,7,Assault,1,1,0,1,2,1
+169,Mysuru,2022,4,Assault,1,1,0,1,3,1
+170,Mysuru,2025,8,Kidnapping,2,2,0,1,3,5
+171,Bengaluru Urban,2024,2,Robbery,1,0,196241,0,1,7
+172,Belagavi,2021,5,Sexual Assault,2,2,0,1,6,8
+173,Belagavi,2023,5,Fraud,1,0,434942,0,6,4
+174,Shivamogga,2020,8,Vandalism,1,1,0,1,11,10
+175,Bengaluru Rural,2020,5,Sexual Assault,1,1,0,1,2,8
+176,Bengaluru Urban,2025,3,Theft,2,1,426322,0.5,1,9
+177,Dharwad,2024,11,Fraud,1,0,285522,0,8,4
+178,Belagavi,2024,7,Drug Offence,1,0,0,0,6,3
+179,Belagavi,2025,3,Sexual Assault,1,1,0,1,6,8
+180,Tumakuru,2020,11,Fraud,1,0,387821,0,4,4
+181,Shivamogga,2024,5,Kidnapping,1,0,0,0,11,5
+182,Bengaluru Urban,2022,9,Cybercrime,2,1,0,0.5,1,2
+183,Bengaluru Rural,2024,7,Assault,2,1,0,0.5,2,1
+184,Belagavi,2024,4,Theft,1,0,20275,0,6,9
+185,Bengaluru Urban,2020,10,Kidnapping,1,1,0,1,1,5
+186,Udupi,2021,9,Robbery,1,0,117137,0,12,7
+187,Bengaluru Rural,2021,6,Theft,1,1,284942,1,2,9
+188,Dharwad,2022,12,Theft,1,1,348463,1,8,9
+189,Mysuru,2020,6,Assault,1,1,0,1,3,1
+190,Bengaluru Rural,2025,5,Robbery,1,0,349743,0,2,7
+191,Bengaluru Urban,2024,8,Assault,4,4,0,1,1,1
+192,Tumakuru,2025,5,Drug Offence,2,0,0,0,4,3
+193,Mysuru,2024,2,Drug Offence,1,0,0,0,3,3
+194,Udupi,2025,4,Assault,2,1,0,0.5,12,1
+195,Belagavi,2023,10,Vandalism,2,1,0,0.5,6,10
+196,Shivamogga,2023,4,Assault,1,0,0,0,11,1
+197,Bengaluru Urban,2024,5,Theft,3,1,707830,0.333,1,9
+198,Ballari,2024,11,Assault,1,0,0,0,9,1
+199,Tumakuru,2020,2,Theft,1,1,486461,1,4,9
+200,Belagavi,2024,4,Drug Offence,2,0,0,0,6,3
+201,Dakshina Kannada,2023,6,Theft,1,0,78845,0,5,9
+202,Tumakuru,2024,11,Murder,1,1,0,1,4,6
+203,Dakshina Kannada,2022,8,Theft,2,1,449156,0.5,5,9
+204,Dharwad,2024,11,Sexual Assault,1,0,0,0,8,8
+205,Kalaburagi,2021,1,Theft,2,2,127225,1,7,9
+206,Bengaluru Urban,2020,8,Theft,3,2,890183,0.667,1,9
+207,Dakshina Kannada,2025,12,Fraud,2,0,600013,0,5,4
+208,Kalaburagi,2025,4,Theft,2,0,386021,0,7,9
+209,Bengaluru Urban,2020,1,Vandalism,1,0,0,0,1,10
+210,Kalaburagi,2024,7,Drug Offence,1,0,0,0,7,3
+211,Tumakuru,2025,1,Assault,1,1,0,1,4,1
+212,Dharwad,2021,8,Kidnapping,1,1,0,1,8,5
+213,Hassan,2021,8,Theft,2,1,339427,0.5,10,9
+214,Dakshina Kannada,2022,6,Drug Offence,1,0,0,0,5,3
+215,Shivamogga,2022,10,Assault,1,0,0,0,11,1
+216,Tumakuru,2025,3,Murder,1,0,0,0,4,6
+217,Bengaluru Urban,2021,9,Assault,3,2,0,0.667,1,1
+218,Mysuru,2023,9,Robbery,1,1,79632,1,3,7
+219,Belagavi,2020,6,Cybercrime,1,1,0,1,6,2
+220,Bengaluru Urban,2021,7,Fraud,2,1,804755,0.5,1,4
+221,Belagavi,2024,9,Theft,1,1,30800,1,6,9
+222,Bengaluru Urban,2023,8,Theft,2,2,517574,1,1,9
+223,Dakshina Kannada,2023,10,Robbery,1,1,372960,1,5,7
+224,Mysuru,2025,8,Theft,2,1,473195,0.5,3,9
+225,Shivamogga,2025,4,Cybercrime,1,1,0,1,11,2
+226,Bengaluru Urban,2022,9,Theft,2,0,769853,0,1,9
+227,Ballari,2025,12,Vandalism,1,0,0,0,9,10
+228,Bengaluru Urban,2021,11,Theft,1,1,284331,1,1,9
+229,Bengaluru Urban,2023,1,Kidnapping,1,0,0,0,1,5
+230,Mysuru,2020,3,Assault,2,2,0,1,3,1
+231,Dharwad,2022,5,Theft,2,0,348016,0,8,9
+232,Bengaluru Urban,2024,3,Assault,1,0,0,0,1,1
+233,Belagavi,2023,7,Theft,3,1,773802,0.333,6,9
+234,Hassan,2023,6,Robbery,1,1,49889,1,10,7
+235,Tumakuru,2022,8,Assault,1,0,0,0,4,1
+236,Bengaluru Urban,2020,8,Cybercrime,2,2,0,1,1,2
+237,Shivamogga,2020,3,Drug Offence,1,0,0,0,11,3
+238,Mysuru,2020,8,Assault,2,0,0,0,3,1
+239,Ballari,2024,7,Theft,2,0,363880,0,9,9
+240,Bengaluru Rural,2021,4,Vandalism,1,0,0,0,2,10
+241,Kalaburagi,2024,12,Cybercrime,1,1,0,1,7,2
+242,Ballari,2024,8,Assault,1,0,0,0,9,1
+243,Hassan,2020,3,Fraud,1,0,418903,0,10,4
+244,Mysuru,2024,9,Kidnapping,1,0,0,0,3,5
+245,Ballari,2023,8,Cybercrime,1,1,0,1,9,2
+246,Tumakuru,2021,2,Assault,1,0,0,0,4,1
+247,Bengaluru Urban,2021,5,Robbery,1,0,397057,0,1,7
+248,Belagavi,2023,2,Theft,2,1,690548,0.5,6,9
+249,Mysuru,2022,3,Theft,1,0,328797,0,3,9
+250,Bengaluru Urban,2025,4,Fraud,2,1,418360,0.5,1,4
+251,Shivamogga,2025,1,Murder,1,1,0,1,11,6
+252,Ballari,2021,4,Sexual Assault,1,1,0,1,9,8
+253,Tumakuru,2021,1,Theft,3,2,752271,0.667,4,9
+254,Bengaluru Urban,2020,4,Drug Offence,1,1,0,1,1,3
+255,Udupi,2023,12,Theft,1,0,426123,0,12,9
+256,Bengaluru Urban,2025,8,Theft,3,3,1005137,1,1,9
+257,Hassan,2024,7,Theft,1,1,162595,1,10,9
+258,Udupi,2022,5,Assault,1,0,0,0,12,1
+259,Mysuru,2024,6,Cybercrime,1,1,0,1,3,2
+260,Hassan,2023,6,Assault,2,1,0,0.5,10,1
+261,Mysuru,2020,12,Theft,1,0,383139,0,3,9
+262,Dakshina Kannada,2025,3,Robbery,1,1,480502,1,5,7
+263,Shivamogga,2021,5,Robbery,1,0,285410,0,11,7
+264,Mysuru,2024,7,Assault,1,0,0,0,3,1
+265,Hassan,2022,1,Sexual Assault,1,1,0,1,10,8
+266,Udupi,2021,3,Drug Offence,2,1,0,0.5,12,3
+267,Bengaluru Urban,2023,10,Theft,1,0,493180,0,1,9
+268,Belagavi,2024,10,Theft,1,1,272764,1,6,9
+269,Bengaluru Urban,2025,2,Robbery,1,0,96156,0,1,7
+270,Shivamogga,2022,5,Cybercrime,1,0,0,0,11,2
+271,Hassan,2022,5,Theft,3,1,266210,0.333,10,9
+272,Bengaluru Urban,2022,11,Drug Offence,1,0,0,0,1,3
+273,Ballari,2021,8,Theft,1,0,404907,0,9,9
+274,Mysuru,2021,3,Kidnapping,1,0,0,0,3,5
+275,Ballari,2024,12,Drug Offence,1,0,0,0,9,3
+276,Bengaluru Urban,2020,1,Fraud,2,2,569294,1,1,4
+277,Bengaluru Urban,2024,3,Fraud,1,1,164466,1,1,4
+278,Kalaburagi,2023,6,Assault,1,1,0,1,7,1
+279,Hassan,2022,3,Theft,3,2,445844,0.667,10,9
+280,Udupi,2024,8,Assault,1,0,0,0,12,1
+281,Dharwad,2023,11,Cybercrime,1,1,0,1,8,2
+282,Mysuru,2021,10,Cybercrime,1,1,0,1,3,2
+283,Hassan,2020,7,Theft,1,0,144384,0,10,9
+284,Bengaluru Rural,2021,3,Robbery,1,0,460420,0,2,7
+285,Mysuru,2021,12,Theft,1,1,127417,1,3,9
+286,Belagavi,2022,7,Robbery,1,0,237803,0,6,7
+287,Kalaburagi,2020,3,Assault,3,1,0,0.333,7,1
+288,Hassan,2022,12,Vandalism,1,0,0,0,10,10
+289,Dakshina Kannada,2020,3,Theft,1,0,441326,0,5,9
+290,Hassan,2022,2,Drug Offence,1,1,0,1,10,3
+291,Dharwad,2021,6,Assault,1,1,0,1,8,1
+292,Bengaluru Urban,2024,5,Cybercrime,1,1,0,1,1,2
+293,Kalaburagi,2022,3,Assault,2,1,0,0.5,7,1
+294,Shivamogga,2024,7,Kidnapping,1,1,0,1,11,5
+295,Tumakuru,2024,2,Robbery,1,1,202521,1,4,7
+296,Dakshina Kannada,2020,2,Fraud,1,0,253885,0,5,4
+297,Dakshina Kannada,2024,1,Fraud,1,0,191947,0,5,4
+298,Hassan,2025,1,Theft,6,1,1846985,0.167,10,9
+299,Bengaluru Rural,2020,9,Cybercrime,2,1,0,0.5,2,2
+300,Dharwad,2025,9,Robbery,1,1,468278,1,8,7
+301,Kalaburagi,2023,3,Fraud,1,1,81759,1,7,4
+302,Tumakuru,2021,6,Theft,2,1,488672,0.5,4,9
+303,Bengaluru Rural,2025,10,Theft,1,0,471266,0,2,9
+304,Bengaluru Rural,2021,11,Robbery,1,0,99836,0,2,7
+305,Ballari,2023,12,Theft,1,0,170621,0,9,9
+306,Ballari,2022,9,Robbery,1,0,360439,0,9,7
+307,Mysuru,2023,8,Kidnapping,1,1,0,1,3,5
+308,Ballari,2023,4,Theft,3,2,1106385,0.667,9,9
+309,Dharwad,2023,9,Theft,1,1,303866,1,8,9
+310,Bengaluru Rural,2024,6,Theft,2,1,797647,0.5,2,9
+311,Shivamogga,2024,3,Assault,2,1,0,0.5,11,1
+312,Shivamogga,2020,9,Robbery,1,0,87807,0,11,7
+313,Bengaluru Urban,2023,2,Robbery,1,0,360067,0,1,7
+314,Udupi,2021,4,Theft,1,1,60380,1,12,9
+315,Bengaluru Rural,2020,6,Theft,1,1,485219,1,2,9
+316,Dharwad,2020,2,Robbery,1,0,47238,0,8,7
+317,Bengaluru Rural,2023,8,Sexual Assault,2,0,0,0,2,8
+318,Belagavi,2020,3,Theft,3,1,953202,0.333,6,9
+319,Mysuru,2020,8,Theft,1,1,376879,1,3,9
+320,Dharwad,2023,2,Theft,2,1,861340,0.5,8,9
+321,Kalaburagi,2025,1,Kidnapping,1,1,0,1,7,5
+322,Bengaluru Rural,2025,3,Fraud,2,2,570658,1,2,4
+323,Ballari,2020,2,Theft,2,1,419513,0.5,9,9
+324,Tumakuru,2023,9,Theft,1,1,103050,1,4,9
+325,Hassan,2024,10,Cybercrime,1,0,0,0,10,2
+326,Kalaburagi,2020,11,Assault,1,0,0,0,7,1
+327,Bengaluru Rural,2025,3,Theft,1,0,430203,0,2,9
+328,Dharwad,2024,4,Cybercrime,1,0,0,0,8,2
+329,Dharwad,2021,4,Theft,2,1,378469,0.5,8,9
+330,Bengaluru Urban,2022,11,Fraud,2,2,578416,1,1,4
+331,Bengaluru Urban,2025,8,Vandalism,1,0,0,0,1,10
+332,Belagavi,2024,12,Assault,1,0,0,0,6,1
+333,Belagavi,2020,12,Assault,1,0,0,0,6,1
+334,Ballari,2022,12,Cybercrime,2,1,0,0.5,9,2
+335,Kalaburagi,2024,10,Assault,1,0,0,0,7,1
+336,Dharwad,2020,1,Theft,1,1,72068,1,8,9
+337,Hassan,2024,10,Assault,1,0,0,0,10,1
+338,Ballari,2023,10,Drug Offence,1,0,0,0,9,3
+339,Bengaluru Rural,2022,3,Assault,1,0,0,0,2,1
+340,Bengaluru Urban,2024,6,Assault,3,1,0,0.333,1,1
+341,Udupi,2024,6,Cybercrime,2,2,0,1,12,2
+342,Udupi,2025,5,Cybercrime,1,0,0,0,12,2
+343,Belagavi,2022,1,Assault,1,1,0,1,6,1
+344,Belagavi,2025,6,Assault,4,1,0,0.25,6,1
+345,Bengaluru Rural,2024,9,Fraud,2,0,82738,0,2,4
+346,Dharwad,2025,4,Vandalism,1,0,0,0,8,10
+347,Udupi,2020,1,Robbery,1,0,302954,0,12,7
+348,Dakshina Kannada,2022,12,Assault,2,1,0,0.5,5,1
+349,Hassan,2021,11,Theft,2,2,605524,1,10,9
+350,Dakshina Kannada,2023,3,Robbery,2,0,588914,0,5,7
+351,Bengaluru Urban,2022,4,Assault,2,1,0,0.5,1,1
+352,Hassan,2024,5,Theft,1,0,285904,0,10,9
+353,Belagavi,2025,10,Theft,1,1,133222,1,6,9
+354,Tumakuru,2020,9,Fraud,1,0,312347,0,4,4
+355,Dakshina Kannada,2024,10,Murder,1,1,0,1,5,6
+356,Dakshina Kannada,2021,1,Robbery,1,0,85319,0,5,7
+357,Shivamogga,2021,10,Assault,1,1,0,1,11,1
+358,Dakshina Kannada,2023,3,Theft,2,0,389172,0,5,9
+359,Bengaluru Rural,2020,3,Theft,1,1,173752,1,2,9
+360,Kalaburagi,2020,10,Assault,1,1,0,1,7,1
+361,Shivamogga,2020,6,Theft,1,0,198139,0,11,9
+362,Ballari,2024,11,Fraud,1,1,190885,1,9,4
+363,Shivamogga,2020,4,Assault,1,1,0,1,11,1
+364,Shivamogga,2021,7,Fraud,1,1,72335,1,11,4
+365,Shivamogga,2024,7,Theft,1,0,425282,0,11,9
+366,Bengaluru Rural,2023,4,Fraud,1,0,435423,0,2,4
+367,Kalaburagi,2024,8,Theft,2,2,173720,1,7,9
+368,Bengaluru Urban,2021,3,Cybercrime,1,0,0,0,1,2
+369,Shivamogga,2020,1,Robbery,1,0,119015,0,11,7
+370,Shivamogga,2023,11,Theft,1,1,248583,1,11,9
+371,Bengaluru Urban,2020,7,Theft,3,2,909542,0.667,1,9
+372,Dharwad,2023,1,Assault,1,0,0,0,8,1
+373,Belagavi,2020,7,Robbery,1,0,190957,0,6,7
+374,Bengaluru Urban,2023,8,Assault,4,2,0,0.5,1,1
+375,Mysuru,2024,12,Robbery,1,0,366284,0,3,7
+376,Bengaluru Rural,2024,1,Theft,2,1,901845,0.5,2,9
+377,Udupi,2023,3,Robbery,1,0,309270,0,12,7
+378,Bengaluru Urban,2023,3,Theft,2,2,549494,1,1,9
+379,Dakshina Kannada,2021,1,Theft,1,1,297314,1,5,9
+380,Ballari,2020,3,Assault,1,0,0,0,9,1
+381,Bengaluru Rural,2022,3,Drug Offence,1,1,0,1,2,3
+382,Udupi,2020,10,Robbery,1,0,305194,0,12,7
+383,Mysuru,2023,6,Theft,1,0,128075,0,3,9
+384,Tumakuru,2020,12,Theft,1,0,395437,0,4,9
+385,Belagavi,2020,12,Fraud,2,0,885471,0,6,4
+386,Mysuru,2025,11,Theft,1,0,110853,0,3,9
+387,Belagavi,2025,4,Assault,2,1,0,0.5,6,1
+388,Udupi,2025,5,Kidnapping,1,0,0,0,12,5
+389,Hassan,2021,7,Theft,1,0,57517,0,10,9
+390,Bengaluru Rural,2020,2,Drug Offence,1,1,0,1,2,3
+391,Bengaluru Urban,2025,8,Sexual Assault,1,0,0,0,1,8
+392,Bengaluru Rural,2021,6,Cybercrime,2,0,0,0,2,2
+393,Tumakuru,2022,12,Theft,1,0,492246,0,4,9
+394,Kalaburagi,2024,5,Vandalism,1,0,0,0,7,10
+395,Dakshina Kannada,2024,12,Robbery,1,1,339331,1,5,7
+396,Kalaburagi,2020,12,Theft,1,0,353111,0,7,9
+397,Dakshina Kannada,2024,2,Kidnapping,1,0,0,0,5,5
+398,Kalaburagi,2023,1,Sexual Assault,1,0,0,0,7,8
+399,Dakshina Kannada,2025,8,Robbery,1,0,476189,0,5,7
+400,Belagavi,2021,8,Theft,2,1,929446,0.5,6,9
+401,Bengaluru Rural,2021,5,Theft,1,0,428122,0,2,9
+402,Dharwad,2025,2,Assault,1,1,0,1,8,1
+403,Dharwad,2023,7,Theft,1,0,442573,0,8,9
+404,Mysuru,2025,12,Fraud,1,1,213247,1,3,4
+405,Bengaluru Urban,2024,1,Sexual Assault,1,1,0,1,1,8
+406,Mysuru,2022,3,Robbery,1,1,45531,1,3,7
+407,Belagavi,2025,10,Robbery,1,0,195836,0,6,7
+408,Mysuru,2022,7,Theft,1,0,67739,0,3,9
+409,Ballari,2025,2,Robbery,1,1,7423,1,9,7
+410,Shivamogga,2021,1,Theft,3,3,566344,1,11,9
+411,Tumakuru,2021,8,Vandalism,1,0,0,0,4,10
+412,Kalaburagi,2023,10,Theft,1,0,60156,0,7,9
+413,Bengaluru Rural,2025,6,Fraud,1,0,115213,0,2,4
+414,Dakshina Kannada,2025,4,Cybercrime,1,1,0,1,5,2
+415,Bengaluru Urban,2023,9,Theft,2,1,415898,0.5,1,9
+416,Bengaluru Urban,2021,10,Theft,3,1,939381,0.333,1,9
+417,Ballari,2024,7,Assault,1,0,0,0,9,1
+418,Hassan,2024,9,Assault,2,2,0,1,10,1
+419,Shivamogga,2022,8,Cybercrime,1,0,0,0,11,2
+420,Bengaluru Urban,2024,6,Theft,1,1,220090,1,1,9
+421,Dakshina Kannada,2020,4,Fraud,1,1,323201,1,5,4
+422,Shivamogga,2024,4,Cybercrime,1,1,0,1,11,2
+423,Belagavi,2024,5,Cybercrime,2,0,0,0,6,2
+424,Shivamogga,2022,11,Theft,1,0,76600,0,11,9
+425,Tumakuru,2025,12,Vandalism,1,1,0,1,4,10
+426,Bengaluru Urban,2025,10,Assault,1,0,0,0,1,1
+427,Kalaburagi,2022,7,Sexual Assault,1,0,0,0,7,8
+428,Mysuru,2025,4,Robbery,3,1,307738,0.333,3,7
+429,Hassan,2022,4,Assault,2,1,0,0.5,10,1
+430,Dharwad,2025,8,Drug Offence,1,1,0,1,8,3
+431,Bengaluru Urban,2025,6,Theft,1,0,281312,0,1,9
+432,Udupi,2024,5,Kidnapping,1,1,0,1,12,5
+433,Bengaluru Rural,2022,7,Theft,1,0,229396,0,2,9
+434,Tumakuru,2021,12,Sexual Assault,1,1,0,1,4,8
+435,Bengaluru Rural,2025,2,Theft,2,1,894396,0.5,2,9
+436,Dharwad,2025,3,Sexual Assault,1,1,0,1,8,8
+437,Tumakuru,2021,9,Assault,2,1,0,0.5,4,1
+438,Mysuru,2022,10,Kidnapping,1,1,0,1,3,5
+439,Shivamogga,2020,7,Robbery,1,0,313662,0,11,7
+440,Belagavi,2021,3,Theft,2,1,450476,0.5,6,9
+441,Kalaburagi,2024,4,Cybercrime,1,0,0,0,7,2
+442,Kalaburagi,2021,10,Assault,2,2,0,1,7,1
+443,Bengaluru Rural,2021,10,Theft,1,1,397122,1,2,9
+444,Mysuru,2023,4,Cybercrime,3,3,0,1,3,2
+445,Hassan,2020,6,Drug Offence,1,0,0,0,10,3
+446,Bengaluru Rural,2021,9,Drug Offence,1,1,0,1,2,3
+447,Bengaluru Urban,2021,12,Theft,1,0,203275,0,1,9
+448,Bengaluru Rural,2022,6,Assault,1,1,0,1,2,1
+449,Hassan,2023,2,Theft,3,1,1245801,0.333,10,9
+450,Shivamogga,2021,10,Cybercrime,1,1,0,1,11,2
+451,Mysuru,2024,6,Assault,2,1,0,0.5,3,1
+452,Udupi,2020,9,Theft,2,1,726365,0.5,12,9
+453,Tumakuru,2024,7,Theft,2,1,378824,0.5,4,9
+454,Hassan,2022,7,Fraud,1,1,170585,1,10,4
+455,Ballari,2020,6,Robbery,1,0,325671,0,9,7
+456,Bengaluru Rural,2024,9,Robbery,1,0,78997,0,2,7
+457,Hassan,2023,12,Robbery,1,0,315801,0,10,7
+458,Belagavi,2024,12,Murder,1,1,0,1,6,6
+459,Ballari,2025,8,Robbery,1,0,215457,0,9,7
+460,Tumakuru,2025,12,Robbery,2,2,379455,1,4,7
+461,Mysuru,2020,6,Robbery,2,1,388247,0.5,3,7
+462,Mysuru,2023,9,Murder,1,1,0,1,3,6
+463,Dharwad,2020,7,Fraud,1,0,203110,0,8,4
+464,Hassan,2024,11,Cybercrime,1,1,0,1,10,2
+465,Bengaluru Rural,2023,4,Theft,1,1,473110,1,2,9
+466,Kalaburagi,2021,4,Theft,1,1,65475,1,7,9
+467,Dakshina Kannada,2022,11,Assault,1,0,0,0,5,1
+468,Bengaluru Urban,2023,9,Vandalism,1,0,0,0,1,10
+469,Tumakuru,2021,8,Sexual Assault,1,1,0,1,4,8
+470,Belagavi,2021,7,Theft,1,0,28699,0,6,9
+471,Udupi,2025,2,Theft,1,0,389729,0,12,9
+472,Bengaluru Rural,2025,2,Robbery,1,0,65437,0,2,7
+473,Tumakuru,2024,10,Fraud,1,1,149548,1,4,4
+474,Ballari,2024,12,Theft,1,1,465913,1,9,9
+475,Bengaluru Urban,2020,5,Cybercrime,1,0,0,0,1,2
+476,Mysuru,2023,2,Cybercrime,1,0,0,0,3,2
+477,Belagavi,2025,10,Cybercrime,1,0,0,0,6,2
+478,Bengaluru Rural,2025,1,Theft,1,0,223060,0,2,9
+479,Bengaluru Rural,2020,5,Theft,4,2,193016,0.5,2,9
+480,Udupi,2021,3,Cybercrime,1,0,0,0,12,2
+481,Bengaluru Urban,2023,7,Drug Offence,2,0,0,0,1,3
+482,Belagavi,2023,12,Theft,2,0,146789,0,6,9
+483,Hassan,2021,1,Robbery,1,1,187206,1,10,7
+484,Udupi,2025,9,Theft,2,0,447382,0,12,9
+485,Dakshina Kannada,2020,11,Theft,2,2,834156,1,5,9
+486,Bengaluru Urban,2024,9,Assault,2,1,0,0.5,1,1
+487,Dakshina Kannada,2021,4,Murder,1,0,0,0,5,6
+488,Bengaluru Rural,2020,5,Drug Offence,1,0,0,0,2,3
+489,Ballari,2021,1,Assault,1,1,0,1,9,1
+490,Tumakuru,2022,9,Theft,1,0,499184,0,4,9
+491,Dakshina Kannada,2022,4,Fraud,1,1,52260,1,5,4
+492,Hassan,2022,5,Assault,1,0,0,0,10,1
+493,Udupi,2020,5,Assault,1,1,0,1,12,1
+494,Dakshina Kannada,2023,2,Robbery,1,0,160638,0,5,7
+495,Dakshina Kannada,2022,1,Fraud,1,0,479127,0,5,4
+496,Ballari,2020,4,Murder,1,1,0,1,9,6
+497,Dakshina Kannada,2024,8,Drug Offence,1,1,0,1,5,3
+498,Bengaluru Urban,2024,11,Assault,1,1,0,1,1,1
+499,Hassan,2024,5,Kidnapping,1,0,0,0,10,5
+500,Bengaluru Urban,2024,4,Assault,1,0,0,0,1,1
+501,Kalaburagi,2023,5,Theft,2,0,256913,0,7,9
+502,Tumakuru,2022,9,Assault,1,0,0,0,4,1
+503,Mysuru,2020,10,Cybercrime,1,0,0,0,3,2
+504,Bengaluru Urban,2022,12,Theft,2,1,643937,0.5,1,9
+505,Bengaluru Urban,2021,7,Theft,2,1,249413,0.5,1,9
+506,Udupi,2022,12,Theft,1,0,460837,0,12,9
+507,Dharwad,2021,5,Theft,1,1,427240,1,8,9
+508,Belagavi,2024,12,Cybercrime,1,0,0,0,6,2
+509,Belagavi,2022,11,Assault,1,0,0,0,6,1
+510,Bengaluru Urban,2022,4,Cybercrime,2,1,0,0.5,1,2
+511,Dharwad,2021,9,Murder,1,0,0,0,8,6
+512,Dakshina Kannada,2021,5,Fraud,1,0,224937,0,5,4
+513,Hassan,2020,9,Murder,1,1,0,1,10,6
+514,Dakshina Kannada,2022,10,Theft,1,1,382720,1,5,9
+515,Bengaluru Urban,2021,3,Vandalism,1,1,0,1,1,10
+516,Ballari,2025,3,Drug Offence,1,0,0,0,9,3
+517,Dakshina Kannada,2025,11,Fraud,1,0,370235,0,5,4
+518,Dharwad,2025,4,Assault,1,0,0,0,8,1
+519,Bengaluru Rural,2024,4,Sexual Assault,1,0,0,0,2,8
+520,Shivamogga,2025,3,Robbery,2,0,754086,0,11,7
+521,Kalaburagi,2022,11,Assault,2,1,0,0.5,7,1
+522,Dharwad,2024,5,Sexual Assault,1,0,0,0,8,8
+523,Shivamogga,2025,8,Theft,1,0,77259,0,11,9
+524,Kalaburagi,2022,9,Cybercrime,1,1,0,1,7,2
+525,Mysuru,2021,5,Assault,1,0,0,0,3,1
+526,Ballari,2024,1,Assault,1,0,0,0,9,1
+527,Kalaburagi,2025,3,Drug Offence,1,0,0,0,7,3
+528,Tumakuru,2022,6,Assault,1,1,0,1,4,1
+529,Belagavi,2025,12,Theft,1,0,71359,0,6,9
+530,Tumakuru,2024,6,Kidnapping,1,0,0,0,4,5
+531,Hassan,2022,8,Vandalism,1,0,0,0,10,10
+532,Belagavi,2024,10,Assault,1,1,0,1,6,1
+533,Shivamogga,2022,9,Drug Offence,1,1,0,1,11,3
+534,Ballari,2024,10,Fraud,1,1,438907,1,9,4
+535,Dharwad,2022,4,Kidnapping,1,1,0,1,8,5
+536,Bengaluru Urban,2022,6,Assault,2,2,0,1,1,1
+537,Kalaburagi,2024,12,Assault,1,0,0,0,7,1
+538,Shivamogga,2022,6,Robbery,2,0,525157,0,11,7
+539,Dharwad,2024,9,Theft,1,0,256508,0,8,9
+540,Hassan,2023,5,Fraud,1,0,483585,0,10,4
+541,Kalaburagi,2022,9,Drug Offence,1,1,0,1,7,3
+542,Belagavi,2021,4,Robbery,1,0,426329,0,6,7
+543,Tumakuru,2023,4,Theft,1,0,120843,0,4,9
+544,Bengaluru Urban,2023,1,Robbery,2,1,421702,0.5,1,7
+545,Dakshina Kannada,2025,9,Assault,1,1,0,1,5,1
+546,Hassan,2021,7,Sexual Assault,1,0,0,0,10,8
+547,Bengaluru Urban,2025,6,Assault,3,0,0,0,1,1
+548,Hassan,2020,1,Fraud,1,0,292652,0,10,4
+549,Kalaburagi,2025,9,Fraud,1,1,205410,1,7,4
+550,Bengaluru Urban,2020,11,Drug Offence,1,1,0,1,1,3
+551,Dharwad,2021,8,Vandalism,1,1,0,1,8,10
+552,Belagavi,2022,7,Theft,2,0,626261,0,6,9
+553,Dakshina Kannada,2023,5,Drug Offence,1,1,0,1,5,3
+554,Udupi,2023,5,Assault,1,0,0,0,12,1
+555,Hassan,2025,1,Fraud,1,1,297701,1,10,4
+556,Dakshina Kannada,2020,1,Theft,1,0,380692,0,5,9
+557,Bengaluru Urban,2025,5,Assault,1,1,0,1,1,1
+558,Kalaburagi,2025,1,Drug Offence,1,0,0,0,7,3
+559,Udupi,2021,9,Assault,1,1,0,1,12,1
+560,Kalaburagi,2020,5,Robbery,1,0,230703,0,7,7
+561,Bengaluru Rural,2022,1,Assault,1,1,0,1,2,1
+562,Tumakuru,2025,3,Drug Offence,1,0,0,0,4,3
+563,Tumakuru,2022,8,Vandalism,1,1,0,1,4,10
+564,Hassan,2024,2,Assault,1,0,0,0,10,1
+565,Dakshina Kannada,2025,9,Murder,1,1,0,1,5,6
+566,Hassan,2025,2,Theft,2,0,293905,0,10,9
+567,Hassan,2022,1,Assault,1,1,0,1,10,1
+568,Hassan,2022,9,Theft,2,1,401233,0.5,10,9
+569,Belagavi,2025,6,Vandalism,2,2,0,1,6,10
+570,Tumakuru,2020,2,Assault,1,1,0,1,4,1
+571,Belagavi,2022,6,Theft,1,0,8529,0,6,9
+572,Dharwad,2021,6,Theft,2,2,359272,1,8,9
+573,Ballari,2025,10,Fraud,1,0,25614,0,9,4
+574,Bengaluru Rural,2025,12,Robbery,1,0,26041,0,2,7
+575,Bengaluru Urban,2022,7,Kidnapping,1,0,0,0,1,5
+576,Hassan,2024,4,Assault,2,1,0,0.5,10,1
+577,Dharwad,2022,12,Assault,1,0,0,0,8,1
+578,Belagavi,2022,3,Theft,1,1,260219,1,6,9
+579,Mysuru,2023,9,Vandalism,1,0,0,0,3,10
+580,Belagavi,2025,4,Theft,2,2,645640,1,6,9
+581,Bengaluru Urban,2023,12,Cybercrime,2,2,0,1,1,2
+582,Bengaluru Rural,2025,7,Sexual Assault,1,0,0,0,2,8
+583,Hassan,2020,4,Theft,1,0,209369,0,10,9
+584,Dharwad,2021,9,Assault,2,1,0,0.5,8,1
+585,Udupi,2022,12,Vandalism,1,1,0,1,12,10
+586,Bengaluru Rural,2023,3,Assault,1,1,0,1,2,1
+587,Bengaluru Urban,2022,3,Fraud,2,1,584904,0.5,1,4
+588,Kalaburagi,2024,6,Theft,1,1,439049,1,7,9
+589,Shivamogga,2021,11,Theft,1,0,104873,0,11,9
+590,Kalaburagi,2022,2,Theft,1,0,346861,0,7,9
+591,Bengaluru Rural,2023,2,Theft,1,1,204099,1,2,9
+592,Dakshina Kannada,2024,7,Drug Offence,1,1,0,1,5,3
+593,Bengaluru Urban,2024,2,Drug Offence,1,0,0,0,1,3
+594,Dharwad,2024,7,Vandalism,1,1,0,1,8,10
+595,Kalaburagi,2022,1,Cybercrime,1,0,0,0,7,2
+596,Tumakuru,2025,5,Theft,1,0,168904,0,4,9
+597,Ballari,2022,2,Robbery,1,1,24502,1,9,7
+598,Bengaluru Urban,2022,7,Theft,1,0,466332,0,1,9
+599,Tumakuru,2024,11,Cybercrime,1,1,0,1,4,2
+600,Bengaluru Urban,2020,1,Sexual Assault,1,0,0,0,1,8
+601,Belagavi,2025,7,Drug Offence,1,0,0,0,6,3
+602,Tumakuru,2025,9,Drug Offence,1,0,0,0,4,3
+603,Tumakuru,2025,6,Vandalism,1,0,0,0,4,10
+604,Bengaluru Urban,2021,8,Fraud,1,0,376753,0,1,4
+605,Belagavi,2022,7,Cybercrime,1,0,0,0,6,2
+606,Mysuru,2025,3,Robbery,3,1,864923,0.333,3,7
+607,Dakshina Kannada,2024,4,Theft,1,1,301441,1,5,9
+608,Belagavi,2023,1,Assault,2,2,0,1,6,1
+609,Belagavi,2021,2,Murder,1,1,0,1,6,6
+610,Bengaluru Urban,2020,3,Drug Offence,1,0,0,0,1,3
+611,Tumakuru,2020,10,Theft,2,0,393981,0,4,9
+612,Kalaburagi,2023,5,Cybercrime,1,0,0,0,7,2
+613,Bengaluru Urban,2021,7,Murder,1,0,0,0,1,6
+614,Dharwad,2025,11,Drug Offence,1,0,0,0,8,3
+615,Tumakuru,2020,5,Theft,2,2,721630,1,4,9
+616,Mysuru,2020,12,Fraud,1,1,431661,1,3,4
+617,Shivamogga,2021,9,Fraud,1,0,463419,0,11,4
+618,Dharwad,2025,1,Robbery,1,0,220578,0,8,7
+619,Hassan,2025,1,Cybercrime,2,2,0,1,10,2
+620,Tumakuru,2024,8,Assault,1,0,0,0,4,1
+621,Belagavi,2021,2,Drug Offence,1,0,0,0,6,3
+622,Kalaburagi,2020,5,Drug Offence,2,0,0,0,7,3
+623,Belagavi,2020,7,Cybercrime,3,2,0,0.667,6,2
+624,Mysuru,2021,2,Fraud,2,1,535411,0.5,3,4
+625,Dakshina Kannada,2024,2,Theft,1,1,339831,1,5,9
+626,Dakshina Kannada,2023,4,Robbery,1,0,321470,0,5,7
+627,Belagavi,2024,2,Assault,1,1,0,1,6,1
+628,Tumakuru,2025,4,Theft,2,2,420398,1,4,9
+629,Bengaluru Urban,2020,11,Kidnapping,1,0,0,0,1,5
+630,Tumakuru,2023,3,Cybercrime,2,2,0,1,4,2
+631,Tumakuru,2021,7,Theft,1,0,229490,0,4,9
+632,Udupi,2025,4,Drug Offence,1,0,0,0,12,3
+633,Kalaburagi,2021,7,Assault,1,0,0,0,7,1
+634,Udupi,2024,3,Theft,1,0,382000,0,12,9
+635,Dakshina Kannada,2025,5,Murder,1,0,0,0,5,6
+636,Kalaburagi,2022,3,Cybercrime,1,1,0,1,7,2
+637,Dakshina Kannada,2024,11,Theft,1,1,127511,1,5,9
+638,Dakshina Kannada,2025,12,Theft,1,1,352000,1,5,9
+639,Bengaluru Urban,2020,1,Robbery,1,1,17427,1,1,7
+640,Shivamogga,2021,1,Assault,1,1,0,1,11,1
+641,Bengaluru Rural,2022,9,Fraud,1,1,156448,1,2,4
+642,Udupi,2025,4,Robbery,1,0,444104,0,12,7
+643,Udupi,2024,9,Assault,1,1,0,1,12,1
+644,Belagavi,2021,6,Theft,3,1,1226200,0.333,6,9
+645,Ballari,2022,3,Fraud,1,1,302907,1,9,4
+646,Dakshina Kannada,2020,11,Assault,1,0,0,0,5,1
+647,Kalaburagi,2020,1,Theft,1,1,383734,1,7,9
+648,Kalaburagi,2024,12,Fraud,1,1,107539,1,7,4
+649,Shivamogga,2020,2,Cybercrime,2,1,0,0.5,11,2
+650,Bengaluru Urban,2022,7,Robbery,1,0,210424,0,1,7
+651,Bengaluru Urban,2022,3,Drug Offence,1,0,0,0,1,3
+652,Bengaluru Urban,2022,6,Fraud,1,0,444816,0,1,4
+653,Shivamogga,2024,9,Fraud,1,1,63959,1,11,4
+654,Bengaluru Urban,2022,4,Fraud,2,0,232494,0,1,4
+655,Bengaluru Rural,2023,5,Theft,1,1,154436,1,2,9
+656,Bengaluru Urban,2023,5,Theft,2,2,465417,1,1,9
+657,Bengaluru Urban,2024,11,Robbery,1,1,468410,1,1,7
+658,Bengaluru Urban,2023,2,Kidnapping,1,1,0,1,1,5
+659,Kalaburagi,2025,8,Theft,2,2,663923,1,7,9
+660,Bengaluru Urban,2021,3,Theft,1,1,407911,1,1,9
+661,Dharwad,2020,8,Robbery,1,0,262931,0,8,7
+662,Bengaluru Rural,2022,1,Theft,1,1,309883,1,2,9
+663,Dakshina Kannada,2022,7,Assault,1,0,0,0,5,1
+664,Dharwad,2025,6,Theft,1,0,469214,0,8,9
+665,Belagavi,2023,9,Theft,2,2,410361,1,6,9
+666,Shivamogga,2020,4,Sexual Assault,1,0,0,0,11,8
+667,Dharwad,2024,7,Theft,1,0,398228,0,8,9
+668,Dharwad,2023,5,Assault,1,0,0,0,8,1
+669,Bengaluru Urban,2024,12,Robbery,2,0,354965,0,1,7
+670,Bengaluru Urban,2021,5,Theft,1,1,240404,1,1,9
+671,Shivamogga,2021,10,Fraud,1,1,152628,1,11,4
+672,Bengaluru Rural,2020,7,Assault,1,0,0,0,2,1
+673,Bengaluru Rural,2025,8,Fraud,1,1,302228,1,2,4
+674,Ballari,2020,1,Theft,2,2,730816,1,9,9
+675,Belagavi,2020,1,Vandalism,1,0,0,0,6,10
+676,Udupi,2023,3,Assault,1,0,0,0,12,1
+677,Ballari,2024,10,Assault,1,1,0,1,9,1
+678,Dharwad,2021,9,Cybercrime,1,1,0,1,8,2
+679,Bengaluru Rural,2020,10,Assault,1,1,0,1,2,1
+680,Tumakuru,2022,10,Assault,1,0,0,0,4,1
+681,Tumakuru,2022,11,Theft,1,1,482004,1,4,9
+682,Kalaburagi,2024,10,Fraud,1,0,146617,0,7,4
+683,Ballari,2024,5,Kidnapping,1,1,0,1,9,5
+684,Bengaluru Urban,2021,7,Robbery,1,0,429089,0,1,7
+685,Dharwad,2022,8,Drug Offence,1,1,0,1,8,3
+686,Mysuru,2025,3,Theft,3,0,819252,0,3,9
+687,Kalaburagi,2020,2,Assault,1,1,0,1,7,1
+688,Bengaluru Urban,2025,10,Sexual Assault,1,0,0,0,1,8
+689,Hassan,2020,12,Cybercrime,1,0,0,0,10,2
+690,Mysuru,2021,1,Theft,1,0,205261,0,3,9
+691,Hassan,2023,2,Kidnapping,1,0,0,0,10,5
+692,Tumakuru,2024,11,Assault,1,1,0,1,4,1
+693,Tumakuru,2023,3,Assault,1,1,0,1,4,1
+694,Tumakuru,2020,1,Theft,2,1,629591,0.5,4,9
+695,Bengaluru Urban,2025,10,Theft,1,0,484367,0,1,9
+696,Tumakuru,2025,6,Assault,2,0,0,0,4,1
+697,Udupi,2020,12,Theft,1,0,465802,0,12,9
+698,Dharwad,2024,10,Vandalism,1,1,0,1,8,10
+699,Dakshina Kannada,2025,2,Theft,1,1,475986,1,5,9
+700,Dharwad,2021,7,Theft,2,1,344181,0.5,8,9
+701,Udupi,2024,7,Theft,2,1,452684,0.5,12,9
+702,Bengaluru Urban,2020,3,Theft,1,0,341679,0,1,9
+703,Belagavi,2022,6,Sexual Assault,2,2,0,1,6,8
+704,Hassan,2023,6,Theft,1,0,396360,0,10,9
+705,Tumakuru,2024,10,Cybercrime,1,0,0,0,4,2
+706,Shivamogga,2022,11,Robbery,2,2,605925,1,11,7
+707,Ballari,2025,1,Sexual Assault,1,1,0,1,9,8
+708,Kalaburagi,2025,5,Fraud,1,0,226724,0,7,4
+709,Kalaburagi,2025,2,Murder,1,1,0,1,7,6
+710,Shivamogga,2025,12,Fraud,1,0,289111,0,11,4
+711,Kalaburagi,2025,12,Robbery,1,0,376648,0,7,7
+712,Hassan,2025,7,Kidnapping,1,0,0,0,10,5
+713,Kalaburagi,2025,7,Fraud,1,0,317051,0,7,4
+714,Ballari,2023,2,Murder,1,1,0,1,9,6
+715,Tumakuru,2023,2,Theft,1,0,103965,0,4,9
+716,Shivamogga,2021,10,Kidnapping,1,1,0,1,11,5
+717,Udupi,2024,6,Theft,1,0,23948,0,12,9
+718,Mysuru,2023,1,Fraud,1,1,293126,1,3,4
+719,Udupi,2020,4,Theft,1,0,138843,0,12,9
+720,Ballari,2022,2,Cybercrime,1,0,0,0,9,2
+721,Kalaburagi,2023,11,Sexual Assault,1,0,0,0,7,8
+722,Udupi,2022,8,Fraud,1,1,366234,1,12,4
+723,Dharwad,2024,12,Assault,2,1,0,0.5,8,1
+724,Hassan,2024,12,Vandalism,1,0,0,0,10,10
+725,Bengaluru Urban,2020,8,Assault,2,0,0,0,1,1
+726,Hassan,2020,6,Sexual Assault,1,1,0,1,10,8
+727,Bengaluru Rural,2025,4,Theft,1,0,149546,0,2,9
+728,Tumakuru,2023,8,Robbery,1,0,231772,0,4,7
+729,Bengaluru Urban,2020,8,Robbery,2,0,479966,0,1,7
+730,Hassan,2022,9,Drug Offence,1,1,0,1,10,3
+731,Mysuru,2022,8,Theft,1,1,202760,1,3,9
+732,Tumakuru,2025,5,Assault,2,1,0,0.5,4,1
+733,Bengaluru Urban,2025,2,Vandalism,1,0,0,0,1,10
+734,Shivamogga,2022,12,Drug Offence,1,0,0,0,11,3
+735,Bengaluru Rural,2021,8,Cybercrime,1,0,0,0,2,2
+736,Ballari,2021,11,Drug Offence,1,1,0,1,9,3
+737,Bengaluru Rural,2024,8,Theft,1,1,386464,1,2,9
+738,Kalaburagi,2024,5,Robbery,1,1,115285,1,7,7
+739,Bengaluru Urban,2022,1,Drug Offence,2,2,0,1,1,3
+740,Mysuru,2025,1,Assault,1,1,0,1,3,1
+741,Belagavi,2025,5,Cybercrime,2,1,0,0.5,6,2
+742,Dharwad,2024,8,Theft,1,1,205501,1,8,9
+743,Ballari,2023,11,Theft,1,1,40308,1,9,9
+744,Shivamogga,2021,9,Drug Offence,1,0,0,0,11,3
+745,Bengaluru Urban,2025,7,Cybercrime,1,1,0,1,1,2
+746,Shivamogga,2023,2,Assault,1,1,0,1,11,1
+747,Tumakuru,2022,2,Vandalism,1,0,0,0,4,10
+748,Shivamogga,2021,9,Murder,1,1,0,1,11,6
+749,Dharwad,2024,9,Cybercrime,1,1,0,1,8,2
+750,Bengaluru Urban,2025,9,Cybercrime,3,1,0,0.333,1,2
+751,Mysuru,2024,4,Theft,1,0,48900,0,3,9
+752,Mysuru,2022,8,Cybercrime,4,1,0,0.25,3,2
+753,Hassan,2022,11,Cybercrime,1,1,0,1,10,2
+754,Mysuru,2021,7,Robbery,1,1,423079,1,3,7
+755,Ballari,2022,10,Fraud,1,0,172038,0,9,4
+756,Bengaluru Urban,2023,1,Theft,1,0,227351,0,1,9
+757,Dharwad,2020,4,Drug Offence,1,1,0,1,8,3
+758,Belagavi,2023,8,Robbery,1,1,464948,1,6,7
+759,Udupi,2025,10,Murder,1,1,0,1,12,6
+760,Dakshina Kannada,2024,11,Sexual Assault,1,0,0,0,5,8
+761,Ballari,2024,3,Assault,1,0,0,0,9,1
+762,Ballari,2025,4,Assault,1,0,0,0,9,1
+763,Tumakuru,2021,9,Theft,1,0,464471,0,4,9
+764,Mysuru,2024,5,Cybercrime,3,1,0,0.333,3,2
+765,Tumakuru,2023,10,Kidnapping,1,1,0,1,4,5
+766,Bengaluru Urban,2024,9,Kidnapping,1,0,0,0,1,5
+767,Bengaluru Urban,2020,5,Assault,1,1,0,1,1,1
+768,Bengaluru Rural,2020,5,Kidnapping,1,0,0,0,2,5
+769,Kalaburagi,2020,11,Fraud,1,0,464902,0,7,4
+770,Bengaluru Urban,2025,4,Robbery,1,0,384343,0,1,7
+771,Belagavi,2022,5,Assault,1,1,0,1,6,1
+772,Mysuru,2025,8,Sexual Assault,1,0,0,0,3,8
+773,Bengaluru Urban,2020,2,Assault,1,1,0,1,1,1
+774,Udupi,2020,8,Robbery,2,1,816606,0.5,12,7
+775,Mysuru,2021,2,Theft,1,1,279377,1,3,9
+776,Mysuru,2021,2,Robbery,1,1,164833,1,3,7
+777,Dakshina Kannada,2022,3,Drug Offence,1,0,0,0,5,3
+778,Bengaluru Rural,2024,7,Sexual Assault,1,1,0,1,2,8
+779,Mysuru,2021,8,Assault,1,0,0,0,3,1
+780,Udupi,2021,8,Assault,1,0,0,0,12,1
+781,Belagavi,2025,2,Assault,1,0,0,0,6,1
+782,Belagavi,2022,2,Theft,1,1,422583,1,6,9
+783,Mysuru,2024,1,Theft,1,0,134834,0,3,9
+784,Belagavi,2022,4,Assault,1,0,0,0,6,1
+785,Udupi,2020,10,Cybercrime,1,1,0,1,12,2
+786,Dakshina Kannada,2020,11,Cybercrime,2,0,0,0,5,2
+787,Tumakuru,2025,7,Theft,2,1,585552,0.5,4,9
+788,Hassan,2025,11,Cybercrime,1,1,0,1,10,2
+789,Dharwad,2025,7,Assault,2,2,0,1,8,1
+790,Bengaluru Urban,2023,11,Kidnapping,1,1,0,1,1,5
+791,Hassan,2024,10,Robbery,1,1,321455,1,10,7
+792,Dharwad,2024,7,Robbery,1,0,437817,0,8,7
+793,Shivamogga,2021,12,Assault,1,0,0,0,11,1
+794,Dharwad,2020,12,Cybercrime,1,0,0,0,8,2
+795,Kalaburagi,2021,3,Vandalism,1,0,0,0,7,10
+796,Mysuru,2023,8,Vandalism,2,2,0,1,3,10
+797,Udupi,2025,6,Assault,1,0,0,0,12,1
+798,Tumakuru,2025,4,Vandalism,1,0,0,0,4,10
+799,Tumakuru,2023,11,Theft,2,1,843109,0.5,4,9
+800,Dakshina Kannada,2021,6,Cybercrime,1,1,0,1,5,2
+801,Kalaburagi,2021,9,Assault,1,1,0,1,7,1
+802,Dharwad,2025,12,Robbery,1,1,157592,1,8,7
+803,Dharwad,2022,11,Cybercrime,1,0,0,0,8,2
+804,Dakshina Kannada,2020,5,Robbery,1,0,397399,0,5,7
+805,Dakshina Kannada,2024,11,Assault,2,1,0,0.5,5,1
+806,Tumakuru,2022,3,Fraud,2,1,903792,0.5,4,4
+807,Shivamogga,2023,1,Robbery,1,1,442226,1,11,7
+808,Belagavi,2022,8,Theft,1,0,492292,0,6,9
+809,Dakshina Kannada,2022,5,Robbery,1,1,179625,1,5,7
+810,Belagavi,2021,2,Theft,1,1,492358,1,6,9
+811,Dakshina Kannada,2022,3,Cybercrime,1,0,0,0,5,2
+812,Ballari,2025,11,Theft,2,1,225031,0.5,9,9
+813,Dharwad,2020,12,Assault,1,0,0,0,8,1
+814,Belagavi,2025,1,Fraud,2,2,502690,1,6,4
+815,Tumakuru,2024,6,Theft,1,0,487180,0,4,9
+816,Shivamogga,2020,2,Drug Offence,1,0,0,0,11,3
+817,Ballari,2025,2,Drug Offence,1,0,0,0,9,3
+818,Tumakuru,2021,12,Theft,1,0,408672,0,4,9
+819,Belagavi,2021,4,Fraud,1,1,241872,1,6,4
+820,Tumakuru,2023,1,Theft,2,1,648257,0.5,4,9
+821,Mysuru,2024,7,Sexual Assault,1,1,0,1,3,8
+822,Shivamogga,2021,8,Assault,1,1,0,1,11,1
+823,Mysuru,2024,7,Theft,1,1,113075,1,3,9
+824,Belagavi,2025,12,Vandalism,1,0,0,0,6,10
+825,Hassan,2022,1,Robbery,1,0,473729,0,10,7
+826,Shivamogga,2025,11,Cybercrime,1,0,0,0,11,2
+827,Kalaburagi,2024,10,Robbery,1,0,93741,0,7,7
+828,Mysuru,2020,12,Cybercrime,1,1,0,1,3,2
+829,Belagavi,2021,2,Cybercrime,1,1,0,1,6,2
+830,Mysuru,2025,9,Theft,1,1,453209,1,3,9
+831,Shivamogga,2021,9,Theft,2,0,735514,0,11,9
+832,Shivamogga,2024,3,Sexual Assault,1,0,0,0,11,8
+833,Mysuru,2022,9,Theft,1,0,157485,0,3,9
+834,Dharwad,2025,5,Drug Offence,1,1,0,1,8,3
+835,Belagavi,2021,10,Theft,1,1,304706,1,6,9
+836,Belagavi,2020,2,Assault,2,1,0,0.5,6,1
+837,Mysuru,2020,6,Cybercrime,1,1,0,1,3,2
+838,Bengaluru Urban,2021,12,Drug Offence,1,1,0,1,1,3
+839,Shivamogga,2023,2,Robbery,1,1,363810,1,11,7
+840,Hassan,2022,10,Theft,2,1,357401,0.5,10,9
+841,Dakshina Kannada,2022,2,Theft,2,1,433747,0.5,5,9
+842,Belagavi,2020,8,Assault,1,1,0,1,6,1
+843,Bengaluru Urban,2025,9,Theft,3,2,880632,0.667,1,9
+844,Shivamogga,2024,9,Cybercrime,1,1,0,1,11,2
+845,Dharwad,2022,6,Drug Offence,1,0,0,0,8,3
+846,Ballari,2023,12,Drug Offence,1,1,0,1,9,3
+847,Bengaluru Urban,2020,7,Kidnapping,1,0,0,0,1,5
+848,Ballari,2024,11,Theft,2,2,493602,1,9,9
+849,Kalaburagi,2023,5,Fraud,1,1,277482,1,7,4
+850,Mysuru,2021,7,Theft,1,0,295480,0,3,9
+851,Udupi,2021,7,Assault,1,1,0,1,12,1
+852,Udupi,2025,7,Kidnapping,1,1,0,1,12,5
+853,Kalaburagi,2021,9,Theft,2,0,230082,0,7,9
+854,Bengaluru Rural,2024,2,Theft,1,1,176587,1,2,9
+855,Bengaluru Rural,2021,6,Fraud,1,1,171119,1,2,4
+856,Dakshina Kannada,2020,3,Robbery,1,1,123053,1,5,7
+857,Bengaluru Rural,2021,9,Sexual Assault,1,1,0,1,2,8
+858,Bengaluru Urban,2021,2,Murder,1,0,0,0,1,6
+859,Bengaluru Urban,2020,6,Robbery,1,1,240528,1,1,7
+860,Kalaburagi,2021,5,Theft,1,1,449761,1,7,9
+861,Udupi,2025,1,Sexual Assault,1,1,0,1,12,8
+862,Mysuru,2023,12,Assault,1,0,0,0,3,1
+863,Bengaluru Urban,2021,3,Assault,1,0,0,0,1,1
+864,Kalaburagi,2020,8,Theft,1,1,321610,1,7,9
+865,Tumakuru,2024,10,Vandalism,1,0,0,0,4,10
+866,Mysuru,2025,1,Fraud,1,1,204743,1,3,4
+867,Bengaluru Rural,2023,8,Assault,1,1,0,1,2,1
+868,Hassan,2020,3,Cybercrime,1,0,0,0,10,2
+869,Kalaburagi,2021,9,Kidnapping,1,0,0,0,7,5
+870,Bengaluru Urban,2020,10,Fraud,1,1,496793,1,1,4
+871,Hassan,2025,12,Theft,1,1,103097,1,10,9
+872,Hassan,2023,3,Drug Offence,1,1,0,1,10,3
+873,Udupi,2025,3,Assault,1,1,0,1,12,1
+874,Kalaburagi,2021,12,Fraud,1,1,475527,1,7,4
+875,Dakshina Kannada,2024,10,Drug Offence,1,0,0,0,5,3
+876,Ballari,2023,7,Assault,1,1,0,1,9,1
+877,Kalaburagi,2021,11,Kidnapping,1,0,0,0,7,5
+878,Shivamogga,2025,4,Assault,1,1,0,1,11,1
+879,Bengaluru Urban,2022,6,Theft,1,1,54564,1,1,9
+880,Tumakuru,2020,6,Theft,1,0,268056,0,4,9
+881,Hassan,2021,12,Assault,1,0,0,0,10,1
+882,Dakshina Kannada,2024,11,Fraud,1,0,383077,0,5,4
+883,Hassan,2023,1,Theft,1,0,74210,0,10,9
+884,Kalaburagi,2024,10,Theft,3,1,1043711,0.333,7,9
+885,Belagavi,2024,7,Theft,1,0,366021,0,6,9
+886,Bengaluru Urban,2022,3,Robbery,2,1,519164,0.5,1,7
+887,Bengaluru Urban,2025,12,Theft,1,1,93370,1,1,9
+888,Dakshina Kannada,2022,1,Cybercrime,1,0,0,0,5,2
+889,Belagavi,2024,8,Drug Offence,1,0,0,0,6,3
+890,Mysuru,2022,4,Theft,1,0,352121,0,3,9
+891,Bengaluru Urban,2023,2,Cybercrime,1,0,0,0,1,2
+892,Tumakuru,2025,10,Theft,1,0,55004,0,4,9
+893,Ballari,2020,7,Robbery,1,1,342608,1,9,7
+894,Dakshina Kannada,2023,2,Fraud,1,0,121770,0,5,4
+895,Bengaluru Urban,2022,11,Kidnapping,1,0,0,0,1,5
+896,Hassan,2022,8,Robbery,1,0,401069,0,10,7
+897,Belagavi,2025,1,Robbery,1,1,295489,1,6,7
+898,Shivamogga,2021,8,Theft,1,1,88531,1,11,9
+899,Bengaluru Urban,2023,3,Robbery,1,0,26767,0,1,7
+900,Ballari,2022,6,Assault,1,1,0,1,9,1
+901,Mysuru,2020,3,Kidnapping,1,0,0,0,3,5
+902,Bengaluru Rural,2022,4,Theft,1,0,381742,0,2,9
+903,Tumakuru,2021,10,Assault,1,0,0,0,4,1
+904,Bengaluru Rural,2025,3,Murder,1,0,0,0,2,6
+905,Mysuru,2020,11,Theft,1,0,169892,0,3,9
+906,Dharwad,2024,10,Fraud,1,1,131390,1,8,4
+907,Udupi,2025,5,Theft,3,2,1088042,0.667,12,9
+908,Hassan,2024,6,Fraud,1,1,338414,1,10,4
+909,Kalaburagi,2022,4,Assault,1,0,0,0,7,1
+910,Bengaluru Rural,2022,9,Assault,1,1,0,1,2,1
+911,Ballari,2025,6,Theft,1,1,117930,1,9,9
+912,Dharwad,2024,8,Cybercrime,1,0,0,0,8,2
+913,Belagavi,2023,8,Cybercrime,1,1,0,1,6,2
+914,Kalaburagi,2025,12,Drug Offence,1,0,0,0,7,3
+915,Udupi,2022,5,Theft,1,1,323591,1,12,9
+916,Belagavi,2020,11,Assault,1,1,0,1,6,1
+917,Mysuru,2022,12,Theft,1,0,431298,0,3,9
+918,Bengaluru Rural,2020,9,Drug Offence,1,0,0,0,2,3
+919,Bengaluru Urban,2022,1,Cybercrime,1,0,0,0,1,2
+920,Dakshina Kannada,2024,9,Assault,1,0,0,0,5,1
+921,Bengaluru Urban,2022,10,Cybercrime,1,0,0,0,1,2
+922,Ballari,2021,10,Theft,1,0,366230,0,9,9
+923,Bengaluru Urban,2020,11,Sexual Assault,2,0,0,0,1,8
+924,Shivamogga,2023,10,Cybercrime,2,0,0,0,11,2
+925,Hassan,2025,12,Sexual Assault,1,1,0,1,10,8
+926,Tumakuru,2025,11,Fraud,1,0,407789,0,4,4
+927,Bengaluru Urban,2020,1,Drug Offence,1,1,0,1,1,3
+928,Udupi,2022,9,Drug Offence,2,1,0,0.5,12,3
+929,Tumakuru,2025,3,Theft,1,1,85572,1,4,9
+930,Kalaburagi,2023,2,Cybercrime,1,0,0,0,7,2
+931,Ballari,2020,4,Sexual Assault,1,0,0,0,9,8
+932,Tumakuru,2020,7,Theft,2,2,402702,1,4,9
+933,Belagavi,2020,11,Sexual Assault,1,0,0,0,6,8
+934,Hassan,2023,7,Drug Offence,1,0,0,0,10,3
+935,Belagavi,2024,5,Sexual Assault,1,1,0,1,6,8
+936,Kalaburagi,2025,1,Theft,2,0,615025,0,7,9
+937,Dakshina Kannada,2022,4,Robbery,1,0,74184,0,5,7
+938,Mysuru,2021,11,Drug Offence,1,0,0,0,3,3
+939,Shivamogga,2021,11,Sexual Assault,1,0,0,0,11,8
+940,Bengaluru Urban,2021,4,Theft,1,0,105973,0,1,9
+941,Ballari,2020,12,Assault,1,1,0,1,9,1
+942,Shivamogga,2025,12,Theft,1,0,354471,0,11,9
+943,Mysuru,2022,4,Robbery,1,0,36283,0,3,7
+944,Shivamogga,2025,9,Theft,2,2,335228,1,11,9
+945,Ballari,2020,11,Kidnapping,1,1,0,1,9,5
+946,Bengaluru Urban,2024,7,Theft,2,1,481384,0.5,1,9
+947,Hassan,2025,7,Fraud,1,1,466381,1,10,4
+948,Hassan,2022,9,Assault,1,0,0,0,10,1
+949,Tumakuru,2024,9,Cybercrime,1,0,0,0,4,2
+950,Hassan,2022,8,Theft,2,0,351491,0,10,9
+951,Udupi,2022,11,Theft,1,1,423076,1,12,9
+952,Dakshina Kannada,2023,12,Vandalism,1,0,0,0,5,10
+953,Hassan,2025,4,Robbery,1,0,192754,0,10,7
+954,Udupi,2022,11,Assault,1,1,0,1,12,1
+955,Udupi,2022,2,Theft,1,0,459419,0,12,9
+956,Udupi,2023,9,Drug Offence,1,1,0,1,12,3
+957,Hassan,2020,7,Cybercrime,1,0,0,0,10,2
+958,Shivamogga,2021,1,Robbery,1,0,335495,0,11,7
+959,Belagavi,2021,5,Fraud,1,0,179123,0,6,4
+960,Ballari,2025,11,Kidnapping,1,1,0,1,9,5
+961,Hassan,2024,1,Theft,1,1,401287,1,10,9
+962,Ballari,2025,7,Vandalism,1,0,0,0,9,10
+963,Mysuru,2025,6,Drug Offence,1,0,0,0,3,3
+964,Hassan,2020,1,Theft,2,0,541810,0,10,9
+965,Dharwad,2022,7,Drug Offence,1,0,0,0,8,3
+966,Dharwad,2024,8,Kidnapping,1,1,0,1,8,5
+967,Bengaluru Urban,2022,11,Theft,1,1,406616,1,1,9
+968,Belagavi,2023,1,Theft,2,1,330630,0.5,6,9
+969,Kalaburagi,2022,5,Drug Offence,1,0,0,0,7,3
+970,Shivamogga,2022,8,Theft,1,1,343398,1,11,9
+971,Mysuru,2021,5,Theft,1,0,188768,0,3,9
+972,Tumakuru,2021,4,Assault,1,1,0,1,4,1
+973,Hassan,2021,10,Fraud,1,0,323349,0,10,4
+974,Udupi,2022,6,Fraud,1,0,11983,0,12,4
+975,Dharwad,2020,11,Vandalism,2,0,0,0,8,10
+976,Ballari,2023,5,Robbery,1,1,175609,1,9,7
+977,Belagavi,2022,9,Assault,1,1,0,1,6,1
+978,Dakshina Kannada,2024,2,Robbery,1,1,492838,1,5,7
+979,Bengaluru Urban,2025,10,Cybercrime,1,0,0,0,1,2
+980,Hassan,2023,2,Robbery,1,0,479876,0,10,7
+981,Shivamogga,2023,12,Theft,1,1,361059,1,11,9
+982,Bengaluru Urban,2023,8,Drug Offence,1,0,0,0,1,3
+983,Hassan,2023,1,Assault,1,1,0,1,10,1
+984,Shivamogga,2023,2,Cybercrime,1,1,0,1,11,2
+985,Dakshina Kannada,2020,12,Assault,1,0,0,0,5,1
+986,Udupi,2020,6,Assault,1,1,0,1,12,1
+987,Mysuru,2022,3,Assault,1,1,0,1,3,1
+988,Bengaluru Urban,2023,6,Assault,2,1,0,0.5,1,1
+989,Kalaburagi,2022,11,Theft,3,1,621428,0.333,7,9
+990,Bengaluru Urban,2021,1,Assault,1,1,0,1,1,1
+991,Hassan,2021,7,Drug Offence,1,0,0,0,10,3
+992,Kalaburagi,2020,7,Cybercrime,1,0,0,0,7,2
+993,Bengaluru Urban,2025,8,Murder,2,1,0,0.5,1,6
+994,Belagavi,2024,8,Fraud,1,0,342811,0,6,4
+995,Belagavi,2024,5,Theft,2,0,394331,0,6,9
+996,Kalaburagi,2024,5,Theft,1,0,312876,0,7,9
+997,Udupi,2024,8,Vandalism,1,0,0,0,12,10
+998,Belagavi,2022,4,Theft,2,0,499611,0,6,9
+999,Belagavi,2024,1,Drug Offence,1,1,0,1,6,3
+1000,Ballari,2022,3,Assault,1,1,0,1,9,1
+1001,Shivamogga,2025,8,Fraud,1,0,272272,0,11,4
+1002,Kalaburagi,2023,3,Assault,1,1,0,1,7,1
+1003,Bengaluru Rural,2025,11,Theft,1,0,267798,0,2,9
+1004,Dharwad,2020,6,Robbery,1,0,247798,0,8,7
+1005,Shivamogga,2021,2,Robbery,1,0,1988,0,11,7
+1006,Belagavi,2023,6,Theft,1,0,446322,0,6,9
+1007,Dharwad,2025,3,Theft,2,1,591560,0.5,8,9
+1008,Ballari,2020,7,Sexual Assault,1,0,0,0,9,8
+1009,Hassan,2025,3,Theft,1,1,210877,1,10,9
+1010,Mysuru,2021,5,Fraud,1,1,291292,1,3,4
+1011,Udupi,2023,5,Theft,1,0,346099,0,12,9
+1012,Bengaluru Rural,2022,12,Theft,2,1,252796,0.5,2,9
+1013,Tumakuru,2025,4,Assault,2,1,0,0.5,4,1
+1014,Shivamogga,2022,11,Fraud,1,1,260332,1,11,4
+1015,Bengaluru Rural,2025,6,Theft,1,1,116,1,2,9
+1016,Mysuru,2020,2,Drug Offence,1,0,0,0,3,3
+1017,Shivamogga,2025,5,Kidnapping,1,1,0,1,11,5
+1018,Ballari,2022,7,Theft,2,1,749396,0.5,9,9
+1019,Udupi,2025,3,Theft,2,1,869890,0.5,12,9
+1020,Dharwad,2025,9,Assault,1,1,0,1,8,1
+1021,Mysuru,2023,1,Vandalism,1,0,0,0,3,10
+1022,Kalaburagi,2022,12,Robbery,1,1,68004,1,7,7
+1023,Udupi,2025,11,Cybercrime,1,0,0,0,12,2
+1024,Bengaluru Urban,2024,5,Robbery,1,0,120827,0,1,7
+1025,Kalaburagi,2022,12,Assault,1,1,0,1,7,1
+1026,Shivamogga,2020,8,Theft,1,0,156777,0,11,9
+1027,Udupi,2022,8,Assault,1,0,0,0,12,1
+1028,Tumakuru,2022,2,Assault,1,1,0,1,4,1
+1029,Hassan,2025,6,Drug Offence,1,1,0,1,10,3
+1030,Belagavi,2025,9,Assault,1,0,0,0,6,1
+1031,Hassan,2022,12,Fraud,1,1,241784,1,10,4
+1032,Belagavi,2021,5,Theft,2,0,156060,0,6,9
+1033,Belagavi,2022,9,Theft,2,0,328298,0,6,9
+1034,Bengaluru Urban,2023,5,Sexual Assault,1,0,0,0,1,8
+1035,Belagavi,2024,3,Theft,1,1,264473,1,6,9
+1036,Dharwad,2020,11,Drug Offence,1,1,0,1,8,3
+1037,Bengaluru Urban,2025,9,Fraud,1,1,151050,1,1,4
+1038,Dharwad,2023,1,Cybercrime,1,0,0,0,8,2
+1039,Shivamogga,2025,6,Robbery,1,1,327189,1,11,7
+1040,Belagavi,2024,1,Robbery,1,1,217454,1,6,7
+1041,Bengaluru Urban,2022,9,Drug Offence,1,1,0,1,1,3
+1042,Kalaburagi,2020,6,Fraud,1,0,262025,0,7,4
+1043,Hassan,2025,10,Assault,1,1,0,1,10,1
+1044,Bengaluru Rural,2022,8,Drug Offence,1,1,0,1,2,3
+1045,Mysuru,2025,7,Drug Offence,1,0,0,0,3,3
+1046,Udupi,2020,2,Robbery,1,0,346705,0,12,7
+1047,Tumakuru,2022,12,Cybercrime,1,1,0,1,4,2
+1048,Hassan,2025,8,Vandalism,1,0,0,0,10,10
+1049,Bengaluru Rural,2023,12,Theft,1,1,131103,1,2,9
+1050,Udupi,2020,3,Assault,1,0,0,0,12,1
+1051,Ballari,2022,4,Sexual Assault,1,0,0,0,9,8
+1052,Bengaluru Urban,2021,6,Theft,1,0,313837,0,1,9
+1053,Belagavi,2021,1,Cybercrime,1,1,0,1,6,2
+1054,Bengaluru Urban,2021,7,Assault,2,2,0,1,1,1
+1055,Mysuru,2023,12,Robbery,1,0,170846,0,3,7
+1056,Tumakuru,2020,8,Robbery,1,0,1436,0,4,7
+1057,Dharwad,2024,12,Robbery,1,0,216145,0,8,7
+1058,Bengaluru Rural,2020,5,Assault,1,1,0,1,2,1
+1059,Tumakuru,2022,9,Vandalism,2,1,0,0.5,4,10
+1060,Udupi,2021,1,Fraud,1,0,316830,0,12,4
+1061,Tumakuru,2020,8,Theft,1,0,341028,0,4,9
+1062,Ballari,2023,5,Theft,2,0,518587,0,9,9
+1063,Ballari,2025,9,Theft,1,1,227548,1,9,9
+1064,Kalaburagi,2021,4,Robbery,1,0,240943,0,7,7
+1065,Belagavi,2024,1,Theft,3,0,893995,0,6,9
+1066,Hassan,2025,8,Assault,1,0,0,0,10,1
+1067,Tumakuru,2020,6,Robbery,1,1,418299,1,4,7
+1068,Bengaluru Rural,2021,6,Assault,2,2,0,1,2,1
+1069,Bengaluru Urban,2025,7,Robbery,1,0,167386,0,1,7
+1070,Belagavi,2021,7,Assault,1,0,0,0,6,1
+1071,Shivamogga,2025,3,Theft,1,1,480179,1,11,9
+1072,Bengaluru Urban,2025,4,Theft,2,1,282074,0.5,1,9
+1073,Udupi,2021,8,Drug Offence,1,0,0,0,12,3
+1074,Dakshina Kannada,2020,7,Assault,2,2,0,1,5,1
+1075,Bengaluru Urban,2021,11,Drug Offence,1,1,0,1,1,3
+1076,Mysuru,2020,2,Assault,1,0,0,0,3,1
+1077,Shivamogga,2023,9,Theft,1,0,299069,0,11,9
+1078,Bengaluru Urban,2025,10,Drug Offence,1,0,0,0,1,3
+1079,Belagavi,2020,7,Sexual Assault,1,1,0,1,6,8
+1080,Bengaluru Urban,2022,2,Sexual Assault,1,0,0,0,1,8
+1081,Kalaburagi,2025,5,Theft,2,1,561594,0.5,7,9
+1082,Dharwad,2023,4,Cybercrime,1,1,0,1,8,2
+1083,Dakshina Kannada,2025,12,Murder,1,0,0,0,5,6
+1084,Mysuru,2024,4,Fraud,1,0,481618,0,3,4
+1085,Tumakuru,2022,8,Theft,1,1,163819,1,4,9
+1086,Bengaluru Urban,2020,1,Assault,1,0,0,0,1,1
+1087,Tumakuru,2023,8,Assault,1,1,0,1,4,1
+1088,Mysuru,2023,9,Drug Offence,1,0,0,0,3,3
+1089,Dharwad,2020,2,Theft,2,0,468265,0,8,9
+1090,Mysuru,2022,6,Murder,1,0,0,0,3,6
+1091,Bengaluru Rural,2024,12,Theft,1,0,441063,0,2,9
+1092,Hassan,2020,8,Robbery,1,1,420041,1,10,7
+1093,Mysuru,2023,2,Theft,1,0,163256,0,3,9
+1094,Bengaluru Rural,2020,9,Theft,1,0,176280,0,2,9
+1095,Shivamogga,2025,7,Sexual Assault,1,0,0,0,11,8
+1096,Udupi,2023,2,Fraud,1,1,338270,1,12,4
+1097,Ballari,2023,12,Vandalism,1,0,0,0,9,10
+1098,Dharwad,2024,8,Drug Offence,1,0,0,0,8,3
+1099,Bengaluru Urban,2023,6,Drug Offence,1,1,0,1,1,3
+1100,Bengaluru Rural,2020,2,Assault,1,0,0,0,2,1
+1101,Shivamogga,2022,11,Vandalism,1,0,0,0,11,10
+1102,Dakshina Kannada,2021,10,Robbery,1,0,71250,0,5,7
+1103,Kalaburagi,2021,11,Theft,1,0,103709,0,7,9
+1104,Ballari,2022,5,Theft,1,0,34844,0,9,9
+1105,Ballari,2022,4,Theft,2,1,450408,0.5,9,9
+1106,Bengaluru Rural,2021,5,Robbery,1,1,216576,1,2,7
+1107,Belagavi,2021,9,Theft,2,2,156707,1,6,9
+1108,Belagavi,2023,9,Assault,2,0,0,0,6,1
+1109,Bengaluru Rural,2025,4,Robbery,1,1,223943,1,2,7
+1110,Hassan,2023,5,Sexual Assault,1,0,0,0,10,8
+1111,Bengaluru Rural,2022,11,Theft,1,0,396186,0,2,9
+1112,Mysuru,2025,4,Fraud,1,1,206696,1,3,4
+1113,Tumakuru,2023,5,Drug Offence,1,0,0,0,4,3
+1114,Dakshina Kannada,2023,12,Robbery,1,0,458270,0,5,7
+1115,Dakshina Kannada,2023,10,Drug Offence,1,0,0,0,5,3
+1116,Dakshina Kannada,2023,12,Cybercrime,1,1,0,1,5,2
+1117,Udupi,2022,3,Vandalism,1,1,0,1,12,10
+1118,Mysuru,2022,10,Theft,1,1,189368,1,3,9
+1119,Bengaluru Urban,2020,9,Assault,1,1,0,1,1,1
+1120,Mysuru,2020,12,Murder,1,0,0,0,3,6
+1121,Bengaluru Urban,2021,9,Cybercrime,1,0,0,0,1,2
+1122,Bengaluru Urban,2020,11,Theft,2,1,426236,0.5,1,9
+1123,Ballari,2023,10,Robbery,1,1,216164,1,9,7
+1124,Dakshina Kannada,2022,4,Cybercrime,1,0,0,0,5,2
+1125,Kalaburagi,2023,1,Assault,1,0,0,0,7,1
+1126,Udupi,2025,2,Sexual Assault,1,0,0,0,12,8
+1127,Mysuru,2023,11,Assault,1,0,0,0,3,1
+1128,Belagavi,2024,2,Fraud,1,0,425301,0,6,4
+1129,Bengaluru Urban,2024,10,Drug Offence,1,1,0,1,1,3
+1130,Ballari,2022,3,Vandalism,1,0,0,0,9,10
+1131,Belagavi,2022,11,Fraud,1,0,89307,0,6,4
+1132,Bengaluru Urban,2022,5,Theft,1,1,37261,1,1,9
+1133,Ballari,2024,5,Cybercrime,1,0,0,0,9,2
+1134,Kalaburagi,2024,11,Kidnapping,1,0,0,0,7,5
+1135,Bengaluru Urban,2023,3,Assault,2,1,0,0.5,1,1
+1136,Shivamogga,2024,8,Robbery,2,1,443827,0.5,11,7
+1137,Mysuru,2021,10,Assault,1,1,0,1,3,1
+1138,Dakshina Kannada,2023,11,Assault,1,1,0,1,5,1
+1139,Shivamogga,2024,11,Robbery,2,0,594179,0,11,7
+1140,Dharwad,2023,6,Theft,1,0,275361,0,8,9
+1141,Mysuru,2021,1,Assault,2,2,0,1,3,1
+1142,Hassan,2023,1,Fraud,1,0,314703,0,10,4
+1143,Shivamogga,2020,4,Cybercrime,1,1,0,1,11,2
+1144,Bengaluru Rural,2025,4,Drug Offence,1,1,0,1,2,3
+1145,Dakshina Kannada,2022,1,Assault,1,0,0,0,5,1
+1146,Ballari,2021,6,Theft,1,1,314286,1,9,9
+1147,Bengaluru Urban,2020,12,Kidnapping,1,0,0,0,1,5
+1148,Tumakuru,2022,10,Robbery,1,1,3908,1,4,7
+1149,Dharwad,2022,9,Robbery,1,1,480248,1,8,7
+1150,Bengaluru Urban,2024,9,Sexual Assault,1,1,0,1,1,8
+1151,Ballari,2023,3,Cybercrime,1,1,0,1,9,2
+1152,Mysuru,2023,7,Robbery,1,1,202692,1,3,7
+1153,Belagavi,2020,6,Fraud,1,1,142631,1,6,4
+1154,Udupi,2023,6,Robbery,1,0,28539,0,12,7
+1155,Dakshina Kannada,2025,2,Drug Offence,1,1,0,1,5,3
+1156,Bengaluru Urban,2022,5,Cybercrime,1,0,0,0,1,2
+1157,Mysuru,2023,9,Theft,1,1,381501,1,3,9
+1158,Tumakuru,2024,10,Theft,1,1,25269,1,4,9
+1159,Shivamogga,2025,10,Robbery,1,0,356610,0,11,7
+1160,Dakshina Kannada,2021,7,Assault,1,1,0,1,5,1
+1161,Bengaluru Urban,2024,10,Theft,1,0,333239,0,1,9
+1162,Bengaluru Urban,2025,3,Cybercrime,1,1,0,1,1,2
+1163,Ballari,2021,4,Robbery,1,1,475064,1,9,7
+1164,Hassan,2022,2,Theft,1,1,228931,1,10,9
+1165,Hassan,2021,11,Robbery,2,1,631663,0.5,10,7
+1166,Hassan,2020,9,Theft,1,1,216457,1,10,9
+1167,Dharwad,2022,9,Theft,2,2,707397,1,8,9
+1168,Kalaburagi,2020,6,Assault,1,0,0,0,7,1
+1169,Dharwad,2022,3,Assault,1,0,0,0,8,1
+1170,Hassan,2021,5,Theft,2,1,732621,0.5,10,9
+1171,Bengaluru Urban,2021,9,Theft,1,1,463633,1,1,9
+1172,Belagavi,2025,1,Kidnapping,1,1,0,1,6,5
+1173,Ballari,2025,8,Fraud,2,0,553714,0,9,4
+1174,Tumakuru,2024,10,Assault,1,0,0,0,4,1
+1175,Tumakuru,2025,2,Cybercrime,1,1,0,1,4,2
+1176,Bengaluru Rural,2022,3,Theft,1,1,219986,1,2,9
+1177,Dakshina Kannada,2021,4,Robbery,1,1,466306,1,5,7
+1178,Mysuru,2025,12,Drug Offence,1,0,0,0,3,3
+1179,Mysuru,2024,5,Sexual Assault,1,0,0,0,3,8
+1180,Shivamogga,2022,9,Fraud,1,1,93020,1,11,4
+1181,Shivamogga,2022,3,Theft,1,1,161763,1,11,9
+1182,Bengaluru Urban,2021,4,Assault,1,1,0,1,1,1
+1183,Bengaluru Urban,2024,11,Fraud,1,1,23121,1,1,4
+1184,Mysuru,2025,9,Assault,2,0,0,0,3,1
+1185,Udupi,2025,8,Cybercrime,1,1,0,1,12,2
+1186,Hassan,2023,12,Sexual Assault,1,0,0,0,10,8
+1187,Mysuru,2023,10,Assault,1,1,0,1,3,1
+1188,Bengaluru Rural,2023,2,Assault,1,0,0,0,2,1
+1189,Shivamogga,2024,9,Robbery,1,0,81112,0,11,7
+1190,Shivamogga,2025,2,Fraud,1,1,294968,1,11,4
+1191,Belagavi,2022,6,Assault,1,0,0,0,6,1
+1192,Udupi,2022,6,Sexual Assault,1,1,0,1,12,8
+1193,Kalaburagi,2025,12,Theft,3,1,425066,0.333,7,9
+1194,Bengaluru Rural,2022,2,Theft,1,1,411810,1,2,9
+1195,Bengaluru Rural,2022,10,Assault,1,0,0,0,2,1
+1196,Shivamogga,2023,4,Theft,1,1,158942,1,11,9
+1197,Belagavi,2020,10,Theft,1,1,392487,1,6,9
+1198,Belagavi,2021,6,Sexual Assault,1,0,0,0,6,8
+1199,Tumakuru,2025,6,Cybercrime,1,0,0,0,4,2
+1200,Mysuru,2025,6,Fraud,2,2,509767,1,3,4
+1201,Bengaluru Urban,2023,5,Fraud,1,1,62609,1,1,4
+1202,Dharwad,2021,6,Vandalism,1,0,0,0,8,10
+1203,Kalaburagi,2022,1,Assault,1,1,0,1,7,1
+1204,Udupi,2022,9,Theft,1,1,101003,1,12,9
+1205,Ballari,2023,3,Assault,2,1,0,0.5,9,1
+1206,Dharwad,2024,4,Robbery,1,1,6745,1,8,7
+1207,Dharwad,2024,5,Robbery,1,0,146738,0,8,7
+1208,Bengaluru Urban,2023,2,Drug Offence,1,0,0,0,1,3
+1209,Belagavi,2023,11,Robbery,1,1,65956,1,6,7
+1210,Dakshina Kannada,2025,8,Fraud,1,1,307810,1,5,4
+1211,Bengaluru Rural,2023,4,Assault,1,0,0,0,2,1
+1212,Bengaluru Urban,2021,1,Drug Offence,1,0,0,0,1,3
+1213,Udupi,2024,4,Assault,1,0,0,0,12,1
+1214,Shivamogga,2020,9,Kidnapping,1,0,0,0,11,5
+1215,Kalaburagi,2020,1,Robbery,1,1,213929,1,7,7
+1216,Hassan,2023,9,Theft,1,1,469020,1,10,9
+1217,Bengaluru Urban,2021,5,Drug Offence,1,1,0,1,1,3
+1218,Mysuru,2023,12,Theft,1,0,473427,0,3,9
+1219,Kalaburagi,2024,5,Fraud,1,1,295790,1,7,4
+1220,Dakshina Kannada,2020,3,Cybercrime,1,1,0,1,5,2
+1221,Ballari,2020,11,Theft,1,0,229488,0,9,9
+1222,Shivamogga,2020,5,Assault,1,0,0,0,11,1
+1223,Bengaluru Urban,2025,12,Robbery,1,0,33630,0,1,7
+1224,Kalaburagi,2023,7,Theft,1,0,76659,0,7,9
+1225,Udupi,2021,4,Assault,1,0,0,0,12,1
+1226,Ballari,2024,2,Vandalism,1,1,0,1,9,10
+1227,Mysuru,2021,3,Assault,1,0,0,0,3,1
+1228,Udupi,2023,11,Assault,1,0,0,0,12,1
+1229,Mysuru,2022,7,Kidnapping,1,1,0,1,3,5
+1230,Hassan,2025,12,Cybercrime,1,0,0,0,10,2
+1231,Bengaluru Urban,2024,4,Robbery,1,1,31290,1,1,7
+1232,Tumakuru,2024,6,Robbery,1,1,123530,1,4,7
+1233,Ballari,2021,1,Theft,1,1,373990,1,9,9
+1234,Dharwad,2025,11,Theft,2,1,213305,0.5,8,9
+1235,Hassan,2020,11,Robbery,1,0,9220,0,10,7
+1236,Udupi,2021,7,Cybercrime,1,1,0,1,12,2
+1237,Dakshina Kannada,2025,11,Theft,1,1,323247,1,5,9
+1238,Belagavi,2024,10,Cybercrime,1,1,0,1,6,2
+1239,Bengaluru Urban,2023,4,Theft,1,1,266868,1,1,9
+1240,Tumakuru,2024,2,Theft,1,0,24784,0,4,9
+1241,Bengaluru Urban,2023,9,Assault,1,0,0,0,1,1
+1242,Bengaluru Urban,2022,11,Assault,1,0,0,0,1,1
+1243,Dakshina Kannada,2024,6,Sexual Assault,1,0,0,0,5,8
+1244,Kalaburagi,2021,7,Theft,1,0,496578,0,7,9
+1245,Kalaburagi,2025,2,Assault,2,1,0,0.5,7,1
+1246,Bengaluru Urban,2023,6,Theft,1,1,218633,1,1,9
+1247,Kalaburagi,2025,5,Vandalism,2,0,0,0,7,10
+1248,Shivamogga,2025,10,Theft,2,0,581814,0,11,9
+1249,Hassan,2020,10,Assault,1,1,0,1,10,1
+1250,Bengaluru Urban,2022,5,Drug Offence,1,0,0,0,1,3
+1251,Dakshina Kannada,2020,1,Drug Offence,1,1,0,1,5,3
+1252,Mysuru,2021,4,Sexual Assault,1,0,0,0,3,8
+1253,Ballari,2023,8,Sexual Assault,1,1,0,1,9,8
+1254,Ballari,2020,3,Theft,1,1,357604,1,9,9
+1255,Bengaluru Urban,2025,1,Assault,1,0,0,0,1,1
+1256,Bengaluru Urban,2024,2,Assault,2,2,0,1,1,1
+1257,Shivamogga,2021,12,Fraud,1,0,181318,0,11,4
+1258,Dharwad,2020,11,Cybercrime,1,0,0,0,8,2
+1259,Udupi,2021,10,Vandalism,1,1,0,1,12,10
+1260,Bengaluru Rural,2025,1,Fraud,1,1,232117,1,2,4
+1261,Shivamogga,2022,10,Cybercrime,1,1,0,1,11,2
+1262,Belagavi,2022,6,Robbery,1,1,50967,1,6,7
+1263,Udupi,2024,10,Theft,1,1,274561,1,12,9
+1264,Dakshina Kannada,2023,8,Cybercrime,2,0,0,0,5,2
+1265,Bengaluru Rural,2023,12,Drug Offence,1,0,0,0,2,3
+1266,Mysuru,2024,1,Robbery,1,1,463739,1,3,7
+1267,Dakshina Kannada,2025,10,Fraud,1,1,102836,1,5,4
+1268,Dharwad,2022,9,Cybercrime,1,0,0,0,8,2
+1269,Ballari,2021,10,Fraud,1,0,454844,0,9,4
+1270,Dakshina Kannada,2022,5,Assault,1,1,0,1,5,1
+1271,Dharwad,2020,7,Vandalism,1,0,0,0,8,10
+1272,Tumakuru,2021,7,Kidnapping,1,0,0,0,4,5
+1273,Bengaluru Rural,2025,11,Kidnapping,1,0,0,0,2,5
+1274,Dakshina Kannada,2024,2,Assault,1,1,0,1,5,1
+1275,Mysuru,2023,6,Vandalism,1,0,0,0,3,10
+1276,Hassan,2024,8,Fraud,1,0,33891,0,10,4
+1277,Belagavi,2020,12,Vandalism,1,0,0,0,6,10
+1278,Udupi,2020,12,Murder,1,0,0,0,12,6
+1279,Udupi,2023,8,Theft,2,1,222747,0.5,12,9
+1280,Bengaluru Urban,2023,12,Theft,2,1,373939,0.5,1,9
+1281,Bengaluru Urban,2021,4,Kidnapping,1,1,0,1,1,5
+1282,Ballari,2021,6,Assault,1,1,0,1,9,1
+1283,Dakshina Kannada,2020,10,Kidnapping,1,1,0,1,5,5
+1284,Dakshina Kannada,2023,7,Theft,1,1,204508,1,5,9
+1285,Ballari,2023,7,Sexual Assault,1,0,0,0,9,8
+1286,Bengaluru Rural,2022,1,Robbery,1,1,246921,1,2,7
+1287,Hassan,2025,8,Theft,1,0,378763,0,10,9
+1288,Kalaburagi,2021,10,Robbery,1,0,3010,0,7,7
+1289,Ballari,2024,1,Theft,1,1,380619,1,9,9
+1290,Belagavi,2023,12,Robbery,1,0,466433,0,6,7
+1291,Shivamogga,2022,3,Robbery,1,0,95062,0,11,7
+1292,Dakshina Kannada,2025,6,Robbery,1,0,48828,0,5,7
+1293,Dakshina Kannada,2024,5,Kidnapping,1,1,0,1,5,5
+1294,Bengaluru Urban,2020,9,Cybercrime,1,0,0,0,1,2
+1295,Dakshina Kannada,2025,4,Robbery,1,1,459686,1,5,7
+1296,Shivamogga,2024,6,Cybercrime,2,2,0,1,11,2
+1297,Ballari,2024,10,Vandalism,1,0,0,0,9,10
+1298,Hassan,2020,2,Fraud,1,0,469088,0,10,4
+1299,Belagavi,2021,11,Theft,1,1,351931,1,6,9
+1300,Shivamogga,2022,3,Fraud,1,0,12601,0,11,4
+1301,Hassan,2024,12,Sexual Assault,1,0,0,0,10,8
+1302,Shivamogga,2023,8,Theft,1,0,80172,0,11,9
+1303,Ballari,2022,9,Drug Offence,1,0,0,0,9,3
+1304,Dharwad,2020,7,Cybercrime,1,0,0,0,8,2
+1305,Kalaburagi,2022,9,Robbery,1,0,114050,0,7,7
+1306,Hassan,2025,6,Sexual Assault,1,0,0,0,10,8
+1307,Hassan,2022,1,Theft,1,1,230263,1,10,9
+1308,Hassan,2021,5,Cybercrime,1,1,0,1,10,2
+1309,Dakshina Kannada,2023,9,Assault,1,1,0,1,5,1
+1310,Shivamogga,2022,6,Fraud,1,0,232911,0,11,4
+1311,Ballari,2025,6,Cybercrime,2,2,0,1,9,2
+1312,Bengaluru Urban,2024,10,Assault,3,1,0,0.333,1,1
+1313,Mysuru,2020,1,Fraud,1,1,37654,1,3,4
+1314,Mysuru,2025,6,Cybercrime,1,1,0,1,3,2
+1315,Bengaluru Urban,2023,11,Theft,2,0,605099,0,1,9
+1316,Tumakuru,2022,2,Drug Offence,1,0,0,0,4,3
+1317,Bengaluru Rural,2025,9,Cybercrime,1,0,0,0,2,2
+1318,Tumakuru,2020,9,Drug Offence,1,0,0,0,4,3
+1319,Hassan,2023,12,Theft,1,0,399927,0,10,9
+1320,Dharwad,2022,3,Kidnapping,1,0,0,0,8,5
+1321,Hassan,2021,12,Theft,1,0,19489,0,10,9
+1322,Dakshina Kannada,2023,4,Assault,1,1,0,1,5,1
+1323,Ballari,2020,8,Vandalism,1,1,0,1,9,10
+1324,Dharwad,2020,3,Assault,1,1,0,1,8,1
+1325,Bengaluru Urban,2023,2,Vandalism,1,0,0,0,1,10
+1326,Bengaluru Rural,2023,7,Cybercrime,1,0,0,0,2,2
+1327,Belagavi,2022,8,Robbery,1,0,95482,0,6,7
+1328,Hassan,2025,5,Fraud,1,1,230844,1,10,4
+1329,Udupi,2021,4,Drug Offence,1,1,0,1,12,3
+1330,Dharwad,2022,4,Assault,1,0,0,0,8,1
+1331,Ballari,2022,2,Drug Offence,1,0,0,0,9,3
+1332,Hassan,2025,11,Theft,1,1,439658,1,10,9
+1333,Belagavi,2024,6,Theft,1,0,142205,0,6,9
+1334,Dharwad,2024,6,Sexual Assault,1,1,0,1,8,8
+1335,Dakshina Kannada,2022,2,Assault,1,0,0,0,5,1
+1336,Bengaluru Rural,2023,4,Kidnapping,1,0,0,0,2,5
+1337,Kalaburagi,2020,2,Theft,1,0,124842,0,7,9
+1338,Udupi,2025,5,Assault,1,1,0,1,12,1
+1339,Hassan,2025,1,Robbery,1,0,183553,0,10,7
+1340,Dharwad,2024,6,Drug Offence,1,0,0,0,8,3
+1341,Udupi,2021,12,Fraud,1,0,46677,0,12,4
+1342,Shivamogga,2021,8,Robbery,1,1,494337,1,11,7
+1343,Bengaluru Rural,2021,1,Kidnapping,1,0,0,0,2,5
+1344,Mysuru,2022,1,Theft,1,1,179505,1,3,9
+1345,Tumakuru,2024,9,Assault,1,0,0,0,4,1
+1346,Dharwad,2021,7,Fraud,1,1,39066,1,8,4
+1347,Hassan,2020,1,Assault,1,1,0,1,10,1
+1348,Belagavi,2025,6,Robbery,1,1,379344,1,6,7
+1349,Mysuru,2025,10,Assault,1,1,0,1,3,1
+1350,Dharwad,2023,8,Drug Offence,1,0,0,0,8,3
+1351,Bengaluru Rural,2023,9,Vandalism,1,1,0,1,2,10
+1352,Ballari,2020,4,Assault,1,0,0,0,9,1
+1353,Dharwad,2021,6,Cybercrime,1,1,0,1,8,2
+1354,Bengaluru Rural,2022,12,Assault,1,1,0,1,2,1
+1355,Udupi,2024,2,Robbery,1,0,418849,0,12,7
+1356,Bengaluru Urban,2020,6,Theft,1,1,280750,1,1,9
+1357,Kalaburagi,2024,3,Robbery,1,1,406785,1,7,7
+1358,Kalaburagi,2020,6,Murder,1,1,0,1,7,6
+1359,Dharwad,2023,2,Cybercrime,1,0,0,0,8,2
+1360,Shivamogga,2020,1,Vandalism,1,0,0,0,11,10
+1361,Ballari,2022,9,Assault,2,2,0,1,9,1
+1362,Hassan,2021,6,Assault,1,1,0,1,10,1
+1363,Bengaluru Rural,2022,5,Robbery,1,1,61224,1,2,7
+1364,Shivamogga,2025,6,Cybercrime,1,0,0,0,11,2
+1365,Mysuru,2023,6,Drug Offence,1,1,0,1,3,3
+1366,Ballari,2021,7,Cybercrime,1,0,0,0,9,2
+1367,Mysuru,2024,5,Robbery,1,1,24159,1,3,7
+1368,Belagavi,2021,8,Fraud,1,0,51206,0,6,4
+1369,Udupi,2021,12,Cybercrime,1,0,0,0,12,2
+1370,Bengaluru Rural,2021,8,Vandalism,1,1,0,1,2,10
+1371,Mysuru,2025,5,Assault,1,0,0,0,3,1
+1372,Bengaluru Urban,2024,12,Fraud,1,0,198914,0,1,4
+1373,Kalaburagi,2023,2,Robbery,1,0,469666,0,7,7
+1374,Tumakuru,2025,2,Fraud,1,0,41391,0,4,4
+1375,Bengaluru Urban,2025,9,Murder,1,1,0,1,1,6
+1376,Kalaburagi,2025,8,Robbery,1,1,23220,1,7,7
+1377,Dakshina Kannada,2021,10,Assault,1,1,0,1,5,1
+1378,Dharwad,2021,12,Sexual Assault,1,0,0,0,8,8
+1379,Ballari,2024,11,Vandalism,1,1,0,1,9,10
+1380,Bengaluru Urban,2025,8,Robbery,1,0,415935,0,1,7
+1381,Kalaburagi,2020,11,Vandalism,1,0,0,0,7,10
+1382,Bengaluru Urban,2021,7,Sexual Assault,1,1,0,1,1,8
+1383,Dharwad,2024,8,Vandalism,1,0,0,0,8,10
+1384,Kalaburagi,2020,7,Robbery,1,0,182380,0,7,7
+1385,Ballari,2025,9,Assault,1,0,0,0,9,1
+1386,Shivamogga,2021,4,Drug Offence,1,1,0,1,11,3
+1387,Ballari,2020,8,Sexual Assault,1,0,0,0,9,8
+1388,Mysuru,2024,6,Drug Offence,1,1,0,1,3,3
+1389,Kalaburagi,2024,6,Murder,1,0,0,0,7,6
+1390,Belagavi,2020,1,Fraud,1,0,327060,0,6,4
+1391,Bengaluru Urban,2023,9,Sexual Assault,1,1,0,1,1,8
+1392,Belagavi,2020,2,Robbery,1,0,42268,0,6,7
+1393,Bengaluru Urban,2024,3,Vandalism,1,0,0,0,1,10
+1394,Tumakuru,2020,12,Assault,1,0,0,0,4,1
+1395,Belagavi,2023,2,Sexual Assault,1,1,0,1,6,8
+1396,Ballari,2022,9,Murder,1,1,0,1,9,6
+1397,Udupi,2021,9,Drug Offence,1,1,0,1,12,3
+1398,Ballari,2025,9,Robbery,1,0,77192,0,9,7
+1399,Shivamogga,2025,3,Assault,1,0,0,0,11,1
+1400,Kalaburagi,2025,9,Assault,1,0,0,0,7,1
+1401,Kalaburagi,2024,3,Theft,1,0,349084,0,7,9
+1402,Bengaluru Rural,2025,12,Theft,1,0,288872,0,2,9
+1403,Mysuru,2024,3,Theft,2,1,16860,0.5,3,9
+1404,Udupi,2023,5,Murder,1,0,0,0,12,6
+1405,Hassan,2020,11,Assault,1,0,0,0,10,1
+1406,Hassan,2023,11,Cybercrime,1,0,0,0,10,2
+1407,Mysuru,2025,4,Theft,1,0,484523,0,3,9
+1408,Tumakuru,2025,11,Cybercrime,1,1,0,1,4,2
+1409,Dharwad,2020,5,Fraud,1,1,186446,1,8,4
+1410,Shivamogga,2022,3,Assault,1,0,0,0,11,1
+1411,Hassan,2024,1,Drug Offence,1,0,0,0,10,3
+1412,Kalaburagi,2022,8,Sexual Assault,1,0,0,0,7,8
+1413,Hassan,2021,2,Theft,2,0,395141,0,10,9
+1414,Shivamogga,2022,7,Theft,1,0,481886,0,11,9
+1415,Bengaluru Urban,2022,6,Robbery,1,1,10774,1,1,7
+1416,Bengaluru Rural,2024,5,Fraud,1,1,113985,1,2,4
+1417,Bengaluru Urban,2024,12,Assault,1,1,0,1,1,1
+1418,Shivamogga,2025,9,Assault,1,1,0,1,11,1
+1419,Belagavi,2025,1,Theft,1,1,339528,1,6,9
+1420,Belagavi,2024,4,Fraud,1,1,412035,1,6,4
+1421,Kalaburagi,2021,11,Vandalism,1,0,0,0,7,10
+1422,Bengaluru Urban,2021,10,Drug Offence,2,2,0,1,1,3
+1423,Bengaluru Rural,2023,1,Assault,1,0,0,0,2,1
+1424,Bengaluru Urban,2022,7,Fraud,1,0,46490,0,1,4
+1425,Dharwad,2025,5,Assault,1,0,0,0,8,1
+1426,Bengaluru Urban,2023,1,Drug Offence,1,1,0,1,1,3
+1427,Mysuru,2025,5,Drug Offence,1,0,0,0,3,3
+1428,Mysuru,2020,4,Theft,2,2,196680,1,3,9
+1429,Ballari,2024,9,Drug Offence,1,1,0,1,9,3
+1430,Kalaburagi,2023,1,Cybercrime,1,0,0,0,7,2
+1431,Dakshina Kannada,2023,12,Assault,1,0,0,0,5,1
+1432,Mysuru,2023,4,Sexual Assault,1,0,0,0,3,8
+1433,Tumakuru,2024,7,Cybercrime,1,1,0,1,4,2
+1434,Bengaluru Urban,2020,10,Vandalism,1,1,0,1,1,10
+1435,Dakshina Kannada,2024,10,Robbery,1,0,465869,0,5,7
+1436,Dharwad,2024,11,Theft,1,0,488743,0,8,9
+1437,Bengaluru Rural,2022,8,Fraud,1,1,171638,1,2,4
+1438,Tumakuru,2024,2,Cybercrime,1,1,0,1,4,2
+1439,Kalaburagi,2022,5,Murder,1,1,0,1,7,6
+1440,Mysuru,2021,8,Cybercrime,1,1,0,1,3,2
+1441,Hassan,2022,2,Assault,1,1,0,1,10,1
+1442,Bengaluru Rural,2020,12,Robbery,1,0,406553,0,2,7
+1443,Dharwad,2024,4,Assault,1,1,0,1,8,1
+1444,Shivamogga,2021,12,Drug Offence,1,1,0,1,11,3
+1445,Mysuru,2021,9,Cybercrime,1,1,0,1,3,2
+1446,Shivamogga,2020,6,Cybercrime,1,0,0,0,11,2
+1447,Shivamogga,2020,3,Assault,1,0,0,0,11,1
+1448,Dharwad,2020,5,Sexual Assault,1,0,0,0,8,8
+1449,Kalaburagi,2020,10,Drug Offence,1,0,0,0,7,3
+1450,Dakshina Kannada,2022,5,Theft,1,0,111366,0,5,9
+1451,Bengaluru Urban,2023,5,Cybercrime,1,1,0,1,1,2
+1452,Shivamogga,2020,9,Drug Offence,1,1,0,1,11,3
+1453,Udupi,2024,8,Fraud,1,1,301358,1,12,4
+1454,Mysuru,2025,5,Theft,1,0,116547,0,3,9
+1455,Tumakuru,2024,5,Cybercrime,1,1,0,1,4,2
+1456,Mysuru,2020,3,Theft,2,0,835710,0,3,9
+1457,Bengaluru Urban,2021,5,Assault,1,0,0,0,1,1
+1458,Udupi,2024,11,Kidnapping,1,0,0,0,12,5
+1459,Tumakuru,2023,10,Robbery,1,1,475465,1,4,7
+1460,Shivamogga,2025,7,Robbery,1,1,290303,1,11,7
+1461,Udupi,2021,2,Drug Offence,1,1,0,1,12,3
+1462,Ballari,2023,12,Robbery,1,0,304270,0,9,7
+1463,Shivamogga,2021,5,Murder,1,1,0,1,11,6
+1464,Hassan,2021,4,Drug Offence,1,0,0,0,10,3
+1465,Dharwad,2022,7,Assault,2,1,0,0.5,8,1
+1466,Bengaluru Urban,2021,2,Robbery,1,1,494770,1,1,7
+1467,Dharwad,2022,10,Assault,1,1,0,1,8,1
+1468,Tumakuru,2025,1,Robbery,1,1,392449,1,4,7
+1469,Ballari,2021,8,Drug Offence,1,0,0,0,9,3
+1470,Belagavi,2023,6,Kidnapping,1,1,0,1,6,5
+1471,Hassan,2022,7,Murder,1,0,0,0,10,6
+1472,Dakshina Kannada,2020,6,Sexual Assault,1,1,0,1,5,8
+1473,Hassan,2023,2,Fraud,1,0,213449,0,10,4
+1474,Dakshina Kannada,2020,1,Assault,1,0,0,0,5,1
+1475,Bengaluru Urban,2025,9,Assault,1,0,0,0,1,1
+1476,Bengaluru Urban,2020,11,Vandalism,1,0,0,0,1,10
+1477,Dharwad,2024,10,Assault,1,0,0,0,8,1
+1478,Dharwad,2023,12,Fraud,1,0,122533,0,8,4
+1479,Mysuru,2021,11,Assault,1,1,0,1,3,1
+1480,Hassan,2020,10,Theft,1,1,116807,1,10,9
+1481,Mysuru,2025,7,Assault,2,1,0,0.5,3,1
+1482,Bengaluru Urban,2024,11,Drug Offence,1,1,0,1,1,3
+1483,Kalaburagi,2025,9,Cybercrime,1,0,0,0,7,2
+1484,Dharwad,2022,8,Theft,1,1,26308,1,8,9
+1485,Belagavi,2023,3,Assault,1,0,0,0,6,1
+1486,Kalaburagi,2023,3,Theft,1,0,67433,0,7,9
+1487,Ballari,2025,4,Theft,1,0,12536,0,9,9
+1488,Tumakuru,2024,3,Assault,1,1,0,1,4,1
+1489,Hassan,2024,10,Drug Offence,1,1,0,1,10,3
+1490,Dakshina Kannada,2025,2,Assault,1,1,0,1,5,1
+1491,Bengaluru Urban,2025,12,Assault,1,0,0,0,1,1
+1492,Udupi,2023,6,Kidnapping,1,1,0,1,12,5
+1493,Tumakuru,2022,4,Drug Offence,1,1,0,1,4,3
+1494,Dakshina Kannada,2020,5,Assault,1,1,0,1,5,1
+1495,Bengaluru Urban,2025,12,Fraud,1,1,129024,1,1,4
+1496,Dharwad,2020,6,Cybercrime,1,0,0,0,8,2
+1497,Hassan,2021,12,Robbery,1,0,162903,0,10,7
+1498,Dharwad,2020,12,Robbery,1,0,147504,0,8,7
+1499,Ballari,2024,7,Murder,1,1,0,1,9,6
+1500,Belagavi,2022,1,Murder,1,0,0,0,6,6
+1501,Dakshina Kannada,2023,9,Vandalism,1,0,0,0,5,10
+1502,Udupi,2022,9,Assault,1,1,0,1,12,1
+1503,Mysuru,2022,5,Drug Offence,1,1,0,1,3,3
+1504,Tumakuru,2021,10,Kidnapping,1,0,0,0,4,5
+1505,Hassan,2023,10,Kidnapping,1,0,0,0,10,5
+1506,Dakshina Kannada,2025,5,Sexual Assault,1,0,0,0,5,8
+1507,Tumakuru,2021,10,Theft,1,1,364764,1,4,9
+1508,Tumakuru,2025,12,Assault,1,0,0,0,4,1
+1509,Bengaluru Rural,2024,5,Assault,1,1,0,1,2,1
+1510,Belagavi,2025,6,Cybercrime,1,1,0,1,6,2
+1511,Mysuru,2023,4,Fraud,1,1,441810,1,3,4
+1512,Mysuru,2022,10,Vandalism,1,1,0,1,3,10
+1513,Ballari,2022,8,Vandalism,1,0,0,0,9,10
+1514,Dharwad,2021,2,Theft,1,1,244639,1,8,9
+1515,Kalaburagi,2025,5,Assault,1,1,0,1,7,1
+1516,Udupi,2020,9,Robbery,1,1,341049,1,12,7
+1517,Bengaluru Urban,2023,11,Drug Offence,1,1,0,1,1,3
+1518,Hassan,2024,6,Theft,1,1,488142,1,10,9
+1519,Hassan,2024,12,Theft,1,0,222510,0,10,9
+1520,Mysuru,2023,7,Assault,1,0,0,0,3,1
+1521,Tumakuru,2021,3,Theft,1,0,210205,0,4,9
+1522,Bengaluru Rural,2020,9,Robbery,1,1,15290,1,2,7
+1523,Dakshina Kannada,2025,6,Cybercrime,1,1,0,1,5,2
+1524,Hassan,2022,11,Theft,1,1,162118,1,10,9
+1525,Dakshina Kannada,2020,2,Theft,1,0,333034,0,5,9
+1526,Kalaburagi,2023,4,Robbery,1,0,275082,0,7,7
+1527,Mysuru,2020,2,Vandalism,1,1,0,1,3,10
+1528,Ballari,2025,11,Assault,1,0,0,0,9,1
+1529,Mysuru,2021,9,Fraud,1,0,305463,0,3,4
+1530,Udupi,2020,12,Robbery,1,1,467784,1,12,7
+1531,Udupi,2020,11,Theft,1,0,214633,0,12,9
+1532,Udupi,2021,10,Kidnapping,1,0,0,0,12,5
+1533,Bengaluru Urban,2022,1,Vandalism,1,0,0,0,1,10
+1534,Mysuru,2023,9,Cybercrime,1,1,0,1,3,2
+1535,Shivamogga,2024,4,Theft,1,0,60864,0,11,9
+1536,Belagavi,2021,1,Assault,1,1,0,1,6,1
+1537,Bengaluru Urban,2025,5,Robbery,1,1,180471,1,1,7
+1538,Shivamogga,2024,1,Robbery,1,1,58493,1,11,7
+1539,Dakshina Kannada,2022,9,Robbery,1,1,361461,1,5,7
+1540,Tumakuru,2020,6,Drug Offence,1,0,0,0,4,3
+1541,Dakshina Kannada,2024,4,Kidnapping,1,0,0,0,5,5
+1542,Belagavi,2023,4,Assault,1,1,0,1,6,1
+1543,Belagavi,2023,10,Theft,1,1,89427,1,6,9
+1544,Dharwad,2025,10,Fraud,1,0,375811,0,8,4
+1545,Kalaburagi,2022,10,Vandalism,1,1,0,1,7,10
+1546,Udupi,2021,11,Theft,1,1,498085,1,12,9
+1547,Hassan,2022,12,Drug Offence,1,0,0,0,10,3
+1548,Bengaluru Rural,2020,1,Robbery,1,0,439759,0,2,7
+1549,Udupi,2024,6,Vandalism,1,1,0,1,12,10
+1550,Mysuru,2021,7,Assault,1,1,0,1,3,1
+1551,Shivamogga,2022,8,Fraud,1,0,272339,0,11,4
+1552,Udupi,2024,1,Fraud,1,1,469826,1,12,4
+1553,Bengaluru Rural,2024,9,Drug Offence,1,0,0,0,2,3
+1554,Mysuru,2023,10,Drug Offence,1,1,0,1,3,3
+1555,Mysuru,2022,10,Assault,1,0,0,0,3,1
+1556,Dakshina Kannada,2023,11,Theft,1,1,413015,1,5,9
+1557,Udupi,2024,6,Fraud,1,1,192273,1,12,4
+1558,Belagavi,2024,9,Vandalism,1,1,0,1,6,10
+1559,Mysuru,2022,3,Fraud,1,0,455331,0,3,4
+1560,Dakshina Kannada,2020,6,Theft,2,1,561596,0.5,5,9
+1561,Bengaluru Urban,2021,7,Drug Offence,1,0,0,0,1,3
+1562,Dharwad,2024,12,Theft,1,0,184119,0,8,9
+1563,Mysuru,2024,5,Theft,1,1,108950,1,3,9
+1564,Dharwad,2022,11,Vandalism,1,1,0,1,8,10
+1565,Hassan,2023,8,Cybercrime,1,0,0,0,10,2
+1566,Bengaluru Urban,2022,8,Sexual Assault,1,0,0,0,1,8
+1567,Dakshina Kannada,2022,9,Cybercrime,1,0,0,0,5,2
+1568,Ballari,2022,2,Theft,1,1,6067,1,9,9
+1569,Tumakuru,2022,6,Cybercrime,1,0,0,0,4,2
+1570,Mysuru,2021,4,Assault,1,1,0,1,3,1
+1571,Dharwad,2023,12,Theft,1,0,328064,0,8,9
+1572,Hassan,2024,2,Fraud,1,0,205750,0,10,4
+1573,Shivamogga,2024,12,Cybercrime,1,1,0,1,11,2
+1574,Dharwad,2021,5,Assault,1,0,0,0,8,1
+1575,Belagavi,2022,10,Kidnapping,1,0,0,0,6,5
+1576,Tumakuru,2020,1,Assault,1,0,0,0,4,1
+1577,Hassan,2021,4,Assault,1,0,0,0,10,1
+1578,Belagavi,2021,8,Drug Offence,1,1,0,1,6,3
+1579,Bengaluru Urban,2022,8,Assault,1,1,0,1,1,1
+1580,Dakshina Kannada,2025,6,Kidnapping,1,1,0,1,5,5
+1581,Udupi,2020,3,Robbery,1,1,193734,1,12,7
+1582,Shivamogga,2020,6,Fraud,1,0,133043,0,11,4
+1583,Udupi,2020,6,Fraud,1,0,424343,0,12,4
+1584,Dakshina Kannada,2025,9,Robbery,1,0,420883,0,5,7
+1585,Bengaluru Urban,2025,1,Cybercrime,1,1,0,1,1,2
+1586,Dharwad,2025,11,Fraud,1,0,399458,0,8,4
+1587,Belagavi,2025,10,Sexual Assault,1,0,0,0,6,8
+1588,Shivamogga,2021,12,Robbery,1,0,201974,0,11,7
+1589,Bengaluru Urban,2025,2,Cybercrime,1,1,0,1,1,2
+1590,Belagavi,2025,5,Theft,1,0,44168,0,6,9
+1591,Udupi,2025,1,Robbery,1,0,102853,0,12,7
+1592,Kalaburagi,2024,6,Robbery,1,0,350778,0,7,7
+1593,Kalaburagi,2021,6,Kidnapping,1,0,0,0,7,5
+1594,Bengaluru Urban,2022,12,Cybercrime,1,0,0,0,1,2
+1595,Bengaluru Rural,2022,6,Theft,1,1,498404,1,2,9
+1596,Dakshina Kannada,2024,9,Theft,1,0,174259,0,5,9
+1597,Ballari,2024,4,Assault,1,0,0,0,9,1
+1598,Tumakuru,2020,4,Fraud,1,1,201851,1,4,4
+1599,Mysuru,2022,4,Cybercrime,1,0,0,0,3,2
+1600,Belagavi,2023,5,Cybercrime,1,1,0,1,6,2
+1601,Dharwad,2023,3,Drug Offence,1,0,0,0,8,3
+1602,Udupi,2021,9,Fraud,1,0,75709,0,12,4
+1603,Mysuru,2023,8,Robbery,1,1,108082,1,3,7
+1604,Shivamogga,2023,6,Robbery,1,1,378958,1,11,7
+1605,Bengaluru Urban,2021,2,Drug Offence,1,0,0,0,1,3
+1606,Hassan,2023,3,Sexual Assault,1,0,0,0,10,8
+1607,Shivamogga,2020,9,Assault,1,0,0,0,11,1
+1608,Bengaluru Urban,2024,4,Theft,1,1,264734,1,1,9
+1609,Bengaluru Urban,2021,1,Robbery,1,1,50346,1,1,7
+1610,Ballari,2021,12,Sexual Assault,1,1,0,1,9,8
+1611,Dakshina Kannada,2025,1,Cybercrime,1,1,0,1,5,2
+1612,Tumakuru,2023,5,Robbery,1,0,339188,0,4,7
+1613,Ballari,2025,7,Cybercrime,1,0,0,0,9,2
+1614,Dharwad,2023,6,Kidnapping,1,0,0,0,8,5
+1615,Dakshina Kannada,2023,10,Theft,1,0,241320,0,5,9
+1616,Belagavi,2023,10,Cybercrime,1,0,0,0,6,2
+1617,Dakshina Kannada,2021,9,Theft,1,1,212765,1,5,9
+1618,Bengaluru Rural,2025,3,Drug Offence,1,0,0,0,2,3
+1619,Mysuru,2024,3,Fraud,1,1,132864,1,3,4
+1620,Bengaluru Urban,2020,5,Theft,1,1,495757,1,1,9
+1621,Ballari,2024,3,Robbery,1,1,417635,1,9,7
+1622,Dharwad,2021,11,Theft,1,1,308268,1,8,9
+1623,Kalaburagi,2020,5,Theft,1,0,154011,0,7,9
+1624,Ballari,2024,8,Fraud,1,0,208137,0,9,4
+1625,Bengaluru Urban,2020,12,Theft,1,1,211948,1,1,9
+1626,Belagavi,2024,5,Fraud,1,1,7371,1,6,4
+1627,Bengaluru Urban,2025,4,Assault,1,0,0,0,1,1
+1628,Tumakuru,2022,2,Theft,1,0,81468,0,4,9
+1629,Bengaluru Rural,2023,3,Theft,1,1,145920,1,2,9
+1630,Bengaluru Rural,2024,6,Cybercrime,1,1,0,1,2,2
+1631,Dharwad,2025,8,Sexual Assault,1,1,0,1,8,8
+1632,Belagavi,2022,1,Robbery,1,0,469579,0,6,7
+1633,Bengaluru Urban,2022,2,Drug Offence,1,0,0,0,1,3
+1634,Bengaluru Rural,2024,10,Theft,1,0,390002,0,2,9
+1635,Tumakuru,2020,1,Sexual Assault,1,0,0,0,4,8
+1636,Belagavi,2024,3,Vandalism,1,0,0,0,6,10
+1637,Bengaluru Urban,2022,8,Cybercrime,1,1,0,1,1,2
+1638,Belagavi,2020,12,Theft,1,1,353217,1,6,9
+1639,Hassan,2023,10,Theft,1,0,360023,0,10,9
+1640,Tumakuru,2021,3,Fraud,1,1,223443,1,4,4
+1641,Mysuru,2021,3,Cybercrime,1,0,0,0,3,2
+1642,Udupi,2023,11,Fraud,1,1,122668,1,12,4

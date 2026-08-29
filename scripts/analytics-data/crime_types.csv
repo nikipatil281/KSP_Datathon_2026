@@ -1,0 +1,11 @@
+crime_type_id,crime_type,default_severity,category
+1,Assault,4,Violent
+2,Cybercrime,4,Cyber
+3,Drug Offence,5,Narcotics
+4,Fraud,4,Property
+5,Kidnapping,5,Violent
+6,Murder,5,Violent
+7,Robbery,5,Violent
+8,Sexual Assault,5,Violent
+9,Theft,3,Property
+10,Vandalism,3,Property

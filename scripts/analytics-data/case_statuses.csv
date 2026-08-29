@@ -1,0 +1,7 @@
+case_status_id,status_name
+1,Closed - Acquitted
+2,Closed - Convicted
+3,Cold Case
+4,Open
+5,Pending Trial
+6,Under Investigation

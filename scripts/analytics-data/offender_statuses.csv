@@ -1,0 +1,7 @@
+offender_status_id,status_name
+1,Absconding
+2,Acquitted
+3,Arrested
+4,Bail
+5,Convicted
+6,Juvenile

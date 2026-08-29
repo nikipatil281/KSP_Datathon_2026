@@ -1,0 +1,401 @@
+offender_id,name,alias,age,gender,district_of_origin,education,occupation,known_associates,prior_convictions,gang_affiliation,status,aadhar_linked,risk_score,district_of_origin_id,education_id,occupation_id,gang_id,offender_status_id,birth_year
+1,Suresh Menon,Dagger-04,21,Male,Belagavi,Illiterate,Labourer,,3,None,Acquitted,0,0.23,6,2,7,3,2,2004
+2,Priya Kumar,Fang-97,28,Male,Ballari,Illiterate,Unemployed,,3,None,Convicted,0,0.53,9,2,12,3,5,1997
+3,Kumar Khan,Grit-89,35,Male,Udupi,Post-Graduate,Unknown,,7,None,Absconding,0,0.3,12,3,13,3,1,1989
+4,Deepa Naik,Jade-83,42,Male,Ballari,Post-Graduate,Labourer,,0,Organized Crime,Arrested,1,0.16,9,3,7,4,3,1983
+5,Sanjay Reddy,Lantern-75,50,Male,Hassan,Illiterate,Trader,,8,None,Bail,1,0.7,10,2,11,3,4,1975
+6,Sanjay Sharma,Monsoon-69,56,Male,Bengaluru Rural,Illiterate,Trader,,1,None,Acquitted,1,0.56,2,2,11,3,2,1969
+7,Rekha Kumar,Panther-61,64,Male,Ballari,Secondary,Student,,8,None,Juvenile,0,0.94,9,5,10,3,6,1961
+8,Sunita Reddy,Scorch-54,71,Male,Hassan,Primary,Unknown,,5,None,Juvenile,0,0.55,10,4,13,3,6,1954
+9,Mohan Pillai,Zenith-08,17,Male,Mysuru,Secondary,Labourer,,7,Organized Crime,Juvenile,0,0.6,3,5,7,4,6,2008
+10,Rekha Sharma,Blackout-03,20,Male,Kalaburagi,Primary,Unemployed,,4,None,Arrested,0,0.29,7,4,12,3,3,2003
+11,Meera Raju,Copper-96,27,Male,Tumakuru,Primary,Farmer,,2,Local Gang,Arrested,1,0.76,4,4,3,2,3,1996
+12,Shiva Menon,Domino-88,36,Male,Bengaluru Rural,Graduate,Farmer,,0,Local Gang,Absconding,1,0.83,2,1,3,2,1,1988
+13,Krishna Hegde,Flint-80,45,Male,Bengaluru Rural,Secondary,Driver,,8,Local Gang,Juvenile,0,0.95,2,5,2,2,6,1980
+14,Kumar Swamy,Harbor-73,52,Male,Udupi,Secondary,Trader,,8,None,Convicted,1,0.33,12,5,11,3,5,1973
+15,Pooja Raju,Kite-66,59,Male,Shivamogga,Secondary,Student,,5,Drug Cartel,Arrested,0,0.56,11,5,10,1,3,1966
+16,Sanjay Shetty,Magnet-59,66,Male,Kalaburagi,Primary,Student,,4,Local Gang,Acquitted,1,0.37,7,4,10,2,2,1959
+17,Nandini Iyer,Nimbus-52,73,Male,Tumakuru,Post-Graduate,Trader,,2,Drug Cartel,Arrested,0,0.56,4,3,11,1,3,1952
+18,Mohan Hegde,Valor-09,16,Male,Bengaluru Urban,Primary,Trader,,1,Local Gang,Convicted,1,0.75,1,4,11,2,5,2009
+19,Priya Sharma,Anchor-02,23,Male,Udupi,Post-Graduate,Trader,,0,Organized Crime,Absconding,1,0.51,12,3,11,4,1,2002
+20,Deepa Iyer,Dagger-01,21,Female,Kalaburagi,Post-Graduate,Trader,,2,Drug Cartel,Convicted,0,0.33,7,3,11,1,5,2001
+21,Sunita Prasad,Blackout-85,40,Male,Udupi,Secondary,Labourer,,4,None,Bail,1,0.22,12,5,7,3,4,1985
+22,Vijay Rao,Diesel-80,44,Male,Kalaburagi,Illiterate,Labourer,,6,Local Gang,Acquitted,1,0.87,7,2,7,2,2,1980
+23,Lakshmi Gowda,Flint-73,51,Male,Udupi,Post-Graduate,Farmer,,3,Local Gang,Absconding,0,0.49,12,3,3,2,1,1973
+24,Joseph Menon,Grit-64,61,Female,Hassan,Post-Graduate,Unemployed,,6,Organized Crime,Acquitted,1,0.18,10,3,12,4,2,1964
+25,Kumar Naik,Indigo-57,68,Male,Belagavi,Graduate,Driver,,6,None,Arrested,0,0.12,6,1,2,3,3,1957
+26,Priya Pillai,Monsoon-55,69,Female,Tumakuru,Illiterate,Student,,2,None,Absconding,0,0.7,4,2,10,3,1,1955
+27,Girish Nair,Ranger-04,21,Male,Udupi,Illiterate,Farmer,,2,None,Arrested,1,0.94,12,2,3,3,3,2004
+28,Sanjay Rao,Zenith-05,20,Male,Dakshina Kannada,Post-Graduate,Farmer,,1,Organized Crime,Arrested,0,0.58,5,3,3,4,3,2005
+29,Pooja Pillai,Titan-90,35,Male,Belagavi,Graduate,Unknown,,2,Local Gang,Absconding,0,0.65,6,1,13,2,1,1990
+30,Lakshmi Fernandes,Zenith-83,42,Female,Bengaluru Rural,Secondary,Trader,,3,Local Gang,Acquitted,0,0.4,2,5,11,2,2,1983
+31,Kumar Murthy,Beacon-76,49,Male,Hassan,Secondary,Student,,0,Organized Crime,Absconding,1,0.32,10,5,10,4,1,1976
+32,Ganesh Hegde,Diesel-73,52,Male,Bengaluru Rural,Secondary,Labourer,,6,Drug Cartel,Absconding,0,0.7,2,5,7,1,1,1973
+33,Pooja Singh,Diesel-62,63,Male,Dakshina Kannada,Secondary,Driver,,3,None,Juvenile,1,0.38,5,5,2,3,6,1962
+34,Rajesh Rao,Flint-55,70,Male,Ballari,Post-Graduate,Driver,,1,None,Bail,1,0.42,9,3,2,3,4,1955
+35,Deepa Sharma,Nimbus-60,65,Male,Mysuru,Graduate,Unemployed,,0,Organized Crime,Bail,0,0.53,3,1,12,4,4,1960
+36,Sunita Murthy,Knox-02,23,Male,Shivamogga,Illiterate,Labourer,,2,Organized Crime,Bail,1,0.99,11,2,7,4,4,2002
+37,Ramesh Iyer,Orion-95,30,Male,Dharwad,Secondary,Farmer,,6,None,Acquitted,1,0.65,8,5,3,3,2,1995
+38,Imran Rao,Talon-93,32,Male,Ballari,Illiterate,Labourer,,0,Local Gang,Convicted,0,0.36,9,2,7,2,5,1993
+39,Anita Fernandes,Wolf-86,39,Male,Shivamogga,Post-Graduate,Unknown,,3,Local Gang,Arrested,1,0.68,11,3,13,2,3,1986
+40,Mohan Naik,Vortex-74,51,Female,Dakshina Kannada,Graduate,Unemployed,,7,Drug Cartel,Bail,0,0.95,5,1,12,1,4,1974
+41,Girish Kumar,Ash-67,58,Male,Dakshina Kannada,Illiterate,Unemployed,,3,Drug Cartel,Acquitted,1,1,5,2,12,1,2,1967
+42,Nandini Naik,Blackout-60,65,Male,Dakshina Kannada,Primary,Student,,6,Drug Cartel,Convicted,1,0.52,5,4,10,1,5,1960
+43,Joseph Reddy,Eclipse-57,67,Male,Dakshina Kannada,Graduate,Farmer,,8,None,Convicted,1,0.38,5,1,3,3,5,1957
+44,Sanjay Prasad,Grit-50,74,Male,Tumakuru,Post-Graduate,Driver,,7,Drug Cartel,Convicted,1,0.28,4,3,2,1,5,1950
+45,Girish Murthy,Comet-00,25,Male,Dakshina Kannada,Post-Graduate,Unemployed,,8,Local Gang,Arrested,1,0.99,5,3,12,2,3,2000
+46,Arun Pillai,Orion-99,26,Male,Udupi,Secondary,Trader,,7,Local Gang,Absconding,0,0.6,12,5,11,2,1,1999
+47,Pooja Sharma,Mirage-86,39,Male,Ballari,Secondary,Farmer,,0,None,Juvenile,0,0.85,9,5,3,3,6,1986
+48,Anjali Sharma,Ranger-79,46,Male,Ballari,Graduate,Trader,,5,None,Juvenile,1,0.61,9,1,11,3,6,1979
+49,Ramesh Naik,Canyon-88,35,Female,Shivamogga,Primary,Trader,,0,None,Acquitted,0,0.88,11,4,11,3,2,1988
+50,Arun Prasad,Titan-65,60,Female,Mysuru,Illiterate,Trader,,4,None,Acquitted,0,0.68,3,2,11,3,2,1965
+51,Anjali Raju,Zenith-58,67,Male,Bengaluru Rural,Primary,Unknown,,4,None,Juvenile,1,0.49,2,4,13,3,6,1958
+52,Maria Reddy,Beacon-51,74,Male,Bengaluru Urban,Secondary,Driver,,5,Local Gang,Absconding,1,0.58,1,5,2,2,1,1951
+53,Kumar Patil,Domino-49,75,Male,Dharwad,Post-Graduate,Labourer,,3,Local Gang,Juvenile,0,0.51,8,3,7,2,6,1949
+54,Rekha Shetty,Onyx-98,27,Male,Belagavi,Post-Graduate,Driver,,6,Drug Cartel,Bail,0,0.86,6,3,2,1,4,1998
+55,Anjali Murthy,Cipher-91,34,Male,Dakshina Kannada,Secondary,Unemployed,,6,None,Arrested,1,0.92,5,5,12,3,3,1991
+56,Ganesh Hegde,Frost-84,41,Male,Dakshina Kannada,Primary,Unknown,,1,Drug Cartel,Juvenile,1,0.38,5,4,13,1,6,1984
+57,Meera Sharma,Knox-77,48,Male,Tumakuru,Primary,Farmer,,8,None,Acquitted,0,0.85,4,4,3,3,2,1977
+58,Shiva Shetty,Steel-77,48,Female,Mysuru,Primary,Farmer,,6,Organized Crime,Bail,1,0.81,3,4,3,4,4,1977
+59,Girish Singh,Sierra-63,62,Male,Shivamogga,Secondary,Unemployed,,3,Local Gang,Arrested,0,0.92,11,5,12,2,3,1963
+60,Imran Fernandes,Surge-56,69,Male,Bengaluru Urban,Secondary,Trader,,1,None,Absconding,1,0.45,1,5,11,3,1,1956
+61,Maria Raju,Shadow-10,15,Male,Dharwad,Post-Graduate,Trader,,4,None,Juvenile,0,0.3,8,3,11,3,6,2010
+62,Anjali Singh,Maverick-11,14,Female,Shivamogga,Secondary,Unemployed,,6,None,Absconding,1,0.95,11,5,12,3,1,2011
+63,Joseph Rao,Blaze-96,29,Male,Belagavi,Primary,Labourer,,3,None,Acquitted,1,0.63,6,4,7,3,2,1996
+64,Kavita Sharma,Maverick-89,36,Female,Mysuru,Primary,Student,,4,None,Arrested,1,0.22,3,4,10,3,3,1989
+65,Priya Swamy,Ranger-98,27,Male,Udupi,Graduate,Student,,1,Drug Cartel,Arrested,0,0.5,12,1,10,1,3,1998
+66,Arun Fernandes,Vortex-97,26,Male,Shivamogga,Post-Graduate,Driver,,7,Drug Cartel,Arrested,1,1,11,3,2,1,3,1997
+67,Joseph Reddy,Iron-68,57,Male,Mysuru,Illiterate,Labourer,,4,Organized Crime,Juvenile,0,0.44,3,2,7,4,6,1968
+68,Girish Prasad,Spark-69,56,Male,Shivamogga,Post-Graduate,Unknown,,3,Local Gang,Convicted,1,0.47,11,3,13,2,5,1969
+69,Ramesh Reddy,Ranger-54,71,Male,Mysuru,Graduate,Unemployed,,1,None,Arrested,0,0.19,3,1,12,3,3,1954
+70,Deepa Naik,Verdict-08,17,Male,Kalaburagi,Secondary,Farmer,,6,Drug Cartel,Arrested,0,0.64,7,5,3,1,3,2008
+71,Pooja Rao,Tiger-01,24,Female,Belagavi,Post-Graduate,Driver,,1,None,Acquitted,1,0.83,6,3,2,3,2,2001
+72,Shameer Menon,Bolt-03,22,Female,Udupi,Secondary,Unemployed,,2,None,Juvenile,0,0.93,12,5,12,3,6,2003
+73,Anjali Sharma,Hawk-87,38,Male,Shivamogga,Illiterate,Unemployed,,8,None,Convicted,0,0.51,11,2,12,3,5,1987
+74,Patel Patel,Blade-80,45,Female,Mysuru,Primary,Farmer,,0,Drug Cartel,Arrested,0,0.5,3,4,3,1,3,1980
+75,Girish D'Souza,Orion-89,34,Male,Bengaluru Rural,Secondary,Unknown,,7,Organized Crime,Juvenile,0,0.14,2,5,13,4,6,1989
+76,Suresh Gowda,Cipher-66,59,Male,Dakshina Kannada,Secondary,Unemployed,,0,Local Gang,Juvenile,0,0.26,5,5,12,2,6,1966
+77,Priya Prasad,Frost-59,66,Male,Udupi,Illiterate,Trader,,0,Local Gang,Arrested,0,0.62,12,2,11,2,3,1959
+78,Anita Reddy,Zenith-70,55,Male,Hassan,Graduate,Farmer,,5,None,Convicted,1,0.32,10,1,3,3,5,1970
+79,Mohan Khan,Switch-06,19,Male,Mysuru,Illiterate,Student,,1,Organized Crime,Acquitted,1,0.92,3,2,10,4,2,2006
+80,Krishna Pillai,Trident-99,26,Male,Tumakuru,Primary,Student,,2,Drug Cartel,Arrested,1,0.96,4,4,10,1,3,1999
+81,Ganesh Swamy,Vector-12,13,Female,Hassan,Post-Graduate,Driver,,5,None,Convicted,1,0.52,10,3,2,3,5,2012
+82,Nandini Naik,Storm-94,30,Male,Bengaluru Urban,Illiterate,Driver,,4,None,Juvenile,1,0.65,1,2,2,3,6,1994
+83,Nandini Raju,Pulse-05,17,Male,Belagavi,Post-Graduate,Trader,,8,None,Arrested,0,0.19,6,3,11,3,3,2005
+84,Maria Kumar,Blaze-71,54,Male,Dharwad,Graduate,Student,,8,Organized Crime,Absconding,0,0.44,8,1,10,4,1,1971
+85,Ganesh Patel,Drift-73,51,Male,Bengaluru Rural,Secondary,Unemployed,,8,Drug Cartel,Convicted,0,0.33,2,5,12,1,5,1973
+86,Anjali Sharma,Vector-57,68,Male,Belagavi,Secondary,Unknown,,6,None,Acquitted,1,0.38,6,5,13,3,2,1957
+87,Kavita Sharma,Titan-70,55,Male,Kalaburagi,Post-Graduate,Driver,,0,None,Bail,1,0.96,7,3,2,3,4,1970
+88,Lakshmi Rao,Rebel-52,72,Male,Bengaluru Rural,Post-Graduate,Farmer,,8,Drug Cartel,Acquitted,1,0.7,2,3,3,1,2,1952
+89,Vijay Iyer,Striker-97,28,Female,Hassan,Primary,Unknown,,7,None,Convicted,0,0.71,10,4,13,3,5,1997
+90,Shameer Shetty,King-01,24,Male,Dharwad,Primary,Driver,,7,Local Gang,Bail,0,0.55,8,4,2,2,4,2001
+91,Krishna Rao,Cobra-94,31,Male,Dharwad,Secondary,Student,,1,Drug Cartel,Acquitted,1,0.36,8,5,10,1,2,1994
+92,Girish Prasad,Tiger-76,49,Male,Belagavi,Illiterate,Trader,,0,Local Gang,Acquitted,0,0.31,6,2,11,2,2,1976
+93,Priya Gowda,Falcon-69,56,Male,Dakshina Kannada,Graduate,Unknown,,2,Drug Cartel,Convicted,0,0.65,5,1,13,1,5,1969
+94,Sunita Rao,Hawk-62,63,Male,Kalaburagi,Illiterate,Farmer,,4,None,Bail,1,0.14,7,2,3,3,4,1962
+95,Shameer Fernandes,Valor-86,37,Male,Shivamogga,Post-Graduate,Student,,3,Drug Cartel,Absconding,0,0.49,11,3,10,1,1,1986
+96,Nandini D'Souza,Jet-59,66,Female,Bengaluru Rural,Post-Graduate,Student,,8,Organized Crime,Acquitted,1,0.45,2,3,10,4,2,1959
+97,Sanjay Singh,Nova-52,73,Male,Udupi,Illiterate,Farmer,,5,None,Arrested,0,0.59,12,2,3,3,3,1952
+98,Krishna Menon,Sentinel-95,30,Male,Dharwad,Illiterate,Driver,,3,None,Absconding,1,0.38,8,2,2,3,1,1995
+99,Krishna Raju,Phantom-11,13,Male,Belagavi,Illiterate,Farmer,,5,None,Arrested,0,0.49,6,2,3,3,3,2011
+100,Rekha Khan,Switch-81,44,Male,Ballari,Secondary,Farmer,,1,Drug Cartel,Convicted,1,0.49,9,5,3,1,5,1981
+101,Deepa Shetty,Vector-98,27,Male,Dakshina Kannada,Graduate,Student,,6,None,Juvenile,0,0.42,5,1,10,3,6,1998
+102,Shameer D'Souza,Zephyr-67,58,Male,Kalaburagi,Secondary,Student,,2,None,Absconding,0,0.13,7,5,10,3,1,1967
+103,Imran Singh,Bolt-71,53,Male,Shivamogga,Graduate,Driver,,5,Local Gang,Arrested,1,0.58,11,1,2,2,3,1971
+104,Sunita Hegde,Lancer-76,48,Male,Ballari,Illiterate,Driver,,4,Drug Cartel,Convicted,1,1,9,2,2,1,5,1976
+105,Rajesh Reddy,Kodiak-07,18,Female,Dharwad,Illiterate,Farmer,,5,Drug Cartel,Bail,1,0.59,8,2,3,1,4,2007
+106,Anjali Patil,Mantis-00,25,Male,Bengaluru Rural,Primary,Farmer,,2,None,Convicted,1,0.42,2,4,3,3,5,2000
+107,Shiva Raju,Nomad-93,32,Male,Udupi,Graduate,Student,,6,Local Gang,Acquitted,1,0.21,12,1,10,2,2,1993
+108,Girish Fernandes,Dagger-60,64,Female,Ballari,Post-Graduate,Labourer,,2,Local Gang,Acquitted,1,0.85,9,3,7,2,2,1960
+109,Kumar Patil,Verdict-91,33,Female,Bengaluru Rural,Secondary,Labourer,,8,None,Absconding,0,0.65,2,5,7,3,1,1991
+110,Kumar Swamy,Striker-72,53,Male,Hassan,Secondary,Farmer,,0,None,Arrested,1,0.95,10,5,3,3,3,1972
+111,Imran Rao,Viper-78,47,Male,Dharwad,Post-Graduate,Driver,,4,Local Gang,Absconding,0,0.37,8,3,2,2,1,1978
+112,Kumar Fernandes,Verdict-58,67,Male,Mysuru,Secondary,Farmer,,5,Drug Cartel,Bail,0,0.22,3,5,3,1,4,1958
+113,Arun Patel,Tiger-51,74,Male,Mysuru,Illiterate,Unemployed,,4,Local Gang,Acquitted,0,0.32,3,2,12,2,2,1951
+114,Krishna Patel,Valor-83,42,Male,Ballari,Graduate,Trader,,4,Local Gang,Arrested,1,0.95,9,1,11,2,3,1983
+115,Rajesh Swamy,Jade-98,27,Male,Shivamogga,Graduate,Driver,,8,None,Arrested,0,0.22,11,1,2,3,3,1998
+116,Ganesh Khan,Lotus-91,34,Male,Tumakuru,Secondary,Student,,4,None,Convicted,0,0.79,4,5,10,3,5,1991
+117,Joseph Iyer,Monsoon-84,41,Male,Belagavi,Post-Graduate,Driver,,2,None,Acquitted,0,0.55,6,3,2,3,2,1984
+118,Maria Patel,Diesel-54,70,Male,Ballari,Primary,Driver,,5,None,Convicted,0,0.63,9,4,2,3,5,1954
+119,Deepa Murthy,Umbra-83,41,Male,Belagavi,Secondary,Unknown,,1,Local Gang,Acquitted,0,0.82,6,5,13,2,2,1983
+120,Shameer Murthy,Iron-03,20,Male,Bengaluru Urban,Post-Graduate,Trader,,2,Organized Crime,Juvenile,0,0.23,1,3,11,4,6,2003
+121,Nandini Reddy,Switch-56,69,Male,Kalaburagi,Primary,Trader,,8,Organized Crime,Convicted,1,0.74,7,4,11,4,5,1956
+122,Kavita Menon,Cobra-62,62,Female,Dharwad,Post-Graduate,Driver,,8,None,Juvenile,0,0.65,8,3,2,3,6,1962
+123,Sunita Raju,Domino-03,22,Male,Udupi,Graduate,Driver,,7,None,Acquitted,0,0.36,12,1,2,3,2,2003
+124,Sanjay Khan,Nimbus-11,14,Male,Udupi,Illiterate,Driver,,7,Drug Cartel,Bail,0,0.29,12,2,2,1,4,2011
+125,Deepa Nair,Helix-89,36,Male,Tumakuru,Illiterate,Unknown,,8,None,Juvenile,1,0.15,4,2,13,3,6,1989
+126,Lakshmi Reddy,Kodiak-82,43,Female,Mysuru,Graduate,Unknown,,7,Local Gang,Juvenile,1,0.78,3,1,13,2,6,1982
+127,Imran Naik,Spire-90,35,Male,Udupi,Illiterate,Labourer,,6,None,Arrested,0,0.81,12,2,7,3,3,1990
+128,Anjali Shetty,Rogue-11,12,Male,Bengaluru Rural,Secondary,Driver,,7,Drug Cartel,Acquitted,0,0.9,2,5,2,1,2,2011
+129,Girish Nair,Umbra-76,49,Male,Shivamogga,Secondary,Unknown,,2,None,Juvenile,0,0.81,11,5,13,3,6,1976
+130,Kumar Iyer,Signal-54,71,Male,Bengaluru Rural,Graduate,Unknown,,1,None,Absconding,0,0.39,2,1,13,3,1,1954
+131,Sanjay Hegde,King-62,63,Male,Hassan,Illiterate,Driver,,5,Drug Cartel,Absconding,1,0.7,10,2,2,1,1,1962
+132,Sanjay Menon,Brick-01,24,Female,Dakshina Kannada,Secondary,Student,,3,None,Absconding,0,0.24,5,5,10,3,1,2001
+133,Meera D'Souza,Dagger-94,31,Male,Tumakuru,Primary,Unknown,,1,Organized Crime,Convicted,0,0.17,4,4,13,4,5,1994
+134,Krishna Raju,Fang-87,38,Male,Mysuru,Secondary,Farmer,,8,Local Gang,Arrested,1,0.75,3,5,3,2,3,1987
+135,Girish Naik,Hammer-80,45,Male,Bengaluru Urban,Post-Graduate,Trader,,4,Drug Cartel,Arrested,0,0.33,1,3,11,1,3,1980
+136,Nandini Kumar,Jade-73,52,Male,Bengaluru Urban,Illiterate,Trader,,0,None,Convicted,1,0.79,1,2,11,3,5,1973
+137,Meera Khan,Solstice-82,43,Male,Shivamogga,Post-Graduate,Labourer,,5,None,Absconding,0,0.58,11,3,7,3,1,1982
+138,Krishna Gowda,Raven-91,34,Male,Ballari,Graduate,Student,,6,None,Absconding,0,0.41,9,1,10,3,1,1991
+139,Ganesh Reddy,Pioneer-52,73,Male,Bengaluru Urban,Primary,Labourer,,1,None,Acquitted,1,0.5,1,4,7,3,2,1952
+140,Priya Naik,Valor-06,19,Male,Bengaluru Urban,Primary,Student,,4,None,Juvenile,0,0.62,1,4,10,3,6,2006
+141,Priya Shetty,Vector-70,55,Male,Dakshina Kannada,Illiterate,Student,,2,Drug Cartel,Juvenile,0,0.6,5,2,10,1,6,1970
+142,Imran Menon,Cipher-61,62,Male,Mysuru,Secondary,Trader,,2,Organized Crime,Convicted,1,0.86,3,5,11,4,5,1961
+143,Vijay Fernandes,Cinder-85,40,Male,Mysuru,Graduate,Labourer,,4,None,Bail,1,0.93,3,1,7,3,4,1985
+144,Deepa Rao,Domino-78,47,Male,Bengaluru Urban,Illiterate,Labourer,,8,None,Convicted,1,0.88,1,2,7,3,5,1978
+145,Rajesh Rao,Trace-04,20,Male,Udupi,Primary,Trader,,3,Organized Crime,Bail,0,0.44,12,4,11,4,4,2004
+146,Anita Nair,Helix-64,61,Male,Udupi,Graduate,Farmer,,5,None,Bail,0,0.47,12,1,3,3,4,1964
+147,Patel Sharma,Kodiak-57,68,Male,Kalaburagi,Secondary,Labourer,,3,None,Absconding,0,0.61,7,5,7,3,1,1957
+148,Imran Menon,Striker-66,58,Male,Dharwad,Graduate,Labourer,,5,None,Absconding,0,0.27,8,1,7,3,1,1966
+149,Suresh Prasad,Trace-60,65,Male,Shivamogga,Primary,Unemployed,,2,None,Absconding,0,0.44,11,4,12,3,1,1960
+150,Lakshmi Menon,Verdict-52,72,Male,Bengaluru Urban,Illiterate,Student,,4,Organized Crime,Bail,1,0.55,1,2,10,4,4,1952
+151,Shiva Patil,Wolf-90,35,Male,Hassan,Post-Graduate,Driver,,5,None,Convicted,1,0.44,10,3,2,3,5,1990
+152,Priya Hegde,Basilisk-83,42,Female,Shivamogga,Illiterate,Unemployed,,6,Local Gang,Convicted,0,0.15,11,2,12,2,5,1983
+153,Mohan Murthy,Brick-76,49,Female,Bengaluru Rural,Post-Graduate,Unemployed,,3,None,Juvenile,0,0.34,2,3,12,3,6,1976
+154,Sunita Raju,Striker-03,20,Female,Belagavi,Illiterate,Labourer,,2,Drug Cartel,Convicted,1,0.37,6,2,7,1,5,2003
+155,Krishna Khan,Fang-62,63,Male,Mysuru,Illiterate,Student,,5,None,Arrested,0,0.31,3,2,10,3,3,1962
+156,Ganesh Iyer,Hammer-55,70,Male,Dharwad,Graduate,Labourer,,5,Organized Crime,Convicted,0,0.27,8,1,7,4,5,1955
+157,Mohan Iyer,Jet-09,16,Male,Kalaburagi,Primary,Unknown,,6,None,Bail,1,0.18,7,4,13,3,4,2009
+158,Meera Nair,Striker-59,66,Male,Ballari,Post-Graduate,Student,,6,None,Arrested,1,0.42,9,3,10,3,3,1959
+159,Shiva Patel,Blaze-70,55,Male,Bengaluru Rural,Post-Graduate,Labourer,,8,None,Juvenile,0,0.25,2,3,7,3,6,1970
+160,Lakshmi Sharma,Steel-88,37,Male,Dharwad,Illiterate,Driver,,4,None,Juvenile,0,0.63,8,2,2,3,6,1988
+161,Vijay Shetty,Valor-81,44,Male,Belagavi,Graduate,Driver,,6,Drug Cartel,Acquitted,1,0.37,6,1,2,1,2,1981
+162,Lakshmi Patel,Anchor-74,51,Male,Shivamogga,Graduate,Student,,3,None,Convicted,0,0.83,11,1,10,3,5,1974
+163,Nandini Rao,Bison-67,58,Male,Bengaluru Urban,Graduate,Unknown,,3,Local Gang,Bail,1,0.84,1,1,13,2,4,1967
+164,Joseph Murthy,Cinder-60,65,Male,Mysuru,Graduate,Farmer,,6,None,Convicted,0,0.62,3,1,3,3,5,1960
+165,Deepa Naik,Domino-53,72,Male,Bengaluru Rural,Illiterate,Farmer,,3,Drug Cartel,Juvenile,0,0.25,2,2,3,1,6,1953
+166,Imran Menon,Quartz-07,18,Male,Bengaluru Rural,Secondary,Labourer,,8,Drug Cartel,Acquitted,1,0.5,2,5,7,1,2,2007
+167,Joseph Swamy,Ember-00,25,Female,Dharwad,Illiterate,Driver,,6,None,Arrested,1,0.41,8,2,2,3,3,2000
+168,Rajesh Prasad,Lancer-93,32,Male,Udupi,Graduate,Driver,,1,None,Arrested,1,0.12,12,1,2,3,3,1993
+169,Joseph Patil,Pulse-86,39,Male,Belagavi,Post-Graduate,Trader,,7,None,Convicted,1,0.27,6,3,11,3,5,1986
+170,Ravi Iyer,Bolt-55,69,Male,Bengaluru Urban,Primary,Labourer,,4,Drug Cartel,Arrested,1,0.82,1,4,7,1,3,1955
+171,Kavita Rao,Talon-72,53,Female,Ballari,Secondary,Student,,6,Organized Crime,Convicted,1,0.41,9,5,10,4,5,1972
+172,Kumar Menon,Grit-84,40,Male,Mysuru,Secondary,Unemployed,,3,None,Arrested,1,0.44,3,5,12,3,3,1984
+173,Ramesh Iyer,Jade-78,47,Male,Shivamogga,Post-Graduate,Unknown,,2,Organized Crime,Absconding,0,0.36,11,3,13,4,1,1978
+174,Shameer Naik,Lotus-71,54,Male,Kalaburagi,Post-Graduate,Student,,7,Local Gang,Juvenile,0,0.47,7,3,10,2,6,1971
+175,Kumar Kumar,Sable-05,20,Male,Tumakuru,Post-Graduate,Driver,,2,Local Gang,Acquitted,0,0.59,4,3,2,2,2,2005
+176,Sunita Raju,Rogue-98,27,Male,Dharwad,Post-Graduate,Labourer,,6,None,Juvenile,1,0.37,8,3,7,3,6,1998
+177,Sunita Singh,Sentinel-50,75,Male,Tumakuru,Primary,Farmer,,5,Drug Cartel,Acquitted,0,0.25,4,4,3,1,2,1950
+178,Krishna Rao,Viper-62,62,Male,Hassan,Post-Graduate,Labourer,,5,Drug Cartel,Bail,0,0.62,10,3,7,1,4,1962
+179,Rekha Menon,Nova-77,48,Female,Dakshina Kannada,Primary,Unknown,,2,None,Absconding,0,0.85,5,4,13,3,1,1977
+180,Lakshmi Sharma,Rebel-70,55,Male,Dharwad,Illiterate,Unknown,,1,Local Gang,Acquitted,0,0.73,8,2,13,2,2,1970
+181,Lakshmi Patel,Slate-61,63,Female,Shivamogga,Secondary,Farmer,,1,Organized Crime,Convicted,1,0.97,11,5,3,4,5,1961
+182,Sunita Patel,Surge-53,70,Male,Hassan,Graduate,Farmer,,5,Drug Cartel,Arrested,1,0.19,10,1,3,1,3,1953
+183,Ravi Reddy,Indigo-70,55,Male,Kalaburagi,Primary,Unknown,,2,Drug Cartel,Bail,1,0.89,7,4,13,1,4,1970
+184,Imran Singh,Phantom-03,22,Female,Mysuru,Illiterate,Trader,,4,Drug Cartel,Juvenile,1,0.49,3,2,11,1,6,2003
+185,Ravi Rao,Bolt-96,29,Male,Shivamogga,Graduate,Unemployed,,0,Drug Cartel,Bail,1,0.99,11,1,12,1,4,1996
+186,Lakshmi Kumar,Echo-89,36,Male,Bengaluru Rural,Secondary,Driver,,4,None,Convicted,1,0.68,2,5,2,3,5,1989
+187,Pooja Swamy,Shadow-63,62,Male,Tumakuru,Primary,Trader,,7,None,Arrested,1,0.23,4,4,11,3,3,1963
+188,Sanjay Singh,Raven-56,69,Male,Bengaluru Rural,Primary,Student,,4,Drug Cartel,Arrested,0,0.28,2,4,10,1,3,1956
+189,Patel Khan,Lantern-11,13,Male,Bengaluru Rural,Primary,Trader,,1,Organized Crime,Arrested,0,0.94,2,4,11,4,3,2011
+190,Ramesh Singh,Pulse-61,64,Female,Bengaluru Rural,Illiterate,Student,,1,None,Bail,1,0.14,2,2,10,3,4,1961
+191,Sanjay Prasad,Diesel-75,49,Male,Kalaburagi,Illiterate,Unknown,,8,Organized Crime,Acquitted,1,0.35,7,2,13,4,2,1975
+192,Rajesh Sharma,Bullet-08,17,Male,Shivamogga,Illiterate,Driver,,6,Drug Cartel,Absconding,1,0.32,11,2,2,1,1,2008
+193,Girish Iyer,Harbor-61,63,Male,Udupi,Primary,Unemployed,,0,Drug Cartel,Absconding,1,0.25,12,4,12,1,1,1961
+194,Pooja Nair,Kite-54,70,Male,Dakshina Kannada,Illiterate,Farmer,,0,None,Convicted,0,0.57,5,2,3,3,5,1954
+195,Imran Kumar,Thunder-68,55,Male,Hassan,Primary,Driver,,2,None,Arrested,1,0.31,10,4,2,3,3,1968
+196,Anjali Gowda,Sable-80,45,Male,Mysuru,Primary,Farmer,,0,Organized Crime,Juvenile,0,0.3,3,4,3,4,6,1980
+197,Kavita Nair,Rogue-73,52,Male,Shivamogga,Illiterate,Labourer,,3,Organized Crime,Arrested,0,0.16,11,2,7,4,3,1973
+198,Ganesh Shetty,Ember-68,54,Male,Tumakuru,Secondary,Student,,4,Drug Cartel,Acquitted,1,0.52,4,5,10,1,2,1968
+199,Ganesh Rao,Knox-59,66,Male,Kalaburagi,Illiterate,Labourer,,8,None,Juvenile,1,0.96,7,2,7,3,6,1959
+200,Anjali Shetty,Canyon-75,50,Male,Bengaluru Urban,Primary,Unknown,,4,None,Arrested,1,0.91,1,4,13,3,3,1975
+201,Girish Kumar,Trace-06,19,Male,Kalaburagi,Illiterate,Student,,0,Local Gang,Juvenile,1,0.31,7,2,10,2,6,2006
+202,Shiva Khan,Warden-99,26,Male,Bengaluru Rural,Primary,Labourer,,1,None,Arrested,1,0.5,2,4,7,3,3,1999
+203,Deepa Singh,Ghost-92,33,Male,Bengaluru Rural,Illiterate,Labourer,,4,Drug Cartel,Juvenile,1,0.29,2,2,7,1,6,1992
+204,Mohan Hegde,Striker-68,55,Male,Dakshina Kannada,Primary,Unemployed,,6,Local Gang,Acquitted,1,0.19,5,4,12,2,2,1968
+205,Vijay Reddy,Orion-01,23,Male,Kalaburagi,Secondary,Unknown,,1,Organized Crime,Acquitted,0,0.93,7,5,13,4,2,2001
+206,Rajesh Pillai,Vector-76,46,Male,Dharwad,Illiterate,Labourer,,6,Drug Cartel,Convicted,0,0.13,8,2,7,1,5,1976
+207,Meera Rao,Talon-88,37,Female,Bengaluru Urban,Post-Graduate,Student,,3,Drug Cartel,Bail,0,0.47,1,3,10,1,4,1988
+208,Mohan Nair,Quartz-57,68,Male,Ballari,Primary,Unknown,,8,None,Convicted,0,0.53,9,4,13,3,5,1957
+209,Nandini Prasad,Ember-50,75,Male,Hassan,Primary,Unemployed,,4,None,Convicted,0,0.79,10,4,12,3,5,1950
+210,Arun Hegde,Monsoon-91,34,Male,Udupi,Illiterate,Farmer,,3,Organized Crime,Convicted,0,0.94,12,2,3,4,5,1991
+211,Kumar Hegde,Diesel-60,65,Male,Udupi,Secondary,Student,,2,Organized Crime,Absconding,0,0.59,12,5,10,4,1,1960
+212,Mohan Naik,Umbra-90,35,Male,Bengaluru Urban,Secondary,Student,,3,None,Bail,1,0.93,1,5,10,3,4,1990
+213,Suresh Gowda,Bullet-83,42,Female,Belagavi,Illiterate,Driver,,6,Organized Crime,Arrested,0,0.37,6,2,2,4,3,1983
+214,Patel D'Souza,Umbra-68,56,Male,Udupi,Post-Graduate,Unknown,,5,None,Juvenile,1,0.44,12,3,13,3,6,1968
+215,Vijay Patil,Cobra-69,56,Female,Hassan,Illiterate,Labourer,,5,Organized Crime,Absconding,1,0.94,10,2,7,4,1,1969
+216,Mohan Hegde,Fang-12,13,Female,Bengaluru Rural,Secondary,Trader,,0,None,Absconding,1,0.72,2,5,11,3,1,2012
+217,Arun Gowda,Sable-55,70,Male,Mysuru,Graduate,Trader,,6,None,Acquitted,0,0.19,3,1,11,3,2,1955
+218,Imran Menon,Vortex-73,52,Male,Bengaluru Urban,Secondary,Unemployed,,5,None,Arrested,1,0.41,1,5,12,3,3,1973
+219,Patel Kumar,Anchor-65,59,Female,Dharwad,Illiterate,Trader,,2,Organized Crime,Convicted,1,0.15,8,2,11,4,5,1965
+220,Ramesh Raju,Silver-95,30,Male,Tumakuru,Illiterate,Unemployed,,6,Organized Crime,Acquitted,0,0.24,4,2,12,4,2,1995
+221,Mohan Shetty,Summit-88,37,Male,Bengaluru Urban,Primary,Labourer,,4,None,Convicted,1,0.38,1,4,7,3,5,1988
+222,Rekha Menon,Rogue-07,18,Male,Kalaburagi,Secondary,Labourer,,7,None,Bail,0,0.52,7,5,7,3,4,2007
+223,Nandini Naik,Warden-74,51,Male,Ballari,Graduate,Farmer,,3,Organized Crime,Arrested,0,0.84,9,1,3,4,3,1974
+224,Joseph Murthy,Ghost-67,58,Male,Udupi,Illiterate,Student,,8,Organized Crime,Juvenile,1,0.21,12,2,10,4,6,1967
+225,Kumar Rao,Viper-60,65,Male,Shivamogga,Graduate,Labourer,,2,Organized Crime,Bail,0,0.92,11,1,7,4,4,1960
+226,Mohan Khan,Fang-05,20,Female,Ballari,Graduate,Farmer,,0,Drug Cartel,Acquitted,0,0.2,9,1,3,1,2,2005
+227,Nandini Swamy,Steel-72,53,Male,Dakshina Kannada,Post-Graduate,Driver,,6,None,Convicted,0,0.61,5,3,2,3,5,1972
+228,Sunita Khan,Valor-65,60,Male,Bengaluru Urban,Graduate,Driver,,3,None,Juvenile,0,0.93,1,1,2,3,6,1965
+229,Kavita Shetty,Radar-93,32,Male,Tumakuru,Primary,Driver,,7,None,Bail,0,0.64,4,4,2,3,4,1993
+230,Rajesh D'Souza,Bison-51,74,Female,Ballari,Primary,Unemployed,,4,Drug Cartel,Acquitted,0,0.22,9,4,12,1,2,1951
+231,Ravi Patil,Maverick-06,19,Male,Bengaluru Urban,Secondary,Unknown,,3,None,Bail,0,0.55,1,5,13,3,4,2006
+232,Joseph Gowda,Sentinel-63,62,Male,Dharwad,Post-Graduate,Student,,5,None,Absconding,0,0.77,8,3,10,3,1,1963
+233,Ravi Khan,Umbra-65,60,Female,Shivamogga,Primary,Unknown,,3,None,Juvenile,0,0.56,11,4,13,3,6,1965
+234,Joseph Gowda,Iron-85,40,Male,Tumakuru,Secondary,Student,,4,Drug Cartel,Juvenile,0,0.48,4,5,10,1,6,1985
+235,Girish Nair,King-51,74,Male,Hassan,Graduate,Student,,1,None,Acquitted,0,0.61,10,1,10,3,2,1951
+236,Anita Menon,Pulse-70,54,Female,Shivamogga,Secondary,Farmer,,4,None,Juvenile,0,0.27,11,5,3,3,6,1970
+237,Rekha Naik,Lantern-98,27,Male,Mysuru,Illiterate,Unknown,,7,None,Bail,0,0.46,3,2,13,3,4,1998
+238,Maria Swamy,Meteor-91,34,Male,Shivamogga,Post-Graduate,Unknown,,7,Drug Cartel,Bail,0,0.86,11,3,13,1,4,1991
+239,Kumar Shetty,Panther-84,41,Male,Ballari,Primary,Unknown,,5,Drug Cartel,Arrested,1,0.42,9,4,13,1,3,1984
+240,Ramesh Patel,Scorch-77,48,Male,Bengaluru Rural,Graduate,Unemployed,,1,Local Gang,Absconding,1,0.88,2,1,12,2,1,1977
+241,Ramesh Naik,Blade-97,27,Male,Hassan,Graduate,Labourer,,5,Drug Cartel,Absconding,1,0.54,10,1,7,1,1,1997
+242,Kavita Pillai,Sentinel-56,69,Male,Mysuru,Post-Graduate,Farmer,,2,Local Gang,Arrested,1,0.65,3,3,3,2,3,1956
+243,Ramesh Murthy,Trace-56,69,Male,Belagavi,Illiterate,Driver,,8,None,Arrested,1,0.66,6,2,2,3,3,1956
+244,Rekha Singh,Frost-76,48,Male,Dakshina Kannada,Primary,Unemployed,,0,None,Bail,0,0.76,5,4,12,3,4,1976
+245,Ramesh Menon,Lancer-70,55,Male,Mysuru,Graduate,Unemployed,,3,None,Juvenile,1,0.29,3,1,12,3,6,1970
+246,Arun Singh,Harbor-96,29,Female,Dakshina Kannada,Post-Graduate,Student,,0,Organized Crime,Arrested,1,0.69,5,3,10,4,3,1996
+247,Ramesh Fernandes,Slate-56,69,Male,Mysuru,Primary,Unknown,,0,None,Convicted,1,0.7,3,4,13,3,5,1956
+248,Maria Sharma,Magnet-82,43,Male,Dakshina Kannada,Illiterate,Farmer,,1,Local Gang,Absconding,1,0.8,5,2,3,2,1,1982
+249,Meera D'Souza,Nimbus-75,50,Male,Tumakuru,Graduate,Driver,,3,None,Arrested,1,0.92,4,1,2,3,3,1975
+250,Vijay Kumar,Hawk-97,28,Male,Dakshina Kannada,Primary,Trader,,4,None,Convicted,1,0.19,5,4,11,3,5,1997
+251,Anjali Shetty,Blade-90,35,Male,Bengaluru Rural,Illiterate,Unemployed,,2,Drug Cartel,Juvenile,1,0.4,2,2,12,1,6,1990
+252,Sunita Kumar,Vortex-11,13,Male,Dharwad,Secondary,Farmer,,6,Drug Cartel,Convicted,0,0.68,8,5,3,1,5,2011
+253,Vijay Naik,Blackout-08,17,Female,Dharwad,Post-Graduate,Unknown,,7,None,Acquitted,0,0.8,8,3,13,3,2,2008
+254,Lakshmi Murthy,Copper-01,24,Male,Shivamogga,Secondary,Unemployed,,8,Drug Cartel,Acquitted,1,0.98,11,5,12,1,2,2001
+255,Pooja Prasad,Knox-62,63,Male,Tumakuru,Graduate,Driver,,6,None,Acquitted,1,0.11,4,1,2,3,2,1962
+256,Anjali Murthy,Orion-55,70,Male,Belagavi,Primary,Driver,,4,None,Acquitted,1,0.6,6,4,2,3,2,1955
+257,Mohan Fernandes,Indigo-80,45,Female,Dharwad,Secondary,Unemployed,,7,Drug Cartel,Juvenile,1,0.19,8,5,12,1,6,1980
+258,Deepa Gowda,Zephyr-02,22,Male,Ballari,Post-Graduate,Labourer,,7,None,Bail,1,0.83,9,3,7,3,4,2002
+259,Deepa Iyer,Meteor-66,59,Male,Bengaluru Rural,Primary,Unemployed,,5,None,Juvenile,0,0.59,2,4,12,3,6,1966
+260,Suresh Patil,Panther-59,66,Male,Tumakuru,Primary,Unemployed,,6,None,Convicted,1,0.75,4,4,12,3,5,1959
+261,Suresh Pillai,Scorch-52,73,Male,Dharwad,Graduate,Unknown,,8,None,Convicted,1,0.58,8,1,13,3,5,1952
+262,Krishna Swamy,Maverick-74,50,Male,Udupi,Primary,Unemployed,,6,Drug Cartel,Acquitted,0,0.55,12,4,12,1,2,1974
+263,Maria Hegde,Beacon-99,26,Male,Mysuru,Primary,Trader,,8,None,Juvenile,0,0.74,3,4,11,3,6,1999
+264,Rajesh Rao,Brick-91,34,Male,Shivamogga,Primary,Unknown,,2,Organized Crime,Acquitted,0,0.74,11,4,13,4,2,1991
+265,Lakshmi Swamy,Jet-54,71,Male,Ballari,Secondary,Farmer,,6,None,Acquitted,1,0.12,9,5,3,3,2,1954
+266,Suresh Rao,Fang-77,48,Male,Bengaluru Urban,Secondary,Labourer,,8,None,Bail,0,0.19,1,5,7,3,4,1977
+267,Deepa Hegde,Trace-01,23,Male,Udupi,Secondary,Unknown,,0,Local Gang,Convicted,0,0.96,12,5,13,2,5,2001
+268,Deepa Naik,Warden-94,30,Female,Dharwad,Primary,Unknown,,5,Organized Crime,Acquitted,1,0.8,8,4,13,4,2,1994
+269,Girish Patil,Shadow-88,37,Male,Bengaluru Rural,Graduate,Unemployed,,6,None,Acquitted,0,0.22,2,1,12,3,2,1988
+270,Ravi Patel,Viper-80,44,Female,Hassan,Illiterate,Farmer,,4,Local Gang,Acquitted,0,0.17,10,2,3,2,2,1980
+271,Priya Patil,Surge-04,21,Male,Ballari,Graduate,Unemployed,,5,None,Absconding,0,0.4,9,1,12,3,1,2004
+272,Shameer Prasad,Wolf-97,28,Male,Dharwad,Primary,Unknown,,3,None,Juvenile,0,0.44,8,4,13,3,6,1997
+273,Sanjay Nair,Ash-90,35,Female,Belagavi,Post-Graduate,Farmer,,8,Local Gang,Convicted,1,0.37,6,3,3,2,5,1990
+274,Pooja Kumar,Quartz-52,72,Male,Bengaluru Rural,Primary,Unknown,,3,Drug Cartel,Convicted,1,0.29,2,4,13,1,5,1952
+275,Imran Kumar,Copper-76,48,Male,Belagavi,Illiterate,Unemployed,,1,None,Absconding,0,0.6,6,2,12,3,1,1976
+276,Sunita D'Souza,Eclipse-69,56,Male,Kalaburagi,Illiterate,Student,,0,Drug Cartel,Juvenile,1,0.78,7,2,10,1,6,1969
+277,Meera Prasad,Grit-62,63,Male,Dharwad,Graduate,Trader,,0,Local Gang,Absconding,1,0.22,8,1,11,2,1,1962
+278,Anjali Raju,Warden-87,38,Male,Udupi,Secondary,Unemployed,,8,Organized Crime,Absconding,1,0.14,12,5,12,4,1,1987
+279,Deepa Raju,Mirage-09,16,Male,Udupi,Secondary,Labourer,,6,Drug Cartel,Acquitted,1,0.24,12,5,7,1,2,2009
+280,Rajesh Reddy,Ranger-02,23,Female,Ballari,Graduate,Unknown,,8,None,Bail,1,0.33,9,1,13,3,4,2002
+281,Lakshmi Patel,Spark-95,30,Male,Bengaluru Rural,Primary,Driver,,7,Local Gang,Bail,0,0.72,2,4,2,2,4,1995
+282,Meera Patel,Blade-58,66,Male,Tumakuru,Graduate,Driver,,5,None,Juvenile,0,0.89,4,1,2,3,6,1958
+283,Ganesh Shetty,Basilisk-84,41,Male,Bengaluru Rural,Secondary,Farmer,,2,Organized Crime,Absconding,0,0.76,2,5,3,4,1,1984
+284,Rekha Gowda,Beacon-74,51,Male,Hassan,Primary,Unemployed,,8,None,Acquitted,0,0.69,10,4,12,3,2,1974
+285,Priya Swamy,Blackout-65,56,Male,Bengaluru Rural,Graduate,Driver,,8,None,Juvenile,1,0.86,2,1,2,3,6,1965
+286,Joseph Patil,Domino-60,65,Male,Hassan,Post-Graduate,Unknown,,2,Drug Cartel,Juvenile,0,0.95,10,3,13,1,6,1960
+287,Priya Kumar,Flint-53,72,Male,Ballari,Secondary,Trader,,7,Local Gang,Arrested,1,0.98,9,5,11,2,3,1953
+288,Pooja Pillai,Frost-07,18,Male,Mysuru,Graduate,Unknown,,6,None,Acquitted,1,0.56,3,1,13,3,2,2007
+289,Pooja Khan,Knox-00,25,Female,Bengaluru Urban,Post-Graduate,Labourer,,7,None,Absconding,1,0.56,1,3,7,3,1,2000
+290,Kumar Patil,King-64,60,Male,Belagavi,Illiterate,Trader,,7,Local Gang,Absconding,1,0.68,6,2,11,2,1,1964
+291,Suresh Sharma,Hawk-58,67,Male,Bengaluru Urban,Post-Graduate,Labourer,,0,None,Bail,1,0.56,1,3,7,3,4,1958
+292,Imran Gowda,Storm-50,74,Male,Hassan,Graduate,Farmer,,7,None,Absconding,0,0.64,10,1,3,3,1,1950
+293,Shameer Menon,Ash-76,48,Male,Dharwad,Post-Graduate,Student,,1,None,Convicted,0,0.22,8,3,10,3,5,1976
+294,Krishna Sharma,Bison-68,55,Female,Hassan,Illiterate,Farmer,,8,Organized Crime,Arrested,1,0.53,10,2,3,4,3,1968
+295,Deepa Gowda,Blackout-58,67,Male,Bengaluru Urban,Post-Graduate,Trader,,3,Local Gang,Convicted,0,0.63,1,3,11,2,5,1958
+296,Arun D'Souza,Copper-51,74,Female,Bengaluru Rural,Secondary,Student,,8,Local Gang,Bail,1,0.1,2,5,10,2,4,1951
+297,Nandini Prasad,Vector-05,20,Male,Udupi,Secondary,Trader,,5,None,Absconding,0,0.69,12,5,11,3,1,2005
+298,Ramesh Swamy,Umbra-71,54,Male,Tumakuru,Graduate,Student,,8,Local Gang,Absconding,0,0.6,4,1,10,2,1,1971
+299,Nandini Singh,Iron-91,34,Male,Tumakuru,Graduate,Farmer,,2,None,Absconding,0,0.81,4,1,3,3,1,1991
+300,Maria Menon,Mirage-84,41,Female,Bengaluru Urban,Illiterate,Farmer,,2,Local Gang,Acquitted,0,0.18,1,2,3,2,2,1984
+301,Mohan Iyer,Raven-49,75,Male,Dakshina Kannada,Post-Graduate,Unemployed,,2,Drug Cartel,Convicted,0,0.11,5,3,12,1,5,1949
+302,Anita Rao,Zenith-78,45,Male,Hassan,Primary,Unknown,,0,None,Absconding,1,0.98,10,4,13,3,1,1978
+303,Ganesh Khan,Titan-63,62,Male,Ballari,Illiterate,Unknown,,1,None,Acquitted,0,0.75,9,2,13,3,2,1963
+304,Meera Singh,Panther-90,34,Female,Dharwad,Graduate,Student,,0,None,Absconding,0,0.56,8,1,10,3,1,1990
+305,Anita Patel,Scorch-83,41,Male,Hassan,Secondary,Unknown,,7,Local Gang,Acquitted,0,0.79,10,5,13,2,2,1983
+306,Joseph Fernandes,Cipher-11,13,Male,Bengaluru Rural,Graduate,Unknown,,3,Drug Cartel,Juvenile,1,0.82,2,1,13,1,6,2011
+307,Pooja Raju,Onyx-96,29,Male,Shivamogga,Secondary,Unemployed,,8,None,Convicted,0,0.42,11,5,12,3,5,1996
+308,Kumar Menon,Jet-96,27,Male,Dakshina Kannada,Primary,Labourer,,3,None,Acquitted,0,0.24,5,4,7,3,2,1996
+309,Joseph Menon,Raven-64,61,Female,Dharwad,Secondary,Student,,5,Local Gang,Acquitted,0,0.54,8,5,10,2,2,1964
+310,Sunita Khan,Knox-75,50,Male,Kalaburagi,Graduate,Student,,0,Organized Crime,Bail,0,0.87,7,1,10,4,4,1975
+311,Arun Prasad,Orion-68,57,Male,Kalaburagi,Post-Graduate,Unemployed,,5,None,Acquitted,0,0.27,7,3,12,3,2,1968
+312,Lakshmi Iyer,Kodiak-96,28,Male,Kalaburagi,Secondary,Driver,,6,None,Convicted,1,0.61,7,5,2,3,5,1996
+313,Priya Reddy,Surge-54,71,Male,Kalaburagi,Primary,Labourer,,2,Local Gang,Arrested,1,0.48,7,4,7,2,3,1954
+314,Pooja Raju,Signal-90,34,Male,Hassan,Illiterate,Trader,,1,Drug Cartel,Absconding,1,0.29,10,2,11,1,1,1990
+315,Arun Fernandes,Raven-01,24,Male,Ballari,Secondary,Driver,,0,Local Gang,Arrested,0,0.88,9,5,2,2,3,2001
+316,Nandini Swamy,Signal-68,56,Female,Dakshina Kannada,Secondary,Driver,,8,Local Gang,Juvenile,0,0.9,5,5,2,2,6,1968
+317,Girish Pillai,Ember-98,27,Male,Hassan,Graduate,Farmer,,1,None,Absconding,0,0.31,10,1,3,3,1,1998
+318,Maria Nair,Vector-80,45,Female,Belagavi,Post-Graduate,Student,,7,Local Gang,Absconding,1,0.87,6,3,10,2,1,1980
+319,Joseph Nair,Domino-10,15,Male,Bengaluru Rural,Illiterate,Trader,,8,None,Arrested,0,0.57,2,2,11,3,3,2010
+320,Sunita Iyer,Iron-66,59,Male,Udupi,Secondary,Trader,,2,None,Acquitted,1,0.13,12,5,11,3,2,1966
+321,Anjali Murthy,Talon-70,55,Male,Udupi,Post-Graduate,Labourer,,7,Drug Cartel,Juvenile,0,0.57,12,3,7,1,6,1970
+322,Meera Murthy,Vortex-62,62,Male,Kalaburagi,Secondary,Labourer,,4,None,Arrested,1,0.41,7,5,7,3,3,1962
+323,Maria Murthy,Magnet-81,43,Male,Dakshina Kannada,Post-Graduate,Labourer,,0,Organized Crime,Bail,1,0.47,5,3,7,4,4,1981
+324,Priya Patil,Tiger-99,26,Male,Bengaluru Rural,Graduate,Unknown,,3,Organized Crime,Acquitted,0,0.36,2,1,13,4,2,1999
+325,Ramesh Rao,Radar-67,57,Male,Shivamogga,Graduate,Student,,7,None,Juvenile,0,0.27,11,1,10,3,6,1967
+326,Deepa Gowda,Quartz-98,27,Male,Dharwad,Illiterate,Labourer,,1,None,Arrested,0,0.3,8,2,7,3,3,1998
+327,Shiva Murthy,Striker-54,71,Male,Mysuru,Illiterate,Driver,,6,None,Acquitted,0,0.26,3,2,2,3,2,1954
+328,Krishna Khan,Onyx-71,54,Male,Dharwad,Primary,Unknown,,0,None,Convicted,1,0.57,8,4,13,3,5,1971
+329,Sanjay Menon,Diesel-01,23,Male,Udupi,Post-Graduate,Student,,1,None,Convicted,0,0.28,12,3,10,3,5,2001
+330,Rajesh Reddy,Flint-95,30,Male,Dakshina Kannada,Post-Graduate,Unemployed,,6,None,Arrested,1,0.62,5,3,12,3,3,1995
+331,Vijay Singh,Knox-50,75,Male,Shivamogga,Post-Graduate,Driver,,0,None,Bail,1,0.73,11,3,2,3,4,1950
+332,Lakshmi Hegde,Jade-80,44,Male,Bengaluru Urban,Graduate,Driver,,2,None,Arrested,0,0.74,1,1,2,3,3,1980
+333,Maria Murthy,Trident-97,28,Male,Udupi,Graduate,Driver,,8,None,Arrested,1,0.5,12,1,2,3,3,1997
+334,Meera Fernandes,Zephyr-90,35,Male,Bengaluru Urban,Post-Graduate,Farmer,,5,Organized Crime,Absconding,0,0.75,1,3,3,4,1,1990
+335,Krishna Khan,Shadow-83,42,Male,Dakshina Kannada,Secondary,Trader,,5,None,Arrested,1,0.14,5,5,11,3,3,1983
+336,Anjali Naik,Thunder-62,60,Male,Hassan,Graduate,Unknown,,7,Organized Crime,Acquitted,0,0.14,10,1,13,4,2,1962
+337,Mohan Gowda,Blaze-69,56,Male,Shivamogga,Illiterate,Driver,,8,Drug Cartel,Convicted,0,0.81,11,2,2,1,5,1969
+338,Sunita Prasad,Maverick-62,63,Female,Ballari,Illiterate,Unemployed,,3,Organized Crime,Convicted,1,0.27,9,2,12,4,5,1962
+339,Imran Patil,Nova-68,55,Male,Shivamogga,Post-Graduate,Driver,,7,Drug Cartel,Juvenile,0,0.89,11,3,2,1,6,1968
+340,Deepa Khan,Saffron-09,16,Female,Dharwad,Secondary,Driver,,8,None,Bail,0,0.79,8,5,2,3,4,2009
+341,Kavita Iyer,Signal-02,23,Male,Ballari,Secondary,Driver,,7,Local Gang,Convicted,1,0.75,9,5,2,2,5,2002
+342,Ravi Prasad,Striker-95,30,Female,Tumakuru,Secondary,Unemployed,,4,Organized Crime,Acquitted,1,0.18,4,5,12,4,2,1995
+343,Vijay Nair,Lotus-66,59,Male,Dakshina Kannada,Illiterate,Student,,6,Organized Crime,Absconding,1,0.75,5,2,10,4,1,1966
+344,Lakshmi Swamy,Verdict-81,44,Male,Udupi,Post-Graduate,Trader,,1,None,Bail,0,0.89,12,3,11,3,4,1981
+345,Anjali Hegde,Panther-51,73,Male,Shivamogga,Graduate,Unemployed,,4,Organized Crime,Arrested,0,0.59,11,1,12,4,3,1951
+346,Maria Hegde,Vortex-06,18,Male,Hassan,Post-Graduate,Unemployed,,3,Local Gang,Bail,0,0.23,10,3,12,2,4,2006
+347,Nandini Naik,Hawk-60,65,Male,Kalaburagi,Primary,Farmer,,2,Local Gang,Acquitted,1,0.54,7,4,3,2,2,1960
+348,Deepa Iyer,Blade-53,72,Male,Kalaburagi,Secondary,Unknown,,1,None,Juvenile,0,0.48,7,5,13,3,6,1953
+349,Meera Iyer,Monsoon-07,18,Female,Hassan,Graduate,Student,,2,Local Gang,Arrested,1,0.28,10,1,10,2,3,2007
+350,Patel Kumar,Pioneer-00,25,Female,Dakshina Kannada,Illiterate,Driver,,1,None,Convicted,0,0.12,5,2,2,3,5,2000
+351,Rajesh Rao,Forge-71,53,Male,Udupi,Primary,Unknown,,0,Local Gang,Acquitted,1,0.33,12,4,13,2,2,1971
+352,Shiva Iyer,Indigo-65,60,Female,Bengaluru Rural,Graduate,Unknown,,4,Drug Cartel,Juvenile,0,0.88,2,1,13,1,6,1965
+353,Priya Khan,Lantern-57,67,Female,Ballari,Illiterate,Labourer,,3,Organized Crime,Convicted,1,0.14,9,2,7,4,5,1957
+354,Kavita Murthy,Trident-72,53,Male,Belagavi,Secondary,Labourer,,8,None,Arrested,0,0.89,6,5,7,3,3,1972
+355,Deepa Nair,Zephyr-65,60,Male,Bengaluru Rural,Graduate,Student,,3,Local Gang,Absconding,1,0.48,2,1,10,2,1,1965
+356,Kavita Fernandes,Shadow-58,67,Male,Ballari,Primary,Farmer,,2,None,Juvenile,1,0.49,9,4,3,3,6,1958
+357,Vijay Pillai,Zenith-91,33,Male,Udupi,Illiterate,Labourer,,5,None,Juvenile,1,0.79,12,2,7,3,6,1991
+358,Ramesh Shetty,Indigo-02,22,Male,Bengaluru Rural,Primary,Labourer,,0,Organized Crime,Acquitted,0,0.65,2,4,7,4,2,2002
+359,Priya Hegde,Mantis-98,27,Male,Dharwad,Primary,Student,,7,Drug Cartel,Juvenile,0,0.27,8,4,10,1,6,1998
+360,Vijay Patil,Shakti-98,22,Male,Bengaluru Urban,Secondary,Trader,,3,Drug Cartel,Juvenile,1,0.78,1,5,11,1,6,1998
+361,Anjali Iyer,Flint-63,61,Male,Bengaluru Urban,Post-Graduate,Unknown,,6,Drug Cartel,Bail,0,0.65,1,3,13,1,4,1963
+362,Deepa Prasad,Signal-77,48,Male,Bengaluru Urban,Primary,Student,,8,Local Gang,Juvenile,1,0.6,1,4,10,2,6,1977
+363,Rajesh Shetty,Kodiak-50,75,Male,Kalaburagi,Secondary,Student,,0,Drug Cartel,Acquitted,1,0.52,7,5,10,1,2,1950
+364,Patel Prasad,Blade-83,41,Male,Kalaburagi,Graduate,Driver,,7,None,Absconding,0,0.63,7,1,2,3,1,1983
+365,Rekha Fernandes,Verdict-56,69,Male,Udupi,Primary,Unknown,,1,None,Arrested,0,0.67,12,4,13,3,3,1956
+366,Sanjay Prasad,Rebel-84,38,Male,Mysuru,Secondary,Student,,2,None,Absconding,1,0.79,3,5,10,3,1,1984
+367,Anita Fernandes,Wolf-83,41,Female,Tumakuru,Illiterate,Student,,4,None,Convicted,0,0.87,4,2,10,3,5,1983
+368,Shameer Murthy,Lancer-56,69,Male,Kalaburagi,Graduate,Unemployed,,0,None,Acquitted,0,0.66,7,1,12,3,2,1956
+369,Suresh Patil,Teak-10,13,Male,Bengaluru Urban,Post-Graduate,Farmer,,4,None,Arrested,1,0.2,1,3,3,3,3,2010
+370,Joseph Shetty,Dagger-62,62,Male,Mysuru,Graduate,Unknown,,5,None,Arrested,0,0.39,3,1,13,3,3,1962
+371,Ganesh D'Souza,Pioneer-75,50,Male,Bengaluru Rural,Secondary,Driver,,8,Local Gang,Acquitted,1,0.73,2,5,2,2,2,1975
+372,Nandini Pillai,Sentinel-68,57,Male,Udupi,Secondary,Trader,,5,None,Acquitted,0,0.93,12,5,11,3,2,1968
+373,Pooja Pillai,Solstice-61,64,Male,Dakshina Kannada,Primary,Unemployed,,1,None,Convicted,1,0.76,5,4,12,3,5,1961
+374,Ramesh D'Souza,Switch-54,71,Male,Tumakuru,Illiterate,Unknown,,3,Drug Cartel,Bail,0,0.81,4,2,13,1,4,1954
+375,Deepa Patel,Sierra-89,35,Male,Kalaburagi,Post-Graduate,Student,,0,None,Absconding,0,0.85,7,3,10,3,1,1989
+376,Lakshmi Naik,Domino-01,24,Male,Ballari,Secondary,Trader,,6,Drug Cartel,Arrested,0,0.61,9,5,11,1,3,2001
+377,Deepa Gowda,Forge-94,31,Male,Mysuru,Secondary,Farmer,,0,None,Convicted,1,0.61,3,5,3,3,5,1994
+378,Arun Shetty,Vortex-64,57,Male,Dharwad,Primary,Driver,,7,None,Absconding,0,0.26,8,4,2,3,1,1964
+379,Ganesh Rao,Kodiak-80,45,Male,Ballari,Primary,Labourer,,5,Local Gang,Juvenile,0,0.8,9,4,7,2,6,1980
+380,Krishna Prasad,Mantis-73,52,Male,Kalaburagi,Post-Graduate,Unemployed,,0,None,Arrested,1,0.4,7,3,12,3,3,1973
+381,Pooja Menon,Cipher-10,15,Male,Shivamogga,Primary,Driver,,3,None,Bail,0,0.58,11,4,2,3,4,2010
+382,Sunita Sharma,Saffron-59,66,Female,Ballari,Post-Graduate,Unemployed,,3,Organized Crime,Bail,0,0.34,9,3,12,4,4,1959
+383,Nandini Hegde,Signal-52,73,Female,Ballari,Graduate,Unemployed,,2,None,Convicted,1,0.2,9,1,12,3,5,1952
+384,Sanjay Patil,Storm-68,55,Female,Udupi,Graduate,Student,,5,None,Bail,1,0.74,12,1,10,3,4,1968
+385,Mohan Fernandes,Brick-99,26,Male,Dharwad,Secondary,Unknown,,7,Local Gang,Absconding,1,0.23,8,5,13,2,1,1999
+386,Meera Khan,Dagger-92,33,Male,Bengaluru Urban,Illiterate,Trader,,1,None,Convicted,0,0.86,1,2,11,3,5,1992
+387,Shameer Swamy,Vortex-68,57,Male,Bengaluru Rural,Secondary,Student,,1,None,Acquitted,0,0.46,2,5,10,3,2,1968
+388,Priya Raju,Summit-05,20,Male,Udupi,Post-Graduate,Trader,,6,Organized Crime,Bail,1,0.26,12,3,11,4,4,2005
+389,Krishna Murthy,Bison-53,71,Male,Bengaluru Rural,Graduate,Labourer,,4,Local Gang,Arrested,1,0.72,2,1,7,2,3,1953
+390,Kavita Murthy,Lotus-64,61,Male,Mysuru,Post-Graduate,Farmer,,0,None,Juvenile,1,0.51,3,3,3,3,6,1964
+391,Nandini Fernandes,Rogue-02,23,Male,Shivamogga,Secondary,Trader,,5,None,Acquitted,1,0.65,11,5,11,3,2,2002
+392,Anjali Shetty,Comet-94,30,Male,Ballari,Secondary,Unemployed,,4,None,Absconding,0,0.73,9,5,12,3,1,1994
+393,Maria Khan,Cobra-68,55,Male,Mysuru,Graduate,Labourer,,3,Organized Crime,Convicted,0,0.86,3,1,7,4,5,1968
+394,Vijay Sharma,Anchor-97,28,Male,Dharwad,Graduate,Labourer,,1,None,Juvenile,0,0.87,8,1,7,3,6,1997
+395,Shameer D'Souza,Bison-90,35,Male,Dharwad,Graduate,Driver,,3,None,Convicted,1,0.62,8,1,2,3,5,1990
+396,Maria Prasad,Cinder-83,42,Male,Bengaluru Urban,Post-Graduate,Trader,,5,None,Acquitted,0,0.97,1,3,11,3,2,1983
+397,Patel Prasad,Domino-76,49,Male,Hassan,Illiterate,Labourer,,7,Drug Cartel,Juvenile,1,0.72,10,2,7,1,6,1976
+398,Anita Iyer,Spire-96,27,Male,Ballari,Graduate,Student,,5,Local Gang,Bail,0,0.36,9,1,10,2,4,1996
+399,Patel Swamy,Blaze-08,17,Male,Bengaluru Urban,Secondary,Farmer,,0,None,Convicted,1,0.21,1,5,3,3,5,2008
+400,Sunita Nair,Maverick-01,24,Female,Bengaluru Urban,Illiterate,Student,,2,Organized Crime,Juvenile,1,0.69,1,2,10,4,6,2001
