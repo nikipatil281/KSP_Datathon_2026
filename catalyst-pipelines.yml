@@ -7,7 +7,7 @@ jobs:
       - npm install --prefix functions/crime-api-fn
       - npm install --prefix functions/fir-ocr-api-fn
       - npm install -g zcatalyst-cli
-      - catalyst deploy --project final-datathon-aug --org 60075190019 --dc in --token << env.CATALYST_TOKEN >>
+      - catalyst deploy --project 47006000000124009 --org 60075190019 --dc in --token << env.CATALYST_TOKEN >>
 
 stages:
   - name: deploy

@@ -14,10 +14,6 @@
     "source": "client/dist",
     "ignore": [
       "._*"
-    ],
-    "scripts": {
-      "build": "npm install --prefix client && npm run build --prefix client",
-      "predeploy": "catalyst run client:build"
-    }
+    ]
   }
 }
