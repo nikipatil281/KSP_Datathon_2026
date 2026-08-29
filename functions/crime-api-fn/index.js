@@ -19,7 +19,16 @@
  *  GET /stats/summary   - high-level KPIs
  */
 
+const express = require('express');
 const catalyst = require('zcatalyst-sdk-node');
+
+const api = express();
+api.use(express.json({ limit: '2mb' }));
+api.use((req, res, next) => {
+    cors(res);
+    if (req.method === 'OPTIONS') return res.status(200).end();
+    return next();
+});
 
 function cors(res) {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -413,9 +422,7 @@ const DATA_DIRECTORY_COLUMNS = {
     weapons: ['weapon_id','weapon_name'],
 };
 
-module.exports = async (context, req, res) => {
-    if (req.method === 'OPTIONS') { cors(res); return res.status(200).end(); }
-
+api.all('*', async (req, res) => {
     const app  = catalyst.initialize(req);
     const path = req.path || '';
     const q    = req.query || {};
@@ -932,4 +939,6 @@ module.exports = async (context, req, res) => {
         console.error('[crime-api]', e);
         return fail(res, e.message || 'Internal error');
     }
-};
+});
+
+module.exports = api;
