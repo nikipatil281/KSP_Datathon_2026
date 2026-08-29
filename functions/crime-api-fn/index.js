@@ -58,6 +58,17 @@ function requestBody(req) {
         return {};
     }
 }
+
+function errorMessage(error) {
+    if (!error) return 'Unknown error';
+    if (error.message) return error.message;
+    if (typeof error === 'string') return error;
+    try {
+        return JSON.stringify(error);
+    } catch {
+        return String(error);
+    }
+}
 function parseIdList(value) {
     try {
         const parsed = JSON.parse(value || '[]');
@@ -261,6 +272,15 @@ async function getConnectorAccessToken(app) {
     const connectorName = process.env.ZOHO_QUICKML_CONNECTOR_NAME || process.env.ZOHO_LLM_CONNECTOR_NAME;
     if (!connectorName) return '';
 
+    if (app.connections?.().getConnectionCredentials) {
+        const credentials = await app.connections().getConnectionCredentials(connectorName);
+        return credentials?.access_token
+            || credentials?.accessToken
+            || credentials?.data?.access_token
+            || credentials?.data?.accessToken
+            || '';
+    }
+
     const connectorConfig = process.env.ZOHO_CONNECTOR_CONFIG_JSON
         ? parseLlmJson(process.env.ZOHO_CONNECTOR_CONFIG_JSON)
         : null;
@@ -275,12 +295,7 @@ async function getConnectorAccessToken(app) {
         return tokenDetails?.access_token || tokenDetails?.accessToken || '';
     }
 
-    if (app.connection?.().getConnectorCredentials) {
-        const credentials = await app.connection().getConnectorCredentials(connectorName);
-        return credentials?.access_token || credentials?.accessToken || '';
-    }
-
-    throw new Error('A Zoho connector name was provided, but this Catalyst SDK runtime does not expose connector credentials.');
+    throw new Error('A Zoho Connection name was provided, but this Catalyst SDK runtime did not expose credentials for it.');
 }
 
 async function callZohoLlmForSearch(app, message) {
@@ -294,10 +309,40 @@ async function callZohoLlmForSearch(app, message) {
     }
 
     const endpoint = process.env.ZOHO_QUICKML_LLM_ENDPOINT || process.env.ZOHO_LLM_ENDPOINT;
-    const token = process.env.ZOHO_QUICKML_ACCESS_TOKEN || process.env.ZOHO_LLM_ACCESS_TOKEN || await getConnectorAccessToken(app);
     const org = process.env.ZOHO_CATALYST_ORG_ID || process.env.ZOHO_CATALYST_ORG || process.env.CATALYST_ORG_ID || process.env.CATALYST_ORG;
-    if (!endpoint || !token || !org) {
-        throw new Error('Zoho LLM is not configured. Set either ZOHO_QUICKML_ENDPOINT_KEY, or set ZOHO_QUICKML_LLM_ENDPOINT plus Zoho OAuth credentials/ZOHO_CATALYST_ORG_ID in the Catalyst function environment.');
+    if (!endpoint || !org) {
+        throw new Error('Zoho LLM is not configured. Set either ZOHO_QUICKML_ENDPOINT_KEY, or set ZOHO_QUICKML_LLM_ENDPOINT plus ZOHO_CATALYST_ORG_ID in the Catalyst function environment.');
+    }
+
+    let sdkError = null;
+    const sdkRequester = app.quickML?.().requester;
+    if (sdkRequester?.send) {
+        try {
+            const response = await sdkRequester.send({
+                method: 'POST',
+                url: endpoint,
+                data: inputData,
+                type: 'json',
+                headers: { 'CATALYST-ORG': org },
+                catalyst: false,
+                user: 'admin'
+            });
+            return parseLlmJson(extractZohoLlmText(response.data));
+        } catch (err) {
+            sdkError = err;
+            console.warn('[crime-api] SDK-authorized QuickML GLM request failed; trying explicit token fallback.', err);
+        }
+    }
+
+    const explicitToken = process.env.ZOHO_QUICKML_ACCESS_TOKEN || process.env.ZOHO_LLM_ACCESS_TOKEN;
+    const connectorConfigAvailable = Boolean(process.env.ZOHO_CONNECTOR_CONFIG_JSON || app.connections || app.connector);
+    if (!explicitToken && !connectorConfigAvailable && sdkError) {
+        throw new Error(`Zoho LLM SDK-authorized request failed: ${errorMessage(sdkError)}`);
+    }
+
+    const token = explicitToken || await getConnectorAccessToken(app);
+    if (!token) {
+        throw new Error(`Zoho LLM OAuth token is not available.${sdkError ? ` SDK request failed first: ${errorMessage(sdkError)}` : ''}`);
     }
     const authScheme = process.env.ZOHO_LLM_AUTH_SCHEME || 'Zoho-oauthtoken';
 
@@ -940,7 +985,7 @@ api.all('*', async (req, res) => {
 
     } catch (e) {
         console.error('[crime-api]', e);
-        return fail(res, e.message || 'Internal error');
+        return fail(res, errorMessage(e));
     }
 });
 

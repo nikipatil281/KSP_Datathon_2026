@@ -3,7 +3,13 @@
     "name": "crime-api-fn",
     "stack": "node18",
     "type": "advancedio",
-    "env_variables": {}
+    "env_variables": {
+      "ZOHO_CATALYST_ORG_ID": "60075190019",
+      "ZOHO_QUICKML_LLM_ENDPOINT": "https://api.catalyst.zoho.in/quickml/v1/project/47006000000078001/glm/chat",
+      "ZOHO_QUICKML_CONNECTOR_NAME": "quickml_llm_connection",
+      "ZOHO_QUICKML_MODEL": "crm-di-glm47b_30b_it",
+      "ZOHO_LLM_ENDPOINT_TYPE": "glm_chat"
+    }
   },
   "execution": {
     "main": "index.js"
