@@ -1,0 +1,15 @@
+version: 1
+jobs:
+  deploy_final_datathon_aug:
+    steps:
+      - npm install --prefix client
+      - npm run build --prefix client
+      - npm install --prefix functions/crime-api-fn
+      - npm install --prefix functions/fir-ocr-api-fn
+      - npm install -g zcatalyst-cli
+      - catalyst deploy --project final-datathon-aug --org 60075190019 --dc in --token << env.CATALYST_TOKEN >>
+
+stages:
+  - name: deploy
+    jobs:
+      - deploy_final_datathon_aug
