@@ -44,6 +44,9 @@ function fail(res, msg, status = 500) {
     res.status(status).json({ success: false, error: msg });
 }
 async function zcql(app, sql) {
+    if (app.zcql?.().executeZCQLQuery) {
+        return (await app.zcql().executeZCQLQuery(sql)) || [];
+    }
     return (await app.datastore().executeQuery(sql)) || [];
 }
 function safe(v) { return String(v || '').replace(/'/g, "''"); }

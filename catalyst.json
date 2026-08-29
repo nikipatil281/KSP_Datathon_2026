@@ -5,7 +5,6 @@
       "fir-ocr-api-fn"
     ],
     "ignore": [
-      "node_modules",
       "._*"
     ],
     "source": "functions"
