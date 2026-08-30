@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import {
   AlertCircle, Bot, CheckCircle2, ChevronDown, Code2, Database, GitBranch, Loader2,
-  MessageSquare, Search, Send, Table2, User
+  Maximize2, MessageSquare, Search, Send, Table2, User, X
 } from 'lucide-react';
 import { api } from '../api';
 
@@ -149,36 +149,37 @@ function buildGraph(answer, question) {
   return { nodes: visibleNodes, links: visibleLinks, hidden: graphNodes.length - visibleNodes.length };
 }
 
-function GraphExplorer({ answer, question }) {
-  const graph = useMemo(() => buildGraph(answer, question), [answer, question]);
-  const positions = useMemo(() => {
-    const width = 920;
-    const height = 560;
-    const center = { x: width / 2, y: height / 2 };
-    const map = new Map([['query', center]]);
-    const entityNodes = graph.nodes.filter(node => node.level === 1);
-    const attributeNodes = graph.nodes.filter(node => node.level === 2);
+function getVisibleInteractiveGraph(graph, expandedNodeIds) {
+  const visibleIds = new Set(['query']);
+  graph.nodes.filter(node => node.level === 1).forEach(node => visibleIds.add(node.id));
 
-    entityNodes.forEach((node, index) => {
-      const angle = (-Math.PI / 2) + ((Math.PI * 2 * index) / Math.max(entityNodes.length, 1));
-      map.set(node.id, {
-        x: center.x + Math.cos(angle) * 160,
-        y: center.y + Math.sin(angle) * 150
-      });
+  expandedNodeIds.forEach(nodeId => {
+    visibleIds.add(nodeId);
+    graph.links.forEach(link => {
+      if (link.source === nodeId || link.target === nodeId) {
+        visibleIds.add(link.source);
+        visibleIds.add(link.target);
+      }
     });
+  });
 
-    attributeNodes.forEach((node, index) => {
-      const angle = (-Math.PI / 2) + ((Math.PI * 2 * index) / Math.max(attributeNodes.length, 1));
-      map.set(node.id, {
-        x: center.x + Math.cos(angle) * 295,
-        y: center.y + Math.sin(angle) * 235
-      });
-    });
+  return {
+    ...graph,
+    nodes: graph.nodes.filter(node => visibleIds.has(node.id)),
+    links: graph.links.filter(link => visibleIds.has(link.source) && visibleIds.has(link.target))
+  };
+}
 
-    return map;
-  }, [graph]);
+function getConnectedNodes(graph, nodeId) {
+  const nodeById = new Map(graph.nodes.map(node => [node.id, node]));
+  return graph.links
+    .filter(link => link.source === nodeId || link.target === nodeId)
+    .map(link => nodeById.get(link.source === nodeId ? link.target : link.source))
+    .filter(Boolean);
+}
 
-  const colorFor = type => ({
+function colorForNode(type) {
+  return ({
     query: ['#22d3ee', '#083344'],
     offender: ['#a78bfa', '#2e1065'],
     victim: ['#f472b6', '#500724'],
@@ -188,6 +189,232 @@ function GraphExplorer({ answer, question }) {
     status: ['#4ade80', '#052e16'],
     crime_type: ['#fb923c', '#431407'],
   }[type] || ['#94a3b8', '#0f172a']);
+}
+
+function GraphCanvas({
+  graph,
+  interactive = false,
+  fullscreen = false,
+  selectedNodeId = '',
+  expandedNodeIds = new Set(),
+  onNodeClick = () => {}
+}) {
+  const positions = useMemo(() => {
+    const width = fullscreen ? 1120 : 920;
+    const height = fullscreen ? 720 : 560;
+    const center = { x: width / 2, y: height / 2 };
+    const map = new Map([['query', center]]);
+    const entityNodes = graph.nodes.filter(node => node.level === 1);
+    const attributeNodes = graph.nodes.filter(node => node.level === 2);
+    const entityRadiusX = fullscreen ? 250 : 170;
+    const entityRadiusY = fullscreen ? 210 : 150;
+    const attrRadiusX = fullscreen ? 455 : 315;
+    const attrRadiusY = fullscreen ? 305 : 235;
+
+    entityNodes.forEach((node, index) => {
+      const angle = (-Math.PI / 2) + ((Math.PI * 2 * index) / Math.max(entityNodes.length, 1));
+      map.set(node.id, {
+        x: center.x + Math.cos(angle) * entityRadiusX,
+        y: center.y + Math.sin(angle) * entityRadiusY
+      });
+    });
+
+    attributeNodes.forEach((node, index) => {
+      const angle = (-Math.PI / 2) + ((Math.PI * 2 * index) / Math.max(attributeNodes.length, 1));
+      map.set(node.id, {
+        x: center.x + Math.cos(angle) * attrRadiusX,
+        y: center.y + Math.sin(angle) * attrRadiusY
+      });
+    });
+
+    return map;
+  }, [graph, fullscreen]);
+
+  const width = fullscreen ? 1120 : 920;
+  const height = fullscreen ? 720 : 560;
+  const nodeRadius = node => {
+    if (fullscreen) return node.level === 0 ? 30 : node.level === 1 ? 17 : 10;
+    return node.level === 0 ? 24 : node.level === 1 ? 13 : 8;
+  };
+
+  return (
+    <div className="overflow-auto">
+      <svg viewBox={`0 0 ${width} ${height}`} className={`${fullscreen ? 'h-[calc(100vh-116px)] min-w-[980px]' : 'h-[500px] min-w-[920px]'} w-full`}>
+        <rect width={width} height={height} fill="#020617" />
+        {graph.links.map(link => {
+          const source = positions.get(link.source);
+          const target = positions.get(link.target);
+          if (!source || !target) return null;
+          const isActive = selectedNodeId && (link.source === selectedNodeId || link.target === selectedNodeId);
+          return (
+            <line
+              key={link.id}
+              x1={source.x}
+              y1={source.y}
+              x2={target.x}
+              y2={target.y}
+              stroke={isActive ? '#67e8f9' : '#334155'}
+              strokeWidth={isActive ? '2' : '1'}
+            />
+          );
+        })}
+        {graph.nodes.map(node => {
+          const position = positions.get(node.id);
+          if (!position) return null;
+          const [stroke, fill] = colorForNode(node.type);
+          const radius = nodeRadius(node);
+          const selected = selectedNodeId === node.id;
+          const expanded = expandedNodeIds.has(node.id);
+          return (
+            <g
+              key={node.id}
+              transform={`translate(${position.x} ${position.y})`}
+              onClick={interactive ? () => onNodeClick(node) : undefined}
+              className={interactive ? 'cursor-pointer' : ''}
+            >
+              <circle
+                r={radius}
+                fill={fill}
+                stroke={selected ? '#f8fafc' : stroke}
+                strokeWidth={selected ? '3' : expanded ? '2.5' : '1.5'}
+              />
+              {expanded && <circle r={radius + 5} fill="none" stroke="#67e8f9" strokeWidth="1" strokeDasharray="3 3" />}
+              <text
+                y={radius + (fullscreen ? 13 : 11)}
+                textAnchor="middle"
+                className={`${fullscreen ? 'text-[9px]' : 'text-[8px]'} fill-slate-200 font-semibold`}
+              >
+                <title>{node.title}</title>
+                {truncateLabel(node.label, fullscreen ? 22 : 18)}
+              </text>
+              {node.count > 1 && node.level > 1 && (
+                <text y="3" textAnchor="middle" className="fill-white text-[8px] font-bold">
+                  {node.count}
+                </text>
+              )}
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+}
+
+function NodeDetailsPanel({ graph, selectedNodeId, expandedNodeIds }) {
+  const selectedNode = graph.nodes.find(node => node.id === selectedNodeId) || graph.nodes.find(node => node.id === 'query');
+  const connectedNodes = selectedNode ? getConnectedNodes(graph, selectedNode.id) : [];
+
+  if (!selectedNode) {
+    return (
+      <aside className="rounded-lg border border-slate-800 bg-slate-900 p-4 text-sm text-slate-400">
+        Select a node to inspect its linked datapoints.
+      </aside>
+    );
+  }
+
+  return (
+    <aside className="h-[calc(100vh-116px)] overflow-auto rounded-lg border border-slate-800 bg-slate-900 p-4">
+      <div className="text-[11px] font-semibold uppercase text-slate-500">{selectedNode.type}</div>
+      <div className="mt-1 break-words text-lg font-semibold text-white">{selectedNode.title}</div>
+      <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
+        <div className="rounded-md border border-slate-800 bg-slate-950 p-2">
+          <div className="text-slate-500">Rows</div>
+          <div className="mt-1 font-semibold text-slate-200">{selectedNode.count || 1}</div>
+        </div>
+        <div className="rounded-md border border-slate-800 bg-slate-950 p-2">
+          <div className="text-slate-500">Links</div>
+          <div className="mt-1 font-semibold text-slate-200">{connectedNodes.length}</div>
+        </div>
+      </div>
+      <div className="mt-4 text-xs text-slate-400">
+        {expandedNodeIds.has(selectedNode.id)
+          ? 'This node is expanded. Click it again to collapse its direct datapoints.'
+          : 'Click the selected node in the graph to expand its direct datapoints.'}
+      </div>
+      <div className="mt-5 text-xs font-semibold uppercase text-slate-500">Connected datapoints</div>
+      <div className="mt-2 space-y-2">
+        {connectedNodes.slice(0, 18).map(node => (
+          <div key={node.id} className="rounded-md border border-slate-800 bg-slate-950 p-2">
+            <div className="text-[10px] uppercase text-slate-500">{node.type}</div>
+            <div className="mt-0.5 break-words text-xs text-slate-200">{node.title}</div>
+          </div>
+        ))}
+        {!connectedNodes.length && (
+          <div className="rounded-md border border-slate-800 bg-slate-950 p-3 text-xs text-slate-500">
+            No direct links found for this node.
+          </div>
+        )}
+      </div>
+    </aside>
+  );
+}
+
+function FullscreenGraphModal({ answer, question, onClose }) {
+  const baseGraph = useMemo(() => buildGraph(answer, question), [answer, question]);
+  const [selectedNodeId, setSelectedNodeId] = useState('query');
+  const [expandedNodeIds, setExpandedNodeIds] = useState(new Set());
+  const visibleGraph = useMemo(
+    () => getVisibleInteractiveGraph(baseGraph, expandedNodeIds),
+    [baseGraph, expandedNodeIds]
+  );
+
+  const handleNodeClick = node => {
+    setSelectedNodeId(node.id);
+    if (node.level === 0) return;
+    setExpandedNodeIds(previous => {
+      const next = new Set(previous);
+      if (next.has(node.id)) next.delete(node.id);
+      else next.add(node.id);
+      return next;
+    });
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 bg-slate-950/95 p-4">
+      <div className="flex h-full flex-col rounded-lg border border-slate-700 bg-slate-950 shadow-2xl">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 px-5 py-4">
+          <div>
+            <div className="flex items-center gap-2 text-base font-semibold text-white">
+              <GitBranch size={17} className="text-cyan-400" />
+              Graph Explorer
+            </div>
+            <div className="mt-1 text-xs text-slate-500">
+              Click a node to select it. Entity and attribute nodes expand or collapse their direct links.
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="flex items-center gap-2 rounded-md border border-slate-700 px-3 py-2 text-xs font-semibold text-slate-200 hover:border-cyan-500 hover:text-cyan-200"
+          >
+            <X size={14} />
+            exit full screen
+          </button>
+        </div>
+        <div className="grid min-h-0 flex-1 gap-4 p-4 xl:grid-cols-[minmax(0,1fr)_300px]">
+          <div className="min-w-0 rounded-lg border border-slate-800 bg-slate-950">
+            <GraphCanvas
+              graph={visibleGraph}
+              interactive
+              fullscreen
+              selectedNodeId={selectedNodeId}
+              expandedNodeIds={expandedNodeIds}
+              onNodeClick={handleNodeClick}
+            />
+          </div>
+          <NodeDetailsPanel
+            graph={baseGraph}
+            selectedNodeId={selectedNodeId}
+            expandedNodeIds={expandedNodeIds}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function GraphExplorer({ answer, question }) {
+  const graph = useMemo(() => buildGraph(answer, question), [answer, question]);
 
   if (!graph.nodes.length || !answer?.rows?.length) {
     return (
@@ -208,87 +435,64 @@ function GraphExplorer({ answer, question }) {
           {graph.nodes.length} nodes, {graph.links.length} links{graph.hidden > 0 ? `, ${graph.hidden} grouped away` : ''}
         </div>
       </div>
-      <div className="overflow-auto">
-        <svg viewBox="0 0 920 560" className="h-[560px] min-w-[920px] w-full">
-          <rect width="920" height="560" fill="#020617" />
-          {graph.links.map(link => {
-            const source = positions.get(link.source);
-            const target = positions.get(link.target);
-            if (!source || !target) return null;
-            return (
-              <line
-                key={link.id}
-                x1={source.x}
-                y1={source.y}
-                x2={target.x}
-                y2={target.y}
-                stroke="#334155"
-                strokeWidth="1.2"
-              />
-            );
-          })}
-          {graph.nodes.map(node => {
-            const position = positions.get(node.id);
-            if (!position) return null;
-            const [stroke, fill] = colorFor(node.type);
-            const radius = node.level === 0 ? 44 : node.level === 1 ? 28 : 19;
-            return (
-              <g key={node.id} transform={`translate(${position.x} ${position.y})`}>
-                <circle r={radius} fill={fill} stroke={stroke} strokeWidth="2" />
-                <text
-                  y={radius + 14}
-                  textAnchor="middle"
-                  className="fill-slate-200 text-[10px] font-semibold"
-                >
-                  <title>{node.title}</title>
-                  {node.label}
-                </text>
-                {node.count > 1 && node.level > 1 && (
-                  <text y="4" textAnchor="middle" className="fill-white text-[10px] font-bold">
-                    {node.count}
-                  </text>
-                )}
-              </g>
-            );
-          })}
-        </svg>
-      </div>
+      <GraphCanvas graph={graph} />
     </div>
   );
 }
 
-function ResultsExplorer({ rows, answer, question, viewMode }) {
+function ResultsExplorer({ rows, answer, question, viewMode, onToggleView }) {
+  const [fullscreenGraphOpen, setFullscreenGraphOpen] = useState(false);
+
   return (
     <div className="rounded-lg border border-slate-700 bg-slate-800 p-4">
-      <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-slate-200">
-        {viewMode === 'graph' ? <GitBranch size={15} className="text-cyan-400" /> : <Table2 size={15} className="text-blue-400" />}
-        {viewMode === 'graph' ? 'Query Graph' : 'Query Results'}
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-2 text-sm font-semibold text-slate-200">
+          {viewMode === 'graph' ? <GitBranch size={15} className="text-cyan-400" /> : <Table2 size={15} className="text-blue-400" />}
+          {viewMode === 'graph' ? 'Query Graph' : 'Query Results'}
+        </div>
+        <div className="flex items-center gap-3">
+          {viewMode === 'graph' && (
+            <button
+              type="button"
+              onClick={() => setFullscreenGraphOpen(true)}
+              className="flex items-center gap-1.5 text-xs font-semibold text-cyan-300 underline-offset-4 hover:text-cyan-200 hover:underline"
+            >
+              <Maximize2 size={12} />
+              open in full screen
+            </button>
+          )}
+          <button
+            type="button"
+            onClick={onToggleView}
+            className="text-xs font-semibold text-cyan-300 underline-offset-4 hover:text-cyan-200 hover:underline"
+          >
+            {viewMode === 'graph' ? 'tabular view' : 'graphical view'}
+          </button>
+        </div>
       </div>
       {viewMode === 'graph'
         ? <GraphExplorer answer={answer} question={question} />
         : <ResultsTable rows={rows} />}
+      {fullscreenGraphOpen && (
+        <FullscreenGraphModal
+          answer={answer}
+          question={question}
+          onClose={() => setFullscreenGraphOpen(false)}
+        />
+      )}
     </div>
   );
 }
 
-function SchemaPanel({ schema, viewMode, onToggleView }) {
+function SchemaPanel({ schema }) {
   const tables = Object.entries(schema?.tables || {});
   if (!tables.length) return null;
 
   return (
     <div className="rounded-lg border border-slate-800 bg-slate-900 p-4">
-      <div className="mb-3 flex items-center justify-between gap-3">
-        <div className="flex items-center gap-2 text-sm font-semibold text-slate-200">
-          <Database size={15} className="text-blue-400" />
-          Database Context Used
-        </div>
-        <button
-          type="button"
-          onClick={onToggleView}
-          className="text-xs font-semibold text-cyan-300 underline-offset-4 hover:text-cyan-200 hover:underline"
-        >
-          {viewMode === 'graph' ? 'tabular view' : 'graphical view'}
-        </button>
+      <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-slate-200">
+        <Database size={15} className="text-blue-400" />
+        Database Context Used
       </div>
       <div className="grid grid-cols-1 gap-3 lg:grid-cols-2">
         {tables.map(([name, info]) => (
@@ -497,12 +701,11 @@ export default function SearchPage() {
                 answer={answer}
                 question={activeQuestion}
                 viewMode={viewMode}
+                onToggleView={() => setViewMode(value => value === 'graph' ? 'table' : 'graph')}
               />
 
               <SchemaPanel
                 schema={answer.schema_used}
-                viewMode={viewMode}
-                onToggleView={() => setViewMode(value => value === 'graph' ? 'table' : 'graph')}
               />
             </>
           )}
