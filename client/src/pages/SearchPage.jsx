@@ -68,9 +68,39 @@ function valuePresent(value) {
   return value !== null && value !== undefined && value !== '' && value !== 'None';
 }
 
+function mergeRows(existingRows = [], incomingRows = []) {
+  const seen = new Set();
+  return [...existingRows, ...incomingRows]
+    .filter(Boolean)
+    .filter(row => {
+      const id = [
+        row.offender_id,
+        row.victim_id,
+        row.crime_id,
+        row.fir_number,
+        row.name,
+        row.role
+      ].filter(valuePresent).join('|') || JSON.stringify(row);
+      if (seen.has(id)) return false;
+      seen.add(id);
+      return true;
+    })
+    .slice(0, 16);
+}
+
 function addNode(map, node) {
-  if (!map.has(node.id)) map.set(node.id, node);
-  else map.set(node.id, { ...map.get(node.id), count: (map.get(node.id).count || 1) + 1 });
+  const nodeRows = node.rows || (node.row ? [node.row] : []);
+  if (!map.has(node.id)) {
+    map.set(node.id, { ...node, rows: nodeRows });
+    return;
+  }
+
+  const existing = map.get(node.id);
+  map.set(node.id, {
+    ...existing,
+    count: (existing.count || 1) + (node.countIncrement || 1),
+    rows: mergeRows(existing.rows, nodeRows)
+  });
 }
 
 function addLink(links, source, target) {
@@ -90,7 +120,8 @@ function buildGraph(answer, question) {
     title: centralLabel,
     type: 'query',
     level: 0,
-    count: rows.length
+    count: rows.length,
+    rows
   });
 
   rows.forEach((row, index) => {
@@ -105,7 +136,8 @@ function buildGraph(answer, question) {
       title: entityLabel,
       type: entityType,
       level: 1,
-      count: 1
+      count: 1,
+      row
     });
     addLink(links, 'query', nodeId);
 
@@ -131,7 +163,8 @@ function buildGraph(answer, question) {
         title: `${field}: ${value}`,
         type: field,
         level: 2,
-        count: 1
+        count: 1,
+        row
       });
       addLink(links, nodeId, attrId);
     });
@@ -176,6 +209,110 @@ function getConnectedNodes(graph, nodeId) {
     .filter(link => link.source === nodeId || link.target === nodeId)
     .map(link => nodeById.get(link.source === nodeId ? link.target : link.source))
     .filter(Boolean);
+}
+
+const DETAIL_FIELDS = {
+  offender: [
+    'offender_id',
+    'name',
+    'alias',
+    'gang_affiliation',
+    'status',
+    'prior_convictions',
+    'risk_score',
+    'age',
+    'gender',
+    'district_of_origin',
+    'occupation'
+  ],
+  victim: [
+    'victim_id',
+    'name',
+    'age',
+    'gender',
+    'occupation',
+    'district',
+    'district_of_origin',
+    'crime_type',
+    'fir_number',
+    'role'
+  ],
+  crime: [
+    'crime_id',
+    'fir_number',
+    'crime_type',
+    'district',
+    'incident_date',
+    'incident_year',
+    'status',
+    'modus_operandi',
+    'location',
+    'name',
+    'alias',
+    'gang_affiliation'
+  ],
+  gang: ['gang_affiliation', 'name', 'alias', 'status', 'prior_convictions', 'risk_score', 'crime_type', 'district'],
+  district: ['district', 'district_of_origin', 'name', 'alias', 'crime_type', 'fir_number', 'incident_date', 'status'],
+  crime_type: ['crime_type', 'fir_number', 'district', 'incident_date', 'name', 'alias', 'gang_affiliation'],
+  status: ['status', 'name', 'alias', 'gang_affiliation', 'crime_type', 'fir_number'],
+  occupation: ['occupation', 'name', 'gender', 'district_of_origin', 'crime_type'],
+  gender: ['gender', 'name', 'age', 'occupation', 'district_of_origin'],
+  year: ['incident_year', 'incident_date', 'fir_number', 'crime_type', 'district'],
+  role: ['role', 'name', 'fir_number', 'crime_type', 'district'],
+  risk: ['risk_score', 'name', 'alias', 'gang_affiliation', 'status', 'prior_convictions'],
+  convictions: ['prior_convictions', 'name', 'alias', 'gang_affiliation', 'status', 'risk_score']
+};
+
+function formatFieldName(field) {
+  return field.replace(/_/g, ' ');
+}
+
+function uniqueValues(rows, field, max = 6) {
+  const values = [];
+  const seen = new Set();
+  rows.forEach(row => {
+    const value = row?.[field];
+    if (!valuePresent(value)) return;
+    const key = String(value);
+    if (seen.has(key)) return;
+    seen.add(key);
+    values.push(key);
+  });
+  const visible = values.slice(0, max);
+  return values.length > max ? `${visible.join(', ')} +${values.length - max} more` : visible.join(', ');
+}
+
+function getNodeDetails(node) {
+  const rows = node.rows || [];
+  if (!rows.length) return [];
+
+  if (node.type === 'query') {
+    return [
+      ['matched rows', rows.length],
+      ['offenders', uniqueValues(rows, 'name')],
+      ['crimes', uniqueValues(rows, 'crime_type')],
+      ['districts', uniqueValues(rows, 'district') || uniqueValues(rows, 'district_of_origin')],
+      ['gangs', uniqueValues(rows, 'gang_affiliation')]
+    ].filter(([, value]) => valuePresent(value));
+  }
+
+  const fields = DETAIL_FIELDS[node.type] || Object.keys(rows[0] || {}).slice(0, 10);
+  const details = fields
+    .map(field => [formatFieldName(field), uniqueValues(rows, field)])
+    .filter(([, value]) => valuePresent(value));
+
+  if (node.level === 2) {
+    details.unshift(['node value', node.title.replace(`${node.type}: `, '')]);
+    details.push(...[
+      ['matched rows', rows.length],
+      ['related offenders', uniqueValues(rows, 'name')],
+      ['related FIRs', uniqueValues(rows, 'fir_number')],
+      ['related crime types', uniqueValues(rows, 'crime_type')],
+      ['related districts', uniqueValues(rows, 'district') || uniqueValues(rows, 'district_of_origin')]
+    ].filter(([, value]) => valuePresent(value)));
+  }
+
+  return details.slice(0, 18);
 }
 
 function colorForNode(type) {
@@ -303,6 +440,7 @@ function GraphCanvas({
 function NodeDetailsPanel({ graph, selectedNodeId, expandedNodeIds }) {
   const selectedNode = graph.nodes.find(node => node.id === selectedNodeId) || graph.nodes.find(node => node.id === 'query');
   const connectedNodes = selectedNode ? getConnectedNodes(graph, selectedNode.id) : [];
+  const details = selectedNode ? getNodeDetails(selectedNode) : [];
 
   if (!selectedNode) {
     return (
@@ -330,6 +468,20 @@ function NodeDetailsPanel({ graph, selectedNodeId, expandedNodeIds }) {
         {expandedNodeIds.has(selectedNode.id)
           ? 'This node is expanded. Click it again to collapse its direct datapoints.'
           : 'Click the selected node in the graph to expand its direct datapoints.'}
+      </div>
+      <div className="mt-5 text-xs font-semibold uppercase text-slate-500">Details</div>
+      <div className="mt-2 space-y-2">
+        {details.map(([field, value]) => (
+          <div key={field} className="rounded-md border border-slate-800 bg-slate-950 p-2">
+            <div className="text-[10px] uppercase text-slate-500">{field}</div>
+            <div className="mt-0.5 break-words text-xs text-slate-200">{String(value)}</div>
+          </div>
+        ))}
+        {!details.length && (
+          <div className="rounded-md border border-slate-800 bg-slate-950 p-3 text-xs text-slate-500">
+            No row details were returned for this node.
+          </div>
+        )}
       </div>
       <div className="mt-5 text-xs font-semibold uppercase text-slate-500">Connected datapoints</div>
       <div className="mt-2 space-y-2">
