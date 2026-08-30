@@ -42,7 +42,7 @@ export default function Trends() {
   const [district,  setDistrict]  = useState('');
   const [selTypes,  setSelTypes]  = useState(['Theft','Robbery','Assault']);
 
-  const [tab, setTab] = useState('timeline'); // timeline | yearly | solve
+  const [detailTab, setDetailTab] = useState('yearly'); // yearly | solve
 
   useEffect(() => {
     setLoading(true);
@@ -85,56 +85,51 @@ export default function Trends() {
         </div>
       </div>
 
-      {/* Tabs */}
+      <div className="space-y-4">
+        <div className="flex flex-wrap gap-2">
+          {CRIME_TYPES.map((t,i) => (
+            <button key={t} onClick={()=>toggleType(t)}
+              className="px-3 py-1 text-xs rounded-full border transition-all font-medium"
+              style={{
+                background: selTypes.includes(t) ? '#105a6c' : 'transparent',
+                borderColor: selTypes.includes(t) ? '#2ecce7' : '#505a72',
+                color: selTypes.includes(t) ? '#eef0f6' : '#9aa4ba'
+              }}
+            >{t}</button>
+          ))}
+        </div>
+
+        <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
+          <h3 className="text-sm font-semibold text-slate-300 mb-4">Monthly Incidents Over Time</h3>
+          <ResponsiveContainer width="100%" height={340}>
+            <LineChart data={timelineSeries}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#363d52" />
+              <XAxis dataKey="label" tick={{fill:'#64748b',fontSize:9}} interval={5} />
+              <YAxis tick={{fill:'#94a3b8',fontSize:11}} />
+              <Tooltip
+                contentStyle={{background:'#191c2b',border:'1px solid #505a72',borderRadius:6}}
+                labelStyle={{color:'#dde1ec'}}
+              />
+              <Legend wrapperStyle={{fontSize:11}} />
+              {selTypes.map((t,i) => (
+                <Line key={t} type="monotone" dataKey={t} stroke={COLORS[i%COLORS.length]}
+                  strokeWidth={2} dot={false} activeDot={{r:4}} />
+              ))}
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+
       <div className="flex gap-1 bg-slate-800 rounded-lg p-1 w-fit">
-        {[['timeline','Timeline'],['yearly','Year Comparison'],['solve','Solve Rate']].map(([v,l])=>(
-          <button key={v} onClick={()=>setTab(v)}
-            className={`px-4 py-1.5 text-xs font-medium rounded-md transition-colors ${tab===v?'bg-blue-600 text-white':'text-slate-400 hover:text-white'}`}
+        {[['yearly','Year Comparison'],['solve','Solve Rate']].map(([v,l])=>(
+          <button key={v} onClick={()=>setDetailTab(v)}
+            className={`px-4 py-1.5 text-xs font-medium rounded-md transition-colors ${detailTab===v?'bg-blue-600 text-white':'text-slate-400 hover:text-white'}`}
           >{l}</button>
         ))}
       </div>
 
-      {/* Timeline tab */}
-      {tab === 'timeline' && (
-        <div className="space-y-4">
-          {/* Type selector */}
-          <div className="flex flex-wrap gap-2">
-            {CRIME_TYPES.map((t,i) => (
-              <button key={t} onClick={()=>toggleType(t)}
-                className="px-3 py-1 text-xs rounded-full border transition-all font-medium"
-                style={{
-                  background: selTypes.includes(t) ? '#105a6c' : 'transparent',
-                  borderColor: selTypes.includes(t) ? '#2ecce7' : '#505a72',
-                  color: selTypes.includes(t) ? '#eef0f6' : '#9aa4ba'
-                }}
-              >{t}</button>
-            ))}
-          </div>
-
-          <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
-            <h3 className="text-sm font-semibold text-slate-300 mb-4">Monthly Incidents Over Time</h3>
-            <ResponsiveContainer width="100%" height={340}>
-              <LineChart data={timelineSeries}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#363d52" />
-                <XAxis dataKey="label" tick={{fill:'#64748b',fontSize:9}} interval={5} />
-                <YAxis tick={{fill:'#94a3b8',fontSize:11}} />
-                <Tooltip
-                  contentStyle={{background:'#191c2b',border:'1px solid #505a72',borderRadius:6}}
-                  labelStyle={{color:'#dde1ec'}}
-                />
-                <Legend wrapperStyle={{fontSize:11}} />
-                {selTypes.map((t,i) => (
-                  <Line key={t} type="monotone" dataKey={t} stroke={COLORS[i%COLORS.length]}
-                    strokeWidth={2} dot={false} activeDot={{r:4}} />
-                ))}
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
-      )}
-
       {/* Year comparison */}
-      {tab === 'yearly' && (
+      {detailTab === 'yearly' && (
         <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
           <h3 className="text-sm font-semibold text-slate-300 mb-4">Year-over-Year Comparison (Monthly)</h3>
           <ResponsiveContainer width="100%" height={340}>
@@ -165,7 +160,7 @@ export default function Trends() {
       )}
 
       {/* Solve rate tab */}
-      {tab === 'solve' && (
+      {detailTab === 'solve' && (
         <div className="space-y-6">
           <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
             <h3 className="text-sm font-semibold text-slate-300 mb-4">Annual Solve Rate Trend</h3>

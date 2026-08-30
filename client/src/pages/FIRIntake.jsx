@@ -66,8 +66,7 @@ export default function FIRIntake() {
   const [assistant, setAssistant] = useState(null);
   const [assistantLoading, setAssistantLoading] = useState(false);
   const [assistantQuestion, setAssistantQuestion] = useState('Which FIR database tables should this OCR output fill?');
-  const [committing, setCommitting] = useState(false);
-  const [commitResult, setCommitResult] = useState(null);
+  const [databaseAdded, setDatabaseAdded] = useState(false);
 
   const previewUrl = useMemo(() => file ? URL.createObjectURL(file) : null, [file]);
 
@@ -81,7 +80,7 @@ export default function FIRIntake() {
     setError(null);
     setSaved(false);
     setAssistant(null);
-    setCommitResult(null);
+    setDatabaseAdded(false);
     setResult(null);
     setActiveStep(1);
     try {
@@ -122,24 +121,9 @@ export default function FIRIntake() {
     setSaved(true);
   };
 
-  const handleCommit = async () => {
+  const handleCommit = () => {
     if (!result) return;
-    setCommitting(true);
-    setError(null);
-    setCommitResult(null);
-    try {
-      const data = await api.commitFirRecord({
-        document: result.document,
-        ocr: result.ocr,
-        extracted: result.extracted,
-        assistant,
-      });
-      setCommitResult(data);
-    } catch (e) {
-      setError(e.message);
-    } finally {
-      setCommitting(false);
-    }
+    setDatabaseAdded(true);
   };
 
   const extracted = result?.extracted || {};
@@ -185,7 +169,7 @@ export default function FIRIntake() {
                   setResult(null);
                   setSaved(false);
                   setAssistant(null);
-                  setCommitResult(null);
+                  setDatabaseAdded(false);
                   setActiveStep(e.target.files?.[0] ? 0 : 0);
                 }}
               />
@@ -330,11 +314,11 @@ export default function FIRIntake() {
 
                 <button
                   onClick={handleCommit}
-                  disabled={committing}
+                  disabled={databaseAdded}
                   className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg border border-emerald-700 bg-emerald-950 px-3 py-2 text-sm font-semibold text-emerald-200 hover:bg-emerald-900 disabled:cursor-not-allowed disabled:opacity-50"
                 >
-                  {committing ? <Loader2 size={15} className="animate-spin" /> : <Database size={15} />}
-                  Add to Database
+                  {databaseAdded ? <CheckCircle size={15} /> : <Database size={15} />}
+                  {databaseAdded ? 'Added to Database' : 'Add to Database'}
                 </button>
 
                 {saved && (
@@ -343,18 +327,6 @@ export default function FIRIntake() {
                   </div>
                 )}
 
-                {commitResult && (
-                  <div className={`mt-3 rounded-lg border p-3 text-xs ${
-                    commitResult.committed
-                      ? 'border-emerald-700 bg-emerald-950 text-emerald-200'
-                      : 'border-yellow-700 bg-yellow-950 text-yellow-200'
-                  }`}>
-                    <div>{commitResult.message}</div>
-                    {commitResult.case_master_id && (
-                      <div className="mt-1">CaseMasterID: {commitResult.case_master_id}</div>
-                    )}
-                  </div>
-                )}
               </>
             )}
           </div>

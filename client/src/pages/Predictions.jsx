@@ -111,7 +111,7 @@ export default function Predictions() {
       {/* ── Rising Trends ────────────────────────────────────────────────── */}
       {tab === 'hotzones' && (
         <div className="space-y-4">
-          <p className="text-xs text-slate-400">Crime types trending upward — predicted next-month count vs recent average.</p>
+          <p className="text-xs text-slate-400">Crime types trending upward by predicted next-month count. Recent average is shown in the tooltip and cards.</p>
           <div className="bg-slate-800 rounded-xl p-5 border border-slate-700">
             <ResponsiveContainer width="100%" height={340}>
               <BarChart data={hotzones.slice(0,15)} layout="vertical">
@@ -122,10 +122,18 @@ export default function Predictions() {
                   tickFormatter={v => v.length>12?v.slice(0,12)+'…':v} />
                 <Tooltip
                   contentStyle={{background:'#191c2b',border:'1px solid #505a72',borderRadius:6}}
-                  formatter={(v,n) => [v, n==='predicted_next_month'?'Predicted':'Recent Avg']}
+                  formatter={(v,n,props) => [
+                    v,
+                    n === 'predicted_next_month'
+                      ? `Predicted next month (recent avg ${props?.payload?.recent_avg ?? 'n/a'})`
+                      : n
+                  ]}
                 />
-                <Bar dataKey="recent_avg" fill="#5aa8c0" radius={[0,3,3,0]} name="Recent Avg" />
-                <Bar dataKey="predicted_next_month" fill="#df4f61" radius={[0,3,3,0]} name="Predicted" />
+                <Bar dataKey="predicted_next_month" fill="#df4f61" radius={[0,3,3,0]} name="Predicted next month">
+                  {hotzones.slice(0,15).map((h,i) => (
+                    <Cell key={`trend-cell-${i}`} fill={h.predicted_next_month > h.recent_avg ? '#df4f61' : '#5aa8c0'} />
+                  ))}
+                </Bar>
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -139,6 +147,7 @@ export default function Predictions() {
                 <div className="text-xs text-slate-400 mb-2">{h.district}</div>
                 <div className="flex gap-4 text-xs">
                   <div><span className="text-slate-500">Trend:</span> <span className="text-red-400 font-bold">+{h.trend_pct_per_month}%/mo</span></div>
+                  <div><span className="text-slate-500">Recent avg:</span> <span className="text-slate-200 font-bold">{h.recent_avg}</span></div>
                   <div><span className="text-slate-500">Next mo:</span> <span className="text-white font-bold">{h.predicted_next_month}</span></div>
                 </div>
               </div>

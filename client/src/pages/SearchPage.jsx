@@ -212,13 +212,21 @@ function getVisibleInteractiveGraph(graph, expandedNodeId) {
   return {
     ...graph,
     nodes: graph.nodes.filter(node => visibleIds.has(node.id)),
-    links: graph.links.filter(link => {
-      if (!visibleIds.has(link.source) || !visibleIds.has(link.target)) return false;
-      if (link.source === 'query' || link.target === 'query') return true;
-      if (!expandedNodeId) return false;
-      if (expandedNode?.level === 1) return link.source === expandedNodeId || link.target === expandedNodeId;
-      return link.source === expandedNodeId || link.target === expandedNodeId;
-    })
+    links: graph.links
+      .filter(link => {
+        if (!visibleIds.has(link.source) || !visibleIds.has(link.target)) return false;
+        if (link.source === 'query' || link.target === 'query') return true;
+        if (!expandedNodeId) return false;
+        return link.source === expandedNodeId || link.target === expandedNodeId;
+      })
+      .map(link => {
+        const touchesExpanded = expandedNodeId && (link.source === expandedNodeId || link.target === expandedNodeId);
+        return {
+          ...link,
+          focus: touchesExpanded && expandedNode?.level === 1,
+          associationHint: touchesExpanded && expandedNode?.level === 2
+        };
+      })
   };
 }
 
@@ -402,6 +410,7 @@ function GraphCanvas({
           const target = positions.get(link.target);
           if (!source || !target) return null;
           const isSelectedLink = selectedNodeId && (link.source === selectedNodeId || link.target === selectedNodeId);
+          const highlight = isSelectedLink && !link.associationHint;
           return (
             <line
               key={link.id}
@@ -409,8 +418,10 @@ function GraphCanvas({
               y1={source.y}
               x2={target.x}
               y2={target.y}
-              stroke={isSelectedLink ? '#67e8f9' : '#334155'}
-              strokeWidth={isSelectedLink ? '2' : '1'}
+              stroke={highlight ? '#67e8f9' : '#334155'}
+              strokeWidth={highlight ? '2' : '1'}
+              strokeOpacity={link.associationHint ? '0.28' : '1'}
+              strokeDasharray={link.associationHint ? '4 6' : undefined}
             />
           );
         })}

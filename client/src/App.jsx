@@ -24,7 +24,6 @@ const NAV = [
   { to: '/network',     icon: Network,         label: 'Link Analysis'},
   { to: '/trends',      icon: TrendingUp,      label: 'Trends'       },
   { to: '/alerts',      icon: AlertTriangle,   label: 'Alerts'       },
-  { to: '/updates',     icon: Bell,            label: 'New Updates'  },
   { to: '/datacards',   icon: PanelsTopLeft,   label: 'DataCards'    },
   { to: '/fir-intake',  icon: FileText,        label: 'FIR Intake'   },
   { to: '/predictions', icon: Shield,          label: 'Predictions'  },
@@ -85,6 +84,19 @@ export default function App() {
           >
             <Database size={17} className="flex-shrink-0 text-blue-400" />
             {!collapsed && <span>Data Directory</span>}
+          </NavLink>
+          <NavLink
+            to="/updates"
+            className={({ isActive }) =>
+              `mt-1 flex items-center gap-3 px-3 py-2 rounded-md border text-sm transition-colors ${
+                isActive
+                  ? 'border-slate-700 bg-slate-800 text-white'
+                  : 'border-transparent text-slate-400 hover:border-slate-800 hover:bg-slate-800/60 hover:text-white'
+              }`
+            }
+          >
+            <Bell size={17} className="flex-shrink-0 text-blue-400" />
+            {!collapsed && <span>New Updates</span>}
           </NavLink>
         </div>
 
