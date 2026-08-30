@@ -86,6 +86,123 @@ function flattenZcqlRows(rows) {
     });
 }
 
+function asNumber(value) {
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : null;
+}
+
+function normalizeText(value) {
+    return String(value || '').toLowerCase();
+}
+
+function includesText(value, expected) {
+    if (!expected) return true;
+    return normalizeText(value).includes(normalizeText(expected));
+}
+
+function parseSqlFilterValue(sql, qualifiedColumn) {
+    const escapedColumn = qualifiedColumn.replace('.', '\\.');
+    const equalsMatch = sql.match(new RegExp(`${escapedColumn}\\s*=\\s*'([^']*)'`, 'i'));
+    if (equalsMatch) return equalsMatch[1];
+    const likeMatch = sql.match(new RegExp(`${escapedColumn}\\s+LIKE\\s+'%?([^'%]*)%?'`, 'i'));
+    if (likeMatch) return likeMatch[1];
+    return '';
+}
+
+function parseSqlNumericFilter(sql, qualifiedColumn) {
+    const escapedColumn = qualifiedColumn.replace('.', '\\.');
+    const match = sql.match(new RegExp(`${escapedColumn}\\s*(>=|>|=)\\s*(\\d+)`, 'i'));
+    if (!match) return null;
+    return { operator: match[1], value: Number(match[2]) };
+}
+
+function matchesNumericFilter(value, filter) {
+    if (!filter) return true;
+    const numericValue = asNumber(value);
+    if (numericValue === null) return false;
+    if (filter.operator === '>') return numericValue > filter.value;
+    if (filter.operator === '>=') return numericValue >= filter.value;
+    return numericValue === filter.value;
+}
+
+async function selectAll(app, table) {
+    return flattenZcqlRows(await zcql(app, `SELECT * FROM ${table} LIMIT 300`));
+}
+
+function limitRows(rows, sql) {
+    const limit = Number(String(sql || '').match(/\blimit\s+(\d+)\b/i)?.[1] || 100);
+    return rows.slice(0, Math.min(limit || 100, 100));
+}
+
+async function executeJoinlessSearchAssistantQuery(app, queryPlan) {
+    const sql = queryPlan.sql || '';
+    const target = normalizeText(queryPlan.target);
+    const wantsVictims = target.includes('victim') || /\bfrom\s+victims\b|\bv\./i.test(sql);
+    const wantsCrimes = target.includes('crime') || /\bfrom\s+crimes\b|\bc\./i.test(sql);
+
+    const gang = parseSqlFilterValue(sql, 'o.gang_affiliation');
+    const crimeType = parseSqlFilterValue(sql, 'c.crime_type');
+    const district = parseSqlFilterValue(sql, 'c.district') || parseSqlFilterValue(sql, 'v.district');
+    const offenderStatus = parseSqlFilterValue(sql, 'o.status');
+    const crimeStatus = parseSqlFilterValue(sql, 'c.status');
+    const priorConvictions = parseSqlNumericFilter(sql, 'o.prior_convictions');
+    const riskScore = parseSqlNumericFilter(sql, 'o.risk_score');
+    const incidentYear = parseSqlNumericFilter(sql, 'c.incident_year');
+
+    const [offenders, crimes, crimeOffenders, victims, crimeVictims] = await Promise.all([
+        selectAll(app, 'offenders'),
+        selectAll(app, 'crimes'),
+        selectAll(app, 'crime_offenders'),
+        selectAll(app, 'victims'),
+        selectAll(app, 'crime_victims')
+    ]);
+
+    const matchingOffenderIds = new Set(offenders
+        .filter(offender => includesText(offender.gang_affiliation, gang))
+        .filter(offender => includesText(offender.status, offenderStatus))
+        .filter(offender => matchesNumericFilter(offender.prior_convictions, priorConvictions))
+        .filter(offender => matchesNumericFilter(offender.risk_score, riskScore))
+        .map(offender => String(offender.offender_id)));
+
+    let matchingCrimeIds = new Set(crimes
+        .filter(crime => includesText(crime.crime_type, crimeType))
+        .filter(crime => includesText(crime.district, district))
+        .filter(crime => includesText(crime.status, crimeStatus))
+        .filter(crime => matchesNumericFilter(crime.incident_year, incidentYear))
+        .map(crime => String(crime.crime_id)));
+
+    if (gang || offenderStatus || priorConvictions || riskScore) {
+        const offenderCrimeIds = new Set(crimeOffenders
+            .filter(link => matchingOffenderIds.has(String(link.offender_id)))
+            .map(link => String(link.crime_id)));
+        matchingCrimeIds = new Set([...matchingCrimeIds].filter(crimeId => offenderCrimeIds.has(crimeId)));
+    }
+
+    if (wantsVictims) {
+        const matchingVictimIds = new Set(crimeVictims
+            .filter(link => matchingCrimeIds.has(String(link.crime_id)))
+            .map(link => String(link.victim_id)));
+        return limitRows(victims
+            .filter(victim => matchingVictimIds.has(String(victim.victim_id)))
+            .filter(victim => includesText(victim.district, district)), sql);
+    }
+
+    if (wantsCrimes && !/\bfrom\s+offenders\b/i.test(sql)) {
+        return limitRows(crimes.filter(crime => matchingCrimeIds.has(String(crime.crime_id))), sql);
+    }
+
+    if (crimeType || district || crimeStatus || incidentYear) {
+        const crimeOffenderIds = new Set(crimeOffenders
+            .filter(link => matchingCrimeIds.has(String(link.crime_id)))
+            .map(link => String(link.offender_id)));
+        return limitRows(offenders
+            .filter(offender => matchingOffenderIds.has(String(offender.offender_id)))
+            .filter(offender => crimeOffenderIds.has(String(offender.offender_id))), sql);
+    }
+
+    return limitRows(offenders.filter(offender => matchingOffenderIds.has(String(offender.offender_id))), sql);
+}
+
 const SEARCH_ASSISTANT_SCHEMA = {
     tables: {
         offenders: {
@@ -556,9 +673,18 @@ api.all('*', async (req, res) => {
         if (req.method === 'POST' && path === '/search/assistant') {
             const body = requestBody(req);
             const queryPlan = await buildSearchAssistantQuery(app, body.message || body.query || '');
-            const rows = flattenZcqlRows(await zcql(app, queryPlan.sql));
+            let execution_strategy = 'single_zcql';
+            let rows;
+            try {
+                rows = flattenZcqlRows(await zcql(app, queryPlan.sql));
+            } catch (error) {
+                if (!/No relationship between tables/i.test(errorMessage(error))) throw error;
+                execution_strategy = 'decomposed_zcql';
+                rows = await executeJoinlessSearchAssistantQuery(app, queryPlan);
+            }
             return ok(res, {
                 ...queryPlan,
+                execution_strategy,
                 rows,
                 row_count: rows.length,
                 message: rows.length
