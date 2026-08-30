@@ -336,14 +336,6 @@ export default function Dashboard({ mode = 'crime' }) {
 
       {mode === 'fir' && (
       <section className="space-y-6">
-        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h2 className="text-lg font-semibold text-white">FIR Pattern Stories</h2>
-            <p className="text-sm text-slate-500">Joined views across CaseMaster, employees, stations, courts, accused, victims, acts and chargesheets.</p>
-          </div>
-          <div className="text-xs font-medium uppercase tracking-wider text-cyan-300">Police FIR ER schema</div>
-        </div>
-
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-6">
           <div className="rounded-xl border border-slate-700 bg-slate-800 p-4 xl:col-span-2">
             <div className="text-xs uppercase tracking-wider text-slate-500">FIR cases</div>

@@ -59,9 +59,9 @@ export default function GeoMap() {
       zoom: 7,
       zoomControl: true,
     });
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '© OpenStreetMap © CARTO',
-      subdomains: 'abcd', maxZoom: 19
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors',
+      maxZoom: 19
     }).addTo(mapInst.current);
     return () => { mapInst.current?.remove(); mapInst.current = null; };
   }, []);
