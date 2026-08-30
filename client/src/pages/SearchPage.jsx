@@ -194,19 +194,19 @@ function getPrimaryResultGraph(graph) {
   };
 }
 
-function getVisibleInteractiveGraph(graph, expandedNodeIds) {
+function getVisibleInteractiveGraph(graph, expandedNodeId) {
   const visibleIds = new Set(['query']);
   graph.nodes.filter(node => node.level === 1).forEach(node => visibleIds.add(node.id));
 
-  expandedNodeIds.forEach(nodeId => {
-    visibleIds.add(nodeId);
+  if (expandedNodeId) {
+    visibleIds.add(expandedNodeId);
     graph.links.forEach(link => {
-      if (link.source === nodeId || link.target === nodeId) {
+      if (link.source === expandedNodeId || link.target === expandedNodeId) {
         visibleIds.add(link.source);
         visibleIds.add(link.target);
       }
     });
-  });
+  }
 
   return {
     ...graph,
@@ -345,7 +345,7 @@ function GraphCanvas({
   interactive = false,
   fullscreen = false,
   selectedNodeId = '',
-  expandedNodeIds = new Set(),
+  expandedNodeId = '',
   onNodeClick = () => {}
 }) {
   const positions = useMemo(() => {
@@ -413,7 +413,7 @@ function GraphCanvas({
           const [stroke, fill] = colorForNode(node.type);
           const radius = nodeRadius(node);
           const selected = selectedNodeId === node.id;
-          const expanded = expandedNodeIds.has(node.id);
+          const expanded = expandedNodeId === node.id;
           return (
             <g
               key={node.id}
@@ -449,7 +449,7 @@ function GraphCanvas({
   );
 }
 
-function NodeDetailsPanel({ graph, selectedNodeId, expandedNodeIds }) {
+function NodeDetailsPanel({ graph, selectedNodeId, expandedNodeId }) {
   const selectedNode = graph.nodes.find(node => node.id === selectedNodeId) || graph.nodes.find(node => node.id === 'query');
   const connectedNodes = selectedNode ? getConnectedNodes(graph, selectedNode.id) : [];
   const details = selectedNode ? getNodeDetails(selectedNode) : [];
@@ -477,7 +477,7 @@ function NodeDetailsPanel({ graph, selectedNodeId, expandedNodeIds }) {
         </div>
       </div>
       <div className="mt-4 text-xs text-slate-400">
-        {expandedNodeIds.has(selectedNode.id)
+        {expandedNodeId === selectedNode.id
           ? 'This node is expanded. Click it again to collapse its direct datapoints.'
           : 'Click the selected node in the graph to expand its direct datapoints.'}
       </div>
@@ -516,21 +516,16 @@ function NodeDetailsPanel({ graph, selectedNodeId, expandedNodeIds }) {
 function FullscreenGraphModal({ answer, question, onClose }) {
   const baseGraph = useMemo(() => buildGraph(answer, question), [answer, question]);
   const [selectedNodeId, setSelectedNodeId] = useState('query');
-  const [expandedNodeIds, setExpandedNodeIds] = useState(new Set());
+  const [expandedNodeId, setExpandedNodeId] = useState('');
   const visibleGraph = useMemo(
-    () => getVisibleInteractiveGraph(baseGraph, expandedNodeIds),
-    [baseGraph, expandedNodeIds]
+    () => getVisibleInteractiveGraph(baseGraph, expandedNodeId),
+    [baseGraph, expandedNodeId]
   );
 
   const handleNodeClick = node => {
     setSelectedNodeId(node.id);
     if (node.level === 0) return;
-    setExpandedNodeIds(previous => {
-      const next = new Set(previous);
-      if (next.has(node.id)) next.delete(node.id);
-      else next.add(node.id);
-      return next;
-    });
+    setExpandedNodeId(previous => previous === node.id ? '' : node.id);
   };
 
   return (
@@ -562,14 +557,14 @@ function FullscreenGraphModal({ answer, question, onClose }) {
               interactive
               fullscreen
               selectedNodeId={selectedNodeId}
-              expandedNodeIds={expandedNodeIds}
+              expandedNodeId={expandedNodeId}
               onNodeClick={handleNodeClick}
             />
           </div>
           <NodeDetailsPanel
             graph={baseGraph}
             selectedNodeId={selectedNodeId}
-            expandedNodeIds={expandedNodeIds}
+            expandedNodeId={expandedNodeId}
           />
         </div>
       </div>
