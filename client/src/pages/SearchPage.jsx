@@ -1,17 +1,17 @@
 import React, { useMemo, useState } from 'react';
 import {
-  AlertCircle, Bot, CheckCircle2, Code2, Database, Loader2,
+  AlertCircle, Bot, CheckCircle2, ChevronDown, Code2, Database, Loader2,
   MessageSquare, Search, Send, Table2, User
 } from 'lucide-react';
 import { api } from '../api';
 
 const EXAMPLES = [
   'offenders part of Organized Crime with prior convictions',
-  'victims of Drug Cartel theft cases in Bengaluru Rural',
-  'high risk offenders from Local Gang linked to robbery in 2024',
-  'active offenders linked to cybercrime in Bengaluru Urban',
-  'theft cases in Belagavi involving Deepa Naik or alias Jade-83',
-  'victims of Organized Crime in Mysuru district',
+  'high risk offenders from Organized Crime in Bengaluru Rural',
+  'offenders from Local Gang with prior convictions above 5',
+  'theft cases in Bengaluru Rural',
+  'victims of Theft cases in Bengaluru Rural',
+  'cybercrime cases in Bengaluru Urban in 2024',
 ];
 
 function ResultCell({ value }) {
@@ -94,6 +94,7 @@ export default function SearchPage() {
   const [answer, setAnswer] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [showSql, setShowSql] = useState(false);
 
   const handleAsk = async e => {
     e.preventDefault();
@@ -103,6 +104,7 @@ export default function SearchPage() {
     setLoading(true);
     setError(null);
     setAnswer(null);
+    setShowSql(false);
     setConversation(items => [...items, { role: 'user', content: question }]);
 
     try {
@@ -243,13 +245,26 @@ export default function SearchPage() {
               </div>
 
               <div className="rounded-lg border border-slate-700 bg-slate-800 p-4">
-                <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-slate-200">
-                  <Code2 size={15} className="text-green-400" />
-                  Generated ZCQL
-                </div>
-                <pre className="overflow-auto rounded-lg border border-slate-900 bg-black/40 p-3 text-xs leading-relaxed text-green-200">
-                  <code>{answer.sql}</code>
-                </pre>
+                <button
+                  type="button"
+                  onClick={() => setShowSql(value => !value)}
+                  className="flex w-full items-center justify-between gap-3 text-left text-sm font-semibold text-slate-200"
+                  aria-expanded={showSql}
+                >
+                  <span className="flex items-center gap-2">
+                    <Code2 size={15} className="text-green-400" />
+                    Generated ZCQL
+                  </span>
+                  <ChevronDown
+                    size={16}
+                    className={`text-slate-400 transition-transform ${showSql ? 'rotate-180' : ''}`}
+                  />
+                </button>
+                {showSql && (
+                  <pre className="mt-3 max-h-[320px] overflow-auto whitespace-pre-wrap break-words rounded-lg border border-slate-900 bg-black/40 p-3 text-xs leading-relaxed text-green-200">
+                    <code>{answer.sql}</code>
+                  </pre>
+                )}
               </div>
 
               <div className="rounded-lg border border-slate-700 bg-slate-800 p-4">
