@@ -18,7 +18,8 @@ import NewUpdates from './pages/NewUpdates';
 import DataCards from './pages/DataCards';
 
 const NAV = [
-  { to: '/',            icon: LayoutDashboard, label: 'Dashboard'    },
+  { to: '/crime-dashboard', icon: LayoutDashboard, label: 'Crime Dashboard' },
+  { to: '/fir-dashboard',   icon: FileText,        label: 'FIR Dashboard'   },
   { to: '/map',         icon: Map,             label: 'Crime Map'    },
   { to: '/network',     icon: Network,         label: 'Link Analysis'},
   { to: '/trends',      icon: TrendingUp,      label: 'Trends'       },
@@ -99,7 +100,9 @@ export default function App() {
       {/* Main */}
       <main className="w-0 min-w-0 flex-1 overflow-x-hidden overflow-y-auto">
         <Routes>
-          <Route path="/"            element={<Dashboard />} />
+          <Route path="/"            element={<Dashboard mode="crime" />} />
+          <Route path="/crime-dashboard" element={<Dashboard mode="crime" />} />
+          <Route path="/fir-dashboard" element={<Dashboard mode="fir" />} />
           <Route path="/map"         element={<GeoMap />} />
           <Route path="/network"     element={<NetworkGraph />} />
           <Route path="/trends"      element={<Trends />} />

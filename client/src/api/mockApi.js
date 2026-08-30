@@ -26,17 +26,25 @@ import firArrestSurrender from '../mock-data/ArrestSurrender.json';
 import firCaseCategory from '../mock-data/CaseCategory.json';
 import firCaseMaster from '../mock-data/CaseMaster.json';
 import firCaseStatusMaster from '../mock-data/CaseStatusMaster.json';
+import firCasteMaster from '../mock-data/CasteMaster.json';
 import firChargesheetDetails from '../mock-data/ChargesheetDetails.json';
 import firComplainantDetails from '../mock-data/ComplainantDetails.json';
 import firCourt from '../mock-data/Court.json';
 import firCrimeHead from '../mock-data/CrimeHead.json';
+import firCrimeHeadActSection from '../mock-data/CrimeHeadActSection.json';
 import firCrimeSubHead from '../mock-data/CrimeSubHead.json';
+import firDesignation from '../mock-data/Designation.json';
 import firDistrict from '../mock-data/District.json';
 import firEmployee from '../mock-data/Employee.json';
 import firGravityOffence from '../mock-data/GravityOffence.json';
+import firInvOccuranceTime from '../mock-data/Inv_OccuranceTime.json';
+import firOccupationMaster from '../mock-data/OccupationMaster.json';
 import firRank from '../mock-data/Rank.json';
+import firReligionMaster from '../mock-data/ReligionMaster.json';
 import firSection from '../mock-data/Section.json';
+import firState from '../mock-data/State.json';
 import firUnit from '../mock-data/Unit.json';
+import firUnitType from '../mock-data/UnitType.json';
 import firVictim from '../mock-data/Victim.json';
 import firInvArrestSurrenderAccused from '../mock-data/inv_arrestsurrenderaccused.json';
 
@@ -53,17 +61,25 @@ const baseTables = {
   CaseCategory: firCaseCategory,
   CaseMaster: firCaseMaster,
   CaseStatusMaster: firCaseStatusMaster,
+  CasteMaster: firCasteMaster,
   ChargesheetDetails: firChargesheetDetails,
   ComplainantDetails: firComplainantDetails,
   Court: firCourt,
   CrimeHead: firCrimeHead,
+  CrimeHeadActSection: firCrimeHeadActSection,
   CrimeSubHead: firCrimeSubHead,
+  Designation: firDesignation,
   District: firDistrict,
   Employee: firEmployee,
   GravityOffence: firGravityOffence,
+  Inv_OccuranceTime: firInvOccuranceTime,
+  OccupationMaster: firOccupationMaster,
   Rank: firRank,
+  ReligionMaster: firReligionMaster,
   Section: firSection,
+  State: firState,
   Unit: firUnit,
+  UnitType: firUnitType,
   Victim: firVictim,
   inv_arrestsurrenderaccused: firInvArrestSurrenderAccused,
   associations,
@@ -87,6 +103,37 @@ const baseTables = {
   relationship_types: relationshipTypes,
   victims,
   weapons,
+};
+
+const tableAliases = {
+  accused: 'Accused',
+  act: 'Act',
+  act_section_association: 'ActSectionAssociation',
+  arrest_surrender: 'ArrestSurrender',
+  case_category: 'CaseCategory',
+  case_master: 'CaseMaster',
+  case_status_master: 'CaseStatusMaster',
+  caste_master: 'CasteMaster',
+  chargesheet_details: 'ChargesheetDetails',
+  complainant_details: 'ComplainantDetails',
+  court: 'Court',
+  crime_head: 'CrimeHead',
+  crime_head_act_section: 'CrimeHeadActSection',
+  crime_sub_head: 'CrimeSubHead',
+  designation: 'Designation',
+  district: 'District',
+  employee: 'Employee',
+  gravity_offence: 'GravityOffence',
+  inv_occurance_time: 'Inv_OccuranceTime',
+  inv_arrestsurrenderaccused: 'inv_arrestsurrenderaccused',
+  occupation_master: 'OccupationMaster',
+  rank: 'Rank',
+  religion_master: 'ReligionMaster',
+  section: 'Section',
+  state: 'State',
+  unit: 'Unit',
+  unit_type: 'UnitType',
+  victim: 'Victim',
 };
 
 const wait = (value) => new Promise(resolve => {
@@ -333,9 +380,10 @@ function getOfficers() {
 }
 
 function getTableRows(table) {
+  const resolvedTable = tableAliases[table] || table;
   if (table === 'officers') return getOfficers();
   if (table === 'crime_officers') return [...crimeOfficers, ...readAddedCrimeOfficers()];
-  return baseTables[table] || [];
+  return baseTables[resolvedTable] || [];
 }
 
 function groupBy(rows, keyFn) {
@@ -1075,7 +1123,7 @@ export const mockApi = {
   processFirDocument: (file, options) => wait(buildMockFirExtraction(file, options)),
   assistFirDraft: payload => wait(buildMockFirAssistant(payload)),
   commitFirRecord: payload => wait(mockCommitFirRecord(payload)),
-  listDataTables: () => wait(Object.keys(baseTables).sort().map(name => ({
+  listDataTables: () => wait([...new Set([...Object.keys(baseTables), ...Object.keys(tableAliases)])].sort().map(name => ({
     name,
     file_name: `${name}.csv`,
     row_count: getTableRows(name).length,

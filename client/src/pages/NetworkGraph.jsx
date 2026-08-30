@@ -59,13 +59,34 @@ export default function NetworkGraph() {
 
     d3.select(el).selectAll('*').remove();
 
-    // Filter nodes
-    let nodes = data.nodes;
-    if (filter === 'gang')      nodes = nodes.filter(n => n.group !== 'None');
-    if (filter === 'high-risk') nodes = nodes.filter(n => n.risk >= 0.7);
+    const allNodes = data.nodes.map(node => ({ ...node }));
+    const seedIds = new Set(
+      allNodes
+        .filter(n => {
+          if (filter === 'gang') return n.group !== 'None';
+          if (filter === 'high-risk') return n.risk >= 0.7;
+          return true;
+        })
+        .map(n => String(n.id))
+    );
+    const visibleIds = new Set(seedIds);
 
-    const nodeIds = new Set(nodes.map(n => n.id));
-    const edges   = data.edges.filter(e => nodeIds.has(String(e.source)) && nodeIds.has(String(e.target)));
+    if (filter !== 'all') {
+      data.edges.forEach(edge => {
+        const source = String(edge.source);
+        const target = String(edge.target);
+        if (seedIds.has(source) || seedIds.has(target)) {
+          visibleIds.add(source);
+          visibleIds.add(target);
+        }
+      });
+    }
+
+    const nodes = allNodes.filter(n => visibleIds.has(String(n.id)));
+    const nodeIds = new Set(nodes.map(n => String(n.id)));
+    const edges = data.edges
+      .map(edge => ({ ...edge, source: String(edge.source), target: String(edge.target) }))
+      .filter(e => nodeIds.has(e.source) && nodeIds.has(e.target));
 
     const svg = d3.select(el)
       .attr('width', W).attr('height', H);
@@ -113,7 +134,7 @@ export default function NetworkGraph() {
       .attr('fill', d => GROUP_COLORS[d.group] || '#20c7e8')
       .attr('stroke', d => STATUS_COLORS[d.status] || '#fff')
       .attr('stroke-width', 2)
-      .attr('opacity', 0.9);
+      .attr('opacity', d => filter === 'all' || seedIds.has(String(d.id)) ? 0.92 : 0.45);
 
     // Risk ring (pulse for high risk)
     node.filter(d => d.risk >= 0.8).append('circle')
@@ -162,7 +183,7 @@ export default function NetworkGraph() {
 
         <div className="flex gap-1 bg-slate-800 rounded-lg p-1">
           {[['all','All'],['gang','Gangs Only'],['high-risk','High Risk (≥0.7)']].map(([v,l]) => (
-            <button key={v} onClick={() => setFilter(v)}
+            <button key={v} onClick={() => { setFilter(v); setSelected(null); }}
               className={`px-3 py-1 text-xs rounded-md font-medium transition-colors ${filter===v?'bg-blue-600 text-white':'text-slate-400 hover:text-white'}`}
             >{l}</button>
           ))}

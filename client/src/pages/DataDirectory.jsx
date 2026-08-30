@@ -22,54 +22,35 @@ const OFFICER_INITIAL = {
 
 const ASSIGNABLE_CASE_STATUSES = new Set(['Open', 'Under Investigation', 'Cold Case']);
 
-const RELATION_TABLES = new Set([
-  'associations',
-  'crime_offenders',
-  'crime_officers',
-  'crime_victims',
-]);
-
-const INDEXING_TABLES = new Set([
-  'crime_types',
-  'modus_operandi',
-  'case_statuses',
-  'location_types',
-  'weapons',
-  'gangs',
-  'education_levels',
-  'occupations',
-  'offender_statuses',
-  'relationship_types',
-]);
-
-const DATA_TABLE_ORDER = [
-  'crimes',
-  'officers',
-  'offenders',
-  'victims',
-  'districts',
-  'police_stations',
-  'monthly_stats',
-];
-
-const INDEXING_TABLE_ORDER = [
-  'crime_types',
-  'modus_operandi',
-  'case_statuses',
-  'location_types',
-  'weapons',
-  'gangs',
-  'education_levels',
-  'occupations',
-  'offender_statuses',
-  'relationship_types',
-];
-
-const RELATION_TABLE_ORDER = [
-  'crime_officers',
-  'crime_offenders',
-  'crime_victims',
-  'associations',
+const FIR_ER_TABLE_ORDER = [
+  'case_master',
+  'complainant_details',
+  'act_section_association',
+  'victim',
+  'accused',
+  'arrest_surrender',
+  'act',
+  'section',
+  'crime_head_act_section',
+  'crime_head',
+  'crime_sub_head',
+  'caste_master',
+  'religion_master',
+  'occupation_master',
+  'case_status_master',
+  'court',
+  'district',
+  'state',
+  'unit',
+  'unit_type',
+  'rank',
+  'designation',
+  'employee',
+  'case_category',
+  'gravity_offence',
+  'inv_occurance_time',
+  'inv_arrestsurrenderaccused',
+  'chargesheet_details',
 ];
 
 const FILTERABLE_ALLOWLIST = new Set([
@@ -408,7 +389,7 @@ function OfficerForm({ onSubmit, onCancel, stations, districts, crimeTypes, case
 
 export default function DataDirectory() {
   const [tables, setTables] = useState([]);
-  const [selected, setSelected] = useState('crimes');
+  const [selected, setSelected] = useState('case_master');
   const [table, setTable] = useState(null);
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(0);
@@ -417,8 +398,6 @@ export default function DataDirectory() {
   const [showOfficerForm, setShowOfficerForm] = useState(false);
   const [saving, setSaving] = useState(false);
   const [columnFilters, setColumnFilters] = useState({});
-  const [indexingOpen, setIndexingOpen] = useState(true);
-  const [relationsOpen, setRelationsOpen] = useState(false);
 
   const loadTables = () => api.listDataTables().then(setTables);
 
@@ -447,28 +426,12 @@ export default function DataDirectory() {
   const tableMap = useMemo(() => Object.fromEntries(tables.map(t => [t.name, t])), [tables]);
   const dataTables = useMemo(() => {
     const byName = new Map(tables.map(t => [t.name, t]));
-    return DATA_TABLE_ORDER
-      .map(name => byName.get(name))
-      .filter(Boolean)
-      .concat(tables.filter(t =>
-        !RELATION_TABLES.has(t.name) &&
-        !INDEXING_TABLES.has(t.name) &&
-        !DATA_TABLE_ORDER.includes(t.name)
-      ));
-  }, [tables]);
-  const indexingTables = useMemo(() => {
-    const byName = new Map(tables.map(t => [t.name, t]));
-    return INDEXING_TABLE_ORDER
-      .map(name => byName.get(name))
-      .filter(Boolean)
-      .concat(tables.filter(t => INDEXING_TABLES.has(t.name) && !INDEXING_TABLE_ORDER.includes(t.name)));
-  }, [tables]);
-  const relationTables = useMemo(() => {
-    const byName = new Map(tables.map(t => [t.name, t]));
-    return RELATION_TABLE_ORDER
-      .map(name => byName.get(name))
-      .filter(Boolean)
-      .concat(tables.filter(t => RELATION_TABLES.has(t.name) && !RELATION_TABLE_ORDER.includes(t.name)));
+    return FIR_ER_TABLE_ORDER.map(name => ({
+      name,
+      file_name: `${name}.csv`,
+      row_count: byName.get(name)?.row_count || 0,
+      column_count: byName.get(name)?.column_count || 0,
+    }));
   }, [tables]);
 
   const rows = table?.rows || [];
@@ -519,41 +482,15 @@ export default function DataDirectory() {
           <Database size={18} className="text-blue-400" />
           <div>
             <h1 className="text-sm font-bold text-white">Data Directory</h1>
-            <p className="text-xs text-slate-500">CSV-backed local tables</p>
+            <p className="text-xs text-slate-500">Police FIR ER tables only</p>
           </div>
         </div>
 
         <div className="min-h-0 flex-1 overflow-y-auto pr-1">
           <div className="mb-2 px-2 text-[11px] font-semibold uppercase tracking-wide text-slate-500">
-            Data Tables
+            FIR ER Tables
           </div>
           <TableNavList tables={dataTables} selected={selected} onSelect={setSelected} />
-
-          <div className="mt-4 border-t border-slate-800 pt-3">
-            <button
-              onClick={() => setIndexingOpen(open => !open)}
-              className="mb-2 flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-left text-[11px] font-semibold uppercase tracking-wide text-slate-500 hover:bg-slate-800 hover:text-slate-300"
-            >
-              <span>Indexing Tables</span>
-              <ChevronRight size={14} className={`transition-transform ${indexingOpen ? 'rotate-90' : ''}`} />
-            </button>
-            {indexingOpen && (
-              <TableNavList tables={indexingTables} selected={selected} onSelect={setSelected} />
-            )}
-          </div>
-
-          <div className="mt-4 border-t border-slate-800 pt-3">
-            <button
-              onClick={() => setRelationsOpen(open => !open)}
-              className="mb-2 flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-left text-[11px] font-semibold uppercase tracking-wide text-slate-500 hover:bg-slate-800 hover:text-slate-300"
-            >
-              <span>Relation Tables</span>
-              <ChevronRight size={14} className={`transition-transform ${relationsOpen ? 'rotate-90' : ''}`} />
-            </button>
-            {relationsOpen && (
-              <TableNavList tables={relationTables} selected={selected} onSelect={setSelected} />
-            )}
-          </div>
         </div>
       </aside>
 

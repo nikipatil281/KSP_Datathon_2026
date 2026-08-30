@@ -197,6 +197,7 @@ function getPrimaryResultGraph(graph) {
 function getVisibleInteractiveGraph(graph, expandedNodeId) {
   const visibleIds = new Set(['query']);
   graph.nodes.filter(node => node.level === 1).forEach(node => visibleIds.add(node.id));
+  const expandedNode = graph.nodes.find(node => node.id === expandedNodeId);
 
   if (expandedNodeId) {
     visibleIds.add(expandedNodeId);
@@ -211,7 +212,13 @@ function getVisibleInteractiveGraph(graph, expandedNodeId) {
   return {
     ...graph,
     nodes: graph.nodes.filter(node => visibleIds.has(node.id)),
-    links: graph.links.filter(link => visibleIds.has(link.source) && visibleIds.has(link.target))
+    links: graph.links.filter(link => {
+      if (!visibleIds.has(link.source) || !visibleIds.has(link.target)) return false;
+      if (link.source === 'query' || link.target === 'query') return true;
+      if (!expandedNodeId) return false;
+      if (expandedNode?.level === 1) return link.source === expandedNodeId || link.target === expandedNodeId;
+      return link.source === expandedNodeId || link.target === expandedNodeId;
+    })
   };
 }
 
@@ -382,8 +389,8 @@ function GraphCanvas({
   const width = fullscreen ? 1120 : 920;
   const height = fullscreen ? 720 : 560;
   const nodeRadius = node => {
-    if (fullscreen) return node.level === 0 ? 30 : node.level === 1 ? 17 : 10;
-    return node.level === 0 ? 24 : node.level === 1 ? 13 : 8;
+    if (fullscreen) return node.level === 0 ? 24 : node.level === 1 ? 12 : 9;
+    return node.level === 0 ? 18 : node.level === 1 ? 9 : 7;
   };
 
   return (
@@ -466,16 +473,6 @@ function NodeDetailsPanel({ graph, selectedNodeId, expandedNodeId }) {
     <aside className="h-[calc(100vh-116px)] overflow-auto rounded-lg border border-slate-800 bg-slate-900 p-4">
       <div className="text-[11px] font-semibold uppercase text-slate-500">{selectedNode.type}</div>
       <div className="mt-1 break-words text-lg font-semibold text-white">{selectedNode.title}</div>
-      <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
-        <div className="rounded-md border border-slate-800 bg-slate-950 p-2">
-          <div className="text-slate-500">Rows</div>
-          <div className="mt-1 font-semibold text-slate-200">{selectedNode.count || 1}</div>
-        </div>
-        <div className="rounded-md border border-slate-800 bg-slate-950 p-2">
-          <div className="text-slate-500">Links</div>
-          <div className="mt-1 font-semibold text-slate-200">{connectedNodes.length}</div>
-        </div>
-      </div>
       <div className="mt-4 text-xs text-slate-400">
         {expandedNodeId === selectedNode.id
           ? 'This node is expanded. Click it again to collapse its direct datapoints.'

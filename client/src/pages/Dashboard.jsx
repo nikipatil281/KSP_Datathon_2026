@@ -115,7 +115,7 @@ function CrimeTypeTooltip({ active, payload, label }) {
   );
 }
 
-export default function Dashboard() {
+export default function Dashboard({ mode = 'crime' }) {
   const [data,  setData]  = useState(null);
   const [year,  setYear]  = useState(2024);
   const [error, setError] = useState(null);
@@ -155,8 +155,14 @@ export default function Dashboard() {
       {/* Header */}
       <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
         <div>
-          <h1 className="text-xl font-bold text-white md:text-2xl">Crime Intelligence Dashboard</h1>
-          <p className="text-slate-400 text-sm mt-1">Karnataka State Police — SCRB Analytics Hub</p>
+          <h1 className="text-xl font-bold text-white md:text-2xl">
+            {mode === 'fir' ? 'FIR Dashboard' : 'Crime Dashboard'}
+          </h1>
+          <p className="text-slate-400 text-sm mt-1">
+            {mode === 'fir'
+              ? 'Police FIR ER-schema analytics across cases, officers, stations, courts, victims and accused.'
+              : 'Karnataka State Police - SCRB Analytics Hub'}
+          </p>
         </div>
         <div className="grid w-full grid-cols-4 gap-1 rounded-lg border border-slate-700 bg-slate-900 p-1 xl:flex xl:w-auto">
           {YEAR_OPTIONS.map(y => (
@@ -171,38 +177,40 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* KPI Cards */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <KPICard
-          label="Total Incidents"
-          value={summary.total_crimes?.toLocaleString()}
-          sub={year === 'all' ? 'Years 2020-2025' : `Year ${yearLabel}`}
-          icon={AlertTriangle}
-          color="text-red-400"
-          pulse
-        />
-        <KPICard
-          label="Solve Rate"
-          value={`${summary.solve_rate}%`}
-          sub={`${summary.solved_crimes?.toLocaleString()} solved`}
-          icon={ShieldCheck}
-          color="text-green-400"
-        />
-        <KPICard
-          label="Avg Severity"
-          value={(summary.avg_severity || 0).toFixed(2)}
-          sub="Scale 1–5"
-          icon={TrendingUp}
-          color="text-amber-400"
-        />
-        <KPICard
-          label="Property Loss"
-          value={`₹${((summary.total_loss || 0)/1e7).toFixed(1)}Cr`}
-          sub="Reported value"
-          icon={DollarSign}
-          color="text-blue-400"
-        />
-      </div>
+      {mode === 'crime' && (
+        <>
+          {/* KPI Cards */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <KPICard
+              label="Total Incidents"
+              value={summary.total_crimes?.toLocaleString()}
+              sub={year === 'all' ? 'Years 2020-2025' : `Year ${yearLabel}`}
+              icon={AlertTriangle}
+              color="text-red-400"
+              pulse
+            />
+            <KPICard
+              label="Solve Rate"
+              value={`${summary.solve_rate}%`}
+              sub={`${summary.solved_crimes?.toLocaleString()} solved`}
+              icon={ShieldCheck}
+              color="text-green-400"
+            />
+            <KPICard
+              label="Avg Severity"
+              value={(summary.avg_severity || 0).toFixed(2)}
+              sub="Scale 1-5"
+              icon={TrendingUp}
+              color="text-amber-400"
+            />
+            <KPICard
+              label="Property Loss"
+              value={`₹${((summary.total_loss || 0)/1e7).toFixed(1)}Cr`}
+              sub="Reported value"
+              icon={DollarSign}
+              color="text-blue-400"
+            />
+          </div>
 
       {/* Row 2: Crime type bar + District bar */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -323,8 +331,11 @@ export default function Dashboard() {
       </div>
 
 
-      {/* FIR-native pattern stories */}
-      <section className="space-y-6 border-t border-slate-700 pt-6">
+        </>
+      )}
+
+      {mode === 'fir' && (
+      <section className="space-y-6">
         <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>
             <h2 className="text-lg font-semibold text-white">FIR Pattern Stories</h2>
@@ -502,6 +513,7 @@ export default function Dashboard() {
           </ResponsiveContainer>
         </div>
       </section>
+      )}
     </div>
   );
 }
