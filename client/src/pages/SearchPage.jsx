@@ -182,6 +182,18 @@ function buildGraph(answer, question) {
   return { nodes: visibleNodes, links: visibleLinks, hidden: graphNodes.length - visibleNodes.length };
 }
 
+function getPrimaryResultGraph(graph) {
+  const visibleIds = new Set(['query']);
+  graph.nodes.filter(node => node.level === 1).forEach(node => visibleIds.add(node.id));
+
+  return {
+    ...graph,
+    nodes: graph.nodes.filter(node => visibleIds.has(node.id)),
+    links: graph.links.filter(link => visibleIds.has(link.source) && visibleIds.has(link.target)),
+    hidden: graph.nodes.filter(node => node.level === 2).length
+  };
+}
+
 function getVisibleInteractiveGraph(graph, expandedNodeIds) {
   const visibleIds = new Set(['query']);
   graph.nodes.filter(node => node.level === 1).forEach(node => visibleIds.add(node.id));
@@ -382,7 +394,7 @@ function GraphCanvas({
           const source = positions.get(link.source);
           const target = positions.get(link.target);
           if (!source || !target) return null;
-          const isActive = selectedNodeId && (link.source === selectedNodeId || link.target === selectedNodeId);
+          const isSelectedLink = selectedNodeId && (link.source === selectedNodeId || link.target === selectedNodeId);
           return (
             <line
               key={link.id}
@@ -390,8 +402,8 @@ function GraphCanvas({
               y1={source.y}
               x2={target.x}
               y2={target.y}
-              stroke={isActive ? '#67e8f9' : '#334155'}
-              strokeWidth={isActive ? '2' : '1'}
+              stroke={isSelectedLink ? '#67e8f9' : '#334155'}
+              strokeWidth={isSelectedLink ? '2' : '1'}
             />
           );
         })}
@@ -413,9 +425,9 @@ function GraphCanvas({
                 r={radius}
                 fill={fill}
                 stroke={selected ? '#f8fafc' : stroke}
-                strokeWidth={selected ? '3' : expanded ? '2.5' : '1.5'}
+                strokeWidth={selected ? '3' : '1.5'}
               />
-              {expanded && <circle r={radius + 5} fill="none" stroke="#67e8f9" strokeWidth="1" strokeDasharray="3 3" />}
+              {expanded && !selected && <circle r={radius + 4} fill="none" stroke="#64748b" strokeWidth="1" strokeDasharray="3 4" opacity="0.55" />}
               <text
                 y={radius + (fullscreen ? 13 : 11)}
                 textAnchor="middle"
@@ -566,7 +578,8 @@ function FullscreenGraphModal({ answer, question, onClose }) {
 }
 
 function GraphExplorer({ answer, question }) {
-  const graph = useMemo(() => buildGraph(answer, question), [answer, question]);
+  const baseGraph = useMemo(() => buildGraph(answer, question), [answer, question]);
+  const graph = useMemo(() => getPrimaryResultGraph(baseGraph), [baseGraph]);
 
   if (!graph.nodes.length || !answer?.rows?.length) {
     return (
@@ -584,7 +597,7 @@ function GraphExplorer({ answer, question }) {
           Graph Explorer
         </div>
         <div className="text-xs text-slate-500">
-          {graph.nodes.length} nodes, {graph.links.length} links{graph.hidden > 0 ? `, ${graph.hidden} grouped away` : ''}
+          {graph.nodes.length} result nodes{graph.hidden > 0 ? `, ${graph.hidden} details available in full screen` : ''}
         </div>
       </div>
       <GraphCanvas graph={graph} />
