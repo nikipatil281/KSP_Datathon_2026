@@ -321,12 +321,6 @@ export default function FIRIntake() {
                   {databaseAdded ? 'Added to Database' : 'Add to Database'}
                 </button>
 
-                {saved && (
-                  <div className="mt-3 rounded-lg border border-green-700 bg-green-950 p-3 text-xs text-green-300">
-                    Reviewed locally for demo. The assistant mapping is ready for officer validation.
-                  </div>
-                )}
-
               </>
             )}
           </div>

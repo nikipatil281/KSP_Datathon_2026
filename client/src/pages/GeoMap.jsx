@@ -213,7 +213,7 @@ export default function GeoMap() {
 
       {/* Map + Side panel */}
       <div className="flex flex-1 overflow-hidden">
-        <div ref={mapRef} className="flex-1" />
+        <div ref={mapRef} className="map-dark flex-1" />
         {info && (
           <div className="w-64 bg-slate-900 border-l border-slate-800 p-4 overflow-y-auto">
             <div className="flex items-center justify-between mb-3">

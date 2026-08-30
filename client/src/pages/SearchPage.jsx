@@ -198,6 +198,7 @@ function getVisibleInteractiveGraph(graph, expandedNodeId) {
   const visibleIds = new Set(['query']);
   graph.nodes.filter(node => node.level === 1).forEach(node => visibleIds.add(node.id));
   const expandedNode = graph.nodes.find(node => node.id === expandedNodeId);
+  const expandedAttributeIds = new Set();
 
   if (expandedNodeId) {
     visibleIds.add(expandedNodeId);
@@ -205,6 +206,11 @@ function getVisibleInteractiveGraph(graph, expandedNodeId) {
       if (link.source === expandedNodeId || link.target === expandedNodeId) {
         visibleIds.add(link.source);
         visibleIds.add(link.target);
+        const otherId = link.source === expandedNodeId ? link.target : link.source;
+        const otherNode = graph.nodes.find(node => node.id === otherId);
+        if (expandedNode?.level === 1 && otherNode?.level === 2) {
+          expandedAttributeIds.add(otherId);
+        }
       }
     });
   }
@@ -217,14 +223,19 @@ function getVisibleInteractiveGraph(graph, expandedNodeId) {
         if (!visibleIds.has(link.source) || !visibleIds.has(link.target)) return false;
         if (link.source === 'query' || link.target === 'query') return true;
         if (!expandedNodeId) return false;
-        return link.source === expandedNodeId || link.target === expandedNodeId;
+        if (link.source === expandedNodeId || link.target === expandedNodeId) return true;
+        if (expandedNode?.level === 1) {
+          return expandedAttributeIds.has(link.source) || expandedAttributeIds.has(link.target);
+        }
+        return false;
       })
       .map(link => {
         const touchesExpanded = expandedNodeId && (link.source === expandedNodeId || link.target === expandedNodeId);
+        const touchesExpandedAttribute = expandedAttributeIds.has(link.source) || expandedAttributeIds.has(link.target);
         return {
           ...link,
-          focus: touchesExpanded && expandedNode?.level === 1,
-          associationHint: touchesExpanded && expandedNode?.level === 2
+          focus: touchesExpanded,
+          associationHint: Boolean(expandedNode?.level === 1 && touchesExpandedAttribute && !touchesExpanded)
         };
       })
   };
