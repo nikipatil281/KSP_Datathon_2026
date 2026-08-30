@@ -1,0 +1,1150 @@
+offender_id_a,offender_id_b,relationship_type,strength
+1,40,Family,0.39
+1,27,Family,0.63
+1,293,Known associate,0.54
+27,293,Family,0.87
+2,29,Co-accused,0.71
+2,166,Co-accused,0.48
+2,281,Known associate,0.95
+166,281,Co-accused,0.73
+2,45,Family,0.44
+2,382,Co-accused,0.45
+45,382,Known associate,0.75
+2,224,Gang member,0.65
+2,139,Gang member,0.43
+2,62,Gang member,0.4
+62,139,Family,0.64
+3,7,Gang member,0.93
+3,168,Known associate,0.44
+7,168,Known associate,0.68
+3,123,Known associate,0.73
+3,218,Co-accused,0.91
+123,218,Family,0.92
+3,114,Family,0.59
+3,277,Known associate,0.66
+114,277,Family,0.79
+3,74,Gang member,0.4
+3,104,Known associate,0.46
+74,104,Family,0.44
+4,192,Family,0.42
+4,396,Family,0.37
+192,396,Family,0.87
+4,189,Family,0.56
+4,279,Gang member,0.98
+4,168,Known associate,0.72
+5,364,Known associate,0.54
+5,221,Gang member,0.72
+5,375,Known associate,0.86
+6,351,Family,0.77
+6,35,Known associate,0.65
+7,312,Gang member,0.72
+7,155,Family,0.46
+7,368,Co-accused,0.72
+7,182,Family,0.79
+7,255,Known associate,0.53
+7,284,Known associate,0.38
+7,327,Gang member,0.79
+284,327,Known associate,0.94
+8,86,Co-accused,0.52
+8,69,Co-accused,0.48
+8,154,Co-accused,0.55
+69,154,Known associate,0.81
+9,13,Co-accused,0.71
+9,136,Family,0.89
+9,155,Gang member,0.52
+9,68,Gang member,0.69
+9,208,Known associate,0.65
+68,208,Co-accused,0.52
+9,70,Known associate,0.41
+9,331,Family,0.75
+9,192,Family,0.99
+9,168,Co-accused,0.44
+9,272,Known associate,0.94
+168,272,Family,0.57
+10,17,Gang member,0.33
+10,329,Family,0.85
+10,332,Family,0.7
+329,332,Family,0.52
+10,140,Co-accused,0.71
+10,281,Family,0.79
+140,281,Known associate,0.84
+10,297,Co-accused,0.74
+10,272,Known associate,0.32
+11,370,Gang member,0.88
+11,363,Gang member,0.5
+11,199,Family,0.37
+11,304,Co-accused,0.49
+11,90,Co-accused,0.65
+11,108,Gang member,0.69
+90,108,Gang member,0.34
+11,23,Gang member,0.88
+12,190,Co-accused,0.83
+12,87,Gang member,0.73
+12,296,Co-accused,0.43
+12,329,Known associate,0.33
+12,362,Co-accused,0.51
+329,362,Known associate,0.93
+12,206,Family,0.42
+12,347,Co-accused,0.8
+206,347,Known associate,0.53
+12,307,Gang member,0.64
+12,39,Gang member,0.79
+13,164,Co-accused,0.48
+13,251,Family,0.54
+164,251,Known associate,0.52
+13,62,Known associate,0.5
+13,71,Family,0.46
+62,71,Gang member,0.88
+13,191,Gang member,0.84
+13,345,Known associate,0.92
+13,111,Family,0.54
+13,279,Co-accused,0.45
+14,228,Known associate,0.69
+14,381,Co-accused,0.69
+228,381,Known associate,0.36
+14,178,Co-accused,0.38
+14,42,Co-accused,0.58
+14,389,Known associate,0.76
+42,389,Known associate,0.86
+14,53,Co-accused,0.44
+14,233,Gang member,0.91
+53,233,Known associate,0.95
+15,386,Co-accused,0.98
+15,134,Family,0.82
+15,239,Gang member,0.44
+134,239,Gang member,0.95
+15,80,Co-accused,0.97
+17,152,Family,0.38
+17,303,Gang member,0.88
+152,303,Co-accused,0.74
+17,42,Gang member,0.36
+17,185,Family,0.77
+17,279,Family,0.77
+185,279,Gang member,0.97
+17,284,Co-accused,0.67
+17,52,Family,0.62
+18,124,Co-accused,0.77
+18,354,Co-accused,0.68
+124,354,Co-accused,0.41
+18,70,Gang member,0.94
+18,350,Gang member,0.92
+18,280,Family,0.94
+18,398,Gang member,0.86
+280,398,Known associate,0.61
+18,247,Known associate,0.47
+18,388,Known associate,0.6
+18,225,Known associate,0.76
+18,57,Co-accused,0.72
+18,140,Gang member,0.54
+57,140,Family,0.79
+18,115,Family,0.47
+18,372,Family,0.41
+115,372,Co-accused,0.76
+19,302,Gang member,0.65
+19,238,Known associate,0.98
+19,180,Gang member,0.34
+19,315,Co-accused,0.63
+180,315,Known associate,0.74
+19,399,Known associate,0.52
+20,303,Co-accused,0.72
+21,385,Co-accused,0.76
+21,394,Known associate,0.84
+385,394,Gang member,0.66
+21,123,Family,0.73
+21,375,Known associate,0.46
+123,375,Co-accused,0.32
+21,93,Family,0.46
+21,134,Gang member,0.94
+93,134,Gang member,0.61
+21,100,Known associate,0.87
+21,158,Known associate,0.68
+100,158,Co-accused,0.9
+21,260,Known associate,0.7
+21,97,Family,0.66
+21,143,Gang member,0.46
+97,143,Known associate,0.68
+21,306,Known associate,0.82
+22,165,Co-accused,0.35
+22,28,Co-accused,0.99
+22,241,Known associate,0.77
+22,290,Known associate,0.84
+22,250,Known associate,0.64
+22,272,Gang member,0.3
+22,367,Known associate,0.34
+272,367,Co-accused,0.86
+23,292,Family,0.31
+23,124,Gang member,0.77
+23,244,Gang member,0.37
+124,244,Family,0.62
+23,160,Co-accused,0.39
+24,162,Known associate,0.82
+24,151,Gang member,0.7
+25,335,Co-accused,0.97
+25,371,Gang member,0.42
+335,371,Known associate,0.37
+25,381,Co-accused,0.46
+26,106,Family,0.39
+26,290,Co-accused,0.34
+106,290,Gang member,0.94
+26,178,Family,0.42
+26,377,Known associate,0.87
+26,241,Family,0.53
+26,397,Known associate,0.92
+241,397,Co-accused,0.41
+27,341,Gang member,0.62
+27,40,Co-accused,0.65
+27,387,Family,0.84
+28,105,Gang member,0.45
+28,271,Co-accused,0.86
+105,271,Gang member,0.54
+28,164,Family,0.57
+28,299,Family,0.88
+164,299,Gang member,0.38
+28,312,Gang member,0.64
+28,348,Family,0.41
+312,348,Gang member,0.45
+29,62,Known associate,0.7
+29,193,Known associate,0.69
+29,271,Known associate,0.97
+193,271,Known associate,0.58
+29,78,Co-accused,0.71
+29,242,Gang member,0.72
+29,60,Known associate,0.89
+30,75,Co-accused,0.71
+30,209,Known associate,0.91
+30,322,Co-accused,0.83
+209,322,Family,0.56
+30,196,Gang member,0.83
+30,329,Family,0.89
+196,329,Family,0.83
+30,180,Gang member,0.54
+30,274,Family,0.95
+180,274,Known associate,0.68
+30,153,Known associate,1
+30,265,Family,0.59
+31,361,Known associate,0.93
+31,247,Known associate,0.77
+31,99,Family,0.81
+31,349,Known associate,0.38
+99,349,Family,0.9
+31,94,Co-accused,0.58
+31,189,Family,0.95
+31,96,Known associate,0.35
+31,134,Known associate,0.71
+96,134,Co-accused,0.52
+31,110,Gang member,0.91
+31,299,Known associate,0.59
+110,299,Family,0.3
+32,121,Gang member,0.6
+32,253,Family,0.97
+121,253,Family,0.73
+32,366,Co-accused,0.89
+32,306,Co-accused,0.85
+32,157,Known associate,0.78
+32,384,Family,0.89
+32,117,Family,0.45
+33,76,Gang member,0.65
+33,129,Co-accused,0.8
+33,322,Co-accused,0.59
+33,369,Family,0.53
+322,369,Gang member,0.32
+33,165,Gang member,0.43
+33,53,Gang member,0.38
+33,364,Gang member,0.69
+53,364,Gang member,0.71
+34,224,Known associate,0.49
+34,286,Family,0.99
+34,116,Gang member,0.93
+35,260,Family,0.47
+35,90,Co-accused,0.92
+35,181,Known associate,0.66
+90,181,Known associate,0.71
+35,65,Family,0.74
+35,357,Known associate,0.77
+35,397,Gang member,0.77
+36,240,Known associate,0.49
+36,243,Gang member,0.81
+36,282,Known associate,0.46
+36,195,Gang member,0.53
+36,342,Known associate,0.7
+195,342,Co-accused,0.6
+36,228,Known associate,0.46
+36,311,Known associate,0.95
+36,121,Known associate,0.4
+36,185,Family,0.76
+36,276,Known associate,0.36
+185,276,Co-accused,0.7
+37,213,Co-accused,0.35
+37,80,Co-accused,0.65
+37,299,Known associate,0.83
+80,299,Family,0.47
+37,280,Co-accused,0.39
+37,191,Known associate,0.93
+37,370,Family,0.47
+191,370,Family,0.9
+37,104,Co-accused,0.95
+37,400,Co-accused,0.52
+104,400,Co-accused,0.5
+37,183,Known associate,0.72
+37,282,Family,0.74
+183,282,Co-accused,0.73
+37,203,Family,0.93
+37,377,Known associate,0.34
+203,377,Known associate,0.73
+38,94,Known associate,0.84
+38,72,Gang member,0.48
+38,293,Known associate,0.55
+72,293,Known associate,0.42
+38,190,Co-accused,0.8
+39,159,Gang member,0.31
+39,271,Known associate,0.87
+39,334,Gang member,0.68
+271,334,Family,0.52
+39,63,Co-accused,0.88
+39,149,Family,0.42
+63,149,Known associate,0.32
+40,128,Known associate,0.52
+40,222,Known associate,0.99
+40,335,Co-accused,0.72
+222,335,Gang member,0.62
+40,281,Family,0.83
+40,129,Co-accused,0.99
+41,282,Family,0.88
+41,365,Family,0.76
+282,365,Co-accused,0.99
+41,57,Family,0.36
+41,164,Family,0.71
+57,164,Co-accused,0.45
+42,43,Known associate,0.87
+42,46,Gang member,0.87
+42,142,Known associate,0.85
+46,142,Gang member,0.57
+42,316,Known associate,0.98
+42,212,Known associate,0.71
+43,263,Known associate,0.68
+43,228,Gang member,0.64
+43,154,Co-accused,0.79
+44,69,Gang member,0.92
+44,313,Family,0.72
+44,76,Co-accused,0.87
+45,290,Family,0.69
+45,124,Known associate,0.72
+45,204,Family,0.92
+124,204,Gang member,0.65
+45,59,Co-accused,0.31
+45,263,Gang member,0.8
+46,248,Known associate,0.87
+46,356,Gang member,0.32
+248,356,Known associate,0.56
+46,207,Family,0.71
+46,237,Known associate,0.97
+207,237,Family,0.44
+46,317,Known associate,0.72
+47,233,Gang member,0.69
+47,58,Family,0.44
+47,267,Family,0.55
+58,267,Known associate,0.71
+48,215,Co-accused,0.47
+48,266,Family,0.92
+48,59,Family,0.91
+48,163,Co-accused,0.69
+59,163,Co-accused,0.74
+48,294,Co-accused,0.38
+48,52,Gang member,0.46
+48,65,Family,0.73
+52,65,Gang member,0.45
+49,165,Co-accused,0.49
+49,218,Gang member,0.49
+50,245,Family,0.31
+50,255,Family,0.91
+50,337,Co-accused,0.4
+50,197,Family,0.84
+50,352,Family,0.47
+197,352,Family,0.83
+50,313,Co-accused,0.89
+50,318,Co-accused,0.43
+313,318,Gang member,0.42
+51,68,Co-accused,0.88
+51,301,Gang member,0.43
+68,301,Co-accused,0.51
+51,147,Known associate,0.76
+51,126,Gang member,0.9
+52,196,Co-accused,0.72
+52,194,Co-accused,0.59
+52,174,Known associate,0.71
+53,308,Family,0.38
+53,304,Co-accused,0.86
+53,135,Gang member,0.77
+53,261,Known associate,0.99
+135,261,Co-accused,0.31
+53,345,Gang member,0.66
+53,359,Gang member,0.39
+345,359,Co-accused,0.65
+54,218,Co-accused,0.68
+54,77,Gang member,0.9
+54,391,Co-accused,0.47
+54,288,Family,0.77
+54,325,Gang member,0.48
+288,325,Gang member,0.99
+54,67,Co-accused,0.89
+54,362,Family,0.7
+54,109,Known associate,0.8
+54,88,Co-accused,0.65
+54,117,Gang member,0.47
+54,134,Known associate,0.66
+117,134,Gang member,0.59
+54,135,Gang member,0.83
+55,379,Co-accused,0.36
+55,385,Known associate,0.9
+56,241,Family,0.73
+56,246,Known associate,1
+241,246,Family,0.42
+56,216,Co-accused,0.57
+56,188,Family,0.31
+56,374,Co-accused,0.59
+188,374,Co-accused,0.66
+56,62,Co-accused,0.88
+57,71,Known associate,0.31
+57,280,Family,0.6
+71,280,Known associate,0.77
+57,368,Gang member,0.57
+57,64,Gang member,0.38
+57,350,Gang member,0.92
+57,145,Known associate,0.33
+57,236,Co-accused,0.37
+145,236,Known associate,0.48
+57,231,Family,0.68
+57,182,Known associate,0.32
+57,221,Gang member,0.87
+58,92,Co-accused,0.89
+58,218,Known associate,0.66
+92,218,Known associate,0.55
+58,388,Known associate,0.81
+58,246,Family,0.4
+58,287,Known associate,0.63
+246,287,Gang member,0.76
+58,301,Co-accused,0.5
+301,388,Known associate,0.85
+58,72,Known associate,0.99
+58,94,Co-accused,0.61
+58,217,Known associate,0.59
+59,180,Known associate,0.71
+60,343,Known associate,0.87
+60,375,Known associate,0.37
+343,375,Known associate,0.51
+60,384,Known associate,0.59
+60,62,Known associate,0.64
+60,188,Co-accused,0.86
+60,330,Known associate,0.41
+61,272,Gang member,0.79
+61,335,Family,0.51
+272,335,Known associate,0.91
+61,248,Gang member,0.93
+61,348,Known associate,0.47
+248,348,Co-accused,0.63
+61,187,Known associate,0.41
+61,329,Gang member,0.96
+62,298,Co-accused,0.46
+62,141,Family,0.79
+62,105,Family,0.54
+62,189,Gang member,0.73
+105,189,Family,0.64
+63,264,Gang member,0.82
+63,344,Family,0.82
+63,169,Known associate,0.48
+63,144,Gang member,0.41
+63,376,Co-accused,0.41
+144,376,Known associate,0.98
+64,394,Co-accused,0.8
+64,226,Gang member,0.49
+64,396,Co-accused,0.43
+226,396,Family,0.4
+64,351,Gang member,0.98
+65,276,Family,0.94
+66,107,Co-accused,0.61
+66,215,Co-accused,0.72
+67,337,Known associate,0.45
+67,307,Family,0.33
+67,244,Co-accused,0.9
+67,121,Gang member,0.41
+67,156,Family,0.96
+67,177,Gang member,0.46
+67,245,Known associate,0.41
+177,245,Co-accused,0.67
+68,232,Gang member,0.98
+68,237,Family,0.56
+232,237,Gang member,0.98
+68,348,Gang member,0.41
+68,341,Co-accused,0.67
+69,306,Known associate,0.86
+69,365,Known associate,0.92
+70,248,Co-accused,0.69
+70,252,Known associate,0.84
+71,253,Co-accused,0.67
+71,184,Co-accused,0.86
+71,303,Known associate,0.43
+71,224,Co-accused,0.65
+71,203,Gang member,0.5
+72,301,Co-accused,0.59
+72,158,Gang member,0.44
+72,383,Known associate,0.54
+158,383,Known associate,0.44
+72,217,Known associate,0.69
+72,90,Family,0.8
+72,335,Family,0.39
+72,209,Co-accused,0.49
+73,260,Gang member,0.43
+73,122,Gang member,0.49
+74,337,Gang member,0.88
+74,194,Co-accused,0.91
+74,160,Co-accused,0.78
+75,288,Family,0.46
+75,111,Family,0.43
+76,278,Gang member,0.51
+77,277,Gang member,0.3
+77,111,Family,0.84
+77,249,Gang member,0.51
+111,249,Family,0.65
+77,113,Co-accused,0.95
+77,177,Co-accused,0.93
+77,179,Co-accused,0.94
+77,279,Gang member,0.56
+179,279,Family,0.95
+77,182,Co-accused,0.33
+77,379,Known associate,0.9
+182,379,Gang member,0.63
+77,374,Gang member,1
+77,193,Known associate,0.76
+78,260,Known associate,0.42
+78,353,Co-accused,0.61
+260,353,Co-accused,0.55
+78,197,Gang member,0.36
+78,232,Family,0.65
+197,232,Known associate,0.37
+78,351,Family,0.55
+79,130,Co-accused,0.95
+79,109,Co-accused,0.34
+79,263,Known associate,0.51
+109,263,Co-accused,0.83
+80,199,Family,0.61
+80,234,Co-accused,0.38
+80,236,Gang member,0.46
+80,286,Family,0.4
+236,286,Family,0.56
+81,200,Co-accused,0.99
+81,324,Co-accused,0.45
+200,324,Family,0.83
+81,316,Known associate,0.63
+81,263,Known associate,0.47
+81,105,Family,1
+81,241,Gang member,0.68
+105,241,Family,0.98
+82,324,Co-accused,0.82
+82,351,Known associate,0.86
+324,351,Known associate,0.65
+82,102,Family,0.46
+82,103,Co-accused,0.95
+102,103,Co-accused,0.42
+82,347,Co-accused,0.68
+82,372,Gang member,0.58
+347,372,Family,0.98
+83,189,Known associate,0.88
+83,379,Co-accused,0.4
+189,379,Co-accused,0.82
+83,116,Gang member,0.97
+84,201,Co-accused,0.34
+84,136,Family,0.41
+84,159,Family,0.32
+136,159,Co-accused,0.57
+85,236,Family,0.77
+85,159,Gang member,0.77
+85,253,Gang member,0.9
+159,253,Gang member,0.7
+85,301,Known associate,0.5
+85,330,Family,0.54
+301,330,Known associate,0.65
+86,260,Gang member,0.87
+86,296,Family,0.72
+86,178,Known associate,0.56
+86,203,Co-accused,0.44
+86,245,Known associate,0.46
+86,269,Known associate,0.41
+245,269,Gang member,0.61
+87,128,Known associate,0.61
+87,329,Family,0.91
+128,329,Gang member,0.42
+87,177,Family,0.57
+88,164,Family,0.51
+88,243,Family,0.71
+164,243,Known associate,0.86
+88,221,Known associate,0.96
+88,258,Gang member,0.51
+221,258,Gang member,0.78
+88,266,Known associate,0.72
+89,218,Family,0.48
+89,313,Gang member,0.56
+218,313,Family,0.67
+89,363,Family,0.49
+89,270,Family,0.36
+89,332,Family,0.33
+270,332,Gang member,0.5
+89,148,Family,0.94
+89,317,Gang member,0.35
+90,128,Family,0.33
+90,342,Known associate,0.57
+90,184,Known associate,0.46
+90,372,Known associate,0.43
+91,335,Co-accused,0.37
+91,241,Known associate,0.5
+91,322,Gang member,0.48
+91,324,Co-accused,0.54
+322,324,Known associate,0.45
+91,186,Family,0.73
+91,237,Co-accused,0.79
+186,237,Family,0.89
+91,139,Co-accused,0.67
+91,209,Gang member,0.54
+139,209,Known associate,0.92
+91,229,Gang member,0.6
+92,389,Known associate,0.48
+92,203,Family,0.56
+92,189,Family,0.7
+92,139,Family,0.48
+92,98,Known associate,0.81
+92,162,Gang member,0.74
+98,162,Co-accused,0.81
+92,105,Known associate,0.45
+93,104,Gang member,0.86
+93,370,Known associate,0.58
+104,370,Known associate,0.71
+93,115,Family,0.92
+93,277,Known associate,0.34
+93,213,Family,0.67
+93,292,Family,0.94
+115,292,Family,0.95
+94,200,Known associate,0.46
+95,149,Co-accused,0.53
+95,300,Co-accused,0.68
+95,179,Family,0.97
+95,201,Known associate,0.56
+179,201,Co-accused,0.89
+96,173,Gang member,0.78
+97,208,Gang member,0.86
+97,362,Family,0.64
+208,362,Gang member,0.62
+98,383,Gang member,0.45
+98,175,Co-accused,0.31
+98,111,Co-accused,0.81
+98,131,Known associate,0.91
+98,334,Family,0.43
+99,179,Co-accused,0.86
+99,263,Family,0.55
+179,263,Co-accused,0.56
+99,125,Gang member,0.33
+99,397,Gang member,0.56
+125,397,Gang member,0.78
+100,276,Co-accused,0.35
+100,277,Known associate,0.86
+276,277,Known associate,0.85
+100,359,Co-accused,0.74
+100,216,Family,0.41
+100,345,Known associate,0.35
+216,345,Co-accused,0.45
+100,354,Family,0.53
+100,193,Co-accused,0.57
+100,197,Gang member,0.41
+193,197,Known associate,0.33
+101,223,Co-accused,0.62
+101,395,Gang member,0.92
+223,395,Gang member,0.96
+101,140,Family,0.32
+101,235,Family,0.37
+140,235,Known associate,0.59
+101,147,Family,0.71
+102,295,Family,0.63
+102,332,Gang member,0.63
+102,369,Co-accused,0.98
+102,124,Gang member,0.61
+102,220,Gang member,0.64
+102,400,Family,0.95
+220,400,Co-accused,0.33
+103,154,Family,0.75
+103,252,Family,0.63
+154,252,Co-accused,0.3
+103,247,Family,0.34
+103,107,Gang member,0.39
+104,149,Family,0.57
+104,234,Co-accused,0.68
+104,322,Family,0.37
+104,356,Known associate,0.85
+322,356,Family,0.33
+105,164,Family,0.34
+105,172,Co-accused,0.37
+105,325,Gang member,0.83
+172,325,Gang member,0.81
+105,279,Gang member,0.79
+105,110,Gang member,0.91
+105,340,Co-accused,0.52
+110,340,Co-accused,0.39
+105,341,Co-accused,0.83
+105,337,Co-accused,0.81
+105,361,Gang member,0.85
+106,311,Co-accused,0.3
+106,253,Family,0.94
+106,260,Family,0.73
+253,260,Family,0.89
+107,348,Co-accused,0.89
+107,354,Co-accused,0.5
+107,228,Known associate,0.36
+107,381,Family,0.46
+107,210,Gang member,0.69
+107,391,Gang member,0.55
+210,391,Family,0.48
+107,255,Gang member,0.94
+107,200,Known associate,0.65
+107,392,Family,0.39
+108,115,Family,0.4
+108,159,Co-accused,0.93
+115,159,Family,0.31
+108,302,Gang member,0.87
+108,124,Known associate,0.9
+109,336,Family,0.52
+109,375,Co-accused,0.98
+336,375,Known associate,0.95
+109,304,Gang member,0.93
+109,270,Co-accused,0.89
+109,258,Gang member,0.94
+109,228,Known associate,0.75
+110,158,Co-accused,0.53
+110,224,Family,0.96
+110,244,Known associate,0.3
+224,244,Gang member,0.51
+110,179,Known associate,0.76
+110,228,Gang member,0.59
+110,233,Gang member,0.98
+228,233,Gang member,0.46
+111,217,Family,0.74
+111,383,Known associate,0.65
+217,383,Family,0.96
+112,130,Gang member,0.41
+112,211,Gang member,0.31
+112,394,Co-accused,0.78
+211,394,Gang member,0.31
+112,195,Co-accused,0.84
+112,266,Family,0.61
+112,217,Family,0.5
+113,228,Gang member,0.42
+113,366,Family,0.69
+228,366,Family,0.94
+113,220,Co-accused,0.33
+113,262,Known associate,0.73
+113,295,Gang member,0.32
+114,164,Family,0.59
+114,394,Family,0.83
+164,394,Family,0.42
+114,139,Family,0.32
+114,340,Gang member,0.96
+139,340,Family,0.96
+114,143,Known associate,0.89
+114,172,Co-accused,0.93
+143,172,Co-accused,0.48
+115,258,Family,0.39
+115,290,Family,0.51
+258,290,Known associate,0.91
+115,231,Known associate,0.75
+115,303,Known associate,0.81
+231,303,Family,0.54
+115,245,Family,0.8
+115,386,Co-accused,0.47
+245,386,Family,0.38
+115,179,Gang member,0.48
+115,370,Family,0.65
+115,377,Gang member,0.74
+116,372,Gang member,0.66
+116,382,Family,0.84
+372,382,Gang member,0.96
+116,151,Gang member,0.86
+116,121,Family,0.6
+116,160,Known associate,0.48
+121,160,Known associate,0.39
+117,269,Known associate,0.84
+117,191,Known associate,0.99
+117,200,Known associate,0.54
+191,200,Known associate,0.75
+117,382,Gang member,0.92
+117,125,Co-accused,0.8
+117,277,Gang member,0.75
+117,393,Known associate,0.46
+118,178,Family,0.53
+119,267,Known associate,0.55
+119,162,Gang member,0.69
+119,234,Gang member,0.99
+162,234,Gang member,0.4
+119,201,Gang member,0.51
+119,222,Known associate,0.81
+201,222,Gang member,0.54
+119,399,Family,0.66
+119,279,Gang member,0.99
+120,225,Family,0.87
+120,165,Family,0.77
+121,394,Known associate,0.72
+121,190,Gang member,0.77
+121,231,Gang member,0.89
+122,162,Co-accused,0.38
+122,222,Gang member,0.87
+162,222,Family,0.75
+122,295,Co-accused,0.85
+122,373,Co-accused,0.93
+295,373,Family,0.64
+122,376,Co-accused,0.37
+123,196,Known associate,0.91
+123,245,Co-accused,0.95
+123,288,Known associate,0.82
+124,377,Co-accused,0.75
+124,307,Gang member,0.45
+124,169,Known associate,0.47
+124,186,Known associate,0.41
+125,356,Co-accused,0.38
+125,201,Family,0.91
+125,249,Family,0.54
+125,175,Co-accused,0.56
+126,334,Family,0.92
+126,139,Known associate,0.32
+126,261,Family,0.87
+126,149,Gang member,0.38
+126,161,Known associate,0.35
+127,375,Co-accused,0.34
+127,224,Known associate,0.51
+127,324,Co-accused,0.32
+128,145,Family,0.64
+128,172,Gang member,0.83
+129,173,Family,0.54
+129,162,Known associate,0.4
+129,320,Family,0.74
+130,256,Co-accused,0.88
+130,321,Gang member,0.57
+130,234,Gang member,0.95
+130,243,Family,0.87
+131,175,Family,0.82
+132,303,Co-accused,0.36
+132,274,Gang member,0.36
+132,319,Co-accused,0.62
+133,277,Gang member,0.9
+133,274,Family,0.99
+133,208,Known associate,0.38
+133,372,Gang member,0.6
+134,228,Known associate,0.39
+134,397,Gang member,0.32
+135,386,Family,0.77
+135,150,Known associate,0.81
+135,211,Co-accused,0.5
+135,370,Gang member,0.65
+135,238,Gang member,0.88
+136,396,Co-accused,0.59
+136,286,Known associate,0.8
+136,215,Gang member,0.78
+136,292,Known associate,0.94
+137,238,Co-accused,0.55
+138,370,Known associate,0.76
+138,143,Known associate,0.47
+138,399,Known associate,0.64
+138,396,Known associate,0.39
+139,249,Family,0.86
+139,161,Gang member,0.76
+139,392,Known associate,0.87
+140,264,Family,0.94
+140,202,Gang member,0.43
+141,265,Known associate,0.54
+141,227,Known associate,0.32
+142,310,Known associate,0.41
+142,248,Co-accused,0.31
+142,197,Known associate,0.75
+143,169,Family,0.38
+143,281,Family,0.61
+144,244,Known associate,0.86
+145,224,Known associate,0.45
+145,278,Co-accused,0.8
+147,211,Family,0.79
+147,177,Family,0.57
+147,190,Gang member,0.98
+147,261,Family,0.72
+148,281,Gang member,0.47
+148,241,Known associate,0.86
+149,230,Co-accused,0.32
+149,400,Gang member,0.76
+150,156,Known associate,0.96
+150,223,Known associate,0.9
+151,292,Gang member,0.91
+151,375,Known associate,0.58
+151,362,Gang member,0.62
+151,159,Family,0.77
+152,200,Gang member,0.37
+152,227,Known associate,0.41
+152,198,Known associate,0.67
+152,298,Family,0.86
+152,330,Co-accused,0.45
+153,219,Co-accused,0.82
+153,373,Co-accused,0.34
+153,201,Known associate,0.39
+155,158,Gang member,0.77
+156,380,Known associate,0.69
+157,396,Family,0.4
+157,179,Known associate,0.88
+158,367,Gang member,0.39
+158,375,Co-accused,0.54
+158,313,Known associate,0.52
+159,313,Family,0.92
+160,294,Family,0.35
+161,209,Co-accused,0.46
+161,299,Gang member,0.54
+161,220,Co-accused,0.94
+162,173,Known associate,0.85
+163,273,Known associate,0.68
+163,274,Gang member,0.53
+164,281,Gang member,0.81
+164,229,Family,0.45
+165,254,Family,0.85
+165,291,Gang member,0.77
+165,287,Gang member,0.9
+166,231,Family,0.36
+166,353,Gang member,0.3
+166,248,Gang member,0.95
+166,183,Family,0.76
+167,235,Family,0.69
+167,266,Gang member,0.77
+167,191,Family,0.64
+169,288,Co-accused,0.52
+169,321,Family,0.76
+170,182,Gang member,0.33
+170,200,Family,0.9
+171,220,Known associate,0.33
+171,348,Family,0.56
+172,247,Co-accused,0.78
+172,191,Gang member,1
+173,233,Known associate,0.98
+173,187,Family,0.66
+173,307,Known associate,0.5
+173,391,Family,0.5
+173,213,Gang member,0.44
+174,183,Co-accused,0.36
+174,294,Family,0.83
+174,262,Known associate,0.52
+175,369,Co-accused,0.42
+175,311,Gang member,0.37
+175,308,Co-accused,0.58
+175,218,Co-accused,0.8
+176,336,Family,0.47
+176,338,Gang member,0.78
+177,193,Co-accused,0.68
+177,319,Gang member,0.4
+178,184,Co-accused,0.6
+178,292,Known associate,0.58
+178,362,Gang member,0.79
+179,369,Co-accused,0.89
+179,397,Gang member,0.86
+180,247,Family,0.35
+180,299,Known associate,0.66
+182,264,Known associate,0.97
+182,272,Known associate,0.95
+183,279,Gang member,0.32
+184,310,Family,0.75
+184,377,Known associate,0.87
+184,251,Family,0.82
+184,363,Family,0.94
+184,350,Co-accused,0.75
+185,202,Known associate,0.93
+185,297,Known associate,0.91
+187,267,Gang member,0.37
+188,190,Gang member,0.44
+188,303,Gang member,0.92
+189,296,Gang member,0.9
+190,382,Gang member,0.79
+191,253,Gang member,0.33
+191,355,Family,0.81
+192,244,Family,0.78
+192,205,Family,0.58
+193,198,Co-accused,0.62
+193,247,Co-accused,0.43
+194,230,Known associate,0.32
+194,262,Family,0.6
+194,307,Co-accused,0.96
+195,243,Known associate,0.31
+195,303,Known associate,0.8
+196,237,Family,0.36
+197,385,Co-accused,0.59
+197,243,Family,0.56
+197,398,Gang member,0.4
+197,355,Known associate,0.65
+197,228,Co-accused,0.75
+198,271,Known associate,0.34
+199,358,Known associate,0.31
+199,361,Known associate,0.44
+199,250,Family,0.66
+199,249,Gang member,0.52
+201,217,Family,0.34
+202,333,Co-accused,0.92
+203,323,Gang member,0.31
+205,238,Family,0.37
+205,251,Gang member,0.67
+207,223,Co-accused,0.71
+207,385,Gang member,0.63
+207,210,Co-accused,0.65
+208,395,Gang member,0.69
+209,261,Co-accused,0.97
+209,374,Family,0.91
+209,391,Gang member,0.37
+209,396,Known associate,0.3
+209,236,Co-accused,0.63
+210,379,Known associate,0.62
+211,326,Co-accused,0.37
+212,259,Co-accused,0.98
+212,270,Family,0.8
+215,291,Known associate,0.82
+215,319,Gang member,0.59
+215,288,Known associate,0.72
+216,321,Co-accused,0.53
+216,379,Gang member,0.42
+217,359,Co-accused,0.93
+217,298,Family,0.91
+217,300,Known associate,0.86
+217,392,Co-accused,0.64
+217,343,Family,0.44
+219,400,Gang member,0.36
+219,267,Family,0.93
+219,381,Gang member,0.38
+219,339,Known associate,0.4
+220,254,Family,0.77
+221,370,Family,0.86
+222,399,Known associate,0.54
+222,259,Gang member,0.97
+223,313,Family,0.76
+223,280,Co-accused,0.36
+224,351,Gang member,0.52
+224,235,Family,0.74
+227,399,Known associate,0.38
+227,312,Gang member,0.72
+229,317,Family,0.42
+229,257,Co-accused,0.84
+229,356,Known associate,0.67
+231,248,Gang member,0.59
+232,354,Co-accused,0.91
+232,256,Gang member,0.5
+232,318,Gang member,0.85
+233,372,Co-accused,0.43
+234,236,Known associate,0.58
+235,364,Family,0.52
+235,260,Family,0.89
+235,254,Family,0.53
+235,330,Known associate,0.75
+236,237,Known associate,0.6
+237,307,Known associate,0.51
+238,362,Known associate,0.68
+238,305,Co-accused,0.66
+239,274,Family,0.45
+240,277,Gang member,0.37
+240,328,Gang member,0.93
+241,387,Known associate,0.66
+241,307,Family,0.97
+241,266,Known associate,0.87
+241,293,Known associate,0.34
+242,323,Co-accused,0.54
+243,391,Gang member,0.52
+243,281,Family,0.56
+244,311,Family,0.53
+244,327,Family,0.73
+246,370,Family,0.78
+246,334,Gang member,0.68
+247,337,Known associate,0.51
+251,269,Family,0.35
+252,352,Known associate,0.36
+252,382,Known associate,0.82
+253,317,Gang member,0.48
+253,274,Co-accused,0.32
+253,356,Known associate,0.84
+255,279,Gang member,0.73
+256,397,Family,0.6
+256,356,Family,0.56
+256,328,Gang member,0.96
+257,272,Co-accused,0.91
+258,283,Family,0.74
+258,263,Gang member,0.92
+259,279,Gang member,0.45
+260,266,Family,0.61
+261,350,Family,0.62
+261,262,Known associate,0.89
+262,323,Co-accused,0.9
+263,274,Known associate,0.44
+264,357,Family,0.93
+264,372,Co-accused,0.66
+265,332,Co-accused,0.93
+267,303,Gang member,0.77
+271,390,Known associate,0.32
+272,337,Gang member,0.53
+272,327,Gang member,0.63
+275,392,Co-accused,0.94
+276,318,Family,0.44
+276,357,Gang member,0.87
+276,305,Co-accused,0.45
+277,287,Co-accused,0.61
+279,369,Family,0.5
+280,291,Family,0.79
+280,350,Co-accused,0.89
+282,292,Known associate,0.63
+282,295,Family,0.8
+283,344,Family,0.67
+284,310,Known associate,0.54
+284,323,Family,0.73
+286,344,Known associate,0.63
+286,299,Family,0.36
+286,367,Known associate,0.91
+287,329,Co-accused,0.62
+287,333,Known associate,0.59
+288,315,Co-accused,0.95
+289,394,Gang member,0.86
+289,366,Known associate,0.37
+290,304,Gang member,0.96
+293,367,Family,0.77
+294,327,Family,0.57
+295,304,Family,0.68
+297,356,Known associate,0.4
+297,338,Co-accused,0.46
+298,342,Family,0.96
+299,317,Known associate,0.34
+302,368,Gang member,1
+303,387,Known associate,0.94
+307,337,Known associate,0.37
+307,311,Known associate,0.83
+308,344,Co-accused,0.81
+308,363,Family,0.56
+310,387,Co-accused,1
+311,394,Gang member,0.45
+311,389,Gang member,0.89
+311,362,Known associate,0.72
+313,374,Family,0.61
+314,394,Gang member,0.8
+315,344,Family,0.9
+319,328,Co-accused,1
+321,355,Known associate,0.85
+322,339,Gang member,0.83
+326,343,Family,0.34
+329,344,Known associate,0.44
+331,347,Family,0.68
+332,373,Family,0.35
+335,385,Family,0.59
+342,343,Family,0.41
+342,381,Gang member,0.53
+350,359,Known associate,0.58
+352,363,Co-accused,1
+352,396,Gang member,0.99
+354,361,Co-accused,0.54
+355,358,Gang member,0.95
+356,385,Gang member,0.78
+363,386,Known associate,0.69
+364,366,Known associate,0.47
+365,379,Co-accused,0.42
+377,396,Co-accused,0.32
+383,395,Known associate,0.7
+385,396,Co-accused,0.52
+386,392,Co-accused,0.91
+386,400,Known associate,0.37
+387,393,Family,0.32

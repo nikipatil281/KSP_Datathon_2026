@@ -1,0 +1,601 @@
+victim_id,name,age,gender,occupation,district,repeat_victim,vulnerability_index
+1,Sunita Hegde,20,Male,Student,Belagavi,false,0.97
+2,Krishna Murthy,35,Female,Retired,Kalaburagi,false,0.5
+3,Nandini Singh,37,Male,Government Employee,Bengaluru Rural,true,0.52
+4,Patel Raju,46,Male,Retired,Dharwad,false,0.58
+5,Shiva Fernandes,40,Male,Private Employee,Ballari,false,0.14
+6,Meera D'Souza,71,Female,Government Employee,Belagavi,false,0.82
+7,Sanjay Fernandes,27,Female,Farmer,Udupi,false,0.79
+8,Kavita Raju,36,Male,Student,Bengaluru Rural,true,0.19
+9,Meera Hegde,25,Female,Government Employee,Tumakuru,true,0.66
+10,Joseph Rao,27,Female,Business,Udupi,false,0.18
+11,Joseph Pillai,43,Female,Housewife,Bengaluru Rural,false,0.33
+12,Imran Fernandes,33,Female,Government Employee,Kalaburagi,false,0.7
+13,Kumar Kumar,39,Male,Student,Kalaburagi,false,1
+14,Kumar Fernandes,22,Male,Farmer,Hassan,false,0.68
+15,Ganesh D'Souza,26,Male,Business,Dharwad,false,0.19
+16,Patel Nair,27,Female,Student,Dharwad,true,0.68
+17,Sanjay Nair,72,Male,Private Employee,Kalaburagi,false,0.56
+18,Lakshmi D'Souza,66,Male,Business,Ballari,false,0.45
+19,Arun Swamy,46,Female,Private Employee,Belagavi,false,0.46
+20,Meera Raju,33,Female,Private Employee,Bengaluru Rural,false,0.78
+21,Kumar Raju,21,Male,Retired,Shivamogga,false,0.73
+22,Maria Singh,71,Male,Labour,Udupi,false,0.13
+23,Lakshmi Khan,13,Male,Government Employee,Dharwad,false,0.85
+24,Suresh Patel,31,Male,Student,Kalaburagi,true,0.83
+25,Joseph Raju,45,Male,Farmer,Bengaluru Rural,true,0.23
+26,Shameer Naik,46,Male,Housewife,Bengaluru Urban,false,0.14
+27,Arun Fernandes,30,Female,Business,Bengaluru Rural,true,0.64
+28,Shiva Rao,33,Male,Retired,Belagavi,true,0.72
+29,Krishna Rao,41,Female,Housewife,Belagavi,true,0.35
+30,Maria Singh,36,Female,Labour,Tumakuru,false,0.14
+31,Shameer Khan,28,Female,Student,Dharwad,true,0.11
+32,Imran Swamy,73,Female,Retired,Udupi,false,0.8
+33,Vijay Pillai,37,Male,Labour,Kalaburagi,false,0.26
+34,Kumar Murthy,50,Female,Business,Shivamogga,false,0.37
+35,Priya Rao,48,Male,Business,Hassan,false,0.79
+36,Girish Pillai,38,Female,Government Employee,Bengaluru Urban,false,0.82
+37,Lakshmi Patil,46,Male,Student,Bengaluru Urban,false,0.36
+38,Shameer Fernandes,41,Male,Student,Ballari,false,0.81
+39,Mohan Hegde,34,Female,Private Employee,Kalaburagi,false,0.71
+40,Arun Patel,30,Male,Farmer,Udupi,false,0.28
+41,Lakshmi Swamy,53,Male,Retired,Mysuru,false,0.65
+42,Vijay Fernandes,23,Female,Private Employee,Dakshina Kannada,false,0.21
+43,Sunita Sharma,32,Male,Labour,Dharwad,false,0.78
+44,Shameer Patil,22,Female,Housewife,Hassan,false,0.87
+45,Lakshmi Rao,26,Female,Labour,Dakshina Kannada,true,0.49
+46,Kavita D'Souza,58,Female,Housewife,Hassan,false,0.48
+47,Patel Prasad,25,Male,Retired,Dharwad,false,0.73
+48,Priya Kumar,25,Female,Student,Udupi,false,0.95
+49,Priya Pillai,22,Other,Student,Dharwad,false,0.25
+50,Patel Swamy,49,Male,Labour,Dharwad,false,0.89
+51,Imran Fernandes,42,Female,Student,Shivamogga,true,0.9
+52,Anita D'Souza,18,Female,Farmer,Shivamogga,true,0.89
+53,Pooja Menon,32,Male,Student,Bengaluru Rural,false,0.52
+54,Kumar Pillai,23,Female,Business,Ballari,false,0.28
+55,Deepa Reddy,58,Female,Farmer,Udupi,false,0.39
+56,Joseph D'Souza,67,Male,Business,Belagavi,false,0.54
+57,Lakshmi Raju,34,Female,Government Employee,Dharwad,false,0.82
+58,Rajesh Fernandes,53,Male,Retired,Mysuru,false,0.96
+59,Arun Sharma,22,Male,Farmer,Ballari,false,0.12
+60,Vijay Murthy,48,Male,Labour,Udupi,false,0.36
+61,Priya Prasad,30,Female,Retired,Hassan,false,0.68
+62,Joseph Prasad,27,Female,Labour,Dharwad,false,0.22
+63,Shiva Nair,36,Male,Private Employee,Dakshina Kannada,false,0.14
+64,Kumar Iyer,25,Female,Government Employee,Mysuru,false,0.86
+65,Kumar Hegde,35,Male,Private Employee,Hassan,true,0.33
+66,Maria Naik,26,Female,Private Employee,Mysuru,false,0.59
+67,Arun Gowda,22,Male,Labour,Mysuru,false,0.94
+68,Deepa Prasad,29,Male,Government Employee,Dharwad,false,0.97
+69,Joseph Sharma,49,Female,Labour,Belagavi,false,0.76
+70,Joseph Raju,55,Male,Student,Kalaburagi,false,0.3
+71,Suresh Iyer,23,Female,Farmer,Dakshina Kannada,false,0.18
+72,Joseph Kumar,72,Other,Retired,Tumakuru,false,0.64
+73,Joseph Singh,32,Male,Retired,Belagavi,false,0.11
+74,Girish Raju,22,Male,Labour,Udupi,false,0.82
+75,Patel D'Souza,30,Female,Retired,Mysuru,false,0.64
+76,Lakshmi Prasad,22,Other,Business,Hassan,false,0.18
+77,Ramesh Patil,39,Female,Housewife,Tumakuru,false,0.44
+78,Krishna Shetty,32,Female,Government Employee,Dharwad,false,0.52
+79,Vijay Nair,10,Male,Labour,Bengaluru Rural,false,0.9
+80,Maria Pillai,46,Male,Business,Dakshina Kannada,false,0.97
+81,Nandini Murthy,42,Female,Government Employee,Shivamogga,false,0.98
+82,Pooja Swamy,62,Male,Government Employee,Mysuru,false,0.23
+83,Meera Patil,35,Male,Private Employee,Kalaburagi,false,0.96
+84,Pooja Pillai,22,Female,Farmer,Shivamogga,false,0.19
+85,Kavita Patel,48,Female,Government Employee,Dakshina Kannada,false,0.72
+86,Meera Sharma,27,Male,Government Employee,Belagavi,false,0.47
+87,Arun Rao,56,Male,Farmer,Tumakuru,false,0.6
+88,Anjali Raju,47,Female,Business,Kalaburagi,false,0.17
+89,Lakshmi Singh,51,Male,Private Employee,Mysuru,false,0.9
+90,Kumar Shetty,41,Male,Business,Tumakuru,true,0.72
+91,Vijay Rao,40,Male,Business,Kalaburagi,false,0.81
+92,Lakshmi D'Souza,30,Male,Business,Bengaluru Urban,false,0.56
+93,Sunita Naik,19,Male,Student,Bengaluru Rural,false,0.93
+94,Kumar Menon,21,Male,Business,Mysuru,false,0.95
+95,Meera Patil,62,Female,Farmer,Ballari,false,0.19
+96,Pooja Rao,31,Female,Government Employee,Mysuru,false,0.58
+97,Rajesh Prasad,54,Female,Labour,Belagavi,false,0.27
+98,Kumar Singh,34,Other,Retired,Tumakuru,false,0.47
+99,Arun Fernandes,41,Male,Housewife,Dharwad,false,0.73
+100,Mohan Patel,32,Male,Retired,Dakshina Kannada,false,0.76
+101,Priya Raju,45,Male,Retired,Tumakuru,false,0.91
+102,Meera Patil,72,Male,Labour,Shivamogga,true,0.49
+103,Arun Sharma,33,Male,Business,Udupi,false,0.98
+104,Kavita Rao,21,Female,Retired,Bengaluru Rural,false,0.48
+105,Nandini Nair,49,Female,Retired,Belagavi,false,0.64
+106,Pooja Nair,46,Male,Labour,Bengaluru Rural,true,0.54
+107,Ravi Reddy,20,Female,Business,Dharwad,false,0.97
+108,Vijay Shetty,41,Female,Business,Bengaluru Rural,false,0.57
+109,Rajesh Shetty,45,Female,Labour,Ballari,false,0.41
+110,Ravi Naik,68,Other,Business,Kalaburagi,false,0.87
+111,Suresh Patil,32,Female,Government Employee,Udupi,false,0.49
+112,Lakshmi Reddy,24,Female,Labour,Shivamogga,false,0.59
+113,Anjali Patil,48,Female,Retired,Dakshina Kannada,false,0.97
+114,Ganesh Shetty,42,Male,Student,Hassan,true,0.85
+115,Nandini Gowda,29,Female,Private Employee,Kalaburagi,true,0.41
+116,Suresh Menon,23,Male,Farmer,Shivamogga,false,0.18
+117,Arun Patel,40,Male,Private Employee,Bengaluru Urban,false,0.88
+118,Sunita Gowda,44,Female,Student,Belagavi,false,0.45
+119,Arun Menon,46,Male,Labour,Ballari,false,0.7
+120,Meera D'Souza,22,Male,Business,Ballari,false,0.34
+121,Sanjay Hegde,27,Female,Business,Udupi,false,0.19
+122,Nandini Prasad,19,Male,Farmer,Belagavi,false,0.69
+123,Anita D'Souza,30,Female,Private Employee,Tumakuru,false,0.33
+124,Kumar Gowda,48,Female,Housewife,Hassan,false,0.69
+125,Sunita Pillai,65,Female,Retired,Hassan,false,0.15
+126,Vijay Hegde,25,Male,Government Employee,Kalaburagi,false,0.87
+127,Rajesh D'Souza,71,Male,Government Employee,Shivamogga,false,0.72
+128,Arun Sharma,21,Male,Farmer,Dakshina Kannada,false,0.6
+129,Rajesh Patil,32,Male,Student,Dakshina Kannada,false,0.35
+130,Patel Murthy,32,Female,Student,Bengaluru Rural,false,0.37
+131,Rekha Singh,24,Female,Business,Kalaburagi,false,0.75
+132,Nandini Prasad,19,Female,Government Employee,Dharwad,false,0.31
+133,Kavita Patel,30,Female,Retired,Udupi,false,0.94
+134,Kumar Rao,19,Other,Labour,Kalaburagi,false,0.63
+135,Maria Reddy,42,Male,Retired,Dharwad,false,0.97
+136,Meera Murthy,55,Female,Government Employee,Bengaluru Urban,false,0.91
+137,Joseph Naik,29,Female,Farmer,Dakshina Kannada,false,0.38
+138,Rekha Menon,62,Male,Farmer,Dharwad,false,0.92
+139,Anita Kumar,39,Female,Farmer,Dakshina Kannada,false,0.9
+140,Kavita Pillai,71,Male,Student,Dakshina Kannada,false,0.84
+141,Patel D'Souza,66,Female,Private Employee,Udupi,false,0.93
+142,Maria Nair,20,Female,Private Employee,Kalaburagi,false,0.83
+143,Maria Gowda,45,Female,Housewife,Shivamogga,false,0.68
+144,Imran Shetty,13,Male,Business,Bengaluru Rural,false,0.56
+145,Ganesh Sharma,71,Female,Retired,Belagavi,false,0.89
+146,Joseph Swamy,20,Female,Government Employee,Tumakuru,true,0.43
+147,Krishna Swamy,43,Male,Student,Ballari,false,0.66
+148,Rajesh Nair,65,Female,Housewife,Bengaluru Urban,false,0.49
+149,Meera Patil,19,Female,Business,Bengaluru Urban,false,0.49
+150,Krishna Menon,65,Male,Farmer,Udupi,false,0.95
+151,Anita Murthy,59,Male,Retired,Tumakuru,false,1
+152,Rajesh D'Souza,28,Male,Housewife,Bengaluru Urban,false,0.34
+153,Meera Swamy,38,Female,Labour,Bengaluru Rural,true,0.22
+154,Sanjay Menon,29,Male,Retired,Udupi,false,0.64
+155,Suresh Naik,26,Male,Farmer,Dharwad,false,1
+156,Maria Naik,70,Male,Retired,Dakshina Kannada,false,0.7
+157,Suresh Swamy,26,Male,Housewife,Ballari,false,0.41
+158,Kavita Prasad,33,Male,Government Employee,Bengaluru Rural,false,0.98
+159,Patel Singh,39,Female,Government Employee,Dakshina Kannada,false,0.79
+160,Ramesh Patil,23,Male,Labour,Mysuru,false,0.93
+161,Suresh Rao,45,Male,Farmer,Mysuru,true,0.33
+162,Arun Murthy,44,Male,Private Employee,Udupi,false,0.51
+163,Anjali Sharma,29,Male,Business,Tumakuru,false,0.26
+164,Krishna Nair,26,Female,Farmer,Hassan,false,0.1
+165,Ramesh Kumar,36,Male,Labour,Shivamogga,true,0.4
+166,Arun Khan,28,Male,Business,Belagavi,false,0.17
+167,Lakshmi Fernandes,72,Female,Government Employee,Hassan,false,0.4
+168,Girish Patel,27,Female,Housewife,Tumakuru,false,0.82
+169,Suresh Kumar,30,Female,Retired,Bengaluru Rural,false,0.26
+170,Mohan Gowda,63,Female,Housewife,Kalaburagi,false,0.36
+171,Arun Shetty,35,Male,Retired,Udupi,false,0.38
+172,Meera Menon,35,Male,Private Employee,Ballari,false,0.5
+173,Nandini Iyer,39,Male,Retired,Belagavi,false,0.49
+174,Pooja Patel,32,Other,Farmer,Shivamogga,false,0.24
+175,Mohan Shetty,47,Male,Business,Dharwad,false,0.99
+176,Krishna Hegde,40,Female,Government Employee,Hassan,true,0.17
+177,Pooja D'Souza,19,Male,Labour,Shivamogga,false,0.83
+178,Mohan Prasad,27,Male,Labour,Mysuru,false,0.86
+179,Rekha Shetty,24,Male,Labour,Shivamogga,false,0.83
+180,Kumar Rao,30,Male,Government Employee,Shivamogga,true,0.58
+181,Ravi Patil,11,Female,Labour,Udupi,false,0.69
+182,Anita Iyer,46,Female,Private Employee,Udupi,false,0.72
+183,Mohan Sharma,40,Male,Farmer,Bengaluru Rural,false,0.73
+184,Rajesh Murthy,18,Female,Farmer,Kalaburagi,false,0.87
+185,Anita Fernandes,33,Male,Retired,Bengaluru Urban,true,0.91
+186,Lakshmi Murthy,45,Male,Labour,Hassan,false,0.37
+187,Suresh Patel,63,Male,Retired,Kalaburagi,false,0.76
+188,Anita Naik,48,Male,Labour,Ballari,false,0.65
+189,Priya Naik,46,Female,Retired,Hassan,false,0.16
+190,Rekha Murthy,64,Male,Private Employee,Dharwad,false,0.12
+191,Lakshmi Singh,21,Male,Farmer,Hassan,false,0.41
+192,Vijay Shetty,45,Female,Retired,Kalaburagi,false,0.71
+193,Shiva Patil,46,Female,Government Employee,Udupi,false,0.7
+194,Kumar Iyer,21,Male,Retired,Dharwad,false,0.29
+195,Meera Nair,18,Male,Housewife,Mysuru,false,0.91
+196,Kavita D'Souza,19,Male,Farmer,Bengaluru Rural,false,0.54
+197,Ganesh Naik,62,Female,Government Employee,Mysuru,false,0.89
+198,Maria Naik,34,Female,Labour,Dharwad,false,0.78
+199,Shameer Reddy,70,Female,Student,Ballari,true,0.67
+200,Kumar Shetty,62,Female,Labour,Udupi,false,0.24
+201,Arun Rao,20,Male,Retired,Bengaluru Urban,false,0.83
+202,Kumar Kumar,26,Male,Retired,Belagavi,false,0.32
+203,Ramesh Hegde,47,Male,Retired,Kalaburagi,false,0.91
+204,Shiva Menon,67,Male,Student,Dharwad,true,0.11
+205,Mohan Patel,53,Male,Housewife,Kalaburagi,true,0.78
+206,Rekha Swamy,35,Male,Government Employee,Kalaburagi,false,0.71
+207,Patel Patel,40,Female,Student,Dakshina Kannada,false,0.65
+208,Girish Pillai,24,Male,Labour,Udupi,false,0.83
+209,Rekha Shetty,37,Male,Private Employee,Kalaburagi,false,0.77
+210,Anita Rao,26,Male,Government Employee,Ballari,false,0.67
+211,Priya Shetty,14,Female,Business,Udupi,true,0.44
+212,Arun Naik,42,Female,Business,Dharwad,false,0.76
+213,Shiva Swamy,38,Female,Farmer,Belagavi,false,0.7
+214,Joseph Sharma,69,Female,Farmer,Bengaluru Rural,false,0.62
+215,Girish Reddy,62,Male,Retired,Kalaburagi,true,0.16
+216,Rajesh Fernandes,66,Male,Retired,Hassan,false,0.8
+217,Lakshmi Pillai,69,Male,Labour,Udupi,false,0.54
+218,Vijay Prasad,56,Male,Labour,Mysuru,false,0.56
+219,Girish Murthy,37,Male,Housewife,Ballari,false,0.96
+220,Arun Reddy,44,Male,Government Employee,Bengaluru Urban,false,0.21
+221,Anita Shetty,23,Male,Housewife,Mysuru,false,0.48
+222,Rekha Shetty,60,Male,Labour,Bengaluru Urban,true,0.41
+223,Lakshmi Swamy,64,Male,Labour,Belagavi,false,0.53
+224,Vijay Sharma,50,Female,Labour,Dharwad,false,0.23
+225,Shiva Iyer,33,Female,Retired,Kalaburagi,false,0.46
+226,Patel Nair,45,Female,Housewife,Udupi,true,0.67
+227,Deepa Pillai,40,Male,Business,Tumakuru,false,0.59
+228,Pooja Rao,49,Female,Student,Bengaluru Rural,false,0.58
+229,Shiva Rao,59,Male,Labour,Bengaluru Rural,false,0.65
+230,Lakshmi Gowda,32,Male,Housewife,Kalaburagi,true,0.58
+231,Arun Reddy,33,Female,Government Employee,Mysuru,false,0.79
+232,Joseph Patil,24,Male,Private Employee,Mysuru,true,0.15
+233,Vijay D'Souza,41,Female,Government Employee,Kalaburagi,false,0.91
+234,Ganesh Iyer,21,Female,Labour,Ballari,false,0.45
+235,Kavita Fernandes,18,Female,Business,Dharwad,true,0.67
+236,Sunita Raju,51,Other,Business,Tumakuru,false,0.69
+237,Ramesh Fernandes,27,Male,Farmer,Mysuru,false,0.99
+238,Ramesh Raju,48,Male,Student,Dharwad,false,0.66
+239,Ravi Naik,36,Female,Labour,Dakshina Kannada,false,0.86
+240,Krishna Pillai,42,Male,Government Employee,Bengaluru Urban,false,0.58
+241,Sanjay Reddy,19,Female,Government Employee,Kalaburagi,false,0.55
+242,Kavita Pillai,72,Male,Labour,Dakshina Kannada,false,0.98
+243,Shameer Patel,25,Male,Housewife,Shivamogga,false,0.65
+244,Joseph Patil,10,Male,Labour,Kalaburagi,false,0.81
+245,Deepa Gowda,33,Female,Labour,Shivamogga,true,0.97
+246,Meera Khan,27,Male,Student,Bengaluru Rural,false,0.94
+247,Patel Gowda,38,Female,Private Employee,Tumakuru,true,0.65
+248,Priya Hegde,29,Other,Private Employee,Bengaluru Urban,false,0.91
+249,Ravi Rao,37,Other,Retired,Bengaluru Rural,false,0.61
+250,Rajesh Menon,48,Female,Housewife,Bengaluru Rural,false,0.77
+251,Anjali Hegde,27,Female,Government Employee,Tumakuru,false,0.12
+252,Deepa Iyer,72,Male,Labour,Bengaluru Urban,false,0.68
+253,Anjali Patel,52,Male,Retired,Dakshina Kannada,true,0.57
+254,Ganesh Naik,47,Female,Farmer,Bengaluru Urban,false,0.48
+255,Sanjay Rao,31,Male,Student,Udupi,false,0.72
+256,Rajesh Patil,58,Male,Business,Shivamogga,false,0.13
+257,Nandini Pillai,31,Female,Government Employee,Tumakuru,true,0.31
+258,Krishna Patel,18,Female,Farmer,Bengaluru Rural,false,0.66
+259,Nandini Reddy,45,Male,Student,Bengaluru Urban,false,0.9
+260,Suresh Fernandes,35,Male,Retired,Bengaluru Rural,true,0.15
+261,Sanjay Reddy,24,Female,Retired,Tumakuru,false,0.81
+262,Sanjay Fernandes,45,Female,Business,Belagavi,false,0.71
+263,Nandini Rao,15,Male,Student,Hassan,false,0.63
+264,Vijay Pillai,69,Female,Private Employee,Kalaburagi,false,0.66
+265,Shiva Naik,20,Male,Government Employee,Hassan,false,0.96
+266,Nandini Raju,40,Female,Housewife,Dharwad,false,0.41
+267,Pooja Swamy,18,Female,Housewife,Bengaluru Urban,false,0.84
+268,Ramesh Singh,32,Male,Farmer,Shivamogga,false,0.81
+269,Lakshmi Fernandes,28,Female,Private Employee,Hassan,false,0.4
+270,Kumar Reddy,23,Male,Student,Dharwad,false,0.1
+271,Girish Iyer,21,Male,Labour,Udupi,false,0.83
+272,Rajesh Khan,63,Male,Student,Belagavi,true,0.42
+273,Anita Fernandes,35,Male,Private Employee,Bengaluru Urban,false,0.28
+274,Rekha Nair,21,Female,Private Employee,Ballari,false,0.28
+275,Arun Gowda,22,Female,Housewife,Kalaburagi,false,0.9
+276,Anita Fernandes,21,Male,Private Employee,Shivamogga,false,0.57
+277,Rekha D'Souza,50,Female,Business,Bengaluru Rural,true,0.93
+278,Deepa Khan,37,Female,Private Employee,Hassan,false,0.67
+279,Shameer Swamy,75,Male,Government Employee,Mysuru,false,0.15
+280,Anjali Prasad,35,Other,Labour,Tumakuru,false,0.81
+281,Mohan Patil,50,Female,Private Employee,Dharwad,false,0.26
+282,Maria Murthy,47,Female,Labour,Dharwad,false,0.46
+283,Imran Naik,69,Male,Farmer,Dharwad,false,0.46
+284,Nandini Patil,24,Female,Private Employee,Dakshina Kannada,false,0.22
+285,Pooja Singh,25,Male,Student,Dharwad,false,0.4
+286,Ramesh Singh,44,Female,Private Employee,Dakshina Kannada,false,0.26
+287,Mohan Singh,28,Female,Government Employee,Ballari,false,0.68
+288,Arun Reddy,38,Male,Student,Ballari,false,0.28
+289,Patel Menon,22,Female,Farmer,Udupi,false,0.22
+290,Patel Raju,73,Female,Student,Dakshina Kannada,false,0.41
+291,Krishna Swamy,63,Female,Student,Dharwad,false,0.99
+292,Priya Hegde,63,Female,Farmer,Dharwad,false,0.63
+293,Patel Fernandes,45,Male,Business,Belagavi,false,0.49
+294,Rajesh Fernandes,64,Male,Student,Belagavi,true,0.89
+295,Ravi Murthy,29,Female,Private Employee,Belagavi,false,0.48
+296,Anita Patel,48,Female,Student,Mysuru,false,0.96
+297,Shiva Iyer,28,Female,Retired,Kalaburagi,false,0.45
+298,Lakshmi Reddy,37,Male,Labour,Shivamogga,false,0.18
+299,Kumar Naik,26,Female,Labour,Bengaluru Urban,false,0.16
+300,Rajesh Hegde,60,Male,Business,Dharwad,true,0.57
+301,Sanjay Patil,24,Other,Housewife,Ballari,false,0.77
+302,Vijay Rao,37,Male,Labour,Mysuru,false,0.95
+303,Maria Menon,47,Male,Farmer,Bengaluru Urban,false,0.5
+304,Shiva Hegde,70,Female,Labour,Dharwad,false,0.14
+305,Rekha Fernandes,28,Male,Government Employee,Kalaburagi,false,0.83
+306,Kumar Iyer,21,Female,Labour,Kalaburagi,false,0.27
+307,Maria Naik,43,Male,Housewife,Dakshina Kannada,false,0.58
+308,Maria Rao,33,Female,Retired,Ballari,true,0.43
+309,Ganesh Patel,47,Male,Housewife,Dakshina Kannada,false,0.14
+310,Sanjay Patel,17,Female,Farmer,Kalaburagi,true,0.33
+311,Kavita Menon,35,Female,Labour,Dharwad,true,0.59
+312,Vijay Murthy,25,Female,Housewife,Mysuru,false,0.65
+313,Deepa Khan,19,Male,Student,Shivamogga,false,0.5
+314,Suresh Menon,29,Female,Labour,Udupi,true,0.67
+315,Sanjay Shetty,34,Male,Student,Bengaluru Urban,false,0.79
+316,Priya Rao,62,Male,Retired,Bengaluru Urban,false,0.4
+317,Mohan Hegde,28,Female,Business,Shivamogga,false,0.25
+318,Krishna Patel,34,Male,Farmer,Hassan,false,0.59
+319,Priya Rao,54,Male,Private Employee,Mysuru,true,0.69
+320,Girish Hegde,13,Male,Government Employee,Shivamogga,false,0.14
+321,Anita Iyer,64,Male,Business,Udupi,false,0.99
+322,Sunita Reddy,56,Female,Retired,Shivamogga,false,0.79
+323,Imran Patel,20,Other,Labour,Bengaluru Rural,false,0.65
+324,Pooja Pillai,43,Female,Student,Tumakuru,true,0.78
+325,Patel D'Souza,21,Female,Business,Bengaluru Urban,true,0.55
+326,Rajesh Pillai,24,Male,Labour,Udupi,false,0.22
+327,Ganesh Naik,30,Female,Retired,Shivamogga,false,0.78
+328,Kavita Patel,29,Male,Student,Shivamogga,false,0.82
+329,Shameer Khan,38,Female,Housewife,Dharwad,false,0.16
+330,Suresh Pillai,37,Other,Farmer,Mysuru,true,0.63
+331,Priya Prasad,57,Male,Labour,Dakshina Kannada,false,0.28
+332,Priya Shetty,50,Male,Labour,Shivamogga,false,0.88
+333,Sanjay Khan,42,Male,Labour,Kalaburagi,false,0.76
+334,Ravi Khan,46,Male,Business,Dakshina Kannada,false,0.24
+335,Sanjay Fernandes,39,Male,Government Employee,Kalaburagi,false,0.53
+336,Lakshmi Rao,29,Male,Farmer,Bengaluru Urban,true,0.55
+337,Sanjay D'Souza,46,Female,Private Employee,Kalaburagi,false,0.68
+338,Rekha Naik,44,Other,Business,Kalaburagi,false,0.25
+339,Ganesh Singh,39,Female,Labour,Shivamogga,false,0.73
+340,Patel Hegde,44,Male,Student,Belagavi,false,0.71
+341,Sunita Iyer,35,Male,Housewife,Dakshina Kannada,false,0.62
+342,Ravi Reddy,36,Female,Retired,Kalaburagi,false,0.98
+343,Rekha D'Souza,21,Male,Retired,Dakshina Kannada,false,0.55
+344,Nandini Shetty,43,Female,Business,Bengaluru Rural,false,0.8
+345,Sunita Rao,20,Female,Retired,Udupi,false,0.99
+346,Arun Kumar,51,Female,Retired,Ballari,false,0.36
+347,Meera Patil,36,Female,Farmer,Dharwad,false,0.95
+348,Kumar Rao,37,Male,Housewife,Tumakuru,false,0.91
+349,Arun Pillai,50,Male,Government Employee,Bengaluru Rural,false,0.35
+350,Priya Murthy,27,Male,Business,Bengaluru Urban,true,0.78
+351,Arun Rao,10,Female,Student,Kalaburagi,false,0.99
+352,Lakshmi Patel,46,Female,Private Employee,Belagavi,false,0.41
+353,Meera Menon,21,Male,Student,Belagavi,false,0.83
+354,Patel Sharma,16,Male,Business,Ballari,false,0.73
+355,Girish Iyer,62,Female,Labour,Ballari,false,0.27
+356,Ravi Pillai,61,Male,Student,Udupi,false,0.5
+357,Patel Iyer,43,Female,Private Employee,Kalaburagi,false,0.95
+358,Patel Khan,34,Male,Farmer,Udupi,true,0.57
+359,Suresh Sharma,47,Male,Business,Dakshina Kannada,false,1
+360,Kumar Fernandes,65,Female,Labour,Shivamogga,false,0.32
+361,Maria Kumar,28,Male,Student,Mysuru,false,0.39
+362,Priya Nair,39,Female,Business,Shivamogga,true,0.58
+363,Shiva Patel,33,Female,Business,Shivamogga,false,0.92
+364,Imran Pillai,43,Female,Retired,Tumakuru,false,0.2
+365,Kavita Swamy,19,Female,Business,Hassan,false,0.87
+366,Patel Gowda,69,Male,Farmer,Kalaburagi,false,0.39
+367,Shiva Sharma,28,Female,Farmer,Bengaluru Rural,false,0.58
+368,Krishna Shetty,35,Female,Labour,Shivamogga,false,0.64
+369,Anjali Naik,28,Female,Government Employee,Ballari,false,0.21
+370,Nandini Murthy,73,Female,Farmer,Dharwad,false,0.97
+371,Kavita Sharma,30,Female,Farmer,Udupi,false,0.3
+372,Anjali Murthy,36,Female,Government Employee,Shivamogga,false,0.24
+373,Kavita D'Souza,16,Female,Private Employee,Kalaburagi,false,0.58
+374,Rajesh Raju,29,Male,Housewife,Belagavi,false,0.62
+375,Anita Fernandes,73,Female,Housewife,Dharwad,false,0.36
+376,Shiva Rao,21,Female,Student,Belagavi,false,0.62
+377,Sanjay D'Souza,35,Female,Housewife,Bengaluru Urban,true,0.98
+378,Arun Prasad,18,Female,Retired,Mysuru,false,0.46
+379,Sanjay Murthy,21,Male,Housewife,Shivamogga,false,0.8
+380,Joseph Kumar,72,Female,Retired,Dakshina Kannada,false,0.5
+381,Mohan Reddy,11,Male,Farmer,Bengaluru Urban,false,0.99
+382,Shiva Swamy,34,Male,Labour,Shivamogga,false,0.37
+383,Mohan Raju,23,Male,Student,Kalaburagi,false,0.58
+384,Mohan Prasad,66,Female,Business,Tumakuru,false,0.91
+385,Maria Patil,27,Male,Labour,Belagavi,true,0.22
+386,Mohan Raju,20,Male,Student,Bengaluru Rural,false,0.56
+387,Kumar D'Souza,26,Other,Student,Tumakuru,false,0.95
+388,Joseph Raju,40,Male,Labour,Udupi,false,0.92
+389,Deepa Prasad,70,Male,Business,Shivamogga,false,0.31
+390,Anjali Rao,22,Female,Farmer,Hassan,false,0.22
+391,Deepa Nair,33,Male,Housewife,Kalaburagi,false,0.95
+392,Deepa Rao,35,Male,Government Employee,Shivamogga,false,0.27
+393,Imran Prasad,28,Female,Retired,Mysuru,false,0.81
+394,Priya Kumar,27,Male,Business,Shivamogga,false,0.16
+395,Kavita Nair,42,Male,Farmer,Dakshina Kannada,true,0.44
+396,Arun Reddy,63,Male,Government Employee,Hassan,false,0.54
+397,Anjali Shetty,49,Female,Business,Bengaluru Urban,false,0.95
+398,Shiva Menon,42,Other,Retired,Dharwad,false,0.33
+399,Joseph Sharma,35,Male,Government Employee,Bengaluru Urban,false,0.68
+400,Priya Menon,30,Female,Labour,Mysuru,false,0.42
+401,Sunita D'Souza,40,Female,Farmer,Dakshina Kannada,false,0.18
+402,Kavita Kumar,30,Female,Business,Udupi,false,0.18
+403,Patel Shetty,33,Female,Labour,Bengaluru Urban,false,0.48
+404,Lakshmi Murthy,35,Female,Business,Kalaburagi,true,0.27
+405,Maria D'Souza,51,Female,Private Employee,Tumakuru,false,0.7
+406,Joseph Iyer,67,Male,Labour,Mysuru,false,0.89
+407,Kumar Kumar,38,Male,Housewife,Ballari,false,0.15
+408,Meera Reddy,36,Male,Farmer,Ballari,false,0.87
+409,Anita Nair,25,Male,Retired,Tumakuru,false,0.94
+410,Krishna Naik,67,Female,Labour,Bengaluru Urban,false,0.65
+411,Arun Gowda,23,Male,Housewife,Kalaburagi,false,0.19
+412,Pooja Prasad,33,Female,Retired,Bengaluru Rural,false,0.11
+413,Priya Murthy,39,Male,Government Employee,Belagavi,false,0.26
+414,Girish Menon,54,Female,Housewife,Mysuru,false,0.49
+415,Rajesh Reddy,29,Male,Student,Mysuru,false,0.77
+416,Joseph Rao,56,Female,Government Employee,Bengaluru Rural,false,0.6
+417,Kavita Khan,35,Female,Retired,Mysuru,true,0.2
+418,Meera Prasad,12,Male,Farmer,Bengaluru Urban,false,0.41
+419,Ravi D'Souza,74,Male,Government Employee,Dharwad,true,0.49
+420,Kumar Hegde,47,Male,Business,Dakshina Kannada,false,0.32
+421,Lakshmi Reddy,57,Female,Housewife,Tumakuru,false,0.63
+422,Arun Sharma,38,Male,Government Employee,Tumakuru,false,0.48
+423,Anjali Naik,33,Male,Government Employee,Udupi,false,0.31
+424,Suresh Prasad,25,Male,Student,Dakshina Kannada,true,0.43
+425,Ramesh Hegde,73,Male,Student,Mysuru,true,0.15
+426,Anita Murthy,37,Male,Business,Kalaburagi,false,0.95
+427,Arun Reddy,22,Female,Housewife,Belagavi,false,0.83
+428,Pooja Iyer,49,Male,Government Employee,Tumakuru,false,0.18
+429,Patel Iyer,28,Male,Farmer,Tumakuru,false,0.93
+430,Shameer Patel,26,Male,Labour,Tumakuru,false,0.24
+431,Deepa Nair,24,Female,Private Employee,Belagavi,false,0.75
+432,Lakshmi D'Souza,53,Female,Student,Mysuru,false,0.73
+433,Nandini Naik,18,Female,Farmer,Udupi,false,0.55
+434,Mohan Patil,47,Male,Retired,Ballari,false,0.46
+435,Ravi Patil,20,Female,Student,Ballari,false,0.74
+436,Anjali Hegde,40,Male,Government Employee,Ballari,true,0.3
+437,Suresh Pillai,40,Male,Government Employee,Mysuru,false,0.81
+438,Krishna Rao,38,Female,Student,Shivamogga,false,0.64
+439,Maria Raju,19,Male,Housewife,Kalaburagi,false,0.37
+440,Krishna Gowda,71,Female,Farmer,Udupi,false,0.26
+441,Joseph Swamy,68,Male,Retired,Shivamogga,false,0.66
+442,Krishna Fernandes,37,Male,Government Employee,Tumakuru,false,0.83
+443,Girish Hegde,35,Female,Retired,Belagavi,true,0.53
+444,Kumar Patil,45,Male,Labour,Udupi,false,0.35
+445,Krishna Khan,20,Female,Farmer,Bengaluru Rural,true,0.48
+446,Arun Prasad,43,Male,Student,Hassan,true,0.45
+447,Ganesh Pillai,18,Female,Housewife,Tumakuru,false,0.34
+448,Ravi Gowda,70,Female,Business,Ballari,false,0.4
+449,Vijay Murthy,37,Female,Labour,Mysuru,false,0.53
+450,Maria Nair,26,Female,Business,Bengaluru Urban,false,0.19
+451,Rekha D'Souza,26,Male,Farmer,Bengaluru Urban,false,0.45
+452,Priya Menon,22,Male,Business,Dharwad,false,0.2
+453,Meera Kumar,22,Female,Business,Belagavi,false,0.93
+454,Vijay Patil,70,Male,Private Employee,Hassan,false,0.48
+455,Anita Iyer,72,Female,Private Employee,Bengaluru Rural,false,0.55
+456,Shiva Kumar,22,Female,Housewife,Shivamogga,true,0.23
+457,Krishna Kumar,46,Male,Retired,Udupi,false,0.18
+458,Ganesh Khan,56,Male,Labour,Kalaburagi,false,0.98
+459,Vijay Pillai,41,Female,Retired,Kalaburagi,false,0.58
+460,Krishna Hegde,48,Male,Retired,Ballari,false,0.72
+461,Priya Singh,33,Male,Student,Belagavi,false,0.96
+462,Meera Singh,52,Female,Housewife,Dakshina Kannada,false,0.85
+463,Priya Rao,44,Female,Student,Udupi,true,0.97
+464,Patel Gowda,43,Female,Retired,Belagavi,true,0.2
+465,Krishna Iyer,46,Female,Student,Mysuru,false,0.17
+466,Krishna D'Souza,27,Male,Housewife,Dharwad,false,0.77
+467,Lakshmi D'Souza,40,Female,Labour,Shivamogga,false,0.36
+468,Suresh Iyer,28,Female,Housewife,Bengaluru Urban,false,0.48
+469,Deepa Nair,65,Female,Government Employee,Udupi,false,0.94
+470,Pooja Khan,19,Other,Housewife,Udupi,false,0.66
+471,Krishna Raju,20,Female,Business,Udupi,false,0.38
+472,Kumar Naik,43,Female,Retired,Tumakuru,false,0.19
+473,Anjali Patel,30,Male,Government Employee,Mysuru,false,0.16
+474,Rajesh Raju,40,Male,Student,Tumakuru,false,0.98
+475,Shiva Murthy,49,Male,Private Employee,Bengaluru Rural,false,0.11
+476,Sanjay Prasad,22,Male,Retired,Udupi,false,0.22
+477,Ramesh Prasad,41,Male,Housewife,Bengaluru Urban,false,0.44
+478,Anita Patil,32,Male,Labour,Bengaluru Rural,false,0.18
+479,Shiva Menon,37,Female,Housewife,Ballari,false,0.76
+480,Girish Sharma,41,Male,Private Employee,Hassan,false,0.49
+481,Joseph Khan,75,Male,Business,Mysuru,false,0.99
+482,Vijay Shetty,18,Female,Business,Dharwad,true,0.38
+483,Mohan Nair,56,Female,Private Employee,Bengaluru Rural,true,0.74
+484,Sunita Fernandes,46,Female,Housewife,Bengaluru Rural,false,0.54
+485,Sanjay D'Souza,22,Female,Housewife,Dharwad,false,0.86
+486,Mohan Menon,62,Male,Labour,Dakshina Kannada,false,0.99
+487,Suresh Hegde,28,Female,Student,Mysuru,false,0.36
+488,Anjali Kumar,24,Male,Labour,Shivamogga,true,0.52
+489,Arun Kumar,45,Male,Business,Kalaburagi,false,0.28
+490,Kavita Iyer,23,Male,Labour,Bengaluru Rural,false,0.13
+491,Vijay Pillai,25,Male,Student,Hassan,false,0.16
+492,Lakshmi Rao,64,Male,Student,Shivamogga,false,0.33
+493,Mohan Nair,20,Male,Government Employee,Udupi,false,0.48
+494,Kumar Naik,22,Male,Retired,Belagavi,false,0.37
+495,Lakshmi Murthy,24,Female,Housewife,Udupi,false,0.92
+496,Deepa Iyer,31,Male,Housewife,Belagavi,false,0.84
+497,Ravi Sharma,41,Female,Housewife,Dharwad,false,0.2
+498,Sunita Prasad,64,Female,Labour,Mysuru,false,0.68
+499,Rajesh Rao,32,Male,Housewife,Hassan,false,0.41
+500,Nandini Gowda,72,Male,Private Employee,Bengaluru Urban,false,0.38
+501,Maria Murthy,54,Female,Labour,Kalaburagi,false,0.42
+502,Ganesh Patel,47,Male,Housewife,Dharwad,false,0.26
+503,Ramesh Khan,48,Male,Retired,Shivamogga,false,0.66
+504,Mohan Reddy,54,Male,Student,Hassan,false,0.19
+505,Deepa Reddy,50,Female,Student,Shivamogga,false,0.48
+506,Deepa Khan,25,Male,Labour,Bengaluru Rural,false,0.81
+507,Ravi Singh,43,Female,Government Employee,Dakshina Kannada,false,0.34
+508,Joseph Hegde,64,Male,Retired,Bengaluru Urban,true,0.24
+509,Krishna Iyer,26,Male,Housewife,Hassan,false,0.32
+510,Shameer Pillai,57,Male,Student,Hassan,false,0.95
+511,Sanjay Patel,36,Female,Retired,Tumakuru,true,0.82
+512,Shiva Khan,49,Female,Government Employee,Ballari,false,0.39
+513,Ramesh Gowda,18,Female,Housewife,Bengaluru Urban,false,0.59
+514,Sanjay Gowda,69,Female,Housewife,Dharwad,false,0.8
+515,Rekha Hegde,28,Male,Farmer,Udupi,false,0.81
+516,Sunita Kumar,32,Female,Student,Shivamogga,false,0.88
+517,Arun Reddy,27,Male,Government Employee,Mysuru,true,0.54
+518,Sanjay Reddy,21,Male,Student,Kalaburagi,true,0.96
+519,Ramesh Khan,28,Female,Labour,Mysuru,false,0.11
+520,Imran Iyer,27,Female,Business,Belagavi,false,0.54
+521,Ravi Patil,48,Female,Government Employee,Bengaluru Rural,false,0.13
+522,Rajesh Singh,12,Male,Farmer,Bengaluru Urban,false,0.3
+523,Sunita Nair,35,Male,Business,Belagavi,false,0.69
+524,Ramesh Prasad,46,Female,Farmer,Dakshina Kannada,false,0.72
+525,Sanjay Reddy,59,Female,Government Employee,Mysuru,false,0.96
+526,Ramesh Iyer,45,Female,Private Employee,Hassan,true,0.44
+527,Meera Pillai,23,Female,Labour,Mysuru,false,0.96
+528,Anita Iyer,24,Female,Private Employee,Kalaburagi,true,0.26
+529,Kumar Singh,30,Male,Farmer,Shivamogga,false,0.23
+530,Kavita Gowda,18,Female,Farmer,Dharwad,false,0.39
+531,Sanjay Shetty,19,Female,Farmer,Bengaluru Rural,false,0.74
+532,Mohan Swamy,72,Female,Retired,Shivamogga,false,0.39
+533,Suresh Murthy,21,Male,Government Employee,Kalaburagi,true,0.51
+534,Sanjay Hegde,49,Female,Government Employee,Bengaluru Urban,false,0.87
+535,Anita Sharma,65,Female,Retired,Bengaluru Urban,false,0.93
+536,Ravi Kumar,28,Male,Retired,Udupi,false,0.39
+537,Deepa Patel,19,Male,Student,Kalaburagi,false,0.99
+538,Krishna Singh,34,Female,Business,Bengaluru Urban,false,0.84
+539,Anjali D'Souza,23,Male,Business,Tumakuru,false,0.83
+540,Ravi Naik,68,Male,Student,Bengaluru Rural,true,0.37
+541,Shameer Khan,29,Male,Housewife,Mysuru,false,0.21
+542,Ganesh Swamy,20,Female,Retired,Shivamogga,false,0.21
+543,Lakshmi Menon,49,Male,Government Employee,Belagavi,false,0.53
+544,Anita Kumar,30,Male,Farmer,Shivamogga,false,0.87
+545,Lakshmi Naik,33,Male,Farmer,Dharwad,false,0.27
+546,Krishna Swamy,21,Female,Private Employee,Dakshina Kannada,false,0.69
+547,Vijay Hegde,54,Female,Retired,Dharwad,false,0.56
+548,Mohan Nair,37,Male,Government Employee,Hassan,false,0.23
+549,Arun Hegde,74,Male,Labour,Mysuru,false,0.53
+550,Sunita Reddy,42,Female,Business,Belagavi,false,0.24
+551,Kavita Naik,47,Male,Private Employee,Bengaluru Rural,true,0.44
+552,Anita Rao,57,Male,Government Employee,Ballari,false,0.57
+553,Imran Hegde,18,Female,Farmer,Bengaluru Rural,true,0.13
+554,Deepa Reddy,19,Male,Retired,Kalaburagi,false,0.3
+555,Sunita Murthy,73,Male,Farmer,Belagavi,false,0.74
+556,Arun Patil,18,Female,Labour,Udupi,false,0.92
+557,Joseph Kumar,23,Male,Private Employee,Dharwad,true,0.11
+558,Ravi Patil,41,Other,Business,Mysuru,false,0.87
+559,Nandini Gowda,46,Male,Farmer,Dharwad,true,0.84
+560,Krishna Hegde,40,Female,Housewife,Mysuru,false,0.19
+561,Girish Murthy,61,Female,Government Employee,Shivamogga,false,0.43
+562,Anita Patel,15,Female,Labour,Bengaluru Rural,false,0.57
+563,Ramesh Hegde,35,Female,Housewife,Belagavi,false,0.32
+564,Meera Rao,44,Female,Farmer,Kalaburagi,false,0.97
+565,Deepa Fernandes,72,Other,Housewife,Dakshina Kannada,false,0.41
+566,Ramesh Nair,27,Male,Student,Hassan,false,0.41
+567,Shiva Fernandes,44,Female,Private Employee,Dakshina Kannada,true,0.11
+568,Girish Menon,55,Male,Government Employee,Hassan,false,0.25
+569,Shiva Shetty,33,Male,Student,Tumakuru,false,0.63
+570,Ravi D'Souza,22,Male,Student,Bengaluru Urban,false,0.42
+571,Joseph Raju,26,Male,Business,Udupi,false,1
+572,Mohan Shetty,27,Male,Labour,Belagavi,false,0.71
+573,Rekha Reddy,43,Female,Government Employee,Hassan,false,0.61
+574,Shiva Swamy,41,Male,Farmer,Dakshina Kannada,true,0.6
+575,Anita Swamy,19,Female,Labour,Ballari,false,0.8
+576,Vijay Prasad,54,Male,Private Employee,Ballari,false,0.74
+577,Girish D'Souza,44,Other,Labour,Bengaluru Urban,false,0.12
+578,Ganesh Sharma,33,Female,Government Employee,Tumakuru,false,0.44
+579,Rekha Shetty,49,Male,Retired,Mysuru,false,0.11
+580,Girish Naik,67,Male,Government Employee,Shivamogga,true,0.63
+581,Lakshmi Patel,69,Female,Business,Udupi,false,0.56
+582,Pooja Sharma,37,Female,Labour,Mysuru,false,0.71
+583,Imran Shetty,60,Female,Student,Dharwad,false,0.28
+584,Shameer Reddy,20,Female,Farmer,Tumakuru,true,0.12
+585,Suresh Reddy,43,Male,Labour,Mysuru,false,0.86
+586,Joseph Fernandes,50,Female,Business,Kalaburagi,true,0.12
+587,Joseph Hegde,29,Male,Farmer,Dharwad,false,0.36
+588,Lakshmi Singh,27,Female,Retired,Kalaburagi,false,0.2
+589,Vijay Gowda,44,Male,Business,Hassan,false,0.62
+590,Rekha Menon,28,Female,Student,Belagavi,false,0.52
+591,Ravi Patil,39,Male,Farmer,Belagavi,false,0.57
+592,Imran Sharma,36,Male,Private Employee,Dharwad,false,0.81
+593,Joseph Shetty,30,Female,Business,Shivamogga,false,0.97
+594,Nandini Prasad,36,Female,Government Employee,Mysuru,false,0.63
+595,Shameer Khan,49,Male,Student,Udupi,false,0.19
+596,Lakshmi Patel,28,Female,Farmer,Bengaluru Rural,false,0.26
+597,Ramesh Kumar,75,Male,Government Employee,Bengaluru Rural,true,0.77
+598,Shameer Pillai,42,Female,Housewife,Belagavi,true,0.5
+599,Nandini Raju,28,Male,Government Employee,Dharwad,false,0.36
+600,Ramesh Prasad,20,Female,Farmer,Bengaluru Rural,false,0.67

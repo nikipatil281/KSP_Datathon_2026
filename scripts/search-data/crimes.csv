@@ -1,0 +1,2001 @@
+crime_id,district,crime_type,modus_operandi,incident_date,incident_year,severity,status,fir_number,offender_ids
+1,Bengaluru Rural,Theft,Vehicle theft,2020-01-22,2020,3,Under Investigation,FIR/2020/007/0001,[374]
+2,Bengaluru Rural,Fraud,Impersonation,2024-10-17,2024,4,Under Investigation,FIR/2024/009/0002,[52]
+3,Belagavi,Theft,Vehicle theft,2023-03-25,2023,3,Open,FIR/2023/023/0003,[205]
+4,Dakshina Kannada,Theft,Pickpocket,2021-07-24,2021,2,Closed - Acquitted,FIR/2021/017/0004,"[32, 121, 253]"
+5,Udupi,Drug Offence,Possession,2025-05-15,2025,4,Pending Trial,FIR/2025/039/0005,[180]
+6,Bengaluru Urban,Assault,Brawl,2024-05-04,2024,3,Under Investigation,FIR/2024/002/0006,[61]
+7,Tumakuru,Robbery,Dacoity,2020-07-06,2020,5,Pending Trial,FIR/2020/015/0007,[93]
+8,Bengaluru Rural,Cybercrime,Online fraud,2022-10-21,2022,4,Closed - Acquitted,FIR/2022/008/0008,"[113, 228, 366]"
+9,Hassan,Theft,House break-in,2024-08-09,2024,3,Under Investigation,FIR/2024/033/0009,"[267, 119]"
+10,Ballari,Kidnapping,Ransom,2025-08-05,2025,5,Under Investigation,FIR/2025/030/0010,[143]
+11,Hassan,Theft,House break-in,2020-05-08,2020,3,Closed - Acquitted,FIR/2020/035/0011,"[135, 386]"
+12,Bengaluru Urban,Fraud,Impersonation,2023-03-23,2023,3,Closed - Convicted,FIR/2023/004/0012,[196]
+13,Dakshina Kannada,Robbery,Mugging,2020-06-07,2020,4,Under Investigation,FIR/2020/019/0013,"[312, 7]"
+14,Bengaluru Urban,Vandalism,Graffiti,2022-06-11,2022,2,Under Investigation,FIR/2022/003/0014,[33]
+15,Bengaluru Urban,Theft,Pickpocket,2022-01-24,2022,2,Closed - Acquitted,FIR/2022/004/0015,"[32, 366]"
+16,Belagavi,Theft,Chain snatching,2021-04-08,2021,3,Under Investigation,FIR/2021/023/0016,"[213, 37]"
+17,Kalaburagi,Assault,Road rage,2020-05-07,2020,4,Closed - Convicted,FIR/2020/024/0017,[312]
+18,Kalaburagi,Fraud,Cheque fraud,2021-09-06,2021,4,Closed - Acquitted,FIR/2021/025/0018,"[115, 290, 258]"
+19,Hassan,Assault,Road rage,2022-03-09,2022,4,Under Investigation,FIR/2022/034/0019,"[119, 234, 162]"
+20,Bengaluru Urban,Sexual Assault,Eve-teasing,2025-06-06,2025,5,Closed - Convicted,FIR/2025/005/0020,"[65, 276]"
+21,Bengaluru Urban,Robbery,Dacoity,2021-08-30,2021,4,Under Investigation,FIR/2021/006/0021,"[8, 86]"
+22,Bengaluru Urban,Cybercrime,Online fraud,2021-06-26,2021,3,Pending Trial,FIR/2021/002/0022,[357]
+23,Bengaluru Urban,Theft,House break-in,2025-01-12,2025,2,Pending Trial,FIR/2025/003/0023,[69]
+24,Kalaburagi,Robbery,Armed robbery,2025-09-14,2025,5,Pending Trial,FIR/2025/025/0024,[25]
+25,Mysuru,Theft,Vehicle theft,2024-10-29,2024,2,Pending Trial,FIR/2024/010/0025,[61]
+26,Tumakuru,Cybercrime,Identity theft,2021-01-28,2021,4,Under Investigation,FIR/2021/015/0026,"[277, 276, 100]"
+27,Ballari,Theft,Pickpocket,2021-05-06,2021,3,Under Investigation,FIR/2021/030/0027,"[375, 343, 60]"
+28,Hassan,Cybercrime,Online fraud,2023-07-13,2023,4,Open,FIR/2023/033/0028,[286]
+29,Mysuru,Theft,Vehicle theft,2025-06-07,2025,2,Under Investigation,FIR/2025/013/0029,[265]
+30,Dakshina Kannada,Cybercrime,Identity theft,2023-11-29,2023,3,Closed - Convicted,FIR/2023/017/0030,[150]
+31,Dharwad,Vandalism,Graffiti,2022-10-10,2022,3,Closed - Acquitted,FIR/2022/027/0031,[357]
+32,Bengaluru Urban,Theft,Vehicle theft,2024-08-02,2024,2,Under Investigation,FIR/2024/002/0032,[227]
+33,Dharwad,Theft,Vehicle theft,2022-04-24,2022,3,Closed - Convicted,FIR/2022/027/0033,"[11, 370]"
+34,Kalaburagi,Assault,Domestic violence,2024-06-08,2024,4,Closed - Convicted,FIR/2024/024/0034,[284]
+35,Bengaluru Urban,Theft,House break-in,2020-04-09,2020,2,Under Investigation,FIR/2020/003/0035,[194]
+36,Dharwad,Theft,Vehicle theft,2021-01-26,2021,3,Under Investigation,FIR/2021/027/0036,[166]
+37,Kalaburagi,Theft,Pickpocket,2022-06-29,2022,3,Pending Trial,FIR/2022/025/0037,[196]
+38,Shivamogga,Vandalism,Graffiti,2022-08-08,2022,3,Under Investigation,FIR/2022/037/0038,[323]
+39,Ballari,Assault,Domestic violence,2020-08-29,2020,4,Closed - Convicted,FIR/2020/031/0039,[353]
+40,Belagavi,Kidnapping,Ransom,2023-08-11,2023,5,Open,FIR/2023/021/0040,"[54, 218]"
+41,Bengaluru Urban,Murder,Hired killing,2021-11-30,2021,5,Pending Trial,FIR/2021/003/0041,[5]
+42,Kalaburagi,Assault,Domestic violence,2021-08-02,2021,4,Pending Trial,FIR/2021/024/0042,[310]
+43,Ballari,Theft,Chain snatching,2022-01-04,2022,3,Open,FIR/2022/031/0043,[356]
+44,Tumakuru,Robbery,Armed robbery,2022-02-28,2022,5,Closed - Convicted,FIR/2022/015/0044,[320]
+45,Dakshina Kannada,Theft,Pickpocket,2021-06-02,2021,2,Closed - Convicted,FIR/2021/018/0045,"[310, 142]"
+46,Mysuru,Theft,Pickpocket,2023-08-17,2023,2,Closed - Convicted,FIR/2023/010/0046,[242]
+47,Belagavi,Assault,Domestic violence,2021-11-11,2021,4,Closed - Convicted,FIR/2021/021/0047,[356]
+48,Belagavi,Drug Offence,Possession,2022-02-21,2022,5,Pending Trial,FIR/2022/023/0048,[270]
+49,Bengaluru Urban,Cybercrime,Investment scam,2024-06-19,2024,3,Under Investigation,FIR/2024/003/0049,[16]
+50,Bengaluru Urban,Robbery,Dacoity,2021-09-19,2021,4,Under Investigation,FIR/2021/003/0050,"[62, 29]"
+51,Belagavi,Fraud,Insurance fraud,2021-11-24,2021,4,Closed - Convicted,FIR/2021/022/0051,[342]
+52,Hassan,Robbery,Dacoity,2020-01-14,2020,5,Open,FIR/2020/033/0052,"[45, 290]"
+53,Bengaluru Urban,Theft,House break-in,2025-02-28,2025,2,Under Investigation,FIR/2025/001/0053,"[98, 383]"
+54,Dharwad,Theft,Vehicle theft,2023-01-22,2023,3,Under Investigation,FIR/2023/027/0054,[182]
+55,Kalaburagi,Theft,Vehicle theft,2024-11-12,2024,3,Under Investigation,FIR/2024/025/0055,"[258, 283]"
+56,Hassan,Cybercrime,Identity theft,2025-04-30,2025,4,Closed - Acquitted,FIR/2025/034/0056,[18]
+57,Bengaluru Rural,Theft,House break-in,2023-06-08,2023,3,Under Investigation,FIR/2023/007/0057,"[304, 295]"
+58,Kalaburagi,Robbery,Armed robbery,2025-09-07,2025,5,Under Investigation,FIR/2025/026/0058,[84]
+59,Bengaluru Urban,Robbery,Armed robbery,2023-11-18,2023,4,Closed - Convicted,FIR/2023/006/0059,"[155, 158]"
+60,Bengaluru Urban,Assault,Road rage,2021-02-13,2021,3,Under Investigation,FIR/2021/001/0060,"[238, 362]"
+61,Dharwad,Assault,Brawl,2023-11-21,2023,4,Closed - Convicted,FIR/2023/028/0061,"[394, 121]"
+62,Bengaluru Rural,Assault,Brawl,2022-05-15,2022,4,Pending Trial,FIR/2022/009/0062,[160]
+63,Bengaluru Rural,Assault,Brawl,2023-11-19,2023,4,Under Investigation,FIR/2023/007/0063,[164]
+64,Belagavi,Assault,Brawl,2025-01-18,2025,4,Open,FIR/2025/020/0064,"[58, 92, 218]"
+65,Udupi,Drug Offence,Trafficking,2024-11-16,2024,4,Closed - Convicted,FIR/2024/040/0065,[307]
+66,Dharwad,Theft,House break-in,2023-05-04,2023,3,Open,FIR/2023/027/0066,"[128, 90]"
+67,Udupi,Theft,Chain snatching,2020-06-15,2020,2,Closed - Convicted,FIR/2020/040/0067,"[52, 196]"
+68,Bengaluru Urban,Fraud,Impersonation,2021-04-21,2021,3,Closed - Convicted,FIR/2021/006/0068,"[125, 356]"
+69,Dakshina Kannada,Assault,Brawl,2024-06-20,2024,3,Under Investigation,FIR/2024/018/0069,"[337, 67]"
+70,Udupi,Theft,Chain snatching,2024-09-19,2024,2,Closed - Acquitted,FIR/2024/040/0070,[175]
+71,Dakshina Kannada,Robbery,Dacoity,2020-11-17,2020,4,Open,FIR/2020/017/0071,"[190, 156, 150]"
+72,Dharwad,Vandalism,Property destruction,2023-03-08,2023,3,Under Investigation,FIR/2023/027/0072,[311]
+73,Kalaburagi,Assault,Road rage,2022-06-10,2022,4,Under Investigation,FIR/2022/026/0073,[352]
+74,Dharwad,Theft,Vehicle theft,2024-06-26,2024,3,Open,FIR/2024/029/0074,[51]
+75,Hassan,Vandalism,Arson,2024-08-01,2024,3,Under Investigation,FIR/2024/033/0075,"[190, 12]"
+76,Tumakuru,Theft,Vehicle theft,2023-08-14,2023,3,Under Investigation,FIR/2023/016/0076,[351]
+77,Mysuru,Theft,Pickpocket,2020-01-29,2020,2,Closed - Convicted,FIR/2020/011/0077,[198]
+78,Bengaluru Urban,Assault,Brawl,2023-04-14,2023,3,Open,FIR/2023/002/0078,"[262, 323]"
+79,Kalaburagi,Robbery,Mugging,2021-08-04,2021,5,Closed - Convicted,FIR/2021/024/0079,"[235, 364]"
+80,Udupi,Theft,Vehicle theft,2021-08-29,2021,2,Under Investigation,FIR/2021/039/0080,"[158, 367]"
+81,Mysuru,Cybercrime,Investment scam,2022-11-19,2022,3,Under Investigation,FIR/2022/010/0081,[133]
+82,Shivamogga,Fraud,Insurance fraud,2025-11-13,2025,4,Open,FIR/2025/038/0082,[90]
+83,Bengaluru Rural,Cybercrime,Phishing,2025-08-05,2025,4,Under Investigation,FIR/2025/008/0083,"[269, 117]"
+84,Hassan,Murder,Gang rivalry,2025-01-03,2025,5,Pending Trial,FIR/2025/035/0084,"[334, 126]"
+85,Bengaluru Urban,Sexual Assault,Molestation,2025-11-10,2025,5,Open,FIR/2025/005/0085,[51]
+86,Bengaluru Rural,Assault,Domestic violence,2025-06-18,2025,4,Closed - Convicted,FIR/2025/007/0086,"[227, 399]"
+87,Ballari,Assault,Road rage,2022-12-18,2022,4,Under Investigation,FIR/2022/031/0087,"[58, 388]"
+88,Bengaluru Rural,Sexual Assault,Rape,2023-11-03,2023,5,Open,FIR/2023/007/0088,"[110, 158]"
+89,Belagavi,Theft,Chain snatching,2021-12-04,2021,3,Under Investigation,FIR/2021/021/0089,[305]
+90,Belagavi,Assault,Gang fight,2024-05-30,2024,4,Under Investigation,FIR/2024/021/0090,[72]
+91,Dharwad,Fraud,Insurance fraud,2022-03-27,2022,4,Closed - Convicted,FIR/2022/028/0091,[167]
+92,Shivamogga,Robbery,Armed robbery,2020-08-17,2020,5,Open,FIR/2020/038/0092,[69]
+93,Dharwad,Theft,House break-in,2025-12-15,2025,3,Pending Trial,FIR/2025/029/0093,"[365, 379]"
+94,Belagavi,Theft,House break-in,2022-11-11,2022,3,Cold Case,FIR/2022/022/0094,[250]
+95,Hassan,Murder,Property dispute,2025-07-08,2025,5,Closed - Acquitted,FIR/2025/033/0095,[286]
+96,Mysuru,Drug Offence,Distribution,2024-10-31,2024,4,Closed - Convicted,FIR/2024/013/0096,"[38, 94]"
+97,Bengaluru Urban,Cybercrime,Investment scam,2020-03-18,2020,3,Under Investigation,FIR/2020/001/0097,[394]
+98,Shivamogga,Theft,Vehicle theft,2022-04-24,2022,3,Under Investigation,FIR/2022/037/0098,[66]
+99,Dakshina Kannada,Theft,Vehicle theft,2023-12-26,2023,2,Under Investigation,FIR/2023/018/0099,"[14, 228, 381]"
+100,Bengaluru Rural,Theft,Vehicle theft,2025-09-06,2025,3,Under Investigation,FIR/2025/008/0100,"[380, 310, 184]"
+101,Ballari,Theft,Chain snatching,2024-09-16,2024,3,Closed - Acquitted,FIR/2024/030/0101,[334]
+102,Belagavi,Theft,Vehicle theft,2021-12-27,2021,3,Closed - Acquitted,FIR/2021/021/0102,"[32, 306]"
+103,Mysuru,Drug Offence,Distribution,2022-01-13,2022,4,Open,FIR/2022/010/0103,[207]
+104,Mysuru,Sexual Assault,Molestation,2024-03-24,2024,5,Closed - Acquitted,FIR/2024/010/0104,"[48, 215]"
+105,Udupi,Theft,Chain snatching,2025-04-07,2025,2,Under Investigation,FIR/2025/041/0105,"[50, 245]"
+106,Kalaburagi,Theft,Pickpocket,2022-10-20,2022,3,Under Investigation,FIR/2022/026/0106,"[343, 303, 267]"
+107,Bengaluru Urban,Drug Offence,Trafficking,2020-07-15,2020,4,Closed - Acquitted,FIR/2020/003/0107,[204]
+108,Kalaburagi,Assault,Domestic violence,2025-01-30,2025,4,Closed - Convicted,FIR/2025/026/0108,"[173, 96]"
+109,Dharwad,Cybercrime,Identity theft,2021-01-22,2021,4,Pending Trial,FIR/2021/028/0109,[178]
+110,Hassan,Theft,Vehicle theft,2020-03-09,2020,3,Under Investigation,FIR/2020/033/0110,[272]
+111,Udupi,Cybercrime,Identity theft,2021-09-14,2021,3,Open,FIR/2021/041/0111,"[206, 152, 200]"
+112,Belagavi,Theft,Pickpocket,2020-08-30,2020,3,Open,FIR/2020/020/0112,"[125, 201]"
+113,Dakshina Kannada,Theft,Chain snatching,2021-05-20,2021,2,Under Investigation,FIR/2021/018/0113,[142]
+114,Tumakuru,Cybercrime,Phishing,2021-05-26,2021,4,Closed - Convicted,FIR/2021/015/0114,"[369, 175]"
+115,Ballari,Drug Offence,Possession,2025-11-11,2025,5,Closed - Convicted,FIR/2025/032/0115,[341]
+116,Dakshina Kannada,Cybercrime,Phishing,2024-09-14,2024,3,Closed - Convicted,FIR/2024/017/0116,"[249, 125]"
+117,Kalaburagi,Cybercrime,Investment scam,2020-06-21,2020,4,Closed - Convicted,FIR/2020/025/0117,[61]
+118,Bengaluru Urban,Robbery,Mugging,2025-03-02,2025,4,Open,FIR/2025/003/0118,"[399, 222]"
+119,Ballari,Fraud,Insurance fraud,2024-01-08,2024,4,Closed - Convicted,FIR/2024/030/0119,"[167, 235]"
+120,Mysuru,Fraud,Cheque fraud,2023-09-29,2023,3,Closed - Convicted,FIR/2023/012/0120,[157]
+121,Ballari,Robbery,Mugging,2024-01-20,2024,5,Closed - Convicted,FIR/2024/032/0121,"[359, 329, 287]"
+122,Kalaburagi,Fraud,Land grab,2023-10-25,2023,4,Under Investigation,FIR/2023/026/0122,"[151, 315, 292]"
+123,Tumakuru,Theft,Vehicle theft,2024-12-08,2024,3,Closed - Convicted,FIR/2024/015/0123,[314]
+124,Shivamogga,Robbery,Dacoity,2024-05-04,2024,5,Open,FIR/2024/038/0124,[190]
+125,Tumakuru,Fraud,Land grab,2021-01-30,2021,4,Closed - Convicted,FIR/2021/016/0125,"[369, 179]"
+126,Dharwad,Theft,Vehicle theft,2020-03-31,2020,3,Closed - Convicted,FIR/2020/028/0126,"[76, 33]"
+127,Bengaluru Rural,Vandalism,Property destruction,2025-01-25,2025,3,Closed - Convicted,FIR/2025/009/0127,"[261, 209]"
+128,Shivamogga,Theft,Pickpocket,2020-09-17,2020,3,Under Investigation,FIR/2020/038/0128,"[389, 92]"
+129,Kalaburagi,Fraud,Impersonation,2025-04-27,2025,4,Under Investigation,FIR/2025/025/0129,"[130, 256]"
+130,Bengaluru Rural,Assault,Brawl,2020-09-06,2020,4,Under Investigation,FIR/2020/007/0130,"[7, 3, 168]"
+131,Mysuru,Assault,Road rage,2021-02-01,2021,3,Closed - Convicted,FIR/2021/012/0131,[396]
+132,Bengaluru Rural,Robbery,Armed robbery,2025-10-24,2025,5,Closed - Convicted,FIR/2025/007/0132,"[173, 233]"
+133,Mysuru,Fraud,Cheque fraud,2024-01-07,2024,3,Under Investigation,FIR/2024/013/0133,"[387, 303]"
+134,Kalaburagi,Drug Offence,Distribution,2022-04-03,2022,5,Open,FIR/2022/026/0134,"[207, 223]"
+135,Bengaluru Urban,Assault,Brawl,2022-02-09,2022,3,Pending Trial,FIR/2022/004/0135,[161]
+136,Dharwad,Drug Offence,Distribution,2021-12-31,2021,5,Under Investigation,FIR/2021/028/0136,[96]
+137,Tumakuru,Sexual Assault,Molestation,2023-04-04,2023,5,Closed - Convicted,FIR/2023/014/0137,"[200, 117, 191]"
+138,Shivamogga,Drug Offence,Distribution,2023-06-22,2023,5,Closed - Convicted,FIR/2023/037/0138,[212]
+139,Bengaluru Rural,Cybercrime,Identity theft,2020-10-15,2020,4,Pending Trial,FIR/2020/009/0139,[168]
+140,Dakshina Kannada,Theft,Pickpocket,2024-06-05,2024,2,Open,FIR/2024/017/0140,"[241, 246, 56]"
+141,Dharwad,Drug Offence,Trafficking,2020-06-17,2020,5,Pending Trial,FIR/2020/029/0141,"[23, 292]"
+142,Kalaburagi,Robbery,Mugging,2025-09-01,2025,5,Closed - Convicted,FIR/2025/026/0142,[226]
+143,Bengaluru Urban,Robbery,Dacoity,2020-03-12,2020,4,Open,FIR/2020/005/0143,[54]
+144,Bengaluru Urban,Assault,Brawl,2020-03-22,2020,3,Closed - Convicted,FIR/2020/003/0144,[316]
+145,Mysuru,Assault,Road rage,2022-07-05,2022,3,Under Investigation,FIR/2022/010/0145,"[83, 189, 379]"
+146,Bengaluru Rural,Fraud,Insurance fraud,2022-05-02,2022,4,Under Investigation,FIR/2022/009/0146,"[238, 187, 173]"
+147,Udupi,Robbery,Mugging,2024-07-30,2024,4,Under Investigation,FIR/2024/040/0147,[232]
+148,Dharwad,Theft,Chain snatching,2020-04-07,2020,3,Closed - Acquitted,FIR/2020/028/0148,"[289, 394]"
+149,Ballari,Robbery,Dacoity,2025-12-13,2025,5,Pending Trial,FIR/2025/032/0149,[5]
+150,Kalaburagi,Cybercrime,Phishing,2025-01-03,2025,4,Under Investigation,FIR/2025/024/0150,[78]
+151,Dakshina Kannada,Cybercrime,Identity theft,2021-04-09,2021,3,Cold Case,FIR/2021/018/0151,"[243, 195]"
+152,Ballari,Kidnapping,Human trafficking,2023-11-09,2023,5,Under Investigation,FIR/2023/032/0152,[202]
+153,Ballari,Theft,Chain snatching,2021-11-23,2021,3,Under Investigation,FIR/2021/032/0153,"[13, 251, 164]"
+154,Ballari,Cybercrime,Phishing,2020-05-08,2020,4,Open,FIR/2020/030/0154,[195]
+155,Dharwad,Robbery,Mugging,2021-06-26,2021,5,Closed - Acquitted,FIR/2021/028/0155,[231]
+156,Mysuru,Assault,Domestic violence,2020-12-23,2020,3,Closed - Convicted,FIR/2020/010/0156,"[37, 80, 299]"
+157,Mysuru,Sexual Assault,Molestation,2022-01-30,2022,5,Under Investigation,FIR/2022/013/0157,[26]
+158,Mysuru,Assault,Brawl,2024-12-17,2024,3,Closed - Convicted,FIR/2024/012/0158,[278]
+159,Mysuru,Robbery,Dacoity,2023-04-30,2023,4,Open,FIR/2023/011/0159,"[377, 124]"
+160,Bengaluru Urban,Cybercrime,Investment scam,2020-02-19,2020,3,Closed - Convicted,FIR/2020/006/0160,[349]
+161,Kalaburagi,Assault,Gang fight,2023-07-07,2023,4,Under Investigation,FIR/2023/024/0161,[239]
+162,Belagavi,Robbery,Dacoity,2021-09-03,2021,5,Open,FIR/2021/021/0162,[304]
+163,Shivamogga,Theft,Vehicle theft,2025-06-15,2025,3,Under Investigation,FIR/2025/036/0163,[341]
+164,Tumakuru,Robbery,Armed robbery,2023-06-15,2023,5,Closed - Convicted,FIR/2023/014/0164,"[307, 67]"
+165,Bengaluru Urban,Assault,Gang fight,2022-10-05,2022,3,Open,FIR/2022/002/0165,"[244, 144]"
+166,Tumakuru,Drug Offence,Distribution,2022-08-28,2022,5,Under Investigation,FIR/2022/015/0166,"[197, 385]"
+167,Dakshina Kannada,Drug Offence,Trafficking,2020-08-29,2020,4,Closed - Convicted,FIR/2020/018/0167,"[288, 75]"
+168,Udupi,Cybercrime,Phishing,2020-09-05,2020,3,Open,FIR/2020/039/0168,"[217, 359]"
+169,Bengaluru Urban,Robbery,Armed robbery,2025-01-03,2025,4,Under Investigation,FIR/2025/006/0169,[141]
+170,Belagavi,Assault,Road rage,2021-08-03,2021,4,Under Investigation,FIR/2021/021/0170,"[203, 92]"
+171,Bengaluru Rural,Assault,Brawl,2021-07-27,2021,4,Under Investigation,FIR/2021/009/0171,"[183, 174]"
+172,Mysuru,Assault,Brawl,2022-04-28,2022,3,Closed - Acquitted,FIR/2022/010/0172,[331]
+173,Mysuru,Kidnapping,Ransom,2025-08-12,2025,5,Open,FIR/2025/010/0173,[149]
+174,Bengaluru Urban,Robbery,Armed robbery,2024-02-16,2024,4,Under Investigation,FIR/2024/001/0174,[322]
+175,Belagavi,Sexual Assault,Rape,2021-05-03,2021,5,Closed - Acquitted,FIR/2021/021/0175,"[395, 208]"
+176,Belagavi,Fraud,Land grab,2023-05-27,2023,4,Open,FIR/2023/020/0176,"[130, 112]"
+177,Belagavi,Assault,Gang fight,2021-11-07,2021,4,Open,FIR/2021/021/0177,"[128, 40]"
+178,Shivamogga,Vandalism,Property destruction,2020-08-07,2020,3,Closed - Convicted,FIR/2020/037/0178,[144]
+179,Bengaluru Rural,Sexual Assault,Eve-teasing,2020-05-04,2020,5,Closed - Convicted,FIR/2020/008/0179,"[297, 356]"
+180,Bengaluru Urban,Theft,Chain snatching,2025-03-22,2025,2,Under Investigation,FIR/2025/002/0180,[395]
+181,Dharwad,Fraud,Cheque fraud,2024-11-18,2024,4,Open,FIR/2024/029/0181,[187]
+182,Belagavi,Drug Offence,Trafficking,2024-07-25,2024,5,Under Investigation,FIR/2024/021/0182,[345]
+183,Belagavi,Sexual Assault,Eve-teasing,2025-03-26,2025,5,Closed - Acquitted,FIR/2025/022/0183,[321]
+184,Tumakuru,Fraud,Impersonation,2020-11-30,2020,4,Under Investigation,FIR/2020/014/0184,[3]
+185,Shivamogga,Kidnapping,Human trafficking,2024-05-27,2024,5,Closed - Convicted,FIR/2024/036/0185,[328]
+186,Bengaluru Urban,Cybercrime,Phishing,2022-09-17,2022,3,Closed - Acquitted,FIR/2022/005/0186,"[13, 9]"
+187,Bengaluru Rural,Assault,Road rage,2024-07-08,2024,4,Closed - Convicted,FIR/2024/008/0187,[318]
+188,Belagavi,Theft,Chain snatching,2024-04-20,2024,3,Pending Trial,FIR/2024/023/0188,[351]
+189,Bengaluru Urban,Theft,Pickpocket,2025-02-05,2025,2,Under Investigation,FIR/2025/006/0189,[283]
+190,Bengaluru Urban,Kidnapping,Child abduction,2020-10-10,2020,5,Under Investigation,FIR/2020/002/0190,"[335, 371, 25]"
+191,Udupi,Robbery,Armed robbery,2021-09-26,2021,4,Under Investigation,FIR/2021/039/0191,"[335, 91]"
+192,Bengaluru Rural,Theft,Vehicle theft,2021-06-24,2021,3,Open,FIR/2021/008/0192,"[11, 363]"
+193,Dharwad,Theft,Pickpocket,2022-12-12,2022,3,Open,FIR/2022/028/0193,"[71, 62, 13]"
+194,Mysuru,Assault,Brawl,2020-06-11,2020,3,Closed - Convicted,FIR/2020/012/0194,[31]
+195,Bengaluru Rural,Robbery,Armed robbery,2025-05-21,2025,5,Open,FIR/2025/009/0195,[284]
+196,Bengaluru Urban,Assault,Domestic violence,2024-08-20,2024,3,Closed - Convicted,FIR/2024/005/0196,"[22, 165]"
+197,Tumakuru,Drug Offence,Possession,2025-05-17,2025,5,Closed - Convicted,FIR/2025/015/0197,"[124, 307]"
+198,Mysuru,Drug Offence,Possession,2024-02-22,2024,4,Under Investigation,FIR/2024/010/0198,[275]
+199,Udupi,Assault,Domestic violence,2025-04-06,2025,3,Under Investigation,FIR/2025/039/0199,"[33, 129]"
+200,Belagavi,Vandalism,Property destruction,2023-10-04,2023,3,Closed - Convicted,FIR/2023/023/0200,"[394, 314]"
+201,Shivamogga,Assault,Brawl,2023-04-08,2023,4,Closed - Convicted,FIR/2023/038/0201,[332]
+202,Bengaluru Urban,Theft,Chain snatching,2024-05-29,2024,2,Under Investigation,FIR/2024/005/0202,[282]
+203,Ballari,Assault,Gang fight,2024-11-25,2024,4,Under Investigation,FIR/2024/032/0203,"[28, 22]"
+204,Tumakuru,Theft,Pickpocket,2020-02-10,2020,3,Closed - Convicted,FIR/2020/014/0204,[113]
+205,Belagavi,Drug Offence,Possession,2024-04-18,2024,5,Under Investigation,FIR/2024/021/0205,"[139, 249]"
+206,Dakshina Kannada,Theft,Vehicle theft,2023-06-17,2023,2,Closed - Convicted,FIR/2023/018/0206,[42]
+207,Tumakuru,Murder,Hired killing,2024-11-23,2024,5,Closed - Convicted,FIR/2024/014/0207,"[311, 106]"
+208,Dakshina Kannada,Theft,House break-in,2022-08-03,2022,2,Open,FIR/2022/018/0208,[331]
+209,Dharwad,Sexual Assault,Molestation,2024-11-26,2024,5,Closed - Convicted,FIR/2024/029/0209,[87]
+210,Kalaburagi,Theft,Vehicle theft,2021-01-03,2021,3,Closed - Acquitted,FIR/2021/024/0210,[269]
+211,Bengaluru Urban,Theft,Pickpocket,2020-08-01,2020,2,Open,FIR/2020/005/0211,"[148, 281]"
+212,Dakshina Kannada,Fraud,Land grab,2025-12-27,2025,3,Under Investigation,FIR/2025/018/0212,[96]
+213,Kalaburagi,Theft,Pickpocket,2025-04-05,2025,3,Open,FIR/2025/026/0213,[143]
+214,Bengaluru Urban,Vandalism,Property destruction,2020-01-03,2020,2,Pending Trial,FIR/2020/005/0214,[372]
+215,Kalaburagi,Drug Offence,Distribution,2024-07-27,2024,5,Under Investigation,FIR/2024/026/0215,[189]
+216,Tumakuru,Assault,Domestic violence,2025-01-16,2025,4,Under Investigation,FIR/2025/014/0216,[73]
+217,Dharwad,Kidnapping,Ransom,2021-08-19,2021,5,Under Investigation,FIR/2021/027/0217,"[335, 222, 40]"
+218,Hassan,Theft,Pickpocket,2021-08-20,2021,3,Under Investigation,FIR/2021/033/0218,"[191, 13]"
+219,Shivamogga,Theft,Chain snatching,2025-06-19,2025,3,Closed - Convicted,FIR/2025/038/0219,"[260, 35]"
+220,Bengaluru Urban,Cybercrime,Phishing,2024-06-03,2024,3,Closed - Convicted,FIR/2024/006/0220,[100]
+221,Dakshina Kannada,Drug Offence,Possession,2022-06-16,2022,4,Closed - Convicted,FIR/2022/017/0221,[236]
+222,Shivamogga,Assault,Road rage,2022-10-01,2022,4,Closed - Acquitted,FIR/2022/038/0222,[256]
+223,Tumakuru,Murder,Domestic dispute,2025-03-16,2025,5,Closed - Convicted,FIR/2025/015/0223,"[215, 291]"
+224,Bengaluru Urban,Assault,Gang fight,2021-09-22,2021,3,Under Investigation,FIR/2021/004/0224,[250]
+225,Mysuru,Robbery,Dacoity,2023-09-01,2023,4,Cold Case,FIR/2023/011/0225,"[77, 277]"
+226,Belagavi,Cybercrime,Online fraud,2020-06-14,2020,4,Closed - Acquitted,FIR/2020/023/0226,[21]
+227,Bengaluru Urban,Fraud,Insurance fraud,2021-07-21,2021,3,Under Investigation,FIR/2021/005/0227,"[50, 255]"
+228,Belagavi,Theft,Chain snatching,2024-09-08,2024,3,Closed - Convicted,FIR/2024/020/0228,[77]
+229,Bengaluru Urban,Theft,House break-in,2023-08-03,2023,2,Pending Trial,FIR/2023/005/0229,"[344, 283]"
+230,Bengaluru Urban,Theft,House break-in,2024-05-14,2024,2,Under Investigation,FIR/2024/005/0230,"[166, 231]"
+231,Dakshina Kannada,Robbery,Mugging,2023-10-02,2023,4,Under Investigation,FIR/2023/017/0231,"[104, 370, 93]"
+232,Mysuru,Theft,House break-in,2025-08-30,2025,2,Under Investigation,FIR/2025/013/0232,"[101, 223, 395]"
+233,Shivamogga,Cybercrime,Online fraud,2025-04-27,2025,4,Pending Trial,FIR/2025/038/0233,"[303, 115, 231]"
+234,Bengaluru Urban,Theft,Chain snatching,2022-09-05,2022,2,Closed - Convicted,FIR/2022/003/0234,[280]
+235,Ballari,Vandalism,Property destruction,2025-12-27,2025,3,Closed - Convicted,FIR/2025/032/0235,"[288, 372, 169]"
+236,Bengaluru Urban,Theft,House break-in,2021-11-23,2021,2,Closed - Convicted,FIR/2021/002/0236,[84]
+237,Bengaluru Urban,Kidnapping,Ransom,2023-01-11,2023,5,Under Investigation,FIR/2023/001/0237,"[274, 239]"
+238,Mysuru,Assault,Road rage,2020-03-15,2020,3,Cold Case,FIR/2020/013/0238,[176]
+239,Dharwad,Theft,Chain snatching,2022-05-19,2022,3,Under Investigation,FIR/2022/028/0239,"[382, 117]"
+240,Bengaluru Urban,Assault,Brawl,2024-03-05,2024,3,Open,FIR/2024/001/0240,"[44, 69]"
+241,Belagavi,Theft,Pickpocket,2023-07-22,2023,3,Closed - Acquitted,FIR/2023/022/0241,[154]
+242,Hassan,Robbery,Mugging,2023-06-17,2023,5,Pending Trial,FIR/2023/034/0242,[48]
+243,Tumakuru,Assault,Brawl,2022-08-06,2022,4,Under Investigation,FIR/2022/014/0243,"[41, 365, 282]"
+244,Bengaluru Urban,Cybercrime,Phishing,2020-08-01,2020,3,Open,FIR/2020/006/0244,"[22, 241]"
+245,Shivamogga,Drug Offence,Possession,2020-03-09,2020,5,Under Investigation,FIR/2020/037/0245,"[350, 261]"
+246,Mysuru,Assault,Domestic violence,2020-08-31,2020,3,Under Investigation,FIR/2020/013/0246,[70]
+247,Ballari,Theft,Pickpocket,2024-07-19,2024,3,Under Investigation,FIR/2024/032/0247,"[298, 62]"
+248,Bengaluru Rural,Vandalism,Graffiti,2021-04-06,2021,3,Open,FIR/2021/009/0248,[55]
+249,Kalaburagi,Cybercrime,Phishing,2024-12-21,2024,4,Under Investigation,FIR/2024/025/0249,[341]
+250,Ballari,Assault,Domestic violence,2024-08-20,2024,4,Closed - Convicted,FIR/2024/030/0250,"[243, 391]"
+251,Kalaburagi,Theft,Chain snatching,2022-06-22,2022,3,Closed - Convicted,FIR/2022/025/0251,[283]
+252,Hassan,Fraud,Impersonation,2020-03-24,2020,4,Pending Trial,FIR/2020/034/0252,[126]
+253,Mysuru,Kidnapping,Child abduction,2024-09-15,2024,5,Closed - Convicted,FIR/2024/010/0253,[392]
+254,Ballari,Cybercrime,Identity theft,2023-08-23,2023,4,Open,FIR/2023/031/0254,[117]
+255,Tumakuru,Assault,Brawl,2021-02-24,2021,4,Open,FIR/2021/014/0255,[50]
+256,Bengaluru Urban,Robbery,Armed robbery,2021-05-01,2021,4,Closed - Convicted,FIR/2021/006/0256,"[124, 23, 244]"
+257,Belagavi,Theft,Vehicle theft,2023-02-11,2023,3,Open,FIR/2023/022/0257,[85]
+258,Mysuru,Theft,Vehicle theft,2022-03-20,2022,2,Closed - Convicted,FIR/2022/012/0258,[61]
+259,Bengaluru Urban,Fraud,Land grab,2025-04-24,2025,3,Under Investigation,FIR/2025/005/0259,"[216, 56]"
+260,Shivamogga,Murder,Property dispute,2025-01-29,2025,5,Closed - Convicted,FIR/2025/036/0260,"[218, 89, 313]"
+261,Ballari,Sexual Assault,Eve-teasing,2021-04-17,2021,5,Closed - Acquitted,FIR/2021/030/0261,"[58, 287, 246]"
+262,Bengaluru Rural,Theft,Pickpocket,2025-09-13,2025,3,Open,FIR/2025/009/0262,[276]
+263,Tumakuru,Theft,Vehicle theft,2021-01-01,2021,3,Under Investigation,FIR/2021/014/0263,[378]
+264,Bengaluru Urban,Drug Offence,Distribution,2020-04-09,2020,4,Closed - Convicted,FIR/2020/002/0264,"[42, 43]"
+265,Udupi,Theft,Vehicle theft,2023-12-18,2023,2,Open,FIR/2023/039/0265,[150]
+266,Bengaluru Urban,Theft,House break-in,2025-08-15,2025,2,Under Investigation,FIR/2025/005/0266,[14]
+267,Hassan,Theft,Vehicle theft,2024-07-17,2024,3,Closed - Acquitted,FIR/2024/034/0267,[165]
+268,Udupi,Assault,Gang fight,2022-05-01,2022,3,Open,FIR/2022/041/0268,[9]
+269,Dakshina Kannada,Fraud,Cheque fraud,2025-12-07,2025,3,Closed - Convicted,FIR/2025/017/0269,"[281, 243]"
+270,Mysuru,Cybercrime,Identity theft,2024-06-26,2024,3,Closed - Acquitted,FIR/2024/010/0270,"[375, 158]"
+271,Hassan,Assault,Brawl,2023-06-22,2023,4,Open,FIR/2023/034/0271,"[324, 200, 81]"
+272,Mysuru,Theft,Pickpocket,2020-12-12,2020,2,Open,FIR/2020/012/0272,[272]
+273,Dakshina Kannada,Robbery,Armed robbery,2025-03-22,2025,4,Under Investigation,FIR/2025/018/0273,[328]
+274,Shivamogga,Robbery,Dacoity,2021-05-15,2021,5,Open,FIR/2021/038/0274,[308]
+275,Mysuru,Assault,Domestic violence,2024-07-16,2024,3,Open,FIR/2024/013/0275,[40]
+276,Hassan,Sexual Assault,Molestation,2022-01-27,2022,5,Pending Trial,FIR/2022/034/0276,[213]
+277,Ballari,Theft,House break-in,2021-05-05,2021,3,Open,FIR/2021/032/0277,[189]
+278,Udupi,Drug Offence,Trafficking,2021-03-21,2021,4,Closed - Acquitted,FIR/2021/041/0278,"[301, 72]"
+279,Bengaluru Urban,Theft,House break-in,2023-10-04,2023,2,Closed - Convicted,FIR/2023/005/0279,"[375, 151]"
+280,Belagavi,Theft,Chain snatching,2024-10-21,2024,3,Pending Trial,FIR/2024/022/0280,"[219, 400]"
+281,Bengaluru Urban,Robbery,Dacoity,2025-02-09,2025,4,Under Investigation,FIR/2025/002/0281,"[131, 175]"
+282,Shivamogga,Cybercrime,Identity theft,2022-05-13,2022,4,Under Investigation,FIR/2022/036/0282,[284]
+283,Hassan,Theft,Pickpocket,2022-05-18,2022,3,Cold Case,FIR/2022/034/0283,"[232, 354]"
+284,Bengaluru Urban,Drug Offence,Trafficking,2022-11-11,2022,4,Under Investigation,FIR/2022/002/0284,"[321, 216]"
+285,Ballari,Theft,House break-in,2021-08-17,2021,3,Under Investigation,FIR/2021/030/0285,[170]
+286,Mysuru,Kidnapping,Ransom,2021-03-19,2021,5,Closed - Convicted,FIR/2021/013/0286,[221]
+287,Ballari,Drug Offence,Possession,2024-12-15,2024,5,Pending Trial,FIR/2024/030/0287,[311]
+288,Bengaluru Urban,Fraud,Insurance fraud,2020-01-13,2020,3,Closed - Convicted,FIR/2020/002/0288,"[313, 223]"
+289,Bengaluru Urban,Fraud,Impersonation,2024-03-29,2024,3,Closed - Convicted,FIR/2024/006/0289,[219]
+290,Kalaburagi,Assault,Domestic violence,2023-06-26,2023,4,Under Investigation,FIR/2023/026/0290,"[245, 386, 115]"
+291,Hassan,Theft,Pickpocket,2022-03-02,2022,3,Closed - Convicted,FIR/2022/033/0291,"[193, 271, 29]"
+292,Udupi,Assault,Gang fight,2024-08-11,2024,3,Open,FIR/2024/041/0292,[254]
+293,Dharwad,Cybercrime,Identity theft,2023-11-12,2023,4,Open,FIR/2023/027/0293,"[243, 197]"
+294,Hassan,Theft,Vehicle theft,2022-03-23,2022,3,Under Investigation,FIR/2022/035/0294,[367]
+295,Mysuru,Cybercrime,Online fraud,2021-10-31,2021,3,Closed - Convicted,FIR/2021/011/0295,[343]
+296,Hassan,Theft,House break-in,2020-07-20,2020,3,Under Investigation,FIR/2020/035/0296,[262]
+297,Bengaluru Rural,Robbery,Dacoity,2021-03-19,2021,5,Under Investigation,FIR/2021/007/0297,[96]
+298,Mysuru,Theft,Chain snatching,2021-12-03,2021,2,Closed - Acquitted,FIR/2021/013/0298,"[225, 120]"
+299,Belagavi,Robbery,Mugging,2022-07-26,2022,5,Under Investigation,FIR/2022/021/0299,"[279, 369]"
+300,Kalaburagi,Assault,Domestic violence,2020-03-04,2020,4,Open,FIR/2020/026/0300,"[93, 115]"
+301,Hassan,Vandalism,Property destruction,2022-12-21,2022,3,Closed - Convicted,FIR/2022/035/0301,"[38, 293, 72]"
+302,Dakshina Kannada,Theft,House break-in,2020-03-07,2020,2,Under Investigation,FIR/2020/018/0302,[310]
+303,Bengaluru Rural,Theft,House break-in,2025-09-28,2025,3,Pending Trial,FIR/2025/009/0303,"[260, 235]"
+304,Hassan,Drug Offence,Distribution,2022-02-03,2022,5,Under Investigation,FIR/2022/035/0304,"[33, 369, 322]"
+305,Dharwad,Assault,Domestic violence,2021-06-14,2021,4,Open,FIR/2021/028/0305,"[273, 163]"
+306,Bengaluru Urban,Cybercrime,Phishing,2024-05-17,2024,3,Under Investigation,FIR/2024/002/0306,[64]
+307,Kalaburagi,Assault,Gang fight,2022-03-14,2022,4,Closed - Acquitted,FIR/2022/026/0307,[69]
+308,Shivamogga,Kidnapping,Child abduction,2024-07-16,2024,5,Under Investigation,FIR/2024/037/0308,[173]
+309,Tumakuru,Robbery,Dacoity,2024-02-24,2024,5,Pending Trial,FIR/2024/015/0309,"[190, 188]"
+310,Dakshina Kannada,Fraud,Land grab,2020-02-01,2020,3,Open,FIR/2020/019/0310,[296]
+311,Dakshina Kannada,Fraud,Cheque fraud,2024-01-31,2024,3,Closed - Convicted,FIR/2024/018/0311,[168]
+312,Hassan,Theft,Chain snatching,2025-01-06,2025,3,Under Investigation,FIR/2025/034/0312,[330]
+313,Bengaluru Rural,Cybercrime,Investment scam,2020-09-03,2020,4,Open,FIR/2020/008/0313,[121]
+314,Dharwad,Robbery,Mugging,2025-09-05,2025,5,Closed - Convicted,FIR/2025/028/0314,"[71, 253]"
+315,Kalaburagi,Fraud,Insurance fraud,2023-03-25,2023,4,Closed - Acquitted,FIR/2023/024/0315,"[355, 220, 171]"
+316,Tumakuru,Theft,Vehicle theft,2021-06-21,2021,3,Under Investigation,FIR/2021/015/0316,[163]
+317,Bengaluru Rural,Theft,House break-in,2025-10-30,2025,3,Closed - Convicted,FIR/2025/007/0317,[256]
+318,Bengaluru Rural,Robbery,Dacoity,2021-11-17,2021,5,Closed - Acquitted,FIR/2021/009/0318,"[89, 363]"
+319,Bengaluru Urban,Cybercrime,Online fraud,2020-08-29,2020,3,Open,FIR/2020/001/0319,[82]
+320,Ballari,Theft,Vehicle theft,2023-12-04,2023,3,Open,FIR/2023/030/0320,"[248, 70]"
+321,Ballari,Robbery,Dacoity,2022-09-14,2022,5,Under Investigation,FIR/2022/030/0321,[62]
+322,Mysuru,Kidnapping,Ransom,2023-08-27,2023,5,Closed - Acquitted,FIR/2023/012/0322,[211]
+323,Mysuru,Theft,Vehicle theft,2023-08-24,2023,2,Open,FIR/2023/010/0323,"[105, 164]"
+324,Ballari,Theft,Chain snatching,2023-04-02,2023,3,Under Investigation,FIR/2023/032/0324,"[397, 256]"
+325,Dharwad,Theft,Pickpocket,2023-09-18,2023,3,Pending Trial,FIR/2023/029/0325,[58]
+326,Bengaluru Rural,Theft,House break-in,2024-06-14,2024,3,Closed - Acquitted,FIR/2024/007/0326,[23]
+327,Shivamogga,Assault,Domestic violence,2024-03-04,2024,4,Pending Trial,FIR/2024/037/0327,"[385, 394, 21]"
+328,Shivamogga,Robbery,Mugging,2020-09-29,2020,5,Closed - Convicted,FIR/2020/037/0328,[48]
+329,Bengaluru Urban,Robbery,Mugging,2023-02-09,2023,4,Closed - Convicted,FIR/2023/006/0329,[3]
+330,Udupi,Theft,Vehicle theft,2021-04-18,2021,2,Closed - Convicted,FIR/2021/041/0330,[239]
+331,Bengaluru Rural,Theft,Vehicle theft,2020-06-20,2020,3,Closed - Convicted,FIR/2020/007/0331,"[271, 390]"
+332,Dharwad,Robbery,Armed robbery,2020-02-24,2020,5,Under Investigation,FIR/2020/028/0332,"[54, 77]"
+333,Bengaluru Rural,Sexual Assault,Molestation,2023-08-30,2023,5,Closed - Convicted,FIR/2023/009/0333,"[100, 359]"
+334,Belagavi,Theft,Chain snatching,2020-03-10,2020,3,Under Investigation,FIR/2020/023/0334,[184]
+335,Mysuru,Theft,Chain snatching,2020-08-08,2020,2,Closed - Convicted,FIR/2020/010/0335,[31]
+336,Dharwad,Theft,Vehicle theft,2023-02-26,2023,3,Closed - Acquitted,FIR/2023/027/0336,"[82, 351, 324]"
+337,Kalaburagi,Kidnapping,Human trafficking,2025-01-23,2025,5,Under Investigation,FIR/2025/026/0337,[347]
+338,Bengaluru Rural,Fraud,Insurance fraud,2025-03-06,2025,4,Under Investigation,FIR/2025/009/0338,"[264, 63]"
+339,Ballari,Theft,Pickpocket,2020-02-23,2020,3,Under Investigation,FIR/2020/032/0339,[16]
+340,Tumakuru,Theft,Vehicle theft,2023-09-22,2023,3,Open,FIR/2023/016/0340,"[252, 154, 103]"
+341,Hassan,Cybercrime,Investment scam,2024-10-10,2024,4,Open,FIR/2024/034/0341,[171]
+342,Kalaburagi,Assault,Domestic violence,2020-11-19,2020,4,Under Investigation,FIR/2020/026/0342,"[10, 17]"
+343,Bengaluru Rural,Theft,Chain snatching,2025-03-29,2025,3,Closed - Convicted,FIR/2025/008/0343,[279]
+344,Belagavi,Theft,Pickpocket,2023-07-21,2023,3,Cold Case,FIR/2023/021/0344,[332]
+345,Dharwad,Cybercrime,Investment scam,2024-04-14,2024,4,Closed - Convicted,FIR/2024/029/0345,"[77, 111, 249]"
+346,Dharwad,Theft,House break-in,2021-04-11,2021,3,Open,FIR/2021/028/0346,[221]
+347,Bengaluru Urban,Fraud,Cheque fraud,2022-11-28,2022,3,Pending Trial,FIR/2022/004/0347,"[121, 190]"
+348,Bengaluru Urban,Vandalism,Property destruction,2025-08-24,2025,2,Open,FIR/2025/006/0348,"[37, 280]"
+349,Belagavi,Assault,Domestic violence,2024-12-08,2024,4,Closed - Convicted,FIR/2024/023/0349,"[133, 277]"
+350,Belagavi,Assault,Brawl,2020-12-10,2020,4,Closed - Convicted,FIR/2020/020/0350,"[308, 344]"
+351,Ballari,Cybercrime,Online fraud,2022-12-30,2022,4,Pending Trial,FIR/2022/031/0351,"[298, 217]"
+352,Shivamogga,Assault,Road rage,2024-03-25,2024,4,Pending Trial,FIR/2024/036/0352,"[344, 329]"
+353,Kalaburagi,Assault,Road rage,2024-10-24,2024,4,Cold Case,FIR/2024/025/0353,[288]
+354,Dharwad,Theft,Vehicle theft,2020-01-02,2020,3,Cold Case,FIR/2020/027/0354,[357]
+355,Hassan,Assault,Brawl,2024-10-06,2024,4,Closed - Convicted,FIR/2024/034/0355,"[58, 301, 388]"
+356,Ballari,Drug Offence,Possession,2023-10-31,2023,5,Pending Trial,FIR/2023/031/0356,[171]
+357,Bengaluru Rural,Assault,Brawl,2022-03-02,2022,4,Closed - Convicted,FIR/2022/007/0357,"[241, 387]"
+358,Bengaluru Urban,Assault,Brawl,2024-06-29,2024,3,Open,FIR/2024/003/0358,[265]
+359,Udupi,Cybercrime,Identity theft,2024-06-09,2024,3,Under Investigation,FIR/2024/040/0359,[353]
+360,Udupi,Cybercrime,Online fraud,2025-05-10,2025,3,Open,FIR/2025/039/0360,[37]
+361,Kalaburagi,Theft,House break-in,2022-10-15,2022,3,Open,FIR/2022/026/0361,[307]
+362,Belagavi,Assault,Road rage,2022-01-02,2022,4,Open,FIR/2022/020/0362,[380]
+363,Belagavi,Assault,Road rage,2025-06-30,2025,4,Under Investigation,FIR/2025/021/0363,"[394, 164, 114]"
+364,Bengaluru Rural,Fraud,Land grab,2024-09-11,2024,4,Open,FIR/2024/009/0364,"[178, 118]"
+365,Dharwad,Vandalism,Graffiti,2025-04-25,2025,3,Under Investigation,FIR/2025/028/0365,[41]
+366,Udupi,Robbery,Armed robbery,2020-01-26,2020,4,Closed - Convicted,FIR/2020/041/0366,[254]
+367,Dakshina Kannada,Assault,Gang fight,2022-12-13,2022,3,Under Investigation,FIR/2022/018/0367,"[28, 105, 271]"
+368,Hassan,Theft,House break-in,2021-11-22,2021,3,Closed - Convicted,FIR/2021/035/0368,"[356, 385]"
+369,Dakshina Kannada,Robbery,Mugging,2023-03-14,2023,4,Closed - Convicted,FIR/2023/017/0369,"[58, 72]"
+370,Bengaluru Urban,Assault,Gang fight,2022-04-24,2022,3,Closed - Convicted,FIR/2022/006/0370,[16]
+371,Hassan,Theft,Pickpocket,2024-05-04,2024,3,Under Investigation,FIR/2024/035/0371,[312]
+372,Belagavi,Theft,Pickpocket,2025-10-09,2025,3,Under Investigation,FIR/2025/020/0372,[35]
+373,Tumakuru,Fraud,Insurance fraud,2020-09-27,2020,4,Open,FIR/2020/014/0373,[329]
+374,Dakshina Kannada,Murder,Hired killing,2024-10-09,2024,5,Open,FIR/2024/017/0374,"[32, 157]"
+375,Dakshina Kannada,Robbery,Armed robbery,2021-01-01,2021,4,Under Investigation,FIR/2021/017/0375,[68]
+376,Shivamogga,Assault,Gang fight,2021-10-05,2021,4,Open,FIR/2021/036/0376,[296]
+377,Bengaluru Urban,Theft,Chain snatching,2025-03-04,2025,2,Under Investigation,FIR/2025/002/0377,"[344, 286]"
+378,Dakshina Kannada,Theft,Vehicle theft,2023-03-31,2023,2,Open,FIR/2023/019/0378,"[248, 142]"
+379,Bengaluru Rural,Theft,Vehicle theft,2020-03-10,2020,3,Open,FIR/2020/007/0379,"[143, 169]"
+380,Kalaburagi,Assault,Brawl,2020-10-29,2020,4,Closed - Acquitted,FIR/2020/025/0380,[47]
+381,Shivamogga,Theft,Chain snatching,2020-06-20,2020,3,Under Investigation,FIR/2020/038/0381,[281]
+382,Ballari,Fraud,Land grab,2024-11-10,2024,4,Open,FIR/2024/030/0382,[350]
+383,Shivamogga,Assault,Gang fight,2020-04-05,2020,4,Under Investigation,FIR/2020/037/0383,[360]
+384,Shivamogga,Fraud,Insurance fraud,2021-07-24,2021,4,Under Investigation,FIR/2021/036/0384,"[236, 250, 234]"
+385,Shivamogga,Theft,Pickpocket,2024-07-07,2024,3,Closed - Convicted,FIR/2024/036/0385,[263]
+386,Bengaluru Rural,Fraud,Insurance fraud,2023-04-17,2023,4,Open,FIR/2023/007/0386,[2]
+387,Kalaburagi,Theft,House break-in,2024-08-06,2024,3,Pending Trial,FIR/2024/026/0387,"[241, 91]"
+388,Hassan,Theft,House break-in,2025-01-27,2025,3,Closed - Convicted,FIR/2025/034/0388,"[396, 192, 4]"
+389,Bengaluru Urban,Cybercrime,Investment scam,2021-03-23,2021,3,Open,FIR/2021/001/0389,[186]
+390,Shivamogga,Robbery,Armed robbery,2020-01-19,2020,5,Closed - Acquitted,FIR/2020/038/0390,"[294, 160]"
+391,Shivamogga,Theft,Chain snatching,2023-11-12,2023,3,Under Investigation,FIR/2023/037/0391,[376]
+392,Bengaluru Urban,Theft,House break-in,2020-07-04,2020,2,Under Investigation,FIR/2020/005/0392,"[36, 240]"
+393,Dharwad,Assault,Gang fight,2023-01-23,2023,4,Under Investigation,FIR/2023/027/0393,[368]
+394,Belagavi,Robbery,Armed robbery,2020-07-13,2020,5,Pending Trial,FIR/2020/020/0394,"[202, 185]"
+395,Bengaluru Urban,Assault,Road rage,2023-08-22,2023,3,Closed - Convicted,FIR/2023/001/0395,"[308, 53]"
+396,Mysuru,Robbery,Mugging,2024-12-28,2024,4,Pending Trial,FIR/2024/010/0396,[368]
+397,Bengaluru Rural,Theft,House break-in,2024-01-03,2024,3,Closed - Convicted,FIR/2024/009/0397,"[41, 164, 57]"
+398,Udupi,Robbery,Mugging,2023-03-03,2023,4,Closed - Convicted,FIR/2023/040/0398,"[238, 305]"
+399,Bengaluru Urban,Theft,Chain snatching,2023-03-25,2023,2,Pending Trial,FIR/2023/005/0399,[297]
+400,Dakshina Kannada,Theft,House break-in,2021-01-19,2021,2,Under Investigation,FIR/2021/019/0400,"[184, 178, 390]"
+401,Ballari,Assault,Brawl,2020-03-19,2020,4,Open,FIR/2020/032/0401,[280]
+402,Bengaluru Rural,Drug Offence,Possession,2022-03-04,2022,5,Under Investigation,FIR/2022/009/0402,[116]
+403,Udupi,Robbery,Armed robbery,2020-10-25,2020,4,Open,FIR/2020/041/0403,[147]
+404,Mysuru,Theft,Vehicle theft,2023-06-14,2023,2,Open,FIR/2023/010/0404,[330]
+405,Tumakuru,Theft,Pickpocket,2020-12-28,2020,3,Closed - Acquitted,FIR/2020/016/0405,[348]
+406,Belagavi,Fraud,Land grab,2020-12-25,2020,4,Open,FIR/2020/021/0406,[119]
+407,Bengaluru Urban,Theft,Chain snatching,2020-04-11,2020,2,Open,FIR/2020/005/0407,"[83, 116]"
+408,Mysuru,Theft,Pickpocket,2025-11-09,2025,2,Under Investigation,FIR/2025/011/0408,[55]
+409,Belagavi,Assault,Gang fight,2025-04-10,2025,4,Closed - Convicted,FIR/2025/021/0409,"[385, 396]"
+410,Udupi,Kidnapping,Human trafficking,2025-05-18,2025,5,Open,FIR/2025/039/0410,"[337, 50]"
+411,Hassan,Theft,Vehicle theft,2021-07-08,2021,3,Open,FIR/2021/035/0411,"[336, 109, 375]"
+412,Bengaluru Rural,Drug Offence,Distribution,2020-02-23,2020,5,Closed - Acquitted,FIR/2020/009/0412,"[77, 113]"
+413,Bengaluru Urban,Sexual Assault,Molestation,2025-08-23,2025,5,Under Investigation,FIR/2025/003/0413,[350]
+414,Bengaluru Rural,Cybercrime,Identity theft,2021-06-24,2021,4,Closed - Acquitted,FIR/2021/007/0414,[352]
+415,Tumakuru,Theft,Pickpocket,2022-12-15,2022,3,Open,FIR/2022/014/0415,"[201, 84]"
+416,Kalaburagi,Vandalism,Graffiti,2024-05-29,2024,3,Under Investigation,FIR/2024/024/0416,[79]
+417,Dakshina Kannada,Robbery,Armed robbery,2024-12-11,2024,4,Closed - Convicted,FIR/2024/017/0417,[116]
+418,Kalaburagi,Theft,Pickpocket,2020-12-28,2020,3,Open,FIR/2020/025/0418,"[379, 176, 336]"
+419,Bengaluru Urban,Assault,Gang fight,2021-02-05,2021,3,Under Investigation,FIR/2021/003/0419,[365]
+420,Dakshina Kannada,Kidnapping,Ransom,2024-02-06,2024,5,Under Investigation,FIR/2024/019/0420,"[18, 354, 124]"
+421,Kalaburagi,Sexual Assault,Eve-teasing,2023-01-05,2023,5,Pending Trial,FIR/2023/025/0421,"[138, 370]"
+422,Dakshina Kannada,Robbery,Dacoity,2025-08-21,2025,4,Open,FIR/2025/018/0422,[176]
+423,Belagavi,Theft,Chain snatching,2021-08-07,2021,3,Cold Case,FIR/2021/022/0423,"[94, 58]"
+424,Bengaluru Rural,Theft,Chain snatching,2021-05-16,2021,3,Open,FIR/2021/008/0424,[127]
+425,Dharwad,Assault,Domestic violence,2025-02-18,2025,4,Pending Trial,FIR/2025/029/0425,[352]
+426,Dharwad,Theft,House break-in,2023-07-27,2023,3,Closed - Convicted,FIR/2023/029/0426,"[222, 259]"
+427,Mysuru,Fraud,Cheque fraud,2025-12-06,2025,3,Open,FIR/2025/011/0427,"[237, 232, 68]"
+428,Bengaluru Urban,Sexual Assault,Eve-teasing,2024-01-02,2024,5,Pending Trial,FIR/2024/003/0428,"[167, 333, 266]"
+429,Mysuru,Robbery,Dacoity,2022-03-09,2022,4,Under Investigation,FIR/2022/012/0429,"[64, 394]"
+430,Belagavi,Robbery,Armed robbery,2025-10-23,2025,5,Pending Trial,FIR/2025/023/0430,[324]
+431,Mysuru,Theft,Chain snatching,2022-07-18,2022,2,Under Investigation,FIR/2022/010/0431,[187]
+432,Ballari,Robbery,Armed robbery,2025-02-23,2025,5,Under Investigation,FIR/2025/031/0432,[259]
+433,Shivamogga,Theft,Vehicle theft,2021-01-02,2021,3,Under Investigation,FIR/2021/036/0433,"[274, 133]"
+434,Tumakuru,Vandalism,Property destruction,2021-08-03,2021,3,Closed - Convicted,FIR/2021/014/0434,"[130, 79]"
+435,Kalaburagi,Theft,Vehicle theft,2023-10-14,2023,3,Under Investigation,FIR/2023/026/0435,"[370, 246]"
+436,Bengaluru Rural,Fraud,Cheque fraud,2025-06-11,2025,4,Closed - Convicted,FIR/2025/007/0436,[288]
+437,Dakshina Kannada,Cybercrime,Identity theft,2025-04-23,2025,3,Pending Trial,FIR/2025/019/0437,[186]
+438,Bengaluru Urban,Theft,House break-in,2023-09-13,2023,2,Under Investigation,FIR/2023/005/0438,"[304, 109]"
+439,Bengaluru Urban,Theft,Chain snatching,2021-10-10,2021,2,Under Investigation,FIR/2021/002/0439,[339]
+440,Ballari,Assault,Gang fight,2024-07-20,2024,4,Closed - Convicted,FIR/2024/030/0440,[248]
+441,Hassan,Assault,Gang fight,2024-09-17,2024,4,Closed - Convicted,FIR/2024/034/0441,"[358, 355]"
+442,Shivamogga,Cybercrime,Identity theft,2022-08-13,2022,4,Closed - Convicted,FIR/2022/038/0442,"[397, 179]"
+443,Bengaluru Urban,Theft,Chain snatching,2024-06-08,2024,2,Closed - Acquitted,FIR/2024/001/0443,[230]
+444,Dakshina Kannada,Fraud,Cheque fraud,2020-04-04,2020,3,Open,FIR/2020/017/0444,[379]
+445,Shivamogga,Cybercrime,Identity theft,2024-04-06,2024,4,Under Investigation,FIR/2024/037/0445,"[92, 189]"
+446,Belagavi,Cybercrime,Phishing,2024-05-30,2024,4,Closed - Convicted,FIR/2024/021/0446,"[386, 135, 150]"
+447,Shivamogga,Theft,Vehicle theft,2022-11-24,2022,3,Under Investigation,FIR/2022/038/0447,"[136, 9]"
+448,Tumakuru,Vandalism,Arson,2025-12-23,2025,3,Under Investigation,FIR/2025/014/0448,[81]
+449,Bengaluru Urban,Assault,Road rage,2025-10-25,2025,3,Open,FIR/2025/003/0449,[300]
+450,Kalaburagi,Sexual Assault,Molestation,2022-07-04,2022,5,Under Investigation,FIR/2022/025/0450,[70]
+451,Mysuru,Robbery,Mugging,2025-04-14,2025,4,Under Investigation,FIR/2025/013/0451,[112]
+452,Hassan,Assault,Brawl,2022-04-18,2022,4,Open,FIR/2022/035/0452,"[70, 18]"
+453,Dharwad,Drug Offence,Trafficking,2025-08-28,2025,5,Pending Trial,FIR/2025/029/0453,[15]
+454,Bengaluru Urban,Theft,Pickpocket,2025-06-18,2025,2,Closed - Convicted,FIR/2025/004/0454,[107]
+455,Udupi,Kidnapping,Child abduction,2024-05-19,2024,5,Open,FIR/2024/040/0455,"[82, 102, 103]"
+456,Bengaluru Rural,Theft,Pickpocket,2022-07-29,2022,3,Closed - Acquitted,FIR/2022/007/0456,"[63, 344]"
+457,Tumakuru,Sexual Assault,Molestation,2021-12-11,2021,5,Open,FIR/2021/016/0457,[119]
+458,Bengaluru Rural,Theft,House break-in,2025-02-20,2025,3,Open,FIR/2025/009/0458,"[47, 233]"
+459,Dharwad,Sexual Assault,Rape,2025-03-09,2025,5,Pending Trial,FIR/2025/027/0459,"[254, 165]"
+460,Tumakuru,Assault,Gang fight,2021-09-23,2021,4,Under Investigation,FIR/2021/015/0460,[80]
+461,Mysuru,Kidnapping,Child abduction,2022-10-17,2022,5,Under Investigation,FIR/2022/010/0461,[67]
+462,Shivamogga,Robbery,Dacoity,2020-07-23,2020,5,Open,FIR/2020/036/0462,[249]
+463,Belagavi,Theft,House break-in,2021-03-24,2021,3,Open,FIR/2021/023/0463,[131]
+464,Kalaburagi,Cybercrime,Phishing,2024-04-15,2024,4,Under Investigation,FIR/2024/025/0464,"[104, 149]"
+465,Belagavi,Theft,Chain snatching,2020-03-26,2020,3,Closed - Convicted,FIR/2020/022/0465,[179]
+466,Kalaburagi,Assault,Domestic violence,2021-10-17,2021,4,Open,FIR/2021/026/0466,"[243, 164, 88]"
+467,Bengaluru Rural,Theft,House break-in,2021-10-07,2021,3,Closed - Convicted,FIR/2021/009/0467,"[394, 211, 112]"
+468,Mysuru,Cybercrime,Identity theft,2023-04-30,2023,3,Closed - Convicted,FIR/2023/010/0468,[133]
+469,Hassan,Drug Offence,Possession,2020-06-27,2020,5,Closed - Convicted,FIR/2020/035/0469,[329]
+470,Bengaluru Rural,Drug Offence,Distribution,2021-09-21,2021,5,Closed - Convicted,FIR/2021/008/0470,"[54, 391]"
+471,Bengaluru Urban,Theft,Chain snatching,2021-12-28,2021,2,Closed - Convicted,FIR/2021/001/0471,[126]
+472,Bengaluru Rural,Assault,Domestic violence,2022-06-10,2022,4,Under Investigation,FIR/2022/008/0472,[75]
+473,Hassan,Theft,Pickpocket,2023-02-26,2023,3,Closed - Convicted,FIR/2023/035/0473,"[58, 47]"
+474,Shivamogga,Cybercrime,Online fraud,2021-10-20,2021,4,Closed - Convicted,FIR/2021/037/0474,[222]
+475,Mysuru,Assault,Domestic violence,2024-06-10,2024,3,Pending Trial,FIR/2024/011/0475,"[139, 126]"
+476,Udupi,Theft,Pickpocket,2020-09-01,2020,2,Closed - Acquitted,FIR/2020/040/0476,"[125, 117]"
+477,Tumakuru,Theft,Chain snatching,2024-07-27,2024,3,Under Investigation,FIR/2024/014/0477,"[385, 394, 207]"
+478,Hassan,Fraud,Land grab,2022-07-13,2022,4,Closed - Convicted,FIR/2022/033/0478,"[115, 179]"
+479,Ballari,Robbery,Dacoity,2020-06-26,2020,5,Open,FIR/2020/032/0479,[276]
+480,Bengaluru Rural,Robbery,Dacoity,2024-09-12,2024,5,Closed - Convicted,FIR/2024/008/0480,[255]
+481,Hassan,Robbery,Armed robbery,2023-12-20,2023,5,Under Investigation,FIR/2023/035/0481,"[304, 290]"
+482,Belagavi,Murder,Gang rivalry,2024-12-27,2024,5,Under Investigation,FIR/2024/020/0482,[156]
+483,Ballari,Robbery,Dacoity,2025-08-01,2025,5,Under Investigation,FIR/2025/030/0483,[39]
+484,Tumakuru,Robbery,Dacoity,2025-12-24,2025,5,Closed - Acquitted,FIR/2025/014/0484,[6]
+485,Mysuru,Robbery,Mugging,2020-06-09,2020,4,Closed - Convicted,FIR/2020/011/0485,"[92, 139]"
+486,Mysuru,Murder,Gang rivalry,2023-09-13,2023,5,Under Investigation,FIR/2023/013/0486,[243]
+487,Dharwad,Fraud,Cheque fraud,2020-07-12,2020,4,Under Investigation,FIR/2020/029/0487,"[53, 304]"
+488,Hassan,Cybercrime,Phishing,2024-11-04,2024,4,Open,FIR/2024/035/0488,"[335, 61, 272]"
+489,Bengaluru Rural,Theft,House break-in,2023-04-25,2023,3,Pending Trial,FIR/2023/008/0489,[341]
+490,Kalaburagi,Theft,Vehicle theft,2021-04-23,2021,3,Closed - Convicted,FIR/2021/025/0490,[218]
+491,Dakshina Kannada,Assault,Brawl,2022-11-25,2022,3,Open,FIR/2022/019/0491,"[167, 191]"
+492,Bengaluru Urban,Vandalism,Graffiti,2023-09-26,2023,2,Closed - Convicted,FIR/2023/006/0492,"[29, 2]"
+493,Tumakuru,Sexual Assault,Eve-teasing,2021-08-09,2021,5,Closed - Convicted,FIR/2021/016/0493,"[375, 127]"
+494,Belagavi,Theft,House break-in,2021-07-27,2021,3,Under Investigation,FIR/2021/020/0494,[189]
+495,Udupi,Theft,Chain snatching,2025-02-03,2025,2,Closed - Acquitted,FIR/2025/039/0495,[73]
+496,Bengaluru Rural,Robbery,Mugging,2025-02-24,2025,5,Under Investigation,FIR/2025/008/0496,[251]
+497,Tumakuru,Fraud,Land grab,2024-10-15,2024,4,Closed - Acquitted,FIR/2024/016/0497,"[35, 181, 90]"
+498,Bengaluru Rural,Assault,Road rage,2024-07-31,2024,4,Under Investigation,FIR/2024/008/0498,[263]
+499,Ballari,Theft,Chain snatching,2024-12-18,2024,3,Under Investigation,FIR/2024/032/0499,"[159, 115, 108]"
+500,Bengaluru Urban,Cybercrime,Online fraud,2020-05-31,2020,3,Open,FIR/2020/004/0500,[273]
+501,Mysuru,Cybercrime,Investment scam,2023-02-08,2023,3,Closed - Convicted,FIR/2023/011/0501,"[344, 315, 371]"
+502,Belagavi,Cybercrime,Phishing,2025-10-30,2025,4,Closed - Convicted,FIR/2025/022/0502,[226]
+503,Bengaluru Rural,Theft,Vehicle theft,2025-01-24,2025,3,Under Investigation,FIR/2025/009/0503,[135]
+504,Bengaluru Rural,Theft,Vehicle theft,2020-05-01,2020,3,Under Investigation,FIR/2020/007/0504,[42]
+505,Udupi,Cybercrime,Identity theft,2021-03-07,2021,3,Closed - Acquitted,FIR/2021/040/0505,"[217, 300]"
+506,Bengaluru Urban,Drug Offence,Distribution,2023-07-28,2023,4,Pending Trial,FIR/2023/001/0506,[124]
+507,Belagavi,Theft,House break-in,2023-12-02,2023,3,Open,FIR/2023/020/0507,[274]
+508,Tumakuru,Robbery,Mugging,2025-12-14,2025,5,Under Investigation,FIR/2025/014/0508,[354]
+509,Hassan,Robbery,Mugging,2021-01-05,2021,5,Under Investigation,FIR/2021/035/0509,"[198, 193]"
+510,Udupi,Theft,Vehicle theft,2025-09-12,2025,2,Pending Trial,FIR/2025/040/0510,[216]
+511,Dakshina Kannada,Theft,Chain snatching,2020-11-09,2020,2,Under Investigation,FIR/2020/017/0511,"[325, 105, 172]"
+512,Hassan,Theft,Chain snatching,2022-05-26,2022,3,Under Investigation,FIR/2022/035/0512,"[261, 53, 135]"
+513,Bengaluru Urban,Assault,Brawl,2024-09-09,2024,3,Under Investigation,FIR/2024/002/0513,"[321, 355]"
+514,Dakshina Kannada,Murder,Property dispute,2021-04-03,2021,5,Closed - Convicted,FIR/2021/018/0514,"[70, 252]"
+515,Bengaluru Rural,Drug Offence,Trafficking,2020-05-23,2020,5,Under Investigation,FIR/2020/007/0515,"[260, 253, 106]"
+516,Ballari,Assault,Road rage,2021-01-21,2021,4,Open,FIR/2021/031/0516,"[179, 99, 263]"
+517,Dakshina Kannada,Theft,Vehicle theft,2022-08-10,2022,2,Closed - Convicted,FIR/2022/017/0517,[138]
+518,Tumakuru,Theft,House break-in,2022-09-10,2022,3,Under Investigation,FIR/2022/014/0518,[325]
+519,Dakshina Kannada,Fraud,Impersonation,2022-04-18,2022,3,Open,FIR/2022/017/0519,"[95, 149]"
+520,Hassan,Assault,Gang fight,2022-05-31,2022,4,Closed - Convicted,FIR/2022/034/0520,"[29, 78]"
+521,Bengaluru Urban,Assault,Domestic violence,2024-08-03,2024,3,Pending Trial,FIR/2024/005/0521,[31]
+522,Udupi,Assault,Domestic violence,2020-05-21,2020,3,Under Investigation,FIR/2020/040/0522,"[290, 22]"
+523,Dakshina Kannada,Robbery,Dacoity,2023-02-18,2023,4,Under Investigation,FIR/2023/017/0523,[36]
+524,Dakshina Kannada,Fraud,Land grab,2022-01-22,2022,3,Pending Trial,FIR/2022/019/0524,[301]
+525,Ballari,Murder,Hired killing,2020-04-02,2020,5,Closed - Convicted,FIR/2020/031/0525,[67]
+526,Bengaluru Rural,Theft,House break-in,2024-01-10,2024,3,Closed - Acquitted,FIR/2024/009/0526,[342]
+527,Dakshina Kannada,Drug Offence,Distribution,2024-08-21,2024,4,Pending Trial,FIR/2024/019/0527,[216]
+528,Bengaluru Urban,Assault,Domestic violence,2024-11-30,2024,3,Under Investigation,FIR/2024/002/0528,[150]
+529,Hassan,Kidnapping,Ransom,2024-05-28,2024,5,Under Investigation,FIR/2024/034/0529,"[143, 277, 138]"
+530,Belagavi,Theft,Vehicle theft,2021-08-29,2021,3,Under Investigation,FIR/2021/021/0530,"[252, 352]"
+531,Bengaluru Urban,Assault,Gang fight,2022-10-15,2022,3,Cold Case,FIR/2022/002/0531,[3]
+532,Bengaluru Urban,Assault,Brawl,2024-04-23,2024,3,Pending Trial,FIR/2024/002/0532,"[104, 234]"
+533,Kalaburagi,Theft,House break-in,2023-05-14,2023,3,Open,FIR/2023/025/0533,[246]
+534,Tumakuru,Assault,Brawl,2022-09-27,2022,4,Under Investigation,FIR/2022/016/0534,[310]
+535,Mysuru,Cybercrime,Online fraud,2020-10-07,2020,3,Under Investigation,FIR/2020/013/0535,[165]
+536,Bengaluru Urban,Theft,Vehicle theft,2022-12-29,2022,2,Pending Trial,FIR/2022/004/0536,"[353, 260, 78]"
+537,Mysuru,Theft,House break-in,2025-08-13,2025,2,Open,FIR/2025/010/0537,[184]
+538,Bengaluru Urban,Theft,Pickpocket,2021-07-25,2021,2,Closed - Convicted,FIR/2021/006/0538,"[322, 91, 324]"
+539,Udupi,Theft,Pickpocket,2022-12-19,2022,2,Closed - Convicted,FIR/2022/039/0539,[235]
+540,Dharwad,Theft,Pickpocket,2021-05-27,2021,3,Closed - Convicted,FIR/2021/028/0540,[377]
+541,Belagavi,Cybercrime,Identity theft,2024-12-06,2024,4,Under Investigation,FIR/2024/020/0541,[319]
+542,Belagavi,Assault,Domestic violence,2022-11-28,2022,4,Closed - Convicted,FIR/2022/020/0542,[87]
+543,Bengaluru Urban,Assault,Gang fight,2024-05-05,2024,3,Under Investigation,FIR/2024/001/0543,[40]
+544,Bengaluru Urban,Cybercrime,Online fraud,2022-04-30,2022,3,Under Investigation,FIR/2022/006/0544,[257]
+545,Dharwad,Murder,Hired killing,2021-09-16,2021,5,Closed - Convicted,FIR/2021/027/0545,[378]
+546,Dakshina Kannada,Fraud,Cheque fraud,2021-05-21,2021,3,Under Investigation,FIR/2021/018/0546,[272]
+547,Hassan,Murder,Domestic dispute,2020-09-22,2020,5,Open,FIR/2020/033/0547,"[208, 133, 397]"
+548,Dakshina Kannada,Theft,Vehicle theft,2022-10-09,2022,2,Closed - Convicted,FIR/2022/018/0548,"[218, 3, 123]"
+549,Bengaluru Urban,Vandalism,Property destruction,2021-03-06,2021,2,Under Investigation,FIR/2021/004/0549,"[42, 46, 142]"
+550,Ballari,Drug Offence,Distribution,2025-03-26,2025,5,Closed - Convicted,FIR/2025/032/0550,"[199, 80]"
+551,Dakshina Kannada,Fraud,Impersonation,2025-11-15,2025,3,Open,FIR/2025/019/0551,[225]
+552,Dharwad,Assault,Brawl,2025-04-15,2025,4,Under Investigation,FIR/2025/029/0552,[213]
+553,Bengaluru Rural,Sexual Assault,Eve-teasing,2024-04-22,2024,5,Pending Trial,FIR/2024/009/0553,[117]
+554,Shivamogga,Robbery,Mugging,2025-03-21,2025,5,Open,FIR/2025/036/0554,[394]
+555,Kalaburagi,Assault,Gang fight,2022-11-29,2022,4,Closed - Acquitted,FIR/2022/025/0555,"[34, 224]"
+556,Dharwad,Sexual Assault,Molestation,2024-05-09,2024,5,Closed - Acquitted,FIR/2024/027/0556,[333]
+557,Shivamogga,Theft,House break-in,2025-08-23,2025,3,Open,FIR/2025/037/0557,[39]
+558,Kalaburagi,Cybercrime,Investment scam,2022-09-30,2022,4,Pending Trial,FIR/2022/025/0558,[47]
+559,Mysuru,Assault,Gang fight,2021-05-15,2021,3,Closed - Acquitted,FIR/2021/010/0559,"[57, 71, 280]"
+560,Ballari,Assault,Road rage,2024-01-23,2024,4,Under Investigation,FIR/2024/032/0560,"[307, 237]"
+561,Kalaburagi,Drug Offence,Trafficking,2025-03-09,2025,5,Closed - Acquitted,FIR/2025/024/0561,[32]
+562,Tumakuru,Assault,Brawl,2022-06-05,2022,4,Under Investigation,FIR/2022/015/0562,"[227, 152]"
+563,Belagavi,Theft,Chain snatching,2025-12-03,2025,3,Open,FIR/2025/022/0563,[24]
+564,Tumakuru,Kidnapping,Ransom,2024-06-30,2024,5,Under Investigation,FIR/2024/014/0564,"[221, 370]"
+565,Hassan,Vandalism,Arson,2022-08-15,2022,3,Closed - Convicted,FIR/2022/034/0565,[178]
+566,Belagavi,Assault,Gang fight,2024-10-23,2024,4,Pending Trial,FIR/2024/021/0566,[231]
+567,Shivamogga,Drug Offence,Possession,2022-09-15,2022,5,Closed - Convicted,FIR/2022/038/0567,[67]
+568,Ballari,Fraud,Impersonation,2024-10-10,2024,4,Closed - Convicted,FIR/2024/030/0568,"[81, 316]"
+569,Dharwad,Kidnapping,Ransom,2022-04-29,2022,5,Under Investigation,FIR/2022/028/0569,"[292, 282]"
+570,Bengaluru Urban,Assault,Brawl,2022-06-03,2022,3,Open,FIR/2022/005/0570,"[351, 6]"
+571,Kalaburagi,Assault,Brawl,2024-12-09,2024,4,Open,FIR/2024/025/0571,"[3, 277, 114]"
+572,Shivamogga,Robbery,Dacoity,2022-06-15,2022,5,Under Investigation,FIR/2022/036/0572,"[93, 277]"
+573,Dharwad,Theft,Chain snatching,2024-09-15,2024,3,Under Investigation,FIR/2024/028/0573,[330]
+574,Hassan,Fraud,Impersonation,2023-05-19,2023,4,Open,FIR/2023/033/0574,"[12, 87]"
+575,Kalaburagi,Drug Offence,Trafficking,2022-09-02,2022,5,Open,FIR/2022/024/0575,[89]
+576,Belagavi,Robbery,Armed robbery,2021-04-09,2021,5,Closed - Convicted,FIR/2021/022/0576,"[350, 18]"
+577,Tumakuru,Theft,Vehicle theft,2023-04-21,2023,3,Open,FIR/2023/016/0577,"[14, 178]"
+578,Bengaluru Urban,Assault,Road rage,2024-05-27,2024,3,Open,FIR/2024/004/0578,[74]
+579,Bengaluru Urban,Robbery,Dacoity,2023-01-03,2023,4,Open,FIR/2023/001/0579,"[51, 301, 68]"
+580,Dakshina Kannada,Assault,Domestic violence,2025-09-14,2025,3,Open,FIR/2025/018/0580,[14]
+581,Hassan,Sexual Assault,Rape,2021-07-16,2021,5,Closed - Convicted,FIR/2021/035/0581,"[170, 182]"
+582,Bengaluru Urban,Assault,Gang fight,2025-06-10,2025,3,Under Investigation,FIR/2025/004/0582,[355]
+583,Hassan,Fraud,Land grab,2020-01-31,2020,4,Under Investigation,FIR/2020/035/0583,"[295, 102]"
+584,Mysuru,Robbery,Dacoity,2023-04-02,2023,4,Pending Trial,FIR/2023/011/0584,"[184, 377]"
+585,Kalaburagi,Fraud,Cheque fraud,2025-09-11,2025,4,Open,FIR/2025/026/0585,[111]
+586,Hassan,Theft,Chain snatching,2021-11-19,2021,3,Open,FIR/2021/035/0586,[93]
+587,Udupi,Theft,Pickpocket,2024-09-06,2024,2,Under Investigation,FIR/2024/039/0587,[135]
+588,Bengaluru Urban,Drug Offence,Distribution,2020-11-02,2020,4,Open,FIR/2020/002/0588,"[276, 318]"
+589,Dharwad,Vandalism,Arson,2021-08-11,2021,3,Pending Trial,FIR/2021/027/0589,[351]
+590,Belagavi,Theft,House break-in,2022-07-23,2022,3,Under Investigation,FIR/2022/023/0590,[76]
+591,Dakshina Kannada,Drug Offence,Trafficking,2023-05-12,2023,4,Closed - Convicted,FIR/2023/019/0591,"[60, 384]"
+592,Bengaluru Urban,Assault,Domestic violence,2022-10-25,2022,3,Closed - Convicted,FIR/2022/003/0592,"[36, 243]"
+593,Udupi,Assault,Domestic violence,2023-05-12,2023,3,Under Investigation,FIR/2023/040/0593,[137]
+594,Hassan,Fraud,Insurance fraud,2025-01-11,2025,4,Open,FIR/2025/033/0594,"[190, 382]"
+595,Dakshina Kannada,Theft,Pickpocket,2020-01-14,2020,2,Under Investigation,FIR/2020/018/0595,[380]
+596,Bengaluru Urban,Assault,Domestic violence,2025-05-07,2025,3,Under Investigation,FIR/2025/003/0596,"[326, 211]"
+597,Kalaburagi,Drug Offence,Possession,2025-01-22,2025,5,Under Investigation,FIR/2025/026/0597,"[68, 348]"
+598,Udupi,Assault,Brawl,2021-09-02,2021,3,Closed - Convicted,FIR/2021/039/0598,[265]
+599,Kalaburagi,Robbery,Mugging,2020-05-16,2020,5,Closed - Convicted,FIR/2020/024/0599,"[304, 261, 126]"
+600,Bengaluru Rural,Assault,Domestic violence,2022-01-19,2022,4,Under Investigation,FIR/2022/008/0600,[144]
+601,Belagavi,Cybercrime,Online fraud,2024-05-05,2024,4,Open,FIR/2024/022/0601,"[357, 264]"
+602,Bengaluru Urban,Fraud,Insurance fraud,2021-07-19,2021,3,Closed - Convicted,FIR/2021/002/0602,"[217, 392]"
+603,Bengaluru Urban,Robbery,Armed robbery,2020-03-01,2020,4,Open,FIR/2020/005/0603,"[316, 42]"
+604,Tumakuru,Drug Offence,Possession,2025-03-14,2025,5,Open,FIR/2025/014/0604,"[158, 313]"
+605,Tumakuru,Vandalism,Property destruction,2022-08-30,2022,3,Open,FIR/2022/016/0605,[184]
+606,Hassan,Assault,Brawl,2024-02-15,2024,4,Closed - Acquitted,FIR/2024/035/0606,[263]
+607,Bengaluru Urban,Assault,Brawl,2024-08-23,2024,3,Closed - Convicted,FIR/2024/005/0607,"[139, 340, 114]"
+608,Dakshina Kannada,Murder,Domestic dispute,2025-09-24,2025,5,Open,FIR/2025/017/0608,[28]
+609,Hassan,Theft,Pickpocket,2025-02-03,2025,3,Closed - Convicted,FIR/2025/035/0609,[334]
+610,Hassan,Assault,Road rage,2022-01-23,2022,4,Closed - Convicted,FIR/2022/034/0610,[217]
+611,Hassan,Theft,Pickpocket,2022-09-10,2022,3,Under Investigation,FIR/2022/034/0611,"[216, 100, 345]"
+612,Belagavi,Vandalism,Arson,2025-06-07,2025,3,Under Investigation,FIR/2025/022/0612,"[337, 74]"
+613,Tumakuru,Assault,Domestic violence,2020-02-06,2020,4,Open,FIR/2020/015/0613,"[361, 31]"
+614,Belagavi,Theft,House break-in,2022-06-29,2022,3,Pending Trial,FIR/2022/020/0614,[226]
+615,Hassan,Theft,House break-in,2025-01-24,2025,3,Under Investigation,FIR/2025/035/0615,[102]
+616,Dharwad,Theft,Pickpocket,2021-06-13,2021,3,Closed - Convicted,FIR/2021/027/0616,"[342, 90]"
+617,Bengaluru Rural,Theft,Chain snatching,2024-06-18,2024,3,Closed - Convicted,FIR/2024/009/0617,[177]
+618,Ballari,Fraud,Impersonation,2025-10-09,2025,4,Under Investigation,FIR/2025/031/0618,"[7, 155]"
+619,Bengaluru Rural,Robbery,Dacoity,2025-12-02,2025,5,Closed - Convicted,FIR/2025/007/0619,[6]
+620,Bengaluru Urban,Kidnapping,Child abduction,2022-07-18,2022,5,Open,FIR/2022/005/0620,[9]
+621,Hassan,Assault,Road rage,2024-04-20,2024,4,Open,FIR/2024/035/0621,[6]
+622,Dharwad,Assault,Brawl,2022-12-05,2022,4,Open,FIR/2022/028/0622,"[398, 280, 18]"
+623,Bengaluru Urban,Assault,Gang fight,2024-08-02,2024,3,Under Investigation,FIR/2024/001/0623,[392]
+624,Belagavi,Theft,Pickpocket,2022-03-06,2022,3,Cold Case,FIR/2022/021/0624,[251]
+625,Mysuru,Vandalism,Property destruction,2023-09-28,2023,2,Open,FIR/2023/012/0625,[248]
+626,Belagavi,Theft,Chain snatching,2023-03-19,2023,3,Cold Case,FIR/2023/020/0626,[274]
+627,Belagavi,Theft,Pickpocket,2025-04-14,2025,3,Under Investigation,FIR/2025/021/0627,"[46, 248, 356]"
+628,Bengaluru Urban,Cybercrime,Online fraud,2023-12-21,2023,3,Closed - Acquitted,FIR/2023/003/0628,"[49, 165]"
+629,Bengaluru Rural,Sexual Assault,Molestation,2025-07-07,2025,5,Under Investigation,FIR/2025/008/0629,"[7, 368]"
+630,Hassan,Theft,Pickpocket,2020-04-08,2020,3,Closed - Convicted,FIR/2020/035/0630,"[375, 21, 123]"
+631,Dharwad,Assault,Brawl,2021-09-12,2021,4,Under Investigation,FIR/2021/029/0631,"[145, 355, 224]"
+632,Udupi,Vandalism,Graffiti,2022-12-15,2022,2,Cold Case,FIR/2022/039/0632,"[250, 22]"
+633,Bengaluru Rural,Assault,Brawl,2023-03-01,2023,4,Under Investigation,FIR/2023/008/0633,"[194, 52]"
+634,Bengaluru Rural,Theft,Chain snatching,2020-05-12,2020,3,Under Investigation,FIR/2020/008/0634,[116]
+635,Bengaluru Urban,Fraud,Land grab,2022-03-16,2022,3,Closed - Convicted,FIR/2022/004/0635,"[294, 174]"
+636,Mysuru,Theft,Chain snatching,2020-01-12,2020,2,Under Investigation,FIR/2020/012/0636,"[155, 9]"
+637,Kalaburagi,Theft,Chain snatching,2024-06-09,2024,3,Open,FIR/2024/026/0637,[329]
+638,Shivamogga,Theft,Pickpocket,2021-11-06,2021,3,Closed - Convicted,FIR/2021/038/0638,[312]
+639,Kalaburagi,Theft,Pickpocket,2022-02-03,2022,3,Under Investigation,FIR/2022/024/0639,[238]
+640,Bengaluru Rural,Theft,House break-in,2023-02-27,2023,3,Under Investigation,FIR/2023/009/0640,[323]
+641,Dakshina Kannada,Drug Offence,Trafficking,2024-07-21,2024,4,Under Investigation,FIR/2024/019/0641,[316]
+642,Belagavi,Assault,Brawl,2025-01-07,2025,4,Under Investigation,FIR/2025/020/0642,"[208, 9, 68]"
+643,Bengaluru Urban,Assault,Brawl,2024-09-29,2024,3,Open,FIR/2024/005/0643,[32]
+644,Bengaluru Urban,Drug Offence,Trafficking,2024-02-05,2024,4,Open,FIR/2024/004/0644,"[299, 28, 164]"
+645,Dharwad,Vandalism,Graffiti,2024-07-15,2024,3,Closed - Convicted,FIR/2024/028/0645,[166]
+646,Kalaburagi,Cybercrime,Online fraud,2022-01-30,2022,4,Closed - Convicted,FIR/2022/024/0646,[136]
+647,Tumakuru,Theft,Vehicle theft,2025-05-16,2025,3,Under Investigation,FIR/2025/014/0647,[133]
+648,Ballari,Robbery,Dacoity,2022-02-04,2022,5,Open,FIR/2022/030/0648,"[115, 370]"
+649,Bengaluru Urban,Theft,Vehicle theft,2022-07-22,2022,2,Closed - Convicted,FIR/2022/001/0649,[37]
+650,Bengaluru Urban,Robbery,Mugging,2023-11-02,2023,4,Open,FIR/2023/006/0650,[354]
+651,Tumakuru,Cybercrime,Identity theft,2024-11-06,2024,4,Under Investigation,FIR/2024/014/0651,[112]
+652,Bengaluru Urban,Sexual Assault,Rape,2020-01-15,2020,5,Closed - Convicted,FIR/2020/002/0652,[161]
+653,Belagavi,Drug Offence,Possession,2025-07-24,2025,5,Closed - Convicted,FIR/2025/020/0653,"[260, 86]"
+654,Tumakuru,Drug Offence,Possession,2025-09-13,2025,5,Under Investigation,FIR/2025/016/0654,"[135, 211]"
+655,Tumakuru,Vandalism,Arson,2025-06-07,2025,3,Open,FIR/2025/014/0655,[40]
+656,Bengaluru Urban,Fraud,Land grab,2021-08-08,2021,3,Under Investigation,FIR/2021/001/0656,"[303, 132]"
+657,Belagavi,Cybercrime,Phishing,2022-07-22,2022,4,Pending Trial,FIR/2022/022/0657,[358]
+658,Mysuru,Robbery,Dacoity,2025-03-03,2025,4,Under Investigation,FIR/2025/011/0658,[73]
+659,Dakshina Kannada,Theft,Pickpocket,2024-04-23,2024,2,Closed - Convicted,FIR/2024/019/0659,[190]
+660,Belagavi,Assault,Gang fight,2023-01-08,2023,4,Closed - Acquitted,FIR/2023/021/0660,[2]
+661,Dharwad,Theft,Chain snatching,2021-06-26,2021,3,Closed - Convicted,FIR/2021/027/0661,[260]
+662,Belagavi,Murder,Property dispute,2021-02-13,2021,5,Under Investigation,FIR/2021/023/0662,[229]
+663,Belagavi,Theft,Vehicle theft,2022-11-17,2022,3,Open,FIR/2022/021/0663,"[3, 74, 104]"
+664,Bengaluru Urban,Drug Offence,Trafficking,2020-03-22,2020,4,Closed - Convicted,FIR/2020/003/0664,"[79, 109, 263]"
+665,Tumakuru,Theft,House break-in,2020-10-10,2020,3,Closed - Acquitted,FIR/2020/015/0665,"[311, 244]"
+666,Kalaburagi,Cybercrime,Online fraud,2023-05-08,2023,4,Under Investigation,FIR/2023/025/0666,[354]
+667,Bengaluru Urban,Murder,Gang rivalry,2021-07-28,2021,5,Pending Trial,FIR/2021/002/0667,[23]
+668,Bengaluru Urban,Assault,Road rage,2021-09-21,2021,3,Pending Trial,FIR/2021/002/0668,[273]
+669,Dharwad,Drug Offence,Distribution,2025-11-10,2025,5,Under Investigation,FIR/2025/028/0669,[311]
+670,Tumakuru,Theft,Chain snatching,2020-05-07,2020,3,Under Investigation,FIR/2020/015/0670,"[85, 236]"
+671,Mysuru,Fraud,Land grab,2020-12-20,2020,3,Under Investigation,FIR/2020/012/0671,"[240, 277]"
+672,Shivamogga,Fraud,Impersonation,2021-09-17,2021,4,Open,FIR/2021/038/0672,[320]
+673,Dharwad,Robbery,Mugging,2025-01-09,2025,5,Under Investigation,FIR/2025/028/0673,[166]
+674,Hassan,Cybercrime,Online fraud,2025-01-27,2025,4,Under Investigation,FIR/2025/035/0674,[309]
+675,Tumakuru,Assault,Gang fight,2024-08-10,2024,4,Open,FIR/2024/014/0675,[41]
+676,Belagavi,Drug Offence,Distribution,2021-02-12,2021,5,Closed - Acquitted,FIR/2021/022/0676,[336]
+677,Kalaburagi,Drug Offence,Distribution,2020-05-30,2020,5,Under Investigation,FIR/2020/025/0677,[285]
+678,Belagavi,Cybercrime,Investment scam,2020-07-08,2020,4,Closed - Convicted,FIR/2020/020/0678,[212]
+679,Mysuru,Fraud,Land grab,2021-02-14,2021,3,Under Investigation,FIR/2021/011/0679,[347]
+680,Dakshina Kannada,Theft,House break-in,2024-02-14,2024,2,Closed - Convicted,FIR/2024/018/0680,[248]
+681,Dharwad,Theft,Chain snatching,2025-12-26,2025,3,Pending Trial,FIR/2025/029/0681,"[317, 229]"
+682,Dakshina Kannada,Robbery,Mugging,2023-04-16,2023,4,Under Investigation,FIR/2023/017/0682,"[219, 153]"
+683,Belagavi,Assault,Gang fight,2024-02-08,2024,4,Closed - Convicted,FIR/2024/023/0683,[225]
+684,Belagavi,Assault,Road rage,2021-11-01,2021,4,Closed - Convicted,FIR/2021/022/0684,"[36, 282]"
+685,Tumakuru,Theft,Chain snatching,2025-04-12,2025,3,Under Investigation,FIR/2025/014/0685,"[183, 279]"
+686,Bengaluru Urban,Kidnapping,Ransom,2020-11-11,2020,5,Under Investigation,FIR/2020/001/0686,"[147, 51]"
+687,Tumakuru,Cybercrime,Investment scam,2023-03-24,2023,4,Closed - Acquitted,FIR/2023/014/0687,[208]
+688,Bengaluru Urban,Assault,Gang fight,2022-02-05,2022,3,Pending Trial,FIR/2022/002/0688,[383]
+689,Tumakuru,Theft,Pickpocket,2021-07-04,2021,3,Pending Trial,FIR/2021/016/0689,[21]
+690,Udupi,Drug Offence,Possession,2025-04-26,2025,4,Closed - Convicted,FIR/2025/040/0690,"[62, 141]"
+691,Kalaburagi,Assault,Road rage,2021-07-27,2021,4,Pending Trial,FIR/2021/024/0691,"[195, 112]"
+692,Udupi,Theft,Chain snatching,2024-03-18,2024,2,Closed - Convicted,FIR/2024/041/0692,"[281, 166, 2]"
+693,Dakshina Kannada,Murder,Hired killing,2025-05-24,2025,5,Pending Trial,FIR/2025/017/0693,[387]
+694,Kalaburagi,Cybercrime,Phishing,2022-03-21,2022,4,Open,FIR/2022/024/0694,[265]
+695,Dakshina Kannada,Theft,Chain snatching,2024-11-18,2024,2,Open,FIR/2024/019/0695,[27]
+696,Dakshina Kannada,Theft,Chain snatching,2025-12-30,2025,2,Under Investigation,FIR/2025/017/0696,"[40, 281]"
+697,Bengaluru Urban,Robbery,Dacoity,2020-01-10,2020,4,Open,FIR/2020/004/0697,"[370, 37, 191]"
+698,Belagavi,Vandalism,Arson,2023-10-04,2023,3,Under Investigation,FIR/2023/022/0698,[49]
+699,Shivamogga,Assault,Brawl,2021-01-25,2021,4,Under Investigation,FIR/2021/038/0699,[70]
+700,Kalaburagi,Theft,Pickpocket,2021-01-26,2021,3,Open,FIR/2021/025/0700,"[132, 274]"
+701,Bengaluru Rural,Fraud,Land grab,2022-09-23,2022,4,Closed - Convicted,FIR/2022/008/0701,[65]
+702,Mysuru,Theft,Chain snatching,2024-10-24,2024,2,Closed - Acquitted,FIR/2024/012/0702,"[127, 224, 385]"
+703,Udupi,Robbery,Dacoity,2025-04-16,2025,4,Open,FIR/2025/041/0703,[197]
+704,Udupi,Assault,Gang fight,2024-09-01,2024,3,Closed - Convicted,FIR/2024/041/0704,[298]
+705,Belagavi,Theft,Chain snatching,2021-06-05,2021,3,Closed - Convicted,FIR/2021/022/0705,[149]
+706,Ballari,Fraud,Impersonation,2022-03-15,2022,4,Open,FIR/2022/030/0706,"[147, 211, 281]"
+707,Dakshina Kannada,Assault,Domestic violence,2020-11-12,2020,3,Open,FIR/2020/019/0707,[202]
+708,Kalaburagi,Theft,Vehicle theft,2020-01-17,2020,3,Under Investigation,FIR/2020/025/0708,[365]
+709,Kalaburagi,Fraud,Insurance fraud,2024-12-15,2024,4,Pending Trial,FIR/2024/026/0709,[325]
+710,Shivamogga,Cybercrime,Phishing,2020-02-16,2020,4,Closed - Convicted,FIR/2020/038/0710,[342]
+711,Bengaluru Urban,Robbery,Dacoity,2022-07-07,2022,4,Closed - Convicted,FIR/2022/002/0711,[87]
+712,Bengaluru Urban,Drug Offence,Possession,2022-03-08,2022,4,Open,FIR/2022/003/0712,"[247, 337]"
+713,Bengaluru Urban,Fraud,Impersonation,2022-06-05,2022,3,Under Investigation,FIR/2022/005/0713,[145]
+714,Shivamogga,Fraud,Impersonation,2024-09-04,2024,4,Pending Trial,FIR/2024/036/0714,[318]
+715,Belagavi,Robbery,Mugging,2021-09-30,2021,5,Open,FIR/2021/022/0715,[344]
+716,Bengaluru Urban,Fraud,Cheque fraud,2022-04-12,2022,3,Pending Trial,FIR/2022/006/0716,"[9, 70]"
+717,Bengaluru Rural,Theft,Chain snatching,2023-05-10,2023,3,Closed - Acquitted,FIR/2023/008/0717,"[110, 224, 244]"
+718,Bengaluru Urban,Theft,Chain snatching,2023-05-20,2023,2,Open,FIR/2023/006/0718,"[87, 128, 329]"
+719,Bengaluru Urban,Robbery,Dacoity,2024-11-09,2024,4,Open,FIR/2024/004/0719,[86]
+720,Bengaluru Urban,Kidnapping,Child abduction,2023-02-04,2023,5,Open,FIR/2023/005/0720,[292]
+721,Kalaburagi,Theft,House break-in,2025-08-29,2025,3,Under Investigation,FIR/2025/026/0721,"[234, 80]"
+722,Bengaluru Urban,Theft,House break-in,2021-03-31,2021,2,Closed - Acquitted,FIR/2021/003/0722,"[93, 134, 21]"
+723,Dharwad,Robbery,Dacoity,2020-08-29,2020,5,Closed - Convicted,FIR/2020/027/0723,[73]
+724,Bengaluru Rural,Theft,Vehicle theft,2022-01-11,2022,3,Closed - Convicted,FIR/2022/009/0724,[80]
+725,Dakshina Kannada,Assault,Brawl,2022-07-23,2022,3,Pending Trial,FIR/2022/018/0725,[16]
+726,Dharwad,Theft,House break-in,2025-06-27,2025,3,Under Investigation,FIR/2025/028/0726,[277]
+727,Belagavi,Theft,Pickpocket,2023-09-25,2023,3,Pending Trial,FIR/2023/022/0727,"[148, 241]"
+728,Shivamogga,Sexual Assault,Molestation,2020-04-02,2020,5,Closed - Convicted,FIR/2020/036/0728,"[13, 345]"
+729,Dharwad,Theft,Vehicle theft,2024-07-06,2024,3,Under Investigation,FIR/2024/029/0729,"[253, 191, 304]"
+730,Dharwad,Assault,Brawl,2023-05-05,2023,4,Under Investigation,FIR/2023/028/0730,[35]
+731,Bengaluru Urban,Robbery,Armed robbery,2024-12-24,2024,4,Under Investigation,FIR/2024/006/0731,[283]
+732,Mysuru,Cybercrime,Investment scam,2023-04-26,2023,3,Open,FIR/2023/011/0732,[5]
+733,Bengaluru Urban,Theft,Chain snatching,2021-05-31,2021,2,Under Investigation,FIR/2021/003/0733,[56]
+734,Shivamogga,Fraud,Cheque fraud,2021-10-26,2021,4,Under Investigation,FIR/2021/037/0734,[337]
+735,Bengaluru Rural,Assault,Domestic violence,2020-07-07,2020,4,Open,FIR/2020/009/0735,[354]
+736,Bengaluru Urban,Robbery,Mugging,2025-03-15,2025,4,Under Investigation,FIR/2025/002/0736,[91]
+737,Bengaluru Rural,Fraud,Land grab,2025-08-10,2025,4,Under Investigation,FIR/2025/008/0737,[24]
+738,Ballari,Theft,Pickpocket,2020-01-09,2020,3,Closed - Convicted,FIR/2020/032/0738,[193]
+739,Belagavi,Vandalism,Graffiti,2020-01-11,2020,3,Closed - Acquitted,FIR/2020/023/0739,[147]
+740,Udupi,Assault,Brawl,2023-03-12,2023,3,Closed - Convicted,FIR/2023/041/0740,[379]
+741,Ballari,Assault,Gang fight,2024-10-19,2024,4,Open,FIR/2024/032/0741,"[35, 65]"
+742,Dharwad,Cybercrime,Online fraud,2021-09-30,2021,4,Under Investigation,FIR/2021/027/0742,[227]
+743,Bengaluru Rural,Assault,Domestic violence,2020-10-20,2020,4,Under Investigation,FIR/2020/008/0743,[213]
+744,Tumakuru,Assault,Road rage,2022-10-03,2022,4,Under Investigation,FIR/2022/016/0744,[358]
+745,Tumakuru,Theft,Chain snatching,2022-11-22,2022,3,Under Investigation,FIR/2022/014/0745,[292]
+746,Kalaburagi,Fraud,Land grab,2024-10-18,2024,4,Under Investigation,FIR/2024/025/0746,[189]
+747,Ballari,Kidnapping,Child abduction,2024-05-25,2024,5,Under Investigation,FIR/2024/032/0747,[226]
+748,Bengaluru Urban,Robbery,Dacoity,2021-07-19,2021,4,Closed - Convicted,FIR/2021/002/0748,[197]
+749,Dharwad,Drug Offence,Possession,2022-08-05,2022,5,Open,FIR/2022/027/0749,[351]
+750,Mysuru,Theft,Chain snatching,2025-03-05,2025,2,Open,FIR/2025/013/0750,"[147, 177]"
+751,Tumakuru,Theft,Vehicle theft,2021-01-18,2021,3,Pending Trial,FIR/2021/014/0751,"[397, 125, 99]"
+752,Kalaburagi,Assault,Gang fight,2020-02-18,2020,4,Pending Trial,FIR/2020/026/0752,"[267, 219]"
+753,Bengaluru Urban,Sexual Assault,Eve-teasing,2025-10-22,2025,5,Closed - Convicted,FIR/2025/004/0753,"[279, 105]"
+754,Hassan,Cybercrime,Investment scam,2020-12-17,2020,4,Pending Trial,FIR/2020/035/0754,[147]
+755,Mysuru,Theft,House break-in,2021-01-18,2021,2,Open,FIR/2021/010/0755,"[1, 40]"
+756,Bengaluru Urban,Assault,Brawl,2022-06-06,2022,3,Under Investigation,FIR/2022/004/0756,[131]
+757,Belagavi,Theft,Vehicle theft,2023-09-14,2023,3,Open,FIR/2023/022/0757,[159]
+758,Hassan,Kidnapping,Child abduction,2023-02-28,2023,5,Under Investigation,FIR/2023/034/0758,[312]
+759,Tumakuru,Assault,Brawl,2024-11-20,2024,4,Under Investigation,FIR/2024/014/0759,"[217, 58]"
+760,Bengaluru Urban,Assault,Brawl,2023-08-07,2023,3,Under Investigation,FIR/2023/005/0760,[330]
+761,Tumakuru,Assault,Domestic violence,2023-03-02,2023,4,Under Investigation,FIR/2023/016/0761,"[247, 172]"
+762,Tumakuru,Theft,Vehicle theft,2020-01-27,2020,3,Closed - Acquitted,FIR/2020/014/0762,[246]
+763,Bengaluru Urban,Theft,Vehicle theft,2025-10-22,2025,2,Under Investigation,FIR/2025/004/0763,[98]
+764,Tumakuru,Assault,Domestic violence,2025-06-04,2025,4,Closed - Convicted,FIR/2025/015/0764,[390]
+765,Udupi,Theft,Chain snatching,2020-12-05,2020,2,Closed - Convicted,FIR/2020/039/0765,[152]
+766,Dharwad,Vandalism,Property destruction,2024-10-15,2024,3,Closed - Convicted,FIR/2024/029/0766,[313]
+767,Kalaburagi,Assault,Domestic violence,2022-03-08,2022,4,Closed - Convicted,FIR/2022/025/0767,[145]
+768,Dakshina Kannada,Theft,Pickpocket,2025-02-21,2025,2,Pending Trial,FIR/2025/017/0768,[59]
+769,Dharwad,Theft,Pickpocket,2021-07-05,2021,3,Under Investigation,FIR/2021/027/0769,"[173, 307]"
+770,Udupi,Theft,House break-in,2024-07-08,2024,2,Under Investigation,FIR/2024/039/0770,"[259, 212]"
+771,Bengaluru Rural,Fraud,Impersonation,2024-09-29,2024,4,Closed - Acquitted,FIR/2024/009/0771,[304]
+772,Bengaluru Urban,Theft,Chain snatching,2020-03-12,2020,2,Under Investigation,FIR/2020/004/0772,[74]
+773,Belagavi,Sexual Assault,Eve-teasing,2022-06-08,2022,5,Under Investigation,FIR/2022/021/0773,[30]
+774,Hassan,Theft,Pickpocket,2023-06-22,2023,3,Open,FIR/2023/034/0774,[143]
+775,Tumakuru,Cybercrime,Investment scam,2024-10-05,2024,4,Under Investigation,FIR/2024/015/0775,"[263, 43]"
+776,Shivamogga,Robbery,Mugging,2022-11-16,2022,5,Under Investigation,FIR/2022/037/0776,[46]
+777,Ballari,Sexual Assault,Eve-teasing,2025-01-08,2025,5,Closed - Convicted,FIR/2025/032/0777,"[383, 158, 72]"
+778,Kalaburagi,Fraud,Impersonation,2025-05-15,2025,4,Under Investigation,FIR/2025/026/0778,"[337, 272]"
+779,Kalaburagi,Murder,Domestic dispute,2025-02-26,2025,5,Open,FIR/2025/026/0779,[354]
+780,Mysuru,Theft,Pickpocket,2025-03-14,2025,2,Open,FIR/2025/011/0780,[166]
+781,Shivamogga,Fraud,Insurance fraud,2025-12-19,2025,4,Closed - Convicted,FIR/2025/036/0781,"[64, 396, 226]"
+782,Kalaburagi,Robbery,Armed robbery,2025-12-28,2025,5,Closed - Convicted,FIR/2025/026/0782,[21]
+783,Hassan,Kidnapping,Human trafficking,2025-07-05,2025,5,Closed - Convicted,FIR/2025/034/0783,[73]
+784,Kalaburagi,Fraud,Cheque fraud,2025-07-13,2025,4,Under Investigation,FIR/2025/026/0784,"[177, 77]"
+785,Bengaluru Urban,Fraud,Impersonation,2022-03-12,2022,3,Under Investigation,FIR/2022/001/0785,"[217, 72]"
+786,Ballari,Murder,Gang rivalry,2023-02-08,2023,5,Under Investigation,FIR/2023/032/0786,[398]
+787,Tumakuru,Theft,Pickpocket,2023-02-23,2023,3,Closed - Convicted,FIR/2023/015/0787,"[182, 264]"
+788,Shivamogga,Kidnapping,Human trafficking,2021-10-17,2021,5,Under Investigation,FIR/2021/036/0788,[161]
+789,Udupi,Theft,Vehicle theft,2024-07-31,2024,2,Under Investigation,FIR/2024/039/0789,[374]
+790,Udupi,Theft,House break-in,2024-06-30,2024,2,Closed - Convicted,FIR/2024/039/0790,[389]
+791,Mysuru,Fraud,Insurance fraud,2023-01-09,2023,3,Cold Case,FIR/2023/010/0791,[288]
+792,Udupi,Theft,House break-in,2020-04-04,2020,2,Closed - Convicted,FIR/2020/041/0792,[34]
+793,Ballari,Cybercrime,Phishing,2022-02-09,2022,4,Under Investigation,FIR/2022/032/0793,[181]
+794,Kalaburagi,Sexual Assault,Eve-teasing,2023-11-09,2023,5,Pending Trial,FIR/2023/025/0794,[367]
+795,Udupi,Fraud,Cheque fraud,2022-08-08,2022,3,Open,FIR/2022/039/0795,[184]
+796,Dharwad,Assault,Domestic violence,2024-12-16,2024,4,Open,FIR/2024/027/0796,"[244, 192]"
+797,Hassan,Vandalism,Arson,2024-12-15,2024,3,Open,FIR/2024/033/0797,[43]
+798,Bengaluru Urban,Assault,Gang fight,2020-08-30,2020,3,Closed - Convicted,FIR/2020/005/0798,[74]
+799,Hassan,Sexual Assault,Eve-teasing,2020-06-06,2020,5,Under Investigation,FIR/2020/034/0799,"[30, 75]"
+800,Bengaluru Rural,Theft,Vehicle theft,2025-04-14,2025,3,Closed - Convicted,FIR/2025/007/0800,"[57, 368]"
+801,Belagavi,Theft,House break-in,2022-07-10,2022,3,Open,FIR/2022/020/0801,"[248, 61, 348]"
+802,Udupi,Theft,House break-in,2020-09-20,2020,2,Under Investigation,FIR/2020/039/0802,[315]
+803,Tumakuru,Robbery,Armed robbery,2023-08-12,2023,5,Closed - Convicted,FIR/2023/016/0803,"[184, 71]"
+804,Bengaluru Urban,Robbery,Armed robbery,2020-08-19,2020,4,Closed - Convicted,FIR/2020/006/0804,[398]
+805,Bengaluru Urban,Theft,House break-in,2025-08-22,2025,2,Closed - Convicted,FIR/2025/004/0805,[5]
+806,Hassan,Drug Offence,Possession,2022-09-10,2022,5,Open,FIR/2022/035/0806,"[341, 68]"
+807,Mysuru,Theft,Pickpocket,2022-08-20,2022,2,Under Investigation,FIR/2022/011/0807,[282]
+808,Tumakuru,Assault,Brawl,2025-05-15,2025,4,Open,FIR/2025/016/0808,[157]
+809,Bengaluru Urban,Vandalism,Property destruction,2025-02-13,2025,2,Open,FIR/2025/004/0809,[335]
+810,Shivamogga,Drug Offence,Distribution,2022-12-20,2022,5,Closed - Convicted,FIR/2022/038/0810,[316]
+811,Bengaluru Rural,Cybercrime,Investment scam,2021-08-02,2021,4,Under Investigation,FIR/2021/008/0811,[196]
+812,Ballari,Drug Offence,Possession,2021-11-10,2021,5,Under Investigation,FIR/2021/031/0812,"[342, 195, 36]"
+813,Bengaluru Rural,Theft,Chain snatching,2024-08-31,2024,3,Under Investigation,FIR/2024/008/0813,[262]
+814,Kalaburagi,Robbery,Dacoity,2024-05-06,2024,5,Under Investigation,FIR/2024/025/0814,[400]
+815,Bengaluru Urban,Drug Offence,Distribution,2022-01-11,2022,4,Closed - Convicted,FIR/2022/006/0815,[330]
+816,Mysuru,Assault,Brawl,2025-01-24,2025,3,Closed - Convicted,FIR/2025/010/0816,[45]
+817,Belagavi,Cybercrime,Phishing,2025-05-08,2025,4,Under Investigation,FIR/2025/022/0817,[70]
+818,Shivamogga,Cybercrime,Online fraud,2020-02-08,2020,4,Open,FIR/2020/036/0818,"[362, 161, 209]"
+819,Dharwad,Theft,House break-in,2024-08-08,2024,3,Under Investigation,FIR/2024/027/0819,"[109, 270]"
+820,Ballari,Theft,Chain snatching,2023-11-26,2023,3,Under Investigation,FIR/2023/032/0820,"[354, 100]"
+821,Bengaluru Urban,Robbery,Dacoity,2020-08-18,2020,4,Pending Trial,FIR/2020/003/0821,[398]
+822,Shivamogga,Drug Offence,Possession,2021-09-19,2021,5,Closed - Acquitted,FIR/2021/036/0822,[165]
+823,Bengaluru Urban,Cybercrime,Phishing,2025-07-14,2025,3,Closed - Convicted,FIR/2025/005/0823,"[362, 97, 208]"
+824,Shivamogga,Theft,Vehicle theft,2021-01-19,2021,3,Closed - Convicted,FIR/2021/036/0824,"[241, 307]"
+825,Shivamogga,Assault,Domestic violence,2023-02-10,2023,4,Pending Trial,FIR/2023/038/0825,[56]
+826,Tumakuru,Vandalism,Graffiti,2022-02-25,2022,3,Closed - Convicted,FIR/2022/014/0826,"[362, 151]"
+827,Bengaluru Rural,Cybercrime,Identity theft,2020-09-08,2020,4,Closed - Convicted,FIR/2020/007/0827,[8]
+828,Shivamogga,Murder,Property dispute,2021-09-28,2021,5,Under Investigation,FIR/2021/036/0828,"[189, 4]"
+829,Dharwad,Cybercrime,Phishing,2024-09-02,2024,4,Open,FIR/2024/028/0829,[99]
+830,Bengaluru Urban,Cybercrime,Online fraud,2025-09-14,2025,3,Under Investigation,FIR/2025/006/0830,[330]
+831,Mysuru,Theft,Chain snatching,2024-04-12,2024,2,Closed - Convicted,FIR/2024/012/0831,"[292, 178]"
+832,Mysuru,Cybercrime,Online fraud,2022-08-02,2022,3,Under Investigation,FIR/2022/013/0832,[218]
+833,Hassan,Cybercrime,Identity theft,2022-11-20,2022,4,Closed - Convicted,FIR/2022/035/0833,[314]
+834,Mysuru,Robbery,Dacoity,2021-07-01,2021,4,Closed - Convicted,FIR/2021/012/0834,"[12, 296]"
+835,Ballari,Fraud,Cheque fraud,2022-10-15,2022,4,Open,FIR/2022/031/0835,[108]
+836,Bengaluru Urban,Theft,House break-in,2023-01-27,2023,2,Under Investigation,FIR/2023/001/0836,"[379, 374, 313]"
+837,Dharwad,Drug Offence,Trafficking,2020-04-01,2020,5,Pending Trial,FIR/2020/027/0837,"[42, 14, 389]"
+838,Belagavi,Robbery,Dacoity,2023-08-27,2023,5,Closed - Convicted,FIR/2023/023/0838,"[352, 50, 197]"
+839,Udupi,Murder,Hired killing,2025-10-19,2025,5,Closed - Convicted,FIR/2025/040/0839,"[9, 331]"
+840,Dakshina Kannada,Sexual Assault,Eve-teasing,2024-11-15,2024,5,Open,FIR/2024/017/0840,[229]
+841,Ballari,Assault,Domestic violence,2024-03-21,2024,4,Closed - Acquitted,FIR/2024/032/0841,"[265, 332]"
+842,Belagavi,Theft,Pickpocket,2020-03-30,2020,3,Pending Trial,FIR/2020/023/0842,"[44, 313]"
+843,Ballari,Assault,Gang fight,2025-04-28,2025,4,Closed - Convicted,FIR/2025/032/0843,"[383, 217, 111]"
+844,Tumakuru,Theft,Pickpocket,2021-09-08,2021,3,Under Investigation,FIR/2021/015/0844,"[381, 25]"
+845,Mysuru,Cybercrime,Identity theft,2024-05-08,2024,3,Pending Trial,FIR/2024/012/0845,"[284, 310]"
+846,Tumakuru,Kidnapping,Human trafficking,2023-10-01,2023,5,Under Investigation,FIR/2023/016/0846,"[15, 386]"
+847,Bengaluru Urban,Kidnapping,Child abduction,2024-09-21,2024,5,Closed - Convicted,FIR/2024/002/0847,[39]
+848,Bengaluru Urban,Assault,Road rage,2020-05-17,2020,3,Closed - Convicted,FIR/2020/003/0848,"[370, 135]"
+849,Bengaluru Rural,Kidnapping,Child abduction,2020-05-10,2020,5,Closed - Convicted,FIR/2020/009/0849,"[134, 239, 15]"
+850,Kalaburagi,Fraud,Cheque fraud,2020-11-18,2020,4,Under Investigation,FIR/2020/024/0850,[161]
+851,Bengaluru Urban,Robbery,Mugging,2025-04-10,2025,4,Closed - Convicted,FIR/2025/005/0851,[250]
+852,Kalaburagi,Assault,Domestic violence,2020-03-05,2020,4,Open,FIR/2020/025/0852,"[192, 9]"
+853,Mysuru,Assault,Road rage,2020-03-12,2020,3,Under Investigation,FIR/2020/012/0853,[80]
+854,Belagavi,Assault,Domestic violence,2022-05-23,2022,4,Open,FIR/2022/020/0854,[86]
+855,Mysuru,Sexual Assault,Molestation,2025-08-28,2025,5,Under Investigation,FIR/2025/011/0855,"[350, 359, 387]"
+856,Bengaluru Urban,Assault,Domestic violence,2020-02-05,2020,3,Closed - Convicted,FIR/2020/005/0856,"[396, 163, 274]"
+857,Udupi,Robbery,Dacoity,2020-08-25,2020,4,Under Investigation,FIR/2020/039/0857,[88]
+858,Mysuru,Theft,Vehicle theft,2021-02-01,2021,2,Open,FIR/2021/012/0858,[367]
+859,Mysuru,Robbery,Armed robbery,2021-02-25,2021,4,Open,FIR/2021/012/0859,[391]
+860,Dakshina Kannada,Drug Offence,Possession,2022-03-16,2022,4,Under Investigation,FIR/2022/019/0860,"[33, 165]"
+861,Bengaluru Rural,Sexual Assault,Eve-teasing,2024-07-26,2024,5,Under Investigation,FIR/2024/007/0861,[380]
+862,Mysuru,Assault,Brawl,2021-08-02,2021,3,Pending Trial,FIR/2021/012/0862,[158]
+863,Bengaluru Urban,Theft,Vehicle theft,2021-10-17,2021,2,Under Investigation,FIR/2021/006/0863,[258]
+864,Udupi,Assault,Gang fight,2021-08-21,2021,3,Closed - Convicted,FIR/2021/040/0864,"[45, 382, 2]"
+865,Belagavi,Assault,Domestic violence,2025-02-10,2025,4,Under Investigation,FIR/2025/023/0865,"[238, 137]"
+866,Belagavi,Theft,House break-in,2022-02-01,2022,3,Under Investigation,FIR/2022/023/0866,"[329, 12, 362]"
+867,Mysuru,Theft,Chain snatching,2024-01-08,2024,2,Closed - Acquitted,FIR/2024/012/0867,"[311, 175]"
+868,Belagavi,Assault,Road rage,2022-04-16,2022,4,Under Investigation,FIR/2022/022/0868,[69]
+869,Udupi,Cybercrime,Identity theft,2020-10-30,2020,3,Closed - Acquitted,FIR/2020/040/0869,"[71, 303]"
+870,Dakshina Kannada,Cybercrime,Investment scam,2020-11-22,2020,3,Closed - Convicted,FIR/2020/018/0870,[370]
+871,Belagavi,Theft,Pickpocket,2022-11-29,2022,3,Under Investigation,FIR/2022/020/0871,[66]
+872,Tumakuru,Theft,Chain snatching,2025-07-14,2025,3,Closed - Convicted,FIR/2025/015/0872,[321]
+873,Hassan,Cybercrime,Identity theft,2025-11-22,2025,4,Pending Trial,FIR/2025/035/0873,[79]
+874,Dharwad,Assault,Gang fight,2025-07-21,2025,4,Under Investigation,FIR/2025/028/0874,[246]
+875,Bengaluru Urban,Kidnapping,Child abduction,2023-11-12,2023,5,Pending Trial,FIR/2023/006/0875,[319]
+876,Hassan,Robbery,Armed robbery,2024-10-21,2024,5,Under Investigation,FIR/2024/034/0876,"[317, 253]"
+877,Dharwad,Robbery,Armed robbery,2024-07-09,2024,5,Open,FIR/2024/028/0877,"[26, 290, 106]"
+878,Shivamogga,Assault,Domestic violence,2021-12-07,2021,4,Under Investigation,FIR/2021/037/0878,"[157, 396]"
+879,Dharwad,Cybercrime,Online fraud,2020-12-05,2020,4,Under Investigation,FIR/2020/028/0879,[154]
+880,Kalaburagi,Vandalism,Graffiti,2021-03-03,2021,3,Closed - Acquitted,FIR/2021/026/0880,[79]
+881,Bengaluru Urban,Cybercrime,Identity theft,2024-06-06,2024,3,Closed - Convicted,FIR/2024/004/0881,[79]
+882,Mysuru,Vandalism,Graffiti,2023-08-07,2023,2,Closed - Acquitted,FIR/2023/011/0882,[11]
+883,Dharwad,Theft,House break-in,2024-06-16,2024,3,Under Investigation,FIR/2024/027/0883,[313]
+884,Udupi,Assault,Gang fight,2025-06-02,2025,3,Closed - Convicted,FIR/2025/039/0884,[158]
+885,Tumakuru,Assault,Road rage,2025-05-03,2025,4,Closed - Convicted,FIR/2025/016/0885,[19]
+886,Tumakuru,Vandalism,Graffiti,2025-04-12,2025,3,Closed - Convicted,FIR/2025/015/0886,[73]
+887,Tumakuru,Theft,Pickpocket,2023-11-17,2023,3,Under Investigation,FIR/2023/016/0887,"[57, 64]"
+888,Dakshina Kannada,Cybercrime,Investment scam,2021-06-30,2021,3,Closed - Convicted,FIR/2021/017/0888,[54]
+889,Kalaburagi,Assault,Road rage,2021-09-13,2021,4,Closed - Convicted,FIR/2021/024/0889,[397]
+890,Dharwad,Robbery,Armed robbery,2025-12-14,2025,5,Open,FIR/2025/027/0890,[380]
+891,Dharwad,Cybercrime,Online fraud,2022-11-08,2022,4,Closed - Convicted,FIR/2022/029/0891,"[126, 149]"
+892,Dakshina Kannada,Robbery,Mugging,2020-05-31,2020,4,Open,FIR/2020/019/0892,[236]
+893,Dakshina Kannada,Assault,Gang fight,2024-11-06,2024,3,Closed - Convicted,FIR/2024/018/0893,[361]
+894,Belagavi,Vandalism,Graffiti,2025-06-16,2025,3,Open,FIR/2025/023/0894,[24]
+895,Tumakuru,Fraud,Cheque fraud,2022-03-05,2022,4,Closed - Convicted,FIR/2022/015/0895,"[159, 85, 253]"
+896,Shivamogga,Robbery,Armed robbery,2023-01-02,2023,5,Under Investigation,FIR/2023/037/0896,"[341, 27]"
+897,Belagavi,Theft,Chain snatching,2022-08-29,2022,3,Closed - Convicted,FIR/2022/022/0897,"[73, 260]"
+898,Mysuru,Theft,Vehicle theft,2023-08-13,2023,2,Under Investigation,FIR/2023/011/0898,"[280, 291]"
+899,Dakshina Kannada,Robbery,Mugging,2022-05-29,2022,4,Open,FIR/2022/018/0899,[267]
+900,Belagavi,Theft,Vehicle theft,2021-02-14,2021,3,Open,FIR/2021/022/0900,[400]
+901,Dakshina Kannada,Cybercrime,Identity theft,2022-03-23,2022,3,Open,FIR/2022/017/0901,[87]
+902,Ballari,Theft,Pickpocket,2024-09-23,2024,3,Under Investigation,FIR/2024/031/0902,"[194, 74]"
+903,Ballari,Theft,House break-in,2025-11-14,2025,3,Under Investigation,FIR/2025/032/0903,[295]
+904,Dharwad,Assault,Brawl,2020-12-07,2020,4,Pending Trial,FIR/2020/028/0904,"[11, 199]"
+905,Belagavi,Fraud,Cheque fraud,2025-01-19,2025,4,Under Investigation,FIR/2025/022/0905,[52]
+906,Tumakuru,Theft,Vehicle theft,2024-06-18,2024,3,Closed - Convicted,FIR/2024/016/0906,"[72, 90]"
+907,Hassan,Theft,Vehicle theft,2022-03-26,2022,3,Under Investigation,FIR/2022/033/0907,"[319, 328]"
+908,Belagavi,Sexual Assault,Rape,2022-06-10,2022,5,Open,FIR/2022/022/0908,[25]
+909,Shivamogga,Drug Offence,Distribution,2020-02-18,2020,5,Open,FIR/2020/038/0909,[253]
+910,Shivamogga,Robbery,Armed robbery,2022-11-04,2022,5,Under Investigation,FIR/2022/037/0910,[119]
+911,Ballari,Drug Offence,Trafficking,2025-02-16,2025,5,Closed - Convicted,FIR/2025/030/0911,[159]
+912,Tumakuru,Theft,Vehicle theft,2021-12-26,2021,3,Open,FIR/2021/016/0912,[387]
+913,Shivamogga,Robbery,Mugging,2022-06-08,2022,5,Closed - Acquitted,FIR/2022/038/0913,[149]
+914,Belagavi,Fraud,Impersonation,2021-04-25,2021,4,Open,FIR/2021/020/0914,[231]
+915,Tumakuru,Theft,House break-in,2023-01-04,2023,3,Open,FIR/2023/014/0915,[351]
+916,Mysuru,Sexual Assault,Eve-teasing,2024-07-28,2024,5,Under Investigation,FIR/2024/012/0916,[320]
+917,Shivamogga,Assault,Gang fight,2021-08-14,2021,4,Closed - Convicted,FIR/2021/037/0917,"[228, 36]"
+918,Mysuru,Theft,Pickpocket,2024-07-24,2024,2,Closed - Convicted,FIR/2024/012/0918,[351]
+919,Bengaluru Urban,Fraud,Impersonation,2022-11-25,2022,3,Under Investigation,FIR/2022/002/0919,"[98, 175]"
+920,Bengaluru Urban,Theft,Chain snatching,2022-12-21,2022,2,Closed - Convicted,FIR/2022/004/0920,[175]
+921,Belagavi,Vandalism,Property destruction,2025-12-08,2025,3,Closed - Convicted,FIR/2025/023/0921,[68]
+922,Hassan,Robbery,Dacoity,2022-01-09,2022,5,Under Investigation,FIR/2022/035/0922,[39]
+923,Shivamogga,Cybercrime,Investment scam,2025-11-18,2025,4,Open,FIR/2025/037/0923,"[40, 129]"
+924,Kalaburagi,Robbery,Armed robbery,2024-10-15,2024,5,Under Investigation,FIR/2024/026/0924,[3]
+925,Mysuru,Cybercrime,Online fraud,2020-12-02,2020,3,Open,FIR/2020/010/0925,[142]
+926,Belagavi,Cybercrime,Online fraud,2021-02-04,2021,4,Under Investigation,FIR/2021/021/0926,[27]
+927,Mysuru,Theft,House break-in,2025-09-10,2025,2,Under Investigation,FIR/2025/013/0927,[330]
+928,Bengaluru Urban,Theft,House break-in,2025-08-10,2025,2,Pending Trial,FIR/2025/005/0928,[55]
+929,Shivamogga,Theft,Pickpocket,2021-09-25,2021,3,Closed - Convicted,FIR/2021/037/0929,[290]
+930,Shivamogga,Sexual Assault,Rape,2024-03-03,2024,5,Under Investigation,FIR/2024/038/0930,"[228, 43]"
+931,Mysuru,Theft,Chain snatching,2022-09-02,2022,2,Closed - Convicted,FIR/2022/012/0931,[280]
+932,Dharwad,Drug Offence,Trafficking,2025-05-20,2025,5,Closed - Convicted,FIR/2025/028/0932,[176]
+933,Belagavi,Theft,Pickpocket,2021-10-03,2021,3,Closed - Acquitted,FIR/2021/020/0933,"[332, 10, 329]"
+934,Bengaluru Urban,Cybercrime,Investment scam,2023-12-22,2023,3,Under Investigation,FIR/2023/001/0934,[356]
+935,Tumakuru,Theft,Pickpocket,2023-01-04,2023,3,Open,FIR/2023/015/0935,[364]
+936,Belagavi,Assault,Brawl,2020-02-17,2020,4,Open,FIR/2020/022/0936,[169]
+937,Belagavi,Cybercrime,Investment scam,2025-05-25,2025,4,Under Investigation,FIR/2025/021/0937,[87]
+938,Mysuru,Cybercrime,Online fraud,2020-06-04,2020,3,Under Investigation,FIR/2020/010/0938,[331]
+939,Bengaluru Urban,Drug Offence,Trafficking,2021-12-22,2021,4,Pending Trial,FIR/2021/004/0939,"[384, 32]"
+940,Shivamogga,Robbery,Armed robbery,2023-02-09,2023,5,Under Investigation,FIR/2023/037/0940,[353]
+941,Hassan,Theft,Vehicle theft,2022-10-05,2022,3,Open,FIR/2022/033/0941,"[348, 107]"
+942,Dakshina Kannada,Theft,House break-in,2022-02-20,2022,2,Open,FIR/2022/017/0942,[38]
+943,Belagavi,Assault,Gang fight,2020-08-09,2020,4,Open,FIR/2020/021/0943,[332]
+944,Bengaluru Urban,Theft,Vehicle theft,2025-09-22,2025,2,Closed - Convicted,FIR/2025/006/0944,[376]
+945,Udupi,Drug Offence,Trafficking,2021-03-26,2021,4,Open,FIR/2021/040/0945,"[201, 222, 119]"
+946,Dharwad,Theft,Chain snatching,2021-07-03,2021,3,Pending Trial,FIR/2021/028/0946,"[222, 122, 162]"
+947,Shivamogga,Cybercrime,Phishing,2024-09-16,2024,4,Closed - Convicted,FIR/2024/036/0947,[217]
+948,Dharwad,Drug Offence,Possession,2022-06-05,2022,5,Open,FIR/2022/027/0948,[305]
+949,Ballari,Drug Offence,Distribution,2023-12-14,2023,5,Closed - Convicted,FIR/2023/031/0949,[180]
+950,Bengaluru Urban,Assault,Domestic violence,2025-06-22,2025,3,Under Investigation,FIR/2025/001/0950,"[149, 230]"
+951,Bengaluru Urban,Kidnapping,Ransom,2020-07-22,2020,5,Closed - Convicted,FIR/2020/002/0951,[292]
+952,Ballari,Theft,Pickpocket,2024-11-15,2024,3,Under Investigation,FIR/2024/031/0952,"[173, 391]"
+953,Kalaburagi,Fraud,Land grab,2023-05-28,2023,4,Closed - Acquitted,FIR/2023/024/0953,"[108, 302]"
+954,Tumakuru,Drug Offence,Distribution,2025-05-07,2025,5,Under Investigation,FIR/2025/016/0954,[286]
+955,Mysuru,Theft,Pickpocket,2021-07-21,2021,2,Closed - Convicted,FIR/2021/010/0955,"[152, 303, 17]"
+956,Udupi,Assault,Gang fight,2021-07-07,2021,3,Closed - Convicted,FIR/2021/041/0956,"[145, 128]"
+957,Udupi,Kidnapping,Ransom,2025-07-07,2025,5,Closed - Convicted,FIR/2025/040/0957,"[212, 161, 139]"
+958,Kalaburagi,Theft,House break-in,2021-09-27,2021,3,Under Investigation,FIR/2021/025/0958,[20]
+959,Bengaluru Rural,Theft,Pickpocket,2024-02-20,2024,3,Open,FIR/2024/007/0959,[323]
+960,Bengaluru Rural,Fraud,Land grab,2021-06-04,2021,4,Open,FIR/2021/008/0960,"[299, 286]"
+961,Dakshina Kannada,Robbery,Armed robbery,2020-03-01,2020,4,Under Investigation,FIR/2020/019/0961,[279]
+962,Bengaluru Rural,Sexual Assault,Molestation,2021-09-16,2021,5,Under Investigation,FIR/2021/008/0962,[63]
+963,Bengaluru Urban,Murder,Gang rivalry,2021-02-21,2021,5,Under Investigation,FIR/2021/006/0963,"[337, 347, 307]"
+964,Tumakuru,Theft,House break-in,2021-01-16,2021,3,Closed - Convicted,FIR/2021/015/0964,"[288, 325, 54]"
+965,Bengaluru Urban,Robbery,Mugging,2020-06-06,2020,4,Under Investigation,FIR/2020/001/0965,[198]
+966,Kalaburagi,Theft,Chain snatching,2021-05-27,2021,3,Cold Case,FIR/2021/025/0966,"[233, 372]"
+967,Udupi,Sexual Assault,Eve-teasing,2025-01-16,2025,5,Under Investigation,FIR/2025/040/0967,[383]
+968,Mysuru,Assault,Gang fight,2023-12-07,2023,3,Cold Case,FIR/2023/011/0968,"[204, 124, 45]"
+969,Mysuru,Robbery,Mugging,2020-06-02,2020,4,Closed - Convicted,FIR/2020/011/0969,"[205, 238, 307]"
+970,Ballari,Theft,Vehicle theft,2024-07-18,2024,3,Under Investigation,FIR/2024/030/0970,[386]
+971,Bengaluru Urban,Assault,Brawl,2021-03-29,2021,3,Under Investigation,FIR/2021/003/0971,[19]
+972,Belagavi,Fraud,Impersonation,2025-01-07,2025,4,Cold Case,FIR/2025/022/0972,"[374, 209]"
+973,Kalaburagi,Theft,Pickpocket,2020-08-14,2020,3,Under Investigation,FIR/2020/024/0973,"[179, 110]"
+974,Tumakuru,Vandalism,Graffiti,2024-10-17,2024,3,Closed - Acquitted,FIR/2024/014/0974,[101]
+975,Mysuru,Fraud,Impersonation,2025-01-30,2025,3,Under Investigation,FIR/2025/010/0975,[296]
+976,Bengaluru Rural,Assault,Domestic violence,2023-08-01,2023,4,Pending Trial,FIR/2023/007/0976,[13]
+977,Hassan,Cybercrime,Investment scam,2020-03-04,2020,4,Open,FIR/2020/035/0977,[119]
+978,Kalaburagi,Kidnapping,Human trafficking,2021-09-10,2021,5,Closed - Convicted,FIR/2021/026/0978,[319]
+979,Bengaluru Urban,Fraud,Impersonation,2020-10-29,2020,3,Open,FIR/2020/006/0979,"[395, 383]"
+980,Hassan,Theft,Vehicle theft,2025-12-14,2025,3,Closed - Convicted,FIR/2025/033/0980,"[352, 363]"
+981,Hassan,Theft,Chain snatching,2022-09-30,2022,3,Open,FIR/2022/034/0981,"[36, 311]"
+982,Hassan,Drug Offence,Trafficking,2023-03-23,2023,5,Closed - Convicted,FIR/2023/034/0982,"[15, 80]"
+983,Udupi,Assault,Gang fight,2025-03-09,2025,3,Pending Trial,FIR/2025/040/0983,[35]
+984,Kalaburagi,Fraud,Cheque fraud,2021-12-17,2021,4,Closed - Convicted,FIR/2021/026/0984,"[291, 165]"
+985,Dakshina Kannada,Drug Offence,Possession,2024-10-24,2024,4,Under Investigation,FIR/2024/018/0985,"[39, 159]"
+986,Ballari,Assault,Road rage,2023-07-23,2023,4,Open,FIR/2023/032/0986,"[199, 358]"
+987,Kalaburagi,Kidnapping,Child abduction,2021-11-20,2021,5,Under Investigation,FIR/2021/025/0987,"[111, 75]"
+988,Shivamogga,Assault,Gang fight,2025-04-02,2025,4,Pending Trial,FIR/2025/038/0988,"[184, 251]"
+989,Bengaluru Urban,Theft,Chain snatching,2022-06-06,2022,2,Open,FIR/2022/006/0989,[182]
+990,Tumakuru,Theft,Pickpocket,2020-06-24,2020,3,Under Investigation,FIR/2020/014/0990,"[296, 86]"
+991,Hassan,Assault,Brawl,2021-12-04,2021,4,Open,FIR/2021/034/0991,"[279, 179, 77]"
+992,Dakshina Kannada,Fraud,Cheque fraud,2024-11-24,2024,3,Under Investigation,FIR/2024/017/0992,"[323, 203]"
+993,Bengaluru Urban,Theft,Pickpocket,2023-05-28,2023,2,Cold Case,FIR/2023/006/0993,"[107, 354]"
+994,Hassan,Theft,Vehicle theft,2023-01-17,2023,3,Closed - Acquitted,FIR/2023/034/0994,[105]
+995,Kalaburagi,Theft,Chain snatching,2024-10-12,2024,3,Under Investigation,FIR/2024/026/0995,[106]
+996,Ballari,Theft,House break-in,2023-04-03,2023,3,Closed - Convicted,FIR/2023/030/0996,[209]
+997,Belagavi,Theft,Pickpocket,2024-07-28,2024,3,Under Investigation,FIR/2024/023/0997,"[63, 169]"
+998,Bengaluru Urban,Robbery,Dacoity,2022-03-01,2022,4,Under Investigation,FIR/2022/004/0998,[30]
+999,Bengaluru Urban,Theft,House break-in,2021-10-13,2021,2,Under Investigation,FIR/2021/006/0999,[279]
+1000,Bengaluru Urban,Theft,House break-in,2025-12-25,2025,2,Closed - Convicted,FIR/2025/002/1000,[35]
+1001,Dakshina Kannada,Cybercrime,Phishing,2022-01-11,2022,3,Open,FIR/2022/019/1001,[254]
+1002,Belagavi,Drug Offence,Trafficking,2024-08-13,2024,5,Closed - Convicted,FIR/2024/020/1002,[200]
+1003,Mysuru,Theft,Vehicle theft,2022-04-05,2022,2,Under Investigation,FIR/2022/011/1003,"[101, 140, 235]"
+1004,Bengaluru Urban,Cybercrime,Investment scam,2023-02-24,2023,3,Under Investigation,FIR/2023/001/1004,"[310, 387]"
+1005,Tumakuru,Theft,Chain snatching,2025-10-27,2025,3,Under Investigation,FIR/2025/015/1005,"[288, 315]"
+1006,Ballari,Robbery,Armed robbery,2020-07-28,2020,5,Closed - Acquitted,FIR/2020/030/1006,[301]
+1007,Dakshina Kannada,Fraud,Insurance fraud,2023-02-09,2023,3,Under Investigation,FIR/2023/017/1007,"[381, 219]"
+1008,Bengaluru Urban,Kidnapping,Human trafficking,2022-11-27,2022,5,Under Investigation,FIR/2022/002/1008,"[169, 321]"
+1009,Dharwad,Assault,Domestic violence,2025-07-28,2025,4,Under Investigation,FIR/2025/029/1009,[159]
+1010,Bengaluru Rural,Fraud,Impersonation,2025-03-22,2025,4,Under Investigation,FIR/2025/007/1010,[14]
+1011,Hassan,Robbery,Armed robbery,2022-08-25,2022,5,Cold Case,FIR/2022/033/1011,[350]
+1012,Ballari,Theft,House break-in,2021-05-01,2021,3,Under Investigation,FIR/2021/030/1012,[66]
+1013,Belagavi,Robbery,Mugging,2025-01-23,2025,5,Under Investigation,FIR/2025/023/1013,[38]
+1014,Shivamogga,Theft,Pickpocket,2021-08-27,2021,3,Closed - Acquitted,FIR/2021/037/1014,[225]
+1015,Bengaluru Urban,Robbery,Mugging,2023-03-06,2023,4,Open,FIR/2023/002/1015,[190]
+1016,Ballari,Assault,Road rage,2022-06-05,2022,4,Under Investigation,FIR/2022/032/1016,[308]
+1017,Mysuru,Kidnapping,Child abduction,2020-03-12,2020,5,Pending Trial,FIR/2020/010/1017,"[347, 12, 206]"
+1018,Bengaluru Rural,Theft,Pickpocket,2022-04-28,2022,3,Open,FIR/2022/007/1018,[244]
+1019,Tumakuru,Assault,Brawl,2021-10-07,2021,4,Open,FIR/2021/015/1019,[173]
+1020,Bengaluru Rural,Murder,Domestic dispute,2025-03-12,2025,5,Closed - Convicted,FIR/2025/009/1020,[287]
+1021,Mysuru,Theft,Pickpocket,2020-11-20,2020,2,Open,FIR/2020/010/1021,[361]
+1022,Dharwad,Fraud,Cheque fraud,2024-10-13,2024,4,Under Investigation,FIR/2024/027/1022,"[91, 186, 237]"
+1023,Udupi,Theft,House break-in,2025-05-14,2025,2,Under Investigation,FIR/2025/039/1023,[315]
+1024,Hassan,Fraud,Land grab,2024-06-30,2024,4,Under Investigation,FIR/2024/033/1024,[14]
+1025,Kalaburagi,Assault,Brawl,2022-04-04,2022,4,Open,FIR/2022/026/1025,"[296, 189, 326]"
+1026,Bengaluru Rural,Assault,Road rage,2022-09-02,2022,4,Closed - Convicted,FIR/2022/009/1026,[296]
+1027,Ballari,Theft,Chain snatching,2025-06-13,2025,3,Under Investigation,FIR/2025/031/1027,"[29, 242]"
+1028,Dharwad,Cybercrime,Phishing,2024-08-15,2024,4,Closed - Convicted,FIR/2024/029/1028,"[293, 1, 27]"
+1029,Mysuru,Robbery,Mugging,2025-04-23,2025,4,Pending Trial,FIR/2025/010/1029,"[17, 42]"
+1030,Belagavi,Cybercrime,Investment scam,2023-08-09,2023,4,Open,FIR/2023/022/1030,"[86, 178]"
+1031,Dharwad,Theft,House break-in,2021-01-15,2021,3,Closed - Convicted,FIR/2021/029/1031,[228]
+1032,Kalaburagi,Drug Offence,Possession,2025-12-11,2025,5,Closed - Convicted,FIR/2025/025/1032,[337]
+1033,Udupi,Theft,Pickpocket,2022-05-16,2022,2,Closed - Convicted,FIR/2022/040/1033,[131]
+1034,Belagavi,Theft,Chain snatching,2021-03-23,2021,3,Under Investigation,FIR/2021/021/1034,"[191, 355]"
+1035,Belagavi,Assault,Domestic violence,2020-11-08,2020,4,Closed - Convicted,FIR/2020/021/1035,[338]
+1036,Mysuru,Theft,Chain snatching,2022-12-20,2022,2,Closed - Convicted,FIR/2022/010/1036,[172]
+1037,Bengaluru Rural,Drug Offence,Possession,2020-09-20,2020,5,Under Investigation,FIR/2020/007/1037,[157]
+1038,Dakshina Kannada,Cybercrime,Identity theft,2020-11-26,2020,3,Under Investigation,FIR/2020/017/1038,[139]
+1039,Udupi,Assault,Gang fight,2025-04-11,2025,3,Closed - Convicted,FIR/2025/040/1039,"[36, 121]"
+1040,Bengaluru Urban,Cybercrime,Investment scam,2022-01-15,2022,3,Open,FIR/2022/001/1040,[129]
+1041,Dakshina Kannada,Assault,Domestic violence,2024-09-24,2024,3,Open,FIR/2024/019/1041,[185]
+1042,Bengaluru Urban,Cybercrime,Phishing,2022-10-30,2022,3,Open,FIR/2022/002/1042,[362]
+1043,Ballari,Theft,Chain snatching,2021-10-25,2021,3,Open,FIR/2021/032/1043,"[54, 67]"
+1044,Bengaluru Urban,Sexual Assault,Rape,2020-11-13,2020,5,Closed - Convicted,FIR/2020/004/1044,[206]
+1045,Shivamogga,Cybercrime,Identity theft,2023-10-18,2023,4,Under Investigation,FIR/2023/036/1045,[222]
+1046,Hassan,Sexual Assault,Eve-teasing,2025-12-21,2025,5,Open,FIR/2025/033/1046,[113]
+1047,Tumakuru,Fraud,Impersonation,2025-11-12,2025,4,Under Investigation,FIR/2025/014/1047,[200]
+1048,Bengaluru Urban,Drug Offence,Possession,2020-01-26,2020,4,Under Investigation,FIR/2020/002/1048,[41]
+1049,Udupi,Drug Offence,Trafficking,2022-09-21,2022,4,Under Investigation,FIR/2022/041/1049,"[232, 256]"
+1050,Tumakuru,Theft,Vehicle theft,2025-03-08,2025,3,Closed - Convicted,FIR/2025/014/1050,[230]
+1051,Hassan,Cybercrime,Identity theft,2025-01-16,2025,4,Under Investigation,FIR/2025/034/1051,"[276, 36, 185]"
+1052,Kalaburagi,Cybercrime,Phishing,2023-02-14,2023,4,Pending Trial,FIR/2023/025/1052,[117]
+1053,Ballari,Sexual Assault,Rape,2020-04-28,2020,5,Open,FIR/2020/030/1053,"[161, 299]"
+1054,Tumakuru,Theft,Vehicle theft,2020-07-12,2020,3,Under Investigation,FIR/2020/014/1054,[370]
+1055,Belagavi,Sexual Assault,Eve-teasing,2020-11-06,2020,5,Under Investigation,FIR/2020/021/1055,[235]
+1056,Hassan,Drug Offence,Possession,2023-07-29,2023,5,Under Investigation,FIR/2023/033/1056,"[298, 342]"
+1057,Belagavi,Sexual Assault,Molestation,2024-05-03,2024,5,Pending Trial,FIR/2024/021/1057,[147]
+1058,Kalaburagi,Theft,Pickpocket,2025-01-30,2025,3,Closed - Convicted,FIR/2025/024/1058,"[202, 333]"
+1059,Dakshina Kannada,Robbery,Armed robbery,2022-04-17,2022,4,Under Investigation,FIR/2022/019/1059,"[135, 238]"
+1060,Mysuru,Drug Offence,Possession,2021-11-21,2021,4,Closed - Acquitted,FIR/2021/012/1060,[103]
+1061,Shivamogga,Sexual Assault,Rape,2021-11-05,2021,5,Closed - Acquitted,FIR/2021/036/1061,[245]
+1062,Bengaluru Urban,Theft,Pickpocket,2021-04-11,2021,2,Under Investigation,FIR/2021/001/1062,[258]
+1063,Ballari,Assault,Gang fight,2020-12-23,2020,4,Under Investigation,FIR/2020/030/1063,[14]
+1064,Shivamogga,Theft,Pickpocket,2025-12-03,2025,3,Closed - Convicted,FIR/2025/036/1064,[97]
+1065,Mysuru,Robbery,Dacoity,2022-04-27,2022,4,Pending Trial,FIR/2022/013/1065,"[205, 251]"
+1066,Shivamogga,Theft,Pickpocket,2025-09-04,2025,3,Pending Trial,FIR/2025/037/1066,[106]
+1067,Bengaluru Urban,Theft,Chain snatching,2024-05-19,2024,2,Closed - Acquitted,FIR/2024/005/1067,"[184, 363]"
+1068,Ballari,Kidnapping,Human trafficking,2020-11-10,2020,5,Closed - Convicted,FIR/2020/032/1068,[395]
+1069,Bengaluru Urban,Theft,House break-in,2024-07-07,2024,2,Under Investigation,FIR/2024/002/1069,[367]
+1070,Hassan,Fraud,Cheque fraud,2025-07-22,2025,4,Under Investigation,FIR/2025/034/1070,[153]
+1071,Hassan,Assault,Domestic violence,2022-09-23,2022,4,Closed - Convicted,FIR/2022/034/1071,[269]
+1072,Tumakuru,Cybercrime,Online fraud,2024-09-19,2024,4,Under Investigation,FIR/2024/014/1072,"[220, 254]"
+1073,Hassan,Theft,House break-in,2022-08-22,2022,3,Open,FIR/2022/035/1073,"[141, 265]"
+1074,Tumakuru,Theft,House break-in,2023-11-14,2023,3,Closed - Convicted,FIR/2023/015/1074,[155]
+1075,Belagavi,Drug Offence,Distribution,2024-04-02,2024,5,Closed - Convicted,FIR/2024/020/1075,[16]
+1076,Udupi,Theft,House break-in,2022-11-23,2022,2,Open,FIR/2022/041/1076,"[399, 119]"
+1077,Dakshina Kannada,Vandalism,Arson,2023-12-21,2023,2,Pending Trial,FIR/2023/018/1077,[45]
+1078,Hassan,Robbery,Dacoity,2025-04-15,2025,5,Closed - Convicted,FIR/2025/034/1078,"[228, 381, 107]"
+1079,Udupi,Assault,Domestic violence,2022-11-25,2022,3,Closed - Convicted,FIR/2022/041/1079,"[185, 17, 279]"
+1080,Udupi,Theft,House break-in,2022-02-12,2022,2,Closed - Convicted,FIR/2022/041/1080,[250]
+1081,Udupi,Drug Offence,Trafficking,2023-09-10,2023,4,Under Investigation,FIR/2023/040/1081,[357]
+1082,Bengaluru Urban,Cybercrime,Investment scam,2022-04-18,2022,3,Under Investigation,FIR/2022/005/1082,"[300, 95]"
+1083,Hassan,Cybercrime,Online fraud,2020-07-08,2020,4,Under Investigation,FIR/2020/033/1083,[350]
+1084,Shivamogga,Robbery,Mugging,2021-01-03,2021,5,Under Investigation,FIR/2021/037/1084,"[126, 161]"
+1085,Belagavi,Fraud,Impersonation,2021-05-25,2021,4,Under Investigation,FIR/2021/023/1085,[327]
+1086,Ballari,Kidnapping,Human trafficking,2025-11-07,2025,5,Under Investigation,FIR/2025/030/1086,"[62, 60]"
+1087,Hassan,Theft,Chain snatching,2024-01-27,2024,3,Under Investigation,FIR/2024/033/1087,[375]
+1088,Ballari,Vandalism,Arson,2025-07-22,2025,3,Open,FIR/2025/031/1088,"[175, 125]"
+1089,Mysuru,Drug Offence,Trafficking,2025-06-01,2025,4,Closed - Acquitted,FIR/2025/011/1089,"[76, 278]"
+1090,Hassan,Theft,Pickpocket,2020-01-05,2020,3,Closed - Convicted,FIR/2020/034/1090,"[304, 11]"
+1091,Dharwad,Drug Offence,Distribution,2022-07-09,2022,5,Open,FIR/2022/028/1091,[264]
+1092,Dharwad,Kidnapping,Ransom,2024-08-05,2024,5,Under Investigation,FIR/2024/027/1092,[175]
+1093,Hassan,Theft,Pickpocket,2025-01-03,2025,3,Open,FIR/2025/033/1093,"[21, 100, 158]"
+1094,Bengaluru Urban,Theft,Chain snatching,2022-11-13,2022,2,Closed - Convicted,FIR/2022/004/1094,[314]
+1095,Belagavi,Theft,Vehicle theft,2023-01-18,2023,3,Open,FIR/2023/022/1095,"[103, 247]"
+1096,Kalaburagi,Drug Offence,Trafficking,2022-05-05,2022,5,Under Investigation,FIR/2022/026/1096,[273]
+1097,Shivamogga,Theft,Pickpocket,2022-08-12,2022,3,Under Investigation,FIR/2022/038/1097,"[4, 279]"
+1098,Mysuru,Theft,Vehicle theft,2021-05-22,2021,2,Closed - Convicted,FIR/2021/013/1098,[205]
+1099,Tumakuru,Assault,Road rage,2021-04-10,2021,4,Closed - Convicted,FIR/2021/015/1099,"[322, 198, 152]"
+1100,Hassan,Fraud,Impersonation,2021-10-06,2021,4,Under Investigation,FIR/2021/035/1100,"[102, 332]"
+1101,Udupi,Fraud,Cheque fraud,2022-06-24,2022,3,Under Investigation,FIR/2022/041/1101,"[266, 112]"
+1102,Dharwad,Vandalism,Graffiti,2020-11-26,2020,3,Closed - Convicted,FIR/2020/027/1102,[378]
+1103,Ballari,Robbery,Armed robbery,2023-05-04,2023,5,Open,FIR/2023/032/1103,[371]
+1104,Belagavi,Assault,Gang fight,2022-09-18,2022,4,Open,FIR/2022/023/1104,[310]
+1105,Dakshina Kannada,Robbery,Mugging,2024-02-16,2024,4,Under Investigation,FIR/2024/019/1105,[379]
+1106,Mysuru,Robbery,Mugging,2025-03-04,2025,4,Under Investigation,FIR/2025/011/1106,[259]
+1107,Bengaluru Urban,Cybercrime,Phishing,2025-10-28,2025,3,Closed - Convicted,FIR/2025/003/1107,[382]
+1108,Hassan,Robbery,Mugging,2023-02-18,2023,5,Pending Trial,FIR/2023/033/1108,"[12, 307]"
+1109,Shivamogga,Theft,House break-in,2023-12-04,2023,3,Pending Trial,FIR/2023/036/1109,[154]
+1110,Bengaluru Urban,Drug Offence,Distribution,2023-08-26,2023,4,Closed - Convicted,FIR/2023/004/1110,[45]
+1111,Hassan,Assault,Gang fight,2023-01-25,2023,4,Closed - Convicted,FIR/2023/035/1111,[317]
+1112,Shivamogga,Cybercrime,Investment scam,2023-02-22,2023,4,Closed - Convicted,FIR/2023/037/1112,[397]
+1113,Kalaburagi,Theft,Vehicle theft,2025-08-28,2025,3,Under Investigation,FIR/2025/025/1113,"[215, 319]"
+1114,Dakshina Kannada,Assault,Brawl,2020-12-01,2020,3,Closed - Convicted,FIR/2020/018/1114,"[122, 373, 295]"
+1115,Udupi,Assault,Brawl,2020-06-22,2020,3,Closed - Acquitted,FIR/2020/041/1115,[279]
+1116,Mysuru,Assault,Gang fight,2022-03-01,2022,3,Pending Trial,FIR/2022/011/1116,[151]
+1117,Bengaluru Urban,Assault,Brawl,2022-02-15,2022,3,Under Investigation,FIR/2022/006/1117,[295]
+1118,Bengaluru Urban,Assault,Brawl,2023-06-28,2023,3,Open,FIR/2023/005/1118,"[286, 367]"
+1119,Tumakuru,Fraud,Cheque fraud,2022-03-08,2022,4,Closed - Convicted,FIR/2022/014/1119,"[396, 136]"
+1120,Kalaburagi,Theft,Chain snatching,2022-11-10,2022,3,Closed - Convicted,FIR/2022/025/1120,"[93, 213]"
+1121,Bengaluru Urban,Assault,Gang fight,2021-01-17,2021,3,Closed - Acquitted,FIR/2021/005/1121,[42]
+1122,Hassan,Drug Offence,Distribution,2021-07-09,2021,5,Cold Case,FIR/2021/033/1122,"[175, 308]"
+1123,Kalaburagi,Cybercrime,Investment scam,2020-07-17,2020,4,Closed - Convicted,FIR/2020/025/1123,"[112, 217]"
+1124,Bengaluru Urban,Murder,Gang rivalry,2025-08-08,2025,5,Open,FIR/2025/003/1124,[289]
+1125,Belagavi,Fraud,Cheque fraud,2024-08-22,2024,4,Open,FIR/2024/022/1125,[113]
+1126,Mysuru,Cybercrime,Online fraud,2023-04-04,2023,3,Under Investigation,FIR/2023/010/1126,"[92, 162, 98]"
+1127,Belagavi,Theft,Pickpocket,2024-05-19,2024,3,Closed - Convicted,FIR/2024/023/1127,[151]
+1128,Kalaburagi,Theft,Chain snatching,2024-05-08,2024,3,Under Investigation,FIR/2024/025/1128,[223]
+1129,Udupi,Vandalism,Arson,2024-08-18,2024,2,Open,FIR/2024/041/1129,"[382, 252]"
+1130,Belagavi,Theft,Vehicle theft,2022-04-11,2022,3,Closed - Convicted,FIR/2022/021/1130,[165]
+1131,Belagavi,Drug Offence,Possession,2024-01-14,2024,5,Closed - Convicted,FIR/2024/022/1131,"[264, 140]"
+1132,Tumakuru,Theft,Pickpocket,2020-01-28,2020,3,Closed - Convicted,FIR/2020/016/1132,"[382, 116, 372]"
+1133,Ballari,Assault,Road rage,2022-03-17,2022,4,Under Investigation,FIR/2022/032/1133,"[78, 353]"
+1134,Shivamogga,Fraud,Cheque fraud,2025-08-19,2025,4,Closed - Convicted,FIR/2025/037/1134,[160]
+1135,Kalaburagi,Assault,Gang fight,2023-03-02,2023,4,Under Investigation,FIR/2023/024/1135,[273]
+1136,Bengaluru Rural,Theft,Chain snatching,2025-11-26,2025,3,Pending Trial,FIR/2025/008/1136,"[129, 173, 188]"
+1137,Dharwad,Robbery,Mugging,2020-06-30,2020,5,Under Investigation,FIR/2020/028/1137,"[257, 229]"
+1138,Shivamogga,Robbery,Armed robbery,2021-02-24,2021,5,Closed - Convicted,FIR/2021/036/1138,"[18, 247]"
+1139,Belagavi,Theft,Chain snatching,2023-06-06,2023,3,Under Investigation,FIR/2023/023/1139,[314]
+1140,Dharwad,Theft,Chain snatching,2025-03-29,2025,3,Closed - Convicted,FIR/2025/029/1140,"[116, 151]"
+1141,Udupi,Theft,Pickpocket,2025-05-04,2025,2,Under Investigation,FIR/2025/041/1141,"[60, 188]"
+1142,Ballari,Sexual Assault,Eve-teasing,2020-07-03,2020,5,Under Investigation,FIR/2020/032/1142,"[136, 286]"
+1143,Hassan,Theft,Chain snatching,2025-03-12,2025,3,Open,FIR/2025/034/1143,[114]
+1144,Mysuru,Fraud,Land grab,2021-05-07,2021,3,Closed - Convicted,FIR/2021/011/1144,"[109, 258]"
+1145,Udupi,Theft,Pickpocket,2023-05-11,2023,2,Pending Trial,FIR/2023/039/1145,[340]
+1146,Bengaluru Rural,Theft,House break-in,2022-12-19,2022,3,Open,FIR/2022/007/1146,"[47, 58, 267]"
+1147,Tumakuru,Assault,Brawl,2025-04-24,2025,4,Closed - Convicted,FIR/2025/016/1147,"[130, 321]"
+1148,Shivamogga,Fraud,Insurance fraud,2022-11-22,2022,4,Open,FIR/2022/036/1148,"[107, 391, 210]"
+1149,Ballari,Robbery,Armed robbery,2024-01-18,2024,5,Pending Trial,FIR/2024/032/1149,[305]
+1150,Bengaluru Rural,Theft,Pickpocket,2025-06-30,2025,3,Under Investigation,FIR/2025/009/1150,[313]
+1151,Mysuru,Drug Offence,Trafficking,2020-02-22,2020,4,Open,FIR/2020/011/1151,"[197, 398]"
+1152,Shivamogga,Kidnapping,Child abduction,2025-05-25,2025,5,Closed - Convicted,FIR/2025/037/1152,"[196, 237, 342]"
+1153,Ballari,Theft,House break-in,2022-07-05,2022,3,Closed - Acquitted,FIR/2022/030/1153,[82]
+1154,Udupi,Theft,Chain snatching,2025-03-27,2025,2,Open,FIR/2025/040/1154,[239]
+1155,Dharwad,Assault,Gang fight,2025-09-13,2025,4,Under Investigation,FIR/2025/028/1155,"[18, 388]"
+1156,Mysuru,Vandalism,Graffiti,2023-01-26,2023,2,Under Investigation,FIR/2023/013/1156,[253]
+1157,Kalaburagi,Robbery,Mugging,2022-12-21,2022,5,Under Investigation,FIR/2022/025/1157,"[141, 227]"
+1158,Udupi,Cybercrime,Phishing,2025-11-17,2025,3,Closed - Acquitted,FIR/2025/039/1158,[14]
+1159,Tumakuru,Theft,House break-in,2024-07-08,2024,3,Under Investigation,FIR/2024/014/1159,"[156, 380]"
+1160,Bengaluru Urban,Robbery,Dacoity,2024-05-01,2024,4,Closed - Acquitted,FIR/2024/006/1160,[24]
+1161,Kalaburagi,Assault,Gang fight,2022-12-27,2022,4,Closed - Convicted,FIR/2022/026/1161,[112]
+1162,Shivamogga,Theft,Pickpocket,2020-08-06,2020,3,Pending Trial,FIR/2020/037/1162,"[57, 350]"
+1163,Udupi,Assault,Domestic violence,2022-08-24,2022,3,Under Investigation,FIR/2022/041/1163,[336]
+1164,Mysuru,Robbery,Armed robbery,2025-03-29,2025,4,Open,FIR/2025/012/1164,"[31, 247]"
+1165,Tumakuru,Assault,Domestic violence,2022-02-07,2022,4,Under Investigation,FIR/2022/014/1165,"[345, 53, 359]"
+1166,Hassan,Drug Offence,Possession,2025-06-27,2025,5,Open,FIR/2025/033/1166,"[187, 61]"
+1167,Belagavi,Assault,Road rage,2025-09-29,2025,4,Closed - Convicted,FIR/2025/020/1167,[110]
+1168,Ballari,Theft,Pickpocket,2020-02-10,2020,3,Pending Trial,FIR/2020/031/1168,[340]
+1169,Hassan,Fraud,Insurance fraud,2022-12-30,2022,4,Closed - Convicted,FIR/2022/033/1169,"[111, 13]"
+1170,Belagavi,Theft,Pickpocket,2021-05-23,2021,3,Under Investigation,FIR/2021/022/1170,"[311, 307]"
+1171,Belagavi,Theft,Pickpocket,2022-09-29,2022,3,Open,FIR/2022/023/1171,[31]
+1172,Belagavi,Theft,House break-in,2021-06-08,2021,3,Closed - Acquitted,FIR/2021/021/1172,"[355, 197]"
+1173,Bengaluru Urban,Sexual Assault,Rape,2023-05-02,2023,5,Pending Trial,FIR/2023/004/1173,[249]
+1174,Belagavi,Theft,Pickpocket,2024-03-14,2024,3,Under Investigation,FIR/2024/021/1174,"[71, 224]"
+1175,Dharwad,Drug Offence,Distribution,2020-11-20,2020,5,Closed - Convicted,FIR/2020/027/1175,[295]
+1176,Bengaluru Urban,Fraud,Insurance fraud,2025-09-30,2025,3,Under Investigation,FIR/2025/001/1176,[16]
+1177,Dharwad,Assault,Road rage,2023-11-20,2023,4,Open,FIR/2023/027/1177,"[261, 262]"
+1178,Dharwad,Cybercrime,Investment scam,2023-01-17,2023,4,Closed - Convicted,FIR/2023/029/1178,[112]
+1179,Bengaluru Urban,Theft,Pickpocket,2023-03-13,2023,2,Closed - Convicted,FIR/2023/003/1179,[353]
+1180,Shivamogga,Robbery,Mugging,2025-06-24,2025,5,Closed - Convicted,FIR/2025/037/1180,[87]
+1181,Mysuru,Assault,Gang fight,2024-06-15,2024,3,Open,FIR/2024/010/1181,"[356, 322, 104]"
+1182,Belagavi,Robbery,Mugging,2024-01-29,2024,5,Under Investigation,FIR/2024/023/1182,"[340, 110, 105]"
+1183,Bengaluru Urban,Theft,Chain snatching,2020-07-27,2020,2,Closed - Convicted,FIR/2020/006/1183,"[287, 165]"
+1184,Bengaluru Urban,Drug Offence,Distribution,2022-09-20,2022,4,Under Investigation,FIR/2022/003/1184,"[266, 260, 280]"
+1185,Kalaburagi,Fraud,Land grab,2020-06-28,2020,4,Closed - Convicted,FIR/2020/024/1185,"[376, 122]"
+1186,Hassan,Assault,Gang fight,2025-10-25,2025,4,Closed - Convicted,FIR/2025/035/1186,[153]
+1187,Bengaluru Rural,Drug Offence,Distribution,2022-08-10,2022,5,Under Investigation,FIR/2022/009/1187,"[223, 150]"
+1188,Mysuru,Drug Offence,Possession,2025-07-20,2025,4,Closed - Acquitted,FIR/2025/013/1188,"[266, 48]"
+1189,Hassan,Assault,Brawl,2023-06-07,2023,4,Under Investigation,FIR/2023/034/1189,"[172, 128]"
+1190,Udupi,Robbery,Dacoity,2020-02-15,2020,4,Cold Case,FIR/2020/041/1190,[215]
+1191,Tumakuru,Cybercrime,Identity theft,2022-12-26,2022,4,Cold Case,FIR/2022/016/1191,[118]
+1192,Hassan,Vandalism,Graffiti,2025-08-15,2025,3,Under Investigation,FIR/2025/034/1192,[167]
+1193,Ballari,Assault,Brawl,2020-08-09,2020,4,Under Investigation,FIR/2020/030/1193,"[246, 334]"
+1194,Bengaluru Rural,Theft,Chain snatching,2023-12-25,2023,3,Under Investigation,FIR/2023/007/1194,[45]
+1195,Udupi,Assault,Road rage,2020-03-29,2020,3,Cold Case,FIR/2020/041/1195,"[281, 164]"
+1196,Ballari,Sexual Assault,Rape,2022-04-18,2022,5,Open,FIR/2022/031/1196,"[66, 107]"
+1197,Bengaluru Urban,Theft,Vehicle theft,2021-06-03,2021,2,Open,FIR/2021/003/1197,"[152, 298]"
+1198,Belagavi,Cybercrime,Investment scam,2021-01-26,2021,4,Pending Trial,FIR/2021/023/1198,"[23, 160]"
+1199,Bengaluru Urban,Assault,Domestic violence,2021-07-27,2021,3,Under Investigation,FIR/2021/001/1199,"[236, 57, 145]"
+1200,Mysuru,Robbery,Mugging,2023-12-10,2023,4,Under Investigation,FIR/2023/012/1200,"[183, 174, 262]"
+1201,Tumakuru,Robbery,Mugging,2020-08-23,2020,5,Under Investigation,FIR/2020/016/1201,"[384, 351, 224]"
+1202,Bengaluru Urban,Fraud,Impersonation,2022-04-09,2022,3,Closed - Convicted,FIR/2022/006/1202,[357]
+1203,Dharwad,Robbery,Armed robbery,2024-12-16,2024,5,Closed - Convicted,FIR/2024/027/1203,[76]
+1204,Bengaluru Rural,Assault,Domestic violence,2020-05-21,2020,4,Closed - Convicted,FIR/2020/008/1204,"[279, 259]"
+1205,Tumakuru,Vandalism,Property destruction,2022-09-02,2022,3,Pending Trial,FIR/2022/015/1205,[359]
+1206,Dharwad,Theft,Vehicle theft,2021-01-27,2021,3,Closed - Convicted,FIR/2021/029/1206,[95]
+1207,Udupi,Fraud,Impersonation,2021-01-14,2021,3,Open,FIR/2021/041/1207,[194]
+1208,Tumakuru,Theft,Pickpocket,2020-08-22,2020,3,Open,FIR/2020/016/1208,"[311, 394]"
+1209,Ballari,Theft,House break-in,2023-05-13,2023,3,Open,FIR/2023/032/1209,"[182, 77, 379]"
+1210,Kalaburagi,Theft,Pickpocket,2025-04-04,2025,3,Closed - Convicted,FIR/2025/026/1210,"[231, 57]"
+1211,Bengaluru Urban,Theft,Chain snatching,2025-09-30,2025,2,Closed - Acquitted,FIR/2025/005/1211,"[224, 2]"
+1212,Bengaluru Urban,Murder,Domestic dispute,2025-08-08,2025,5,Closed - Acquitted,FIR/2025/004/1212,"[343, 342]"
+1213,Ballari,Theft,Chain snatching,2025-09-05,2025,3,Open,FIR/2025/030/1213,"[396, 377]"
+1214,Kalaburagi,Robbery,Dacoity,2021-04-04,2021,5,Closed - Convicted,FIR/2021/024/1214,"[62, 105, 189]"
+1215,Belagavi,Theft,Chain snatching,2024-01-01,2024,3,Closed - Convicted,FIR/2024/023/1215,[328]
+1216,Hassan,Assault,Road rage,2025-08-06,2025,4,Under Investigation,FIR/2025/033/1216,"[348, 171]"
+1217,Bengaluru Rural,Theft,Vehicle theft,2020-05-27,2020,3,Closed - Convicted,FIR/2020/008/1217,[296]
+1218,Tumakuru,Robbery,Dacoity,2020-06-02,2020,5,Closed - Convicted,FIR/2020/014/1218,[165]
+1219,Mysuru,Assault,Domestic violence,2020-08-06,2020,3,Under Investigation,FIR/2020/012/1219,[259]
+1220,Bengaluru Rural,Assault,Domestic violence,2021-06-06,2021,4,Closed - Convicted,FIR/2021/008/1220,[5]
+1221,Bengaluru Urban,Robbery,Mugging,2025-07-20,2025,4,Under Investigation,FIR/2025/004/1221,[65]
+1222,Belagavi,Assault,Brawl,2021-07-30,2021,4,Under Investigation,FIR/2021/022/1222,"[195, 303]"
+1223,Shivamogga,Theft,Chain snatching,2025-03-01,2025,3,Under Investigation,FIR/2025/037/1223,[140]
+1224,Bengaluru Urban,Theft,Chain snatching,2025-04-25,2025,2,Under Investigation,FIR/2025/002/1224,[1]
+1225,Udupi,Cybercrime,Identity theft,2021-09-29,2021,3,Under Investigation,FIR/2021/040/1225,[158]
+1226,Kalaburagi,Theft,Pickpocket,2024-08-14,2024,3,Pending Trial,FIR/2024/026/1226,[172]
+1227,Udupi,Drug Offence,Possession,2021-08-13,2021,4,Under Investigation,FIR/2021/040/1227,[228]
+1228,Dakshina Kannada,Assault,Brawl,2020-07-26,2020,3,Open,FIR/2020/017/1228,"[40, 27]"
+1229,Bengaluru Urban,Drug Offence,Possession,2021-11-29,2021,4,Closed - Acquitted,FIR/2021/006/1229,[22]
+1230,Mysuru,Assault,Road rage,2020-02-20,2020,3,Under Investigation,FIR/2020/013/1230,[221]
+1231,Shivamogga,Theft,Pickpocket,2023-09-10,2023,3,Closed - Convicted,FIR/2023/036/1231,"[60, 330]"
+1232,Bengaluru Urban,Drug Offence,Possession,2025-10-03,2025,4,Pending Trial,FIR/2025/001/1232,[146]
+1233,Belagavi,Sexual Assault,Molestation,2020-07-30,2020,5,Under Investigation,FIR/2020/020/1233,"[258, 263]"
+1234,Bengaluru Rural,Theft,Chain snatching,2025-02-15,2025,3,Pending Trial,FIR/2025/008/1234,[140]
+1235,Bengaluru Urban,Sexual Assault,Molestation,2022-02-20,2022,5,Under Investigation,FIR/2022/002/1235,[274]
+1236,Kalaburagi,Theft,Chain snatching,2025-05-06,2025,3,Under Investigation,FIR/2025/026/1236,[127]
+1237,Bengaluru Urban,Robbery,Armed robbery,2022-03-21,2022,4,Pending Trial,FIR/2022/002/1237,[362]
+1238,Dharwad,Cybercrime,Identity theft,2023-04-11,2023,4,Closed - Convicted,FIR/2023/029/1238,"[190, 38]"
+1239,Dakshina Kannada,Murder,Hired killing,2025-12-18,2025,5,Closed - Convicted,FIR/2025/019/1239,[371]
+1240,Mysuru,Fraud,Land grab,2024-04-10,2024,3,Open,FIR/2024/011/1240,[334]
+1241,Tumakuru,Theft,House break-in,2022-08-21,2022,3,Closed - Convicted,FIR/2022/015/1241,[42]
+1242,Bengaluru Urban,Assault,Road rage,2020-01-26,2020,3,Under Investigation,FIR/2020/001/1242,[296]
+1243,Tumakuru,Assault,Brawl,2023-08-25,2023,4,Closed - Convicted,FIR/2023/016/1243,[184]
+1244,Mysuru,Drug Offence,Distribution,2023-09-03,2023,4,Under Investigation,FIR/2023/013/1244,"[182, 57]"
+1245,Dharwad,Theft,House break-in,2020-02-10,2020,3,Closed - Acquitted,FIR/2020/028/1245,"[73, 122]"
+1246,Mysuru,Murder,Domestic dispute,2022-06-05,2022,5,Closed - Convicted,FIR/2022/013/1246,[270]
+1247,Bengaluru Rural,Theft,Vehicle theft,2024-12-12,2024,3,Pending Trial,FIR/2024/008/1247,[112]
+1248,Hassan,Robbery,Armed robbery,2020-08-08,2020,5,Open,FIR/2020/033/1248,[14]
+1249,Bengaluru Urban,Cybercrime,Online fraud,2021-06-12,2021,3,Open,FIR/2021/006/1249,[230]
+1250,Mysuru,Theft,Pickpocket,2023-02-27,2023,2,Closed - Convicted,FIR/2023/013/1250,[66]
+1251,Bengaluru Rural,Theft,House break-in,2020-09-28,2020,3,Under Investigation,FIR/2020/007/1251,[150]
+1252,Mysuru,Cybercrime,Identity theft,2022-08-08,2022,3,Closed - Acquitted,FIR/2022/010/1252,[44]
+1253,Shivamogga,Sexual Assault,Rape,2025-07-04,2025,5,Closed - Convicted,FIR/2025/036/1253,[246]
+1254,Udupi,Fraud,Cheque fraud,2023-02-11,2023,3,Closed - Convicted,FIR/2023/041/1254,[175]
+1255,Bengaluru Urban,Assault,Gang fight,2023-06-30,2023,3,Pending Trial,FIR/2023/002/1255,[249]
+1256,Bengaluru Rural,Theft,House break-in,2023-06-06,2023,3,Under Investigation,FIR/2023/009/1256,"[162, 129]"
+1257,Ballari,Vandalism,Property destruction,2023-12-25,2023,3,Closed - Convicted,FIR/2023/030/1257,"[184, 350]"
+1258,Dharwad,Drug Offence,Distribution,2024-08-19,2024,5,Closed - Convicted,FIR/2024/029/1258,"[301, 85, 330]"
+1259,Bengaluru Urban,Drug Offence,Distribution,2023-06-25,2023,4,Under Investigation,FIR/2023/002/1259,[55]
+1260,Belagavi,Assault,Gang fight,2025-06-03,2025,4,Under Investigation,FIR/2025/020/1260,[395]
+1261,Bengaluru Rural,Assault,Gang fight,2020-02-26,2020,4,Open,FIR/2020/008/1261,[151]
+1262,Shivamogga,Vandalism,Graffiti,2022-11-16,2022,3,Under Investigation,FIR/2022/037/1262,"[134, 117]"
+1263,Dakshina Kannada,Robbery,Dacoity,2021-10-20,2021,4,Under Investigation,FIR/2021/017/1263,"[349, 99, 31]"
+1264,Kalaburagi,Theft,Pickpocket,2021-11-11,2021,3,Closed - Convicted,FIR/2021/024/1264,[139]
+1265,Ballari,Theft,House break-in,2022-05-10,2022,3,Open,FIR/2022/031/1265,[38]
+1266,Ballari,Theft,Chain snatching,2022-04-15,2022,3,Cold Case,FIR/2022/032/1266,"[159, 136, 84]"
+1267,Bengaluru Rural,Robbery,Mugging,2021-05-06,2021,5,Closed - Convicted,FIR/2021/009/1267,"[293, 367]"
+1268,Belagavi,Theft,House break-in,2021-09-23,2021,3,Closed - Convicted,FIR/2021/021/1268,[139]
+1269,Belagavi,Assault,Domestic violence,2023-09-27,2023,4,Pending Trial,FIR/2023/023/1269,"[162, 24]"
+1270,Bengaluru Rural,Robbery,Mugging,2025-04-22,2025,5,Under Investigation,FIR/2025/009/1270,[136]
+1271,Hassan,Sexual Assault,Rape,2023-05-04,2023,5,Pending Trial,FIR/2023/033/1271,"[107, 255]"
+1272,Bengaluru Rural,Theft,Pickpocket,2022-11-07,2022,3,Under Investigation,FIR/2022/007/1272,[102]
+1273,Mysuru,Fraud,Insurance fraud,2025-04-03,2025,3,Closed - Convicted,FIR/2025/010/1273,"[54, 362]"
+1274,Tumakuru,Drug Offence,Distribution,2023-05-02,2023,5,Under Investigation,FIR/2023/015/1274,"[80, 236, 286]"
+1275,Dakshina Kannada,Robbery,Mugging,2023-12-22,2023,4,Under Investigation,FIR/2023/017/1275,[230]
+1276,Hassan,Theft,Vehicle theft,2023-02-20,2023,3,Closed - Acquitted,FIR/2023/034/1276,"[67, 244]"
+1277,Dakshina Kannada,Drug Offence,Trafficking,2023-10-09,2023,4,Closed - Acquitted,FIR/2023/018/1277,[63]
+1278,Dakshina Kannada,Cybercrime,Phishing,2023-12-31,2023,3,Open,FIR/2023/019/1278,[400]
+1279,Udupi,Vandalism,Graffiti,2022-03-03,2022,2,Open,FIR/2022/041/1279,"[395, 383]"
+1280,Mysuru,Theft,Vehicle theft,2022-10-26,2022,2,Pending Trial,FIR/2022/011/1280,[176]
+1281,Bengaluru Urban,Assault,Domestic violence,2020-09-25,2020,3,Closed - Acquitted,FIR/2020/001/1281,[244]
+1282,Mysuru,Murder,Property dispute,2020-12-16,2020,5,Closed - Acquitted,FIR/2020/013/1282,[354]
+1283,Bengaluru Urban,Cybercrime,Investment scam,2021-09-09,2021,3,Open,FIR/2021/001/1283,[386]
+1284,Bengaluru Urban,Theft,Vehicle theft,2020-11-04,2020,2,Open,FIR/2020/003/1284,"[180, 59]"
+1285,Hassan,Theft,Chain snatching,2020-01-13,2020,3,Closed - Convicted,FIR/2020/035/1285,"[376, 144, 63]"
+1286,Ballari,Robbery,Dacoity,2023-10-16,2023,5,Closed - Convicted,FIR/2023/032/1286,[317]
+1287,Belagavi,Theft,Pickpocket,2023-03-25,2023,3,Under Investigation,FIR/2023/022/1287,"[139, 392]"
+1288,Dakshina Kannada,Cybercrime,Phishing,2022-04-04,2022,3,Pending Trial,FIR/2022/017/1288,"[386, 194, 230]"
+1289,Kalaburagi,Assault,Gang fight,2023-01-13,2023,4,Under Investigation,FIR/2023/024/1289,"[224, 235]"
+1290,Udupi,Sexual Assault,Molestation,2025-02-04,2025,5,Closed - Convicted,FIR/2025/040/1290,"[57, 221]"
+1291,Dharwad,Assault,Road rage,2024-12-08,2024,4,Cold Case,FIR/2024/029/1291,[261]
+1292,Mysuru,Assault,Domestic violence,2023-11-03,2023,3,Closed - Convicted,FIR/2023/011/1292,[38]
+1293,Belagavi,Fraud,Cheque fraud,2024-02-13,2024,4,Under Investigation,FIR/2024/023/1293,[4]
+1294,Tumakuru,Theft,House break-in,2020-10-26,2020,3,Pending Trial,FIR/2020/014/1294,[166]
+1295,Bengaluru Urban,Drug Offence,Possession,2024-10-11,2024,4,Closed - Convicted,FIR/2024/002/1295,[123]
+1296,Ballari,Vandalism,Graffiti,2022-03-17,2022,3,Open,FIR/2022/032/1296,"[196, 123]"
+1297,Belagavi,Fraud,Insurance fraud,2022-11-10,2022,4,Under Investigation,FIR/2022/020/1297,[277]
+1298,Hassan,Assault,Domestic violence,2024-09-09,2024,4,Pending Trial,FIR/2024/033/1298,[105]
+1299,Bengaluru Urban,Theft,Pickpocket,2022-05-16,2022,2,Under Investigation,FIR/2022/002/1299,[400]
+1300,Ballari,Cybercrime,Investment scam,2024-05-18,2024,4,Closed - Convicted,FIR/2024/030/1300,[51]
+1301,Kalaburagi,Kidnapping,Child abduction,2024-11-08,2024,5,Closed - Convicted,FIR/2024/026/1301,[65]
+1302,Bengaluru Urban,Assault,Brawl,2023-03-23,2023,3,Under Investigation,FIR/2023/005/1302,[250]
+1303,Shivamogga,Robbery,Armed robbery,2024-08-23,2024,5,Closed - Acquitted,FIR/2024/036/1303,[270]
+1304,Mysuru,Assault,Domestic violence,2021-10-26,2021,3,Open,FIR/2021/013/1304,[291]
+1305,Dakshina Kannada,Assault,Road rage,2023-11-06,2023,3,Under Investigation,FIR/2023/017/1305,[202]
+1306,Hassan,Theft,Pickpocket,2025-01-29,2025,3,Closed - Convicted,FIR/2025/034/1306,"[337, 124, 169]"
+1307,Shivamogga,Robbery,Dacoity,2024-11-26,2024,5,Closed - Convicted,FIR/2024/037/1307,[350]
+1308,Dharwad,Theft,Chain snatching,2023-06-09,2023,3,Closed - Acquitted,FIR/2023/028/1308,[351]
+1309,Mysuru,Assault,Brawl,2021-01-05,2021,3,Closed - Convicted,FIR/2021/013/1309,"[311, 389]"
+1310,Ballari,Theft,Vehicle theft,2021-05-23,2021,3,Under Investigation,FIR/2021/030/1310,[196]
+1311,Dharwad,Theft,Vehicle theft,2022-05-18,2022,3,Open,FIR/2022/027/1311,[66]
+1312,Hassan,Fraud,Cheque fraud,2023-01-25,2023,4,Under Investigation,FIR/2023/034/1312,"[178, 26]"
+1313,Shivamogga,Cybercrime,Investment scam,2020-04-10,2020,4,Closed - Convicted,FIR/2020/038/1313,[318]
+1314,Bengaluru Rural,Drug Offence,Trafficking,2025-04-28,2025,5,Pending Trial,FIR/2025/009/1314,[34]
+1315,Dakshina Kannada,Assault,Brawl,2022-01-06,2022,3,Open,FIR/2022/019/1315,[396]
+1316,Belagavi,Theft,Pickpocket,2022-04-30,2022,3,Pending Trial,FIR/2022/023/1316,[242]
+1317,Ballari,Theft,Pickpocket,2021-06-23,2021,3,Under Investigation,FIR/2021/031/1317,[308]
+1318,Bengaluru Urban,Kidnapping,Ransom,2020-12-11,2020,5,Open,FIR/2020/006/1318,[362]
+1319,Tumakuru,Robbery,Mugging,2022-10-25,2022,5,Closed - Convicted,FIR/2022/014/1319,[48]
+1320,Dharwad,Robbery,Dacoity,2022-09-05,2022,5,Under Investigation,FIR/2022/029/1320,"[229, 280, 164]"
+1321,Bengaluru Urban,Sexual Assault,Eve-teasing,2024-09-28,2024,5,Closed - Convicted,FIR/2024/003/1321,[244]
+1322,Ballari,Cybercrime,Identity theft,2023-03-30,2023,4,Pending Trial,FIR/2023/030/1322,[194]
+1323,Mysuru,Robbery,Mugging,2023-07-04,2023,4,Under Investigation,FIR/2023/013/1323,"[188, 56, 374]"
+1324,Belagavi,Fraud,Cheque fraud,2020-06-20,2020,4,Under Investigation,FIR/2020/021/1324,[162]
+1325,Mysuru,Vandalism,Property destruction,2023-08-28,2023,2,Under Investigation,FIR/2023/012/1325,"[369, 102]"
+1326,Belagavi,Theft,Vehicle theft,2025-04-16,2025,3,Closed - Convicted,FIR/2025/020/1326,[74]
+1327,Udupi,Robbery,Armed robbery,2023-06-05,2023,4,Pending Trial,FIR/2023/041/1327,"[347, 331]"
+1328,Dakshina Kannada,Drug Offence,Trafficking,2025-02-18,2025,4,Under Investigation,FIR/2025/019/1328,[156]
+1329,Bengaluru Urban,Cybercrime,Phishing,2022-05-11,2022,3,Under Investigation,FIR/2022/001/1329,"[9, 272, 168]"
+1330,Mysuru,Theft,Vehicle theft,2023-09-03,2023,2,Closed - Convicted,FIR/2023/010/1330,[212]
+1331,Tumakuru,Theft,House break-in,2024-10-29,2024,3,Cold Case,FIR/2024/016/1331,[374]
+1332,Shivamogga,Robbery,Dacoity,2025-10-30,2025,5,Pending Trial,FIR/2025/036/1332,[129]
+1333,Bengaluru Urban,Assault,Gang fight,2023-08-20,2023,3,Under Investigation,FIR/2023/006/1333,"[277, 117]"
+1334,Dakshina Kannada,Assault,Brawl,2021-07-07,2021,3,Closed - Acquitted,FIR/2021/018/1334,"[127, 324]"
+1335,Kalaburagi,Theft,Pickpocket,2021-09-19,2021,3,Under Investigation,FIR/2021/024/1335,[203]
+1336,Bengaluru Urban,Theft,Pickpocket,2024-10-12,2024,2,Under Investigation,FIR/2024/003/1336,"[126, 51]"
+1337,Bengaluru Urban,Cybercrime,Online fraud,2025-03-11,2025,3,Pending Trial,FIR/2025/001/1337,"[151, 159]"
+1338,Ballari,Robbery,Dacoity,2021-04-17,2021,5,Open,FIR/2021/032/1338,[6]
+1339,Bengaluru Urban,Fraud,Land grab,2023-03-05,2023,3,Closed - Convicted,FIR/2023/001/1339,[195]
+1340,Hassan,Theft,House break-in,2022-02-04,2022,3,Under Investigation,FIR/2022/035/1340,[84]
+1341,Tumakuru,Theft,Chain snatching,2025-07-16,2025,3,Open,FIR/2025/014/1341,[58]
+1342,Hassan,Robbery,Mugging,2021-11-24,2021,5,Open,FIR/2021/033/1342,"[154, 43]"
+1343,Hassan,Theft,Pickpocket,2020-09-05,2020,3,Pending Trial,FIR/2020/034/1343,[257]
+1344,Dakshina Kannada,Assault,Gang fight,2020-07-21,2020,3,Under Investigation,FIR/2020/017/1344,"[202, 140]"
+1345,Dharwad,Theft,Chain snatching,2022-09-19,2022,3,Open,FIR/2022/029/1345,"[121, 67]"
+1346,Kalaburagi,Assault,Brawl,2020-06-10,2020,4,Closed - Convicted,FIR/2020/025/1346,[241]
+1347,Dharwad,Assault,Gang fight,2022-03-10,2022,4,Under Investigation,FIR/2022/029/1347,[29]
+1348,Hassan,Theft,Pickpocket,2021-05-24,2021,3,Open,FIR/2021/034/1348,"[256, 356]"
+1349,Bengaluru Urban,Theft,Pickpocket,2021-09-19,2021,2,Open,FIR/2021/002/1349,[239]
+1350,Belagavi,Kidnapping,Child abduction,2025-01-25,2025,5,Closed - Convicted,FIR/2025/023/1350,"[374, 77]"
+1351,Ballari,Fraud,Insurance fraud,2025-08-18,2025,4,Closed - Convicted,FIR/2025/031/1351,"[98, 111]"
+1352,Tumakuru,Assault,Gang fight,2024-10-01,2024,4,Closed - Convicted,FIR/2024/016/1352,[147]
+1353,Tumakuru,Cybercrime,Investment scam,2025-02-02,2025,4,Under Investigation,FIR/2025/016/1353,"[116, 121, 160]"
+1354,Bengaluru Rural,Theft,Chain snatching,2022-03-14,2022,3,Open,FIR/2022/009/1354,[206]
+1355,Dakshina Kannada,Robbery,Dacoity,2021-04-25,2021,4,Closed - Convicted,FIR/2021/018/1355,"[76, 44]"
+1356,Mysuru,Drug Offence,Possession,2025-12-16,2025,4,Open,FIR/2025/011/1356,[57]
+1357,Mysuru,Sexual Assault,Eve-teasing,2024-05-05,2024,5,Pending Trial,FIR/2024/012/1357,[226]
+1358,Shivamogga,Fraud,Insurance fraud,2022-09-09,2022,4,Pending Trial,FIR/2022/037/1358,"[334, 39, 271]"
+1359,Shivamogga,Theft,House break-in,2022-03-16,2022,3,Under Investigation,FIR/2022/036/1359,"[123, 381, 245]"
+1360,Bengaluru Urban,Assault,Gang fight,2021-04-12,2021,3,Pending Trial,FIR/2021/001/1360,[229]
+1361,Bengaluru Urban,Fraud,Insurance fraud,2024-11-28,2024,3,Open,FIR/2024/005/1361,[72]
+1362,Mysuru,Assault,Gang fight,2025-09-25,2025,3,Under Investigation,FIR/2025/011/1362,[41]
+1363,Udupi,Cybercrime,Investment scam,2025-08-31,2025,3,Under Investigation,FIR/2025/040/1363,[139]
+1364,Hassan,Sexual Assault,Molestation,2023-12-20,2023,5,Closed - Convicted,FIR/2023/035/1364,"[363, 308]"
+1365,Mysuru,Assault,Brawl,2023-10-24,2023,3,Closed - Convicted,FIR/2023/011/1365,"[107, 200]"
+1366,Hassan,Theft,Pickpocket,2023-02-23,2023,3,Under Investigation,FIR/2023/035/1366,[14]
+1367,Dharwad,Theft,House break-in,2025-03-31,2025,3,Open,FIR/2025/027/1367,[30]
+1368,Bengaluru Rural,Assault,Domestic violence,2023-02-10,2023,4,Closed - Acquitted,FIR/2023/007/1368,"[120, 165]"
+1369,Shivamogga,Robbery,Mugging,2024-09-05,2024,5,Under Investigation,FIR/2024/038/1369,[130]
+1370,Shivamogga,Fraud,Impersonation,2025-02-18,2025,4,Closed - Convicted,FIR/2025/036/1370,[87]
+1371,Kalaburagi,Assault,Brawl,2021-08-05,2021,4,Closed - Convicted,FIR/2021/026/1371,[31]
+1372,Belagavi,Assault,Road rage,2022-06-25,2022,4,Under Investigation,FIR/2022/021/1372,"[247, 193, 362]"
+1373,Bengaluru Urban,Theft,House break-in,2021-07-30,2021,2,Under Investigation,FIR/2021/002/1373,[270]
+1374,Udupi,Sexual Assault,Molestation,2022-06-14,2022,5,Cold Case,FIR/2022/039/1374,[44]
+1375,Kalaburagi,Theft,Pickpocket,2025-12-07,2025,3,Under Investigation,FIR/2025/024/1375,[93]
+1376,Bengaluru Urban,Assault,Gang fight,2025-06-11,2025,3,Under Investigation,FIR/2025/003/1376,[123]
+1377,Hassan,Theft,House break-in,2022-10-21,2022,3,Under Investigation,FIR/2022/033/1377,[196]
+1378,Bengaluru Rural,Theft,Vehicle theft,2022-02-11,2022,3,Open,FIR/2022/009/1378,[336]
+1379,Dharwad,Theft,Chain snatching,2023-02-26,2023,3,Pending Trial,FIR/2023/028/1379,[260]
+1380,Bengaluru Rural,Assault,Gang fight,2022-10-17,2022,4,Closed - Convicted,FIR/2022/009/1380,"[87, 177]"
+1381,Bengaluru Rural,Theft,Vehicle theft,2022-12-19,2022,3,Closed - Convicted,FIR/2022/008/1381,"[368, 302]"
+1382,Shivamogga,Theft,Chain snatching,2023-04-15,2023,3,Closed - Acquitted,FIR/2023/038/1382,[16]
+1383,Belagavi,Theft,Pickpocket,2020-10-10,2020,3,Pending Trial,FIR/2020/022/1383,"[64, 351]"
+1384,Belagavi,Sexual Assault,Eve-teasing,2021-06-09,2021,5,Closed - Convicted,FIR/2021/022/1384,[248]
+1385,Tumakuru,Cybercrime,Online fraud,2025-06-19,2025,4,Under Investigation,FIR/2025/015/1385,"[180, 247]"
+1386,Mysuru,Fraud,Impersonation,2025-06-29,2025,3,Closed - Convicted,FIR/2025/013/1386,"[217, 201]"
+1387,Bengaluru Urban,Fraud,Impersonation,2023-05-20,2023,3,Closed - Convicted,FIR/2023/006/1387,[328]
+1388,Dharwad,Vandalism,Property destruction,2021-06-23,2021,3,Pending Trial,FIR/2021/027/1388,[207]
+1389,Belagavi,Assault,Gang fight,2025-06-14,2025,4,Open,FIR/2025/020/1389,"[210, 379]"
+1390,Kalaburagi,Assault,Domestic violence,2022-01-09,2022,4,Pending Trial,FIR/2022/025/1390,[62]
+1391,Udupi,Theft,Chain snatching,2022-09-25,2022,2,Open,FIR/2022/039/1391,[199]
+1392,Ballari,Assault,Gang fight,2023-03-31,2023,4,Open,FIR/2023/032/1392,"[5, 364]"
+1393,Dharwad,Robbery,Dacoity,2024-04-09,2024,5,Pending Trial,FIR/2024/029/1393,"[212, 42]"
+1394,Shivamogga,Robbery,Dacoity,2024-08-18,2024,5,Under Investigation,FIR/2024/038/1394,"[33, 364, 53]"
+1395,Dharwad,Robbery,Armed robbery,2024-05-25,2024,5,Under Investigation,FIR/2024/028/1395,[127]
+1396,Bengaluru Urban,Drug Offence,Distribution,2023-02-13,2023,4,Under Investigation,FIR/2023/004/1396,"[342, 381]"
+1397,Belagavi,Robbery,Armed robbery,2023-11-03,2023,5,Closed - Convicted,FIR/2023/022/1397,[257]
+1398,Dakshina Kannada,Fraud,Cheque fraud,2025-08-12,2025,3,Under Investigation,FIR/2025/019/1398,[87]
+1399,Bengaluru Urban,Robbery,Mugging,2024-12-09,2024,4,Under Investigation,FIR/2024/006/1399,"[361, 385, 199]"
+1400,Bengaluru Rural,Assault,Road rage,2023-04-29,2023,4,Pending Trial,FIR/2023/009/1400,[246]
+1401,Bengaluru Urban,Drug Offence,Possession,2021-01-05,2021,4,Under Investigation,FIR/2021/002/1401,[73]
+1402,Udupi,Assault,Gang fight,2024-04-17,2024,3,Closed - Convicted,FIR/2024/041/1402,"[253, 274]"
+1403,Shivamogga,Kidnapping,Ransom,2020-09-30,2020,5,Under Investigation,FIR/2020/036/1403,"[220, 113]"
+1404,Kalaburagi,Robbery,Mugging,2020-01-04,2020,5,Under Investigation,FIR/2020/025/1404,[167]
+1405,Mysuru,Cybercrime,Online fraud,2024-05-26,2024,3,Closed - Convicted,FIR/2024/013/1405,[218]
+1406,Hassan,Theft,Vehicle theft,2023-09-15,2023,3,Open,FIR/2023/035/1406,"[215, 66]"
+1407,Bengaluru Urban,Drug Offence,Trafficking,2021-05-15,2021,4,Under Investigation,FIR/2021/006/1407,[297]
+1408,Tumakuru,Cybercrime,Investment scam,2023-03-05,2023,4,Closed - Convicted,FIR/2023/015/1408,"[17, 284]"
+1409,Mysuru,Theft,Pickpocket,2023-12-05,2023,2,Closed - Convicted,FIR/2023/010/1409,"[90, 184]"
+1410,Bengaluru Urban,Assault,Domestic violence,2023-03-03,2023,3,Closed - Convicted,FIR/2023/001/1410,"[302, 19]"
+1411,Kalaburagi,Fraud,Cheque fraud,2024-05-05,2024,4,Closed - Convicted,FIR/2024/025/1411,"[37, 104, 400]"
+1412,Dakshina Kannada,Cybercrime,Identity theft,2020-03-28,2020,3,Open,FIR/2020/019/1412,"[341, 105]"
+1413,Ballari,Theft,House break-in,2020-11-23,2020,3,Closed - Acquitted,FIR/2020/031/1413,[241]
+1414,Shivamogga,Assault,Domestic violence,2020-05-16,2020,4,Closed - Convicted,FIR/2020/036/1414,[225]
+1415,Bengaluru Urban,Robbery,Mugging,2025-12-10,2025,4,Open,FIR/2025/001/1415,[340]
+1416,Kalaburagi,Theft,House break-in,2023-07-19,2023,3,Cold Case,FIR/2023/024/1416,[153]
+1417,Udupi,Assault,Brawl,2021-04-05,2021,3,Closed - Acquitted,FIR/2021/039/1417,[377]
+1418,Ballari,Vandalism,Arson,2024-02-17,2024,3,Under Investigation,FIR/2024/032/1418,[312]
+1419,Bengaluru Urban,Theft,Chain snatching,2023-08-03,2023,2,Under Investigation,FIR/2023/004/1419,"[177, 193]"
+1420,Kalaburagi,Theft,House break-in,2025-01-25,2025,3,Open,FIR/2025/024/1420,"[272, 327]"
+1421,Mysuru,Assault,Gang fight,2021-03-26,2021,3,Under Investigation,FIR/2021/010/1421,"[262, 324, 194]"
+1422,Udupi,Assault,Domestic violence,2023-11-12,2023,3,Open,FIR/2023/041/1422,"[212, 270]"
+1423,Mysuru,Kidnapping,Human trafficking,2022-07-02,2022,5,Open,FIR/2022/012/1423,"[201, 95, 179]"
+1424,Hassan,Cybercrime,Phishing,2025-12-10,2025,4,Under Investigation,FIR/2025/035/1424,[116]
+1425,Bengaluru Urban,Robbery,Mugging,2024-04-06,2024,4,Under Investigation,FIR/2024/001/1425,"[335, 72]"
+1426,Kalaburagi,Theft,Vehicle theft,2023-05-05,2023,3,Open,FIR/2023/025/1426,"[90, 108, 11]"
+1427,Tumakuru,Robbery,Armed robbery,2024-06-12,2024,5,Pending Trial,FIR/2024/014/1427,[81]
+1428,Ballari,Theft,Pickpocket,2021-01-04,2021,3,Pending Trial,FIR/2021/032/1428,[349]
+1429,Dharwad,Theft,Vehicle theft,2025-11-16,2025,3,Pending Trial,FIR/2025/028/1429,[326]
+1430,Hassan,Robbery,Mugging,2020-11-22,2020,5,Closed - Convicted,FIR/2020/033/1430,"[31, 94]"
+1431,Udupi,Cybercrime,Investment scam,2021-07-03,2021,3,Pending Trial,FIR/2021/041/1431,[279]
+1432,Dakshina Kannada,Theft,Vehicle theft,2025-11-19,2025,2,Under Investigation,FIR/2025/018/1432,[40]
+1433,Belagavi,Cybercrime,Online fraud,2024-10-09,2024,4,Under Investigation,FIR/2024/023/1433,[102]
+1434,Bengaluru Urban,Theft,Vehicle theft,2023-04-13,2023,2,Closed - Convicted,FIR/2023/005/1434,"[282, 37, 183]"
+1435,Kalaburagi,Assault,Brawl,2021-10-08,2021,4,Under Investigation,FIR/2021/026/1435,[30]
+1436,Tumakuru,Theft,Vehicle theft,2024-02-05,2024,3,Closed - Convicted,FIR/2024/016/1436,"[123, 288]"
+1437,Tumakuru,Assault,Road rage,2021-09-24,2021,4,Closed - Convicted,FIR/2021/014/1437,[14]
+1438,Bengaluru Urban,Assault,Brawl,2023-09-24,2023,3,Closed - Convicted,FIR/2023/003/1438,[55]
+1439,Bengaluru Urban,Assault,Road rage,2022-11-19,2022,3,Under Investigation,FIR/2022/004/1439,[249]
+1440,Dakshina Kannada,Sexual Assault,Eve-teasing,2024-06-10,2024,5,Under Investigation,FIR/2024/018/1440,"[307, 194]"
+1441,Ballari,Theft,Vehicle theft,2020-01-28,2020,3,Pending Trial,FIR/2020/031/1441,[328]
+1442,Kalaburagi,Theft,Pickpocket,2021-07-14,2021,3,Closed - Convicted,FIR/2021/024/1442,[354]
+1443,Kalaburagi,Assault,Brawl,2025-02-26,2025,4,Closed - Acquitted,FIR/2025/026/1443,[250]
+1444,Udupi,Drug Offence,Trafficking,2022-09-11,2022,4,Closed - Convicted,FIR/2022/040/1444,[335]
+1445,Bengaluru Urban,Theft,Chain snatching,2023-06-01,2023,2,Under Investigation,FIR/2023/006/1445,"[238, 19]"
+1446,Kalaburagi,Vandalism,Graffiti,2025-05-17,2025,3,Under Investigation,FIR/2025/025/1446,"[396, 352]"
+1447,Shivamogga,Theft,Pickpocket,2025-10-26,2025,3,Closed - Acquitted,FIR/2025/038/1447,"[161, 220, 320]"
+1448,Hassan,Assault,Gang fight,2020-10-06,2020,4,Under Investigation,FIR/2020/033/1448,[260]
+1449,Belagavi,Assault,Gang fight,2025-01-14,2025,4,Open,FIR/2025/022/1449,[35]
+1450,Hassan,Robbery,Dacoity,2021-11-05,2021,5,Closed - Convicted,FIR/2021/033/1450,[327]
+1451,Bengaluru Urban,Drug Offence,Trafficking,2022-05-28,2022,4,Closed - Acquitted,FIR/2022/004/1451,[253]
+1452,Dakshina Kannada,Drug Offence,Possession,2020-01-20,2020,4,Under Investigation,FIR/2020/018/1452,[77]
+1453,Ballari,Theft,Chain snatching,2025-11-16,2025,3,Under Investigation,FIR/2025/032/1453,[157]
+1454,Mysuru,Sexual Assault,Rape,2021-04-15,2021,5,Closed - Acquitted,FIR/2021/010/1454,[165]
+1455,Ballari,Sexual Assault,Molestation,2023-08-14,2023,5,Closed - Convicted,FIR/2023/031/1455,[221]
+1456,Ballari,Theft,Vehicle theft,2020-03-23,2020,3,Under Investigation,FIR/2020/031/1456,"[24, 151]"
+1457,Bengaluru Urban,Assault,Domestic violence,2025-01-08,2025,3,Under Investigation,FIR/2025/001/1457,[167]
+1458,Tumakuru,Assault,Brawl,2025-06-18,2025,4,Pending Trial,FIR/2025/014/1458,"[225, 18]"
+1459,Belagavi,Assault,Gang fight,2023-01-22,2023,4,Open,FIR/2023/021/1459,"[263, 81]"
+1460,Belagavi,Theft,Vehicle theft,2024-05-28,2024,3,Under Investigation,FIR/2024/023/1460,[48]
+1461,Belagavi,Theft,Vehicle theft,2023-02-11,2023,3,Under Investigation,FIR/2023/021/1461,"[143, 114, 172]"
+1462,Bengaluru Urban,Theft,Pickpocket,2023-09-25,2023,2,Under Investigation,FIR/2023/005/1462,[286]
+1463,Bengaluru Urban,Assault,Road rage,2024-02-05,2024,3,Open,FIR/2024/002/1463,[288]
+1464,Shivamogga,Fraud,Impersonation,2021-12-10,2021,4,Open,FIR/2021/038/1464,[13]
+1465,Dharwad,Cybercrime,Phishing,2020-11-05,2020,4,Closed - Acquitted,FIR/2020/029/1465,[89]
+1466,Udupi,Vandalism,Graffiti,2021-10-15,2021,2,Closed - Acquitted,FIR/2021/040/1466,[193]
+1467,Bengaluru Rural,Fraud,Insurance fraud,2025-01-15,2025,4,Open,FIR/2025/009/1467,[271]
+1468,Shivamogga,Cybercrime,Phishing,2022-10-05,2022,4,Under Investigation,FIR/2022/036/1468,"[332, 373, 376]"
+1469,Belagavi,Assault,Brawl,2023-09-12,2023,4,Closed - Convicted,FIR/2023/021/1469,[111]
+1470,Belagavi,Robbery,Dacoity,2022-06-25,2022,5,Under Investigation,FIR/2022/022/1470,"[303, 20]"
+1471,Udupi,Theft,House break-in,2024-10-27,2024,2,Closed - Acquitted,FIR/2024/041/1471,[351]
+1472,Dakshina Kannada,Cybercrime,Phishing,2023-08-07,2023,3,Under Investigation,FIR/2023/018/1472,[126]
+1473,Bengaluru Rural,Drug Offence,Trafficking,2023-12-22,2023,5,Pending Trial,FIR/2023/008/1473,[295]
+1474,Kalaburagi,Theft,Pickpocket,2025-12-04,2025,3,Cold Case,FIR/2025/026/1474,[67]
+1475,Mysuru,Robbery,Armed robbery,2024-01-31,2024,4,Pending Trial,FIR/2024/012/1475,"[353, 166]"
+1476,Dakshina Kannada,Fraud,Impersonation,2025-10-10,2025,3,Open,FIR/2025/018/1476,[222]
+1477,Dharwad,Cybercrime,Identity theft,2022-09-10,2022,4,Closed - Convicted,FIR/2022/028/1477,[131]
+1478,Ballari,Fraud,Cheque fraud,2021-10-21,2021,4,Pending Trial,FIR/2021/031/1478,[14]
+1479,Dakshina Kannada,Assault,Road rage,2022-05-24,2022,3,Closed - Convicted,FIR/2022/018/1479,[38]
+1480,Dharwad,Vandalism,Arson,2020-07-23,2020,3,Pending Trial,FIR/2020/028/1480,[325]
+1481,Tumakuru,Assault,Domestic violence,2025-04-02,2025,4,Open,FIR/2025/015/1481,[365]
+1482,Tumakuru,Kidnapping,Ransom,2021-07-02,2021,5,Cold Case,FIR/2021/015/1482,"[234, 130]"
+1483,Bengaluru Rural,Kidnapping,Child abduction,2025-11-25,2025,5,Closed - Acquitted,FIR/2025/007/1483,[299]
+1484,Dakshina Kannada,Assault,Domestic violence,2024-02-18,2024,3,Open,FIR/2024/019/1484,[197]
+1485,Mysuru,Vandalism,Graffiti,2023-06-25,2023,2,Under Investigation,FIR/2023/010/1485,[149]
+1486,Hassan,Fraud,Land grab,2024-08-23,2024,4,Open,FIR/2024/034/1486,"[149, 400]"
+1487,Belagavi,Vandalism,Property destruction,2020-12-23,2020,3,Pending Trial,FIR/2020/022/1487,[346]
+1488,Udupi,Murder,Hired killing,2020-12-17,2020,5,Open,FIR/2020/040/1488,"[11, 23]"
+1489,Udupi,Theft,Vehicle theft,2023-08-02,2023,2,Under Investigation,FIR/2023/039/1489,"[393, 387]"
+1490,Bengaluru Urban,Theft,House break-in,2023-12-17,2023,2,Closed - Convicted,FIR/2023/001/1490,[345]
+1491,Bengaluru Urban,Kidnapping,Child abduction,2021-04-15,2021,5,Under Investigation,FIR/2021/003/1491,[112]
+1492,Ballari,Assault,Road rage,2021-06-16,2021,4,Closed - Convicted,FIR/2021/032/1492,[106]
+1493,Bengaluru Urban,Cybercrime,Identity theft,2025-09-19,2025,3,Closed - Convicted,FIR/2025/005/1493,[247]
+1494,Ballari,Theft,Vehicle theft,2023-04-02,2023,3,Pending Trial,FIR/2023/030/1494,"[377, 26]"
+1495,Belagavi,Assault,Gang fight,2025-06-28,2025,4,Under Investigation,FIR/2025/021/1495,[29]
+1496,Dakshina Kannada,Kidnapping,Child abduction,2020-10-21,2020,5,Under Investigation,FIR/2020/018/1496,"[105, 337]"
+1497,Dakshina Kannada,Theft,Pickpocket,2023-07-28,2023,2,Open,FIR/2023/017/1497,[9]
+1498,Bengaluru Urban,Assault,Gang fight,2020-08-15,2020,3,Cold Case,FIR/2020/004/1498,"[392, 386]"
+1499,Ballari,Sexual Assault,Molestation,2023-07-22,2023,5,Under Investigation,FIR/2023/031/1499,[185]
+1500,Bengaluru Rural,Robbery,Dacoity,2022-01-19,2022,5,Closed - Acquitted,FIR/2022/007/1500,"[54, 109]"
+1501,Hassan,Theft,House break-in,2025-08-08,2025,3,Closed - Convicted,FIR/2025/035/1501,[89]
+1502,Kalaburagi,Robbery,Dacoity,2021-10-03,2021,5,Closed - Convicted,FIR/2021/024/1502,[285]
+1503,Mysuru,Cybercrime,Identity theft,2022-08-22,2022,3,Pending Trial,FIR/2022/012/1503,[372]
+1504,Ballari,Theft,House break-in,2024-01-14,2024,3,Closed - Convicted,FIR/2024/032/1504,[6]
+1505,Belagavi,Robbery,Mugging,2023-12-07,2023,5,Closed - Convicted,FIR/2023/021/1505,[6]
+1506,Dakshina Kannada,Theft,Chain snatching,2020-11-21,2020,2,Under Investigation,FIR/2020/017/1506,"[193, 100, 197]"
+1507,Shivamogga,Robbery,Armed robbery,2022-03-24,2022,5,Under Investigation,FIR/2022/037/1507,"[221, 88, 258]"
+1508,Tumakuru,Theft,House break-in,2020-07-24,2020,3,Under Investigation,FIR/2020/016/1508,"[130, 243]"
+1509,Dakshina Kannada,Robbery,Dacoity,2025-06-16,2025,4,Under Investigation,FIR/2025/018/1509,[380]
+1510,Kalaburagi,Theft,Chain snatching,2025-12-05,2025,3,Under Investigation,FIR/2025/024/1510,[349]
+1511,Dakshina Kannada,Kidnapping,Human trafficking,2024-05-17,2024,5,Under Investigation,FIR/2024/017/1511,[129]
+1512,Hassan,Assault,Road rage,2024-04-19,2024,4,Under Investigation,FIR/2024/033/1512,"[266, 241]"
+1513,Bengaluru Urban,Cybercrime,Online fraud,2020-09-01,2020,3,Under Investigation,FIR/2020/003/1513,[195]
+1514,Dakshina Kannada,Robbery,Dacoity,2025-04-06,2025,4,Closed - Convicted,FIR/2025/019/1514,"[397, 391, 209]"
+1515,Shivamogga,Cybercrime,Online fraud,2024-06-09,2024,4,Under Investigation,FIR/2024/038/1515,"[269, 251, 287]"
+1516,Ballari,Vandalism,Graffiti,2024-10-06,2024,3,Under Investigation,FIR/2024/031/1516,"[264, 372]"
+1517,Hassan,Fraud,Insurance fraud,2020-02-15,2020,4,Pending Trial,FIR/2020/033/1517,[361]
+1518,Udupi,Theft,Vehicle theft,2021-08-27,2021,2,Closed - Convicted,FIR/2021/040/1518,[9]
+1519,Belagavi,Theft,Chain snatching,2021-11-05,2021,3,Under Investigation,FIR/2021/021/1519,[284]
+1520,Shivamogga,Fraud,Insurance fraud,2022-03-12,2022,4,Under Investigation,FIR/2022/036/1520,[318]
+1521,Dharwad,Theft,Vehicle theft,2025-12-30,2025,3,Under Investigation,FIR/2025/029/1521,[94]
+1522,Mysuru,Robbery,Armed robbery,2025-04-21,2025,4,Under Investigation,FIR/2025/011/1522,[19]
+1523,Hassan,Sexual Assault,Rape,2024-12-19,2024,5,Under Investigation,FIR/2024/034/1523,[205]
+1524,Belagavi,Theft,Pickpocket,2023-07-28,2023,3,Closed - Acquitted,FIR/2023/021/1524,"[182, 7]"
+1525,Shivamogga,Theft,House break-in,2023-08-25,2023,3,Under Investigation,FIR/2023/036/1525,"[242, 323]"
+1526,Ballari,Drug Offence,Trafficking,2022-09-29,2022,5,Pending Trial,FIR/2022/030/1526,"[59, 45]"
+1527,Dharwad,Cybercrime,Phishing,2020-07-03,2020,4,Under Investigation,FIR/2020/029/1527,[329]
+1528,Kalaburagi,Robbery,Mugging,2022-09-18,2022,5,Under Investigation,FIR/2022/025/1528,"[260, 21]"
+1529,Hassan,Sexual Assault,Molestation,2025-06-07,2025,5,Closed - Convicted,FIR/2025/033/1529,"[152, 330]"
+1530,Kalaburagi,Drug Offence,Distribution,2020-05-24,2020,5,Under Investigation,FIR/2020/026/1530,"[281, 10, 140]"
+1531,Shivamogga,Robbery,Dacoity,2024-11-27,2024,5,Pending Trial,FIR/2024/037/1531,[8]
+1532,Hassan,Theft,Pickpocket,2022-01-09,2022,3,Under Investigation,FIR/2022/035/1532,[210]
+1533,Kalaburagi,Assault,Gang fight,2024-06-04,2024,4,Under Investigation,FIR/2024/026/1533,[256]
+1534,Hassan,Cybercrime,Investment scam,2021-05-05,2021,4,Pending Trial,FIR/2021/033/1534,"[49, 218]"
+1535,Dakshina Kannada,Assault,Gang fight,2023-09-25,2023,3,Closed - Convicted,FIR/2023/017/1535,[146]
+1536,Shivamogga,Fraud,Cheque fraud,2022-06-16,2022,4,Under Investigation,FIR/2022/037/1536,[220]
+1537,Ballari,Cybercrime,Online fraud,2025-06-13,2025,4,Open,FIR/2025/031/1537,"[139, 2]"
+1538,Bengaluru Urban,Assault,Domestic violence,2024-10-28,2024,3,Closed - Convicted,FIR/2024/006/1538,[353]
+1539,Mysuru,Fraud,Insurance fraud,2020-01-28,2020,3,Open,FIR/2020/010/1539,"[332, 270, 89]"
+1540,Mysuru,Cybercrime,Identity theft,2025-06-24,2025,3,Under Investigation,FIR/2025/012/1540,[232]
+1541,Belagavi,Sexual Assault,Eve-teasing,2021-05-21,2021,5,Open,FIR/2021/022/1541,[362]
+1542,Bengaluru Urban,Theft,Chain snatching,2023-11-20,2023,2,Under Investigation,FIR/2023/005/1542,"[207, 210]"
+1543,Tumakuru,Drug Offence,Possession,2022-02-22,2022,5,Open,FIR/2022/014/1543,"[248, 231]"
+1544,Bengaluru Rural,Cybercrime,Online fraud,2025-09-28,2025,4,Under Investigation,FIR/2025/007/1544,[217]
+1545,Bengaluru Urban,Theft,House break-in,2022-09-14,2022,2,Under Investigation,FIR/2022/005/1545,[45]
+1546,Tumakuru,Drug Offence,Trafficking,2020-09-01,2020,5,Open,FIR/2020/016/1546,"[74, 160]"
+1547,Mysuru,Fraud,Impersonation,2021-02-10,2021,3,Pending Trial,FIR/2021/010/1547,[17]
+1548,Hassan,Theft,Chain snatching,2023-12-20,2023,3,Under Investigation,FIR/2023/034/1548,[274]
+1549,Dharwad,Kidnapping,Child abduction,2022-03-13,2022,5,Open,FIR/2022/029/1549,"[297, 10]"
+1550,Kalaburagi,Theft,Pickpocket,2025-05-29,2025,3,Closed - Acquitted,FIR/2025/026/1550,[168]
+1551,Hassan,Theft,House break-in,2021-12-14,2021,3,Open,FIR/2021/035/1551,[348]
+1552,Dakshina Kannada,Assault,Road rage,2023-04-09,2023,3,Closed - Acquitted,FIR/2023/019/1552,[138]
+1553,Dharwad,Theft,Chain snatching,2025-11-13,2025,3,Under Investigation,FIR/2025/028/1553,[9]
+1554,Ballari,Vandalism,Arson,2020-08-10,2020,3,Under Investigation,FIR/2020/030/1554,"[117, 393]"
+1555,Dharwad,Assault,Road rage,2020-03-16,2020,4,Cold Case,FIR/2020/027/1555,"[103, 107]"
+1556,Bengaluru Urban,Vandalism,Arson,2023-02-05,2023,2,Open,FIR/2023/005/1556,[49]
+1557,Bengaluru Rural,Cybercrime,Phishing,2023-07-20,2023,4,Pending Trial,FIR/2023/008/1557,"[327, 294]"
+1558,Belagavi,Robbery,Mugging,2022-08-11,2022,5,Under Investigation,FIR/2022/022/1558,[45]
+1559,Hassan,Fraud,Impersonation,2025-05-15,2025,4,Under Investigation,FIR/2025/034/1559,[298]
+1560,Bengaluru Urban,Assault,Domestic violence,2021-09-11,2021,3,Cold Case,FIR/2021/006/1560,"[253, 356]"
+1561,Udupi,Drug Offence,Distribution,2021-04-17,2021,4,Open,FIR/2021/040/1561,"[163, 59, 48]"
+1562,Dharwad,Assault,Brawl,2022-04-15,2022,4,Under Investigation,FIR/2022/027/1562,"[48, 294]"
+1563,Ballari,Drug Offence,Possession,2022-02-25,2022,5,Closed - Acquitted,FIR/2022/031/1563,"[207, 46, 237]"
+1564,Hassan,Theft,Pickpocket,2025-11-09,2025,3,Under Investigation,FIR/2025/035/1564,[163]
+1565,Belagavi,Theft,Vehicle theft,2024-06-21,2024,3,Closed - Convicted,FIR/2024/021/1565,"[149, 39, 63]"
+1566,Bengaluru Urban,Fraud,Insurance fraud,2025-04-21,2025,3,Under Investigation,FIR/2025/005/1566,[386]
+1567,Dharwad,Sexual Assault,Rape,2024-06-27,2024,5,Pending Trial,FIR/2024/028/1567,[322]
+1568,Dakshina Kannada,Assault,Road rage,2022-02-10,2022,3,Open,FIR/2022/019/1568,"[5, 221]"
+1569,Bengaluru Rural,Kidnapping,Human trafficking,2023-04-05,2023,5,Under Investigation,FIR/2023/007/1569,"[7, 255]"
+1570,Kalaburagi,Theft,Vehicle theft,2020-02-26,2020,3,Under Investigation,FIR/2020/025/1570,[146]
+1571,Udupi,Assault,Gang fight,2025-05-11,2025,3,Under Investigation,FIR/2025/039/1571,"[186, 124]"
+1572,Hassan,Robbery,Mugging,2025-01-07,2025,5,Under Investigation,FIR/2025/034/1572,[371]
+1573,Dharwad,Drug Offence,Trafficking,2024-06-19,2024,5,Under Investigation,FIR/2024/029/1573,"[89, 148]"
+1574,Udupi,Fraud,Impersonation,2021-12-28,2021,3,Closed - Convicted,FIR/2021/041/1574,[273]
+1575,Shivamogga,Robbery,Armed robbery,2021-08-31,2021,5,Closed - Convicted,FIR/2021/038/1575,[71]
+1576,Bengaluru Rural,Kidnapping,Child abduction,2021-01-11,2021,5,Under Investigation,FIR/2021/008/1576,[104]
+1577,Mysuru,Theft,House break-in,2022-01-28,2022,2,Open,FIR/2022/010/1577,[261]
+1578,Belagavi,Theft,Pickpocket,2024-01-31,2024,3,Open,FIR/2024/022/1578,"[362, 311]"
+1579,Tumakuru,Assault,Brawl,2024-09-25,2024,4,Under Investigation,FIR/2024/015/1579,[54]
+1580,Bengaluru Urban,Theft,House break-in,2024-07-16,2024,2,Closed - Acquitted,FIR/2024/003/1580,"[54, 88]"
+1581,Ballari,Theft,House break-in,2022-04-28,2022,3,Under Investigation,FIR/2022/031/1581,[181]
+1582,Dharwad,Fraud,Land grab,2021-07-29,2021,4,Pending Trial,FIR/2021/028/1582,[229]
+1583,Hassan,Assault,Domestic violence,2020-01-13,2020,4,Open,FIR/2020/035/1583,"[119, 279]"
+1584,Belagavi,Robbery,Mugging,2025-06-22,2025,5,Open,FIR/2025/021/1584,"[260, 266]"
+1585,Mysuru,Assault,Domestic violence,2025-10-20,2025,3,Under Investigation,FIR/2025/012/1585,[247]
+1586,Dharwad,Drug Offence,Possession,2023-08-08,2023,5,Open,FIR/2023/028/1586,[349]
+1587,Bengaluru Rural,Vandalism,Arson,2023-09-23,2023,3,Under Investigation,FIR/2023/007/1587,"[98, 131]"
+1588,Ballari,Assault,Domestic violence,2020-04-22,2020,4,Closed - Acquitted,FIR/2020/032/1588,"[147, 190]"
+1589,Belagavi,Theft,Chain snatching,2023-01-10,2023,3,Open,FIR/2023/020/1589,[218]
+1590,Dharwad,Cybercrime,Online fraud,2021-06-13,2021,4,Closed - Convicted,FIR/2021/029/1590,"[319, 177]"
+1591,Bengaluru Rural,Assault,Gang fight,2022-12-13,2022,4,Cold Case,FIR/2022/007/1591,"[357, 369, 276]"
+1592,Udupi,Robbery,Armed robbery,2024-02-24,2024,4,Under Investigation,FIR/2024/041/1592,[90]
+1593,Bengaluru Urban,Theft,House break-in,2020-11-17,2020,2,Closed - Convicted,FIR/2020/005/1593,[246]
+1594,Bengaluru Urban,Theft,House break-in,2020-06-02,2020,2,Closed - Acquitted,FIR/2020/001/1594,"[198, 271]"
+1595,Shivamogga,Cybercrime,Phishing,2024-06-11,2024,4,Open,FIR/2024/038/1595,[21]
+1596,Kalaburagi,Robbery,Dacoity,2024-03-07,2024,5,Under Investigation,FIR/2024/025/1596,[124]
+1597,Kalaburagi,Murder,Gang rivalry,2020-06-12,2020,5,Under Investigation,FIR/2020/025/1597,[235]
+1598,Dakshina Kannada,Robbery,Mugging,2023-03-04,2023,4,Pending Trial,FIR/2023/018/1598,[350]
+1599,Dharwad,Cybercrime,Phishing,2023-02-16,2023,4,Closed - Acquitted,FIR/2023/029/1599,[384]
+1600,Shivamogga,Vandalism,Property destruction,2020-01-21,2020,3,Closed - Convicted,FIR/2020/037/1600,[208]
+1601,Ballari,Assault,Gang fight,2022-09-26,2022,4,Under Investigation,FIR/2022/032/1601,"[293, 241]"
+1602,Hassan,Assault,Gang fight,2021-06-03,2021,4,Closed - Convicted,FIR/2021/035/1602,[356]
+1603,Bengaluru Rural,Robbery,Dacoity,2022-05-12,2022,5,Open,FIR/2022/009/1603,"[272, 182]"
+1604,Shivamogga,Cybercrime,Investment scam,2025-06-09,2025,4,Open,FIR/2025/038/1604,"[57, 140, 18]"
+1605,Dakshina Kannada,Cybercrime,Online fraud,2023-08-06,2023,3,Under Investigation,FIR/2023/017/1605,[133]
+1606,Dharwad,Theft,House break-in,2023-01-17,2023,3,Pending Trial,FIR/2023/027/1606,[175]
+1607,Mysuru,Assault,Road rage,2025-09-09,2025,3,Under Investigation,FIR/2025/010/1607,[81]
+1608,Mysuru,Drug Offence,Trafficking,2023-06-08,2023,4,Closed - Convicted,FIR/2023/012/1608,"[147, 101]"
+1609,Ballari,Cybercrime,Phishing,2021-07-25,2021,4,Open,FIR/2021/030/1609,[58]
+1610,Mysuru,Robbery,Armed robbery,2024-05-09,2024,4,Open,FIR/2024/012/1610,[261]
+1611,Belagavi,Fraud,Cheque fraud,2021-08-02,2021,4,Closed - Convicted,FIR/2021/020/1611,[367]
+1612,Udupi,Cybercrime,Online fraud,2021-12-15,2021,3,Pending Trial,FIR/2021/040/1612,[55]
+1613,Bengaluru Rural,Vandalism,Arson,2021-08-17,2021,3,Closed - Convicted,FIR/2021/007/1613,"[31, 189]"
+1614,Mysuru,Assault,Domestic violence,2025-05-26,2025,3,Under Investigation,FIR/2025/013/1614,"[272, 257]"
+1615,Bengaluru Urban,Drug Offence,Possession,2022-01-04,2022,4,Pending Trial,FIR/2022/004/1615,[105]
+1616,Udupi,Theft,House break-in,2025-09-24,2025,2,Closed - Acquitted,FIR/2025/039/1616,[363]
+1617,Bengaluru Urban,Fraud,Impersonation,2024-12-17,2024,3,Closed - Convicted,FIR/2024/006/1617,[316]
+1618,Kalaburagi,Robbery,Dacoity,2023-02-27,2023,5,Open,FIR/2023/025/1618,[10]
+1619,Tumakuru,Fraud,Land grab,2025-02-12,2025,4,Closed - Convicted,FIR/2025/016/1619,[318]
+1620,Bengaluru Urban,Murder,Property dispute,2025-09-24,2025,5,Closed - Convicted,FIR/2025/002/1620,[113]
+1621,Kalaburagi,Robbery,Armed robbery,2025-08-08,2025,5,Open,FIR/2025/024/1621,"[228, 110, 233]"
+1622,Dakshina Kannada,Assault,Gang fight,2021-10-02,2021,3,Under Investigation,FIR/2021/019/1622,"[82, 372, 347]"
+1623,Dharwad,Sexual Assault,Molestation,2021-12-01,2021,5,Open,FIR/2021/028/1623,[370]
+1624,Belagavi,Theft,House break-in,2022-09-19,2022,3,Closed - Convicted,FIR/2022/022/1624,"[322, 209, 30]"
+1625,Ballari,Vandalism,Arson,2024-11-25,2024,3,Closed - Acquitted,FIR/2024/032/1625,"[193, 77]"
+1626,Bengaluru Urban,Robbery,Mugging,2025-08-10,2025,4,Open,FIR/2025/004/1626,"[55, 379]"
+1627,Kalaburagi,Vandalism,Property destruction,2020-11-05,2020,3,Under Investigation,FIR/2020/024/1627,[286]
+1628,Bengaluru Urban,Sexual Assault,Rape,2021-07-16,2021,5,Under Investigation,FIR/2021/006/1628,"[10, 272]"
+1629,Dharwad,Vandalism,Property destruction,2024-08-09,2024,3,Under Investigation,FIR/2024/027/1629,[131]
+1630,Dharwad,Vandalism,Arson,2020-11-17,2020,3,Closed - Convicted,FIR/2020/029/1630,[219]
+1631,Kalaburagi,Robbery,Armed robbery,2020-07-13,2020,5,Closed - Convicted,FIR/2020/026/1631,[254]
+1632,Ballari,Assault,Domestic violence,2025-09-07,2025,4,Under Investigation,FIR/2025/031/1632,[248]
+1633,Shivamogga,Drug Offence,Trafficking,2021-04-25,2021,5,Closed - Convicted,FIR/2021/036/1633,[82]
+1634,Ballari,Sexual Assault,Rape,2020-08-10,2020,5,Closed - Convicted,FIR/2020/030/1634,[300]
+1635,Bengaluru Urban,Theft,Vehicle theft,2023-11-02,2023,2,Closed - Convicted,FIR/2023/006/1635,"[287, 277]"
+1636,Mysuru,Drug Offence,Distribution,2024-06-19,2024,4,Under Investigation,FIR/2024/011/1636,[181]
+1637,Kalaburagi,Murder,Property dispute,2024-06-12,2024,5,Closed - Convicted,FIR/2024/026/1637,[193]
+1638,Bengaluru Urban,Robbery,Mugging,2020-03-16,2020,4,Pending Trial,FIR/2020/002/1638,"[333, 287]"
+1639,Udupi,Theft,Chain snatching,2023-08-14,2023,2,Closed - Convicted,FIR/2023/041/1639,[365]
+1640,Belagavi,Fraud,Impersonation,2020-01-06,2020,4,Closed - Convicted,FIR/2020/021/1640,"[197, 142]"
+1641,Bengaluru Urban,Cybercrime,Phishing,2022-09-20,2022,3,Cold Case,FIR/2022/004/1641,[82]
+1642,Bengaluru Urban,Sexual Assault,Molestation,2023-09-04,2023,5,Open,FIR/2023/004/1642,"[278, 145]"
+1643,Belagavi,Robbery,Armed robbery,2020-02-23,2020,5,Open,FIR/2020/023/1643,"[29, 60]"
+1644,Belagavi,Theft,House break-in,2021-05-15,2021,3,Open,FIR/2021/023/1644,"[45, 263]"
+1645,Bengaluru Urban,Vandalism,Arson,2024-03-10,2024,2,Closed - Convicted,FIR/2024/003/1645,[396]
+1646,Shivamogga,Theft,Vehicle theft,2025-09-23,2025,3,Under Investigation,FIR/2025/038/1646,"[92, 105]"
+1647,Tumakuru,Assault,Road rage,2020-12-20,2020,4,Under Investigation,FIR/2020/014/1647,[221]
+1648,Belagavi,Sexual Assault,Rape,2023-02-20,2023,5,Closed - Convicted,FIR/2023/020/1648,[164]
+1649,Ballari,Murder,Domestic dispute,2022-09-09,2022,5,Open,FIR/2022/031/1649,"[108, 124]"
+1650,Udupi,Drug Offence,Distribution,2021-09-20,2021,4,Open,FIR/2021/040/1650,"[280, 223]"
+1651,Ballari,Robbery,Dacoity,2025-09-04,2025,5,Under Investigation,FIR/2025/030/1651,[249]
+1652,Shivamogga,Assault,Road rage,2025-03-16,2025,4,Closed - Convicted,FIR/2025/038/1652,"[203, 71]"
+1653,Kalaburagi,Assault,Domestic violence,2025-09-01,2025,4,Pending Trial,FIR/2025/026/1653,[8]
+1654,Kalaburagi,Theft,House break-in,2024-03-25,2024,3,Closed - Convicted,FIR/2024/024/1654,"[306, 69]"
+1655,Bengaluru Rural,Theft,Pickpocket,2025-12-15,2025,3,Closed - Convicted,FIR/2025/008/1655,"[372, 133]"
+1656,Mysuru,Theft,House break-in,2024-03-24,2024,2,Under Investigation,FIR/2024/013/1656,[111]
+1657,Udupi,Murder,Hired killing,2023-05-28,2023,5,Under Investigation,FIR/2023/039/1657,"[109, 228]"
+1658,Hassan,Assault,Road rage,2020-11-24,2020,4,Under Investigation,FIR/2020/034/1658,[324]
+1659,Kalaburagi,Vandalism,Graffiti,2025-05-22,2025,3,Closed - Acquitted,FIR/2025/025/1659,"[255, 279]"
+1660,Dharwad,Theft,House break-in,2020-02-27,2020,3,Pending Trial,FIR/2020/028/1660,[59]
+1661,Hassan,Cybercrime,Investment scam,2023-11-05,2023,4,Open,FIR/2023/033/1661,[172]
+1662,Mysuru,Theft,Chain snatching,2025-04-18,2025,2,Pending Trial,FIR/2025/011/1662,"[134, 54, 117]"
+1663,Tumakuru,Cybercrime,Identity theft,2025-11-19,2025,4,Open,FIR/2025/016/1663,"[379, 216]"
+1664,Bengaluru Urban,Assault,Road rage,2022-04-02,2022,3,Open,FIR/2022/004/1664,[211]
+1665,Dharwad,Fraud,Impersonation,2020-05-28,2020,4,Closed - Acquitted,FIR/2020/027/1665,[43]
+1666,Tumakuru,Theft,Pickpocket,2025-04-27,2025,3,Open,FIR/2025/016/1666,"[373, 153]"
+1667,Shivamogga,Assault,Gang fight,2022-03-19,2022,4,Under Investigation,FIR/2022/037/1667,"[192, 397, 205]"
+1668,Bengaluru Rural,Fraud,Cheque fraud,2022-05-24,2022,4,Under Investigation,FIR/2022/008/1668,"[209, 139, 91]"
+1669,Belagavi,Theft,Chain snatching,2023-12-29,2023,3,Under Investigation,FIR/2023/022/1669,[135]
+1670,Hassan,Drug Offence,Trafficking,2024-01-11,2024,5,Pending Trial,FIR/2024/035/1670,"[96, 31, 134]"
+1671,Kalaburagi,Sexual Assault,Rape,2022-08-04,2022,5,Under Investigation,FIR/2022/026/1671,"[254, 235]"
+1672,Ballari,Assault,Gang fight,2023-03-02,2023,4,Pending Trial,FIR/2023/030/1672,[135]
+1673,Hassan,Theft,House break-in,2021-02-24,2021,3,Under Investigation,FIR/2021/033/1673,"[39, 12]"
+1674,Tumakuru,Theft,House break-in,2021-06-21,2021,3,Open,FIR/2021/016/1674,"[241, 397, 26]"
+1675,Shivamogga,Theft,House break-in,2022-07-25,2022,3,Under Investigation,FIR/2022/037/1675,[76]
+1676,Bengaluru Urban,Robbery,Dacoity,2022-06-05,2022,4,Closed - Convicted,FIR/2022/002/1676,[231]
+1677,Bengaluru Rural,Fraud,Land grab,2024-05-30,2024,4,Closed - Convicted,FIR/2024/007/1677,[135]
+1678,Dharwad,Theft,House break-in,2020-03-22,2020,3,Under Investigation,FIR/2020/029/1678,[92]
+1679,Bengaluru Urban,Assault,Domestic violence,2024-12-11,2024,3,Closed - Convicted,FIR/2024/003/1679,"[334, 98]"
+1680,Shivamogga,Assault,Domestic violence,2025-09-07,2025,4,Closed - Acquitted,FIR/2025/038/1680,[76]
+1681,Belagavi,Theft,House break-in,2025-01-02,2025,3,Under Investigation,FIR/2025/021/1681,"[377, 115]"
+1682,Belagavi,Fraud,Insurance fraud,2024-04-17,2024,4,Open,FIR/2024/020/1682,[323]
+1683,Shivamogga,Robbery,Dacoity,2025-03-15,2025,5,Closed - Convicted,FIR/2025/037/1683,[263]
+1684,Kalaburagi,Vandalism,Property destruction,2021-11-29,2021,3,Open,FIR/2021/025/1684,[255]
+1685,Bengaluru Urban,Drug Offence,Trafficking,2021-10-31,2021,4,Under Investigation,FIR/2021/005/1685,"[14, 228]"
+1686,Bengaluru Rural,Assault,Gang fight,2023-01-11,2023,4,Open,FIR/2023/008/1686,[325]
+1687,Bengaluru Urban,Fraud,Impersonation,2022-07-25,2022,3,Closed - Convicted,FIR/2022/005/1687,[346]
+1688,Dharwad,Assault,Brawl,2025-05-07,2025,4,Closed - Convicted,FIR/2025/028/1688,[40]
+1689,Bengaluru Urban,Drug Offence,Possession,2023-01-19,2023,4,Under Investigation,FIR/2023/004/1689,[233]
+1690,Mysuru,Drug Offence,Distribution,2025-05-06,2025,4,Open,FIR/2025/013/1690,[315]
+1691,Mysuru,Theft,Chain snatching,2020-04-05,2020,2,Closed - Convicted,FIR/2020/012/1691,[237]
+1692,Ballari,Drug Offence,Possession,2024-09-07,2024,5,Under Investigation,FIR/2024/032/1692,[181]
+1693,Bengaluru Urban,Robbery,Armed robbery,2023-01-07,2023,4,Pending Trial,FIR/2023/004/1693,"[227, 312]"
+1694,Kalaburagi,Cybercrime,Investment scam,2023-01-15,2023,4,Under Investigation,FIR/2023/025/1694,"[262, 113]"
+1695,Hassan,Theft,Vehicle theft,2025-02-07,2025,3,Open,FIR/2025/033/1695,"[91, 229]"
+1696,Dakshina Kannada,Assault,Road rage,2023-12-24,2023,3,Under Investigation,FIR/2023/017/1696,"[197, 232, 78]"
+1697,Mysuru,Sexual Assault,Molestation,2023-04-18,2023,5,Open,FIR/2023/011/1697,"[61, 329]"
+1698,Tumakuru,Cybercrime,Phishing,2024-07-30,2024,4,Closed - Convicted,FIR/2024/014/1698,[335]
+1699,Bengaluru Urban,Theft,Chain snatching,2020-07-16,2020,2,Under Investigation,FIR/2020/002/1699,"[350, 280]"
+1700,Bengaluru Urban,Vandalism,Arson,2020-10-24,2020,2,Open,FIR/2020/006/1700,[320]
+1701,Dakshina Kannada,Robbery,Armed robbery,2024-10-22,2024,4,Closed - Acquitted,FIR/2024/019/1701,"[351, 78]"
+1702,Belagavi,Assault,Road rage,2020-02-17,2020,4,Open,FIR/2020/023/1702,"[166, 360, 248]"
+1703,Dharwad,Theft,House break-in,2024-11-17,2024,3,Under Investigation,FIR/2024/027/1703,"[215, 136, 331]"
+1704,Bengaluru Rural,Fraud,Impersonation,2022-08-09,2022,4,Closed - Convicted,FIR/2022/009/1704,[385]
+1705,Tumakuru,Cybercrime,Phishing,2024-02-27,2024,4,Closed - Convicted,FIR/2024/016/1705,[268]
+1706,Kalaburagi,Murder,Gang rivalry,2022-05-13,2022,5,Under Investigation,FIR/2022/024/1706,"[81, 105, 241]"
+1707,Mysuru,Cybercrime,Identity theft,2021-08-25,2021,3,Pending Trial,FIR/2021/010/1707,[380]
+1708,Kalaburagi,Theft,Chain snatching,2022-11-26,2022,3,Closed - Acquitted,FIR/2022/024/1708,"[266, 88]"
+1709,Hassan,Assault,Domestic violence,2022-02-14,2022,4,Under Investigation,FIR/2022/034/1709,[328]
+1710,Bengaluru Rural,Robbery,Armed robbery,2020-12-04,2020,5,Under Investigation,FIR/2020/009/1710,[70]
+1711,Dharwad,Assault,Road rage,2024-04-04,2024,4,Open,FIR/2024/029/1711,[122]
+1712,Shivamogga,Drug Offence,Possession,2021-12-21,2021,5,Under Investigation,FIR/2021/036/1712,"[200, 170]"
+1713,Mysuru,Cybercrime,Investment scam,2021-09-25,2021,3,Closed - Convicted,FIR/2021/011/1713,"[396, 209]"
+1714,Shivamogga,Cybercrime,Investment scam,2020-06-30,2020,4,Open,FIR/2020/036/1714,[175]
+1715,Shivamogga,Assault,Gang fight,2020-03-01,2020,4,Closed - Convicted,FIR/2020/038/1715,"[55, 385]"
+1716,Dharwad,Sexual Assault,Rape,2020-05-21,2020,5,Closed - Convicted,FIR/2020/027/1716,[281]
+1717,Kalaburagi,Drug Offence,Distribution,2020-10-07,2020,5,Open,FIR/2020/025/1717,"[105, 361]"
+1718,Dakshina Kannada,Theft,House break-in,2022-05-07,2022,2,Closed - Acquitted,FIR/2022/019/1718,"[366, 364]"
+1719,Bengaluru Urban,Cybercrime,Online fraud,2023-05-31,2023,3,Under Investigation,FIR/2023/005/1719,[241]
+1720,Shivamogga,Drug Offence,Possession,2020-09-26,2020,5,Under Investigation,FIR/2020/036/1720,[355]
+1721,Bengaluru Rural,Cybercrime,Online fraud,2021-06-28,2021,4,Under Investigation,FIR/2021/009/1721,[361]
+1722,Udupi,Fraud,Cheque fraud,2024-08-24,2024,3,Under Investigation,FIR/2024/040/1722,"[86, 203]"
+1723,Bengaluru Urban,Assault,Domestic violence,2023-08-19,2023,3,Open,FIR/2023/005/1723,[10]
+1724,Bengaluru Urban,Fraud,Insurance fraud,2020-01-21,2020,3,Open,FIR/2020/006/1724,[361]
+1725,Kalaburagi,Theft,Pickpocket,2024-11-12,2024,3,Closed - Convicted,FIR/2024/024/1725,[124]
+1726,Shivamogga,Theft,Pickpocket,2025-06-10,2025,3,Under Investigation,FIR/2025/037/1726,"[174, 52]"
+1727,Mysuru,Theft,Pickpocket,2025-05-10,2025,2,Closed - Convicted,FIR/2025/010/1727,"[213, 173]"
+1728,Kalaburagi,Assault,Domestic violence,2022-06-25,2022,4,Under Investigation,FIR/2022/024/1728,[283]
+1729,Tumakuru,Cybercrime,Phishing,2024-05-21,2024,4,Closed - Convicted,FIR/2024/016/1729,[325]
+1730,Mysuru,Theft,Pickpocket,2020-03-28,2020,2,Open,FIR/2020/011/1730,[268]
+1731,Bengaluru Urban,Assault,Road rage,2021-05-06,2021,3,Closed - Convicted,FIR/2021/003/1731,[182]
+1732,Udupi,Kidnapping,Ransom,2024-11-01,2024,5,Pending Trial,FIR/2024/041/1732,"[328, 256]"
+1733,Tumakuru,Robbery,Dacoity,2023-10-22,2023,5,Closed - Convicted,FIR/2023/015/1733,[74]
+1734,Kalaburagi,Assault,Road rage,2020-03-03,2020,4,Pending Trial,FIR/2020/024/1734,"[369, 299, 180]"
+1735,Shivamogga,Theft,Chain snatching,2021-01-15,2021,3,Under Investigation,FIR/2021/038/1735,[30]
+1736,Dharwad,Theft,House break-in,2021-04-05,2021,3,Closed - Convicted,FIR/2021/027/1736,[166]
+1737,Shivamogga,Robbery,Armed robbery,2025-07-07,2025,5,Open,FIR/2025/037/1737,"[315, 19, 180]"
+1738,Udupi,Drug Offence,Distribution,2021-02-27,2021,4,Open,FIR/2021/040/1738,[300]
+1739,Ballari,Robbery,Mugging,2023-12-27,2023,5,Closed - Convicted,FIR/2023/031/1739,[382]
+1740,Shivamogga,Murder,Hired killing,2021-05-05,2021,5,Under Investigation,FIR/2021/038/1740,[123]
+1741,Hassan,Drug Offence,Trafficking,2021-04-27,2021,5,Closed - Convicted,FIR/2021/035/1741,"[19, 399]"
+1742,Dharwad,Assault,Brawl,2022-07-10,2022,4,Closed - Convicted,FIR/2022/028/1742,"[327, 244]"
+1743,Bengaluru Urban,Robbery,Mugging,2021-02-19,2021,4,Cold Case,FIR/2021/002/1743,"[389, 157, 179]"
+1744,Dharwad,Assault,Road rage,2022-10-03,2022,4,Closed - Convicted,FIR/2022/028/1744,[254]
+1745,Ballari,Theft,House break-in,2022-07-24,2022,3,Under Investigation,FIR/2022/031/1745,[342]
+1746,Tumakuru,Robbery,Armed robbery,2025-01-10,2025,5,Under Investigation,FIR/2025/015/1746,"[228, 197]"
+1747,Mysuru,Cybercrime,Identity theft,2022-08-31,2022,3,Cold Case,FIR/2022/011/1747,[274]
+1748,Ballari,Drug Offence,Trafficking,2021-08-08,2021,5,Under Investigation,FIR/2021/031/1748,[88]
+1749,Belagavi,Kidnapping,Child abduction,2023-06-04,2023,5,Under Investigation,FIR/2023/021/1749,"[263, 274]"
+1750,Hassan,Murder,Property dispute,2022-07-04,2022,5,Open,FIR/2022/034/1750,[377]
+1751,Dakshina Kannada,Sexual Assault,Eve-teasing,2020-06-03,2020,5,Under Investigation,FIR/2020/017/1751,[270]
+1752,Hassan,Assault,Gang fight,2022-04-05,2022,4,Cold Case,FIR/2022/035/1752,[69]
+1753,Hassan,Fraud,Land grab,2023-02-09,2023,4,Closed - Convicted,FIR/2023/034/1753,[95]
+1754,Ballari,Cybercrime,Identity theft,2025-06-19,2025,4,Open,FIR/2025/031/1754,"[338, 297]"
+1755,Dharwad,Theft,Vehicle theft,2022-09-27,2022,3,Cold Case,FIR/2022/027/1755,[7]
+1756,Dakshina Kannada,Assault,Brawl,2020-01-16,2020,3,Closed - Convicted,FIR/2020/017/1756,[89]
+1757,Shivamogga,Theft,Pickpocket,2021-09-27,2021,3,Closed - Convicted,FIR/2021/037/1757,[179]
+1758,Bengaluru Urban,Assault,Road rage,2025-09-26,2025,3,Under Investigation,FIR/2025/003/1758,"[400, 386]"
+1759,Bengaluru Urban,Vandalism,Graffiti,2020-11-13,2020,2,Closed - Convicted,FIR/2020/003/1759,[82]
+1760,Kalaburagi,Theft,Chain snatching,2024-10-09,2024,3,Closed - Acquitted,FIR/2024/026/1760,"[236, 209]"
+1761,Dharwad,Assault,Brawl,2024-10-13,2024,4,Under Investigation,FIR/2024/027/1761,[330]
+1762,Dharwad,Fraud,Insurance fraud,2023-12-19,2023,4,Under Investigation,FIR/2023/027/1762,[289]
+1763,Mysuru,Assault,Road rage,2021-11-11,2021,3,Under Investigation,FIR/2021/013/1763,[137]
+1764,Hassan,Theft,House break-in,2020-10-20,2020,3,Closed - Acquitted,FIR/2020/034/1764,"[107, 392]"
+1765,Bengaluru Urban,Cybercrime,Investment scam,2020-02-09,2020,3,Closed - Convicted,FIR/2020/006/1765,[398]
+1766,Tumakuru,Theft,House break-in,2020-05-12,2020,3,Under Investigation,FIR/2020/016/1766,[22]
+1767,Mysuru,Assault,Brawl,2025-07-22,2025,3,Closed - Convicted,FIR/2025/010/1767,"[173, 162]"
+1768,Bengaluru Urban,Drug Offence,Distribution,2024-11-02,2024,4,Under Investigation,FIR/2024/001/1768,"[338, 176]"
+1769,Kalaburagi,Cybercrime,Online fraud,2025-09-21,2025,4,Under Investigation,FIR/2025/025/1769,"[318, 232]"
+1770,Dharwad,Theft,Vehicle theft,2022-08-22,2022,3,Under Investigation,FIR/2022/027/1770,[223]
+1771,Belagavi,Assault,Brawl,2023-03-27,2023,4,Open,FIR/2023/021/1771,"[270, 228, 134]"
+1772,Mysuru,Theft,Vehicle theft,2020-03-31,2020,2,Closed - Convicted,FIR/2020/011/1772,[84]
+1773,Bengaluru Urban,Assault,Road rage,2024-06-30,2024,3,Closed - Acquitted,FIR/2024/003/1773,"[30, 196, 329]"
+1774,Kalaburagi,Theft,Pickpocket,2023-03-12,2023,3,Closed - Convicted,FIR/2023/024/1774,"[311, 185, 297]"
+1775,Ballari,Theft,Chain snatching,2025-04-15,2025,3,Pending Trial,FIR/2025/030/1775,[310]
+1776,Tumakuru,Assault,Domestic violence,2024-03-24,2024,4,Closed - Acquitted,FIR/2024/014/1776,"[199, 250]"
+1777,Hassan,Drug Offence,Distribution,2024-10-02,2024,5,Pending Trial,FIR/2024/034/1777,[123]
+1778,Dakshina Kannada,Assault,Domestic violence,2025-02-19,2025,3,Under Investigation,FIR/2025/017/1778,[288]
+1779,Bengaluru Urban,Assault,Brawl,2022-10-03,2022,3,Under Investigation,FIR/2022/004/1779,[87]
+1780,Bengaluru Urban,Assault,Road rage,2025-12-31,2025,3,Open,FIR/2025/002/1780,[98]
+1781,Udupi,Kidnapping,Child abduction,2023-06-01,2023,5,Under Investigation,FIR/2023/040/1781,[247]
+1782,Tumakuru,Drug Offence,Trafficking,2022-04-30,2022,5,Open,FIR/2022/015/1782,"[67, 156]"
+1783,Dakshina Kannada,Assault,Gang fight,2020-05-04,2020,3,Open,FIR/2020/018/1783,[132]
+1784,Bengaluru Urban,Fraud,Land grab,2025-12-15,2025,3,Closed - Acquitted,FIR/2025/003/1784,[13]
+1785,Dharwad,Cybercrime,Online fraud,2020-06-06,2020,4,Under Investigation,FIR/2020/028/1785,"[69, 154, 8]"
+1786,Hassan,Robbery,Armed robbery,2021-12-15,2021,5,Pending Trial,FIR/2021/034/1786,"[102, 124]"
+1787,Dharwad,Robbery,Mugging,2020-12-09,2020,5,Open,FIR/2020/029/1787,[367]
+1788,Ballari,Murder,Domestic dispute,2024-07-28,2024,5,Closed - Acquitted,FIR/2024/032/1788,[186]
+1789,Ballari,Cybercrime,Investment scam,2022-12-02,2022,4,Pending Trial,FIR/2022/030/1789,"[317, 89]"
+1790,Belagavi,Murder,Property dispute,2022-01-07,2022,5,Open,FIR/2022/022/1790,"[343, 217, 383]"
+1791,Dakshina Kannada,Vandalism,Graffiti,2023-09-26,2023,2,Under Investigation,FIR/2023/019/1791,"[317, 46]"
+1792,Bengaluru Urban,Drug Offence,Distribution,2023-07-15,2023,4,Pending Trial,FIR/2023/004/1792,"[339, 322]"
+1793,Udupi,Assault,Road rage,2022-09-03,2022,3,Under Investigation,FIR/2022/041/1793,[392]
+1794,Mysuru,Drug Offence,Distribution,2022-05-13,2022,4,Closed - Convicted,FIR/2022/011/1794,[125]
+1795,Tumakuru,Kidnapping,Human trafficking,2021-10-13,2021,5,Closed - Convicted,FIR/2021/014/1795,"[362, 178]"
+1796,Dharwad,Assault,Domestic violence,2022-07-28,2022,4,Under Investigation,FIR/2022/029/1796,[350]
+1797,Hassan,Kidnapping,Ransom,2023-10-25,2023,5,Closed - Convicted,FIR/2023/034/1797,[102]
+1798,Hassan,Theft,Pickpocket,2025-01-20,2025,3,Open,FIR/2025/034/1798,"[328, 240]"
+1799,Belagavi,Theft,Pickpocket,2021-06-25,2021,3,Under Investigation,FIR/2021/022/1799,[205]
+1800,Dakshina Kannada,Sexual Assault,Rape,2025-05-20,2025,5,Open,FIR/2025/017/1800,"[399, 138]"
+1801,Bengaluru Urban,Theft,Vehicle theft,2020-08-25,2020,2,Under Investigation,FIR/2020/001/1801,"[37, 377, 203]"
+1802,Bengaluru Urban,Vandalism,Graffiti,2022-06-19,2022,2,Closed - Convicted,FIR/2022/005/1802,"[13, 279]"
+1803,Tumakuru,Theft,House break-in,2021-10-10,2021,3,Under Investigation,FIR/2021/015/1803,[379]
+1804,Mysuru,Assault,Domestic violence,2021-01-29,2021,3,Open,FIR/2021/010/1804,[379]
+1805,Tumakuru,Assault,Gang fight,2025-12-04,2025,4,Under Investigation,FIR/2025/016/1805,[31]
+1806,Bengaluru Rural,Assault,Road rage,2024-05-19,2024,4,Open,FIR/2024/007/1806,[190]
+1807,Belagavi,Cybercrime,Phishing,2025-06-26,2025,4,Under Investigation,FIR/2025/021/1807,"[317, 299]"
+1808,Hassan,Theft,House break-in,2022-05-26,2022,3,Open,FIR/2022/035/1808,[14]
+1809,Mysuru,Fraud,Impersonation,2023-04-05,2023,3,Closed - Acquitted,FIR/2023/013/1809,[242]
+1810,Mysuru,Vandalism,Property destruction,2022-10-13,2022,2,Under Investigation,FIR/2022/012/1810,"[284, 327, 7]"
+1811,Hassan,Theft,House break-in,2022-08-06,2022,3,Under Investigation,FIR/2022/033/1811,"[65, 48, 52]"
+1812,Ballari,Vandalism,Graffiti,2022-08-12,2022,3,Under Investigation,FIR/2022/030/1812,[335]
+1813,Dharwad,Theft,House break-in,2021-02-17,2021,3,Under Investigation,FIR/2021/028/1813,[282]
+1814,Kalaburagi,Assault,Gang fight,2025-05-29,2025,4,Closed - Convicted,FIR/2025/025/1814,"[18, 115, 372]"
+1815,Udupi,Robbery,Dacoity,2020-09-10,2020,4,Under Investigation,FIR/2020/040/1815,"[50, 318, 313]"
+1816,Bengaluru Urban,Drug Offence,Trafficking,2023-11-12,2023,4,Closed - Convicted,FIR/2023/005/1816,[150]
+1817,Hassan,Theft,Chain snatching,2024-06-16,2024,3,Under Investigation,FIR/2024/033/1817,"[274, 30, 180]"
+1818,Hassan,Theft,Chain snatching,2024-12-19,2024,3,Under Investigation,FIR/2024/034/1818,[151]
+1819,Dakshina Kannada,Theft,Chain snatching,2023-03-17,2023,2,Closed - Convicted,FIR/2023/019/1819,[374]
+1820,Mysuru,Assault,Brawl,2023-07-02,2023,3,Open,FIR/2023/011/1820,[106]
+1821,Tumakuru,Theft,House break-in,2021-03-03,2021,3,Closed - Acquitted,FIR/2021/015/1821,"[218, 175, 367]"
+1822,Bengaluru Rural,Robbery,Armed robbery,2020-09-29,2020,5,Closed - Convicted,FIR/2020/008/1822,"[323, 284]"
+1823,Dakshina Kannada,Cybercrime,Online fraud,2025-06-08,2025,3,Open,FIR/2025/017/1823,[342]
+1824,Hassan,Theft,Vehicle theft,2022-11-15,2022,3,Open,FIR/2022/035/1824,[199]
+1825,Bengaluru Rural,Theft,Pickpocket,2020-05-13,2020,3,Closed - Acquitted,FIR/2020/007/1825,[339]
+1826,Hassan,Theft,Pickpocket,2021-02-09,2021,3,Closed - Acquitted,FIR/2021/034/1826,[54]
+1827,Dakshina Kannada,Theft,House break-in,2020-02-27,2020,2,Open,FIR/2020/019/1827,"[276, 305]"
+1828,Kalaburagi,Robbery,Dacoity,2023-04-25,2023,5,Open,FIR/2023/025/1828,[213]
+1829,Mysuru,Vandalism,Property destruction,2020-02-24,2020,2,Open,FIR/2020/012/1829,[270]
+1830,Ballari,Assault,Gang fight,2025-11-15,2025,4,Cold Case,FIR/2025/030/1830,"[27, 387]"
+1831,Mysuru,Theft,Chain snatching,2024-03-30,2024,2,Closed - Acquitted,FIR/2024/011/1831,"[357, 35]"
+1832,Mysuru,Fraud,Insurance fraud,2021-09-25,2021,3,Closed - Convicted,FIR/2021/011/1832,[299]
+1833,Udupi,Robbery,Dacoity,2020-12-28,2020,4,Under Investigation,FIR/2020/040/1833,[186]
+1834,Udupi,Theft,Chain snatching,2020-11-30,2020,2,Open,FIR/2020/039/1834,[107]
+1835,Udupi,Theft,Chain snatching,2025-03-31,2025,2,Under Investigation,FIR/2025/040/1835,[400]
+1836,Udupi,Kidnapping,Child abduction,2021-10-24,2021,5,Under Investigation,FIR/2021/040/1836,[301]
+1837,Bengaluru Urban,Vandalism,Graffiti,2022-01-29,2022,2,Closed - Acquitted,FIR/2022/002/1837,[11]
+1838,Mysuru,Cybercrime,Identity theft,2023-09-14,2023,3,Closed - Acquitted,FIR/2023/010/1838,[13]
+1839,Shivamogga,Theft,Vehicle theft,2024-04-06,2024,3,Closed - Convicted,FIR/2024/036/1839,"[248, 348]"
+1840,Belagavi,Cybercrime,Investment scam,2020-07-26,2020,4,Under Investigation,FIR/2020/020/1840,[148]
+1841,Belagavi,Assault,Brawl,2021-01-22,2021,4,Closed - Acquitted,FIR/2021/022/1841,[236]
+1842,Bengaluru Urban,Robbery,Dacoity,2025-05-06,2025,4,Pending Trial,FIR/2025/001/1842,"[397, 335, 385]"
+1843,Shivamogga,Robbery,Mugging,2024-01-14,2024,5,Under Investigation,FIR/2024/036/1843,"[245, 269, 86]"
+1844,Dakshina Kannada,Robbery,Armed robbery,2022-09-04,2022,4,Closed - Convicted,FIR/2022/017/1844,"[261, 147]"
+1845,Tumakuru,Drug Offence,Trafficking,2020-06-14,2020,5,Closed - Convicted,FIR/2020/014/1845,[303]
+1846,Dakshina Kannada,Theft,Pickpocket,2022-02-21,2022,2,Closed - Acquitted,FIR/2022/018/1846,"[236, 237]"
+1847,Dakshina Kannada,Kidnapping,Ransom,2024-04-01,2024,5,Under Investigation,FIR/2024/019/1847,[170]
+1848,Udupi,Theft,House break-in,2025-05-19,2025,2,Under Investigation,FIR/2025/039/1848,[42]
+1849,Belagavi,Assault,Brawl,2023-04-14,2023,4,Closed - Convicted,FIR/2023/021/1849,"[356, 229]"
+1850,Belagavi,Theft,House break-in,2023-10-08,2023,3,Under Investigation,FIR/2023/020/1850,[192]
+1851,Dharwad,Fraud,Cheque fraud,2025-10-31,2025,4,Open,FIR/2025/029/1851,[121]
+1852,Dakshina Kannada,Robbery,Mugging,2020-11-13,2020,4,Closed - Acquitted,FIR/2020/019/1852,[107]
+1853,Bengaluru Rural,Assault,Brawl,2021-06-15,2021,4,Under Investigation,FIR/2021/007/1853,"[249, 199]"
+1854,Kalaburagi,Vandalism,Property destruction,2022-10-03,2022,3,Closed - Acquitted,FIR/2022/025/1854,[281]
+1855,Bengaluru Urban,Theft,Vehicle theft,2023-12-08,2023,2,Open,FIR/2023/006/1855,[23]
+1856,Belagavi,Theft,Chain snatching,2021-09-21,2021,3,Cold Case,FIR/2021/022/1856,[122]
+1857,Udupi,Theft,House break-in,2021-11-07,2021,2,Under Investigation,FIR/2021/039/1857,[341]
+1858,Hassan,Drug Offence,Distribution,2022-12-03,2022,5,Under Investigation,FIR/2022/034/1858,[287]
+1859,Bengaluru Rural,Robbery,Mugging,2020-01-04,2020,5,Under Investigation,FIR/2020/009/1859,"[14, 53, 233]"
+1860,Udupi,Vandalism,Property destruction,2024-06-17,2024,2,Open,FIR/2024/041/1860,"[365, 69]"
+1861,Bengaluru Urban,Assault,Brawl,2024-10-25,2024,3,Closed - Acquitted,FIR/2024/005/1861,[124]
+1862,Mysuru,Assault,Brawl,2021-07-01,2021,3,Pending Trial,FIR/2021/010/1862,"[62, 139, 2]"
+1863,Mysuru,Theft,Vehicle theft,2020-04-01,2020,2,Under Investigation,FIR/2020/010/1863,[98]
+1864,Shivamogga,Fraud,Cheque fraud,2022-08-13,2022,4,Under Investigation,FIR/2022/038/1864,[249]
+1865,Udupi,Fraud,Impersonation,2024-01-26,2024,3,Pending Trial,FIR/2024/039/1865,[239]
+1866,Bengaluru Rural,Drug Offence,Trafficking,2024-09-28,2024,5,Closed - Acquitted,FIR/2024/008/1866,"[400, 102, 220]"
+1867,Ballari,Theft,Vehicle theft,2023-05-16,2023,3,Closed - Convicted,FIR/2023/030/1867,[96]
+1868,Mysuru,Drug Offence,Possession,2023-10-15,2023,4,Open,FIR/2023/012/1868,[362]
+1869,Mysuru,Assault,Domestic violence,2022-10-27,2022,3,Under Investigation,FIR/2022/012/1869,"[113, 295]"
+1870,Dakshina Kannada,Theft,Vehicle theft,2023-11-01,2023,2,Closed - Convicted,FIR/2023/018/1870,[268]
+1871,Shivamogga,Cybercrime,Phishing,2023-10-25,2023,4,Under Investigation,FIR/2023/038/1871,"[177, 245, 67]"
+1872,Udupi,Fraud,Insurance fraud,2024-06-01,2024,3,Pending Trial,FIR/2024/039/1872,[318]
+1873,Kalaburagi,Assault,Domestic violence,2025-02-19,2025,4,Closed - Convicted,FIR/2025/025/1873,"[326, 343]"
+1874,Belagavi,Vandalism,Property destruction,2024-09-27,2024,3,Under Investigation,FIR/2024/020/1874,"[292, 136]"
+1875,Mysuru,Fraud,Insurance fraud,2022-03-24,2022,3,Open,FIR/2022/011/1875,"[72, 209]"
+1876,Dakshina Kannada,Theft,Pickpocket,2020-06-25,2020,2,Pending Trial,FIR/2020/018/1876,[16]
+1877,Dakshina Kannada,Assault,Road rage,2024-11-29,2024,3,Open,FIR/2024/018/1877,[145]
+1878,Bengaluru Urban,Drug Offence,Possession,2021-07-07,2021,4,Closed - Convicted,FIR/2021/005/1878,[328]
+1879,Bengaluru Urban,Theft,Pickpocket,2020-08-11,2020,2,Closed - Convicted,FIR/2020/002/1879,"[375, 151]"
+1880,Bengaluru Urban,Theft,Pickpocket,2025-02-20,2025,2,Under Investigation,FIR/2025/006/1880,[179]
+1881,Dharwad,Theft,Chain snatching,2024-12-27,2024,3,Open,FIR/2024/027/1881,[37]
+1882,Mysuru,Theft,Vehicle theft,2024-05-09,2024,2,Closed - Convicted,FIR/2024/010/1882,"[90, 372]"
+1883,Dharwad,Vandalism,Property destruction,2022-11-09,2022,3,Pending Trial,FIR/2022/027/1883,[358]
+1884,Hassan,Cybercrime,Phishing,2023-08-07,2023,4,Open,FIR/2023/035/1884,[18]
+1885,Bengaluru Urban,Sexual Assault,Eve-teasing,2022-08-31,2022,5,Closed - Acquitted,FIR/2022/001/1885,"[138, 396]"
+1886,Shivamogga,Theft,Vehicle theft,2025-10-15,2025,3,Open,FIR/2025/038/1886,"[132, 319]"
+1887,Dakshina Kannada,Cybercrime,Investment scam,2022-09-21,2022,3,Open,FIR/2022/017/1887,"[143, 281]"
+1888,Ballari,Theft,House break-in,2022-02-13,2022,3,Under Investigation,FIR/2022/030/1888,[198]
+1889,Tumakuru,Cybercrime,Online fraud,2022-06-15,2022,4,Open,FIR/2022/015/1889,[288]
+1890,Mysuru,Assault,Road rage,2021-04-24,2021,3,Closed - Convicted,FIR/2021/010/1890,"[288, 215]"
+1891,Mysuru,Cybercrime,Investment scam,2024-05-20,2024,3,Pending Trial,FIR/2024/012/1891,[106]
+1892,Dharwad,Theft,House break-in,2023-12-21,2023,3,Closed - Convicted,FIR/2023/028/1892,"[348, 312, 28]"
+1893,Hassan,Fraud,Insurance fraud,2024-02-27,2024,4,Open,FIR/2024/033/1893,"[397, 35]"
+1894,Shivamogga,Cybercrime,Online fraud,2024-12-08,2024,4,Under Investigation,FIR/2024/038/1894,"[159, 313]"
+1895,Dharwad,Assault,Brawl,2021-05-02,2021,4,Under Investigation,FIR/2021/029/1895,"[21, 143, 97]"
+1896,Bengaluru Rural,Sexual Assault,Eve-teasing,2023-08-12,2023,5,Under Investigation,FIR/2023/009/1896,"[299, 31, 110]"
+1897,Belagavi,Kidnapping,Child abduction,2022-10-14,2022,5,Open,FIR/2022/021/1897,[70]
+1898,Tumakuru,Assault,Brawl,2020-01-09,2020,4,Closed - Convicted,FIR/2020/014/1898,[123]
+1899,Hassan,Assault,Road rage,2021-04-11,2021,4,Under Investigation,FIR/2021/034/1899,[137]
+1900,Mysuru,Theft,Vehicle theft,2025-03-24,2025,2,Under Investigation,FIR/2025/010/1900,[400]
+1901,Belagavi,Drug Offence,Distribution,2021-08-05,2021,5,Closed - Convicted,FIR/2021/023/1901,"[129, 320]"
+1902,Bengaluru Urban,Assault,Domestic violence,2022-08-13,2022,3,Closed - Convicted,FIR/2022/005/1902,[131]
+1903,Bengaluru Urban,Cybercrime,Online fraud,2025-09-28,2025,3,Under Investigation,FIR/2025/003/1903,[201]
+1904,Dakshina Kannada,Kidnapping,Ransom,2025-06-18,2025,5,Closed - Convicted,FIR/2025/019/1904,[338]
+1905,Udupi,Robbery,Armed robbery,2020-03-21,2020,4,Closed - Acquitted,FIR/2020/039/1905,[347]
+1906,Shivamogga,Fraud,Insurance fraud,2020-06-19,2020,4,Under Investigation,FIR/2020/036/1906,"[295, 282]"
+1907,Dakshina Kannada,Theft,Chain snatching,2020-06-27,2020,2,Closed - Convicted,FIR/2020/017/1907,[285]
+1908,Udupi,Fraud,Cheque fraud,2020-06-22,2020,3,Under Investigation,FIR/2020/039/1908,[184]
+1909,Dakshina Kannada,Robbery,Armed robbery,2025-09-11,2025,4,Pending Trial,FIR/2025/017/1909,"[386, 363]"
+1910,Udupi,Robbery,Dacoity,2020-08-31,2020,4,Under Investigation,FIR/2020/039/1910,[171]
+1911,Bengaluru Urban,Cybercrime,Investment scam,2025-01-26,2025,3,Closed - Convicted,FIR/2025/004/1911,[144]
+1912,Dakshina Kannada,Assault,Domestic violence,2022-12-19,2022,3,Under Investigation,FIR/2022/018/1912,[357]
+1913,Kalaburagi,Theft,Chain snatching,2022-11-10,2022,3,Under Investigation,FIR/2022/026/1913,[373]
+1914,Dharwad,Fraud,Impersonation,2025-11-01,2025,4,Open,FIR/2025/028/1914,[134]
+1915,Bengaluru Urban,Drug Offence,Distribution,2021-10-31,2021,4,Open,FIR/2021/001/1915,"[93, 292, 115]"
+1916,Bengaluru Urban,Theft,House break-in,2025-09-20,2025,2,Open,FIR/2025/001/1916,[337]
+1917,Ballari,Fraud,Insurance fraud,2025-08-27,2025,4,Closed - Acquitted,FIR/2025/032/1917,"[6, 35]"
+1918,Belagavi,Sexual Assault,Molestation,2025-10-28,2025,5,Closed - Acquitted,FIR/2025/022/1918,[334]
+1919,Shivamogga,Robbery,Mugging,2021-12-24,2021,5,Closed - Convicted,FIR/2021/036/1919,"[275, 392]"
+1920,Udupi,Cybercrime,Investment scam,2024-06-28,2024,3,Under Investigation,FIR/2024/041/1920,[158]
+1921,Hassan,Theft,Chain snatching,2021-05-17,2021,3,Open,FIR/2021/035/1921,[44]
+1922,Bengaluru Urban,Assault,Brawl,2024-06-17,2024,3,Closed - Convicted,FIR/2024/005/1922,[346]
+1923,Mysuru,Kidnapping,Ransom,2025-08-19,2025,5,Open,FIR/2025/012/1923,[132]
+1924,Bengaluru Urban,Cybercrime,Phishing,2025-02-28,2025,3,Open,FIR/2025/006/1924,[162]
+1925,Belagavi,Theft,House break-in,2025-05-13,2025,3,Under Investigation,FIR/2025/022/1925,"[34, 286]"
+1926,Bengaluru Urban,Assault,Gang fight,2024-10-16,2024,3,Under Investigation,FIR/2024/002/1926,"[201, 153]"
+1927,Tumakuru,Vandalism,Property destruction,2022-09-22,2022,3,Under Investigation,FIR/2022/015/1927,"[17, 52]"
+1928,Udupi,Robbery,Dacoity,2025-01-13,2025,4,Open,FIR/2025/039/1928,[273]
+1929,Kalaburagi,Robbery,Armed robbery,2024-06-10,2024,5,Under Investigation,FIR/2024/024/1929,[257]
+1930,Kalaburagi,Kidnapping,Ransom,2021-06-25,2021,5,Under Investigation,FIR/2021/026/1930,[364]
+1931,Bengaluru Urban,Cybercrime,Identity theft,2022-12-26,2022,3,Open,FIR/2022/006/1931,[221]
+1932,Bengaluru Rural,Theft,Pickpocket,2022-06-01,2022,3,Closed - Convicted,FIR/2022/007/1932,"[306, 21]"
+1933,Bengaluru Urban,Assault,Brawl,2024-05-09,2024,3,Open,FIR/2024/006/1933,"[4, 168]"
+1934,Dakshina Kannada,Theft,Vehicle theft,2024-09-01,2024,2,Closed - Convicted,FIR/2024/018/1934,"[56, 62]"
+1935,Ballari,Assault,Brawl,2024-04-01,2024,4,Closed - Convicted,FIR/2024/031/1935,[34]
+1936,Tumakuru,Fraud,Cheque fraud,2020-04-21,2020,4,Under Investigation,FIR/2020/014/1936,[339]
+1937,Mysuru,Cybercrime,Investment scam,2022-04-30,2022,3,Open,FIR/2022/013/1937,[101]
+1938,Belagavi,Cybercrime,Online fraud,2023-05-15,2023,4,Under Investigation,FIR/2023/020/1938,"[166, 183]"
+1939,Dharwad,Drug Offence,Distribution,2023-03-30,2023,5,Open,FIR/2023/029/1939,[321]
+1940,Udupi,Fraud,Insurance fraud,2021-09-27,2021,3,Closed - Convicted,FIR/2021/040/1940,"[272, 367, 22]"
+1941,Mysuru,Robbery,Dacoity,2023-08-21,2023,4,Closed - Convicted,FIR/2023/010/1941,[99]
+1942,Shivamogga,Robbery,Dacoity,2023-06-06,2023,5,Closed - Convicted,FIR/2023/036/1942,[283]
+1943,Bengaluru Urban,Drug Offence,Distribution,2021-02-17,2021,4,Closed - Convicted,FIR/2021/004/1943,[20]
+1944,Hassan,Sexual Assault,Molestation,2023-03-10,2023,5,Under Investigation,FIR/2023/033/1944,[75]
+1945,Shivamogga,Assault,Brawl,2020-09-13,2020,4,Open,FIR/2020/037/1945,[56]
+1946,Bengaluru Urban,Assault,Road rage,2021-07-09,2021,3,Open,FIR/2021/003/1946,"[366, 289]"
+1947,Bengaluru Urban,Theft,Chain snatching,2024-04-11,2024,2,Under Investigation,FIR/2024/002/1947,[114]
+1948,Mysuru,Fraud,Cheque fraud,2025-06-16,2025,3,Under Investigation,FIR/2025/012/1948,[374]
+1949,Dharwad,Assault,Gang fight,2021-09-16,2021,4,Closed - Convicted,FIR/2021/028/1949,[240]
+1950,Bengaluru Urban,Robbery,Mugging,2021-01-08,2021,4,Under Investigation,FIR/2021/006/1950,[218]
+1951,Ballari,Sexual Assault,Eve-teasing,2021-12-03,2021,5,Closed - Convicted,FIR/2021/031/1951,"[330, 235]"
+1952,Ballari,Assault,Brawl,2022-09-27,2022,4,Under Investigation,FIR/2022/032/1952,"[117, 32]"
+1953,Belagavi,Fraud,Land grab,2020-12-08,2020,4,Under Investigation,FIR/2020/020/1953,"[191, 172]"
+1954,Belagavi,Assault,Gang fight,2025-04-21,2025,4,Open,FIR/2025/020/1954,[207]
+1955,Dakshina Kannada,Cybercrime,Investment scam,2025-01-24,2025,3,Closed - Acquitted,FIR/2025/019/1955,[14]
+1956,Belagavi,Cybercrime,Identity theft,2020-07-05,2020,4,Pending Trial,FIR/2020/023/1956,"[5, 375]"
+1957,Bengaluru Rural,Theft,Pickpocket,2023-06-01,2023,3,Under Investigation,FIR/2023/009/1957,[208]
+1958,Bengaluru Rural,Cybercrime,Phishing,2020-10-05,2020,4,Under Investigation,FIR/2020/008/1958,[31]
+1959,Tumakuru,Robbery,Armed robbery,2023-05-23,2023,5,Closed - Convicted,FIR/2023/014/1959,[298]
+1960,Ballari,Cybercrime,Online fraud,2025-07-31,2025,4,Under Investigation,FIR/2025/030/1960,"[134, 397]"
+1961,Dharwad,Kidnapping,Child abduction,2023-06-21,2023,5,Closed - Convicted,FIR/2023/028/1961,[269]
+1962,Ballari,Theft,Chain snatching,2024-11-29,2024,3,Closed - Acquitted,FIR/2024/030/1962,[125]
+1963,Dakshina Kannada,Theft,Vehicle theft,2023-10-04,2023,2,Closed - Convicted,FIR/2023/019/1963,[234]
+1964,Belagavi,Cybercrime,Phishing,2023-10-13,2023,4,Open,FIR/2023/020/1964,"[135, 54]"
+1965,Kalaburagi,Assault,Domestic violence,2022-11-24,2022,4,Under Investigation,FIR/2022/025/1965,[54]
+1966,Dakshina Kannada,Theft,House break-in,2021-09-24,2021,2,Open,FIR/2021/018/1966,[38]
+1967,Bengaluru Rural,Drug Offence,Distribution,2025-03-04,2025,5,Closed - Convicted,FIR/2025/007/1967,[18]
+1968,Mysuru,Fraud,Cheque fraud,2024-03-13,2024,3,Under Investigation,FIR/2024/013/1968,[322]
+1969,Bengaluru Urban,Theft,Pickpocket,2020-05-16,2020,2,Open,FIR/2020/005/1969,"[153, 30]"
+1970,Ballari,Robbery,Dacoity,2024-03-21,2024,5,Under Investigation,FIR/2024/030/1970,[221]
+1971,Bengaluru Urban,Sexual Assault,Molestation,2020-11-18,2020,5,Open,FIR/2020/003/1971,[130]
+1972,Bengaluru Urban,Theft,Chain snatching,2025-04-13,2025,2,Closed - Convicted,FIR/2025/003/1972,"[265, 30]"
+1973,Hassan,Theft,Vehicle theft,2021-08-28,2021,3,Under Investigation,FIR/2021/034/1973,[16]
+1974,Dharwad,Theft,Pickpocket,2021-11-24,2021,3,Closed - Convicted,FIR/2021/027/1974,[240]
+1975,Kalaburagi,Theft,Chain snatching,2020-05-22,2020,3,Open,FIR/2020/025/1975,"[219, 339]"
+1976,Ballari,Fraud,Land grab,2024-08-24,2024,4,Closed - Convicted,FIR/2024/030/1976,[87]
+1977,Bengaluru Urban,Theft,House break-in,2020-12-19,2020,2,Under Investigation,FIR/2020/001/1977,[121]
+1978,Belagavi,Theft,House break-in,2021-12-02,2021,3,Pending Trial,FIR/2021/022/1978,[72]
+1979,Belagavi,Fraud,Impersonation,2024-05-17,2024,4,Under Investigation,FIR/2024/022/1979,"[187, 267]"
+1980,Bengaluru Urban,Assault,Domestic violence,2025-04-16,2025,3,Under Investigation,FIR/2025/004/1980,"[94, 200]"
+1981,Tumakuru,Theft,Pickpocket,2022-02-02,2022,3,Closed - Convicted,FIR/2022/016/1981,[9]
+1982,Bengaluru Rural,Theft,Chain snatching,2023-03-28,2023,3,Closed - Acquitted,FIR/2023/008/1982,[74]
+1983,Bengaluru Rural,Cybercrime,Identity theft,2024-06-06,2024,4,Closed - Acquitted,FIR/2024/009/1983,[348]
+1984,Dharwad,Sexual Assault,Eve-teasing,2025-08-14,2025,5,Under Investigation,FIR/2025/027/1984,[371]
+1985,Belagavi,Robbery,Armed robbery,2022-01-30,2022,5,Open,FIR/2022/020/1985,"[354, 361]"
+1986,Bengaluru Urban,Drug Offence,Trafficking,2022-02-07,2022,4,Under Investigation,FIR/2022/004/1986,[341]
+1987,Bengaluru Rural,Theft,Chain snatching,2024-10-11,2024,3,Under Investigation,FIR/2024/007/1987,[77]
+1988,Tumakuru,Sexual Assault,Molestation,2020-01-16,2020,5,Pending Trial,FIR/2020/014/1988,[135]
+1989,Belagavi,Vandalism,Property destruction,2024-03-29,2024,3,Under Investigation,FIR/2024/022/1989,[317]
+1990,Bengaluru Rural,Theft,House break-in,2023-06-08,2023,3,Closed - Convicted,FIR/2023/009/1990,"[121, 231]"
+1991,Mysuru,Assault,Brawl,2025-07-30,2025,3,Closed - Acquitted,FIR/2025/010/1991,[51]
+1992,Bengaluru Urban,Cybercrime,Online fraud,2022-08-10,2022,3,Under Investigation,FIR/2022/006/1992,"[303, 188]"
+1993,Belagavi,Theft,House break-in,2020-12-24,2020,3,Pending Trial,FIR/2020/021/1993,"[116, 34]"
+1994,Belagavi,Theft,Pickpocket,2024-01-08,2024,3,Under Investigation,FIR/2024/023/1994,[86]
+1995,Hassan,Theft,House break-in,2023-10-28,2023,3,Cold Case,FIR/2023/035/1995,[61]
+1996,Bengaluru Urban,Assault,Domestic violence,2024-02-21,2024,3,Pending Trial,FIR/2024/006/1996,[215]
+1997,Kalaburagi,Theft,Pickpocket,2024-10-24,2024,3,Open,FIR/2024/025/1997,[343]
+1998,Tumakuru,Fraud,Land grab,2021-03-18,2021,4,Under Investigation,FIR/2021/016/1998,[352]
+1999,Mysuru,Cybercrime,Online fraud,2021-03-09,2021,3,Under Investigation,FIR/2021/011/1999,[381]
+2000,Udupi,Fraud,Insurance fraud,2023-11-12,2023,3,Under Investigation,FIR/2023/039/2000,[201]
