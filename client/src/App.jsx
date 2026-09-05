@@ -16,6 +16,7 @@ import FIRIntake    from './pages/FIRIntake';
 import DataDirectory from './pages/DataDirectory';
 import NewUpdates from './pages/NewUpdates';
 import DataCards from './pages/DataCards';
+import AuthGate from './components/AuthGate';
 
 const NAV = [
   { to: '/crime-dashboard', icon: LayoutDashboard, label: 'Crime Dashboard' },
@@ -34,6 +35,7 @@ export default function App() {
   const [collapsed, setCollapsed] = useState(() => window.innerWidth < 900);
 
   return (
+    <AuthGate>
     <div className="flex h-screen overflow-hidden bg-slate-950">
       {/* Sidebar */}
       <aside className={`flex flex-shrink-0 flex-col bg-slate-900 border-r border-slate-700 transition-all duration-200 ${collapsed ? 'w-16' : 'w-60'}`}>
@@ -128,5 +130,6 @@ export default function App() {
         </Routes>
       </main>
     </div>
+    </AuthGate>
   );
 }

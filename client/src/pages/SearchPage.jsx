@@ -1,7 +1,7 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   AlertCircle, Bot, CheckCircle2, ChevronDown, Code2, Database, GitBranch, Loader2,
-  Maximize2, MessageSquare, Search, Send, Table2, User, X
+  Maximize2, MessageSquare, Mic, MicOff, Search, Send, Table2, User, X
 } from 'lucide-react';
 import { api } from '../api';
 
@@ -701,6 +701,71 @@ export default function SearchPage() {
   const [error, setError] = useState(null);
   const [showSql, setShowSql] = useState(false);
   const [viewMode, setViewMode] = useState('table');
+  const [listening, setListening] = useState(false);
+  const [voiceError, setVoiceError] = useState('');
+  const recognitionRef = useRef(null);
+
+  const speechSupported = typeof window !== 'undefined'
+    && Boolean(window.SpeechRecognition || window.webkitSpeechRecognition);
+
+  useEffect(() => {
+    return () => {
+      recognitionRef.current?.abort?.();
+    };
+  }, []);
+
+  const toggleVoiceInput = () => {
+    setVoiceError('');
+
+    if (!speechSupported) {
+      setVoiceError('Voice input is supported in Chrome or Edge. Please use typed search in this browser.');
+      return;
+    }
+
+    if (listening) {
+      recognitionRef.current?.stop?.();
+      setListening(false);
+      return;
+    }
+
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'en-IN';
+    recognition.interimResults = true;
+    recognition.continuous = false;
+
+    let finalTranscript = '';
+
+    recognition.onresult = event => {
+      let interimTranscript = '';
+      for (let index = event.resultIndex; index < event.results.length; index += 1) {
+        const transcript = event.results[index][0]?.transcript || '';
+        if (event.results[index].isFinal) {
+          finalTranscript += transcript;
+        } else {
+          interimTranscript += transcript;
+        }
+      }
+      const spokenText = `${finalTranscript} ${interimTranscript}`.trim();
+      if (spokenText) setQ(spokenText);
+    };
+
+    recognition.onerror = event => {
+      const message = event.error === 'not-allowed'
+        ? 'Microphone permission was blocked. Allow microphone access in the browser and try again.'
+        : 'Voice input stopped. Please try again or type the query.';
+      setVoiceError(message);
+      setListening(false);
+    };
+
+    recognition.onend = () => {
+      setListening(false);
+    };
+
+    recognitionRef.current = recognition;
+    setListening(true);
+    recognition.start();
+  };
 
   const handleAsk = async e => {
     e.preventDefault();
@@ -762,6 +827,28 @@ export default function SearchPage() {
               rows={5}
               className="w-full resize-none rounded-lg border border-slate-700 bg-slate-900 px-3 py-3 text-sm text-slate-100 placeholder-slate-500 focus:border-blue-500 focus:outline-none"
             />
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+              <button
+                type="button"
+                onClick={toggleVoiceInput}
+                className={`flex items-center gap-2 rounded-md border px-3 py-2 text-xs font-semibold transition-colors ${
+                  listening
+                    ? 'border-red-600 bg-red-950 text-red-200 hover:bg-red-900'
+                    : 'border-cyan-700 bg-cyan-950 text-cyan-200 hover:bg-cyan-900'
+                }`}
+              >
+                {listening ? <MicOff size={14} /> : <Mic size={14} />}
+                {listening ? 'Stop listening' : 'Speak query'}
+              </button>
+              <div className="text-[11px] text-slate-500">
+                Voice input uses your browser microphone.
+              </div>
+            </div>
+            {voiceError && (
+              <div className="mt-2 rounded-md border border-yellow-800 bg-yellow-950 px-3 py-2 text-xs text-yellow-200">
+                {voiceError}
+              </div>
+            )}
             <button
               type="submit"
               disabled={loading || !q.trim()}
