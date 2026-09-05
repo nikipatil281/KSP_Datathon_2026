@@ -92,7 +92,10 @@ export default function AuthGate({ children }) {
     if (!AUTH_REQUIRED || checking || user || !sdkReady || authView !== 'signin') return;
     const auth = getCatalystAuth();
     if (auth?.signIn) {
-      auth.signIn('catalyst-login-box', { service_url: '/app/index.html' });
+      auth.signIn('catalyst-login-box', {
+        css_url: '/app/embedded-auth.css',
+        service_url: '/app/index.html',
+      });
     }
   }, [authView, checking, sdkReady, user]);
 
@@ -132,7 +135,7 @@ export default function AuthGate({ children }) {
         last_name: signupForm.lastName.trim() || 'User',
         email_id: email,
         platform_type: 'web',
-        redirect_url: '/app/index.html',
+        redirect_url: getRedirectUrl(),
       });
       setSignupMessage(`Setup email sent to ${email}. Verify the account, set a Catalyst password, then return here and sign in.`);
       setSignupForm(current => ({ ...current, firstName: '', lastName: '' }));
