@@ -134,8 +134,8 @@ export default function AuthGate({ children }) {
 
   if (!user) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-slate-950 p-6">
-        <div className="grid w-full max-w-5xl overflow-hidden rounded-lg border border-slate-800 bg-slate-900 shadow-2xl lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="flex min-h-screen items-center justify-center overflow-y-auto bg-slate-950 p-6">
+        <div className="grid w-full max-w-6xl rounded-lg border border-slate-800 bg-slate-900 shadow-2xl lg:min-h-[760px] lg:grid-cols-[0.8fr_1.2fr]">
           <div className="border-b border-slate-800 bg-slate-950 p-8 lg:border-b-0 lg:border-r">
             <div className="flex h-10 w-10 items-center justify-center rounded-md border border-slate-700 bg-slate-900">
               <ShieldCheck size={20} className="text-blue-400" />
@@ -148,8 +148,8 @@ export default function AuthGate({ children }) {
               Authentication is handled by Zoho Catalyst. User accounts and roles are managed from the Catalyst console.
             </div>
           </div>
-          <div className="p-6">
-            <div id="catalyst-login-box" className="min-h-[420px] rounded-lg border border-slate-800 bg-white" />
+          <div className="min-h-[760px] overflow-auto bg-slate-900 p-6">
+            <div id="catalyst-login-box" className="min-h-[700px] rounded-lg border border-slate-800 bg-white" />
           </div>
         </div>
       </div>
