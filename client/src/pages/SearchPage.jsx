@@ -19,15 +19,31 @@ function officerActivityKey(officer, type) {
   return `ksp:${type}:${officer?.id || 'anonymous'}`;
 }
 
-function appendOfficerActivity(officer, type, entry) {
-  if (typeof window === 'undefined') return;
+function readOfficerActivity(officer, type) {
+  if (typeof window === 'undefined') return [];
   try {
     const key = officerActivityKey(officer, type);
-    const current = JSON.parse(window.localStorage.getItem(key) || '[]');
-    const next = [{ ...entry, officer_id: officer?.id, officer_email: officer?.email, saved_at: new Date().toISOString() }, ...current].slice(0, 25);
+    return JSON.parse(window.localStorage.getItem(key) || '[]');
+  } catch {
+    return [];
+  }
+}
+
+function writeOfficerActivity(officer, type, rows) {
+  if (typeof window === 'undefined') return;
+  window.localStorage.setItem(officerActivityKey(officer, type), JSON.stringify(rows));
+}
+
+function appendOfficerActivity(officer, type, entry) {
+  try {
+    const key = officerActivityKey(officer, type);
+    const current = readOfficerActivity(officer, type);
+    const next = [{ id: `${Date.now()}-${Math.random().toString(36).slice(2)}`, ...entry, officer_id: officer?.id, officer_email: officer?.email, saved_at: new Date().toISOString() }, ...current].slice(0, 25);
     window.localStorage.setItem(key, JSON.stringify(next));
+    return next;
   } catch {
     // Local audit history is best-effort; search should never fail because storage is unavailable.
+    return [];
   }
 }
 
@@ -721,16 +737,27 @@ export default function SearchPage() {
   const [viewMode, setViewMode] = useState('table');
   const [listening, setListening] = useState(false);
   const [voiceError, setVoiceError] = useState('');
+  const [savedSearches, setSavedSearches] = useState(() => readOfficerActivity(null, 'searches'));
   const recognitionRef = useRef(null);
 
   const speechSupported = typeof window !== 'undefined'
     && Boolean(window.SpeechRecognition || window.webkitSpeechRecognition);
 
   useEffect(() => {
+    setSavedSearches(readOfficerActivity(officer, 'searches'));
+  }, [officer]);
+
+  useEffect(() => {
     return () => {
       recognitionRef.current?.abort?.();
     };
   }, []);
+
+  const deleteSavedSearch = id => {
+    const next = savedSearches.filter(item => item.id !== id);
+    setSavedSearches(next);
+    writeOfficerActivity(officer, 'searches', next);
+  };
 
   const toggleVoiceInput = () => {
     setVoiceError('');
@@ -802,12 +829,13 @@ export default function SearchPage() {
       const data = await api.askSearchAssistant(question);
       setAnswer(data);
       setConversation(items => [...items, { role: 'assistant', content: data.message, sql: data.sql }]);
-      appendOfficerActivity(officer, 'searches', {
+      const nextHistory = appendOfficerActivity(officer, 'searches', {
         question,
         intent: data.intent,
         sql: data.sql,
         row_count: data.row_count || data.rows?.length || 0,
       });
+      setSavedSearches(nextHistory);
     } catch (e) {
       setError(e.message);
     } finally {
@@ -912,6 +940,44 @@ export default function SearchPage() {
               </div>
             </div>
           )}
+
+          <div className="rounded-lg border border-slate-800 bg-slate-900 p-4">
+            <div className="mb-3 flex items-center justify-between gap-2">
+              <div className="text-sm font-semibold text-slate-200">Saved Search History</div>
+              <div className="text-[11px] text-slate-500">{savedSearches.length} saved</div>
+            </div>
+            {savedSearches.length === 0 ? (
+              <div className="rounded-md border border-slate-800 bg-slate-950 px-3 py-3 text-xs text-slate-500">
+                Searches from this browser will appear here.
+              </div>
+            ) : (
+              <div className="max-h-72 space-y-2 overflow-auto pr-1">
+                {savedSearches.map(item => (
+                  <div key={item.id} className="rounded-md border border-slate-800 bg-slate-950 p-3">
+                    <div className="flex items-start justify-between gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setQ(item.question)}
+                        className="text-left text-xs font-medium text-slate-200 hover:text-cyan-200"
+                      >
+                        {item.question}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => deleteSavedSearch(item.id)}
+                        className="rounded border border-slate-700 px-2 py-1 text-[11px] text-slate-400 hover:border-red-700 hover:text-red-200"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                    <div className="mt-2 text-[11px] text-slate-500">
+                      {item.row_count || 0} rows · {item.saved_at ? new Date(item.saved_at).toLocaleString() : 'Saved'}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         </section>
 
         <section className="space-y-4">

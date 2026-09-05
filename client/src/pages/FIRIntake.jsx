@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
   AlertTriangle, Bot, CheckCircle, Database, Eye, FileText,
-  Languages, Loader2, MessageSquare, Save, ShieldCheck, Upload
+  Languages, Loader2, MessageSquare, Save, ShieldCheck, Trash2, Upload
 } from 'lucide-react';
 import { api } from '../api';
 import { useAuth } from '../components/AuthGate';
@@ -20,15 +20,31 @@ const STEPS = ['Upload', 'OCR', 'Extract', 'Review'];
 const REAL_FIR_OCR = import.meta.env.VITE_USE_CATALYST_FIR === 'true' && Boolean(import.meta.env.VITE_FIR_API_URL);
 
 function appendOfficerFirActivity(officer, entry) {
-  if (typeof window === 'undefined') return;
+  if (typeof window === 'undefined') return [];
   try {
     const key = `ksp:fir_uploads:${officer?.id || 'anonymous'}`;
     const current = JSON.parse(window.localStorage.getItem(key) || '[]');
-    const next = [{ ...entry, officer_id: officer?.id, officer_email: officer?.email, saved_at: new Date().toISOString() }, ...current].slice(0, 20);
+    const next = [{ id: `${Date.now()}-${Math.random().toString(36).slice(2)}`, ...entry, officer_id: officer?.id, officer_email: officer?.email, saved_at: new Date().toISOString() }, ...current].slice(0, 20);
     window.localStorage.setItem(key, JSON.stringify(next));
+    return next;
   } catch {
     // Local audit history is best-effort for the prototype.
+    return [];
   }
+}
+
+function readOfficerFirActivity(officer) {
+  if (typeof window === 'undefined') return [];
+  try {
+    return JSON.parse(window.localStorage.getItem(`ksp:fir_uploads:${officer?.id || 'anonymous'}`) || '[]');
+  } catch {
+    return [];
+  }
+}
+
+function writeOfficerFirActivity(officer, rows) {
+  if (typeof window === 'undefined') return;
+  window.localStorage.setItem(`ksp:fir_uploads:${officer?.id || 'anonymous'}`, JSON.stringify(rows));
 }
 
 function Field({ label, value, confidence }) {
@@ -81,12 +97,23 @@ export default function FIRIntake() {
   const [assistantLoading, setAssistantLoading] = useState(false);
   const [assistantQuestion, setAssistantQuestion] = useState('Which FIR database tables should this OCR output fill?');
   const [databaseAdded, setDatabaseAdded] = useState(false);
+  const [savedUploads, setSavedUploads] = useState(() => readOfficerFirActivity(null));
 
   const previewUrl = useMemo(() => file ? URL.createObjectURL(file) : null, [file]);
 
   useEffect(() => () => {
     if (previewUrl) URL.revokeObjectURL(previewUrl);
   }, [previewUrl]);
+
+  useEffect(() => {
+    setSavedUploads(readOfficerFirActivity(officer));
+  }, [officer]);
+
+  const deleteSavedUpload = id => {
+    const next = savedUploads.filter(item => item.id !== id);
+    setSavedUploads(next);
+    writeOfficerFirActivity(officer, next);
+  };
 
   const handleProcess = async () => {
     if (!file) return;
@@ -101,13 +128,14 @@ export default function FIRIntake() {
       window.setTimeout(() => setActiveStep(2), 500);
       const data = await api.processFirDocument(file, { language });
       setResult(data);
-      appendOfficerFirActivity(officer, {
+      const nextUploads = appendOfficerFirActivity(officer, {
         file_name: file.name,
         file_size: file.size,
         language,
         document: data.document,
         extracted: data.extracted,
       });
+      setSavedUploads(nextUploads);
       setActiveStep(3);
       await runAssistant(data, 'Review this OCR output and prepare draft FIR table mappings.');
     } catch (e) {
@@ -231,6 +259,43 @@ export default function FIRIntake() {
               <AlertTriangle size={16} /> {error}
             </div>
           )}
+
+          <div className="rounded-xl border border-slate-700 bg-slate-800 p-5">
+            <div className="mb-3 flex items-center justify-between gap-2">
+              <h2 className="flex items-center gap-2 text-sm font-semibold text-slate-200">
+                <Save size={15} className="text-green-400" /> Saved Upload History
+              </h2>
+              <span className="text-[11px] text-slate-500">{savedUploads.length} saved</span>
+            </div>
+            {savedUploads.length === 0 ? (
+              <div className="rounded-md border border-slate-700 bg-slate-900 px-3 py-3 text-xs text-slate-500">
+                FIR uploads from this browser will appear here.
+              </div>
+            ) : (
+              <div className="max-h-72 space-y-2 overflow-auto pr-1">
+                {savedUploads.map(item => (
+                  <div key={item.id} className="rounded-md border border-slate-700 bg-slate-900 p-3">
+                    <div className="flex items-start justify-between gap-2">
+                      <div>
+                        <div className="text-xs font-semibold text-slate-100">{item.file_name || item.document?.name || 'FIR upload'}</div>
+                        <div className="mt-1 text-[11px] text-slate-500">
+                          {item.extracted?.fir_number || 'FIR number pending'} · {item.saved_at ? new Date(item.saved_at).toLocaleString() : 'Saved'}
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => deleteSavedUpload(item.id)}
+                        className="rounded border border-slate-700 p-1.5 text-slate-400 hover:border-red-700 hover:text-red-200"
+                        aria-label="Delete saved upload"
+                      >
+                        <Trash2 size={13} />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
 
           {result?.warnings?.length > 0 && (
             <div className="rounded-xl border border-yellow-700 bg-yellow-950 p-4">
