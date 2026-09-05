@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
-import { Loader2, LogOut, ShieldCheck, UserRound } from 'lucide-react';
+import { Loader2, LogOut, Mail, ShieldCheck, UserRound } from 'lucide-react';
 
 const AUTH_REQUIRED = import.meta.env.VITE_REQUIRE_CATALYST_AUTH === 'true';
 const AuthContext = createContext({ user: null, officer: null, authRequired: AUTH_REQUIRED });
@@ -35,6 +35,11 @@ export default function AuthGate({ children }) {
   const [sdkReady, setSdkReady] = useState(!AUTH_REQUIRED);
   const [user, setUser] = useState(null);
   const [error, setError] = useState('');
+  const [authView, setAuthView] = useState('signin');
+  const [signupForm, setSignupForm] = useState({ firstName: '', lastName: '', email: '' });
+  const [signupBusy, setSignupBusy] = useState(false);
+  const [signupMessage, setSignupMessage] = useState('');
+  const [signupError, setSignupError] = useState('');
 
   useEffect(() => {
     if (!AUTH_REQUIRED) return undefined;
@@ -84,12 +89,12 @@ export default function AuthGate({ children }) {
   const officer = useMemo(() => normalizeOfficer(user), [user]);
 
   useEffect(() => {
-    if (!AUTH_REQUIRED || checking || user || !sdkReady) return;
+    if (!AUTH_REQUIRED || checking || user || !sdkReady || authView !== 'signin') return;
     const auth = getCatalystAuth();
     if (auth?.signIn) {
       auth.signIn('catalyst-login-box', { service_url: '/app/index.html' });
     }
-  }, [checking, sdkReady, user]);
+  }, [authView, checking, sdkReady, user]);
 
   if (!AUTH_REQUIRED) {
     return (
@@ -103,6 +108,39 @@ export default function AuthGate({ children }) {
     const auth = getCatalystAuth();
     if (auth?.signOut) {
       auth.signOut(getRedirectUrl());
+    }
+  };
+
+  const handleSignupChange = event => {
+    const { name, value } = event.target;
+    setSignupForm(current => ({ ...current, [name]: value }));
+  };
+
+  const handleSignup = async event => {
+    event.preventDefault();
+    const auth = getCatalystAuth();
+    const email = signupForm.email.trim();
+    if (!auth?.signUp || !email) return;
+
+    setSignupBusy(true);
+    setSignupError('');
+    setSignupMessage('');
+
+    try {
+      await auth.signUp({
+        first_name: signupForm.firstName.trim() || 'Officer',
+        last_name: signupForm.lastName.trim() || 'User',
+        email_id: email,
+        platform_type: 'web',
+        redirect_url: '/app/index.html',
+      });
+      setSignupMessage(`Setup email sent to ${email}. Verify the account, set a Catalyst password, then return here and sign in.`);
+      setSignupForm(current => ({ ...current, firstName: '', lastName: '' }));
+    } catch (err) {
+      const message = err?.data?.message || err?.message || 'Could not create this account. Please try again or check Authentication settings in Catalyst.';
+      setSignupError(message);
+    } finally {
+      setSignupBusy(false);
     }
   };
 
@@ -149,10 +187,116 @@ export default function AuthGate({ children }) {
             </div>
           </div>
           <div className="min-h-[760px] overflow-auto bg-slate-900 p-6">
-            <div
-              id="catalyst-login-box"
-              className="min-h-[700px] w-full rounded-lg border border-slate-800 bg-white p-2"
-            />
+            <div className="mb-4 grid grid-cols-2 rounded-lg border border-slate-700 bg-slate-950 p-1 text-sm font-semibold">
+              <button
+                type="button"
+                onClick={() => {
+                  setAuthView('signin');
+                  setSignupError('');
+                  setSignupMessage('');
+                }}
+                className={`rounded-md px-3 py-2 ${authView === 'signin' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'}`}
+              >
+                Sign in
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setAuthView('signup');
+                  setSignupError('');
+                  setSignupMessage('');
+                }}
+                className={`rounded-md px-3 py-2 ${authView === 'signup' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'}`}
+              >
+                New user
+              </button>
+            </div>
+
+            {authView === 'signin' ? (
+              <div
+                id="catalyst-login-box"
+                className="min-h-[700px] w-full rounded-lg border border-slate-800 bg-white p-2"
+              />
+            ) : (
+              <form onSubmit={handleSignup} className="rounded-lg border border-slate-700 bg-slate-950 p-6">
+                <div className="flex items-start gap-3">
+                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md border border-cyan-900 bg-cyan-950/60">
+                    <Mail size={18} className="text-cyan-300" />
+                  </div>
+                  <div>
+                    <h2 className="text-lg font-semibold text-white">Create demo officer account</h2>
+                    <p className="mt-1 text-xs leading-relaxed text-slate-400">
+                      Enter an email address. Catalyst will send the account verification and password setup email.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <label className="block text-xs font-medium text-slate-300">
+                    First name
+                    <input
+                      name="firstName"
+                      value={signupForm.firstName}
+                      onChange={handleSignupChange}
+                      className="mt-1 w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-white outline-none focus:border-cyan-500"
+                      placeholder="Officer"
+                    />
+                  </label>
+                  <label className="block text-xs font-medium text-slate-300">
+                    Last name
+                    <input
+                      name="lastName"
+                      value={signupForm.lastName}
+                      onChange={handleSignupChange}
+                      className="mt-1 w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-white outline-none focus:border-cyan-500"
+                      placeholder="Name"
+                    />
+                  </label>
+                </div>
+
+                <label className="mt-3 block text-xs font-medium text-slate-300">
+                  Email
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    value={signupForm.email}
+                    onChange={handleSignupChange}
+                    className="mt-1 w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-white outline-none focus:border-cyan-500"
+                    placeholder="officer@example.com"
+                  />
+                </label>
+
+                {signupError && (
+                  <div className="mt-4 rounded-md border border-red-800 bg-red-950/70 px-3 py-2 text-xs leading-relaxed text-red-200">
+                    {signupError}
+                  </div>
+                )}
+
+                {signupMessage && (
+                  <div className="mt-4 rounded-md border border-cyan-800 bg-cyan-950/60 px-3 py-2 text-xs leading-relaxed text-cyan-100">
+                    {signupMessage}
+                  </div>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={signupBusy || !signupForm.email.trim()}
+                  className="mt-5 flex w-full items-center justify-center gap-2 rounded-md bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {signupBusy && <Loader2 size={15} className="animate-spin" />}
+                  Send setup email
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setAuthView('signin')}
+                  className="mt-4 w-full text-center text-xs font-semibold text-cyan-300 hover:text-cyan-200"
+                >
+                  Already verified? Go to sign in
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </div>
