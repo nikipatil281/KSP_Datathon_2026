@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
-import { Loader2, Lock, LogOut, Mail, ShieldCheck, UserRound } from 'lucide-react';
+import { Loader2, LogOut, ShieldCheck, UserRound } from 'lucide-react';
 
 const AUTH_REQUIRED = import.meta.env.VITE_REQUIRE_CATALYST_AUTH === 'true';
 const AuthContext = createContext({ user: null, officer: null, authRequired: AUTH_REQUIRED });
@@ -35,10 +35,6 @@ export default function AuthGate({ children }) {
   const [sdkReady, setSdkReady] = useState(!AUTH_REQUIRED);
   const [user, setUser] = useState(null);
   const [error, setError] = useState('');
-  const [authMode, setAuthMode] = useState('signin');
-  const [authBusy, setAuthBusy] = useState(false);
-  const [authMessage, setAuthMessage] = useState('');
-  const [form, setForm] = useState({ firstName: '', lastName: '', email: '', password: '' });
 
   useEffect(() => {
     if (!AUTH_REQUIRED) return undefined;
@@ -87,6 +83,14 @@ export default function AuthGate({ children }) {
 
   const officer = useMemo(() => normalizeOfficer(user), [user]);
 
+  useEffect(() => {
+    if (!AUTH_REQUIRED || checking || user || !sdkReady) return;
+    const auth = getCatalystAuth();
+    if (auth?.signIn) {
+      auth.signIn('catalyst-login-box', { service_url: '/app/index.html' });
+    }
+  }, [checking, sdkReady, user]);
+
   if (!AUTH_REQUIRED) {
     return (
       <AuthContext.Provider value={{ user: null, officer: null, authRequired: false }}>
@@ -99,49 +103,6 @@ export default function AuthGate({ children }) {
     const auth = getCatalystAuth();
     if (auth?.signOut) {
       auth.signOut(getRedirectUrl());
-    }
-  };
-
-  const refreshUser = async () => {
-    const auth = getCatalystAuth();
-    const response = await auth.isUserAuthenticated();
-    setUser(response?.content || null);
-  };
-
-  const updateForm = event => {
-    const { name, value } = event.target;
-    setForm(current => ({ ...current, [name]: value }));
-  };
-
-  const handleAuthSubmit = async event => {
-    event.preventDefault();
-    const auth = getCatalystAuth();
-    const email = form.email.trim();
-    setAuthBusy(true);
-    setError('');
-    setAuthMessage('');
-
-    try {
-      if (authMode === 'signup') {
-        await auth.signUp({
-          first_name: form.firstName.trim() || 'Officer',
-          last_name: form.lastName.trim() || 'User',
-          email_id: email,
-          platform_type: 'web',
-          redirect_url: getRedirectUrl(),
-        });
-        setAuthMessage('Account request created. Check your email to verify the account and set your password, then return here to sign in.');
-        setAuthMode('signin');
-        setForm(current => ({ ...current, password: '' }));
-        return;
-      }
-
-      await auth.login(email, form.password);
-      await refreshUser();
-    } catch (err) {
-      setError(err?.message || err?.data?.message || 'Authentication failed. Please check the details and try again.');
-    } finally {
-      setAuthBusy(false);
     }
   };
 
@@ -187,114 +148,11 @@ export default function AuthGate({ children }) {
               Authentication is handled by Zoho Catalyst. User accounts and roles are managed from the Catalyst console.
             </div>
           </div>
-          <div className="flex min-h-[760px] items-center justify-center bg-slate-900 p-6">
-            <form onSubmit={handleAuthSubmit} className="w-full max-w-md rounded-lg border border-slate-700 bg-slate-950 p-6 shadow-xl">
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-md border border-cyan-900 bg-cyan-950/60">
-                  <ShieldCheck size={18} className="text-cyan-300" />
-                </div>
-                <div>
-                  <h2 className="text-lg font-semibold text-white">
-                    {authMode === 'signup' ? 'Create officer access' : 'Sign in'}
-                  </h2>
-                  <p className="text-xs text-slate-500">
-                    {authMode === 'signup' ? 'Use your email to receive a Catalyst setup link.' : 'Use your Catalyst email and password.'}
-                  </p>
-                </div>
-              </div>
-
-              {authMode === 'signup' && (
-                <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                  <label className="block text-xs font-medium text-slate-300">
-                    First name
-                    <input
-                      name="firstName"
-                      value={form.firstName}
-                      onChange={updateForm}
-                      className="mt-1 w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-white outline-none focus:border-cyan-500"
-                      placeholder="Officer"
-                    />
-                  </label>
-                  <label className="block text-xs font-medium text-slate-300">
-                    Last name
-                    <input
-                      name="lastName"
-                      value={form.lastName}
-                      onChange={updateForm}
-                      className="mt-1 w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-white outline-none focus:border-cyan-500"
-                      placeholder="Name"
-                    />
-                  </label>
-                </div>
-              )}
-
-              <label className="mt-5 block text-xs font-medium text-slate-300">
-                Email
-                <div className="mt-1 flex items-center gap-2 rounded-md border border-slate-700 bg-slate-900 px-3 focus-within:border-cyan-500">
-                  <Mail size={14} className="text-slate-500" />
-                  <input
-                    required
-                    type="email"
-                    name="email"
-                    value={form.email}
-                    onChange={updateForm}
-                    className="w-full bg-transparent py-2 text-sm text-white outline-none"
-                    placeholder="officer@example.com"
-                  />
-                </div>
-              </label>
-
-              {authMode === 'signin' && (
-                <label className="mt-3 block text-xs font-medium text-slate-300">
-                  Password
-                  <div className="mt-1 flex items-center gap-2 rounded-md border border-slate-700 bg-slate-900 px-3 focus-within:border-cyan-500">
-                    <Lock size={14} className="text-slate-500" />
-                    <input
-                      required
-                      type="password"
-                      name="password"
-                      value={form.password}
-                      onChange={updateForm}
-                      className="w-full bg-transparent py-2 text-sm text-white outline-none"
-                      placeholder="Password"
-                    />
-                  </div>
-                </label>
-              )}
-
-              {error && (
-                <div className="mt-4 rounded-md border border-red-800 bg-red-950/70 px-3 py-2 text-xs leading-relaxed text-red-200">
-                  {error}
-                </div>
-              )}
-
-              {authMessage && (
-                <div className="mt-4 rounded-md border border-cyan-800 bg-cyan-950/60 px-3 py-2 text-xs leading-relaxed text-cyan-100">
-                  {authMessage}
-                </div>
-              )}
-
-              <button
-                type="submit"
-                disabled={authBusy || !form.email.trim() || (authMode === 'signin' && !form.password)}
-                className="mt-5 flex w-full items-center justify-center gap-2 rounded-md bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                {authBusy && <Loader2 size={15} className="animate-spin" />}
-                {authMode === 'signup' ? 'Send setup email' : 'Sign in'}
-              </button>
-
-              <button
-                type="button"
-                onClick={() => {
-                  setAuthMode(mode => mode === 'signin' ? 'signup' : 'signin');
-                  setError('');
-                  setAuthMessage('');
-                }}
-                className="mt-4 w-full text-center text-xs font-semibold text-cyan-300 hover:text-cyan-200"
-              >
-                {authMode === 'signup' ? 'Already have an account? Sign in' : 'New officer? Create an account'}
-              </button>
-            </form>
+          <div className="min-h-[760px] overflow-auto bg-slate-900 p-6">
+            <div
+              id="catalyst-login-box"
+              className="min-h-[700px] w-full rounded-lg border border-slate-800 bg-white p-2"
+            />
           </div>
         </div>
       </div>
