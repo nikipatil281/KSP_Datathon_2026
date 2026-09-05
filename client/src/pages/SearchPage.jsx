@@ -4,6 +4,7 @@ import {
   Maximize2, MessageSquare, Mic, MicOff, Search, Send, Table2, User, X
 } from 'lucide-react';
 import { api } from '../api';
+import { useAuth } from '../components/AuthGate';
 
 const EXAMPLES = [
   'offenders part of Organized Crime with prior convictions',
@@ -13,6 +14,22 @@ const EXAMPLES = [
   'victims of Theft cases in Bengaluru Rural',
   'cybercrime cases in Bengaluru Urban in 2024',
 ];
+
+function officerActivityKey(officer, type) {
+  return `ksp:${type}:${officer?.id || 'anonymous'}`;
+}
+
+function appendOfficerActivity(officer, type, entry) {
+  if (typeof window === 'undefined') return;
+  try {
+    const key = officerActivityKey(officer, type);
+    const current = JSON.parse(window.localStorage.getItem(key) || '[]');
+    const next = [{ ...entry, officer_id: officer?.id, officer_email: officer?.email, saved_at: new Date().toISOString() }, ...current].slice(0, 25);
+    window.localStorage.setItem(key, JSON.stringify(next));
+  } catch {
+    // Local audit history is best-effort; search should never fail because storage is unavailable.
+  }
+}
 
 function ResultCell({ value }) {
   const text = value === null || value === undefined || value === '' ? '-' : String(value);
@@ -693,6 +710,7 @@ function SchemaPanel({ schema }) {
 }
 
 export default function SearchPage() {
+  const { officer } = useAuth();
   const [q, setQ] = useState('');
   const [conversation, setConversation] = useState([]);
   const [answer, setAnswer] = useState(null);
@@ -784,6 +802,12 @@ export default function SearchPage() {
       const data = await api.askSearchAssistant(question);
       setAnswer(data);
       setConversation(items => [...items, { role: 'assistant', content: data.message, sql: data.sql }]);
+      appendOfficerActivity(officer, 'searches', {
+        question,
+        intent: data.intent,
+        sql: data.sql,
+        row_count: data.row_count || data.rows?.length || 0,
+      });
     } catch (e) {
       setError(e.message);
     } finally {

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { Loader2, LogOut, ShieldCheck, UserRound } from 'lucide-react';
 
 const AUTH_REQUIRED = import.meta.env.VITE_REQUIRE_CATALYST_AUTH === 'true';
+const AuthContext = createContext({ user: null, officer: null, authRequired: AUTH_REQUIRED });
 
 function getRedirectUrl() {
   const appPath = window.location.pathname.startsWith('/app') ? '/app/index.html' : '/';
@@ -10,6 +11,23 @@ function getRedirectUrl() {
 
 function getCatalystAuth() {
   return window.catalyst?.auth;
+}
+
+function normalizeOfficer(user) {
+  if (!user) return null;
+  const id = user.user_id || user.zaid || user.ZUID || user.email_id || user.email || 'demo-officer';
+  const email = user.email_id || user.email || '';
+  const name = [user.first_name, user.last_name].filter(Boolean).join(' ')
+    || user.display_name
+    || user.name
+    || email
+    || 'Signed in officer';
+
+  return { id: String(id), email, name, raw: user };
+}
+
+export function useAuth() {
+  return useContext(AuthContext);
 }
 
 export default function AuthGate({ children }) {
@@ -71,7 +89,15 @@ export default function AuthGate({ children }) {
     }
   }, [checking, sdkReady, user]);
 
-  if (!AUTH_REQUIRED) return children;
+  const officer = useMemo(() => normalizeOfficer(user), [user]);
+
+  if (!AUTH_REQUIRED) {
+    return (
+      <AuthContext.Provider value={{ user: null, officer: null, authRequired: false }}>
+        {children}
+      </AuthContext.Provider>
+    );
+  }
 
   const logout = () => {
     const auth = getCatalystAuth();
@@ -131,11 +157,11 @@ export default function AuthGate({ children }) {
   }
 
   return (
-    <>
+    <AuthContext.Provider value={{ user, officer, authRequired: true }}>
       {children}
       <div className="fixed bottom-3 right-3 z-50 flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/95 px-3 py-2 text-xs text-slate-300 shadow-xl backdrop-blur">
         <UserRound size={14} className="text-blue-400" />
-        <span className="max-w-[180px] truncate">{user.email_id || user.first_name || 'Signed in'}</span>
+        <span className="max-w-[180px] truncate">{officer?.email || officer?.name || 'Signed in'}</span>
         <button
           type="button"
           onClick={logout}
@@ -145,6 +171,6 @@ export default function AuthGate({ children }) {
           Logout
         </button>
       </div>
-    </>
+    </AuthContext.Provider>
   );
 }

@@ -4,6 +4,7 @@ import {
   Languages, Loader2, MessageSquare, Save, ShieldCheck, Upload
 } from 'lucide-react';
 import { api } from '../api';
+import { useAuth } from '../components/AuthGate';
 
 const LANGUAGE_OPTIONS = [
   { value: 'auto', label: 'Auto detect' },
@@ -17,6 +18,18 @@ const LANGUAGE_OPTIONS = [
 
 const STEPS = ['Upload', 'OCR', 'Extract', 'Review'];
 const REAL_FIR_OCR = import.meta.env.VITE_USE_CATALYST_FIR === 'true' && Boolean(import.meta.env.VITE_FIR_API_URL);
+
+function appendOfficerFirActivity(officer, entry) {
+  if (typeof window === 'undefined') return;
+  try {
+    const key = `ksp:fir_uploads:${officer?.id || 'anonymous'}`;
+    const current = JSON.parse(window.localStorage.getItem(key) || '[]');
+    const next = [{ ...entry, officer_id: officer?.id, officer_email: officer?.email, saved_at: new Date().toISOString() }, ...current].slice(0, 20);
+    window.localStorage.setItem(key, JSON.stringify(next));
+  } catch {
+    // Local audit history is best-effort for the prototype.
+  }
+}
 
 function Field({ label, value, confidence }) {
   const pct = confidence ? Math.round(confidence * 100) : null;
@@ -56,6 +69,7 @@ function Stepper({ active }) {
 }
 
 export default function FIRIntake() {
+  const { officer } = useAuth();
   const [file, setFile] = useState(null);
   const [language, setLanguage] = useState('auto');
   const [processing, setProcessing] = useState(false);
@@ -87,6 +101,13 @@ export default function FIRIntake() {
       window.setTimeout(() => setActiveStep(2), 500);
       const data = await api.processFirDocument(file, { language });
       setResult(data);
+      appendOfficerFirActivity(officer, {
+        file_name: file.name,
+        file_size: file.size,
+        language,
+        document: data.document,
+        extracted: data.extracted,
+      });
       setActiveStep(3);
       await runAssistant(data, 'Review this OCR output and prepare draft FIR table mappings.');
     } catch (e) {
