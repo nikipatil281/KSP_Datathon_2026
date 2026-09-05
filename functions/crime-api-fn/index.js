@@ -317,6 +317,43 @@ function buildSearchAssistantPrompt(message = '') {
     ].join('\n');
 }
 
+function buildDeterministicSearchPlan(message = '') {
+    const text = normalizeText(message);
+    const asksAboutOrganizedCrime = /\borgani[sz]ed\s+crime\b/i.test(message);
+    const asksAboutGangMembers = /\b(gang|member|members|offender|offenders|criminal|criminals)\b/i.test(message);
+    const asksAboutConvictions = /\b(prior|previous|conviction|convictions|criminal\s+history)\b/i.test(message);
+
+    if (asksAboutOrganizedCrime && asksAboutGangMembers && asksAboutConvictions) {
+        return {
+            mode: 'deterministic_zcql',
+            intent: 'Find Organized Crime offenders with prior convictions',
+            target: 'offenders',
+            sql: `SELECT o.offender_id, o.name, o.age, o.gender, o.district_of_origin, o.occupation, o.prior_convictions, o.gang_affiliation, o.risk_score FROM offenders o WHERE o.gang_affiliation = 'Organized Crime' AND o.prior_convictions > 0 LIMIT 100`,
+            filters: [
+                { field: 'gang_affiliation', operator: '=', value: 'Organized Crime' },
+                { field: 'prior_convictions', operator: '>', value: 0 }
+            ],
+            schema_used: SEARCH_ASSISTANT_SCHEMA
+        };
+    }
+
+    if (text.includes('local gang') && asksAboutGangMembers && asksAboutConvictions) {
+        return {
+            mode: 'deterministic_zcql',
+            intent: 'Find Local Gang offenders with prior convictions',
+            target: 'offenders',
+            sql: `SELECT o.offender_id, o.name, o.age, o.gender, o.district_of_origin, o.occupation, o.prior_convictions, o.gang_affiliation, o.risk_score FROM offenders o WHERE o.gang_affiliation = 'Local Gang' AND o.prior_convictions > 0 LIMIT 100`,
+            filters: [
+                { field: 'gang_affiliation', operator: '=', value: 'Local Gang' },
+                { field: 'prior_convictions', operator: '>', value: 0 }
+            ],
+            schema_used: SEARCH_ASSISTANT_SCHEMA
+        };
+    }
+
+    return null;
+}
+
 function parseLlmJson(value) {
     if (value && typeof value === 'object') return value;
     const text = String(value || '').trim();
@@ -534,6 +571,8 @@ function validateSearchAssistantSql(sql) {
 async function buildSearchAssistantQuery(app, message = '') {
     const raw = String(message || '').trim();
     if (!raw) throw new Error('Ask a database question first.');
+    const deterministicPlan = buildDeterministicSearchPlan(raw);
+    if (deterministicPlan) return deterministicPlan;
     const queryPlan = normalizeLlmQueryPlan(await callZohoLlmForSearch(app, raw));
     validateSearchAssistantSql(queryPlan.sql);
     return queryPlan;

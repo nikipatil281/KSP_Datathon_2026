@@ -759,6 +759,26 @@ export default function SearchPage() {
     writeOfficerActivity(officer, 'searches', next);
   };
 
+  const loadSavedSearch = async item => {
+    const question = item.question || '';
+    setError(null);
+    setShowSql(false);
+    setViewMode('table');
+    setActiveQuestion(question);
+    setQ('');
+
+    if (item.answer) {
+      setAnswer(item.answer);
+      setConversation([
+        { role: 'user', content: question },
+        { role: 'assistant', content: item.answer.message, sql: item.answer.sql },
+      ]);
+      return;
+    }
+
+    await runSearch(question, { saveToHistory: false });
+  };
+
   const toggleVoiceInput = () => {
     setVoiceError('');
 
@@ -812,9 +832,8 @@ export default function SearchPage() {
     recognition.start();
   };
 
-  const handleAsk = async e => {
-    e.preventDefault();
-    const question = q.trim();
+  const runSearch = async (question, options = {}) => {
+    const { saveToHistory = true } = options;
     if (!question) return;
 
     setLoading(true);
@@ -829,19 +848,27 @@ export default function SearchPage() {
       const data = await api.askSearchAssistant(question);
       setAnswer(data);
       setConversation(items => [...items, { role: 'assistant', content: data.message, sql: data.sql }]);
-      const nextHistory = appendOfficerActivity(officer, 'searches', {
-        question,
-        intent: data.intent,
-        sql: data.sql,
-        row_count: data.row_count || data.rows?.length || 0,
-      });
-      setSavedSearches(nextHistory);
+      if (saveToHistory) {
+        const nextHistory = appendOfficerActivity(officer, 'searches', {
+          question,
+          intent: data.intent,
+          sql: data.sql,
+          row_count: data.row_count || data.rows?.length || 0,
+          answer: data,
+        });
+        setSavedSearches(nextHistory);
+      }
     } catch (e) {
       setError(e.message);
     } finally {
       setLoading(false);
       setQ('');
     }
+  };
+
+  const handleAsk = async e => {
+    e.preventDefault();
+    await runSearch(q.trim());
   };
 
   const filters = answer?.filters || [];
@@ -957,7 +984,7 @@ export default function SearchPage() {
                     <div className="flex items-start justify-between gap-2">
                       <button
                         type="button"
-                        onClick={() => setQ(item.question)}
+                        onClick={() => loadSavedSearch(item)}
                         className="text-left text-xs font-medium text-slate-200 hover:text-cyan-200"
                       >
                         {item.question}
